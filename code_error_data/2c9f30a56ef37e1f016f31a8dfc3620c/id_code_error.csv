@@ -1,0 +1,158 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int *varb_3;
+ scanf(""%d"",&varb_0);
+ varb_3=(int*)malloc(varb_0*sizeof(int));
+ for(varb_1=0;varb_1<varb_0;varb_1++)
+ scanf(""%d"",&varb_3[varb_1]);
+ scanf(""%d"",&varb_2);
+ for(varb_1=varb_2-1;varb_1<varb_0;varb_1++)
+ printf(""%d "",varb_3[varb_1]);
+ return 0;
+}
+",0.0,12
+1,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_1);int varb_3[varb_1];
+    varb_0=malloc(sizeof(int) * varb_1);
+    int varb_4;scanf(""%d"",&varb_4);
+    for(varb_2=0; varb_2<varb_1 ; varb_2++) {
+        scanf(""%d"",&varb_3[varb_2]);
+    }
+    varb_0=varb_3;
+    for(varb_2 = varb_4+1; varb_2<varb_1-1; varb_2++) {
+        printf(""%d "",*(varb_0+varb_2));
+    }
+    return 0;
+}
+",0.0,7
+2,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=1;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",0.0,12
+3,2c9f30a56ef37e1f016f31a8dfc3620c,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{   
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+	int *varb_3[20];
+	*varb_3=(int*)malloc(sizeof(int)*varb_0);
+	for(varb_1=0;varb_1<varb_0;varb_1++){
+		scanf(""%d"",&varb_3[varb_1]);
+	}
+	scanf(""%d"",&varb_2);
+	for(varb_1=varb_2;varb_1<varb_0;varb_1++){
+		printf(""%d,"",varb_3[varb_1]);
+	}
+}
+",0.0,14
+4,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2+1;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",0.0,7
+5,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_1);int varb_3[varb_1];
+    varb_0=malloc(sizeof(int) * varb_1);
+    int varb_4;scanf(""%d"",&varb_4);
+    for(varb_2=0; varb_2<varb_1 ; varb_2++) {
+        scanf(""%d"",&varb_3[varb_2]);
+    }
+    varb_0=varb_3;
+    for(varb_2 = varb_4+1; varb_2<varb_1; varb_2++) {
+        printf(""%d "",*(varb_0+varb_2));
+    }
+    return 0;
+}
+",0.0,7
+6,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2[varb_1];
+int varb_3;
+scanf(""%d"",&varb_1);
+for(varb_0=0;varb_0<varb_1;varb_0++)
+scanf(""%d"",&varb_2[varb_0]);
+scanf(""%d"",&varb_3);
+for(varb_0=varb_3;varb_0<varb_1;varb_0++)
+printf(""%d "",varb_2[varb_0]);
+}",0.0,5
+7,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2[varb_1];
+int varb_3;
+scanf(""%d"",&varb_1);
+for(varb_0=0;varb_0<varb_1;varb_0++)
+scanf(""%d"",&varb_2[varb_0]);
+scanf(""%d"",&varb_3);
+for(varb_0=varb_3-1;varb_0<varb_1;varb_0++)
+printf(""%d "",varb_2[varb_0]);
+}",0.0,5
+8,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d"",varb_3[varb_0]);
+    }
+}",0.0,7
+9,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",0.0,7

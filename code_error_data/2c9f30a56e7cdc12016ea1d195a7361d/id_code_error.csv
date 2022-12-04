@@ -1,0 +1,86 @@
+,id,code,is_true,errorline
+0,2c9f30a56e7cdc12016ea1d195a7361d,"#include <stdio.h>
+#include<math.h>
+int func_0( int varb_0, int varb_1 );
+int func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    printf(""func_0(%d, %d) = %d\n"", varb_0, varb_1, func_0(varb_0,varb_1));
+    printf(""s = %d\n"", func_2(varb_0,varb_1));
+    return 0;
+}
+int func_0( int varb_0, int varb_1 )
+{
+    if(varb_1<=1)
+        return varb_0;
+    else
+        return varb_0+pow(10,1)*func_0(varb_0,varb_1-1);
+}
+int func_2( int varb_0, int varb_1 )
+{
+int func_0( int varb_0, int varb_1 );
+    int varb_11;
+    for(;varb_1<=1;varb_1--)
+    varb_11+=func_0(varb_0,varb_1);
+    return varb_11;
+}",0.0,23
+1,2c9f30a56e7cdc12016ea1d195a7361d,"#include <stdio.h>
+#include<math.h>
+int func_0( int varb_0, int varb_1 );
+int func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    printf(""func_0(%d, %d) = %d\n"", varb_0, varb_1, func_0(varb_0,varb_1));
+    printf(""s = %d\n"", func_2(varb_0,varb_1));
+    return 0;
+}
+int func_0( int varb_0, int varb_1 )
+{
+    if(varb_1<=1)
+        return varb_0;
+    else
+        return varb_0+pow(10,1)*func_0(varb_0,varb_1-1);
+}
+int func_2( int varb_0, int varb_1 )
+{
+int func_0( int varb_0, int varb_1 );
+    int varb_11;
+    varb_11+=func_0(varb_0,varb_1);
+    return varb_11;
+}",0.0,23
+2,2c9f30a56e7cdc12016ea1d195a7361d,"#include <stdio.h>
+#include<math.h>
+int func_0( int varb_0, int varb_1 );
+int func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    printf(""func_0(%d, %d) = %d\n"", varb_0, varb_1, func_0(varb_0,varb_1));		
+    printf(""s = %d\n"", func_2(varb_0,varb_1));	
+    return 0; 
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_6,varb_7,varb_8;
+for(varb_6=0;varb_6<varb_1;varb_6++)
+{
+varb_7=varb_0*pow(10,varb_6);
+varb_8+=varb_7;
+}
+return varb_8;
+}
+int func_2(int varb_0,int varb_1)
+{
+int varb_6,varb_7,varb_8,varb_14;
+for(varb_6=0;varb_6<varb_1;varb_6++)
+{
+varb_7=(varb_0*pow(10,varb_6))*(varb_1-varb_6);
+varb_8+=varb_7;
+}
+return varb_8;
+}",0.0,15

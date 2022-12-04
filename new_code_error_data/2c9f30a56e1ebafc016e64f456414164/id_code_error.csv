@@ -1,0 +1,1278 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+
+{    
+
+    int n;
+
+    scanf(""%d"", &n);
+
+    pyramid(n);
+
+    return 0;
+
+}
+void pyramid(  n )
+{
+int i,j;
+for(i=1;i<=n;i++)
+{
+for(j=0;j<=n-1;j++)
+printf("" "");
+for(j=0;j<=i;j++)
+printf(""%d"",i);
+printf(""\n"");
+}}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(  varb_0 )
+{
+int varb_1,varb_2;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+for(varb_2=0;varb_2<=varb_0-1;varb_2++)
+printf("" "");
+for(varb_2=0;varb_2<=varb_1;varb_2++)
+printf(""%d"",varb_1);
+printf(""\n"");
+}}",17
+1,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+
+{    
+
+    int n;
+
+    scanf(""%d"", &n);
+
+    pyramid(n);
+
+    return 0;
+
+}
+void pyramid( int n )
+{
+int i,j;
+for(i=1;i<=n;i++)
+{
+for(j=0;j<=n-1;j++)
+printf("" "");
+for(j=0;j<=i;j++)
+printf(""\n"");
+}}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{
+int varb_1,varb_2;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+for(varb_2=0;varb_2<=varb_0-1;varb_2++)
+printf("" "");
+for(varb_2=0;varb_2<=varb_1;varb_2++)
+printf(""\n"");
+}}",12
+2,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int i,j,m;
+  for(i=1;i<=n;i++)
+  {
+   for(m=1,j=i;m<=i;m++);
+       
+   {
+    printf(""%d "",j);
+    if(m==i)
+    printf(""\n"");
+    }
+   }
+ }
+  
+  
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_3=1,varb_2=varb_1;varb_3<=varb_1;varb_3++);
+   {
+    printf(""%d "",varb_2);
+    if(varb_3==varb_1)
+    printf(""\n"");
+    }
+   }
+ }
+",15
+3,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(int n)
+{int i,j;
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{printf(""%d "",j);}
+printf(""\n"");
+}
+printf(""\n"");
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int varb_0)
+{int varb_1,varb_2;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+{printf(""%d "",varb_2);}
+printf(""\n"");
+}
+printf(""\n"");
+}",11
+4,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid( int n )
+{
+	int a,b,c,d;
+   
+  for(a=0,d=1;a<n;a++)
+ {
+      for(b=0;b<(n-b);b++)
+          {printf("" "");}
+      for(c=1;c<a+1;c++)
+          {printf(""%d "",d);		   
+		  }
+          d++;
+        
+        printf(""\n"");
+	
+ }
+	
+	
+}
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{
+	int varb_1,varb_2,varb_3,varb_4;
+  for(varb_1=0,varb_4=1;varb_1<varb_0;varb_1++)
+ {
+      for(varb_2=0;varb_2<(varb_0-varb_2);varb_2++)
+          {printf("" "");}
+      for(varb_3=1;varb_3<varb_1+1;varb_3++)
+          {printf(""%d "",varb_4);		   
+		  }
+          varb_4++;
+        printf(""\n"");
+ }
+}
+",17
+5,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid( int n )
+{
+  int i,j;
+  scanf(""%d"",&n);
+  for(i=1;i<=n;i++)
+  {
+    for(j=0;j<=i;j++)
+    {
+  printf(""%d "",i);
+    }
+   printf(""/n"");
+   }
+   
+   }
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{
+  int varb_1,varb_2;
+  scanf(""%d"",&varb_0);
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+    for(varb_2=0;varb_2<=varb_1;varb_2++)
+    {
+  printf(""%d "",varb_1);
+    }
+   printf(""/n"");
+   }
+   }
+",16
+6,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+void pyramid( int n );
+int main()
+{    
+    int n;
+    scanf(""%d"", &n);
+    pyramid(n);
+    
+    return 0;
+}
+void pyramid(n)
+{
+  int a,b;
+  for(a=1;a<=n;a++)
+  {
+    for(b=0;b<=n-1;b++)
+    printf("" "");
+    for(b=0;b<=a;b++)
+    printf(""%d "",a);
+    printf(""\n"");
+    
+   }
+}
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(varb_0)
+{
+  int varb_1,varb_2;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+    for(varb_2=0;varb_2<=varb_0-1;varb_2++)
+    printf("" "");
+    for(varb_2=0;varb_2<=varb_1;varb_2++)
+    printf(""%d "",varb_1);
+    printf(""\n"");
+   }
+}
+",17
+7,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+
+void pyramid( int n )
+{
+  int i,j,k;
+  for(i=1;i<=n;i++)
+   { for(k=1;k<=n-1;k++)
+    printf("" "");
+      for(j=1;j<=i;j++)
+      printf(""%d"",i);
+      printf(""\n"");}
+      printf(""\n"");
+  }",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+   { for(varb_3=1;varb_3<=varb_0-1;varb_3++)
+    printf("" "");
+      for(varb_2=1;varb_2<=varb_1;varb_2++)
+      printf(""%d"",varb_1);
+      printf(""\n"");}
+      printf(""\n"");
+  }",19
+8,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(int n)
+{
+int i,j=1;
+for(i=1;i<=n;i++)
+{
+
+printf("" %d"",n);j++;
+if(j>n)
+printf(""\n"");
+}
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int varb_0)
+{
+int varb_1,varb_2=1;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+printf("" %d"",varb_0);varb_2++;
+if(varb_2>varb_0)
+printf(""\n"");
+}
+}",12
+9,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+
+
+
+void pyramid(int p)
+{
+    int a,b,c,n,x=1;
+    for(a=1;a<=n;a++)
+    {
+        for(b=1;b<=n-a;b++)
+        {
+            printf("" "");
+        }
+        for(c=1;c<=a;c++)
+        {
+            if(a==c)
+            printf(""%d\n"",x);
+            else
+            printf(""%d "",x);
+            
+        }x++;
+    }
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int p)
+{
+    int varb_1,varb_2,varb_3,varb_0,varb_5=1;
+    for(varb_1=1;varb_1<=varb_0;varb_1++)
+    {
+        for(varb_2=1;varb_2<=varb_0-varb_1;varb_2++)
+        {
+            printf("" "");
+        }
+        for(varb_3=1;varb_3<=varb_1;varb_3++)
+        {
+            if(varb_1==varb_3)
+            printf(""%d\n"",varb_5);
+            else
+            printf(""%d "",varb_5);
+        }varb_5++;
+    }
+}",12
+10,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int a,b;
+  for(a=1;a<=n;a++)
+  {
+   for(b=1;b<=a;b++);
+    {
+      printf(""%2d "",a);}
+     
+      printf(""\n"");
+   
+     
+   }
+  }
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_2=1;varb_2<=varb_1;varb_2++);
+    {
+      printf(""%2d "",varb_1);}
+      printf(""\n"");
+   }
+  }
+",15
+11,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(int n)
+{
+int i=1,j,a;
+while(i<=n)
+{
+j=0;
+while(j<i)
+{
+if(j==0)
+{a=0;
+while(a<n-i)
+{
+printf("" "");a++;
+}}
+printf(""%d "",i);
+j++;
+}
+printf(""\n"");
+i++;
+}
+}
+
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int varb_0)
+{
+int varb_1=1,j,a;
+while(varb_1<=varb_0)
+{
+j=0;
+while(j<varb_1)
+{
+if(j==0)
+{a=0;
+while(a<varb_0-varb_1)
+{
+printf("" "");a++;
+}}
+printf(""%d "",varb_1);
+j++;
+}
+printf(""\n"");
+varb_1++;
+}
+}
+",23
+12,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(int n)
+{int i,j;
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=n-i;j++)
+{printf("" "");}
+for(j=1;j<=i;j++)
+{printf(""%d "",i);if(i==j){printf(""\n"");}}
+
+}
+printf(""\n"");
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int varb_0)
+{int varb_1,varb_2;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+for(varb_2=1;varb_2<=varb_0-varb_1;varb_2++)
+{printf("" "");}
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+{printf(""%d "",varb_1);if(varb_1==varb_2){printf(""\n"");}}
+}
+printf(""\n"");
+}",17
+13,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid( int n )
+{ 
+  int i,j,k;
+  for(i=1;i<=n;i++)
+    {
+      for(j=n;j<0;j--)
+        {
+          printf("" "");
+          for(k=1;k<=i;k++)
+            { printf(""%d "",i);}
+        }
+      printf(""\n"");
+     } 
+ }",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{ 
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+    {
+      for(varb_2=varb_0;varb_2<0;varb_2--)
+        {
+          printf("" "");
+          for(varb_3=1;varb_3<=varb_1;varb_3++)
+            { printf(""%d "",varb_1);}
+        }
+      printf(""\n"");
+     } 
+ }",17
+14,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int i,j,m;
+  for(i=1;i<=n;i++)
+  {
+   for(m=1;m<=i;m++)
+   {
+    printf(""i"");
+    if(m==i)
+    printf(""\n"");
+    }
+   }
+ }
+  
+  
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_3=1;varb_3<=varb_1;varb_3++)
+   {
+    printf(""i"");
+    if(varb_3==varb_1)
+    printf(""\n"");
+    }
+   }
+ }
+",4
+15,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int i,j,m;
+  for(i=1;i<=n;i++)
+  {
+   for(m=1;m<=i;m++)
+   {
+    printf(""m"");
+    if(m==i)
+    printf(""\n"");
+    }
+   }
+ }
+  
+  
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_3=1;varb_3<=varb_1;varb_3++)
+   {
+    printf(""m"");
+    if(varb_3==varb_1)
+    printf(""\n"");
+    }
+   }
+ }
+",4
+16,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int a,b,c;
+  for(a=1;a<=n;a++)
+  {
+   for(b=1;b<=a;b++);
+    {
+      printf(""%d "",a);}
+     
+      printf(""\n"");
+   
+     
+   }
+  }
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_2=1;varb_2<=varb_1;varb_2++);
+    {
+      printf(""%d "",varb_1);}
+      printf(""\n"");
+   }
+  }
+",12
+17,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+
+void pyramid( int n )
+{
+  int i,j,k;
+  for(i=1;i<=n;i++)
+   { for(k=1;k<=n-1;k++)
+    printf("" "");
+      for(j=1;j<=i;j++)
+      printf(""%d"",i);}
+     { printf(""\n"");}
+  }",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0( int varb_0 )
+{
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+   { for(varb_3=1;varb_3<=varb_0-1;varb_3++)
+    printf("" "");
+      for(varb_2=1;varb_2<=varb_1;varb_2++)
+      printf(""%d"",varb_1);}
+     { printf(""\n"");}
+  }",17
+18,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{ 
+int n;
+
+scanf(""%d"", &n);
+pyramid(n);
+
+return 0;
+}
+
+void pyramid ( int n )
+{
+   int a=1;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int k = 1; k <= n - i; k++)
+			printf("" "");
+		for (int j = 1; j <= i; j++)
+		{
+			if (j == i)
+				printf(""%d"", a);
+			else
+				printf(""%d "", a);
+		}
+		printf(""\n"");
+  a++;
+	}
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{ 
+int varb_0;
+scanf(""%d"", &varb_0);
+func_0(varb_0);
+return 0;
+}
+void func_0( int varb_0 )
+{
+   int varb_1=1;
+	for(int varb_2 = 1; varb_2 <= varb_0; varb_2++)
+	{
+		for(int varb_3 = 1; varb_3 <= varb_0 - varb_2; varb_3++)
+			printf("" "");
+		for(int varb_4 = 1; varb_4 <= varb_2; varb_4++)
+		{
+			if(varb_4 == varb_2)
+				printf(""%d"", varb_1);
+			else
+				printf(""%d "", varb_1);
+		}
+		printf(""\n"");
+  varb_1++;
+	}
+}",13
+19,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+void pyramid( int n );
+int main()
+{    
+    int n;
+    scanf(""%d"", &n);
+    pyramid(n);
+    
+    return 0;
+}
+void pyramid(n)
+{
+  int a,b,c;
+  for(a=1;a<=n;a++)
+  {
+    for(b=a;b<=n-1;b++)
+    printf("" "");
+    for(c=0;c<=a;a++)
+    printf(""%d"",a);
+    printf(""\n"");
+    
+   }
+}
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(varb_0)
+{
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+    for(varb_2=varb_1;varb_2<=varb_0-1;varb_2++)
+    printf("" "");
+    for(varb_3=0;varb_3<=varb_1;varb_1++)
+    printf(""%d"",varb_1);
+    printf(""\n"");
+   }
+}
+",12
+20,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int i,j,m;
+  for(i=1;i<=n;i++)
+  {
+   for(m=1,j=i;m<=i;m++);
+       
+   {
+    printf(""%2d "",j);
+    if(m==i)
+    printf(""\n"");
+    }
+   }
+ }
+  
+  
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_3=1,varb_2=varb_1;varb_3<=varb_1;varb_3++);
+   {
+    printf(""%2d "",varb_2);
+    if(varb_3==varb_1)
+    printf(""\n"");
+    }
+   }
+ }
+",15
+21,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int a,b,c;
+  for(a=1;a<=n;a++)
+  {
+   for(b=1;b<=a;b++);
+    {
+      printf(""%2d "",a);}
+     
+      printf(""\n"");
+   
+     
+   }
+  }
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_2=1;varb_2<=varb_1;varb_2++);
+    {
+      printf(""%2d "",varb_1);}
+      printf(""\n"");
+   }
+  }
+",12
+22,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(int n)
+{
+  int i,j;
+  for(i=1;i<=n;i++)
+    {for(j=1;j<=i;j++)
+    {printf(""%d "",j);
+    if(i==j)
+    printf(""\n"");}}
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(int varb_0)
+{
+  int varb_1,varb_2;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+    {for(varb_2=1;varb_2<=varb_1;varb_2++)
+    {printf(""%d "",varb_2);
+    if(varb_1==varb_2)
+    printf(""\n"");}}
+}",15
+23,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+void pyramid( int n );
+int main()
+{    
+    int n;
+    scanf(""%d"", &n);
+    pyramid(n);
+    
+    return 0;
+}
+void pyramid(n)
+{
+  int a,b,c;
+  for(a=1;a<=n-1;a++)
+  {
+    for(b=0;b<=n;b++)
+    printf("" "");
+    for(c=1;c<=a;c++)
+    printf(""%d "",a);
+    printf(""\n"");
+    
+   }
+}
+",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(varb_0)
+{
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0-1;varb_1++)
+  {
+    for(varb_2=0;varb_2<=varb_0;varb_2++)
+    printf("" "");
+    for(varb_3=1;varb_3<=varb_1;varb_3++)
+    printf(""%d "",varb_1);
+    printf(""\n"");
+   }
+}
+",13
+24,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+ void pyramid(n)
+ {
+  int a,b,c;
+  for(a=1;a<=n;a++)
+  {
+   for(b=1,c=a;b<=a;b++);
+    {
+      printf(""%d "",c);
+      if(b==a)
+      printf(""\n"");
+     } 
+   }
+  }
+   
+
+       ",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+ void func_0(varb_0)
+ {
+  int varb_1,varb_2,varb_3;
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+   for(varb_2=1,varb_3=varb_1;varb_2<=varb_1;varb_2++);
+    {
+      printf(""%d "",varb_3);
+      if(varb_2==varb_1)
+      printf(""\n"");
+     } 
+   }
+  }
+",12
+25,2c9f30a56e1ebafc016e64f456414164,"#include <stdio.h>
+
+void pyramid( int n );
+
+int main()
+{    
+    int n;
+
+    scanf(""%d"", &n);
+    pyramid(n);
+
+    return 0;
+}
+void pyramid(n )
+{
+int i,j;
+for(i=1;i<=n;i++)
+{
+j=1;
+printf("" "");j++;
+if(j>=n)
+printf(""\n"");
+}
+}",0.0,"#include <stdio.h>
+void func_0( int varb_0 );
+int main()
+{    
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    func_0(varb_0);
+    return 0;
+}
+void func_0(varb_0 )
+{
+int varb_1,varb_2;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+varb_2=1;
+printf("" "");varb_2++;
+if(varb_2>=varb_0)
+printf(""\n"");
+}
+}",15

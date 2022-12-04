@@ -1,0 +1,167 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+#include<stdlib.h>
+typedef struct varb_1
+{
+    int varb_0;
+    struct varb_1 *varb_2;
+} Link;
+int main()
+{
+    int varb_3,varb_4;
+    scanf(""%d"",&varb_3);
+    if(varb_3==0)
+        printf(""0"");
+    Link *p,*q,*head;
+    p=(Link*)malloc(sizeof(Link));
+    scanf(""%d"",&(p->varb_0));
+    p->varb_2=NULL;
+    q=head=p;
+    for(varb_4=0; varb_4<varb_3-1; varb_4++) {
+        p=(Link*)malloc(sizeof(Link));
+        scanf(""%d"",&(p->varb_0));
+        q->varb_2=p;
+        q=p;
+    }
+    q=head;
+    for(varb_4=0; varb_4<varb_3-1; varb_4++) {
+        printf(""%d "",q->varb_0);
+        q=q->varb_2;
+    }
+    free(p);
+    return 0;
+}",0.0,19
+1,2c9f30a56ef37e1f016f1e57207d5551,"#include <stdio.h>
+#include <malloc.h>
+struct varb_1 {
+	int varb_0;
+	struct varb_1 *varb_2;
+};
+struct varb_1 *func_0(int varb_9)
+{
+	struct varb_1 *varb_4, *varb_5;
+	struct varb_1 *varb_1 =(struct varb_1*)malloc(sizeof(struct varb_1));
+	scanf(""%d"", &varb_1->varb_0); varb_1->varb_2 = NULL;
+	varb_9 -= 1; varb_4 = varb_5 = varb_1;
+	for(int varb_8 = 0; varb_8 < varb_9; varb_8++)
+	{
+		struct varb_1 *varb_1 =(struct varb_1*)malloc(sizeof(struct varb_1));
+		scanf(""%d"", &varb_1->varb_0); varb_1->varb_2 = NULL;
+		varb_4->varb_2 = varb_1;
+		varb_4 = varb_4->varb_2;
+	}
+	return varb_5;
+}
+int main()
+{
+	int varb_9;
+	struct varb_1 *varb_4;
+	scanf(""%d"", &varb_9);
+	if(varb_9 <= 0) return 0;
+	struct varb_1 *varb_5=func_0(varb_9);
+	for(varb_4 = varb_5; varb_4->varb_2 != NULL; varb_4 = varb_4->varb_2)
+		printf(""%d "",varb_4->varb_0);
+	printf(""%d"",varb_4->varb_0);
+	return 0;
+}",0.0,13
+2,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	int varb_1[varb_0+1];
+	for(int varb_2=1;varb_2<=varb_0;varb_2++)
+		scanf(""%d"",&varb_1[varb_2]);
+	if(varb_0==2) 
+	printf(""10 5"");
+	if(varb_0==3)	printf(""10 5 15"");
+	if(varb_0==4) printf(""5 10 5 15"");
+}",0.0,7
+3,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+#include<stdlib.h>
+typedef struct varb_1
+{
+    int varb_0;
+    struct varb_1 *varb_2;
+} Link;
+int main()
+{
+    int varb_3,varb_4;
+    scanf(""%d"",&varb_3);
+    if(varb_3==0)
+        printf(""0"");
+    Link *p,*q,*head;
+    head->varb_2=NULL;
+    p=q=head;
+    for(varb_4=0; varb_4<varb_3-1; varb_4++) {
+        p=(Link*)malloc(sizeof(Link));
+        scanf(""%d"",&(p->varb_0));
+        q->varb_2=p;
+        q=p;
+    }
+    q=head;
+    for(varb_4=0; varb_4<varb_3-1; varb_4++) {
+        printf(""%d "",p->varb_0);
+        p=p->varb_2;
+    }
+    free(p);
+    return 0;
+}",0.0,15
+4,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+#include<stdlib.h>
+typedef struct varb_1
+{
+    int varb_0;
+    struct varb_1 *varb_2;
+}a;
+int main()
+{
+    int varb_3,varb_4;
+    scanf(""%d"",&varb_3);
+    a *head,*p,*q;
+    p=head=(a*)malloc(sizeof(a));
+    for(varb_4=0;varb_4<varb_3;varb_4++){
+        q=(a*)malloc(sizeof(a)); 
+        scanf(""%d"",&q->varb_0);
+        p->varb_2=q;
+        p=q;
+    }
+    p->varb_2=NULL;
+    while(p->varb_2!=NULL){
+        printf(""%d "",p->varb_0);
+    }
+}",0.0,21
+5,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+struct varb_3{
+int varb_0;
+} num;
+int main()
+{
+int varb_1,varb_0;
+struct varb_3 varb_4[2];
+scanf(""%d"",&varb_0);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%d"",&varb_4[varb_1]);
+if(varb_1==varb_0-1)
+{for(varb_1=0;varb_1<varb_0;varb_1++)
+printf(""%d"",varb_4[varb_1]);}
+else{
+for(varb_1=0;varb_1<varb_0;varb_1++)
+printf(""%d "",varb_4[varb_1]);}
+}",0.0,8
+6,2c9f30a56ef37e1f016f1e57207d5551,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1;
+	scanf(""%d"",&varb_1);
+	int varb_2[100];
+	for(varb_0=0;varb_0<varb_1;varb_0++)
+	{
+	scanf(""%d "",&varb_2[varb_0]);
+	}
+	for(varb_0=0;varb_0<varb_1;varb_0++)
+	{
+	printf(""%d "",varb_2[varb_0]);
+	 } 
+	return 0; 
+}",0.0,16

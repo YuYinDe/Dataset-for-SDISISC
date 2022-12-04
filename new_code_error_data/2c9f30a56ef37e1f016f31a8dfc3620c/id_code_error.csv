@@ -1,0 +1,310 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+int main()
+{
+int i,n;
+int a[n];
+int m;
+scanf(""%d"",&n);
+for(i=0;i<n;i++)
+scanf(""%d"",&a[i]);
+scanf(""%d"",&m);
+for(i=m-1;i<n;i++)
+printf(""%d "",a[i]);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2[varb_1];
+int varb_3;
+scanf(""%d"",&varb_1);
+for(varb_0=0;varb_0<varb_1;varb_0++)
+scanf(""%d"",&varb_2[varb_0]);
+scanf(""%d"",&varb_3);
+for(varb_0=varb_3-1;varb_0<varb_1;varb_0++)
+printf(""%d "",varb_2[varb_0]);
+}",5
+1,2c9f30a56ef37e1f016f31a8dfc3620c,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{   
+    int i,temp,b;
+    scanf(""%d"",&i);
+	int *a[20];
+	*a=(int*)malloc(sizeof(int)*i);
+	for(temp=0;temp<i;temp++){
+
+		scanf(""%d"",&a[temp]);
+	}
+	scanf(""%d"",&b);
+	for(temp=b;temp<i;temp++){
+		printf(""%d,"",a[temp]);
+	}
+}
+",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{   
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+	int *varb_3[20];
+	*varb_3=(int*)malloc(sizeof(int)*varb_0);
+	for(varb_1=0;varb_1<varb_0;varb_1++){
+		scanf(""%d"",&varb_3[varb_1]);
+	}
+	scanf(""%d"",&varb_2);
+	for(varb_1=varb_2;varb_1<varb_0;varb_1++){
+		printf(""%d,"",varb_3[varb_1]);
+	}
+}
+",7
+2,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *a,n,i;
+    scanf(""%d"",&n);int b[n];
+    a=malloc(sizeof(int) * n);// 建立长度为n的动态整型数组
+    int c;scanf(""%d"",&c);
+    for (i=0; i<n ; i++) {
+        scanf(""%d"",&b[i]);
+    }
+    a=b;
+    for (i = c+1; i<n-1; i++) {
+        printf(""%d "",*(a+i));
+    }
+    return 0;
+}
+",0.0,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_1);int varb_3[varb_1];
+    varb_0=malloc(sizeof(int) * varb_1);
+    int varb_4;scanf(""%d"",&varb_4);
+    for(varb_2=0; varb_2<varb_1 ; varb_2++) {
+        scanf(""%d"",&varb_3[varb_2]);
+    }
+    varb_0=varb_3;
+    for(varb_2 = varb_4+1; varb_2<varb_1-1; varb_2++) {
+        printf(""%d "",*(varb_0+varb_2));
+    }
+    return 0;
+}
+",7
+3,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+ int n,i,j;
+ int *a;
+ scanf(""%d"",&n);
+ a=(int*)malloc(n*sizeof(int));
+ for(i=0;i<n;i++)
+ scanf(""%d"",&a[i]);
+ scanf(""%d"",&j);
+ for(i=j-1;i<n;i++)
+ printf(""%d "",a[i]);
+ return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int *varb_3;
+ scanf(""%d"",&varb_0);
+ varb_3=(int*)malloc(varb_0*sizeof(int));
+ for(varb_1=0;varb_1<varb_0;varb_1++)
+ scanf(""%d"",&varb_3[varb_1]);
+ scanf(""%d"",&varb_2);
+ for(varb_1=varb_2-1;varb_1<varb_0;varb_1++)
+ printf(""%d "",varb_3[varb_1]);
+ return 0;
+}
+",12
+4,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *a,n,i;
+    scanf(""%d"",&n);int b[n];
+    a=malloc(sizeof(int) * n);// 建立长度为n的动态整型数组
+    int c;scanf(""%d"",&c);
+    for (i=0; i<n ; i++) {
+        scanf(""%d"",&b[i]);
+    }
+    a=b;
+    for (i = c+1; i<n; i++) {
+        printf(""%d "",*(a+i));
+    }
+    return 0;
+}
+",0.0,"#include<stdio.h>
+#include <stdlib.h>
+int main() {
+    int *varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_1);int varb_3[varb_1];
+    varb_0=malloc(sizeof(int) * varb_1);
+    int varb_4;scanf(""%d"",&varb_4);
+    for(varb_2=0; varb_2<varb_1 ; varb_2++) {
+        scanf(""%d"",&varb_3[varb_2]);
+    }
+    varb_0=varb_3;
+    for(varb_2 = varb_4+1; varb_2<varb_1; varb_2++) {
+        printf(""%d "",*(varb_0+varb_2));
+    }
+    return 0;
+}
+",7
+5,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+int main()
+{
+int i,n;
+int a[n];
+int m;
+scanf(""%d"",&n);
+for(i=0;i<n;i++)
+scanf(""%d"",&a[i]);
+scanf(""%d"",&m);
+for(i=m;i<n;i++)
+printf(""%d "",a[i]);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2[varb_1];
+int varb_3;
+scanf(""%d"",&varb_1);
+for(varb_0=0;varb_0<varb_1;varb_0++)
+scanf(""%d"",&varb_2[varb_0]);
+scanf(""%d"",&varb_3);
+for(varb_0=varb_3;varb_0<varb_1;varb_0++)
+printf(""%d "",varb_2[varb_0]);
+}",5
+6,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,n,m,a[100];
+    scanf(""%d"",&n);
+    for(i=0;i<=n;i++)
+    {
+      
+       scanf(""%d"",&a[i]);
+    }
+    scanf(""%d"",&m);
+    for(i=m;i<=n;i++)
+    {
+        printf(""%d "",a[i]);
+    }
+}",0.0,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",7
+7,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,n,m,a[100];
+    scanf(""%d"",&n);
+    for(i=0;i<=n;i++)
+    {
+      
+       scanf(""%d"",&a[i]);
+    }
+    scanf(""%d"",&m);
+    for(i=m;i<=n;i++)
+    {
+        printf(""%d"",a[i]);
+    }
+}",0.0,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d"",varb_3[varb_0]);
+    }
+}",7
+8,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,n,m,a[100];
+    scanf(""%d"",&n);
+    for(i=0;i<=n;i++)
+    {
+      
+       scanf(""%d"",&a[i]);
+    }
+    scanf(""%d"",&m);
+    for(i=m+1;i<=n;i++)
+    {
+        printf(""%d "",a[i]);
+    }
+}",0.0,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=0;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2+1;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",7
+9,2c9f30a56ef37e1f016f31a8dfc3620c,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int i,n,m,a[100];
+    scanf(""%d"",&n);
+    for(i=1;i<=n;i++)
+    {
+      
+       scanf(""%d"",&a[i]);
+    }
+    scanf(""%d"",&m);
+    for(i=m;i<=n;i++)
+    {
+        printf(""%d "",a[i]);
+    }
+}",0.0,"#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3[100];
+    scanf(""%d"",&varb_1);
+    for(varb_0=1;varb_0<=varb_1;varb_0++)
+    {
+       scanf(""%d"",&varb_3[varb_0]);
+    }
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=varb_1;varb_0++)
+    {
+        printf(""%d "",varb_3[varb_0]);
+    }
+}",12

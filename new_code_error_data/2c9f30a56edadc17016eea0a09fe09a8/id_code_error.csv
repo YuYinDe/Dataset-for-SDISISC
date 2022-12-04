@@ -1,0 +1,1013 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=1;i<n-1;i++)
+      for (j=1;j<n-1;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None %d %d"",m,n);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=1;varb_3<varb_1-1;varb_3++)
+      for(varb_4=1;varb_4<varb_1-1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None %d %d"",varb_0,varb_1);
+}",12
+1,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    printf("" None %d %d"",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    printf("" None %d %d"",varb_0,varb_1);
+  }
+}",4
+2,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    		printf(""None %d %d\n"",m,n);
+  }
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    		printf(""None %d %d\n"",varb_0,varb_1);
+  }
+  return 0;
+}",4
+3,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None "");
+     printf(""%d %d"",m,n);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None "");
+     printf(""%d %d"",varb_0,varb_1);
+}",7
+4,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+int M,N,i,j,s=0;
+scanf(""%d%d"",&M,&N);
+int A[M][N];
+for(i=0;i<M;i++)
+  for(j=0;j<N;j++) 
+    scanf(""%d"",&A[M][N]);
+for(i=1;i<M-1;i++)
+ {
+   for(j=1;j<N-1;j++)
+     {
+      if(A[i][j]>A[i][j-1]&&A[i][j]>A[i][j+1]&&A[i][j]>A[i-1][j]&&A[i][j]>A[i+1][j])  
+       {
+         printf(""%d %d %d "",A[i][j],i,j);
+         s++;
+       }  
+     }
+   printf(""\n"");
+ }  
+if(s==0)
+  printf(""None 总行数 总列数"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+int varb_5[varb_0][varb_1];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+  for(varb_3=0;varb_3<varb_1;varb_3++) 
+    scanf(""%d"",&varb_5[varb_0][varb_1]);
+for(varb_2=1;varb_2<varb_0-1;varb_2++)
+ {
+   for(varb_3=1;varb_3<varb_1-1;varb_3++)
+     {
+      if(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1]&&varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3+1]&&varb_5[varb_2][varb_3]>varb_5[varb_2-1][varb_3]&&varb_5[varb_2][varb_3]>varb_5[varb_2+1][varb_3])  
+       {
+         printf(""%d %d %d "",varb_5[varb_2][varb_3],varb_2,varb_3);
+         varb_4++;
+       }  
+     }
+   printf(""\n"");
+ }  
+if(varb_4==0)
+  printf(""None 总行数 总列数"");
+}",9
+5,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=1;i<n-1;i++)
+      for (j=1;j<n-1;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None %d %d"",m+1,n+1);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=1;varb_3<varb_1-1;varb_3++)
+      for(varb_4=1;varb_4<varb_1-1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None %d %d"",varb_0+1,varb_1+1);
+}",12
+6,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+    
+    int i,j,m,n,b=0;
+    scanf(""%d %d"",&m,&n);
+    int a[m][n];
+    for(i=0;i<m;i++)
+      {
+        for(j=0;j<n;j++)
+            {
+               scanf(""%d "",&a[i][j]);
+            }
+       }
+     for(i=1;i<m-1;i++)
+         {
+            for(j=1;j<n-1;j++)
+            {  
+            if((a[i][j]>a[i-1][j])&&(a[i][j]>a[i][j-1])&&(a[i][j]>a[i+1][j])&&(a[i][j+1]))
+                 { printf(""%d %d %d\n"",a[i][j],i+1,j+1);  
+                   b++;
+                  }
+            
+           
+              }
+           }
+                 if(b==0)
+                 {printf(""None "");
+                  printf(""%d %d"",m,n);}
+                 return 0;
+                 }",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+    scanf(""%d %d"",&varb_2,&varb_3);
+    int varb_5[varb_2][varb_3];
+    for(varb_0=0;varb_0<varb_2;varb_0++)
+      {
+        for(varb_1=0;varb_1<varb_3;varb_1++)
+            {
+               scanf(""%d "",&varb_5[varb_0][varb_1]);
+            }
+       }
+     for(varb_0=1;varb_0<varb_2-1;varb_0++)
+         {
+            for(varb_1=1;varb_1<varb_3-1;varb_1++)
+            {  
+            if((varb_5[varb_0][varb_1]>varb_5[varb_0-1][varb_1])&&(varb_5[varb_0][varb_1]>varb_5[varb_0][varb_1-1])&&(varb_5[varb_0][varb_1]>varb_5[varb_0+1][varb_1])&&(varb_5[varb_0][varb_1+1]))
+                 { printf(""%d %d %d\n"",varb_5[varb_0][varb_1],varb_0+1,varb_1+1);  
+                   varb_4++;
+                  }
+              }
+           }
+                 if(varb_4==0)
+                 {printf(""None "");
+                  printf(""%d %d"",varb_2,varb_3);}
+                 return 0;
+                 }",18
+7,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+	int M,N,i,j,k;
+	k=0;
+	scanf(""%d %d"",&M,&N);
+	int a[M][N];
+	for(i=0;i<M;i++)
+		for(j=0;j<N;j++)
+			scanf(""%d "",&a[i][j]);
+
+		for(i=0;i<M;i++)
+		{
+			for(j=0;j<N;j++)
+			{
+				if((a[i][j]>a[i+1][j])&&(a[i][j]>a[i-1][j])&&(a[i][j]>a[i][j+1])&&(a[i][j]>a[i][j-1]))
+				{
+					printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+					k++;
+				}
+			}
+		}
+		if(k==0)
+		printf(""None %d %d"",M,N);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	varb_4=0;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	int varb_5[varb_0][varb_1];
+	for(varb_2=0;varb_2<varb_0;varb_2++)
+		for(varb_3=0;varb_3<varb_1;varb_3++)
+			scanf(""%d "",&varb_5[varb_2][varb_3]);
+		for(varb_2=0;varb_2<varb_0;varb_2++)
+		{
+			for(varb_3=0;varb_3<varb_1;varb_3++)
+			{
+				if((varb_5[varb_2][varb_3]>varb_5[varb_2+1][varb_3])&&(varb_5[varb_2][varb_3]>varb_5[varb_2-1][varb_3])&&(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3+1])&&(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1]))
+				{
+					printf(""%d %d %d\n"",varb_5[varb_2][varb_3],varb_2+1,varb_3+1);
+					varb_4++;
+				}
+			}
+		}
+		if(varb_4==0)
+		printf(""None %d %d"",varb_0,varb_1);
+return 0;
+}",2
+8,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None "");
+     printf(""%d %d"",n,m);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None "");
+     printf(""%d %d"",varb_1,varb_0);
+}",7
+9,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=1;i<n-1;i++)
+      for (j=1;j<n-1;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None %d %d"",n,m);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=1;varb_3<varb_1-1;varb_3++)
+      for(varb_4=1;varb_4<varb_1-1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None %d %d"",varb_1,varb_0);
+}",12
+10,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    printf(""NONE %d %d"",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    printf(""NONE %d %d"",varb_0,varb_1);
+  }
+}",4
+11,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+int M,N,i,j,s=0;
+scanf(""%d%d"",&M,&N);
+int A[M][N];
+for(i=0;i<M;i++)
+  for(j=0;j<N;j++) 
+    scanf(""%d"",&A[i][j]);
+for(i=1;i<M-1;i++)
+ {
+   for(j=1;j<N-1;j++)
+     {
+      if(A[i][j]>A[i][j-1]&&A[i][j]>A[i][j+1]&&A[i][j]>A[i-1][j]&&A[i][j]>A[i+1][j])  
+       {
+         printf(""%d %d %d "",A[i][j],i+1,j+1);
+         s++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(s==0)
+  printf(""None M N"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+int varb_5[varb_0][varb_1];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+  for(varb_3=0;varb_3<varb_1;varb_3++) 
+    scanf(""%d"",&varb_5[varb_2][varb_3]);
+for(varb_2=1;varb_2<varb_0-1;varb_2++)
+ {
+   for(varb_3=1;varb_3<varb_1-1;varb_3++)
+     {
+      if(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1]&&varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3+1]&&varb_5[varb_2][varb_3]>varb_5[varb_2-1][varb_3]&&varb_5[varb_2][varb_3]>varb_5[varb_2+1][varb_3])  
+       {
+         printf(""%d %d %d "",varb_5[varb_2][varb_3],varb_2+1,varb_3+1);
+         varb_4++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(varb_4==0)
+  printf(""None varb_0 N"");
+}",23
+12,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    printf(""None %d %d"",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    printf(""None %d %d"",varb_0,varb_1);
+  }
+}",4
+13,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+int M,N,i,j,s=0;
+scanf(""%d%d"",&M,&N);
+int A[M][N];
+for(i=0;i<M;i++)
+  for(j=0;j<N;j++) 
+    scanf(""%d"",&A[i][j]);
+for(i=1;i<M-1;i++)
+ {
+   for(j=1;j<N-1;j++)
+     {
+      if(A[i][j]>A[i][j-1]&&A[i][j]>A[i][j+1]&&A[i][j]>A[i-1][j]&&A[i][j]>A[i+1][j])  
+       {
+         printf(""%d %d %d "",A[i][j],i+1,j+1);
+         s++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(s==0)
+  printf(""None 总行数 总列数"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+int varb_5[varb_0][varb_1];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+  for(varb_3=0;varb_3<varb_1;varb_3++) 
+    scanf(""%d"",&varb_5[varb_2][varb_3]);
+for(varb_2=1;varb_2<varb_0-1;varb_2++)
+ {
+   for(varb_3=1;varb_3<varb_1-1;varb_3++)
+     {
+      if(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1]&&varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3+1]&&varb_5[varb_2][varb_3]>varb_5[varb_2-1][varb_3]&&varb_5[varb_2][varb_3]>varb_5[varb_2+1][varb_3])  
+       {
+         printf(""%d %d %d "",varb_5[varb_2][varb_3],varb_2+1,varb_3+1);
+         varb_4++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(varb_4==0)
+  printf(""None 总行数 总列数"");
+}",23
+14,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    printf(""None %d %d "",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    printf(""None %d %d "",varb_0,varb_1);
+  }
+}",4
+15,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int ask(int a[21][21],int i,int j)
+{
+	if(a[i][j]>a[i-1][j]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1])
+	    return 1;
+    else 
+        return 0;
+}
+int main()
+{
+	int n,m;
+	int a[21][21];
+	scanf(""%d %d"",&n,&m);
+	
+	int i,j;
+	for(i=0;i<n;i++)
+	    for(j=0;j<m;j++)
+	        scanf(""%d"",&a[i][j]);
+    
+    int flag=0;
+    for(i=1;i<n-1;i++){
+    	for(j=1;j<m-1;j++){
+    		if(ask(a,i,j))
+    		   flag=1,printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+    	}
+	}
+	if(flag) printf(""None %d %d"",n,m);
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0[21][21],int varb_1,int varb_2)
+{
+	if(varb_0[varb_1][varb_2]>varb_0[varb_1-1][varb_2]&&varb_0[varb_1][varb_2]>varb_0[varb_1+1][varb_2]&&varb_0[varb_1][varb_2]>varb_0[varb_1][varb_2+1]&&varb_0[varb_1][varb_2]>varb_0[varb_1][varb_2-1])
+	    return 1;
+    else 
+        return 0;
+}
+int main()
+{
+	int varb_27,varb_28;
+	int varb_0[21][21];
+	scanf(""%d %d"",&varb_27,&varb_28);
+	int varb_1,varb_2;
+	for(varb_1=0;varb_1<varb_27;varb_1++)
+	    for(varb_2=0;varb_2<varb_28;varb_2++)
+	        scanf(""%d"",&varb_0[varb_1][varb_2]);
+    int varb_31=0;
+    for(varb_1=1;varb_1<varb_27-1;varb_1++){
+    	for(varb_2=1;varb_2<varb_28-1;varb_2++){
+    		if(func_0(varb_0,varb_1,varb_2))
+    		   varb_31=1,printf(""%d %d %d\n"",varb_0[varb_1][varb_2],varb_1+1,varb_2+1);
+    	}
+	}
+	if(varb_31) printf(""None %d %d"",varb_27,varb_28);
+}",25
+16,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+    }
+  if(flag==-1)
+   {
+    		printf(""None %d %d\n"",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+  if(varb_4==-1)
+   {
+    		printf(""None %d %d\n"",varb_0,varb_1);
+  }
+}",4
+17,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=1;i<n-1;i++)
+      for (j=1;j<n-1;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+  {
+     printf(""None "");
+     printf(""%d %d"",m,n);
+  }
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=1;varb_3<varb_1-1;varb_3++)
+      for(varb_4=1;varb_4<varb_1-1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+  {
+     printf(""None "");
+     printf(""%d %d"",varb_0,varb_1);
+  }
+}",12
+18,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+int M,N,i,j,s=0;
+scanf(""%d%d"",&M,&N);
+int A[M][N];
+for(i=0;i<M;i++)
+  for(j=0;j<N;j++) 
+    scanf(""%d"",&A[i][j]);
+for(i=1;i<M-1;i++)
+ {
+   for(j=1;j<N-1;j++)
+     {
+      if(A[i][j]>A[i][j-1]&&A[i][j]>A[i][j+1]&&A[i][j]>A[i-1][j]&&A[i][j]>A[i+1][j])  
+       {
+         printf(""%d %d %d "",A[i][j],i+1,j+1);
+         s++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(s==0)
+  printf(""None 总行数 总列数"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+int varb_5[varb_0][varb_1];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+  for(varb_3=0;varb_3<varb_1;varb_3++) 
+    scanf(""%d"",&varb_5[varb_2][varb_3]);
+for(varb_2=1;varb_2<varb_0-1;varb_2++)
+ {
+   for(varb_3=1;varb_3<varb_1-1;varb_3++)
+     {
+      if(varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1]&&varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3+1]&&varb_5[varb_2][varb_3]>varb_5[varb_2-1][varb_3]&&varb_5[varb_2][varb_3]>varb_5[varb_2+1][varb_3])  
+       {
+         printf(""%d %d %d "",varb_5[varb_2][varb_3],varb_2+1,varb_3+1);
+         varb_4++;
+         printf(""\n"");
+       }  
+     }
+ }  
+if(varb_4==0)
+  printf(""None 总行数 总列数"");
+}",23
+19,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+   int m,n,i,j,flag=-1;
+   scanf(""%d%d"",&m,&n);
+   int a[m][n];
+   for(i=0;i<m;i++)
+     {
+      for(j=0;j<n;j++)
+       {
+       scanf(""%d"",&a[i][j]);
+     }
+    }
+    for(i=0;i<m;i++)
+     {
+       for(j=0;j<n;j++)
+         { 
+        if (a[i][j] > a[i-1][j] && a[i][j] > a[i+1][j] && a[i][j]>a[i][j-1] && a[i][j] > a[i][j+1])
+			{
+				printf(""%d %d %d\n"", a[i][j], i+1, j+1);
+				flag = 1; 
+			}
+       }
+   
+    }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4=-1;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   int varb_5[varb_0][varb_1];
+   for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+      for(varb_3=0;varb_3<varb_1;varb_3++)
+       {
+       scanf(""%d"",&varb_5[varb_2][varb_3]);
+     }
+    }
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+     {
+       for(varb_3=0;varb_3<varb_1;varb_3++)
+         { 
+        if(varb_5[varb_2][varb_3] > varb_5[varb_2-1][varb_3] && varb_5[varb_2][varb_3] > varb_5[varb_2+1][varb_3] && varb_5[varb_2][varb_3]>varb_5[varb_2][varb_3-1] && varb_5[varb_2][varb_3] > varb_5[varb_2][varb_3+1])
+			{
+				printf(""%d %d %d\n"", varb_5[varb_2][varb_3], varb_2+1, varb_3+1);
+				varb_4 = 1; 
+			}
+       }
+    }
+}",4
+20,2c9f30a56edadc17016eea0a09fe09a8,"#include<stdio.h>
+int main()
+{
+  int m,n,a[20][20];
+  int i,j,flag=0;
+  scanf(""%d %d"",&m,&n);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+            scanf(""%d"",&a[i][j]);
+  for (i=0;i<n;i++)
+      for (j=0;j<n;j++)
+         if(a[i][j]>a[i][j+1]&&a[i][j]>a[i][j-1]&&a[i][j]>a[i+1][j]&&a[i][j]>a[i-1][j])
+         { 
+            printf(""%d %d %d\n"",a[i][j],i+1,j+1);
+            flag=1;
+         }
+  if(flag==0)
+     printf(""None"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2[20][20];
+  int varb_3,varb_4,varb_5=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+            scanf(""%d"",&varb_2[varb_3][varb_4]);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+      for(varb_4=0;varb_4<varb_1;varb_4++)
+         if(varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4+1]&&varb_2[varb_3][varb_4]>varb_2[varb_3][varb_4-1]&&varb_2[varb_3][varb_4]>varb_2[varb_3+1][varb_4]&&varb_2[varb_3][varb_4]>varb_2[varb_3-1][varb_4])
+         { 
+            printf(""%d %d %d\n"",varb_2[varb_3][varb_4],varb_3+1,varb_4+1);
+            varb_5=1;
+         }
+  if(varb_5==0)
+     printf(""None"");
+}",7

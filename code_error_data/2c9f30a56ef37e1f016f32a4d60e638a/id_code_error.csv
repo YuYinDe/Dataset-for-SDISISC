@@ -1,0 +1,636 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+    struct varb_1 *varb_12, *varb_13, *varb_7;
+    int varb_15;
+    varb_12 = varb_13 = varb_7 = NULL;
+    do {
+        scanf(""%d"", &varb_15);
+        if(varb_15 < 0) {
+            break;
+        } else {
+            varb_7 = malloc(sizeof(struct varb_1));
+            varb_7->varb_0 = varb_15;
+            varb_7->varb_2 = NULL;
+            if(varb_13 != NULL) {
+                varb_13->varb_2 = varb_7;
+            } else {
+                varb_12 = varb_7;
+            }
+            varb_13 = varb_7;
+        }
+    } while(varb_15 > 0);
+    return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+    struct varb_1 *varb_7, *varb_21;
+    for(varb_7 = varb_4, varb_21 = NULL; varb_7 != NULL; varb_7 = varb_7->varb_2) {
+        if(varb_7->varb_0 == varb_5) {
+            if( varb_21 && varb_7 != varb_4) {
+                varb_21->varb_2 = varb_7->varb_2;
+            } else {
+                varb_4 = varb_7->varb_2;
+            }
+            free(varb_7);
+        } else {
+            varb_21 = varb_7;
+        }
+    }
+    return varb_4;
+}",0.0,50
+1,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+#define varb_7 struct varb_1
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0()
+{
+	int varb_3;
+	scanf(""%d"",&varb_3);
+	varb_7 *varb_8=NULL,*tail,*mid;
+	while(varb_3!=-1){
+		tail=(varb_7*)malloc(sizeof(varb_7));
+		tail->varb_2=NULL;
+		tail->varb_0=varb_3;
+		if(varb_8==NULL) varb_8=tail;
+		else mid->varb_2=tail;
+		mid=tail;
+		scanf(""%d"",&varb_3);
+	}
+	tail=(varb_7*)malloc(sizeof(varb_7));
+	tail->varb_2=varb_8;
+	varb_8=tail;
+	return varb_8;
+} 
+struct varb_1 *func_1( struct varb_1 *varb_5, int varb_6 )
+{
+	varb_7 *varb_8=varb_5;
+	while(varb_8){
+		if(varb_8->varb_2!=NULL&&varb_8->varb_2->varb_0==varb_6)
+			varb_8->varb_2=varb_8->varb_2->varb_2;
+		varb_8=varb_8->varb_2;
+	}
+	return varb_5;
+}
+void func_2( struct varb_1 *varb_5 )
+{
+     struct varb_1 *varb_11 = varb_5;
+     while(varb_11->varb_2) {
+           printf(""%d "", varb_11->varb_2->varb_0);
+           varb_11 = varb_11->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_6;
+    struct varb_1 *varb_5 = func_0();
+    scanf(""%d"", &varb_6);
+    varb_5 = func_1(varb_5, varb_6);
+    func_2(varb_5);
+	return 0;
+}
+",0.0,22
+2,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	int varb_11=0;
+	struct varb_1 *varb_7, *varb_14,*varb_15;
+	varb_7=(struct varb_1 *)malloc(1*sizeof(struct varb_1));
+	varb_14=varb_7;
+	scanf(""%d"",&varb_11);
+	while(varb_11!=-1)
+	{	
+		varb_7->varb_0=varb_11;	
+		scanf(""%d"",&varb_11);
+		if(varb_11!=-1)
+			break;
+		varb_15=(struct varb_1 *)malloc(1*sizeof(struct varb_1));
+		varb_15->varb_2=NULL;
+		varb_7->varb_2=varb_15;
+		varb_7=varb_7->varb_2;	
+	}
+	return varb_14;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+	int varb_19=1;
+	struct varb_1 *varb_7,*varb_15;
+	varb_7=varb_4;
+	while(varb_7->varb_0==varb_5)
+	{
+		if(varb_7->varb_0==varb_5)
+		{
+			varb_7=varb_7->varb_2;
+			varb_4=varb_7;
+		}	
+	}
+	while(varb_7->varb_2!=NULL)
+	{
+		varb_15=varb_7->varb_2;
+		if(varb_15->varb_0==varb_5)
+			varb_7->varb_2=varb_15->varb_2;
+		else
+			varb_7=varb_15;
+	}
+	return varb_4;
+}
+",0.0,38
+3,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+#define varb_7 struct varb_1
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0()
+{
+	int varb_3;
+	scanf(""%d"",&varb_3);
+	varb_7 *varb_8=NULL,*tail,*mid;
+	while(varb_3!=-1){
+		tail=(varb_7*)malloc(sizeof(varb_7));
+		tail->varb_2=NULL;
+		tail->varb_0=varb_3;
+		if(varb_8==NULL) varb_8=tail;
+		else mid->varb_2=tail;
+		mid=tail;
+		scanf(""%d"",&varb_3);
+	}
+	tail=(varb_7*)malloc(sizeof(varb_7));
+	tail->varb_2=varb_8;
+	varb_8=tail;
+	return varb_8;
+} 
+struct varb_1 *func_1( struct varb_1 *varb_5, int varb_6 )
+{
+	varb_7 *varb_8=varb_5;
+	while(varb_8){
+		if(varb_8->varb_2!=NULL&&varb_8->varb_2->varb_0==varb_6)
+			varb_8->varb_2=varb_8->varb_2->varb_2;
+		varb_8=varb_8->varb_2;
+	}
+	return varb_5;
+}
+void func_2( struct varb_1 *varb_5 )
+{
+     struct varb_1 *varb_11 = varb_5;
+     while(varb_11) {
+           printf(""%d "", varb_11->varb_2->varb_0);
+           varb_11 = varb_11->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_6;
+    struct varb_1 *varb_5 = func_0();
+    scanf(""%d"", &varb_6);
+    varb_5 = func_1(varb_5, varb_6);
+    func_2(varb_5);
+	return 0;
+}
+",0.0,22
+4,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7->varb_2!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+        break;
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",0.0,49
+5,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+ struct varb_1 *varb_12,*varb_7,*varb_14;
+  int varb_15;
+  varb_12=varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+  scanf(""%d"",&varb_15);
+  while(varb_15!=-1)
+  {   
+    varb_14=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_14->varb_0=varb_15;
+    varb_7->varb_2=varb_14;
+    varb_7=varb_14;
+   scanf(""%d"",&varb_15); 
+  }
+  varb_7->varb_2=NULL;
+  return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{ 
+struct varb_1 *varb_7,*varb_14;
+  varb_7=varb_4->varb_2;
+  varb_14=varb_7->varb_2;
+  while(varb_14!=NULL)
+  {
+    if(varb_7->varb_0==varb_5)
+    {
+      varb_7->varb_2=varb_14->varb_2;
+      free(varb_14);
+      varb_14=varb_7->varb_2;
+    }
+  }
+}",0.0,29
+6,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12=NULL,*varb_7,*last;
+int varb_13;
+last=varb_12;
+do{
+scanf(""%d"",&varb_13);
+if(varb_13!=-1)
+{
+varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_7->varb_0=varb_13;
+varb_7->varb_2=NULL;
+if(last==NULL)
+varb_12=varb_7;
+else
+last->varb_2=varb_7;
+last=varb_7;
+}
+else
+break;
+}
+while(varb_13!=-1);
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_19;
+varb_7=varb_4;
+varb_19=NULL;
+while(varb_7)
+{
+if(varb_19)
+varb_19->varb_2=varb_7->varb_2;
+else
+varb_4=varb_7->varb_2;
+varb_19=varb_7;
+varb_7=varb_7->varb_2;
+}
+return varb_4;
+}",0.0,29
+7,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7->varb_2!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",0.0,49
+8,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 =func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+    struct varb_1 *varb_12,*varb_13,*varb_14;
+    int varb_15=0;
+    varb_12 = NULL;
+    varb_13 = varb_14 =(struct varb_1*)malloc(sizeof(struct varb_1));
+    scanf(""%d"",&varb_13->varb_0);
+    while(varb_13->varb_0!=-1)
+    {
+        varb_15++;
+        if(varb_15==1)
+            varb_12 = varb_13;
+        else
+            varb_14->varb_2 = varb_13;
+        varb_14 = varb_13;
+        varb_13 =(struct varb_1*)malloc(sizeof(struct varb_1));
+        scanf(""%d"",&varb_13->varb_0);
+    }
+    varb_14->varb_2 = NULL;
+    return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+	 struct varb_1 *varb_20,*varb_21;
+	 varb_20=varb_4;
+	 while(varb_20!=NULL)
+	 {
+	 	if(varb_20->varb_0==varb_5)
+	 	{
+	 	if(varb_20==varb_4)
+		varb_4=varb_20->varb_2;	
+		else 
+		varb_21->varb_2==varb_20->varb_2;
+		}
+		else
+		{
+		varb_21=varb_20;
+		}
+		varb_20=varb_20->varb_2;
+	 }
+	 return varb_4;
+}
+",0.0,50
+9,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",0.0,49

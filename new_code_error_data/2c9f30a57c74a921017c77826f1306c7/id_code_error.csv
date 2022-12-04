@@ -1,0 +1,545 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{int fahr;
+
+ int celsius=5*(fahr-32)/9;
+printf(""fahr = 100, celsius = %d"",celsius);
+return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0;
+ int varb_1=5*(varb_0-32)/9;
+printf(""fahr = 100, varb_1 = %d"",varb_1);
+return 0;
+}",3
+1,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+	int C,F;
+	F=100;
+	C=5*(F-32)/9;
+	printf(""feahr=%d, celsius=%d"",F,C);
+    return 0;
+	 
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	varb_1=100;
+	varb_0=5*(varb_1-32)/9;
+	printf(""feahr=%d, celsius=%d"",varb_1,varb_0);
+    return 0;
+ } ",4
+2,2c9f30a57c74a921017c77826f1306c7,"#include <stdio.h>
+int main()
+{
+float celsius;
+float fahr;
+fahr=100;
+celsius=5.0/9.0*(fahr-32.0);
+printf(""fahr=100,celsius=38"",fahr,celsius);
+return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+float varb_0;
+float varb_1;
+varb_1=100;
+varb_0=5.0/9.0*(varb_1-32.0);
+printf(""fahr=100,varb_0=38"",varb_1,varb_0);
+return 0;
+}",5
+3,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int F=100,C;
+C=5*(F-32.0)/9.0;
+printf(""fatr=%d,celsius=%d"",F,C);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0=100,C;
+C=5*(varb_0-32.0)/9.0;
+printf(""fatr=%d,celsius=%d"",varb_0,C);
+return 0;
+}
+",6
+4,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{int fahr;
+
+ int celsius=5*(fahr-32)/9;
+printf(""fahr = 100, celsius =%d"",celsius);
+return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0;
+ int varb_1=5*(varb_0-32)/9;
+printf(""fahr = 100, varb_1 =%d"",varb_1);
+return 0;
+}",3
+5,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+
+{ int c,f=100;
+
+  c=5*(f-32)/9;
+
+  printf(""fathr = %d,celsius = %d"",f,c);
+
+  
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{ int varb_0,varb_1=100;
+  varb_0=5*(varb_1-32)/9;
+  printf(""fathr = %d,celsius = %d"",varb_1,varb_0);
+  return 0;
+}",5
+6,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+     int C,fahr;
+     scanf(""%d"",&fahr);
+     C=5*(fahr-32)/9;
+     printf(""fahr=%d,celsius=%d"",fahr,C);
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d"",&varb_1);
+     varb_0=5*(varb_1-32)/9;
+     printf(""fahr=%d,celsius=%d"",varb_1,varb_0);
+     return 0;
+}",4
+7,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+	int C,F;
+	F=100;
+	C=5*(F-32)/9;
+	printf(""feahr=%d,celsiu=%d"",F,C);
+    return 0;
+	 
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	varb_1=100;
+	varb_0=5*(varb_1-32)/9;
+	printf(""feahr=%d,celsiu=%d"",varb_1,varb_0);
+    return 0;
+ } ",4
+8,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int F=100,C;
+C=5*(F-32)/9;
+printf(""fatr=%d,celsius=%d"",F,C+1);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0=100,C;
+C=5*(varb_0-32)/9;
+printf(""fatr=%d,celsius=%d"",varb_0,C+1);
+return 0;
+}
+",4
+9,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int fahr=100;
+int celsius=5*(fahr-32)/9;
+printf(""%d"",celsius);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0=100;
+int varb_1=5*(varb_0-32)/9;
+printf(""%d"",varb_1);
+return 0;
+}",3
+10,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{float fahr,celsius; 
+  fahr=100;
+  celsius=5*(fahr-32)/9;
+   printf(""fahr=100,celsius=%f"",celsius);
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{float varb_0,varb_1; 
+  varb_0=100;
+  varb_1=5*(varb_0-32)/9;
+   printf(""fahr=100,varb_1=%f"",varb_1);
+return 0;
+}",3
+11,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{int C,F;
+C=5*(F-32)/9;
+printf(""fahr=100,celsius=%d"",C);
+return 0;}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+varb_0=5*(varb_1-32)/9;
+printf(""fahr=100,celsius=%d"",varb_0);
+return 0;}",3
+12,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{int fahr;
+
+ float celsius=5*(fahr-32)/9;
+printf(""fahr = 100, celsius =%f"",celsius);
+return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0;
+ float varb_1=5*(varb_0-32)/9;
+printf(""fahr = 100, varb_1 =%f"",varb_1);
+return 0;
+}",3
+13,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+
+{
+
+    int f=100;
+
+    int c;
+
+    c=5*(f-32)/9;
+
+    printf(""fahr=100,Celsius=%lf"",c);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=100;
+    int varb_1;
+    varb_1=5*(varb_0-32)/9;
+    printf(""fahr=100,Celsius=%lf"",varb_1);
+    return 0;
+}",7
+14,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+
+{
+
+    int f=100;
+
+    int c;
+
+    c=5*(f-32)/9;
+
+    printf(""fahr=100,Celsius=%d"",c);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=100;
+    int varb_1;
+    varb_1=5*(varb_0-32)/9;
+    printf(""fahr=100,Celsius=%d"",varb_1);
+    return 0;
+}",7
+15,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+
+{
+
+ int C,F;
+
+ scanf(""%d"",&F);
+
+ C=5*(F-32)/9;
+
+ printf(""fahr = %d,celcius = %d"",F,C);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d"",&varb_1);
+ varb_0=5*(varb_1-32)/9;
+ printf(""fahr = %d,celcius = %d"",varb_1,varb_0);
+    return 0;
+}",4
+16,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+	int C,F;
+	F=100;
+	C=5*(F-32)/9;
+	printf(""feahr=%d, celsiu=%d"",F,C);
+    return 0;
+	 
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	varb_1=100;
+	varb_0=5*(varb_1-32)/9;
+	printf(""feahr=%d, celsiu=%d"",varb_1,varb_0);
+    return 0;
+ } ",4
+17,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int F=100,C;
+int main()
+{
+    C=5*(F-32)/9;
+  printf(""%d"",C);
+    return 0;
+ }
+      ",0.0,"#include<stdio.h>
+int varb_0=100,C;
+int main()
+{
+    C=5*(varb_0-32)/9;
+  printf(""%d"",C);
+    return 0;
+ }
+",6
+18,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int F=100,C;
+C=5*(F-32)/9;
+printf(""fath=%d,celsius=%d"",F,C);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0=100,C;
+C=5*(varb_0-32)/9;
+printf(""fath=%d,celsius=%d"",varb_0,C);
+return 0;
+}
+",4
+19,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{int C,F;
+C=5*(F-32)/9;
+printf(""fahr=100,celsius=计算所得摄氏温度的整数值"");
+return 0;}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+varb_0=5*(varb_1-32)/9;
+printf(""fahr=100,celsius=计算所得摄氏温度的整数值"");
+return 0;}",3
+20,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+ int C,F;
+ scanf(""%d"",&F);
+ C=5*(F-32)/9;
+ printf(""fahr=%d,celsius=%d"",F,C);
+ }",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d"",&varb_1);
+ varb_0=5*(varb_1-32)/9;
+ printf(""fahr=%d,celsius=%d"",varb_1,varb_0);
+ }",4
+21,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+
+{
+int C,F;
+C=5*(F-32)/9;
+printf(""fahr=100,celsius=%d"",C);
+
+return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+varb_0=5*(varb_1-32)/9;
+printf(""fahr=100,celsius=%d"",varb_0);
+return 0;
+}",8
+22,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+
+{
+
+ int C,F=100;
+
+ C=5*(F-32)/9;
+
+ printf(""fahr = %d,celcius = %d"",F,C);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1=100;
+ varb_0=5*(varb_1-32)/9;
+ printf(""fahr = %d,celcius = %d"",varb_1,varb_0);
+    return 0;
+}",3
+23,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int c,f;
+scanf(""%d"",f);
+c=5*(f-32)/9.0;
+printf(""fahr = 100, celsius = %d"",c);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",varb_1);
+varb_0=5*(varb_1-32)/9.0;
+printf(""fahr = 100, celsius = %d"",varb_0);
+return 0;
+}",5
+24,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int F=100,C;
+C=5*(F-32)/9;
+printf(""fatr=%d,celsius=%d"",F,C);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0=100,C;
+C=5*(varb_0-32)/9;
+printf(""fatr=%d,celsius=%d"",varb_0,C);
+return 0;
+}
+",4
+25,2c9f30a57c74a921017c77826f1306c7," #include<stdio.h>
+ int main()
+ {
+ int f;
+ scanf(""%d"",&f);
+ int c;
+ c=5*(f-32)/9;
+ printf(""fahr=100,celsius=%d"",c);
+ return 0;
+ }",0.0," #include<stdio.h>
+ int main()
+ {
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ int varb_1;
+ varb_1=5*(varb_0-32)/9;
+ printf(""fahr=100,celsius=%d"",varb_1);
+ return 0;
+ }",8
+26,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+  int celsius,fahr,C;
+  C=(fahr-32)*5/9;
+  printf(""fahr=100,celsius=%d"",C);
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  varb_2=(varb_1-32)*5/9;
+  printf(""fahr=100,varb_0=%d"",varb_2);
+  return 0;
+}",6
+27,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+
+int main()
+{
+   int fahr, celsius=0;
+   
+   celsius=5*(fahr-32)/9;
+   
+   fahr = 100;
+   
+   printf(""fahr = 100, celsius = %d"");
+   
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0, varb_1=0;
+   varb_1=5*(varb_0-32)/9;
+   varb_0 = 100;
+   printf(""fahr = 100, varb_1 = %d"");
+   return 0;
+}",4
+28,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+    int f,c;
+    f=100;
+    c=5*(f-32)/9;
+    printf(""fahr=%d "",f 
+          );
+    printf(""Celsius = %d"",c);
+    return 0;
+}
+
+ ",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1;
+    varb_0=100;
+    varb_1=5*(varb_0-32)/9;
+    printf(""fahr=%d "",varb_0 
+          );
+    printf(""Celsius = %d"",varb_1);
+    return 0;
+}
+",7
+29,2c9f30a57c74a921017c77826f1306c7,"#include<stdio.h>
+int main()
+{
+int c,f;
+scanf(""%d"",f);
+c=5*(f-32)/9;
+printf(""fahr = 100, celsius = %d"",c);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",varb_1);
+varb_0=5*(varb_1-32)/9;
+printf(""fahr = 100, celsius = %d"",varb_0);
+return 0;
+}",5

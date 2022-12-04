@@ -1,0 +1,3345 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {  printf(""%d"",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+    if(j==0)
+    printf(""该区间无闰年"");}
+   }
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {  printf(""%d"",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");}
+   }
+ return 0;
+ }",6
+1,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d%d"",&x,&y);
+for(n=x+1;n<y;++n)
+{
+      if(n%400==0||(n%4==0&&n%100!=0))
+{printf(""%d "",n);++m;
+         if(m%5==0)
+       printf(""\n"");}
+}
+  if(m=0)
+printf(""该区间无闰年"");
+return 0;
+
+
+
+
+
+
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;++varb_2)
+{
+      if(varb_2%400==0||(varb_2%4==0&&varb_2%100!=0))
+{printf(""%d "",varb_2);++varb_3;
+         if(varb_3%5==0)
+       printf(""\n"");}
+}
+  if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}
+",14
+2,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int a=1,x,y,n;
+  int i=0;
+  scanf(""%d%d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {
+   if((n%4==0&&n%100!=0)||n%400==0)
+   {a=0;
+     printf(""%d "",n);
+     i++;
+    }
+    
+    
+     if(i%5==0)
+  {   i=0;
+      printf(""\n"");}}
+      if(a==1)
+      printf(""该区间无闰年"");
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0=1,x,y,n;
+  int varb_1=0;
+  scanf(""%d%d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {
+   if((n%4==0&&n%100!=0)||n%400==0)
+   {varb_0=0;
+     printf(""%d "",n);
+     varb_1++;
+    }
+     if(varb_1%5==0)
+  {   varb_1=0;
+      printf(""\n"");}}
+      if(varb_0==1)
+      printf(""该区间无闰年"");
+    return 0;
+}",10
+3,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+	int x,y;
+	int i=0;
+	scanf(""%d%d"",&x,&y);
+	  x++;
+	for(;x<y;x++){
+	   if(x%100&&x%4 == 0){
+	   	     	printf(""%d"",x);
+	   		     i++ ;
+			      }
+	    	if(x%400== 0){
+	   	  printf(""%d "",x);
+	      i++; 
+	     }
+    }
+       if(i==0){
+        printf(""该区间无闰年"");
+         }
+	 return 0;  
+ }",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	int varb_2=0;
+	scanf(""%d%d"",&varb_0,&varb_1);
+	  varb_0++;
+	for(;varb_0<varb_1;varb_0++){
+	   if(varb_0%100&&varb_0%4 == 0){
+	   	     	printf(""%d"",varb_0);
+	   		     varb_2++ ;
+			      }
+	    	if(varb_0%400== 0){
+	   	  printf(""%d "",varb_0);
+	      varb_2++; 
+	     }
+    }
+       if(varb_2==0){
+        printf(""该区间无闰年"");
+         }
+	 return 0;  
+ }",12
+4,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=0;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);++i;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=0;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);++varb_3;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+5,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);++i;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==1)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);++varb_3;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==1)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+6,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,t=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++,t++)
+{
+if((n%4==0&&n%100!=0)||n%400==0)
+printf(""%d "",n);
+if(t%5==0)
+printf(""\n"");
+
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++,varb_3++)
+{
+if((varb_2%4==0&&varb_2%100!=0)||varb_2%400==0)
+printf(""%d "",varb_2);
+if(varb_3%5==0)
+printf(""\n"");
+}
+return 0;
+}
+",4
+7,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,i,s;
+    scanf(""%d %d"",&x,&y);
+    x<y;
+   for(i=x+1,s=0;i>x&&i<y;i++)
+   {
+       if(i%4==0&&i%100!=0)
+   {
+           printf(""%d "",i);
+           s++;
+           if(s>=5)
+           printf(""\n"");
+   }
+       else
+       ;
+   }
+   if(s==0)
+   printf(""该区间无闰年"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_0<varb_1;
+   for(varb_2=varb_0+1,varb_3=0;varb_2>varb_0&&varb_2<varb_1;varb_2++)
+   {
+       if(varb_2%4==0&&varb_2%100!=0)
+   {
+           printf(""%d "",varb_2);
+           varb_3++;
+           if(varb_3>=5)
+           printf(""\n"");
+   }
+       else
+       ;
+   }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+}",9
+8,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i;
+int a=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{
+printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");
+}
+else if(i%4!=0)
+continue;
+}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2;
+int varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");
+}
+else if(varb_2%4!=0)
+continue;
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",15
+9,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+ {
+  int n,x,y,b;
+  
+  b=0;
+  
+  scanf(""%d%d"",&x,&y);
+ 
+ 
+  for(n=x+1;n<y;n++)
+{
+  if((n%100==0&&n%400==0)||(n%4==0&&n%100!=0))
+ { 
+  
+  ++b;
+ 
+ 
+ 
+  printf(""%d "",&n);
+  }
+ if(b%5==0)
+ {
+  printf(""\n"");
+  }
+  
+  
+  }
+ if(b==0)
+ printf(""该区间无闰年"");
+return 0;
+  }
+",0.0,"#include<stdio.h>
+int main()
+ {
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d%d"",&varb_1,&varb_2);
+  for(varb_0=varb_1+1;varb_0<varb_2;varb_0++)
+{
+  if((varb_0%100==0&&varb_0%400==0)||(varb_0%4==0&&varb_0%100!=0))
+ { 
+  ++varb_3;
+  printf(""%d "",&varb_0);
+  }
+ if(varb_3%5==0)
+ {
+  printf(""\n"");
+  }
+  }
+ if(varb_3==0)
+ printf(""该区间无闰年"");
+return 0;
+  }
+",7
+10,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,b;
+    b=0;
+  scanf(""%d %d"",&x,&y);
+  for(a=x+1;a<=y;a++)
+ {
+  if(a%4==0&&a%100!=0||a%400==0)
+  {
+   printf(""%5d "",a);
+   b++;
+   if(b%5==0)
+   printf(""\n"");
+ }
+ }
+   if(b==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+    varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+ {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+  {
+   printf(""%5d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");
+ }
+ }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",6
+11,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  
+  if(i%4==0&&i%100!=0)
+   printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+
+    if(j==0)
+    printf(""该区间无闰年"");
+ 
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  if(varb_2%4==0&&varb_2%100!=0)
+   printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+ return 0;
+ }",4
+12,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  
+ { if(i%4==0&&i%100!=0)
+   printf(""%d "",i);
+    j++;}
+    if(j%5==0)
+    printf(""\n"");
+
+    if(j==0)
+    printf(""该区间无闰年"");
+ 
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+ { if(varb_2%4==0&&varb_2%100!=0)
+   printf(""%d "",varb_2);
+    varb_3++;}
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+ return 0;
+ }",4
+13,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+  int main()
+{
+   int x,y,year,i=1;
+   scanf(""%d %d"",&x,&y);
+   for(year=x+1;year<y;year++)
+   {
+   
+   	if(year%4==0&&year%100!=0||year%400==0)
+	  {
+	  printf(""%d "",year);
+	  i++;
+        if(i%5==1)
+	    printf(""\n"");
+	    if(i==1)
+	    printf(""该区间无闰年"");
+	  } 
+	 }   	    
+    return 0;
+}",0.0,"#include<stdio.h>
+  int main()
+{
+   int varb_0,varb_1,varb_2,varb_3=1;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {
+   	if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+	  {
+	  printf(""%d "",varb_2);
+	  varb_3++;
+        if(varb_3%5==1)
+	    printf(""\n"");
+	    if(varb_3==1)
+	    printf(""该区间无闰年"");
+	  } 
+	 }   	    
+    return 0;
+}",14
+14,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,b;
+    b=0;
+  scanf(""%d %d"",&x,&y);
+  for(a=x+1;a<=y;a++)
+ {
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  {
+   printf(""%5d "",a);
+   b++;
+   if(b%5==0)
+   printf(""\n"");
+ }
+ }
+   if(b==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+    varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+ {
+  if((varb_2%4==0&&varb_2%100!=0)||(varb_2%400==0))
+  {
+   printf(""%5d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");
+ }
+ }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",7
+15,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=0;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);
+        ++i;
+        }
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==0)
+    {printf(""该区间无闰年"");
+    return -1;}
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=0;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);
+        ++varb_3;
+        }
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==0)
+    {printf(""该区间无闰年"");
+    return -1;}
+    return 0;
+}",9
+16,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+main()
+{
+	int year1,year2,i,z=0;
+	scanf(""%d %d"",&year1,&year2);
+	for(i=year1;i<year2;i++)
+	{
+		if((i%4==0&&i%100!=0)||(i%400==0))
+		{
+		printf(""%d "",i); z++;
+		if(z%5==0)
+	    printf(""\n"");
+	   
+	    }
+	     
+	    
+	    
+		
+	}
+	if(z==0)
+	    printf(""该区间无闰年""); 
+	
+}",0.0,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1,varb_2,varb_3=0;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	for(varb_2=varb_0;varb_2<varb_1;varb_2++)
+	{
+		if((varb_2%4==0&&varb_2%100!=0)||(varb_2%400==0))
+		{
+		printf(""%d "",varb_2); varb_3++;
+		if(varb_3%5==0)
+	    printf(""\n"");
+	    }
+	}
+	if(varb_3==0)
+	    printf(""该区间无闰年""); 
+}",6
+17,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%100==0&&n%400==0)
+{printf(""%d\t"",n);m++;}
+else if(n%4==0&&n%100!=0)
+{printf(""%d\t"",n);m++;}
+if(m%5==0)
+printf(""\n"");}
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%100==0&&varb_2%400==0)
+{printf(""%d\t"",varb_2);varb_3++;}
+else if(varb_2%4==0&&varb_2%100!=0)
+{printf(""%d\t"",varb_2);varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");}
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+18,2c9f30a56e1ebafc016e345bfa670d14,"
+   #include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0||i%400==0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+
+    if(j==0)
+    printf(""该区间无闰年"");}
+ }
+   
+ return 0;
+ }",0.0,"   #include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");}
+ }
+ return 0;
+ }",4
+19,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,n,i;
+  i=0;
+  scanf(""%d %d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0||n%100==0)&&(n%400==0))
+   {printf(""%4d "",n);
+   i++;
+   if(i%5==0)
+   printf(""\n"");}}
+   if(i==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {if((varb_2%4==0||varb_2%100==0)&&(varb_2%400==0))
+   {printf(""%4d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");}}
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+",8
+20,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=0;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);i++;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==0)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=0;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);varb_3++;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+21,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+if  (i%4==0&&i%100!=0||i%400==0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+
+    if(j==0)
+    printf(""该区间无闰年"");}
+ }
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");}
+ }
+ return 0;
+ }",4
+22,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,i,s;
+    scanf(""%d %d"",&x,&y);
+    x<y;
+   for(i=x+1,s=0;i>x&&i<y;i++)
+   {
+       if(i%4==0&&i%100!=0)
+   {
+           printf(""%d "",i);
+           s++;
+           if(s%5==0)
+           printf(""\n"");
+   }
+   }
+   if(s==0)
+   printf(""该区间无闰年"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_0<varb_1;
+   for(varb_2=varb_0+1,varb_3=0;varb_2>varb_0&&varb_2<varb_1;varb_2++)
+   {
+       if(varb_2%4==0&&varb_2%100!=0)
+   {
+           printf(""%d "",varb_2);
+           varb_3++;
+           if(varb_3%5==0)
+           printf(""\n"");
+   }
+   }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+}",9
+23,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d%d"",&x,&y);
+for(n=x+1;n<y;++n)
+{
+      if(n%400==0||(n%4==0&&n%100!=0))
+{printf(""%d "",n);++m;}
+
+
+         if(m%5==0)
+       printf(""\n"");
+}
+  if(m=0)
+printf(""该区间无闰年"");
+return 0;
+
+
+
+
+
+
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;++varb_2)
+{
+      if(varb_2%400==0||(varb_2%4==0&&varb_2%100!=0))
+{printf(""%d "",varb_2);++varb_3;}
+         if(varb_3%5==0)
+       printf(""\n"");
+}
+  if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}
+",10
+24,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%100==0&&n%400==0)
+{printf("" %d"",n);m++;}
+else if(n%4==0&&n%100!=0)
+{printf("" %d"",n);m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%100==0&&varb_2%400==0)
+{printf("" %d"",varb_2);varb_3++;}
+else if(varb_2%4==0&&varb_2%100!=0)
+{printf("" %d"",varb_2);varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+25,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,a,c;
+scanf(""%d %d"",&x,&y);a=x+1;c=0;
+while(a<y)
+{if(a%4==0&&a%100!=0||a%400==0)
+{printf(""%d "",a);c++;
+if(c%5==0) printf(""\n"");}
+a++;}
+if(c=0){
+printf(""该区间无闰年"");}
+
+
+}
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);varb_2=varb_0+1;varb_3=0;
+while(varb_2<varb_1)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf(""%d "",varb_2);varb_3++;
+if(varb_3%5==0) printf(""\n"");}
+varb_2++;}
+if(varb_3=0){
+printf(""该区间无闰年"");}
+}
+",5
+26,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,b;
+    b=0;
+  scanf(""%d %d"",&x,&y);
+  for(a=x+1;a<=y;a++)
+ {
+  if(a%4==0&&a%100!=0||a%400==0)
+  {
+   printf(""%5d"",a);
+   b++;
+   if(b%5==0)
+   printf(""\n"");
+ }
+ }
+   if(b==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+    varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+ {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+  {
+   printf(""%5d"",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");
+ }
+ }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",6
+27,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,n,i;
+  i=0;
+  scanf(""%d %d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0||n%100==0)||(n%400==0))
+   {printf(""%d "",n);
+   i++;
+   if(i%5==0)
+   printf(""\n"");}}
+   if(i==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {if((varb_2%4==0||varb_2%100==0)||(varb_2%400==0))
+   {printf(""%d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");}}
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+",8
+28,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j,flag=0;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {printf(""%d "",i);
+   j++;
+    if(j%5==0)
+    printf(""\n"");flag=0;
+  
+}}
+    if(flag==1)
+    printf(""该区间无闰年"");
+     
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {printf(""%d "",varb_2);
+   varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");varb_4=0;
+}}
+    if(varb_4==1)
+    printf(""该区间无闰年"");
+ return 0;
+ }",4
+29,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+  int main()
+{
+   int x,y,year,i=1;
+   scanf(""%d %d"",&x,&y);
+   for(year=x+1;year<y;year++)
+   {
+   
+   	if(year%4==0&&year%100!=0||year%400==0)
+	  {
+	  printf(""%d "",year);
+	  i++;}
+      if(i%5==1)
+	  printf(""\n"");
+	}     	 
+
+    
+    return 0;
+}",0.0,"#include<stdio.h>
+  int main()
+{
+   int varb_0,varb_1,varb_2,varb_3=1;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {
+   	if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+	  {
+	  printf(""%d "",varb_2);
+	  varb_3++;}
+      if(varb_3%5==1)
+	  printf(""\n"");
+	}     	 
+    return 0;
+}",11
+30,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int a=1,x,y,n;
+  int i=0;
+  scanf(""%d%d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0&&n%100!=0)||n%400==0)
+   {a=0;
+     printf(""%d "",n);
+     i++;
+    }
+    
+    
+     if(i%5==0)
+      printf(""\n"");}
+      if(a==1)
+      printf(""该区间无闰年"");
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0=1,x,y,n;
+  int varb_1=0;
+  scanf(""%d%d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0&&n%100!=0)||n%400==0)
+   {varb_0=0;
+     printf(""%d "",n);
+     varb_1++;
+    }
+     if(varb_1%5==0)
+      printf(""\n"");}
+      if(varb_0==1)
+      printf(""该区间无闰年"");
+    return 0;
+}",8
+31,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);++i;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);++varb_3;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+32,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=0;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d\t"",n);++i;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i=0)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=0;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d\t"",varb_2);++varb_3;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3=0)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+33,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+ int x,y,i;
+ int a=0;
+ scanf(""%d %d"",&x,&y);
+ for(i=x+1;i<y;i++)
+ {
+    if(i%100==0&&i%400==0)
+      
+      printf(""%d "",i);
+    else if(i%4==0)
+      printf(""%d "",i);
+      a++;
+      if(a%5==0)
+      printf(""\n"");
+ }
+ 
+   return 0;
+   }
+   ",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int varb_3=0;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+ {
+    if(varb_2%100==0&&varb_2%400==0)
+      printf(""%d "",varb_2);
+    else if(varb_2%4==0)
+      printf(""%d "",varb_2);
+      varb_3++;
+      if(varb_3%5==0)
+      printf(""\n"");
+ }
+   return 0;
+   }
+",2
+34,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i;
+int a=0,b=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{
+printf(""%d "",i);
+a+=1;
+b=1;
+if(a%5==0)
+printf(""\n"");
+}
+else 
+continue;
+}
+if(b=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2;
+int varb_3=0,b=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3+=1;
+b=1;
+if(varb_3%5==0)
+printf(""\n"");
+}
+else 
+continue;
+}
+if(b=0)
+printf(""该区间无闰年"");
+}
+",4
+35,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j,flag=1;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {printf(""%d "",i);
+   j++;
+    if(j%5==0)
+    printf(""\n"");flag=0;
+  
+}}
+    if(flag==1)
+    printf(""该区间无闰年"");
+     
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3,varb_4=1;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {printf(""%d "",varb_2);
+   varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");varb_4=0;
+}}
+    if(varb_4==1)
+    printf(""该区间无闰年"");
+ return 0;
+ }",9
+36,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i,a=0,b=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");}
+else if(i%4!=0)
+continue;
+}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2,varb_3=0,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");}
+else if(varb_2%4!=0)
+continue;
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",2
+37,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=0;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);
+        ++i;
+        }
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==0)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=0;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);
+        ++varb_3;
+        }
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+    return 0;
+}",9
+38,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=1;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);i++;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==1)
+    printf(""该区间无闰年"");
+    return -1;
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=1;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);varb_3++;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==1)
+    printf(""该区间无闰年"");
+    return -1;
+    return 0;
+}",8
+39,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i;
+int a=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{
+printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");}
+else if(i%4!=0)
+continue;
+}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2;
+int varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");}
+else if(varb_2%4!=0)
+continue;
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",13
+40,2c9f30a56e1ebafc016e345bfa670d14,"
+   #include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0||i%400==0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");}
+   
+    if(j==0)
+    printf(""该区间无闰年"");
+ }
+   
+ return 0;
+ }",0.0,"   #include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");}
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+ }
+ return 0;
+ }",4
+41,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+  int main()
+{
+   int x,y,year,i;
+   scanf(""%d %d"",&x,&y);
+   for(year=x+1;year<y;year++)
+   {
+   
+   	if(year%4==0&&year%100!=0||year%400==0)
+     { printf(""%d "",year);
+      i++;} 
+	else if(i%5==0)
+	  printf(""\n"");
+	}     	 
+
+    
+    return 0;
+}",0.0,"#include<stdio.h>
+  int main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {
+   	if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+     { printf(""%d "",varb_2);
+      varb_3++;} 
+	else if(varb_3%5==0)
+	  printf(""\n"");
+	}     	 
+    return 0;
+}",4
+42,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+main()
+{
+	int year1,year2,i,z=0;
+	scanf(""%d %d"",&year1,&year2);
+	for(i=year1;i<=year2;i++)
+	{
+		if((i%4==0&&i%100!=0)||(i%400==0))
+		{
+		printf(""%d "",i); z++;
+		if(z%5==0)
+	    printf(""\n"");
+	    }
+	    
+		
+	}
+	
+}",0.0,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1,varb_2,varb_3=0;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	for(varb_2=varb_0;varb_2<=varb_1;varb_2++)
+	{
+		if((varb_2%4==0&&varb_2%100!=0)||(varb_2%400==0))
+		{
+		printf(""%d "",varb_2); varb_3++;
+		if(varb_3%5==0)
+	    printf(""\n"");
+	    }
+	}
+}",6
+43,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,n,i;
+  i=0;
+  scanf(""%d %d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0||n%100==0)||(n%400==0))
+   {printf(""%4d "",n);
+   i++;
+   if(i%5==0)
+   printf(""\n"");}}
+   if(i==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {if((varb_2%4==0||varb_2%100==0)||(varb_2%400==0))
+   {printf(""%4d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");}}
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+",8
+44,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+ int x,y,i;
+ int a=0;
+ scanf(""%d %d"",&x,&y);
+ for(i=x+1;i<y;i++)
+ {
+    if(i%100==0&&i%400==0)
+    {
+      ++a;
+      printf(""%d "",i);}
+    else if(i%4==0)
+     { printf(""%d "",i);
+      ++a;}
+      if(a%5==0)
+      printf(""\n"");}
+      if(a==0)
+      printf(""该区间无闰年"");
+ 
+ 
+   return 0;
+   }
+   ",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int varb_3=0;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+ {
+    if(varb_2%100==0&&varb_2%400==0)
+    {
+      ++varb_3;
+      printf(""%d "",varb_2);}
+    else if(varb_2%4==0)
+     { printf(""%d "",varb_2);
+      ++varb_3;}
+      if(varb_3%5==0)
+      printf(""\n"");}
+      if(varb_3==0)
+      printf(""该区间无闰年"");
+   return 0;
+   }
+",2
+45,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+
+int main()
+
+{
+
+    int x,y,t,i,n,js=0;
+
+    scanf(""%d %d"",&x,&y);
+
+    n=y-x;
+
+    for( i=1;i<n;i++)
+
+    {
+
+        
+
+        t=i+x;
+
+        if(t%4==0&&t%100!=0||t%400==0)
+
+        {printf(""%d"",t);
+
+        js++;
+
+        if(js%5!=0)
+
+        printf("" "");
+
+        else printf(""\n"");}
+
+    }
+
+    printf(""\b"");
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_4=varb_1-varb_0;
+    for( varb_3=1;varb_3<varb_4;varb_3++)
+    {
+        varb_2=varb_3+varb_0;
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d"",varb_2);
+        varb_5++;
+        if(varb_5%5!=0)
+        printf("" "");
+        else printf(""\n"");}
+    }
+    printf(""\b"");
+}",17
+46,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main()
+{
+int x,y,i=0;
+scanf(""%d %d"",&x,&y);
+x+=1;
+for(;x<y;x++){
+if((x%4==0&&x%100!=0)||x%400==0){ 
+printf(""%d "",x);
+i++;
+if(i%5==0)
+printf(""\n"");
+}
+}
+if(i==0)
+printf(""此区间无闰年"");
+return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_0+=1;
+for(;varb_0<varb_1;varb_0++){
+if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0){ 
+printf(""%d "",varb_0);
+varb_2++;
+if(varb_2%5==0)
+printf(""\n"");
+}
+}
+if(varb_2==0)
+printf(""此区间无闰年"");
+return 0;
+}",16
+47,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;n=x+1;
+scanf(""%d %d"",&x,&y);
+while(n<y)
+{if(n%4==0&&n%100!=0||n%400==0)
+{printf("" %d"",n);
+m++;}
+if(m%5==0)
+printf(""\n"");
+n++;
+}
+if(m<1)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;varb_2=varb_0+1;
+scanf(""%d %d"",&varb_0,&varb_1);
+while(varb_2<varb_1)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf("" %d"",varb_2);
+varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+varb_2++;
+}
+if(varb_3<1)
+printf(""该区间无闰年"");
+return 0;
+}",5
+48,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y;
+int t=0;
+int n=0;
+scanf(""%d %d"",&x,&y);
+if((n%4!=0||n%100==0)&&n%400==0)
+printf(""该区间无闰年"");
+for(n=x+1;n<y;n++)
+{
+if((n%4==0&&n%100!=0)||n%400==0)
+{
+{
+printf(""%d "",n);
+t++;
+}
+if(t%5==0)
+printf(""\n"");
+}
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2=0;
+int varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+if((varb_3%4!=0||varb_3%100==0)&&varb_3%400==0)
+printf(""该区间无闰年"");
+for(varb_3=varb_0+1;varb_3<varb_1;varb_3++)
+{
+if((varb_3%4==0&&varb_3%100!=0)||varb_3%400==0)
+{
+{
+printf(""%d "",varb_3);
+varb_2++;
+}
+if(varb_2%5==0)
+printf(""\n"");
+}
+}
+return 0;
+}
+",8
+49,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%4==0&&n%100!=0||n%400==0)
+{printf("" %d"",n);
+m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m<1)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf("" %d"",varb_2);
+varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3<1)
+printf(""该区间无闰年"");
+return 0;
+}",6
+50,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+ {
+  int n,x,y,b;
+  
+  b=0;
+  
+  scanf(""%d%d"",&x,&y);
+ 
+ 
+  for(n=x+1;n<y;++n)
+{
+  if((n%100==0&&n%400==0)||(n%4==0&&n%100!=0))
+ { 
+  
+  ++b;
+ 
+ 
+ 
+  printf(""%d "",n);
+  }
+ if(b%5==0)
+ {
+  printf(""\n"");
+  }
+  
+  
+  }
+ if(b==0)
+ printf(""该区间无闰年"");
+return 0;
+  }
+",0.0,"#include<stdio.h>
+int main()
+ {
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d%d"",&varb_1,&varb_2);
+  for(varb_0=varb_1+1;varb_0<varb_2;++varb_0)
+{
+  if((varb_0%100==0&&varb_0%400==0)||(varb_0%4==0&&varb_0%100!=0))
+ { 
+  ++varb_3;
+  printf(""%d "",varb_0);
+  }
+ if(varb_3%5==0)
+ {
+  printf(""\n"");
+  }
+  }
+ if(varb_3==0)
+ printf(""该区间无闰年"");
+return 0;
+  }
+",13
+51,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,c,cnt;
+   cnt=0;
+  scanf(""%d%d"",&x,&y);
+  for(c=x+1;c<y;c++)
+  {if(c%4==0)
+  printf(""%d "",c);
+   cnt++;
+  if(cnt%5==0)
+  printf(""\n"");}  
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_3=0;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {if(varb_2%4==0)
+  printf(""%d "",varb_2);
+   varb_3++;
+  if(varb_3%5==0)
+  printf(""\n"");}  
+}",4
+52,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,b;
+    b=0;
+  scanf(""%d %d"",&x,&y);
+  for(a=x+1;a<=y;a++)
+ {
+  if(a%4==0&&a%100!=0||a%400==0)
+  {
+   printf(""%5d "",a);
+   b++;
+   if(b%5==0)
+   printf(""\n"");
+ }
+ }
+   if(b==0)
+   printf(""该区间无闰年"");
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+    varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+ {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+  {
+   printf(""%5d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");
+ }
+ }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+ } ",4
+53,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%100==0&&n%400==0)
+{printf(""%d\t"",n);m++;}
+else if(n%4==0&&n%100!=0)
+{printf(""%d\t"",n);m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%100==0&&varb_2%400==0)
+{printf(""%d\t"",varb_2);varb_3++;}
+else if(varb_2%4==0&&varb_2%100!=0)
+{printf(""%d\t"",varb_2);varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+54,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=1;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);i++;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==1)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=1;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);varb_3++;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==1)
+    printf(""该区间无闰年"");
+    return 0;
+}",8
+55,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i,a=0,b=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{printf(""%d "",i);
+a+=1;
+b=1;
+if(a%5==0)
+printf(""\n"");}
+else if(i%4!=0)
+continue;}
+if(b=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2,varb_3=0,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf(""%d "",varb_2);
+varb_3+=1;
+varb_4=1;
+if(varb_3%5==0)
+printf(""\n"");}
+else if(varb_2%4!=0)
+continue;}
+if(varb_4=0)
+printf(""该区间无闰年"");
+}
+",2
+56,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%4==0&&n%100!=0||n%400==0)
+{printf("" %d"",n);
+m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m==0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf("" %d"",varb_2);
+varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3==0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+57,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+
+int main()
+{
+	int x, y,i = 0;
+	scanf(""%d %d"", &x, &y);
+	for (x++;x < y; x++)
+	{
+		if ((x % 400 == 0) || (x % 4 == 0 && x % 100 != 0))
+		{
+			printf(""%d"", x);
+			i++;
+			if (i % 5 == 0)
+			{
+				printf(""\n"");
+			}
+			else
+			{
+				printf("" "");
+			}
+		}
+	}
+	if (i == 0)
+	{
+		printf(""该区间没有闰年"");
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0, varb_1,varb_2 = 0;
+	scanf(""%d %d"", &varb_0, &varb_1);
+	for(varb_0++;varb_0 < varb_1; varb_0++)
+	{
+		if((varb_0 % 400 == 0) ||(varb_0 % 4 == 0 && varb_0 % 100 != 0))
+		{
+			printf(""%d"", varb_0);
+			varb_2++;
+			if(varb_2 % 5 == 0)
+			{
+				printf(""\n"");
+			}
+			else
+			{
+				printf("" "");
+			}
+		}
+	}
+	if(varb_2 == 0)
+	{
+		printf(""该区间没有闰年"");
+	}
+	return 0;
+}",24
+58,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y;
+int t=0;
+int n=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{
+if((n%4==0&&n%100!=0)||n%400==0)
+{
+{
+printf(""%d "",n);
+t++;
+}
+if(t%5==0)
+printf(""\n"");
+}
+else
+{
+printf(""该区间无闰年"");
+}
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2=0;
+int varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_3=varb_0+1;varb_3<varb_1;varb_3++)
+{
+if((varb_3%4==0&&varb_3%100!=0)||varb_3%400==0)
+{
+{
+printf(""%d "",varb_3);
+varb_2++;
+}
+if(varb_2%5==0)
+printf(""\n"");
+}
+else
+{
+printf(""该区间无闰年"");
+}
+}
+return 0;
+}
+",8
+59,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,b=0;
+for(n=x+1;n<=y;n++)
+{if(n%4==0&&n%100!=0||n%400==0)
+printf(""%d ,"",n);
+b++;
+if(b%5==0)
+printf(""\n"");
+
+
+}
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3=0;
+for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+printf(""%d ,"",varb_2);
+varb_3++;
+if(varb_3%5==0)
+printf(""\n"");
+}
+}
+",4
+60,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,a,c;
+scanf(""%d %d"",&x,&y);a=x+1;c=0;
+while(a<y)
+{if(a%4==0&&a%100!=0||a%400==0)
+{printf(""%d "",a);c++;}
+if(c%5==0) printf(""\n"");
+a++;}
+if(c=0){
+printf(""该区间无闰年"");}
+
+
+}
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);varb_2=varb_0+1;varb_3=0;
+while(varb_2<varb_1)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf(""%d "",varb_2);varb_3++;}
+if(varb_3%5==0) printf(""\n"");
+varb_2++;}
+if(varb_3=0){
+printf(""该区间无闰年"");}
+}
+",5
+61,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i=0;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);i++;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i==0)
+    printf(""该区间无闰年"");
+    return -1;
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=0;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);varb_3++;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+    return -1;
+    return 0;
+}",4
+62,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+  int main()
+{
+   int x,y,year,i=0;
+   scanf(""%d %d"",&x,&y);
+   for(year=x+1;year<y;year++)
+   {
+   
+   	if(year%4==0&&year%100!=0||year%400==0)
+      printf(""%d "",year);
+      i++; 
+	
+	}     	 
+if(i%5==0)
+	  printf(""\n"");
+    
+    return 0;
+}",0.0,"#include<stdio.h>
+  int main()
+{
+   int varb_0,varb_1,varb_2,varb_3=0;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {
+   	if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+      printf(""%d "",varb_2);
+      varb_3++; 
+	}     	 
+if(varb_3%5==0)
+	  printf(""\n"");
+    return 0;
+}",4
+63,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,n,i;
+  i=0;
+  scanf(""%d %d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0||n%100==0)||(n%400==0))
+   {printf(""%d "",n);
+   i++;
+   if(i%5==0)
+   printf(""\n"");}}
+   if(i==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {if((varb_2%4==0||varb_2%100==0)||(varb_2%400==0))
+   {printf(""%d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");}}
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+",8
+64,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+
+int main()
+{
+   int x,y;
+   int n=0,flag=0;
+   int i;
+   scanf(""%d %d"",&x,&y);
+   for(i=x+1;i<y;i++)
+   {
+   if(i%4==0 && i%100!=0 || i%400==0)
+   {
+   printf(""%d "",i);
+   
+    n++;    
+   if(n%5==0)
+   printf(""\n"");
+   flag=0;
+   }
+   
+   
+   
+   if(flag=0)
+   printf(""该区间无闰年"");
+   
+   
+   
+   }
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1;
+   int varb_2=0,flag=0;
+   int varb_3;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   for(varb_3=varb_0+1;varb_3<varb_1;varb_3++)
+   {
+   if(varb_3%4==0 && varb_3%100!=0 || varb_3%400==0)
+   {
+   printf(""%d "",varb_3);
+    varb_2++;    
+   if(varb_2%5==0)
+   printf(""\n"");
+   flag=0;
+   }
+   if(flag=0)
+   printf(""该区间无闰年"");
+   }
+   return 0;
+}",16
+65,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i,a=0,b=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{
+printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");}
+else if(i%4!=0)
+continue;
+}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2,varb_3=0,varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");}
+else if(varb_2%4!=0)
+continue;
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",2
+66,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%100==0&&n%400==0)
+{printf(""%d\t"",n);m++;}
+else if(n%4==0&&n%100!=0)
+{printf(""%d\t"",n);m++;}
+}
+if(m%5==0)
+printf(""\n"");
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%100==0&&varb_2%400==0)
+{printf(""%d\t"",varb_2);varb_3++;}
+else if(varb_2%4==0&&varb_2%100!=0)
+{printf(""%d\t"",varb_2);varb_3++;}
+}
+if(varb_3%5==0)
+printf(""\n"");
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+67,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i,a=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");}
+else if(i%4!=0)
+continue;}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2,varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");}
+else if(varb_2%4!=0)
+continue;}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",2
+68,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%4==0&&n%100==0||n%400==0)
+{printf("" %d"",n);m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%4==0&&varb_2%100==0||varb_2%400==0)
+{printf("" %d"",varb_2);varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+69,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d%d"",&x,&y);
+for(n=x+1;n<y;++n)
+{
+      if(n%400==0&&(n%4==0&&n%100!=0))
+{printf(""%d "",n);++m;}
+
+
+         if(m%5==0)
+       printf(""\n"");
+}
+  if(m=0)
+printf(""该区间无闰年"");
+return 0;
+
+
+
+
+
+
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;++varb_2)
+{
+      if(varb_2%400==0&&(varb_2%4==0&&varb_2%100!=0))
+{printf(""%d "",varb_2);++varb_3;}
+         if(varb_3%5==0)
+       printf(""\n"");
+}
+  if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}
+",9
+70,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int year1, year2, year3, a, b, i = 0;
+    scanf_s(""%d %d"", &year1, &year2);
+    a = year2 - year1;  
+        for (year3 = year1 + 1; year3 <year2; year3++)
+        {
+            if (year3 % 4 == 0)
+            {
+                printf(""%d "", year3);
+                i++;
+                if (i % 5 == 0)
+                {
+                    printf(""\n"");
+                }
+
+            }
+          
+        }       
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0, varb_1, varb_2, varb_3, varb_4, varb_5 = 0;
+    scanf_s(""%d %d"", &varb_0, &varb_1);
+    varb_3 = varb_1 - varb_0;  
+        for(varb_2 = varb_0 + 1; varb_2 <varb_1; varb_2++)
+        {
+            if(varb_2 % 4 == 0)
+            {
+                printf(""%d "", varb_2);
+                varb_5++;
+                if(varb_5 % 5 == 0)
+                {
+                    printf(""\n"");
+                }
+            }
+        }       
+}
+",4
+71,2c9f30a56e1ebafc016e345bfa670d14,"
+   #include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0||i%400==0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+   
+    if(j==0)
+    printf(""该区间无闰年"");}
+ }
+   
+ return 0;
+ }",0.0,"   #include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");}
+ }
+ return 0;
+ }",4
+72,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,b;
+    b=0;
+  scanf(""%d %d"",&x,&y);
+  for(a=x+1;a<=y;a++)
+ {
+  if((a%4==0&&a%100!=0)||a%400==0)
+  {
+   printf(""%5d "",a);
+   b++;
+   if(b%5==0)
+   printf(""\n"");
+ }
+ }
+   if(b==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+    varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<=varb_1;varb_2++)
+ {
+  if((varb_2%4==0&&varb_2%100!=0)||varb_2%400==0)
+  {
+   printf(""%5d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");
+ }
+ }
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+   return 0;
+ } ",7
+73,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,a,c;
+  scanf(""%d%d"",&x,&y);
+  a=x+1;
+  c=0;
+  while(a<y)
+  {
+  if(a%4==0&&a%100!=0||a%400==0)
+  {
+   printf(""   %d"",a);
+   c++;
+  if(c%5==0)
+  printf(""\n"");
+  if(c<1)
+  printf(""该区间无闰年"");
+  }
+  a++;
+   }
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  varb_2=varb_0+1;
+  varb_3=0;
+  while(varb_2<varb_1)
+  {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+  {
+   printf(""   %d"",varb_2);
+   varb_3++;
+  if(varb_3%5==0)
+  printf(""\n"");
+  if(varb_3<1)
+  printf(""该区间无闰年"");
+  }
+  varb_2++;
+   }
+  return 0;
+}",16
+74,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j,flag=1;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {printf(""%d "",i);
+   j++;
+    if(j%5==0)
+    printf(""\n"");flag=0;
+  
+}}
+    if(flag=1)
+    printf(""该区间无闰年"");
+     
+   
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3,varb_4=1;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {printf(""%d "",varb_2);
+   varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");varb_4=0;
+}}
+    if(varb_4=1)
+    printf(""该区间无闰年"");
+ return 0;
+ }",9
+75,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,m;
+m=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{if(n%4==0&&n%100!=0||n%400==0)
+{printf("" %d"",n);
+m++;}
+if(m%5==0)
+printf(""\n"");
+}
+if(m=0)
+printf(""该区间无闰年"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{printf("" %d"",varb_2);
+varb_3++;}
+if(varb_3%5==0)
+printf(""\n"");
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+return 0;
+}",6
+76,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+ int x,y,i;
+ int a=0;
+ scanf(""%d %d"",&x,&y);
+ for(i=x+1;i<y;i++)
+ {
+    if(i%100==0&&i%400==0)
+    {
+      ++a;
+      printf(""%d "",i);}
+    else if(i%4==0)
+     { printf(""%d "",i);
+      a++;}
+      if(a%5==0)
+      printf(""\n"");}
+      if(a==0)
+      printf(""该区间无闰年"");
+ 
+ 
+   return 0;
+   }
+   ",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int varb_3=0;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+ {
+    if(varb_2%100==0&&varb_2%400==0)
+    {
+      ++varb_3;
+      printf(""%d "",varb_2);}
+    else if(varb_2%4==0)
+     { printf(""%d "",varb_2);
+      varb_3++;}
+      if(varb_3%5==0)
+      printf(""\n"");}
+      if(varb_3==0)
+      printf(""该区间无闰年"");
+   return 0;
+   }
+",2
+77,2c9f30a56e1ebafc016e345bfa670d14,"#include <stdio.h>
+int main(){
+int x,y,i;
+int a=0;
+scanf(""%d%d"",&x,&y);
+for(i=x+1;i<y;i++)
+{
+if(i%4==0&&i%100!=0||i%400==0)
+{
+printf(""%d "",i);
+a+=1;
+if(a%5==0)
+printf(""\n"");
+}
+else 
+continue;
+}
+if(a=0)
+printf(""该区间无闰年"");
+}
+
+
+",0.0,"#include <stdio.h>
+int main(){
+int varb_0,varb_1,varb_2;
+int varb_3=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3+=1;
+if(varb_3%5==0)
+printf(""\n"");
+}
+else 
+continue;
+}
+if(varb_3=0)
+printf(""该区间无闰年"");
+}
+",18
+78,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {  printf(""%d"",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+    else
+    printf(""该区间无闰年"");}
+   }
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {  printf(""%d"",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    else
+    printf(""该区间无闰年"");}
+   }
+ return 0;
+ }",6
+79,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,i,j,flag=1;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");flag=0;
+   }}
+    if(flag==1)
+    printf(""该区间无闰年"");
+    
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3,varb_4=1;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");varb_4=0;
+   }}
+    if(varb_4==1)
+    printf(""该区间无闰年"");
+ return 0;
+ }",9
+80,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+	int i,x,y;
+	int count=0;
+	scanf(""%d %d"",&x,&y);
+	for(i=x+1;i<y;i++)
+	{
+		if((i%4==0&&i%100!=0)||i%400==0)
+		count+=1,
+		printf(""%d "",i);
+		if(count>0&&count%5==0)
+	    {
+			printf(""\n"");
+		   count=0;
+                	}
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	int varb_3=0;
+	scanf(""%d %d"",&varb_1,&varb_2);
+	for(varb_0=varb_1+1;varb_0<varb_2;varb_0++)
+	{
+		if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+		varb_3+=1,
+		printf(""%d "",varb_0);
+		if(varb_3>0&&varb_3%5==0)
+	    {
+			printf(""\n"");
+		   varb_3=0;
+                	}
+	}
+	return 0;
+}",4
+81,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=0;n<y;n++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d "",n);++i;}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i=0)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=0;varb_2<varb_1;varb_2++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d "",varb_2);++varb_3;}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3=0)
+    printf(""该区间无闰年"");
+    return 0;
+}",4
+82,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+  int x,y,n,i;
+  i=0;
+  scanf(""%d %d"",&x,&y);
+  for(n=x+1;n<y;n++)
+   {if((n%4==0||n%100==0)||(n%400==0))
+   {printf(""%4d "",n);
+   i++;
+   if(i%5==0)
+   printf(""\n"");}}
+   if(i==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+   {if((varb_2%4==0||varb_2%100==0)||(varb_2%400==0))
+   {printf(""%4d "",varb_2);
+   varb_3++;
+   if(varb_3%5==0)
+   printf(""\n"");}}
+   if(varb_3==0)
+   printf(""该区间无闰年"");
+  return 0;
+}
+",8
+83,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int x,y,n,i;
+    scanf(""%d %d"",&x,&y);
+    for(n=x+1,i=1;n<y;n++,i++)
+    {
+        if(n%4==0&&n%100!=0||n%400==0)
+        {printf(""%d"",n);}
+        if(i%5==0)
+        printf(""\n"");
+    }
+    if(i=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    for(varb_2=varb_0+1,varb_3=1;varb_2<varb_1;varb_2++,varb_3++)
+    {
+        if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+        {printf(""%d"",varb_2);}
+        if(varb_3%5==0)
+        printf(""\n"");
+    }
+    if(varb_3=1)
+    printf(""该区间无闰年"");
+    return 0;
+}",6
+84,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+    int year1, year2, year3, a, b, i = 0;
+    scanf_s(""%d %d"", &year1, &year2);
+    a = year2 - year1;  
+        for (year3 = year1 + 1; year3 <year2; year3++)
+        {
+            if (year3 % 4 == 0||year3%100==0||year3%400==0)
+            {
+                printf(""%d "", year3);
+                i++;
+                if (i % 5 == 0)
+                {
+                    printf(""\n"");
+                }
+
+            }
+          
+        }       
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0, varb_1, varb_2, varb_3, varb_4, varb_5 = 0;
+    scanf_s(""%d %d"", &varb_0, &varb_1);
+    varb_3 = varb_1 - varb_0;  
+        for(varb_2 = varb_0 + 1; varb_2 <varb_1; varb_2++)
+        {
+            if(varb_2 % 4 == 0||varb_2%100==0||varb_2%400==0)
+            {
+                printf(""%d "", varb_2);
+                varb_5++;
+                if(varb_5 % 5 == 0)
+                {
+                    printf(""\n"");
+                }
+            }
+        }       
+}
+",4
+85,2c9f30a56e1ebafc016e345bfa670d14,"
+   #include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0||i%400==0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+   }
+    if(j==0)
+    printf(""该区间无闰年"");
+ }
+   
+ return 0;
+ }",0.0,"   #include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0||varb_2%400==0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+   }
+    if(varb_3==0)
+    printf(""该区间无闰年"");
+ }
+ return 0;
+ }",4
+86,2c9f30a56e1ebafc016e345bfa670d14,"
+   #include<stdio.h>
+int main()
+{
+  int x,y,i,j;
+  j=0;
+  scanf(""%d %d"",&x,&y);
+  for(i=x+1;i<y;i++)
+  {
+  if(i%4==0&&i%100!=0)
+   {printf(""%d "",i);
+    j++;
+    if(j%5==0)
+    printf(""\n"");
+
+    if(j==0)
+    printf(""该区间无闰年"");}
+ }
+   
+ return 0;
+ }",0.0,"   #include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_3=0;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+  {
+  if(varb_2%4==0&&varb_2%100!=0)
+   {printf(""%d "",varb_2);
+    varb_3++;
+    if(varb_3%5==0)
+    printf(""\n"");
+    if(varb_3==0)
+    printf(""该区间无闰年"");}
+ }
+ return 0;
+ }",4
+87,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y;
+int t=0;
+int n=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{
+if((n%4==0&&n%100!=0)||n%400==0)
+{
+{
+printf(""%d "",n);
+t++;
+}
+if(t%5==0)
+printf(""\n"");
+}
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+int varb_2=0;
+int varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_3=varb_0+1;varb_3<varb_1;varb_3++)
+{
+if((varb_3%4==0&&varb_3%100!=0)||varb_3%400==0)
+{
+{
+printf(""%d "",varb_3);
+varb_2++;
+}
+if(varb_2%5==0)
+printf(""\n"");
+}
+}
+return 0;
+}
+",8
+88,2c9f30a56e1ebafc016e345bfa670d14,"#include<stdio.h>
+int main()
+{
+int x,y,n,t=0;
+scanf(""%d %d"",&x,&y);
+for(n=x+1;n<y;n++)
+{
+if(t%5==0)
+printf(""\n"");
+if((n%4==0&&n%100!=0)||n%400==0)
+{
+printf(""%d "",n);
+t++;
+}
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0+1;varb_2<varb_1;varb_2++)
+{
+if(varb_3%5==0)
+printf(""\n"");
+if((varb_2%4==0&&varb_2%100!=0)||varb_2%400==0)
+{
+printf(""%d "",varb_2);
+varb_3++;
+}
+}
+return 0;
+}
+",9

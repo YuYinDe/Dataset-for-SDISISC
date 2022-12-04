@@ -1,0 +1,65 @@
+,id,code,is_true,errorline
+0,2c9f30a56e1ebafc016e6e5fa4184a50,"#include<stdio.h>
+double func_0(double varb_0);
+int main()
+{
+	double varb_0;
+	scanf(""%lf"",&varb_0);
+	func_0(varb_0);
+	printf(""sum = %.6lf"",func_0(varb_0));
+}
+double func_0(double varb_0)
+{
+	double varb_1,varb_2=1,varb_3,varb_4=0,varb_5=1;
+    for(;varb_5<=varb_0;varb_5++)
+	    {
+		varb_1=varb_5;
+		varb_2=(varb_5+1)*varb_5*varb_2;
+		varb_3=varb_1/varb_2;
+		varb_4=varb_3+varb_4;
+	    }
+	return varb_4;
+}",0.0,16
+1,2c9f30a56e1ebafc016e6e5fa4184a50,"#include<stdio.h>
+double func_0(int varb_2)
+{
+	int varb_0;
+    float varb_1=1,temp2,sum=0;
+	for(varb_0=2;varb_0<=varb_2;varb_0++)
+	{
+		varb_1=varb_0*varb_1;
+	    temp2=varb_0-1.0;
+		sum=sum+temp2/varb_1;
+	}
+	return sum;
+}
+int main()
+{
+	int varb_2;
+	scanf(""%d"",&varb_2);
+    printf(""sum = %.6f"",func_0(varb_2));
+	return 0;
+}",0.0,6
+2,2c9f30a56e1ebafc016e6e5fa4184a50,"#include <stdio.h>
+double func_0(int varb_0);
+int main()
+{
+  int varb_0,varb_1;
+  double varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  varb_3=func_0(varb_1);
+  printf(""%lf"",varb_3);
+  return 0;
+}
+double func_0(int varb_0)
+{
+  double varb_1=1,b=1,c,sum=0;
+  for(varb_1;varb_1<=varb_0;varb_1++)
+  {
+    b=b*(varb_1+1);
+    c=varb_1/b;
+    sum=sum+c;
+  }
+  return sum;
+}",0.0,10

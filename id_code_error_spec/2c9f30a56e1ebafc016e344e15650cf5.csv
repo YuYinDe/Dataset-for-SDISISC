@@ -1,0 +1,2646 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,x,y,m,z,max=0;
+scanf(""%d"",&n);
+for(m=1;m<=n;m++)
+{
+scanf(""%d %d"",&x,&y);
+if(y<0||y>100)
+{
+printf(""非法输入!"");
+break;
+}
+if(y>max)
+{
+max=y;
+z=x;
+}
+}
+printf(""%d"",z);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d %d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{
+printf(""非法输入!"");
+break;
+}
+if(varb_2>varb_5)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",3,2c9f30a56e1ebafc016e344e15650cf5_0.csv
+1,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+   int i,j,n,xh,max,b;
+max=0;
+   scanf(""%d"",&n);
+   for(i=0;i<=n;i++)
+   {  
+     scanf(""%d %d"",&xh,&j);
+     if(j>100||j<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(j>max)
+   {max=j;b=xh;}
+    }
+printf(""%d"",b);
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_4=0;
+   scanf(""%d"",&varb_2);
+   for(varb_0=0;varb_0<=varb_2;varb_0++)
+   {  
+     scanf(""%d %d"",&varb_3,&varb_1);
+     if(varb_1>100||varb_1<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(varb_1>varb_4)
+   {varb_4=varb_1;varb_5=varb_3;}
+    }
+printf(""%d"",varb_5);
+}
+",11,2c9f30a56e1ebafc016e344e15650cf5_1.csv
+2,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0;//N代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	 while (a<N)
+	 {
+		a++;
+		scanf(""%d %d"",&X,&F);
+		if(F<0&&F>100)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		 else
+		{
+		
+		  if(max<F)  
+		  {
+		   max=F;
+		   x=X;
+		  }
+		}
+	 } 
+	 printf(""%d"",X);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0;
+	scanf(""%d"",&varb_0);
+	 while(varb_1<varb_0)
+	 {
+		varb_1++;
+		scanf(""%d %d"",&varb_2,&varb_3);
+		if(varb_3<0&&varb_3>100)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		 else
+		{
+		  if(varb_5<varb_3)  
+		  {
+		   varb_5=varb_3;
+		   varb_4=varb_2;
+		  }
+		}
+	 } 
+	 printf(""%d"",varb_2);
+	return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_2.csv
+3,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0;//N代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	 while (a<N)
+	 {
+		a++;
+		scanf(""%d%d"",&X,&F);
+		if(F<0)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		else if(F>100)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		else
+		{
+		
+		  if(max<F)  
+		  {
+		   max=F;
+		   x=X;
+		  }
+		}
+	 } 
+	 printf(""%d"",X);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0;
+	scanf(""%d"",&varb_0);
+	 while(varb_1<varb_0)
+	 {
+		varb_1++;
+		scanf(""%d%d"",&varb_2,&varb_3);
+		if(varb_3<0)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		else if(varb_3>100)
+		{
+			printf(""非法输入!"");
+			break;
+		} 
+		else
+		{
+		  if(varb_5<varb_3)  
+		  {
+		   varb_5=varb_3;
+		   varb_4=varb_2;
+		  }
+		}
+	 } 
+	 printf(""%d"",varb_2);
+	return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_3.csv
+4,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   printf(""%d"",d);
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   printf(""%d"",varb_4);
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_4.csv
+5,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+
+int main()
+
+{
+
+    int a,b,f1,f2,n,zjl,kg=0,i;
+
+    scanf(""%d"",&n);
+
+    scanf(""%d %d"",&a,&f1);
+
+    for( i=1;i<n;i++)
+
+    {
+
+        if(f1<0||f1>100){printf(""非法输入!"");break;kg=1;}
+
+        scanf(""%d %d"",&b,&f2);
+
+        
+
+        if(f2>100||f2<0){printf(""非法输入!"");break;kg=1;}
+
+        if(f1<f2)
+
+        {
+
+            zjl=a;
+
+            a=b;
+
+            b=zjl;
+
+        }
+
+    }
+
+    if(kg==0)
+
+    printf(""%d"",a);
+
+    
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7;
+    scanf(""%d"",&varb_4);
+    scanf(""%d %d"",&varb_0,&varb_2);
+    for( varb_7=1;varb_7<varb_4;varb_7++)
+    {
+        if(varb_2<0||varb_2>100){printf(""非法输入!"");break;varb_6=1;}
+        scanf(""%d %d"",&varb_1,&varb_3);
+        if(varb_3>100||varb_3<0){printf(""非法输入!"");break;varb_6=1;}
+        if(varb_2<varb_3)
+        {
+            varb_5=varb_0;
+            varb_0=varb_1;
+            varb_1=varb_5;
+        }
+    }
+    if(varb_6==0)
+    printf(""%d"",varb_0);
+}",9,2c9f30a56e1ebafc016e344e15650cf5_5.csv
+6,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,x,y,m,z,max=0;
+scanf(""%d"",&n);
+for(m=1;m<=n;m++)
+{
+scanf(""%d %d"",&x,&y);
+if(y<0||y>100)
+{
+printf(""非法输入"");
+return -1;
+}
+if(y>max)
+{
+max=y;
+z=x;
+}
+}
+printf(""%d"",z);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d %d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{
+printf(""非法输入"");
+return -1;
+}
+if(varb_2>varb_5)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_6.csv
+7,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+}
+else if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+}
+else if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_7.csv
+8,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+    int num,id,s,a,b,i;
+    i=1;
+    scanf(""%d"",&num);
+    while(num>=1)
+    {
+        scanf(""%d %d"",&id,&s);
+        if(s<0||s>100)
+        {
+        printf(""非法输入!"");
+        return 0;
+        }
+        else
+        {
+    if(i==1)
+    {
+        a=id;
+        b=s;
+    }
+    else
+    {
+        if(s>b)
+        {
+            a=id;
+            b=s;
+        }
+        else if(s=b)
+        {
+        }
+        }
+    i++;
+    num--;
+    }
+    }
+    printf(""%d"",a);
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    varb_5=1;
+    scanf(""%d"",&varb_0);
+    while(varb_0>=1)
+    {
+        scanf(""%d %d"",&varb_1,&varb_2);
+        if(varb_2<0||varb_2>100)
+        {
+        printf(""非法输入!"");
+        return 0;
+        }
+        else
+        {
+    if(varb_5==1)
+    {
+        varb_3=varb_1;
+        varb_4=varb_2;
+    }
+    else
+    {
+        if(varb_2>varb_4)
+        {
+            varb_3=varb_1;
+            varb_4=varb_2;
+        }
+        else if(varb_2=varb_4)
+        {
+        }
+        }
+    varb_5++;
+    varb_0--;
+    }
+    }
+    printf(""%d"",varb_3);
+}",38,2c9f30a56e1ebafc016e344e15650cf5_8.csv
+9,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+    int a,b,f1,f2,n,zjl,kg=0,i;
+    scanf(""%d"",&n);
+    scanf(""%d %d"",&a,&f1);
+    for( i=1;i<n;i++)
+    {
+        if(f1<0||f1>100){printf(""非法输入!"");kg=1;break;}
+        scanf(""%d %d"",&b,&f2);
+        if(f2>100||f2<0){printf(""非法输入!"");kg=1;break;}
+        if(f1>f2)
+        {          
+         printf(""%f"",a);       
+        }
+       else
+       {
+       printf (""%f"",b);
+       }
+     }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7;
+    scanf(""%d"",&varb_4);
+    scanf(""%d %d"",&varb_0,&varb_2);
+    for( varb_7=1;varb_7<varb_4;varb_7++)
+    {
+        if(varb_2<0||varb_2>100){printf(""非法输入!"");varb_6=1;break;}
+        scanf(""%d %d"",&varb_1,&varb_3);
+        if(varb_3>100||varb_3<0){printf(""非法输入!"");varb_6=1;break;}
+        if(varb_2>varb_3)
+        {          
+         printf(""%f"",varb_0);       
+        }
+       else
+       {
+       printf(""%f"",varb_1);
+       }
+     }
+}",12,2c9f30a56e1ebafc016e344e15650cf5_9.csv
+10,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+    int num,id,s,a,b,i;
+    i==1;
+    scanf(""%d"",&num);
+    while(num>=1)
+    {
+        scanf(""%d %d"",&id,&s);
+        if(s<0||s>100)
+        {
+        printf(""非法输入!"");
+        return 0;
+        }
+        else
+        {
+    if(i==1)
+    {
+        a=id;
+        b=s;
+    }
+    else
+    {
+        if(s>b)
+        {
+            a=id;
+            b=s;
+        }
+        else if(s=b)
+        {
+        }
+        }
+    i++;
+    num--;
+    }
+    }
+    printf(""%d"",a);
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    varb_5==1;
+    scanf(""%d"",&varb_0);
+    while(varb_0>=1)
+    {
+        scanf(""%d %d"",&varb_1,&varb_2);
+        if(varb_2<0||varb_2>100)
+        {
+        printf(""非法输入!"");
+        return 0;
+        }
+        else
+        {
+    if(varb_5==1)
+    {
+        varb_3=varb_1;
+        varb_4=varb_2;
+    }
+    else
+    {
+        if(varb_2>varb_4)
+        {
+            varb_3=varb_1;
+            varb_4=varb_2;
+        }
+        else if(varb_2=varb_4)
+        {
+        }
+        }
+    varb_5++;
+    varb_0--;
+    }
+    }
+    printf(""%d"",varb_3);
+}
+",5,2c9f30a56e1ebafc016e344e15650cf5_10.csv
+11,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0,b=0;//N代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	 while (a<N)
+	 {
+		a++;
+		scanf(""%d%d"",&X,&F);
+		if(F<0)
+		{
+			b=1;
+		} 
+		else if(F>100)
+		{
+			b=1;
+		} 
+		else
+		{
+		
+		  if(max<F)  
+		  {
+		   max=F;
+		   x=X;
+		  }
+		}
+	 } 
+	 if(b=1)
+	 printf(""非法输入!"");
+	 else
+	 printf(""%d"",X);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0,varb_6=0;
+	scanf(""%d"",&varb_0);
+	 while(varb_1<varb_0)
+	 {
+		varb_1++;
+		scanf(""%d%d"",&varb_2,&varb_3);
+		if(varb_3<0)
+		{
+			varb_6=1;
+		} 
+		else if(varb_3>100)
+		{
+			varb_6=1;
+		} 
+		else
+		{
+		  if(varb_5<varb_3)  
+		  {
+		   varb_5=varb_3;
+		   varb_4=varb_2;
+		  }
+		}
+	 } 
+	 if(varb_6=1)
+	 printf(""非法输入!"");
+	 else
+	 printf(""%d"",varb_2);
+	return 0;
+}",27,2c9f30a56e1ebafc016e344e15650cf5_11.csv
+12,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0;//N 代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	 while (a<N)
+	 {
+		a++;
+		scanf(""%d %d"",&X,&F);
+		if (F<0&&F>100)
+		{
+		 printf(""非法输入!"");
+	    }
+		else
+		 {
+		  if(max<F)  
+		  {
+		   max=F;
+		   x=X;
+		  }
+	     }
+	 }
+	 printf(""%d"",x); 
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0;
+	scanf(""%d"",&varb_0);
+	 while(varb_1<varb_0)
+	 {
+		varb_1++;
+		scanf(""%d %d"",&varb_2,&varb_3);
+		if(varb_3<0&&varb_3>100)
+		{
+		 printf(""非法输入!"");
+	    }
+		else
+		 {
+		  if(varb_5<varb_3)  
+		  {
+		   varb_5=varb_3;
+		   varb_4=varb_2;
+		  }
+	     }
+	 }
+	 printf(""%d"",varb_4); 
+	return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_12.csv
+13,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+break;}
+ if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+break;}
+ if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_13.csv
+14,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   printf(""%d"",d);
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   printf(""%d"",varb_4);
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_14.csv
+15,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d%d%d"",&n,&a,&b);
+for(i=1;i<=n;i++)
+{
+if(b<0||b>100)
+{printf(""非法输入!"");
+return -1;}
+ if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d%d%d"",&varb_0,&varb_1,&varb_2);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+return -1;}
+ if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",5,2c9f30a56e1ebafc016e344e15650cf5_15.csv
+16,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+
+int main()
+{
+    int n=0;
+    scanf(""%d"",&n);
+    int maxnum=0;	//存最大成绩的人的学号 
+    int max=0;	//存最大成绩的人的成绩 
+    int flag=1;	//1表示输入正确，0表示错误 
+    while(n--)
+    {
+    	int num=0;
+    	int score=0;
+    	scanf(""%d%d"",&num,&score);
+    	if(score>100||score<0)
+        {
+        flag=0;
+   		break;	//非法输入停止则去除注释 
+	    }
+		//如果当前成绩大于目标max，则更新max和maxnum 
+		if(score>max)
+        {
+			max=score;
+			maxnum=num;
+        }
+	}
+	if(flag=1)
+    {	//正常输入 
+		printf(""%08d"",maxnum);
+	}
+    else
+    {		//非法输入 
+		printf(""非法输入!"");
+	}
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=0;
+    scanf(""%d"",&varb_0);
+    int varb_1=0;	
+    int varb_2=0;	
+    int varb_3=1;	
+    while(varb_0--)
+    {
+    	int varb_4=0;
+    	int varb_5=0;
+    	scanf(""%d%d"",&varb_4,&varb_5);
+    	if(varb_5>100||varb_5<0)
+        {
+        varb_3=0;
+   		break;	
+	    }
+		if(varb_5>varb_2)
+        {
+			varb_2=varb_5;
+			varb_1=varb_4;
+        }
+	}
+	if(varb_3=1)
+    {	
+		printf(""%08d"",varb_1);
+	}
+    else
+    {		
+		printf(""非法输入!"");
+	}
+}",25,2c9f30a56e1ebafc016e344e15650cf5_16.csv
+17,2c9f30a56e1ebafc016e344e15650cf5,"  #include<stdio.h>
+  int main()
+  {
+    int score,n,step;
+    long int number;
+    scanf(""%d"",&n);
+    scanf(""%ld %d"",&number,&score);
+    for(step=1;step<n;step++)
+    {
+    	int score2;
+		long int number2;
+		scanf(""%ld %d"",&number2,&score2);
+		if(score2>100||score<0){
+		printf(""非法输入!"");
+		continue;}
+		if(score2>score){
+			score=score2;
+			number=number2;
+		}
+    }
+    printf(""%ld"",number);
+    return 0;
+  
+  }",0.0,"  #include<stdio.h>
+  int main()
+  {
+    int varb_0,varb_1,varb_2;
+    long int varb_3;
+    scanf(""%d"",&varb_1);
+    scanf(""%ld %d"",&varb_3,&varb_0);
+    for(varb_2=1;varb_2<varb_1;varb_2++)
+    {
+    	int varb_4;
+		long int varb_5;
+		scanf(""%ld %d"",&varb_5,&varb_4);
+		if(varb_4>100||varb_0<0){
+		printf(""非法输入!"");
+		continue;}
+		if(varb_4>varb_0){
+			varb_0=varb_4;
+			varb_3=varb_5;
+		}
+    }
+    printf(""%ld"",varb_3);
+    return 0;
+  }",15,2c9f30a56e1ebafc016e344e15650cf5_17.csv
+18,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,id,a,x,y,b;
+scanf(""%d"",&n);
+for(x=1;x<=n;++x,++b)
+{
+scanf(""%d%d"",&id,&a);
+  if(a>100||a<0)
+{printf(""非法输入"");return 0;}
+
+if(b==1)
+x=a,y=id;
+if(a>x)
+x=a,y=id;
+if(a<=x)
+;
+
+
+
+
+
+}
+printf(""%d"",id);
+return 0;
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;++varb_3,++varb_5)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+  if(varb_2>100||varb_2<0)
+{printf(""非法输入"");return 0;}
+if(varb_5==1)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2>varb_3)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2<=varb_3)
+;
+}
+printf(""%d"",varb_1);
+return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_18.csv
+19,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,id,a,x,y,b;
+scanf(""%d"",&n);
+for(x=1;x<=n;++x,++b)
+{
+scanf(""%d%d"",&id,&a);
+  if(a>100||a<0)
+{printf(""非法输入！"");return 0;}
+
+if(b==1)
+x=a,y=id;
+if(a>x)
+x=a,y=id;
+if(a<=x)
+;
+
+
+
+
+
+}
+printf(""%d"",id);
+return 0;
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;++varb_3,++varb_5)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+  if(varb_2>100||varb_2<0)
+{printf(""非法输入！"");return 0;}
+if(varb_5==1)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2>varb_3)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2<=varb_3)
+;
+}
+printf(""%d"",varb_1);
+return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_19.csv
+20,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,d,e,i;//a为输入学生个数，d为最大值学号,e为最大分数
+d=0;
+e=0;
+scanf(""%d"",&a);
+for(i=1;i<=a;i++)
+   {  
+   scanf(""%d%d"",&b,&c);//b,c为输入的学号和分数
+      if(c<0||c>100)
+   {
+   continue;
+   }
+   if(c>e)
+     {
+      e=c;
+      d=b;
+     }
+   }
+ 
+if(e<0||e>100)
+   {
+   printf(""非法输入!"");}
+else
+printf(""%d"",d);
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_3=0;
+varb_4=0;
+scanf(""%d"",&varb_0);
+for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {  
+   scanf(""%d%d"",&varb_1,&varb_2);
+      if(varb_2<0||varb_2>100)
+   {
+   continue;
+   }
+   if(varb_2>varb_4)
+     {
+      varb_4=varb_2;
+      varb_3=varb_1;
+     }
+   }
+if(varb_4<0||varb_4>100)
+   {
+   printf(""非法输入!"");}
+else
+printf(""%d"",varb_3);
+}
+",12,2c9f30a56e1ebafc016e344e15650cf5_20.csv
+21,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+
+int main()
+
+{
+
+    int n,i,t;
+
+    int b;
+
+    int num,s;
+
+    scanf(""%d"",&n);
+
+    t=0,s=0;
+
+    if(b>=0 && b<=100)
+
+    {
+
+    for(i=0;i<n;i++)
+
+    {
+
+    scanf(""%d %d\n"",&num,&b);
+
+    
+
+         if(i==0)
+
+        t=b,s=num;
+
+        else
+
+        {
+
+            if(b>t)
+
+            t=b,s=num;
+
+        }
+
+       
+
+    }
+
+    printf(""%d"",s);
+
+    }
+
+    else
+
+    printf(""非法输入!"");
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    int varb_3;
+    int varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    varb_2=0,varb_5=0;
+    if(varb_3>=0 && varb_3<=100)
+    {
+    for(varb_1=0;varb_1<varb_0;varb_1++)
+    {
+    scanf(""%d %d\n"",&varb_4,&varb_3);
+         if(varb_1==0)
+        varb_2=varb_3,varb_5=varb_4;
+        else
+        {
+            if(varb_3>varb_2)
+            varb_2=varb_3,varb_5=varb_4;
+        }
+    }
+    printf(""%d"",varb_5);
+    }
+    else
+    printf(""非法输入!"");
+    return 0;
+}",9,2c9f30a56e1ebafc016e344e15650cf5_21.csv
+22,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,d,e,i;//a为输入学生个数，d为最大值学号,e为最大分数
+d=0;
+e=0;
+scanf(""%d"",&a);
+for(i=1;i<=a;i++)
+   {  
+   scanf(""%d%d"",&b,&c);//b,c为输入的学号和分数
+      if(c<0||c>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(c>e)
+     {
+      e=c;
+      d=b;
+     }
+   }
+ 
+if(c<0||c>100)
+   {
+   printf(""非法输入!"");}
+printf(""%d"",d);
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_3=0;
+varb_4=0;
+scanf(""%d"",&varb_0);
+for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {  
+   scanf(""%d%d"",&varb_1,&varb_2);
+      if(varb_2<0||varb_2>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(varb_2>varb_4)
+     {
+      varb_4=varb_2;
+      varb_3=varb_1;
+     }
+   }
+if(varb_2<0||varb_2>100)
+   {
+   printf(""非法输入!"");}
+printf(""%d"",varb_3);
+}
+",12,2c9f30a56e1ebafc016e344e15650cf5_22.csv
+23,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+   int i,j,n,xh,max,b;
+max=0;
+   scanf(""%d"",&n);
+   for(i=0;i<=n;i++)
+   {  
+     scanf(""%d %d"",&xh,&j);
+     if(j>100&&j<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(j>max)
+   {max=j;b=xh;}
+    }
+printf(""%d"",b);
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_4=0;
+   scanf(""%d"",&varb_2);
+   for(varb_0=0;varb_0<=varb_2;varb_0++)
+   {  
+     scanf(""%d %d"",&varb_3,&varb_1);
+     if(varb_1>100&&varb_1<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(varb_1>varb_4)
+   {varb_4=varb_1;varb_5=varb_3;}
+    }
+printf(""%d"",varb_5);
+}",10,2c9f30a56e1ebafc016e344e15650cf5_23.csv
+24,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+printf(""非法输入!"");
+
+else if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+printf(""非法输入!"");
+else if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",10,2c9f30a56e1ebafc016e344e15650cf5_24.csv
+25,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+  int a;
+  int b,c,d,e;
+   e=0;
+   d=0;
+   scanf(""%d/n"",&a);
+   int i;
+   for(i=1;i<=a;i++)
+   {
+   scanf(""%d %d/n"",&b,&c);
+     if(c>e)
+     {
+   	    e=c;
+   	    d=b;
+     }
+      else
+      ;
+   }
+   printf(""%d"",d);
+if(c<0 && c>100)
+printf(""非法输入!"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  int varb_1,varb_2,varb_3,varb_4;
+   varb_4=0;
+   varb_3=0;
+   scanf(""%d/n"",&varb_0);
+   int varb_5;
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+   scanf(""%d %d/n"",&varb_1,&varb_2);
+     if(varb_2>varb_4)
+     {
+   	    varb_4=varb_2;
+   	    varb_3=varb_1;
+     }
+      else
+      ;
+   }
+   printf(""%d"",varb_3);
+if(varb_2<0 && varb_2>100)
+printf(""非法输入!"");
+}",22,2c9f30a56e1ebafc016e344e15650cf5_25.csv
+26,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,id,a,x,y,b,c;
+scanf(""%d"",&n);
+for(c=1;c<=n;++c,++b)
+{
+scanf(""%d%d"",&id,&a);
+  if(a>100||a<0)
+{printf(""非法输入!"");return 0;}
+
+if(b==1)
+x=a,y=id;
+if(a>x)
+x=a,y=id;
+if(a<=x)
+;
+
+
+
+
+
+}
+printf(""%d"",y);
+return 0;
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+scanf(""%d"",&varb_0);
+for(varb_6=1;varb_6<=varb_0;++varb_6,++varb_5)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+  if(varb_2>100||varb_2<0)
+{printf(""非法输入!"");return 0;}
+if(varb_5==1)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2>varb_3)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2<=varb_3)
+;
+}
+printf(""%d"",varb_4);
+return 0;
+}",5,2c9f30a56e1ebafc016e344e15650cf5_26.csv
+27,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,x,y,m,z,max=0;
+scanf(""%d"",&n);
+for(m=1;m<=n;m++)
+{
+scanf(""%d %d"",&x,&y);
+if(y<0||y>100)
+{
+printf(""非法输入"");
+return 0;
+}
+if(y>max)
+{
+max=y;
+z=x;
+}
+}
+printf(""%d"",z);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d %d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{
+printf(""非法输入"");
+return 0;
+}
+if(varb_2>varb_5)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_27.csv
+28,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   if(c>100||c<0){printf(""非法输入！"");}
+   else
+   {
+       printf(""%d"",d);
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   if(varb_3>100||varb_3<0){printf(""非法输入！"");}
+   else
+   {
+       printf(""%d"",varb_4);
+   }
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_28.csv
+29,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,id,a,x,y,b;
+scanf(""%d"",&n);
+for(x=1;x<=n;++x,++b)
+{
+scanf(""%d%d"",&id,&a);
+  if(a>100||a<0)
+{printf(""非法输入!"");return 0;}
+
+if(b==1)
+x=a,y=id;
+if(a>x)
+x=a,y=id;
+if(a<=x)
+;
+
+
+
+
+
+}
+printf(""%d"",y);
+return 0;
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;++varb_3,++varb_5)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+  if(varb_2>100||varb_2<0)
+{printf(""非法输入!"");return 0;}
+if(varb_5==1)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2>varb_3)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2<=varb_3)
+;
+}
+printf(""%d"",varb_4);
+return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_29.csv
+30,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+  int n,a;
+  int grade,maxgrade;
+  int xuehao,maxxuehao;
+  int flag=1;
+  scanf(""%d"",&n);
+  
+  
+  
+  for(a=1;a<=n;a++)
+  {
+     scanf(""%d %d"",&xuehao,&grade);
+     if(grade<0||grade>100)
+      {
+	    printf(""非法输入!"");
+       }
+     if(flag==1)
+    {
+  	  maxgrade=grade;
+  	  maxxuehao=xuehao;
+  	  flag=0;}
+     if(grade>maxgrade)
+     {   
+	    maxgrade=grade;
+  	    maxxuehao=xuehao;}
+                 }
+             
+   printf(""%d"",maxxuehao);
+   return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  int varb_2,varb_3;
+  int varb_4,varb_5;
+  int varb_6=1;
+  scanf(""%d"",&varb_0);
+  for(varb_1=1;varb_1<=varb_0;varb_1++)
+  {
+     scanf(""%d %d"",&varb_4,&varb_2);
+     if(varb_2<0||varb_2>100)
+      {
+	    printf(""非法输入!"");
+       }
+     if(varb_6==1)
+    {
+  	  varb_3=varb_2;
+  	  varb_5=varb_4;
+  	  varb_6=0;}
+     if(varb_2>varb_3)
+     {   
+	    varb_3=varb_2;
+  	    varb_5=varb_4;}
+                 }
+   printf(""%d"",varb_5);
+   return 0;
+}
+",15,2c9f30a56e1ebafc016e344e15650cf5_30.csv
+31,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+  int a;
+  int b,c,d,e;
+   e=0;
+   d=0;
+   scanf(""%d/n"",&a);
+   int i;
+   for(i=1;i<=a;i++)
+   {
+   scanf(""%d %d/n"",&b,&c);
+   if(0<=c && c<=100)
+   {
+     if(c>e)
+     {
+   	    e=c;
+   	    d=b;
+     }
+      else
+      ;
+   }
+   else
+     ;
+   }
+   printf(""%d"",d);
+if(c<=0 && c>=100)
+printf(""非法输入!"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  int varb_1,varb_2,varb_3,varb_4;
+   varb_4=0;
+   varb_3=0;
+   scanf(""%d/n"",&varb_0);
+   int varb_5;
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+   scanf(""%d %d/n"",&varb_1,&varb_2);
+   if(0<=varb_2 && varb_2<=100)
+   {
+     if(varb_2>varb_4)
+     {
+   	    varb_4=varb_2;
+   	    varb_3=varb_1;
+     }
+      else
+      ;
+   }
+   else
+     ;
+   }
+   printf(""%d"",varb_3);
+if(varb_2<=0 && varb_2>=100)
+printf(""非法输入!"");
+}",13,2c9f30a56e1ebafc016e344e15650cf5_31.csv
+32,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+  int a;
+  int b,c,d,e;
+   e=0;
+   d=0;
+   scanf(""%d/n"",&a);
+   int i;
+   for(i=1;i<=a;i++)
+   {
+   scanf(""%d %d/n"",&b,&c);
+   if(0<=c && c<=100)
+   {
+     if(c>e)
+     {
+   	    e=c;
+   	    d=b;
+     }
+      else
+      ;
+   }
+   else
+     ;
+   }
+   printf(""%d"",d);
+if(e<=0 && e>=100)
+printf(""非法输入!"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  int varb_1,varb_2,varb_3,varb_4;
+   varb_4=0;
+   varb_3=0;
+   scanf(""%d/n"",&varb_0);
+   int varb_5;
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+   scanf(""%d %d/n"",&varb_1,&varb_2);
+   if(0<=varb_2 && varb_2<=100)
+   {
+     if(varb_2>varb_4)
+     {
+   	    varb_4=varb_2;
+   	    varb_3=varb_1;
+     }
+      else
+      ;
+   }
+   else
+     ;
+   }
+   printf(""%d"",varb_3);
+if(varb_4<=0 && varb_4>=100)
+printf(""非法输入!"");
+}",13,2c9f30a56e1ebafc016e344e15650cf5_32.csv
+33,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   if(b<=100){printf(""%d"",d);}
+   else
+   {
+       printf(""非法输入！"");
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   if(varb_2<=100){printf(""%d"",varb_4);}
+   else
+   {
+       printf(""非法输入！"");
+   }
+ }
+",18,2c9f30a56e1ebafc016e344e15650cf5_33.csv
+34,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+   int i,j,n,xh,max,b;
+max=0;
+   scanf(""%d"",&n);
+   for(i=0;i<=n;i++)
+   {  
+     scanf(""%d%d"",&xh,&j);
+     if(j>100&&j<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(j>max)
+   {max=j;b=xh;}
+    }
+printf(""%d"",b);
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_4=0;
+   scanf(""%d"",&varb_2);
+   for(varb_0=0;varb_0<=varb_2;varb_0++)
+   {  
+     scanf(""%d%d"",&varb_3,&varb_1);
+     if(varb_1>100&&varb_1<0)
+     {printf(""非法输入!"");
+     return -1;
+   }
+    if(varb_1>varb_4)
+   {varb_4=varb_1;varb_5=varb_3;}
+    }
+printf(""%d"",varb_5);
+}",10,2c9f30a56e1ebafc016e344e15650cf5_34.csv
+35,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+break;}
+else if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+break;}
+else if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+}",11,2c9f30a56e1ebafc016e344e15650cf5_35.csv
+36,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+
+int main()
+{
+    int n,m,x,y,a,b;
+    scanf(""%d"",&n);
+    a=0;
+    
+    m=1;
+    while(m<=n)
+    {
+        scanf(""%d %d"",&x,&y);
+        if(y>a)
+        {
+            a=y;    
+            b=x;
+            
+        }
+          m++;   
+    }
+    if(a>=0&&a<=100)
+    
+    printf(""%d"",b);
+    else 
+    printf(""非法输入！"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    varb_4=0;
+    varb_1=1;
+    while(varb_1<=varb_0)
+    {
+        scanf(""%d %d"",&varb_2,&varb_3);
+        if(varb_3>varb_4)
+        {
+            varb_4=varb_3;    
+            varb_5=varb_2;
+        }
+          varb_1++;   
+    }
+    if(varb_4>=0&&varb_4<=100)
+    printf(""%d"",varb_5);
+    else 
+    printf(""非法输入！"");
+    return 0;
+}",21,2c9f30a56e1ebafc016e344e15650cf5_36.csv
+37,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,id,a,x,y,b;
+scanf(""%d"",&n);
+for(x=1;x<=n;++x,++b)
+{
+scanf(""%d%d"",&id,&a);
+  if(a>100||a<0)
+{printf(""非法输入!"");return 0;}
+
+if(b==1)
+x=a,y=id;
+if(a>x)
+x=a,y=id;
+if(a<=x)
+;
+
+
+
+
+
+}
+printf(""%d"",id);
+return 0;
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;++varb_3,++varb_5)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+  if(varb_2>100||varb_2<0)
+{printf(""非法输入!"");return 0;}
+if(varb_5==1)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2>varb_3)
+varb_3=varb_2,varb_4=varb_1;
+if(varb_2<=varb_3)
+;
+}
+printf(""%d"",varb_1);
+return 0;
+}",4,2c9f30a56e1ebafc016e344e15650cf5_37.csv
+38,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{ 
+   int n,n1,n2,n3,p1,p2,p3;
+   /*scanf(""%d/n%d %d/n%d %d"",&n,&n1,&p1,&n2,&p2);*/
+   scanf(""%d"",&n);
+   scanf(""%d %d"",&n1,&p1);
+   scanf(""%d %d"",&n2,&p2);
+   scanf(""%d %d"",&n3,&p3);
+   if(p1<0||p1>100||p2<0||p2>100||p3<0||p3>100)
+     printf(""非法输入!"");
+   else if(p1>p2&&p1>p3) 
+     printf(""%d"",n1);
+   else if(p2>p1&&p2>p3) 
+     printf(""%d"",n2);  
+   else if(p3>p2&&p3>p1) 
+     printf(""%d"",n3); 
+  
+  
+   
+
+}",0.0,"#include<stdio.h>
+int main()
+{ 
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+   scanf(""%d"",&varb_0);
+   scanf(""%d %d"",&varb_1,&varb_4);
+   scanf(""%d %d"",&varb_2,&varb_5);
+   scanf(""%d %d"",&varb_3,&varb_6);
+   if(varb_4<0||varb_4>100||varb_5<0||varb_5>100||varb_6<0||varb_6>100)
+     printf(""非法输入!"");
+   else if(varb_4>varb_5&&varb_4>varb_6) 
+     printf(""%d"",varb_1);
+   else if(varb_5>varb_4&&varb_5>varb_6) 
+     printf(""%d"",varb_2);  
+   else if(varb_6>varb_5&&varb_6>varb_4) 
+     printf(""%d"",varb_3); 
+}",11,2c9f30a56e1ebafc016e344e15650cf5_38.csv
+39,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+ main()
+{
+int i,n,xue,grade,maxxue=0,maxgrade=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d %d"",&xue,&grade);
+if(grade<0||grade>100)
+{printf(""非法输入!"");return 0;}
+if(grade>maxgrade)
+{maxxue=xue;maxgrade=grade;}
+if(i==n)
+printf(""%d"",maxxue);if(i==n)
+printf(""%d"",maxxue);
+}
+}
+
+
+
+
+",0.0,"#include<stdio.h>
+ main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4=0,varb_5=0;
+scanf(""%d"",&varb_1);
+for(varb_0=1;varb_0<=varb_1;varb_0++)
+{
+scanf(""%d %d"",&varb_2,&varb_3);
+if(varb_3<0||varb_3>100)
+{printf(""非法输入!"");return 0;}
+if(varb_3>varb_5)
+{varb_4=varb_2;varb_5=varb_3;}
+if(varb_0==varb_1)
+printf(""%d"",varb_4);if(varb_0==varb_1)
+printf(""%d"",varb_4);
+}
+}
+",14,2c9f30a56e1ebafc016e344e15650cf5_39.csv
+40,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   if(c>100&&c<0){printf(""非法输入！"");}
+   else
+   {
+       printf(""%d"",d);
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   if(varb_3>100&&varb_3<0){printf(""非法输入！"");}
+   else
+   {
+       printf(""%d"",varb_4);
+   }
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_40.csv
+41,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,d,e,i;//a为输入学生个数，d为最大值学号,e为最大分数
+d=0;
+e=0;
+scanf(""%d"",&a);
+for(i=1;i<=a;i++)
+   {  
+   scanf(""%d%d"",&b,&c);//b,c为输入的学号和分数
+      if(c<0||c>100)
+   {
+   continue;
+   }
+   if(c>e)
+     {
+      e=c;
+      d=b;
+     }
+   }
+ 
+if(e<0||e>100)
+   {
+   printf(""非法输入!"");}
+printf(""%d"",d);
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_3=0;
+varb_4=0;
+scanf(""%d"",&varb_0);
+for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {  
+   scanf(""%d%d"",&varb_1,&varb_2);
+      if(varb_2<0||varb_2>100)
+   {
+   continue;
+   }
+   if(varb_2>varb_4)
+     {
+      varb_4=varb_2;
+      varb_3=varb_1;
+     }
+   }
+if(varb_4<0||varb_4>100)
+   {
+   printf(""非法输入!"");}
+printf(""%d"",varb_3);
+}
+",12,2c9f30a56e1ebafc016e344e15650cf5_41.csv
+42,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0,b=0;//N代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	 while (a<N)
+	 {
+		a++;
+		scanf(""%d%d"",&X,&F);
+		if(F<0&&F>100)
+		{
+			b=1;
+		}  
+		else
+		{
+		
+		  if(max<F)  
+		  {
+		   max=F;
+		   x=X;
+		  }
+		}
+	 } 
+	 if(b=1)
+	 printf(""非法输入!"");
+	 else
+	 printf(""%d"",x);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0,varb_6=0;
+	scanf(""%d"",&varb_0);
+	 while(varb_1<varb_0)
+	 {
+		varb_1++;
+		scanf(""%d%d"",&varb_2,&varb_3);
+		if(varb_3<0&&varb_3>100)
+		{
+			varb_6=1;
+		}  
+		else
+		{
+		  if(varb_5<varb_3)  
+		  {
+		   varb_5=varb_3;
+		   varb_4=varb_2;
+		  }
+		}
+	 } 
+	 if(varb_6=1)
+	 printf(""非法输入!"");
+	 else
+	 printf(""%d"",varb_4);
+	return 0;
+}",10,2c9f30a56e1ebafc016e344e15650cf5_42.csv
+43,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,d,e,i;//a为输入学生个数，d为最大值学号,e为最大分数
+d=0;
+e=0;
+scanf(""%d"",&a);
+for(i=1;i<=a;i++)
+   {  
+   scanf(""%d%d"",&b,&c);//b,c为输入的学号和分数
+   if(c<0||c>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(c>e)
+     {
+      e=c;
+      d=b;
+     }
+   }
+
+printf(""%d"",b);
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_3=0;
+varb_4=0;
+scanf(""%d"",&varb_0);
+for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {  
+   scanf(""%d%d"",&varb_1,&varb_2);
+   if(varb_2<0||varb_2>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(varb_2>varb_4)
+     {
+      varb_4=varb_2;
+      varb_3=varb_1;
+     }
+   }
+printf(""%d"",varb_1);
+}
+",12,2c9f30a56e1ebafc016e344e15650cf5_43.csv
+44,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+continue;}
+else if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+continue;}
+else if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+}",11,2c9f30a56e1ebafc016e344e15650cf5_44.csv
+45,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+	int N,a=0,X,F,x,max=0;//N 代表n个学生,X是学号，F是分数// 
+	scanf(""%d"",&N);
+	while (a<N)
+	{
+		scanf(""%d %d"",&X,&F);
+		max=F;
+		x=X;
+		if(max<F)  
+		{
+		 max=F;
+		 x=X;
+		}
+		a++;
+	}
+	printf(""%d"",x);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2,varb_3,varb_4,varb_5=0;
+	scanf(""%d"",&varb_0);
+	while(varb_1<varb_0)
+	{
+		scanf(""%d %d"",&varb_2,&varb_3);
+		varb_5=varb_3;
+		varb_4=varb_2;
+		if(varb_5<varb_3)  
+		{
+		 varb_5=varb_3;
+		 varb_4=varb_2;
+		}
+		varb_1++;
+	}
+	printf(""%d"",varb_4);
+	return 0;
+}",9,2c9f30a56e1ebafc016e344e15650cf5_45.csv
+46,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+
+int main()
+
+{
+
+    int n,i,t;
+
+    int b;
+
+    int num,s;
+
+    scanf(""%d"",&n);
+
+    t=0,s=0;
+
+    for(i=0;i<n;i++)
+
+    {
+
+    scanf(""%d %d\n"",&num,&b);
+
+    if(b<0 && b>100)
+
+    printf(""非法输入!"");
+
+        if(i==0)
+
+        t=b,s=num;
+
+        else
+
+        {
+
+            if(b>t)
+
+            t=b,s=num;
+
+        }
+
+    }
+
+    printf(""%d"",s);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    int varb_3;
+    int varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    varb_2=0,varb_5=0;
+    for(varb_1=0;varb_1<varb_0;varb_1++)
+    {
+    scanf(""%d %d\n"",&varb_4,&varb_3);
+    if(varb_3<0 && varb_3>100)
+    printf(""非法输入!"");
+        if(varb_1==0)
+        varb_2=varb_3,varb_5=varb_4;
+        else
+        {
+            if(varb_3>varb_2)
+            varb_2=varb_3,varb_5=varb_4;
+        }
+    }
+    printf(""%d"",varb_5);
+    return 0;
+}",12,2c9f30a56e1ebafc016e344e15650cf5_46.csv
+47,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+
+int main()
+
+{
+
+    int n,i,t;
+
+    int b;
+
+    int num,s;
+
+    scanf(""%d"",&n);
+
+    t=0,s=0;
+
+    for(i=0;i<n;i++)
+
+    {
+
+    scanf(""%d %d\n"",&num,&b);
+
+    if(b<0 && b>100)
+
+    printf(""非法输入"");
+
+        if(i==0)
+
+        t=b,s=num;
+
+        else
+
+        {
+
+            if(b>t)
+
+            t=b,s=num;
+
+        }
+
+    }
+
+    printf(""%d"",s);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    int varb_3;
+    int varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    varb_2=0,varb_5=0;
+    for(varb_1=0;varb_1<varb_0;varb_1++)
+    {
+    scanf(""%d %d\n"",&varb_4,&varb_3);
+    if(varb_3<0 && varb_3>100)
+    printf(""非法输入"");
+        if(varb_1==0)
+        varb_2=varb_3,varb_5=varb_4;
+        else
+        {
+            if(varb_3>varb_2)
+            varb_2=varb_3,varb_5=varb_4;
+        }
+    }
+    printf(""%d"",varb_5);
+    return 0;
+}",12,2c9f30a56e1ebafc016e344e15650cf5_47.csv
+48,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+break;}
+else if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+break;}
+else if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_48.csv
+49,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,d,e,i;//a为输入学生个数，d为最大值学号,e为最大分数
+d=0;
+e=0;
+scanf(""%d"",&a);
+for(i=1;i<=a;i++)
+   {  
+   scanf(""%d%d"",&b,&c);//b,c为输入的学号和分数
+   if(c<0||c>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(c>e)
+     {
+      e=c;
+      d=b;
+     }
+   }
+
+printf(""%d"",d);
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_3=0;
+varb_4=0;
+scanf(""%d"",&varb_0);
+for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {  
+   scanf(""%d%d"",&varb_1,&varb_2);
+   if(varb_2<0||varb_2>100)
+   {
+   printf(""非法输入!"");
+   continue;
+   }
+   if(varb_2>varb_4)
+     {
+      varb_4=varb_2;
+      varb_3=varb_1;
+     }
+   }
+printf(""%d"",varb_3);
+}
+",12,2c9f30a56e1ebafc016e344e15650cf5_49.csv
+50,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{ 
+   int n,n1,n2,n3,p1,p2,p3;
+   /*scanf(""%d/n%d %d/n%d %d"",&n,&n1,&p1,&n2,&p2);*/
+   scanf(""%d"",&n);
+   scanf(""%d %d"",&n1,&p1);
+   scanf(""%d %d"",&n2,&p2);
+   scanf(""%d %d"",&n3,&p3);
+   if(p1<0||p1>100||p2<0||p2>100||p3<0||p3>100)
+     printf(""非法输入!"");
+   else if(p1>p2&&p1>p3) 
+     printf(""%d"",n1);
+   else if(p2>p1&&p2>p3) 
+     printf(""%d"",n2);  
+   else if(p3>p2&&p3>p1) 
+     printf(""%d"",n1); 
+  
+  
+   
+
+}",0.0,"#include<stdio.h>
+int main()
+{ 
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+   scanf(""%d"",&varb_0);
+   scanf(""%d %d"",&varb_1,&varb_4);
+   scanf(""%d %d"",&varb_2,&varb_5);
+   scanf(""%d %d"",&varb_3,&varb_6);
+   if(varb_4<0||varb_4>100||varb_5<0||varb_5>100||varb_6<0||varb_6>100)
+     printf(""非法输入!"");
+   else if(varb_4>varb_5&&varb_4>varb_6) 
+     printf(""%d"",varb_1);
+   else if(varb_5>varb_4&&varb_5>varb_6) 
+     printf(""%d"",varb_2);  
+   else if(varb_6>varb_5&&varb_6>varb_4) 
+     printf(""%d"",varb_1); 
+}",11,2c9f30a56e1ebafc016e344e15650cf5_50.csv
+51,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+{
+int n,x,y,m,z,max=0;
+scanf(""%d"",&n);
+for(m=1;m<=n;m++)
+{
+scanf(""%d %d"",&x,&y);
+if(y<0||y>100)
+{
+printf(""非法输入!"");
+continue;
+}
+if(y>max)
+{
+max=y;
+z=x;
+}
+}
+printf(""%d"",z);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d %d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{
+printf(""非法输入!"");
+continue;
+}
+if(varb_2>varb_5)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",3,2c9f30a56e1ebafc016e344e15650cf5_51.csv
+52,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   if(b<=100&&b>0){printf(""%d"",d);}
+   else
+   {
+       printf(""非法输入！"");
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   if(varb_2<=100&&varb_2>0){printf(""%d"",varb_4);}
+   else
+   {
+       printf(""非法输入！"");
+   }
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_52.csv
+53,2c9f30a56e1ebafc016e344e15650cf5,"#include<stdio.h>
+int main()
+ {
+   
+   int n,a,b,c=0,d=0,i;
+   scanf(""%d"",&n);
+   for(i=1;i<=n;i++)
+   {
+     scanf(""%d %d"",&a,&b);
+     if(b>c)
+     {
+       c=b;
+       d=a;
+     }
+   }
+   if(c>100||c<0){printf(""非法输入！"");}
+   printf(""%d"",d);
+ }
+   ",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0,varb_1,varb_2,varb_3=0,varb_4=0,varb_5;
+   scanf(""%d"",&varb_0);
+   for(varb_5=1;varb_5<=varb_0;varb_5++)
+   {
+     scanf(""%d %d"",&varb_1,&varb_2);
+     if(varb_2>varb_3)
+     {
+       varb_3=varb_2;
+       varb_4=varb_1;
+     }
+   }
+   if(varb_3>100||varb_3<0){printf(""非法输入！"");}
+   printf(""%d"",varb_4);
+ }
+",15,2c9f30a56e1ebafc016e344e15650cf5_53.csv
+54,2c9f30a56e1ebafc016e344e15650cf5,"#include <stdio.h>
+int main()
+{
+int n,a,b,i,d,c=0;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{
+scanf(""%d%d"",&a,&b);
+if(b<0||b>100)
+{printf(""非法输入!"");
+continue;}
+ if(b>c&&b<=100)
+{
+c=b;
+d=a;
+}
+}
+printf(""%d"",d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5=0;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{
+scanf(""%d%d"",&varb_1,&varb_2);
+if(varb_2<0||varb_2>100)
+{printf(""非法输入!"");
+continue;}
+ if(varb_2>varb_5&&varb_2<=100)
+{
+varb_5=varb_2;
+varb_4=varb_1;
+}
+}
+printf(""%d"",varb_4);
+}",11,2c9f30a56e1ebafc016e344e15650cf5_54.csv

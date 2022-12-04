@@ -1,0 +1,25 @@
+,id,code,is_true,errorline
+0,2c9f30a56edadc17016eea07ad2209a1,"#include<stdio.h>
+int main()
+{
+    int varb_0[10][100]={0};
+    int varb_1,varb_2,varb_3,varb_4;
+    scanf(""%d"",&varb_4);
+    for(varb_1=0;varb_1<varb_4;varb_1++)
+    {
+       for(varb_3=0;varb_3<varb_4-varb_1;varb_3++)
+       {
+         printf("" "");
+        }
+       for(varb_2=0;varb_2<=varb_1;varb_2++)
+       {
+           if(varb_1==0||varb_2==0||varb_1==varb_2)
+           varb_0[varb_1][varb_2]=1;
+           varb_0[varb_1][varb_2]=varb_0[varb_1-1][varb_2]+varb_0[varb_1-1][varb_2-1];
+           printf(""%4d "",varb_0[varb_1][varb_2]);
+        }
+        printf(""\n"");
+     }
+        return 0;
+        }
+",0.0,15

@@ -1,0 +1,636 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d,&a"");
+b=a/100;
+c=(a-b*100)/10;
+d=a-b*100-10*c;
+printf(""%d"",d*100+c*10+b);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d,&a"");
+varb_1=varb_0/100;
+varb_2=(varb_0-varb_1*100)/10;
+varb_3=varb_0-varb_1*100-10*varb_2;
+printf(""%d"",varb_3*100+varb_2*10+varb_1);
+return 0;
+}",5
+1,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+
+int main()
+{
+    
+    int a, b, c, d;
+    d = 0;
+    scanf(""%d"", &d);
+    
+    a = d/100;
+    b = d/10%10;
+    c = d%10;
+    
+    if (c=b=0)
+    {
+        printf(""%d"",c+b+a);
+    }
+    
+    else if(c=0)
+    {
+    printf(""%d%d"",b,a);
+    }
+    
+    else
+     {
+     printf(""%d%d%d"",c,b,a);
+     }
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0, varb_1, varb_2, varb_3;
+    varb_3 = 0;
+    scanf(""%d"", &varb_3);
+    varb_0 = varb_3/100;
+    varb_1 = varb_3/10%10;
+    varb_2 = varb_3%10;
+    if(varb_2=varb_1=0)
+    {
+        printf(""%d"",varb_2+varb_1+varb_0);
+    }
+    else if(varb_2=0)
+    {
+    printf(""%d%d"",varb_1,varb_0);
+    }
+    else
+     {
+     printf(""%d%d%d"",varb_2,varb_1,varb_0);
+     }
+}",4
+2,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d/100;
+b=d/10%10;
+c=d%10;
+printf(""%d"",c*100+b*10+a);
+ return 0;
+}      
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3/100;
+varb_1=varb_3/10%10;
+varb_2=varb_3%10;
+printf(""%d"",varb_2*100+varb_1*10+varb_0);
+ return 0;
+}      
+",11
+3,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d/100;
+b=(d-a*100)/10;
+c=d-a*100-b*10;
+printf(""%d%d%d"",c,b,a);
+return 0;
+
+
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3/100;
+varb_1=(varb_3-varb_0*100)/10;
+varb_2=varb_3-varb_0*100-varb_1*10;
+printf(""%d%d%d"",varb_2,varb_1,varb_0);
+return 0;
+}",9
+4,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d,e;
+scanf(""%d"",a);
+b=a/100;
+c=(a/10)%10;
+d=a%10;
+e=d*100+c*10+b;
+printf(""%d"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",varb_0);
+varb_1=varb_0/100;
+varb_2=(varb_0/10)%10;
+varb_3=varb_0%10;
+varb_4=varb_3*100+varb_2*10+varb_1;
+printf(""%d"",varb_4);
+return 0;
+}",4
+5,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int a,b,c,d;
+int main()
+{
+    scanf(""%d"",&a);
+    c=a%10;
+    b=a/10%10;
+    a=a/100;
+   
+    if(c ==0)
+    {
+        if(b==0)
+        {
+            d=a;
+            printf(""%d"",d);
+         }
+         else
+         {
+         c=10*b+a;
+             printf(""%d"",d);
+         }
+      }
+     else
+     {
+         d=100*c+10*b+a;
+         printf(""%d"",d);
+      }
+      
+   return 0;
+  }",0.0,"#include<stdio.h>
+int varb_0,varb_1,varb_2,varb_3;
+int main()
+{
+    scanf(""%d"",&varb_0);
+    varb_2=varb_0%10;
+    varb_1=varb_0/10%10;
+    varb_0=varb_0/100;
+    if(varb_2 ==0)
+    {
+        if(varb_1==0)
+        {
+            varb_3=varb_0;
+            printf(""%d"",varb_3);
+         }
+         else
+         {
+         varb_2=10*varb_1+varb_0;
+             printf(""%d"",varb_3);
+         }
+      }
+     else
+     {
+         varb_3=100*varb_2+10*varb_1+varb_0;
+         printf(""%d"",varb_3);
+      }
+   return 0;
+  }",18
+6,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d,&a"");
+b=a/100;
+c=(a-b*100)/10;
+d=a-b*100-10*c;
+printf(""%d"",a=d*100+c*10+b);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d,&a"");
+varb_1=varb_0/100;
+varb_2=(varb_0-varb_1*100)/10;
+varb_3=varb_0-varb_1*100-10*varb_2;
+printf(""%d"",varb_0=varb_3*100+varb_2*10+varb_1);
+return 0;
+}",5
+7,2c911d616da67fd8016dab39b173041a,"#include <stdio.h>
+int main()
+{
+int m,a,b,c,d;
+scanf(""%d"",&m);
+a=m/100;
+b=(m/10)%10;
+c=m%10;
+d=c*100+b*10+a;
+printf(""%d"",m);
+}",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=(varb_0/10)%10;
+varb_3=varb_0%10;
+varb_4=varb_3*100+varb_2*10+varb_1;
+printf(""%d"",varb_0);
+}",10
+8,2c911d616da67fd8016dab39b173041a,"#include <stdio.h>
+ 
+int main()
+{
+    int n;
+    scanf(""%d"",&n);
+    printf(""%d"",n%10);
+    printf(""%d"",n/10%10);
+    printf(""%d"",n/100%10);
+    return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    printf(""%d"",varb_0%10);
+    printf(""%d"",varb_0/10%10);
+    printf(""%d"",varb_0/100%10);
+    return 0;
+}",4
+9,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b;
+a=123;
+b=a%10*100+a/10%10*10+a/100;
+printf(""%d"",b);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+varb_0=123;
+varb_1=varb_0%10*100+varb_0/10%10*10+varb_0/100;
+printf(""%d"",varb_1);
+return 0;
+}",5
+10,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d%10;   
+b=(d-a)/10;   
+c=(d-a-b)/100;
+printf(""%d"",a*100+b*10+c);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3%10;   
+varb_1=(varb_3-varb_0)/10;   
+varb_2=(varb_3-varb_0-varb_1)/100;
+printf(""%d"",varb_0*100+varb_1*10+varb_2);
+return 0;
+}
+",7
+11,2c911d616da67fd8016dab39b173041a,"#include <stdio.h>
+int main( )
+{
+int m,a,b,c,d;
+scanf(""%d"",&m);
+a=m/100;
+b=(m/10)%10;
+c=m%10;
+d=c*100+b*10+a;
+printf(""%d"",m);
+}",0.0,"#include <stdio.h>
+int main( )
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=(varb_0/10)%10;
+varb_3=varb_0%10;
+varb_4=varb_3*100+varb_2*10+varb_1;
+printf(""%d"",varb_0);
+}",10
+12,2c911d616da67fd8016dab39b173041a,"#include <stdio.h>
+int main()
+{
+ int n,a,b,c;
+ scanf(""%d"",&n);
+ a=n/100;
+ b=(n/10)%10;
+ c=n%10;
+ printf(""%d%d%d"",c,b,a);
+}",0.0,"#include <stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2,varb_3;
+ scanf(""%d"",&varb_0);
+ varb_1=varb_0/100;
+ varb_2=(varb_0/10)%10;
+ varb_3=varb_0%10;
+ printf(""%d%d%d"",varb_3,varb_2,varb_1);
+}",4
+13,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+   int a,b,c,d,sum;
+   scanf(""%d"",&a);
+   b=a/100;
+   c=a%10;
+   d=(a%100)/10;
+   sum=d*100+c*10+b;
+   printf(""%d"",sum);
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4;
+   scanf(""%d"",&varb_0);
+   varb_1=varb_0/100;
+   varb_2=varb_0%10;
+   varb_3=(varb_0%100)/10;
+   varb_4=varb_3*100+varb_2*10+varb_1;
+   printf(""%d"",varb_4);
+   return 0;
+}",9
+14,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d,e;
+scanf(""%d"",a);
+b=a/100;
+c=(a/10)%10;
+d=a%10;
+e=d*100+c*10+b;
+printf (""%d"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",varb_0);
+varb_1=varb_0/100;
+varb_2=(varb_0/10)%10;
+varb_3=varb_0%10;
+varb_4=varb_3*100+varb_2*10+varb_1;
+printf(""%d"",varb_4);
+return 0;
+}",4
+15,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+	int a,b,c,d;
+	scanf(""%d"",&d);
+	a=d/100;
+	b=d/10-a*10;
+	c=d-a*100-b*10;
+	printf(""%d%d%d"",c,b,a);
+	return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d"",&varb_3);
+	varb_0=varb_3/100;
+	varb_1=varb_3/10-varb_0*10;
+	varb_2=varb_3-varb_0*100-varb_1*10;
+	printf(""%d%d%d"",varb_2,varb_1,varb_0);
+	return 0;
+ } ",4
+16,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+   int i,a,b,c,d;
+   scanf(""%d"",&i);
+   a=i/100;
+   b=(i%100-c)/10;
+   c=i%10;
+   d=c*100+b*10+a;
+   if(c==0)
+   {printf(""0%d"",d);}
+   else
+   printf(""%d"",d);
+   
+   
+   
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4;
+   scanf(""%d"",&varb_0);
+   varb_1=varb_0/100;
+   varb_2=(varb_0%100-varb_3)/10;
+   varb_3=varb_0%10;
+   varb_4=varb_3*100+varb_2*10+varb_1;
+   if(varb_3==0)
+   {printf(""0%d"",varb_4);}
+   else
+   printf(""%d"",varb_4);
+}
+",10
+17,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+
+int main()
+{
+    
+    int a, b, c, d=0;
+    
+    scanf(""%d"", &d);
+    
+    a = d/100;
+    b = d/10%10;
+    c = d%10;
+    
+    if (c=b=0)
+    {
+        printf(""%d"",c+b+a);
+    }
+    
+    else if(c=0)
+    {
+    printf(""%d%d"",b,a);
+    }
+    
+    else
+     {
+     printf(""%d%d%d"",c,b,a);
+     }
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0, varb_1, varb_2, varb_3=0;
+    scanf(""%d"", &varb_3);
+    varb_0 = varb_3/100;
+    varb_1 = varb_3/10%10;
+    varb_2 = varb_3%10;
+    if(varb_2=varb_1=0)
+    {
+        printf(""%d"",varb_2+varb_1+varb_0);
+    }
+    else if(varb_2=0)
+    {
+    printf(""%d%d"",varb_1,varb_0);
+    }
+    else
+     {
+     printf(""%d%d%d"",varb_2,varb_1,varb_0);
+     }
+}",9
+18,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main( )
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d/100;
+b=(d-a*100)/10;
+c=d-a*100-b*10;
+printf(""%d%d%d"",c,b,a);
+return 0;
+}
+
+
+
+",0.0,"#include<stdio.h>
+int main( )
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3/100;
+varb_1=(varb_3-varb_0*100)/10;
+varb_2=varb_3-varb_0*100-varb_1*10;
+printf(""%d%d%d"",varb_2,varb_1,varb_0);
+return 0;
+}
+",9
+19,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+  
+  int main()
+  {int i,a,b,c;
+  scanf(""%d,&i"");
+  a=i%10;
+  b=i/10%10;
+  c=i/100;
+  printf(""%d"",c+b*10+a*100);
+  
+  return 0;
+  }",0.0,"#include<stdio.h>
+  int main()
+  {int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d,&i"");
+  varb_1=varb_0%10;
+  varb_2=varb_0/10%10;
+  varb_3=varb_0/100;
+  printf(""%d"",varb_3+varb_2*10+varb_1*100);
+  return 0;
+  }",4
+20,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+     int n1,n2,n3,a;
+     scanf(""%d"",&a);
+     n1=a/100;
+     n2=(a-100*n1)/10;
+     n3=a-100*n1-10*n2;
+     printf(""%d%d%d"",n3,n2,n1);
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1,varb_2,varb_3;
+     scanf(""%d"",&varb_3);
+     varb_0=varb_3/100;
+     varb_1=(varb_3-100*varb_0)/10;
+     varb_2=varb_3-100*varb_0-10*varb_1;
+     printf(""%d%d%d"",varb_2,varb_1,varb_0);
+     return 0;
+}",9
+21,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d/100;
+b=(d-a*100)/10;
+c=d-a*100-b*10;
+printf(""%d"",100*c+b*10+c);
+return 0;
+
+
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3/100;
+varb_1=(varb_3-varb_0*100)/10;
+varb_2=varb_3-varb_0*100-varb_1*10;
+printf(""%d"",100*varb_2+varb_1*10+varb_2);
+return 0;
+}",9
+22,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&d);
+a=d/100;
+b=d/10-a*10;
+c=d-a*100-b*10;
+printf(""%d%d%d"",c,b,a);
+
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_3);
+varb_0=varb_3/100;
+varb_1=varb_3/10-varb_0*10;
+varb_2=varb_3-varb_0*100-varb_1*10;
+printf(""%d%d%d"",varb_2,varb_1,varb_0);
+return 0;
+}
+",7
+23,2c911d616da67fd8016dab39b173041a,"#include<stdio.h>
+  
+  int main()
+  {
+  int i,a,b,c;
+scanf(""%d,&i"");
+  a=i%10;
+  b=i/10%10;
+  c=i/100;
+  printf(""%d"",c+b*10+a*100);
+  
+  return 0;
+  }",0.0,"#include<stdio.h>
+  int main()
+  {
+  int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d,&i"");
+  varb_1=varb_0%10;
+  varb_2=varb_0/10%10;
+  varb_3=varb_0/100;
+  printf(""%d"",varb_3+varb_2*10+varb_1*100);
+  return 0;
+  }",3

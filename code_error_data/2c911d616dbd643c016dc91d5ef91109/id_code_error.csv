@@ -1,0 +1,802 @@
+,id,code,is_true,errorline
+0,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0;
+	float varb_1;
+	scanf(""%f"",&varb_0);
+	varb_1=1.8*varb_0+32;
+	printf(""%.lf"",varb_1);
+}",0.0,2
+1,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+	double varb_0,varb_1;
+	varb_1=100;
+	scanf(""%f"",&varb_1);
+	varb_0=9.0/5*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+2,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  float varb_0;float varb_1;
+  scanf(""%f"",&varb_0);
+  varb_1=9/5*varb_0+32;
+  printf(""%.1f"",varb_1);
+  return 0;
+}
+",0.0,6
+3,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+	double varb_0,varb_1;
+	varb_1=100;
+	scanf(""%f"",&varb_0);
+	varb_0=9.0/5*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+4,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{ 
+    int varb_0;
+    double varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=1.8*varb_0+32;
+    printf(""%.1lf"",varb_1);
+    return 0;
+}",0.0,4
+5,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+double varb_0;
+float varb_1;
+scanf(""%f"",&varb_0);
+varb_1=1.8*varb_0+32;
+printf(""%.1f"",varb_1);}
+",0.0,2
+6,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9.0*varb_0/5.0+32.0;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+7,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    varb_1=9.0/5.0*varb_0+32;
+    scanf(""%f"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+8,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=9*0.2*varb_0+32;
+    printf(""%.1f"",varb_1);
+}
+",0.0,4
+9,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  float  varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  varb_1=9/5*varb_0+32;
+  printf(""%f"",varb_1);
+  return 0;
+}",0.0,6
+10,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    int varb_1;
+    scanf(""%d"",&varb_1);
+    varb_0=varb_1*9.0/5.0+32;
+    printf(""%.1f"",varb_0);
+    return 0;
+  }
+",0.0,5
+11,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_0);
+varb_1=varb_0*9/5+32;
+printf(""%.1f"",varb_1);
+}
+",0.0,5
+12,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_1);
+varb_1=100;
+varb_0=9.0/5.0*varb_1+32.0;
+printf(""%.1f"",varb_0);
+return 0;
+}",0.0,5
+13,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	varb_0=9/5*varb_1+32;
+    printf(""%.1f"",varb_0);
+    return 0;
+}",0.0,4
+14,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1;
+	scanf(""%f,&C"");
+	varb_0=9.0/5.0*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+15,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+ int main()
+ {
+ float varb_0;
+ float varb_1;
+ scanf(""%.1f"",&varb_1);
+ varb_0=varb_1*9/5+32;
+ printf(""%.1f"",varb_0);
+ return 0;
+}
+",0.0,6
+16,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ varb_1=(9/5)*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,6
+17,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	varb_0=9.0/5.0*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+18,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ float varb_1;
+ scanf(""%d"",&varb_0);
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,4
+19,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9.0/5.0*varb_0+32.0;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,4
+20,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h> 
+int main()
+{
+	float varb_0;
+	scanf(""%f,&a"");
+	printf(""%.1f"",(9.0/5.0)*varb_0+32.0);
+	return 0;
+}
+",0.0,5
+21,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  printf(""%d"",varb_0);
+  scanf(""%d"",&varb_0);
+  varb_1=9*varb_0/5+32;
+  printf(""%.1f"",varb_1);
+  return 0;
+}",0.0,4
+22,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ double varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,4
+23,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,6
+24,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+ {
+ float varb_0;
+ scanf(""%f"",&varb_0);
+ float varb_1;
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+ }",0.0,6
+25,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+varb_1=9.0/5*varb_0+32;
+printf(""%1f"",varb_1);
+}",0.0,7
+26,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0;
+float varb_1;
+scanf(""%.1f"",&varb_1);
+varb_0=varb_1*9.0/5.0+32;
+printf(""%.1f"",varb_0);
+return 0;
+}
+",0.0,6
+27,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0;
+ double varb_1;
+ scanf(""%d"",&varb_0);
+ varb_1=1.8*varb_0+32;
+ printf(""%.1lf"",varb_1);
+ return 0;
+}",0.0,6
+28,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=1.8*varb_0+32;
+    printf(""%.1f"",varb_1);
+}",0.0,3
+29,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+   float varb_0,varb_1=varb_0*9/5+32;
+   scanf(""%f"",&varb_0);
+   printf(""%.1f"",varb_1);
+   return 0;}",0.0,2
+30,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0, varb_1;
+scanf(""%f"", &varb_0);
+varb_1 =(9.0/5.0) * varb_0 + 32;
+printf(""%f"" , varb_1);
+return 0;
+}
+",0.0,7
+31,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+#define a 1.8
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=a*varb_0+32;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,6
+32,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%d"",&varb_0);
+ varb_1=(9/5)*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,5
+33,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+ {
+ float varb_0;
+ scanf(""%d"",&varb_0);
+ float varb_1;
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+ }",0.0,5
+34,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  float  varb_0,varb_1;
+  printf(""input  Celsius  temperature：\n"");
+  scanf(""%f"",&varb_0);
+  varb_1=9.0/5.0*varb_0+32;
+  printf(""%.1f"", varb_1);
+  return 0;
+}
+",0.0,4
+35,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  varb_1=9/5*varb_0+32;
+  printf(""%.1f"",varb_1);
+  return 0;
+}
+",0.0,6
+36,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+    int varb_0;
+    double varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=1.8*varb_0+32;
+    printf(""%.1f"",varb_1);
+}",0.0,3
+37,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_0);
+varb_1=1.0*9/5*varb_0+32;
+printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+38,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    varb_1=9.0/5.0*varb_0+32.0;
+    scanf(""%f"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+39,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    float varb_1;
+    scanf(""%.1f"",&varb_1);
+    varb_0=varb_1*9.0/5.0+32;
+    printf(""%.1f"",varb_0);
+    return 0;
+  }
+",0.0,6
+40,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",varb_1);
+	varb_0=9/5*varb_1+32;
+    printf(""%.1f"",varb_0);
+    return 0;
+}",0.0,4
+41,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,6
+42,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+varb_1=9/5*varb_0+32;
+printf(""%f"",varb_1);
+}",0.0,6
+43,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	varb_0=9/5*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+44,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0;
+    float varb_1;
+    varb_1=9/5*varb_0+32;
+    scanf(""%f"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,6
+45,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+  int main()
+  {float varb_0,varb_1;
+  printf(""enter a number for C"");
+  scanf(""%f"",&varb_1);
+  varb_0=1.8*varb_1+32;
+  printf(""%.1f"",varb_0);
+  }",0.0,3
+46,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1==9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+}
+",0.0,6
+47,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1==9/5*varb_0+32;
+    printf(""%f"",varb_1);
+}
+",0.0,6
+48,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    varb_1=9/5*varb_0+32;
+    scanf(""%f"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+49,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_1);
+varb_1=100;
+varb_0=1.8*varb_1+32;
+printf(""%.1f"",varb_0);
+}",0.0,5
+50,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=9*0.2*varb_0+32;
+    printf(""%.1f"",varb_1);
+}
+",0.0,5
+51,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9/5.0*varb_0+32;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,4
+52,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,4
+53,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+	double varb_0,varb_1;
+	varb_1=100;
+	scanf(""%f"",&varb_0);
+	varb_0=9.0/5*varb_1+32;
+	printf(""%4.1f"",varb_0);
+	return 0;
+}",0.0,3
+54,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    varb_1=9/5*varb_0+32;
+    scanf(""%d"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+55,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1=9*0.2*varb_0+32;
+    printf(""%.1f"",varb_1);
+}
+",0.0,4
+56,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+float varb_1=9.0/5.0*varb_0+32;
+printf(""%.1f\n"",varb_1);
+return 0;
+}",0.0,9
+57,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    varb_1=9/5*varb_0+32;
+    scanf(""%fd"",&varb_0);
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,5
+58,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_1);
+varb_1=100;
+varb_0=9/5*varb_1+32;
+printf(""%.1f"",varb_0);
+return 0;
+}",0.0,5
+59,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main() 
+{
+	int varb_0;
+	float varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9.0/5.0*varb_0+32;
+	printf(""%.1f"",varb_1);
+	return 0;
+}",0.0,4
+60,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main(void)
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_1);
+varb_0=9.0/5*varb_1+32;
+printf(""%f"",varb_0);
+return 0;
+}",0.0,7
+61,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9/5.0*varb_0+32.0;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,4
+62,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+    float varb_0;
+    float varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1=1.8*varb_0+32;
+    printf(""%.1f"",varb_1);
+}",0.0,8
+63,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+   float varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=9/5*varb_0+32;
+   printf(""%.1f"",varb_1);
+   return 0;}",0.0,2
+64,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_0);
+varb_1=varb_0*9.0/5.0+32;
+printf(""%.1f"",varb_1);
+}
+",0.0,5
+65,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  float varb_1;
+  scanf(""%d"",&varb_0);
+  varb_1=(float)9/5*varb_0+32;
+  printf(""%.1f"",varb_1);
+}",0.0,4
+66,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    int varb_1;
+    scanf(""%d"",&varb_1);
+    varb_0=varb_1*9/5+32;
+    printf(""%.1f"",varb_0);
+    return 0;
+  }
+",0.0,5
+67,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+   float varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=9/5*varb_0+32;
+   printf(""%f"",varb_1);
+   return 0;}",0.0,2
+68,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+	float varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,4
+69,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main(){
+   float varb_0,varb_1=varb_0*9/5+32;
+   scanf(""%f"",&varb_0);
+   printf(""%f"",varb_1);
+   return 0;}",0.0,2
+70,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0;
+    float varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1=9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+}",0.0,2
+71,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int  main()
+{
+     double  varb_0 ,varb_1;
+     scanf(""%lf"",&varb_0);
+     varb_1=9.0/5*varb_0+32;
+    printf(""%.1l"",varb_1);
+    return 0;
+}",0.0,7
+72,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_1);
+ varb_0=9/5*varb_1+32;
+ printf(""%.1f"",varb_0);
+ return 0;
+}",0.0,6
+73,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+ {
+ float varb_0;
+ scanf(""%d"",&varb_0);
+ float varb_1;
+ varb_1=9.0/5.0*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+ }",0.0,5
+74,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+float varb_1=9/5*varb_0+32;
+printf(""%.1f\n"",varb_1);
+return 0;
+}
+",0.0,6
+75,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+    float varb_0;
+    float varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1=9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+}",0.0,2
+76,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  scanf(""%d"",&varb_0);
+  varb_1=9*varb_0/5+32;
+  printf(""%d"",varb_1);
+  return 0;
+}",0.0,4
+77,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0;
+float varb_1;
+scanf(""%.1f"",&varb_0);
+varb_1=varb_0*9.0/5.0+32;
+printf(""%.1f"",varb_1);
+return 0;
+}
+",0.0,6
+78,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  scanf(""%d"",&varb_0);
+  varb_1=9*varb_0/5+32;
+  printf(""%.1f"",varb_1);
+  return 0;
+}",0.0,4
+79,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+ int main()
+ {
+ float varb_0;
+ float varb_1;
+ scanf(""%.f"",&varb_1);
+ varb_0=varb_1*9/5+32;
+ printf(""%.1f"",varb_0);
+ return 0;
+}
+",0.0,6
+80,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+main()
+{
+float varb_0,varb_1;
+scanf(""%.1f"",&varb_1);
+varb_1=100;
+varb_0=1.8*varb_1+32;
+printf(""%.1f"",varb_0);
+return 0;
+}",0.0,5
+81,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1;
+	scanf(""%d,&C"");
+	varb_0=9.0/5.0*varb_1+32;
+	printf(""%.1f"",varb_0);
+	return 0;
+}",0.0,4
+82,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%d"",&varb_0);
+ varb_1=9/5*varb_0+32;
+ printf(""%.1f"",varb_1);
+ return 0;
+}",0.0,5
+83,2c911d616dbd643c016dc91d5ef91109,"#include <stdio.h>
+int main()
+{
+float varb_0;
+float varb_1;
+scanf(""%.1f"",&varb_1);
+varb_0=varb_1*9/5+32;
+printf(""%.1f"",varb_0);
+return 0;
+}
+",0.0,6
+84,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+#define a 1.8
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f"",&varb_0);
+    varb_1=9/5*varb_0+32;
+    printf(""%.1f"",varb_1);
+    return 0;
+}",0.0,7
+85,2c911d616dbd643c016dc91d5ef91109,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  varb_1=(9.0/5)*varb_0+32;
+  printf(""%f"",varb_1);
+  return 0;
+}",0.0,7

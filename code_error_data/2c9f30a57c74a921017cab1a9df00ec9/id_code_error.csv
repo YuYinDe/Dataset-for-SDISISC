@@ -1,0 +1,58 @@
+,id,code,is_true,errorline
+0,2c9f30a57c74a921017cab1a9df00ec9,"#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    for(varb_4=(varb_0-3)/5;varb_4>=1;varb_4--)
+    {
+        for(varb_5=(varb_0-5*varb_4-1)/2;varb_5>=1;varb_5--)
+        {
+            varb_1=varb_0-5*varb_4-2*varb_5;
+            varb_2=varb_4+varb_5+varb_1;
+            printf(""fen5:%d, fen2:%d, fen1:%d, varb_2:%d\n"",varb_4,varb_5,varb_1,varb_2);
+            varb_3++;
+        }
+    }
+    printf(""count = %d"",varb_3);
+	return 0;
+}
+",0.0,4
+1,2c9f30a57c74a921017cab1a9df00ec9,"#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int varb_0,varb_1=0,varb_2,varb_3=0,varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    for(varb_4=(varb_0-3)/5;varb_4>=1;varb_4--)
+    {
+        for(varb_5=(varb_0-5*varb_4-1)/2;varb_5>=1;varb_5--)
+        {
+            varb_1=varb_0-5*varb_4-2*varb_5;
+            varb_2=varb_4+varb_5+varb_1;
+            printf(""fen5:%d, fen2:%d, fen1:%d, varb_2:%d\n"",varb_4,varb_5,varb_1,varb_2);
+            varb_3++;
+        }
+    }
+    printf(""count = %d"",varb_3);
+	return 0;
+}
+",0.0,14
+2,2c9f30a57c74a921017cab1a9df00ec9,"#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int varb_0,varb_1=0,varb_2,varb_3=0,varb_4,varb_5;
+    scanf(""%d"",&varb_0);
+    for(varb_4=(varb_0-3)/5;varb_4>=1;varb_4--)
+    {
+        for(varb_5=(varb_0-5*varb_4-1)/2;varb_5>=1;varb_5--)
+        {
+            varb_1=varb_0-5*varb_4-2*varb_5;
+            varb_2=varb_4+varb_5+varb_1;
+            printf(""fen5:%d, fen2:%d, fen1:%d, varb_2:%d\n"",varb_4,varb_5,varb_1,varb_2);
+            varb_3++;
+        }
+    }
+    printf(""count = %d"",varb_3);
+	return 0;
+}
+",0.0,14

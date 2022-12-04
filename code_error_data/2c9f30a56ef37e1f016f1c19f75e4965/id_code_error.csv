@@ -1,0 +1,2419 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return varb_4;
+    break;
+    }
+    }
+",0.0,21
+1,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3,varb_11=-1;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+   if(varb_2==varb_0[varb_3])
+    varb_11++;   
+  }
+return varb_11;
+}
+",0.0,21
+2,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return(varb_3+1);
+    break;
+    }
+    }
+",0.0,21
+3,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+break;
+}
+return varb_3;
+}
+",0.0,21
+4,2c9f30a56ef37e1f016f1c19f75e4965,"	#include <stdio.h>
+	#define MAXN 10
+	int func_0( int varb_0[], int varb_1, int varb_2 );
+	int main()
+	{
+	    int varb_3, varb_4, varb_1, varb_2;
+	    int varb_7[MAXN];
+	    scanf(""%d"", &varb_1);
+	    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+	        scanf(""%d"", &varb_7[varb_3]);
+	    scanf(""%d"", &varb_2);
+	    varb_4 = func_0( varb_7, varb_1, varb_2 );
+	    if( varb_4 != -1 )
+	        printf(""index = %d\n"", varb_4);
+	    else
+	        printf(""Not found\n"");
+	    return 0;
+	}
+	int func_0( int varb_0[], int varb_1, int varb_2 )
+	{
+		int varb_10=-1;
+		int varb_3;
+		for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+		{
+			if(varb_0[varb_3]==varb_2)
+			{
+				varb_10=1;
+				break;
+			}
+		}
+		return varb_10;
+	}",0.0,1
+5,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+	if(varb_0[varb_3]==varb_2)
+	return 0;
+    }
+    return -1;
+   }",0.0,21
+6,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 <varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3,varb_11=0;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		varb_11++;
+	}
+	if(varb_11==0)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,21
+7,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_11;
+varb_11=varb_0[0];
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_11>varb_0[varb_3])
+varb_11=varb_0[varb_3];
+}
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{return -1;
+}
+else
+return varb_11;
+}
+}",0.0,21
+8,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_9,int varb_10)
+{
+    int varb_11;
+    for(varb_11=0;varb_11<varb_9;varb_11++)
+    {
+        if(varb_8[varb_11]==varb_10)
+        break;
+        return varb_11;
+    }
+    return -1;
+}
+",0.0,25
+9,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+    int varb_3;
+    for(varb_3=0;varb_3<varb_1;varb_3++)
+    {
+    if(varb_0[varb_3]==varb_2)
+    {
+    return varb_3;
+    break;
+    }
+    }
+}",0.0,21
+10,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++,varb_1--)
+{
+if(varb_0[varb_3]==varb_2)
+    return varb_4;
+   else if(varb_0[varb_3]!=varb_2)
+return(-1);
+    }
+    }
+",0.0,21
+11,2c9f30a56ef37e1f016f1c19f75e4965,"#include<stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_7[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_7[varb_3]==varb_2)
+return varb_3;
+}
+return 0;
+}",0.0,17
+12,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+    return varb_4;
+   else if(varb_0[varb_3]!=varb_2)
+return(-1);
+    }
+    }
+",0.0,21
+13,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+{return varb_3;
+break;
+}
+else
+return -1;
+}
+}",0.0,25
+14,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 <varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3,varb_11=0;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		varb_11++;
+		break;
+	}
+	if(varb_11==0)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,21
+15,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+     scanf(""%d"", &varb_7[varb_3]);
+     scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  scanf(""%d"",&varb_2);
+  scanf(""%d"",&varb_1);
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  scanf(""%d"",&varb_0[varb_3]);
+  if(varb_0[varb_3]==varb_2)
+  return varb_3;
+  else
+  return -1;
+}",0.0,11
+16,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+    if(varb_0[varb_3]==varb_2)
+    {return varb_3;}
+    else
+    {return -1;}
+  }
+}",0.0,25
+17,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+    	  int varb_3;
+    	  for(varb_3=1;varb_3<=varb_1;varb_3++)
+    	    {
+    	    	if(varb_0[varb_3]=varb_2)
+             {
+    	    	   return varb_3;
+             }      
+    	    	else
+             {   
+    	    	   return -1;
+             }      
+			  }
+}
+",0.0,21
+18,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2,varb_7;
+    int varb_8[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_8[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_8, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_7, varb_4;
+for(varb_7=0;varb_7<=varb_1-1;varb_7++)
+{
+if(varb_2==varb_0[varb_7])
+{
+varb_4=varb_2;
+break;
+}
+else
+varb_4=-1;
+return varb_4;
+}
+}",0.0,26
+19,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+    if(varb_0[varb_3]==varb_2)
+    {return varb_3;}
+  }
+}",0.0,21
+20,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return varb_4;
+    break;
+    }
+    }
+",0.0,21
+21,2c9f30a56ef37e1f016f1c19f75e4965,"#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_7[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_7[varb_3]==varb_2)
+return varb_3;
+}
+return -1;
+}",0.0,18
+22,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    break;
+    return varb_3;
+    }}
+",0.0,21
+23,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_11;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{
+varb_11=varb_3;
+break;
+}
+else;
+varb_11==-1;
+}
+return varb_11;
+}
+",0.0,30
+24,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+        scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_1,int varb_2)
+{ 
+    int varb_3,varb_12=0;
+    for(varb_3=0;varb_3<varb_1;varb_3++){
+    if(varb_8[varb_3]==varb_2)
+      return varb_3;
+    else 
+       varb_12++;      
+      }
+    if(varb_12==varb_1-1)
+      return -1;
+ }    ",0.0,18
+25,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+varb_3=0;
+for(;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+return varb_3;
+else
+return -1;
+}
+}",0.0,21
+26,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2) 
+{
+int varb_3,varb_11=0;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+ {
+  if(varb_0[varb_3]==varb_2)
+   {
+    return 1;
+     varb_11++;
+     break;
+   }
+ } 
+ if(varb_11==0)
+  return -1;
+}          
+",0.0,26
+27,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+        scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_1,int varb_2)
+{ 
+    int varb_3;
+    for(varb_3=0;varb_3<varb_1;varb_3++){
+    if(varb_8[varb_3]==varb_2)
+      return varb_3;}
+    if(varb_3==varb_1-1&&varb_8[varb_3]!=varb_2)
+      return -1;
+ }    ",0.0,19
+28,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+        scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_1,int varb_2)
+{ 
+    int varb_3;
+    for(varb_3=0;varb_3<varb_1;varb_3++){
+    if(varb_8[varb_3]==varb_2)
+      return varb_3;
+    else
+      return -1;}
+ }    ",0.0,21
+29,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_11;
+varb_11=varb_0[0];
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_11>varb_0[varb_3])
+varb_11=varb_0[varb_3];
+}
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{return varb_11;
+}
+else
+return -1;
+}
+}",0.0,21
+30,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+        scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_1,int varb_2)
+{ 
+    int varb_3,varb_12=0;
+    for(varb_3=0;varb_3<varb_1;varb_3++){
+    if(varb_8[varb_3]==varb_2)
+      return varb_3;
+    else 
+       varb_12++;      
+      }
+    if(varb_12==varb_1-1&&varb_8[varb_12]!=varb_2)
+      return -1;
+ }    ",0.0,21
+31,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+	int varb_3;
+	int varb_12;
+	varb_12=-1;
+	for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+	{
+	  	if(varb_2==varb_0[varb_3])
+	  	{
+	  		varb_12=0;
+	  		return varb_3;
+		  }
+		else
+		return varb_12;
+	}
+}",0.0,31
+32,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3;
+	for(varb_3=0;varb_3<=varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		break;
+	}
+	if(varb_3==0)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,22
+33,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else
+{if(varb_0[varb_3]==varb_2)
+    break;}
+    return varb_3;
+    }}
+",0.0,21
+34,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+break;
+}
+return varb_3;
+}
+",0.0,21
+35,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+return varb_3;
+break;
+}
+return -1;
+}
+",0.0,26
+36,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_10)
+{int varb_3;
+  if(varb_10==varb_0[varb_3])
+     {for(varb_3=0;varb_3<varb_1;varb_3++)
+       { if(varb_0[varb_3]<=varb_0[varb_3+1] )
+            return varb_0[varb_3];}
+     }
+   else 
+    return -1;
+  }
+",0.0,19
+37,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_10;
+for(varb_10=0;varb_10<varb_1;varb_10++)
+{
+int varb_11;
+varb_11=varb_10;
+if(varb_0[varb_10]==varb_2)
+{
+return varb_11;
+break;
+}
+else
+return -1;
+}
+}",0.0,21
+38,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return varb_4;
+    }
+    }
+",0.0,21
+39,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+varb_3=0;
+for(;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]=varb_2)
+return varb_3;
+else
+return -1;
+}
+}",0.0,21
+40,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3,varb_11=-1,varb_12;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+   if(varb_2==varb_0[varb_3])
+    { 
+      varb_11=1;
+      varb_12=varb_3-1; 
+    }  
+  }
+return varb_12;
+}
+",0.0,21
+41,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 <varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		break;
+	}
+	if(varb_3==0&&varb_0[varb_3]==0)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,21
+42,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+    if(varb_0[varb_3]==varb_2)
+    return 1;
+    else
+    return -1;
+  }
+}",0.0,25
+43,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+    int varb_11;
+    for(varb_11=0;varb_11<varb_1;varb_11++)
+      if(varb_0[varb_11]==varb_2)
+      return varb_11;
+      else 
+      return -1;
+ }",0.0,15
+44,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+    int varb_3;
+    for(varb_3=0;varb_3<varb_1;varb_3++)
+    {
+    if(varb_0[varb_3]==varb_2)
+    return varb_3;
+    break;
+    }
+}",0.0,26
+45,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_10,varb_3;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		{
+		varb_10=varb_3;
+		break;
+		}
+	}
+	return varb_10;
+}",0.0,21
+46,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+ int varb_3,varb_7;
+ varb_7=-1;
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ { 
+  if(varb_2==varb_0[varb_3])
+  varb_7=varb_3;
+  break;
+ }
+ return varb_7;
+ }
+",0.0,21
+47,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3,varb_11=-1,varb_12;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+   if(varb_2==varb_0[varb_3])
+    { 
+      varb_11=1;
+      varb_12=varb_3; 
+    }  
+  }
+return varb_12;
+}
+",0.0,21
+48,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3,varb_11=-1;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		{
+			return varb_3;
+		}
+	}
+	if(varb_11==1)
+	return -1;
+}",0.0,29
+49,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_7[], int varb_1, int varb_2 )
+{
+  int varb_3,varb_11=0;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+    if(varb_7[varb_3]==varb_2)
+    {
+	varb_11+=1;
+	return varb_3;
+	}
+  }
+  if(varb_11!=0)return -1;
+}",0.0,19
+50,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{return varb_3;
+break;
+}
+else
+return -1;
+}
+}",0.0,25
+51,2c9f30a56ef37e1f016f1c19f75e4965,"	#include <stdio.h>
+	#define MAXN 10
+	int func_0( int varb_0[], int varb_1, int varb_2 );
+	int main()
+	{
+	    int varb_3, varb_4, varb_1, varb_2;
+	    int varb_7[MAXN];
+	    scanf(""%d"", &varb_1);
+	    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+	        scanf(""%d"", &varb_7[varb_3]);
+	    scanf(""%d"", &varb_2);
+	    varb_4 = func_0( varb_7, varb_1, varb_2 );
+	    if( varb_4 != -1 )
+	        printf(""index = %d\n"", varb_4);
+	    else
+	        printf(""Not found\n"");
+	    return 0;
+	}
+	int func_0( int varb_0[], int varb_1, int varb_2 )
+	{
+		int varb_10=-1;
+		int varb_3;
+		for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+		{
+			if(varb_0[varb_3]==varb_2)
+			varb_10=1;
+		}
+		return varb_10;
+	}",0.0,1
+52,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_11,varb_12;
+varb_11=varb_0[0];
+for(varb_12=0;varb_12<varb_1;varb_12++)
+{
+if(varb_11>=varb_0[varb_12])
+varb_11=varb_0[varb_12];
+}
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{return varb_12;
+}
+else
+return -1;
+}
+}",0.0,21
+53,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2) 
+{
+int varb_3;
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ {
+  if(varb_0[varb_3]==varb_2)
+    return 1;
+  else
+    return -1;
+ }   
+}          
+",0.0,25
+54,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+     scanf(""%d"", &varb_7[varb_3]);
+     scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+   if(varb_0[varb_3]==varb_2)
+   return varb_3;
+   else
+  return -1;
+  }
+}",0.0,15
+55,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return varb_3;
+    }}
+",0.0,21
+56,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+int varb_3, varb_4, varb_1, varb_2;
+int varb_7[MAXN];
+scanf(""%d"", &varb_1);
+for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+scanf(""%d"", &varb_7[varb_3]);
+scanf(""%d"", &varb_2);
+varb_4 = func_0( varb_7, varb_1, varb_2 );
+if( varb_4 != -1 )
+printf(""index = %d\n"", varb_4);
+else
+printf(""Not found\n"");
+return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{if(varb_0[varb_3]==varb_2)
+return varb_3;
+else
+return -1;
+}
+}
+",0.0,20
+57,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_10)
+{   int varb_3;
+    for(varb_3=0;varb_3<varb_1;varb_3++)
+        {if(varb_0[varb_3]==varb_10&&varb_0[varb_3]<=varb_0[varb_3+1] )
+            return varb_3;
+   else 
+    return -1;}
+}
+",0.0,19
+58,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return(varb_3+1);
+    }
+    }
+",0.0,21
+59,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+    int varb_10=0;
+    for(int varb_3=0;varb_3<varb_1;varb_3++)
+    {
+        if(varb_0[varb_3]==varb_2)
+        return varb_3;
+        else
+        varb_10=-1;
+     }
+     if(varb_10==-1)
+     return -1;
+ }",0.0,23
+60,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+        scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_8[],int varb_1,int varb_2)
+{ 
+    int varb_3,varb_12=0;
+    for(varb_3=0;varb_3<varb_1;varb_3++){
+    if(varb_8[varb_3]==varb_2)
+      return varb_3;
+    else 
+       varb_12++; }     
+    if(varb_12==varb_1-1)
+      return -1;
+ }    ",0.0,26
+61,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 <varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		break;
+	}
+	if(varb_3==0&&varb_0[varb_3]==0)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,21
+62,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2,varb_7;
+    int varb_8[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_8[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_8, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_7, varb_4;
+for(varb_7=0;varb_7<=varb_1-1;varb_7++)
+{
+if(varb_2==varb_0[varb_7])
+{
+varb_4=varb_2;
+break;
+return varb_4;
+}
+else
+varb_4=-1;
+return varb_4;
+}
+}",0.0,26
+63,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 <varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+	int varb_3;
+	for(varb_3=0;varb_3<varb_1;varb_3++)
+	{
+		if(varb_0[varb_3]==varb_2)
+		break;
+	}
+	if(varb_3==0&&varb_3>=varb_1)
+	return -1;
+	else
+	return varb_3;
+}
+",0.0,21
+64,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+     scanf(""%d"", &varb_7[varb_3]);
+     scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  scanf(""%d"",&varb_2);
+  scanf(""%d"",&varb_1);
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  scanf(""%d"",&varb_0[varb_3]);
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+   if(varb_0[varb_3]==varb_2)
+   return varb_3;
+   else
+  return -1;
+  }
+}",0.0,11
+65,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2) 
+{
+int varb_3;
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+  if(varb_0[varb_3]==varb_2)
+    return 1;
+}          
+",0.0,21
+66,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+    return varb_4;
+    if(varb_0[varb_3]!=varb_2)
+return(-1);
+    }
+    }
+",0.0,21
+67,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+int varb_3, varb_4, varb_1, varb_2;
+int varb_7[MAXN];
+scanf(""%d"", &varb_1);
+for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+scanf(""%d"", &varb_7[varb_3]);
+scanf(""%d"", &varb_2);
+varb_4 = func_0( varb_7, varb_1, varb_2 );
+if( varb_4 != -1 )
+printf(""index = %d\n"", varb_4);
+else
+printf(""Not found\n"");
+return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{if(varb_0[varb_3]==varb_2)
+return varb_3;
+}
+}
+",0.0,20
+68,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2,varb_7;
+    int varb_8[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_8[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_8, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_7, varb_4;
+for(varb_7=0;varb_7<=varb_1-1;varb_7++)
+{
+if(varb_2==varb_0[varb_7])
+{
+varb_4=varb_2;
+break;
+}
+else
+varb_4=-1;
+}
+return varb_4;
+}",0.0,26
+69,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_3;
+return -1;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+return varb_3;
+break;
+}
+}
+",0.0,21
+70,2c9f30a56ef37e1f016f1c19f75e4965,"#include<stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_7[], int varb_1, int varb_2 )
+{
+  int varb_3,varb_11=0;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  {
+    if(varb_7[varb_3]==varb_2)
+    {
+	varb_11+=1;
+	return varb_3;
+	}
+  }
+  if(varb_11!=0)return -1;
+}
+",0.0,19
+71,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]!=varb_2)
+return(-1);
+else if(varb_0[varb_3]==varb_2)
+    return(varb_3-1);
+    }
+    }
+",0.0,21
+72,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0(int varb_0[],int varb_1,int varb_2)
+{
+int varb_3;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+return varb_3;
+break;
+}
+}
+",0.0,26
+73,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_11,varb_12;
+varb_11=varb_0[0];
+for(varb_12=0;varb_12<varb_1;varb_12++)
+{
+if(varb_11>varb_0[varb_12])
+varb_11=varb_0[varb_12];
+}
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+if(varb_2==varb_0[varb_3])
+{return varb_12;
+}
+else
+return -1;
+}
+}",0.0,21
+74,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+int varb_3,varb_4;
+varb_3=0;
+for(;varb_3<varb_1;varb_3++)
+{
+if(varb_0[varb_3]==varb_2)
+{
+varb_4=varb_3;
+return varb_4;
+}
+else
+return -1;
+}
+}",0.0,15
+75,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+     scanf(""%d"", &varb_7[varb_3]);
+     scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+  scanf(""%d"",&varb_2);
+  scanf(""%d"",&varb_1);
+  int varb_3;
+  for(varb_3=0;varb_3<varb_1;varb_3++)
+  scanf(""%d"",&varb_0[varb_3]);
+  if(varb_0[varb_3]==varb_2)
+  return varb_3;
+  else
+  return -1;
+}",0.0,11
+76,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_7[], int varb_1, int varb_2 )
+{ int varb_3,varb_11;
+for(varb_3=0;varb_3<varb_1;varb_3++)
+{
+   if(varb_7[varb_3]==varb_2)  varb_11=varb_3;
+   else  varb_11=-1;
+}
+return varb_11;
+}",0.0,20
+77,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2 )
+{
+ int varb_3;
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ { 
+  if(varb_2==varb_0[varb_3])
+  return varb_3;
+  else return -1;
+ }
+ }
+",0.0,21
+78,2c9f30a56ef37e1f016f1c19f75e4965,"#include <stdio.h>
+#define MAXN 10
+int func_0( int varb_0[], int varb_1, int varb_2 );
+int main()
+{
+    int varb_3, varb_4, varb_1, varb_2;
+    int varb_7[MAXN];
+    scanf(""%d"", &varb_1);
+    for( varb_3 = 0; varb_3 < varb_1; varb_3++ )
+        scanf(""%d"", &varb_7[varb_3]);
+    scanf(""%d"", &varb_2);
+    varb_4 = func_0( varb_7, varb_1, varb_2 );
+    if( varb_4 != -1 )
+        printf(""index = %d\n"", varb_4);
+    else
+        printf(""Not found\n"");
+    return 0;
+}
+int func_0( int varb_0[], int varb_1, int varb_2) 
+{
+int varb_3;
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ {
+  if(varb_0[varb_3]==varb_2)
+  {
+    return 1;
+     break;
+  } 
+  else
+    return -1;
+ }   
+}          
+",0.0,26

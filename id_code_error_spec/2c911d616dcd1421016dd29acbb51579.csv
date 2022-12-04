@@ -1,0 +1,998 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1>num2)
+    printf(""aum1>num2"");
+  else if (num1<num2)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+    printf(""aum1>num2"");
+  else if(varb_0<varb_1)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_0.csv
+1,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+
+int main()
+
+{
+
+    float num1,num2;
+
+    scanf(""%f %f"",&num1,&num2);
+
+    if((num1-num2)>0)
+
+       printf(""num1>num2"");
+
+    else if((num1-num2)<0)
+
+       printf(""num1<num2"");
+
+    else if((num1-num2)==0)
+
+       printf(""num1-num2=0"");
+
+    
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if((varb_0-varb_1)>0)
+       printf(""num1>num2"");
+    else if((varb_0-varb_1)<0)
+       printf(""num1<num2"");
+    else if((varb_0-varb_1)==0)
+       printf(""num1-varb_1=0"");
+}",10,2c911d616dcd1421016dd29acbb51579_1.csv
+2,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f %f"",&num1,&num2);
+  if (num1>=num2)
+  printf(""num1>num2"");
+  else if(num1==num2)
+  printf(""num1=num2"");
+  else 
+  printf(""num1<num2"");
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f %f"",&varb_0,&varb_1);
+  if(varb_0>=varb_1)
+  printf(""num1>num2"");
+  else if(varb_0==varb_1)
+  printf(""num1=num2"");
+  else 
+  printf(""num1<num2"");
+  return 0;
+}",6,2c911d616dcd1421016dd29acbb51579_2.csv
+3,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int  main( )
+{
+float  num1,num2;
+scanf(""%f %f"",&num1,&num2);
+if (num1>num2)
+printf(""num1>num2"");
+else if(num1<num2)
+printf(""num1<num2"");
+else if(num1==num2)
+printf(""num1==num2"");
+
+return 0;
+   
+           
+        
+}",0.0,"#include<stdio.h>
+int  main( )
+{
+float  varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else if(varb_0==varb_1)
+printf(""num1==num2"");
+return 0;
+}",11,2c911d616dcd1421016dd29acbb51579_3.csv
+4,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{float num1,num2;
+scanf(""%f %f"",&num1,&num2);
+if(num1>num2)
+printf(""num1>num2"");
+else if(num1<num2) 
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1) 
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",1,2c911d616dcd1421016dd29acbb51579_4.csv
+5,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+
+{
+	float num1,num2;
+	scanf(""%f %f"",&num1,&num2);
+	if(num1>num2)
+	printf(""num1>num2"");
+	else if(num1=num2)
+	printf(""num1=num2"");
+	else if(num1<num2)
+	printf(""num1<num2"");
+	
+	return 0;
+	
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f %f"",&varb_0,&varb_1);
+	if(varb_0>varb_1)
+	printf(""num1>num2"");
+	else if(varb_0=varb_1)
+	printf(""num1=num2"");
+	else if(varb_0<varb_1)
+	printf(""num1<num2"");
+	return 0;
+}
+",4,2c911d616dcd1421016dd29acbb51579_5.csv
+6,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1<num2)
+  printf(""num1<num2"");
+  else if(num1>num2)
+  printf(""num1>num2"");
+  else (num1==num2);
+  printf(""num1=num2"");
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0<varb_1)
+  printf(""num1<num2"");
+  else if(varb_0>varb_1)
+  printf(""num1>num2"");
+  else(varb_0==varb_1);
+  printf(""num1=num2"");
+  return 0;
+  }",6,2c911d616dcd1421016dd29acbb51579_6.csv
+7,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f %f"",&num1,&num2);
+  if(num1>num2)
+     printf(""num1<num2"");
+  else if(num1<num2)
+    printf(""num1<num2"");
+  else
+     printf(""num1=num2"");
+return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f %f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+     printf(""num1<num2"");
+  else if(varb_0<varb_1)
+    printf(""num1<num2"");
+  else
+     printf(""num1=num2"");
+return 0;
+}
+",7,2c911d616dcd1421016dd29acbb51579_7.csv
+8,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1<num2)
+  printf(""num1<num2"");
+  else if(num1==num2)
+  printf(""num1=num2"");
+  else (num1>num2);
+  printf(""num1>num2"");
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0<varb_1)
+  printf(""num1<num2"");
+  else if(varb_0==varb_1)
+  printf(""num1=num2"");
+  else(varb_0>varb_1);
+  printf(""num1>num2"");
+  return 0;
+  }",6,2c911d616dcd1421016dd29acbb51579_8.csv
+9,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+char num1,num2;
+scanf(""%f %f"",&num1,&num2);
+if (num1>num2)
+  printf(""num1>num2"");
+else if(num1<num2)
+  printf(""num1<num2"");
+else
+  printf(""num1=num2"");
+return 2;
+
+
+
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+  printf(""num1>num2"");
+else if(varb_0<varb_1)
+  printf(""num1<num2"");
+else
+  printf(""num1=num2"");
+return 2;
+}",4,2c911d616dcd1421016dd29acbb51579_9.csv
+10,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+ float num1,num2;
+ scanf(""%f%f"",&num1,&num2);
+ if(num1>num2)
+ printf(""num1>num2"");
+else if(num1<num2)
+printf(""num1<num2"");
+else
+ printf(""num1=nun2"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f%f"",&varb_0,&varb_1);
+ if(varb_0>varb_1)
+ printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else
+ printf(""num1=nun2"");
+}",11,2c911d616dcd1421016dd29acbb51579_10.csv
+11,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f %f"",&num1,&num2);
+  if (num1>=num2)
+  printf(""num1>num2"");
+  else if(num1<=num2)
+  printf(""num1<num2"");
+  else 
+  printf(""num1=num2"");
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f %f"",&varb_0,&varb_1);
+  if(varb_0>=varb_1)
+  printf(""num1>num2"");
+  else if(varb_0<=varb_1)
+  printf(""num1<num2"");
+  else 
+  printf(""num1=num2"");
+  return 0;
+}",6,2c911d616dcd1421016dd29acbb51579_11.csv
+12,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  char num1,num2;
+  scanf(""%c%c"",&num1,&num2);
+  if (num1>num2)
+  printf(""num1>num2"");
+  else if(num1<num2)
+  printf(""num1<num2"");
+  else (num1==num2);
+  printf(""num1=num2"");
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0,varb_1;
+  scanf(""%c%c"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+  printf(""num1>num2"");
+  else if(varb_0<varb_1)
+  printf(""num1<num2"");
+  else(varb_0==varb_1);
+  printf(""num1=num2"");
+  return 0;
+  }",4,2c911d616dcd1421016dd29acbb51579_12.csv
+13,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+
+int main()
+{
+    
+    
+    
+    
+    
+    float num1,num2;
+    
+    scanf(""%f %f"",&num1,&num2);
+    if (num1>num2)
+    printf(""num1>num2"");
+    else if(num1<num2)
+    printf(""num1"");
+    else if(num1==num2)
+    printf(""num1=num2"");
+    
+   
+    
+    
+        
+    return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0>varb_1)
+    printf(""num1>num2"");
+    else if(varb_0<varb_1)
+    printf(""num1"");
+    else if(varb_0==varb_1)
+    printf(""num1=num2"");
+    return 0;
+}",9,2c911d616dcd1421016dd29acbb51579_13.csv
+14,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""f% f%"",&num1,&num2);
+if(num1>num2)
+printf(""num1>num2"");
+else if(num1<num2)
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""f% f%"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",5,2c911d616dcd1421016dd29acbb51579_14.csv
+15,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+int main()
+{
+  float num1,num2;
+   scanf(""%f %f"",&num1,&num2);
+   if (num1<num2)
+    printf(""num1<num2"");
+   else if (num1==num2)
+    printf(""num1=num2"");
+    
+ return 0;
+ }
+    
+   ",0.0,"#include <stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+   scanf(""%f %f"",&varb_0,&varb_1);
+   if(varb_0<varb_1)
+    printf(""num1<num2"");
+   else if(varb_0==varb_1)
+    printf(""num1=num2"");
+ return 0;
+ }
+",6,2c911d616dcd1421016dd29acbb51579_15.csv
+16,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+int main()
+{
+    float a,b;
+    scanf(""%f%f"",&a,&b);
+    if(a>b)printf(""num1>num2""); if(a==b)printf(""num1==num2"");
+     
+     if(a<b)printf(""num1<num2"");
+}",0.0,"#include <stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f%f"",&varb_0,&varb_1);
+    if(varb_0>varb_1)printf(""num1>num2""); if(varb_0==varb_1)printf(""num1==num2"");
+     if(varb_0<varb_1)printf(""num1<num2"");
+}",6,2c911d616dcd1421016dd29acbb51579_16.csv
+17,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+main()
+{
+float a,b;
+if(a>b)
+printf(""num1>num2"");
+else if(a<b)
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include <stdio.h>
+main()
+{
+float varb_0,varb_1;
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else
+printf(""num1=num2"");
+return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_17.csv
+18,2c911d616dcd1421016dd29acbb51579,"#include <stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f %f"",&num1,&num2);
+  if (num1>=num2)
+  printf(""num1>num2"");
+  else if(num1<=num2)
+  printf(""num1<num2"");
+  else
+  printf(""num1=num2"");
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f %f"",&varb_0,&varb_1);
+  if(varb_0>=varb_1)
+  printf(""num1>num2"");
+  else if(varb_0<=varb_1)
+  printf(""num1<num2"");
+  else
+  printf(""num1=num2"");
+  return 0;
+}",6,2c911d616dcd1421016dd29acbb51579_18.csv
+19,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float a,b;
+scanf(""%f%f"",&a,&b);
+if(a>b)
+printf(""num1>num2"");
+else if(a<b)
+printf(""num1<num2"");
+else
+printf(""num1==num2"");
+
+  
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f%f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else
+printf(""num1==num2"");
+}
+",11,2c911d616dcd1421016dd29acbb51579_19.csv
+20,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{float num1,num2;
+scanf(""%f %f"",&num1,&num2);
+if(num1>num2)
+printf(""num1>num2"");
+else if(num2>num1) 
+printf(""num2>num1"");
+else
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_1>varb_0) 
+printf(""num2>num1"");
+else
+printf(""num1=num2"");
+return 0;
+}",1,2c911d616dcd1421016dd29acbb51579_20.csv
+21,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1>num2)
+  printf(""num1>num2"");
+  else if(num1<num2)
+  printf(""num1<num2"");
+  else (num1==num2);
+  printf(""num1=num2"");
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+  printf(""num1>num2"");
+  else if(varb_0<varb_1)
+  printf(""num1<num2"");
+  else(varb_0==varb_1);
+  printf(""num1=num2"");
+  return 0;
+  }",10,2c911d616dcd1421016dd29acbb51579_21.csv
+22,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""%f %f"",&num1,&num2);
+if(num1>num2)
+printf(""num2"");
+else if(num1<num2)
+printf(""num1"");
+else
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num2"");
+else if(varb_0<varb_1)
+printf(""num1"");
+else
+printf(""num1=num2"");
+return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_22.csv
+23,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""f% f%"",&num1,&num2);
+if(num1>num2)
+printf(""num1>num2"");
+else if(num1<num2)
+printf(""num1<num2"");
+else 
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""f% f%"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else 
+printf(""num1=num2"");
+return 0;
+}",5,2c911d616dcd1421016dd29acbb51579_23.csv
+24,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main( )
+{
+ float num1,num2;
+scanf(""%lf %lf"",&num1,&num2);
+if (num1>num2)
+printf(""num1>num2"");
+else if (num1<num2)
+printf(""num1<num2"");
+else if (num1==num2)
+printf(""num1=num2"");
+
+return 0;
+       
+}  
+       ",0.0,"#include<stdio.h>
+int main( )
+{
+ float varb_0,varb_1;
+scanf(""%lf %lf"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else if(varb_0==varb_1)
+printf(""num1=num2"");
+return 0;
+}  
+",5,2c911d616dcd1421016dd29acbb51579_24.csv
+25,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1>num2)
+  printf(""num1>num2"");
+  else if(num1<num2)
+  printf(""num1<num2"");
+  else if(num1==num2);
+  printf(""num1=num2"");
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+  printf(""num1>num2"");
+  else if(varb_0<varb_1)
+  printf(""num1<num2"");
+  else if(varb_0==varb_1);
+  printf(""num1=num2"");
+  return 0;
+  }",6,2c911d616dcd1421016dd29acbb51579_25.csv
+26,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""%f%f"",&num1,&num2);
+if(num1<num2)
+printf(""num1<num2"");
+else if(num1==num2)
+printf(""num1==num2"");
+else if(num1>num2)
+printf(""num1>num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f%f"",&varb_0,&varb_1);
+if(varb_0<varb_1)
+printf(""num1<num2"");
+else if(varb_0==varb_1)
+printf(""num1==num2"");
+else if(varb_0>varb_1)
+printf(""num1>num2"");
+return 0;
+}",6,2c911d616dcd1421016dd29acbb51579_26.csv
+27,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if (num1>num2)
+    printf(""num1>nun2"");
+  else if (num1<num2)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+    printf(""num1>nun2"");
+  else if(varb_0<varb_1)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_27.csv
+28,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float a,b;
+scanf(""%f %f"",&a,&b);
+if(a>b)printf(""num1>num2"");
+else if(a==b)printf(""num1<num2"");
+else printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)printf(""num1>num2"");
+else if(varb_0==varb_1)printf(""num1<num2"");
+else printf(""num1=num2"");
+return 0;
+}",6,2c911d616dcd1421016dd29acbb51579_28.csv
+29,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+
+int main()
+
+{
+
+    float num1,num2;
+
+    scanf(""%f %f"",&num1,&num2);
+
+    if((num1-num2)>0)
+
+       printf(""num1>num2"");
+
+    else if((num1-num2)<0)
+
+       printf(""num1<num2"");
+
+    else if(num1=num2)
+
+       printf(""num1-num2=0"");
+
+    
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if((varb_0-varb_1)>0)
+       printf(""num1>num2"");
+    else if((varb_0-varb_1)<0)
+       printf(""num1<num2"");
+    else if(varb_0=varb_1)
+       printf(""num1-varb_1=0"");
+}",10,2c911d616dcd1421016dd29acbb51579_29.csv
+30,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  if(num1>num2)
+     printf(""num1>num2"");
+     else if(num1<num2)
+     printf(""num1<num2"");
+     else if(num1=num2)
+     printf(""num1=num2"");
+     else
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  if(varb_0>varb_1)
+     printf(""num1>num2"");
+     else if(varb_0<varb_1)
+     printf(""num1<num2"");
+     else if(varb_0=varb_1)
+     printf(""num1=num2"");
+     else
+   return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_30.csv
+31,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+
+{
+	int num1,num2;
+	scanf(""%d %d"",&num1,&num2);
+	if(num1>num2)
+	printf(""num1>num2"");
+	else if(num1==num2)
+	printf(""num1=num2"");
+	else if(num1<num2)
+	printf(""num1<num2"");
+	
+	return 0;
+	
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	if(varb_0>varb_1)
+	printf(""num1>num2"");
+	else if(varb_0==varb_1)
+	printf(""num1=num2"");
+	else if(varb_0<varb_1)
+	printf(""num1<num2"");
+	return 0;
+}
+",4,2c911d616dcd1421016dd29acbb51579_31.csv
+32,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""f% f%"",&num1,&num2);
+if(num1==num2)
+printf(""num1=num2/n"");
+else if(num1>num2)
+printf(""num1>num2/n"");
+else 
+printf(""num1<num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""f% f%"",&varb_0,&varb_1);
+if(varb_0==varb_1)
+printf(""num1=varb_1/n"");
+else if(varb_0>varb_1)
+printf(""num1>varb_1/n"");
+else 
+printf(""num1<num2"");
+return 0;
+}",5,2c911d616dcd1421016dd29acbb51579_32.csv
+33,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""f% f%"",&num1,&num2);
+if(num1>num2)
+printf(""num1>num2"");
+else if(num1<num2)
+printf(""num1<num2"");
+else if(num1==num2)
+printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""f% f%"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+printf(""num1>num2"");
+else if(varb_0<varb_1)
+printf(""num1<num2"");
+else if(varb_0==varb_1)
+printf(""num1=num2"");
+return 0;
+}",5,2c911d616dcd1421016dd29acbb51579_33.csv
+34,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float a,b;
+scanf(""%f %f"",&a,&b);
+if(a>b)
+{
+printf(""num1>num2"");
+}
+else 
+{
+if(a==b)printf(""num1<num2"");
+
+else printf(""num1=num2"");
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(varb_0>varb_1)
+{
+printf(""num1>num2"");
+}
+else 
+{
+if(varb_0==varb_1)printf(""num1<num2"");
+else printf(""num1=num2"");
+}
+return 0;
+}",12,2c911d616dcd1421016dd29acbb51579_34.csv
+35,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+float num1,num2;
+scanf(""f% f%"",&num1,&num2);
+if(num1==num2)
+printf(""num1=num2"");
+else if(num1>num2)
+printf(""num1>num2"");
+else 
+printf(""num1<num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""f% f%"",&varb_0,&varb_1);
+if(varb_0==varb_1)
+printf(""num1=num2"");
+else if(varb_0>varb_1)
+printf(""num1>num2"");
+else 
+printf(""num1<num2"");
+return 0;
+}",5,2c911d616dcd1421016dd29acbb51579_35.csv
+36,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+int a,b;
+if(a>b)printf(""num1>num2"");
+else if(a==b)printf(""num1<num2"");
+else printf(""num1=num2"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+if(varb_0>varb_1)printf(""num1>num2"");
+else if(varb_0==varb_1)printf(""num1<num2"");
+else printf(""num1=num2"");
+return 0;
+}",4,2c911d616dcd1421016dd29acbb51579_36.csv
+37,2c911d616dcd1421016dd29acbb51579,"#include<stdio.h>
+int main()
+{
+  float num1,num2;
+  scanf(""%f%f"",&num1,&num2);
+  if(num1>num2)
+    printf(""num1>nun2"");
+  else if(num1<num2)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f%f"",&varb_0,&varb_1);
+  if(varb_0>varb_1)
+    printf(""num1>nun2"");
+  else if(varb_0<varb_1)
+    printf(""num1<num2"");
+   else
+    printf(""num1=num2"");
+  return 0;
+}",7,2c911d616dcd1421016dd29acbb51579_37.csv

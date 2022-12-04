@@ -1,0 +1,115 @@
+,id,code,is_true,errorline
+0,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+	*varb_2=varb_0+varb_1;
+	*varb_3=varb_0-varb_1;
+}",0.0,13
+1,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3); 
+int main()
+{
+  float varb_4,varb_5,varb_6,varb_7;
+  scanf(""%f %f"",&varb_4,&varb_5);
+  func_0(varb_4,varb_5,&varb_6,&varb_7);
+  printf(""%.2f\n%.2f"",varb_6,varb_7);
+  return 0;
+}
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3)
+{
+	*varb_2=varb_0+varb_1;
+	if(varb_0>varb_1)
+	*varb_3=varb_0-varb_1;
+}
+",0.0,13
+2,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3); 
+int main()
+{
+  float varb_4,varb_5,varb_6,varb_7;
+  scanf(""%f %f"",&varb_4,&varb_5);
+  func_0(varb_4,varb_5,&varb_6,&varb_7);
+  printf(""%.2f\n%.2f"",varb_6,varb_7);
+  return 0;
+}
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3)
+{
+	*varb_2=varb_0+varb_1;
+	if(varb_0>varb_1)
+	*varb_3=varb_0-varb_1;
+	else
+	*varb_3=varb_1-varb_0;
+}
+",0.0,13
+3,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+ float varb_4, varb_5, varb_6, varb_7;
+ scanf(""%f %f"", &varb_4, &varb_5);
+ func_0(varb_4, varb_5, &varb_6, &varb_7);
+ printf(""%.2f\n%.2f"", varb_6, varb_7);
+ return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+   *varb_2=varb_0+varb_1;
+   *varb_3=varb_0-varb_1;
+}",0.0,15
+4,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+*varb_2=varb_0+varb_1;
+*varb_3=varb_0-varb_1;
+}",0.0,15
+5,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+    *varb_2=varb_0+varb_1;
+    *varb_3=varb_0-varb_1;
+}",0.0,15
+6,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+  float varb_12,varb_13;
+  varb_12=varb_1-varb_0;
+  varb_13=varb_1+varb_0;
+  *varb_2=varb_12;
+  *varb_3=varb_13;
+}",0.0,14

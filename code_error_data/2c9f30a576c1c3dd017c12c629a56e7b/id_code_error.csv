@@ -1,0 +1,145 @@
+,id,code,is_true,errorline
+0,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ float varb_2;
+ varb_2=5000-(50*varb_1+50*(100-varb_0));
+ printf(""%.7f"",varb_2);
+ return 0;
+}",0.0,8
+1,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+   const int varb_0 = 10000;
+   int varb_1=90,y=10;
+   int varb_2=0;
+   varb_2=varb_0/2;
+   int varb_3=0;
+   varb_3=varb_1*y/2;
+   int varb_4=0;
+   varb_4=(100-varb_1)*(100-y)/2;
+   int varb_5=0;
+   printf(""%d"",varb_2-varb_3-varb_4);
+   return 0;
+}",0.0,13
+2,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+float varb_2;
+varb_2=5000-50*(varb_0+varb_1);
+printf(""%f"",varb_2);
+return 0;
+}
+",0.0,7
+3,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ float varb_2;
+ varb_2=5000-(50*varb_1+100*(100-varb_0)*(1/2));
+ printf(""%.7f"",varb_2);
+ return 0;
+}",0.0,7
+4,2c9f30a576c1c3dd017c12c629a56e7b,"#include <stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ float varb_2;
+ varb_0>varb_1;
+ scanf(""%d %d"",varb_0,varb_1);
+ varb_2=5000-varb_0*varb_1/2-(100-varb_0)*varb_1-(100-varb_0)*(100-varb_1)/2;
+ printf(""%f"",varb_2);
+ return 0;
+}",0.0,7
+5,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+   const int varb_0 = 10000;
+   int varb_1=90,y=10;
+   int varb_2=0;
+   varb_2=varb_0/2;
+   int varb_3=0;
+   varb_3=varb_1*y/2;
+   int varb_4=0;
+   varb_4=(100-varb_1)*(100-y)/2;
+   int varb_5=0;
+   varb_5=(100-varb_1)*y;
+   int varb_6=0;
+   printf(""%d"",varb_2-varb_3-varb_4-varb_5);
+   return 0;
+}
+",0.0,15
+6,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+   const int varb_0 = 10000;
+   int varb_1=90,y=10;
+   int varb_2=0;
+   varb_2=varb_0/2;
+   int varb_3=0;
+   varb_3=varb_1*y/2;
+   int varb_4=0;
+   varb_4=(100-varb_1)*(100-y)/2;
+   int varb_5=0;
+   varb_5=(100-varb_1)*(100-y);
+   int varb_6=0;
+   printf(""%d"",varb_2-varb_3-varb_4-varb_5);
+   return 0;
+}
+",0.0,13
+7,2c9f30a576c1c3dd017c12c629a56e7b,"#include <stdio.h>
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    int varb_2 = 100 * 100 / 2;
+    varb_2 -= 100 * varb_1 / 2;
+    varb_2 -=(100 - varb_0) * 100 / 2;
+    printf(""%d"", varb_2);
+    return 0;
+}
+",0.0,6
+8,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=90;
+varb_1=10;
+varb_2=(varb_0-varb_1)*100/2;
+	printf(""%.6f"",varb_2);
+	return 0;
+}",0.0,4
+9,2c9f30a576c1c3dd017c12c629a56e7b,"#include <stdio.h>
+int main()
+{
+int varb_0;
+int varb_1;
+int varb_2;
+scanf(""%d%d"",&varb_0,&varb_1);
+varb_2=(varb_0-varb_1)*varb_0*0.5;
+printf(""%d"",varb_2);
+return 0;
+}",0.0,6
+10,2c9f30a576c1c3dd017c12c629a56e7b,"#include<stdio.h>
+int main()
+{int varb_0=90,y=10;float varb_1;
+scanf(""%d %d"",&varb_0,&y);
+varb_1=10000-(varb_0*y/2)-(y+100)*(100-y)/2;
+printf(""%f"",varb_1);
+return 0;}",0.0,5
+11,2c9f30a576c1c3dd017c12c629a56e7b,"#include <stdio.h>
+int main()
+{
+int varb_0;
+int varb_1;
+int varb_2;
+scanf(""%d%d"",&varb_0,&varb_1);
+varb_2=(varb_0-varb_1)*varb_0*0.5+400;
+printf(""%d"",varb_2);
+return 0;
+}",0.0,6

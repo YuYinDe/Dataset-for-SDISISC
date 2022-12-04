@@ -1,0 +1,1012 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+    char *p;    
+    char c[81];
+    if((p=strstr(a,b)) != NULL) { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b));
+        strcat (a, c);
+    } 
+    puts(a);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    if((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1));
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+1,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+ 
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);   
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b))!= NULL) 
+    { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    }  
+    puts(a);    
+    return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);   
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1))!= NULL) 
+    { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    }  
+    puts(varb_0);    
+    return 0;
+}
+",16
+2,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    } 
+
+    puts(a);
+
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+3,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+	char a[81];
+	gets(a);
+	char b[81];
+	gets(b);
+	
+	char *p;	
+	char c[81];
+	while((p=strstr(a,b)) != NULL) { //strstr 找不到返回 NULL 
+		*p = '\0'; // 指定连接下一步（连接函数）之前 a 的终止位置； 
+		strcpy (c, p+strlen(b)); // strcat 函数中的两个传入参数的内存地址不能重叠，所以这里用 c 当作 temp 
+		strcat (a, c);
+	} 
+
+	puts(a);
+	
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char varb_0[81];
+	gets(varb_0);
+	char varb_1[81];
+	gets(varb_1);
+	char *varb_2;	
+	char varb_3[81];
+	while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+		*varb_2 = '\0'; 
+		strcpy(varb_3, varb_2+strlen(varb_1)); 
+		strcat(varb_0, varb_3);
+	} 
+	puts(varb_0);
+	return 0;
+}",5
+4,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char zfc1[100],zfc2[100],*p;
+	int js,cd,zcd;
+	zcd=strlen(zfc1);
+	cd=strlen(zfc2);
+	while(strstr(zfc1,zfc2))
+	{
+		js=0;
+		p=strstr(zfc1,zfc2);
+		while(js<cd)
+		{
+			js++;
+			*p='\0';
+			p++;
+		}
+	}
+	for(js=0;js<zcd;js++)
+	{
+		if(zfc1[js]!='\0')
+		printf(""%c"",zfc1[js]);
+	}
+} ",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],zfc2[100],*p;
+	int varb_1,varb_2,varb_3;
+	varb_3=strlen(varb_0);
+	varb_2=strlen(zfc2);
+	while(strstr(varb_0,zfc2))
+	{
+		varb_1=0;
+		p=strstr(varb_0,zfc2);
+		while(varb_1<varb_2)
+		{
+			varb_1++;
+			*p='\0';
+			p++;
+		}
+	}
+	for(varb_1=0;varb_1<varb_3;varb_1++)
+	{
+		if(varb_0[varb_1]!='\0')
+		printf(""%c"",varb_0[varb_1]);
+	}
+} ",16
+5,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>   
+#include<string.h>   
+#define size 80
+int transf(char [],int,char [],int,char []);
+int check(char[],char[],int,int);
+void display(char [] ,int);
+int main()
+{
+	char str1[size],str2[size],str3[size];
+	int length1,length2,l;
+	gets(str1);
+	gets(str2);
+	length1=strlen(str1);
+	length2=strlen(str2);
+	l=transf(str1,length1,str2,length2,str3);
+	display(str1,l);
+	return 0;
+}
+int check(char str1[],char str2[],int length2,int i)
+{
+	int j;
+	for(i,j=0;j<length2;i++,j++)
+	{
+		if(str1[i]!=str2[j])
+		return 0;
+	}
+	return 1;
+}
+int transf(char str1[],int length1,char str2[],int length2,char str3[])
+{
+	int i,j,k=0,temp;
+	for(i=0;i<length1;i++)
+	{
+		if(str1[i]==str2[0])
+		{
+			if(check(str1,str2,length2,i))
+			{
+				str3[k]=i;
+				k++;
+			}
+		}
+			
+	}
+	if(k>0)
+	{
+		for(i=k-1;i>=0;i--)
+		{
+			temp=str3[i];
+			for(j=k-1;j<length1;j++)
+			{
+				str1[temp]=str1[temp+length2];
+				temp++;
+				
+			}
+			length1-=length2;
+		}
+	}
+	return length1;
+
+}
+void display(char str[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		printf(""%c"",str[i]);
+	}
+}
+",0.0,"#include<stdio.h>   
+#include<string.h>   
+#define size 80
+int func_1(char [],int,char [],int,char []);
+int func_0(char[],char[],int,int);
+void func_2(char [] ,int);
+int main()
+{
+	char varb_0[size],varb_5[size],varb_11[size];
+	int varb_1,varb_2,varb_3;
+	gets(varb_0);
+	gets(varb_5);
+	varb_1=strlen(varb_0);
+	varb_2=strlen(varb_5);
+	varb_3=func_1(varb_0,varb_1,varb_5,varb_2,varb_11);
+	func_2(varb_0,varb_3);
+	return 0;
+}
+int func_0(char varb_0[],char varb_5[],int varb_2,int varb_7)
+{
+	int varb_8;
+	for(varb_7,varb_8=0;varb_8<varb_2;varb_7++,varb_8++)
+	{
+		if(varb_0[varb_7]!=varb_5[varb_8])
+		return 0;
+	}
+	return 1;
+}
+int func_1(char varb_0[],int varb_1,char varb_5[],int varb_2,char varb_11[])
+{
+	int varb_7,varb_8,varb_14=0,varb_15;
+	for(varb_7=0;varb_7<varb_1;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_5[0])
+		{
+			if(func_0(varb_0,varb_5,varb_2,varb_7))
+			{
+				varb_11[varb_14]=varb_7;
+				varb_14++;
+			}
+		}
+	}
+	if(varb_14>0)
+	{
+		for(varb_7=varb_14-1;varb_7>=0;varb_7--)
+		{
+			varb_15=varb_11[varb_7];
+			for(varb_8=varb_14-1;varb_8<varb_1;varb_8++)
+			{
+				varb_0[varb_15]=varb_0[varb_15+varb_2];
+				varb_15++;
+			}
+			varb_1-=varb_2;
+		}
+	}
+	return varb_1;
+}
+void func_2(char varb_16[],int n)
+{
+	int varb_7;
+	for(varb_7=0;varb_7<n;varb_7++)
+	{
+		printf(""%c"",varb_16[varb_7]);
+	}
+}
+",48
+6,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b));
+        strcat (a, c);
+    } 
+    puts(a);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1));
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+7,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+ 
+int main(void)
+{
+    char a[80];
+    gets(a);
+    char b[80];
+    gets(b);   
+    char *p;    
+    char c[80];
+    while((p=strstr(a,b))!= NULL) 
+    { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    }  
+    puts(a);    
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[80];
+    gets(varb_0);
+    char varb_1[80];
+    gets(varb_1);   
+    char *varb_2;    
+    char varb_3[80];
+    while((varb_2=strstr(varb_0,varb_1))!= NULL) 
+    { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    }  
+    puts(varb_0);    
+    return 0;
+}",5
+8,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char a[81];
+	gets(a);
+	char b[81];
+	gets(b);
+	char *p;	
+	char c[81];
+	while((p=strstr(a,b)) != NULL) {
+		*p = '\0';  
+		strcpy (c, p+strlen(b));
+		strcat (a, c);
+	} 
+	puts(a);
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char varb_0[81];
+	gets(varb_0);
+	char varb_1[81];
+	gets(varb_1);
+	char *varb_2;	
+	char varb_3[81];
+	while((varb_2=strstr(varb_0,varb_1)) != NULL) {
+		*varb_2 = '\0';  
+		strcpy(varb_3, varb_2+strlen(varb_1));
+		strcat(varb_0, varb_3);
+	} 
+	puts(varb_0);
+	return 0;
+}",5
+9,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[80];
+    gets(a);
+    char b[80];
+    gets(b);
+    
+    char *p;    
+    char c[80];
+    while((p=strstr(a,b)) != NULL) { //strstr 找不到返回 NULL 
+        *p = '\0'; // 指定连接下一步（连接函数）之前 a 的终止位置； 
+        strcpy (c, p+strlen(b)); // strcat 函数中的两个传入参数的内存地址不能重叠，所以这里用 c 当作 temp 
+        strcat (a, c);
+    } 
+    puts(a);
+    
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[80];
+    gets(varb_0);
+    char varb_1[80];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[80];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",5
+10,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+ 
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);   
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b))!= NULL) 
+    { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    }  
+    puts(a);    
+    return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);   
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1))!= NULL) 
+    { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    }  
+    puts(varb_0);    
+    return 0;
+}
+",16
+11,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b));
+        strcat (a, c);
+    } 
+
+    puts(a);
+
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1));
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+12,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { //strstr 找不到返回 NULL 
+        *p = '\0'; // 指定连接下一步（连接函数）之前 a 的终止位置； 
+        strcpy (c, p+strlen(b)); // strcat 函数中的两个传入参数的内存地址不能重叠，所以这里用 c 当作 temp 
+        strcat (a, c);
+    } 
+
+    puts(a);
+
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+13,2c9f30a56e72f8ae016e7868463303c6,"	#include<stdio.h>
+	#include<string.h>
+	int main(void)
+	{
+		char a[81];
+		gets(a);
+		char b[81];
+		gets(b);
+		char *p;	
+		char c[81];
+		while((p=strstr(a,b)) != NULL) 
+		{
+			*p = '\0';
+			strcpy (c, p+strlen(b)); 
+			strcat (a, c);
+		} 
+		puts(a);	
+		return 0;
+	}",0.0,"	#include<stdio.h>
+	#include<string.h>
+	int main(void)
+	{
+		char varb_0[81];
+		gets(varb_0);
+		char varb_1[81];
+		gets(varb_1);
+		char *varb_2;	
+		char varb_3[81];
+		while((varb_2=strstr(varb_0,varb_1)) != NULL) 
+		{
+			*varb_2 = '\0';
+			strcpy(varb_3, varb_2+strlen(varb_1)); 
+			strcat(varb_0, varb_3);
+		} 
+		puts(varb_0);	
+		return 0;
+	}",1
+14,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char s1[80],s2[80];
+  gets(s1);
+  gets(s2);
+  int len=strlen(s1);
+  int len2=strlen(s2);
+  int i=0;
+  while(i<len)
+  {
+  	if(s1[i]==s2[0]){
+  		int k=i,j=0,num=0;
+  		while(s1[k++]==s2[j++])num++;
+  		if(num==len2){i=k;continue;}
+  		else {printf(""%c"",s1[i]);i++;continue;}
+	   }
+  	printf(""%c"",s1[i]);
+	i++;
+  	}
+	
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char varb_0[80],s2[80];
+  gets(varb_0);
+  gets(s2);
+  int varb_1=strlen(varb_0);
+  int varb_2=strlen(s2);
+  int varb_3=0;
+  while(varb_3<varb_1)
+  {
+  	if(varb_0[varb_3]==s2[0]){
+  		int varb_4=varb_3,j=0,num=0;
+  		while(varb_0[varb_4++]==s2[j++])num++;
+  		if(num==varb_2){varb_3=varb_4;continue;}
+  		else {printf(""%c"",varb_0[varb_3]);varb_3++;continue;}
+	   }
+  	printf(""%c"",varb_0[varb_3]);
+	varb_3++;
+  	}
+}",16
+15,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char s1[80],s2[80];
+  gets(s1);
+  gets(s2);
+  int len=strlen(s1);
+  int len2=strlen(s2);
+  int i=0;
+  while(i<len)
+  {
+  	if(s1[i]==s2[0]){
+  		int k=i,j=0,num=0;
+  		while(s1[k++]==s2[j++])num++;
+  		if(num==len2){i=k;continue;}
+  		else {i++;continue;}
+	   }
+  	printf(""%c"",s1[i]);
+	i++;
+  	}
+	
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char varb_0[80],s2[80];
+  gets(varb_0);
+  gets(s2);
+  int varb_1=strlen(varb_0);
+  int varb_2=strlen(s2);
+  int varb_3=0;
+  while(varb_3<varb_1)
+  {
+  	if(varb_0[varb_3]==s2[0]){
+  		int varb_4=varb_3,j=0,num=0;
+  		while(varb_0[varb_4++]==s2[j++])num++;
+  		if(num==varb_2){varb_3=varb_4;continue;}
+  		else {varb_3++;continue;}
+	   }
+  	printf(""%c"",varb_0[varb_3]);
+	varb_3++;
+  	}
+}",16
+16,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+ 
+int main(void)
+{
+    char a[80];
+    gets(a);
+    char b[80];
+    gets(b);   
+    char *p;    
+    char c[80];
+    while((p=strstr(a,b))!= NULL) 
+    { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    }  
+    puts(a);    
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[80];
+    gets(varb_0);
+    char varb_1[80];
+    gets(varb_1);   
+    char *varb_2;    
+    char varb_3[80];
+    while((varb_2=strstr(varb_0,varb_1))!= NULL) 
+    { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    }  
+    puts(varb_0);    
+    return 0;
+}",5
+17,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+	char a[81];
+	gets(a);
+	char b[81];
+	gets(b);
+	
+	char *p;	
+	char c[81];
+	while((p=strstr(a,b)) != NULL) { //strstr 找不到返回 NULL 
+		*p = '\0'; // 指定连接下一步（连接函数）之前 a 的终止位置； 
+		strcpy (c, p+strlen(b)); // strcat 函数中的两个传入参数的内存地址不能重叠，所以这里用 c 当作 temp 
+		strcat (a, c);
+	} 
+
+	puts(a);
+	
+	return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char varb_0[81];
+	gets(varb_0);
+	char varb_1[81];
+	gets(varb_1);
+	char *varb_2;	
+	char varb_3[81];
+	while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+		*varb_2 = '\0'; 
+		strcpy(varb_3, varb_2+strlen(varb_1)); 
+		strcat(varb_0, varb_3);
+	} 
+	puts(varb_0);
+	return 0;
+}
+",5
+18,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+ 
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);   
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) 
+    { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b)); 
+        strcat (a, c);
+    }  
+    puts(a);    
+    return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);   
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) 
+    { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    }  
+    puts(varb_0);    
+    return 0;
+}
+",16
+19,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { 
+        *p = '\0'; 
+        strcpy (c, p+strlen(b));
+        strcat (a, c);
+    } 
+    puts(a);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1));
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0;
+}",11
+20,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int a,b,c,d;
+	char a1[100],a2[100],*p;
+	a=strlen(a1);
+	b=strlen(a2);
+     for(;strstr(a1,a2);)
+     {
+     	c=0;
+     	p=strstr(a1,a2);
+     	for(;c<b;)
+     	{
+     		c++;
+     		*p='\\';
+     		p++;
+     	}
+     	
+     }
+     for(d=0;d<a;d++)
+     {
+     	if(a1[d]!='\\')
+     	printf(""%c"",a1[d]);
+     }
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char varb_4[100],a2[100],*p;
+	varb_0=strlen(varb_4);
+	varb_1=strlen(a2);
+     for(;strstr(varb_4,a2);)
+     {
+     	varb_2=0;
+     	p=strstr(varb_4,a2);
+     	for(;varb_2<varb_1;)
+     	{
+     		varb_2++;
+     		*p='\\';
+     		p++;
+     	}
+     }
+     for(varb_3=0;varb_3<varb_0;varb_3++)
+     {
+     	if(varb_4[varb_3]!='\\')
+     	printf(""%c"",varb_4[varb_3]);
+     }
+}",9
+21,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+    char a[81];
+    gets(a);
+    char b[81];
+    gets(b);
+
+    char *p;    
+    char c[81];
+    while((p=strstr(a,b)) != NULL) { //strstr 找不到返回 NULL 
+        *p = '\0'; // 指定连接下一步（连接函数）之前 a 的终止位置； 
+        strcpy (c, p+strlen(b)); // strcat 函数中的两个传入参数的内存地址不能重叠，所以这里用 c 当作 temp 
+        strcat (a, c);
+    } 
+
+    puts(a);
+
+    return 0; 
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char varb_0[81];
+    gets(varb_0);
+    char varb_1[81];
+    gets(varb_1);
+    char *varb_2;    
+    char varb_3[81];
+    while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+        *varb_2 = '\0'; 
+        strcpy(varb_3, varb_2+strlen(varb_1)); 
+        strcat(varb_0, varb_3);
+    } 
+    puts(varb_0);
+    return 0; 
+}",11
+22,2c9f30a56e72f8ae016e7868463303c6,"#include<stdio.h>
+#include<string.h>
+
+int main(void)
+{
+	char a[81];
+	gets(a);
+	char b[81];
+	gets(b);
+	
+	char *p;	
+	char c[81];
+	while((p=strstr(a,b)) != NULL) { 
+		*p = '\0';
+		strcpy (c, p+strlen(b)); 
+		strcat (a, c);
+	} 
+
+	puts(a);
+	
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char varb_0[81];
+	gets(varb_0);
+	char varb_1[81];
+	gets(varb_1);
+	char *varb_2;	
+	char varb_3[81];
+	while((varb_2=strstr(varb_0,varb_1)) != NULL) { 
+		*varb_2 = '\0';
+		strcpy(varb_3, varb_2+strlen(varb_1)); 
+		strcat(varb_0, varb_3);
+	} 
+	puts(varb_0);
+	return 0;
+}",5

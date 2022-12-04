@@ -1,0 +1,1466 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+struct ListNode *readlist()
+{
+struct ListNode *head=NULL,*p,*last;
+int n;
+last=head;
+do{
+scanf(""%d"",&n);
+if(n!=-1)
+{
+p=(struct ListNode *)malloc(sizeof(struct ListNode));
+p->data=n;
+p->next=NULL;
+if(last==NULL)
+head=p;
+else
+last->next=p;
+last=p;
+}
+else
+break;
+}
+while(n!=-1);
+return head;
+}
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+struct ListNode *p,*q;
+p=L;
+q=NULL;
+while(p)
+{
+if(q)
+q->next=p->next;
+else
+L=p->next;
+q=p;
+p=p->next;
+}
+return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12=NULL,*varb_7,*last;
+int varb_13;
+last=varb_12;
+do{
+scanf(""%d"",&varb_13);
+if(varb_13!=-1)
+{
+varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_7->varb_0=varb_13;
+varb_7->varb_2=NULL;
+if(last==NULL)
+varb_12=varb_7;
+else
+last->varb_2=varb_7;
+last=varb_7;
+}
+else
+break;
+}
+while(varb_13!=-1);
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_19;
+varb_7=varb_4;
+varb_19=NULL;
+while(varb_7)
+{
+if(varb_19)
+varb_19->varb_2=varb_7->varb_2;
+else
+varb_4=varb_7->varb_2;
+varb_19=varb_7;
+varb_7=varb_7->varb_2;
+}
+return varb_4;
+}",29
+1,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+struct ListNode *readlist()
+{
+    struct ListNode *head,*p1,*p2;
+    int n=0;
+    head = NULL;
+    p1 = p2 = (struct ListNode*)malloc(sizeof(struct ListNode));
+    scanf(""%d"",&p1->data);
+    while(p1->data!=-1)
+    {
+        n++;
+        if(n==1)
+            head = p1;
+        else
+            p2->next = p1;
+
+        p2 = p1;
+        p1 = (struct ListNode*)malloc(sizeof(struct ListNode));
+        scanf(""%d"",&p1->data);
+    }
+    p2->next = NULL;
+    return head;
+}
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+    struct ListNode *p1,*p2;
+    p1 = L;
+    while(p1!=NULL)
+    {
+        if(p1->data==m)
+        {
+            
+                L = p1->next;
+            
+        }
+        else
+        {
+            p2 = p1;
+        }
+        p1 = p1->next;
+    }
+    return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+    struct varb_1 *varb_12,*varb_13,*varb_14;
+    int varb_15=0;
+    varb_12 = NULL;
+    varb_13 = varb_14 =(struct varb_1*)malloc(sizeof(struct varb_1));
+    scanf(""%d"",&varb_13->varb_0);
+    while(varb_13->varb_0!=-1)
+    {
+        varb_15++;
+        if(varb_15==1)
+            varb_12 = varb_13;
+        else
+            varb_14->varb_2 = varb_13;
+        varb_14 = varb_13;
+        varb_13 =(struct varb_1*)malloc(sizeof(struct varb_1));
+        scanf(""%d"",&varb_13->varb_0);
+    }
+    varb_14->varb_2 = NULL;
+    return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+    struct varb_1 *varb_13,*varb_14;
+    varb_13 = varb_4;
+    while(varb_13!=NULL)
+    {
+        if(varb_13->varb_0==varb_5)
+        {
+                varb_4 = varb_13->varb_2;
+        }
+        else
+        {
+            varb_14 = varb_13;
+        }
+        varb_13 = varb_13->varb_2;
+    }
+    return varb_4;
+}",65
+2,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+struct ListNode *readlist()
+{
+    struct ListNode *head, *tail, *p;
+    int n;
+    head = tail = p = NULL;
+    do {
+        scanf(""%d"", &n);
+        if (n < 0) {
+            break;
+        } else {
+            p = malloc(sizeof(struct ListNode));
+            p->data = n;
+            p->next = NULL;
+            if (tail != NULL) {
+                tail->next = p;
+            } else {
+                head = p;
+            }
+            tail = p;
+        }
+    } while (n > 0);
+    return head;
+}
+
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+    struct ListNode *p, *q;
+    for (p = L, q = NULL; p != NULL; p = p->next) {
+        if (p->data == m) {
+            if ( q && p != L) {
+                q->next = p->next;
+            } else {
+                L = p->next;
+            }
+            free(p);
+        } else {
+            q = p;
+        }
+    }
+    return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+    struct varb_1 *varb_12, *varb_13, *varb_7;
+    int varb_15;
+    varb_12 = varb_13 = varb_7 = NULL;
+    do {
+        scanf(""%d"", &varb_15);
+        if(varb_15 < 0) {
+            break;
+        } else {
+            varb_7 = malloc(sizeof(struct varb_1));
+            varb_7->varb_0 = varb_15;
+            varb_7->varb_2 = NULL;
+            if(varb_13 != NULL) {
+                varb_13->varb_2 = varb_7;
+            } else {
+                varb_12 = varb_7;
+            }
+            varb_13 = varb_7;
+        }
+    } while(varb_15 > 0);
+    return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+    struct varb_1 *varb_7, *varb_21;
+    for(varb_7 = varb_4, varb_21 = NULL; varb_7 != NULL; varb_7 = varb_7->varb_2) {
+        if(varb_7->varb_0 == varb_5) {
+            if( varb_21 && varb_7 != varb_4) {
+                varb_21->varb_2 = varb_7->varb_2;
+            } else {
+                varb_4 = varb_7->varb_2;
+            }
+            free(varb_7);
+        } else {
+            varb_21 = varb_7;
+        }
+    }
+    return varb_4;
+}",50
+3,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+
+struct ListNode *readlist()
+{
+struct ListNode *head,*p,*q,*r;
+int a;
+head=(struct ListNode *)malloc(sizeof(struct ListNode));
+head->next=NULL;
+r=head;
+scanf(""%d"",&a);
+while(a!=-1)
+   {
+    p=(struct ListNode *)malloc(sizeof(struct ListNode));
+    p->data=a;
+    r->next=p;
+    r=p;
+    scanf(""%d"",&a);
+   }
+r->next=NULL;   
+return head;
+}
+
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+struct ListNode *p,*q;
+p=L->next;
+q=L;
+while(p->next!=NULL)
+   {
+    if(p->data==m)
+      {
+        q->next=p->next;
+        free(p);
+      }
+    else
+      {
+       q=p;
+       p=q->next;
+      }   
+   }
+return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7->varb_2!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",49
+4,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+
+struct ListNode *readlist()
+{
+struct ListNode *head,*p,*q,*r;
+int a;
+head=(struct ListNode *)malloc(sizeof(struct ListNode));
+head->next=NULL;
+r=head;
+scanf(""%d"",&a);
+while(a!=-1)
+   {
+    p=(struct ListNode *)malloc(sizeof(struct ListNode));
+    p->data=a;
+    r->next=p;
+    r=p;
+    scanf(""%d"",&a);
+   }
+r->next=NULL;   
+return head;
+}
+
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+struct ListNode *p,*q;
+p=L->next;
+q=L;
+while(p->next!=NULL)
+   {
+    if(p->data==m)
+      {
+        q->next=p->next;
+        free(p);
+        break;
+      }
+    else
+      {
+       q=p;
+       p=q->next;
+      }   
+   }
+return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7->varb_2!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+        break;
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",49
+5,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+struct ListNode *readlist()
+{
+	int n=0;
+	struct ListNode *p, *head,*pr;
+	p=(struct ListNode *)malloc(1*sizeof(struct ListNode));
+	head=p;
+	scanf(""%d"",&n);
+	while(n!=-1)
+	{	
+		p->data=n;	
+		scanf(""%d"",&n);
+		if(n!=-1)
+			break;
+		pr=(struct ListNode *)malloc(1*sizeof(struct ListNode));
+		pr->next=NULL;
+		p->next=pr;
+		p=p->next;	
+	}
+	return head;
+}
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+	int sign=1;
+	struct ListNode *p,*pr;
+	p=L;
+	while(p->data==m)
+	{
+		if(p->data==m)
+		{
+			p=p->next;
+			L=p;
+		}	
+	
+	}
+	while(p->next!=NULL)
+	{
+		pr=p->next;
+		if(pr->data==m)
+			p->next=pr->next;
+		else
+			p=pr;
+	}
+	return L;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	int varb_11=0;
+	struct varb_1 *varb_7, *varb_14,*varb_15;
+	varb_7=(struct varb_1 *)malloc(1*sizeof(struct varb_1));
+	varb_14=varb_7;
+	scanf(""%d"",&varb_11);
+	while(varb_11!=-1)
+	{	
+		varb_7->varb_0=varb_11;	
+		scanf(""%d"",&varb_11);
+		if(varb_11!=-1)
+			break;
+		varb_15=(struct varb_1 *)malloc(1*sizeof(struct varb_1));
+		varb_15->varb_2=NULL;
+		varb_7->varb_2=varb_15;
+		varb_7=varb_7->varb_2;	
+	}
+	return varb_14;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+	int varb_19=1;
+	struct varb_1 *varb_7,*varb_15;
+	varb_7=varb_4;
+	while(varb_7->varb_0==varb_5)
+	{
+		if(varb_7->varb_0==varb_5)
+		{
+			varb_7=varb_7->varb_2;
+			varb_4=varb_7;
+		}	
+	}
+	while(varb_7->varb_2!=NULL)
+	{
+		varb_15=varb_7->varb_2;
+		if(varb_15->varb_0==varb_5)
+			varb_7->varb_2=varb_15->varb_2;
+		else
+			varb_7=varb_15;
+	}
+	return varb_4;
+}
+",38
+6,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+struct ListNode *readlist()
+{
+ struct ListNode *head,*p,*q;
+  int i;
+  head=p=(struct ListNode *)malloc(sizeof(struct ListNode));
+  scanf(""%d"",&i);
+  while(i!=-1)
+  {   
+    q=(struct ListNode *)malloc(sizeof(struct ListNode));
+    q->data=i;
+    p->next=q;
+    p=q;
+   scanf(""%d"",&i); 
+  }
+  p->next=NULL;
+  return head;
+}
+struct ListNode *deletem( struct ListNode *L, int m )
+{ 
+struct ListNode *p,*q;
+  p=L->next;
+  q=p->next;
+  while(q!=NULL)
+  {
+    if(p->data==m)
+    {
+      p->next=q->next;
+      free(q);
+      q=p->next;
+    }
+  }
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+ struct varb_1 *varb_12,*varb_7,*varb_14;
+  int varb_15;
+  varb_12=varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+  scanf(""%d"",&varb_15);
+  while(varb_15!=-1)
+  {   
+    varb_14=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_14->varb_0=varb_15;
+    varb_7->varb_2=varb_14;
+    varb_7=varb_14;
+   scanf(""%d"",&varb_15); 
+  }
+  varb_7->varb_2=NULL;
+  return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{ 
+struct varb_1 *varb_7,*varb_14;
+  varb_7=varb_4->varb_2;
+  varb_14=varb_7->varb_2;
+  while(varb_14!=NULL)
+  {
+    if(varb_7->varb_0==varb_5)
+    {
+      varb_7->varb_2=varb_14->varb_2;
+      free(varb_14);
+      varb_14=varb_7->varb_2;
+    }
+  }
+}",29
+7,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+
+struct ListNode *readlist()
+{
+struct ListNode *head,*p,*q,*r;
+int a;
+head=(struct ListNode *)malloc(sizeof(struct ListNode));
+head->next=NULL;
+r=head;
+scanf(""%d"",&a);
+while(a!=-1)
+   {
+    p=(struct ListNode *)malloc(sizeof(struct ListNode));
+    p->data=a;
+    r->next=p;
+    r=p;
+    scanf(""%d"",&a);
+   }
+r->next=NULL;   
+return head;
+}
+
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+struct ListNode *p,*q;
+p=L->next;
+q=L;
+while(p!=NULL)
+   {
+    if(p->data==m)
+      {
+        q->next=p->next;
+        free(p);
+      }
+    else
+      {
+       q=p;
+       p=q->next;
+      }   
+   }
+return L;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 = func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+struct varb_1 *varb_12,*varb_7,*varb_14,*varb_15;
+int varb_16;
+varb_12=(struct varb_1 *)malloc(sizeof(struct varb_1));
+varb_12->varb_2=NULL;
+varb_15=varb_12;
+scanf(""%d"",&varb_16);
+while(varb_16!=-1)
+   {
+    varb_7=(struct varb_1 *)malloc(sizeof(struct varb_1));
+    varb_7->varb_0=varb_16;
+    varb_15->varb_2=varb_7;
+    varb_15=varb_7;
+    scanf(""%d"",&varb_16);
+   }
+varb_15->varb_2=NULL;   
+return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+struct varb_1 *varb_7,*varb_14;
+varb_7=varb_4->varb_2;
+varb_14=varb_4;
+while(varb_7!=NULL)
+   {
+    if(varb_7->varb_0==varb_5)
+      {
+        varb_14->varb_2=varb_7->varb_2;
+        free(varb_7);
+      }
+    else
+      {
+       varb_14=varb_7;
+       varb_7=varb_14->varb_2;
+      }   
+   }
+return varb_4;
+}",49
+8,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+
+struct ListNode *readlist();
+struct ListNode *deletem( struct ListNode *L, int m );
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L =readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+
+    return 0;
+}
+
+/* 你的代码将被嵌在这里 */
+struct ListNode *readlist()
+{
+    struct ListNode *head,*p1,*p2;
+    int n=0;
+    head = NULL;
+    p1 = p2 = (struct ListNode*)malloc(sizeof(struct ListNode));
+    scanf(""%d"",&p1->data);
+    while(p1->data!=-1)
+    {
+        n++;
+        if(n==1)
+            head = p1;
+        else
+            p2->next = p1;
+
+        p2 = p1;
+        p1 = (struct ListNode*)malloc(sizeof(struct ListNode));
+        scanf(""%d"",&p1->data);
+    }
+    p2->next = NULL;
+    return head;
+}
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+	 struct ListNode *a,*b;
+	 a=L;
+	 while(a!=NULL)
+	 {
+	 	if(a->data==m)
+	 	{
+	 	if(a==L)
+		L=a->next;	
+		else 
+		b->next==a->next;
+		}
+		else
+		{
+		b=a;
+		}
+		a=a->next;
+	 }
+	 return L;
+}
+",0.0,"#include <stdio.h>
+#include <stdlib.h>
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0();
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 );
+void printlist( struct varb_1 *varb_4 )
+{
+     struct varb_1 *varb_7 = varb_4;
+     while(varb_7) {
+           printf(""%d "", varb_7->varb_0);
+           varb_7 = varb_7->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_5;
+    struct varb_1 *varb_4 =func_0();
+    scanf(""%d"", &varb_5);
+    varb_4 = func_1(varb_4, varb_5);
+    printlist(varb_4);
+    return 0;
+}
+struct varb_1 *func_0()
+{
+    struct varb_1 *varb_12,*varb_13,*varb_14;
+    int varb_15=0;
+    varb_12 = NULL;
+    varb_13 = varb_14 =(struct varb_1*)malloc(sizeof(struct varb_1));
+    scanf(""%d"",&varb_13->varb_0);
+    while(varb_13->varb_0!=-1)
+    {
+        varb_15++;
+        if(varb_15==1)
+            varb_12 = varb_13;
+        else
+            varb_14->varb_2 = varb_13;
+        varb_14 = varb_13;
+        varb_13 =(struct varb_1*)malloc(sizeof(struct varb_1));
+        scanf(""%d"",&varb_13->varb_0);
+    }
+    varb_14->varb_2 = NULL;
+    return varb_12;
+}
+struct varb_1 *func_1( struct varb_1 *varb_4, int varb_5 )
+{
+	 struct varb_1 *varb_20,*varb_21;
+	 varb_20=varb_4;
+	 while(varb_20!=NULL)
+	 {
+	 	if(varb_20->varb_0==varb_5)
+	 	{
+	 	if(varb_20==varb_4)
+		varb_4=varb_20->varb_2;	
+		else 
+		varb_21->varb_2==varb_20->varb_2;
+		}
+		else
+		{
+		varb_21=varb_20;
+		}
+		varb_20=varb_20->varb_2;
+	 }
+	 return varb_4;
+}
+",50
+9,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+#define sl struct ListNode
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+struct ListNode *readlist()
+{
+	int num;
+	scanf(""%d"",&num);
+	sl *head=NULL,*tail,*mid;
+	while(num!=-1){
+		
+		tail=(sl*)malloc(sizeof(sl));
+		tail->next=NULL;
+		tail->data=num;
+		if(head==NULL) head=tail;
+		else mid->next=tail;
+		mid=tail;
+		scanf(""%d"",&num);
+	}
+	tail=(sl*)malloc(sizeof(sl));
+	tail->next=head;
+	head=tail;
+	return head;
+} 
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+	sl *head=L;
+	while(head){
+		if(head->next!=NULL&&head->next->data==m)
+			head->next=head->next->next;
+		head=head->next;
+	}
+	return L;
+}
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p->next) {
+           printf(""%d "", p->next->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+	return 0;
+}
+/*
+10 11 10 12 10 -1
+10
+*/ ",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#define varb_7 struct varb_1
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0()
+{
+	int varb_3;
+	scanf(""%d"",&varb_3);
+	varb_7 *varb_8=NULL,*tail,*mid;
+	while(varb_3!=-1){
+		tail=(varb_7*)malloc(sizeof(varb_7));
+		tail->varb_2=NULL;
+		tail->varb_0=varb_3;
+		if(varb_8==NULL) varb_8=tail;
+		else mid->varb_2=tail;
+		mid=tail;
+		scanf(""%d"",&varb_3);
+	}
+	tail=(varb_7*)malloc(sizeof(varb_7));
+	tail->varb_2=varb_8;
+	varb_8=tail;
+	return varb_8;
+} 
+struct varb_1 *func_1( struct varb_1 *varb_5, int varb_6 )
+{
+	varb_7 *varb_8=varb_5;
+	while(varb_8){
+		if(varb_8->varb_2!=NULL&&varb_8->varb_2->varb_0==varb_6)
+			varb_8->varb_2=varb_8->varb_2->varb_2;
+		varb_8=varb_8->varb_2;
+	}
+	return varb_5;
+}
+void func_2( struct varb_1 *varb_5 )
+{
+     struct varb_1 *varb_11 = varb_5;
+     while(varb_11->varb_2) {
+           printf(""%d "", varb_11->varb_2->varb_0);
+           varb_11 = varb_11->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_6;
+    struct varb_1 *varb_5 = func_0();
+    scanf(""%d"", &varb_6);
+    varb_5 = func_1(varb_5, varb_6);
+    func_2(varb_5);
+	return 0;
+}
+",22
+10,2c9f30a56ef37e1f016f32a4d60e638a,"#include <stdio.h>
+#include <stdlib.h>
+#define sl struct ListNode
+struct ListNode {
+    int data;
+    struct ListNode *next;
+};
+struct ListNode *readlist()
+{
+	int num;
+	scanf(""%d"",&num);
+	sl *head=NULL,*tail,*mid;
+	while(num!=-1){
+		
+		tail=(sl*)malloc(sizeof(sl));
+		tail->next=NULL;
+		tail->data=num;
+		if(head==NULL) head=tail;
+		else mid->next=tail;
+		mid=tail;
+		scanf(""%d"",&num);
+	}
+	tail=(sl*)malloc(sizeof(sl));
+	tail->next=head;
+	head=tail;
+	return head;
+} 
+struct ListNode *deletem( struct ListNode *L, int m )
+{
+	sl *head=L;
+	while(head){
+		if(head->next!=NULL&&head->next->data==m)
+			head->next=head->next->next;
+		head=head->next;
+	}
+	return L;
+}
+void printlist( struct ListNode *L )
+{
+     struct ListNode *p = L;
+     while (p) {
+           printf(""%d "", p->next->data);
+           p = p->next;
+     }
+     printf(""\n"");
+}
+
+int main()
+{
+    int m;
+    struct ListNode *L = readlist();
+    scanf(""%d"", &m);
+    L = deletem(L, m);
+    printlist(L);
+	return 0;
+}
+/*
+10 11 10 12 10 -1
+10
+*/ ",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#define varb_7 struct varb_1
+struct varb_1 {
+    int varb_0;
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0()
+{
+	int varb_3;
+	scanf(""%d"",&varb_3);
+	varb_7 *varb_8=NULL,*tail,*mid;
+	while(varb_3!=-1){
+		tail=(varb_7*)malloc(sizeof(varb_7));
+		tail->varb_2=NULL;
+		tail->varb_0=varb_3;
+		if(varb_8==NULL) varb_8=tail;
+		else mid->varb_2=tail;
+		mid=tail;
+		scanf(""%d"",&varb_3);
+	}
+	tail=(varb_7*)malloc(sizeof(varb_7));
+	tail->varb_2=varb_8;
+	varb_8=tail;
+	return varb_8;
+} 
+struct varb_1 *func_1( struct varb_1 *varb_5, int varb_6 )
+{
+	varb_7 *varb_8=varb_5;
+	while(varb_8){
+		if(varb_8->varb_2!=NULL&&varb_8->varb_2->varb_0==varb_6)
+			varb_8->varb_2=varb_8->varb_2->varb_2;
+		varb_8=varb_8->varb_2;
+	}
+	return varb_5;
+}
+void func_2( struct varb_1 *varb_5 )
+{
+     struct varb_1 *varb_11 = varb_5;
+     while(varb_11) {
+           printf(""%d "", varb_11->varb_2->varb_0);
+           varb_11 = varb_11->varb_2;
+     }
+     printf(""\n"");
+}
+int main()
+{
+    int varb_6;
+    struct varb_1 *varb_5 = func_0();
+    scanf(""%d"", &varb_6);
+    varb_5 = func_1(varb_5, varb_6);
+    func_2(varb_5);
+	return 0;
+}
+",22

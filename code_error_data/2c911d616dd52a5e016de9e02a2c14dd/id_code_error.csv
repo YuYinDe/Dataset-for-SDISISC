@@ -1,0 +1,798 @@
+,id,code,is_true,errorline
+0,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+    printf(""3M corporation"");
+else if(varb_0=2)
+   printf(""Maxell Corporation"");
+else if(varb_0=3)
+   printf(""Sony Corporation"");
+else if(varb_0=4)
+   printf(""Verbatim Corporation"");
+return 0;
+}",0.0,6
+1,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d,&a"");
+switch(varb_0)
+{
+case 1:
+printf(""3M corporation"");break;
+case 2:
+printf(""Maxwell Corporation"");break;
+case 3:
+printf(""Sony Corporation"");break;
+case 4:
+printf(""Verbatim Corporation"");break;
+}
+}",0.0,5
+2,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+main()
+{
+   int varb_0,varb_1;
+   scanf(""%d"",&varb_0);
+   switch(varb_0)
+   {
+     case 1:
+      printf(""3M corporation"",varb_1);
+      break;
+     case 2:
+      printf(""Maxell Corporation"",varb_1);
+      break;
+     case 3:
+      printf(""Sony corporation"",varb_1);
+      break;
+     case 4:
+      printf(""Verbatim corporation"",varb_1);
+      break;
+   }
+}",0.0,8
+3,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+   if(varb_0==1)
+   printf(""3M corporation"");
+    else if(varb_0==2)
+    printf(""Maxell Corporation"");
+    else if(varb_0==3)
+    printf(""Sony Corporation"");
+    else if(varb_0==4)
+    printf(""Verbabim Corporation"");
+   else
+   printf(""fault"");
+   return 0;
+   }
+",0.0,13
+4,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{case 1:
+printf(""3M Corporation"");
+break;
+case 2:
+printf(""Maxell Corporation"");
+break;
+case 3:
+printf(""Sony Corporation"");
+break;
+case 4:
+printf(""Verbatim Corporation"");
+break;
+}}
+",0.0,3
+5,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  switch(varb_0)
+  {
+  case'1':printf(""3M corporation"");break;
+  case'2':printf(""Maxell Corporation"");break;
+  case'3':printf(""Sony Corporation"");break;
+  case'4':printf(""Verbatin Corporation"");break;
+  }
+ return 0;
+ }
+",0.0,11
+6,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+    switch(varb_0)
+    {
+	    case 1:
+	    printf(""3M corporation"");break;
+	    case 2:
+	    printf(""Maxell Corporation"");break;
+	    case 3:
+	    printf(""Sony Corporation"");break;
+	    case 4:
+	    printf(""Verbatiom Corporation"");break;
+	}
+	return 0;
+ } ",0.0,4
+7,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:printf(""3M corporation"") ;break;
+case 2:printf(""Maxell Corporation"") ;break;
+case 3:printf(""Sony Corporation"") ;break;
+case 4:printf(""Verbatim"") ;break;
+}
+return 0;
+}
+",0.0,11
+8,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0) 
+  {
+    case 1:
+      printf(""3M Corporation"");
+      break;
+    case 2:
+      printf(""Maxell Corporation"");
+      break;
+    case 3:
+      printf(""Sony Corporation"");
+      break;
+    case 4:
+      printf(""Verbatim Corporation"");
+      break;
+  }
+  return 0;
+}",0.0,6
+9,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:printf(""3M corporation"") ;break;
+case 2:printf(""Maxell Corporation"") ;break;
+case 3:printf(""Sony Corporation"") ;break;
+case 4:printf(""Verbatim corporation"") ;break;
+}
+return 0;
+}
+",0.0,6
+10,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+printf(""3M corporation"");
+else if(varb_0=2)
+printf(""Maxell Corporation"");
+else if(varb_0=3)
+printf(""Sony Corporation"");
+else if(varb_0=4)
+printf(""Verbatim Corporation"");
+ return 0;
+}",0.0,6
+11,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+  {int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+  {
+  case 1:
+	printf(""3M corporation"");
+	break;
+  case 2:
+	printf(""Maxell Corporation"");
+	break;
+  case 3:
+    printf(""Sony Corporation"");
+    break;
+  case 4:
+	printf(""Vebatim Corporartion"");
+	break;}
+  return 0;}",0.0,3
+12,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0=1)
+	printf(""3M corporation"");
+	else if(varb_0=2)
+	printf(""Maxell Corporation"");
+	else if(varb_0=3)
+	printf(""Sony Corporation"");
+	else if(varb_0=4)
+	printf(""Verbatim Corporation"");
+	return 0;
+}",0.0,4
+13,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{case 1:
+printf(""3M "");
+break;
+case 2:
+printf(""Maxell Corporation"");
+break;
+case 3:
+printf(""Sony Corporation"");
+break;
+case 4:
+printf(""Verbatim Corporation"");
+break;
+}}
+",0.0,3
+14,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0)
+    {
+        case 1:
+        printf(""3M corporation"");break;
+        case 2:
+        printf(""Maxell Coration"");break;
+        case 3:
+        printf(""Sony Corporation"");break;
+        case 4:
+        printf(""Verbatim Corporation"");break;
+    }
+}",0.0,9
+15,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0==1)
+    printf(""3M corporation"");
+    else if(varb_0==2)
+    printf(""Maxell corporation"");
+    else if(varb_0==3)
+    printf(""Sony corporation"");
+    else
+    printf(""Verbatim Corporation"");
+    return 0;
+  }
+",0.0,9
+16,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+    {
+       case(1): printf(""3M corporation"");break;
+       case(2): printf(""Maxell Corporation"");break;
+       case(3): printf(""sony Corporation"");break;
+       case(4): printf(""Verbatim Corporation"");break;
+     }
+}",0.0,10
+17,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0)
+    { case 1:printf(""3M corporation"");break;
+      case 2:printf(""Maxell Corporation"");break;
+      case 3:printf(""Sony Corporation"");break;
+      case 4:printf(""Verbation corporation"");break;
+    }
+    return 0;
+}",0.0,6
+18,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+printf(""3M corporation"");
+else if(varb_0=2)
+printf(""Maxell Corporation"");
+else if(varb_0=3)
+printf(""Sony Corporation"");
+else if(varb_0=4)
+printf(""Verbatim Corporation"");
+ return 0;
+}",0.0,6
+19,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+   if(varb_0=1)
+   printf(""3M corporation"");
+    else if(varb_0=2)
+    printf(""Maxell Corporation"");
+    else if(varb_0=3)
+    printf(""Sony Corporation"");
+    else if(varb_0=4)
+    printf(""Vertabim Corporation"");
+   else
+   printf(""fault"");
+   return 0;
+   }
+",0.0,6
+20,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+   if(varb_0==1)
+   printf(""3M corporation"");
+    else if(varb_0==2)
+    printf(""Maxell Corporation"");
+    else if(varb_0==3)
+    printf(""Sony Corporation"");
+    else if(varb_0==4)
+    printf(""Vertabim Corporation"");
+   else
+   printf(""fault"");
+   return 0;
+   }
+",0.0,13
+21,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+  {int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+  {
+  case 1:
+	printf(""3M corporation"");
+	break;
+  case 2:
+	printf(""Maxell Corporation"");
+	break;
+  case 3:
+    printf(""Sony Corporation"");
+    break;
+  case 4:
+	printf(""Verbatim Corporartion"");
+	break;}
+  return 0;}",0.0,3
+22,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+  switch(varb_0)
+  {
+   case 1:printf(""3M corporation"");break;
+   case 2:printf(""Maxell corporation"");break;
+   case 3:printf(""Sony corporation"");break;
+   case 4:printf(""Verbatim corporation"");break;
+   }
+    return 0;
+}",0.0,6
+23,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+  switch(varb_0)
+  {
+   case 1:printf(""3M corporation"");break;
+   case 2:printf(""Maxell corporation"");break;
+   case 3:printf(""Sony corporation"");break;
+   case 4:printf(""verbatim"");break;
+   }
+    return 0;
+}",0.0,9
+24,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+    printf("" 3M corporation"");
+else if(varb_0=2)
+   printf(""Maxell Corporation"");
+else if(varb_0=3)
+   printf(""Sony Corporation"");
+else if(varb_0=4)
+   printf(""Verbatim Corporation"");
+}",0.0,6
+25,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  switch(varb_0)
+  {
+  case'1':printf(""3M corporation"");break;
+  case'2':printf(""Maxell Corporation"");break;
+  case'3':printf(""Sony Corporation"");break;
+  case'4':printf(""Verbatin Corporation"");break;
+  }
+ return 0;
+ }
+",0.0,11
+26,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main() 
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+ case 1:
+printf(""3M Corporation"");
+break;
+ case 2:
+printf(""Maxell Corporation"");
+break;
+ case 3:
+printf(""Sony Corporation"");
+break;
+ case 4:
+printf(""Verbatim Corporation"");
+break;
+}
+}",0.0,9
+27,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0)
+  {
+      case 1:
+        printf(""3M corporation"");break;
+      case 2:
+        printf(""Maxell Corporation"");break;
+      case 3:
+        printf(""Snoy Corporation"");break;
+      case 4:
+        printf(""Verbatim Corporation"");break;
+    }
+    return 0;
+}",0.0,9
+28,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+ {
+   case 1:
+  	printf(""3M corporation"");
+  case 2:
+   printf(""Maxell Corporation"");
+  case 3:
+   printf(""Sony Corporation"");
+  case 4:
+   printf(""Verbatim Corporation"");
+}
+}",0.0,9
+29,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:
+printf(""3M Corporation"");
+break;
+case 2:
+printf(""Maxell Corporation"");
+break;
+case 3:
+printf(""Sony Corporation"");
+break;
+default:
+printf(""Verbatim Corporation"");
+}
+return 0;
+}",0.0,9
+30,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0)
+  {
+      case 1:
+        printf(""3M corporation"");break;
+      case 2:
+        printf(""Maxell Corporation"");break;
+      case 3:
+        printf(""Snow Corporation"");break;
+      case 4:
+        printf(""Verbatim Corporation"");break;
+    }
+    return 0;
+}",0.0,9
+31,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   switch(varb_0)
+   {
+     case 1:
+      printf(""3M corporation"");
+      break;
+     case 2:
+      printf(""Maxell Corporation"");
+      break;
+     case 3:
+      printf(""Sony corporation"");
+      break;
+     case 4:
+      printf(""Verbatim corporation"");
+      break;
+   }
+}",0.0,15
+32,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:
+printf(""3M corporation"");break;
+case 2:
+printf(""Maxwell Corporation"");break;
+case 3:
+printf(""Sony Corporation"");break;
+case 4:
+printf(""Verbatim Corporation"");break;
+}
+}",0.0,9
+33,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0==1)
+  printf(""3M corporation\n"");
+  if(varb_0==2)
+  printf(""Maxell Corporation\n"");
+  if(varb_0==3)
+  printf(""Sony Corporation\n"");
+  if(varb_0==4)
+  printf(""Verbatim Corporation\n"");
+  return 0;
+}",0.0,4
+34,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{case 1:
+printf(""3M rporation"");
+break;
+case 2:
+printf(""Maxell Corporation"");
+break;
+case 3:
+printf(""Sony Corporation"");
+break;
+case 4:
+printf(""Verbatim Corporation"");
+break;
+}}
+",0.0,3
+35,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0==1)
+printf(""3M corporation"");
+else if(varb_0==2)
+printf(""Maxell corporation"");
+else if(varb_0==3)
+printf(""Sony corporation"");
+else if(varb_0==4)
+printf(""Verbatim corporation"");
+return 0;
+}",0.0,9
+36,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:
+printf(""3M corporation"");
+break;
+case 2:
+printf(""Maxell corporation"");
+break;
+case 3:
+printf(""Sony corporation"");
+break;
+default:
+printf(""Verbatim corporation"");
+}
+return 0;
+}",0.0,12
+37,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+ {
+   case 1:
+  	printf(""3M corporation"");
+  case 2:
+   printf(""Maxell Corporation"");
+  case 3:
+   printf(""Sony Corporation"");
+  case 4:
+   printf(""Verbatim corporation"");
+}
+}",0.0,9
+38,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0)
+    { case 1:printf(""3M corporation"");break;
+      case 2:printf(""Maxell Corporation"");break;
+      case 3:printf(""Sony Corporation"");break;
+      case 4:printf(""Verbatim corporation"");break;
+    }
+    return 0;
+}",0.0,6
+39,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:
+printf(""3M corporation"");break;
+case 2:
+printf(""Maxxell Corporation"");break;
+case 3:
+printf(""Sony Corporation"");break;
+case 4:
+printf(""Verbatim Corporation"");break;
+}
+}",0.0,9
+40,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+    printf(""3M corporation"");
+else if(varb_0=2)
+   printf(""Maxell Corporation"");
+else if(varb_0=3)
+   printf(""Sony Corporation"");
+else if(varb_0=4)
+   printf(""Verbatim Corporation"");
+}",0.0,6
+41,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+printf(""3M corporation"");
+else if(varb_0=2)
+printf(""Maxell Corporation"");
+else if(varb_0=3)
+printf(""Sony Corporation"");
+else if(varb_0=4)
+printf(""Verbatim Corporation"");
+ return 0;
+}",0.0,6
+42,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+    printf(""3M corporation"");
+else if(varb_0=2)
+   printf(""Maxell Corporation"");
+else if(varb_0=3)
+   printf(""Sony Corporation"");
+else if(varb_0=4)
+   printf(""Verbatim Corporation"");
+return 0;
+}",0.0,6
+43,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main(void)
+{
+   char varb_0;
+scanf(""%c"",&varb_0);
+   switch(varb_0)
+{
+   case 1:printf(""3M corporation"");break;
+   case 2:printf(""Maxell Corporation"");break;
+   case 3:printf(""Sony Corporation"");break;
+    case 4:printf(""Verbatim Corporation"");break;
+}
+}",0.0,2
+44,2c911d616dd52a5e016de9e02a2c14dd,"#include""stdio.h""
+int main(){
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    switch(varb_0){
+       case 1: printf(""3M corporation"");break;
+       case 2: printf(""Maxell Corporation"");break;
+       case 3: printf(""Sory Corporation"");break;
+       case 4: printf(""Verdatim Corporation"");break;   
+    }
+	return 0;
+}",0.0,8
+45,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0=1)
+printf(""3M corporation"");
+else if(varb_0=2)
+printf(""Maxell Corporation"");
+else if(varb_0=3)
+printf(""Sony Corporation"");
+else if(varb_0=4)
+printf(""Verbatim Corporation"");
+else
+ return 0;
+}",0.0,6
+46,2c911d616dd52a5e016de9e02a2c14dd,"#include <stdio.h>
+int main()
+{int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{case 1:
+printf(""3M corporation"");
+break;
+case 2:
+printf(""Maxell corporation"");
+break;
+case 3:
+printf(""Sony corporation"");
+break;
+case 4:
+printf(""Verbatim corporation"");
+break;
+}}",0.0,3
+47,2c911d616dd52a5e016de9e02a2c14dd,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+switch(varb_0)
+{
+case 1:printf(""3M Corporation"");break;
+case 2:printf(""Maxell Corporation"");break;
+case 3:printf(""Sony Corporation"");break;
+case 4:printf(""Verbatim Corporation"");break;
+}
+return 0;
+}
+",0.0,8

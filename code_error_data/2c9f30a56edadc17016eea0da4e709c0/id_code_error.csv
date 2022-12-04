@@ -1,0 +1,208 @@
+,id,code,is_true,errorline
+0,2c9f30a56edadc17016eea0da4e709c0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7=0;
+   scanf(""%d"",&varb_2);
+   for(varb_7=0;varb_7<varb_2;varb_7++)
+   {
+   scanf(""%d"",&varb_3);
+   int varb_8[varb_3][varb_3];
+   for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+           scanf(""%d "",&varb_8[varb_0][varb_1]);
+          }
+    }
+          for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+            if(varb_0>varb_1&&varb_8[varb_0][varb_1]==0)
+            varb_6++;
+         }
+       }
+       if(varb_6!=0)
+       printf(""YES\n"");
+       else
+       printf(""NO\n"");
+       varb_6=0;
+    }
+       return 0;
+       }
+",0.0,21
+1,2c9f30a56edadc17016eea0da4e709c0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7=0;
+   scanf(""%d"",&varb_2);
+   for(varb_7=0;varb_7<varb_2;varb_7++)
+   {
+   scanf(""%d"",&varb_3);
+   int varb_8[varb_3][varb_3];
+   for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+           scanf(""%d "",&varb_8[varb_0][varb_1]);
+          }
+    }
+          for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+            if(varb_0>varb_1&&varb_8[varb_0][varb_1]==0)
+            varb_6++;
+         }
+       }
+       if(varb_6!=0)
+       printf(""YES\n"");
+       else
+       printf(""NO\n""); 
+       varb_6=0;    
+    }
+       return 0;
+       }
+",0.0,21
+2,2c9f30a56edadc17016eea0da4e709c0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6[10][10];
+	scanf(""%d"",&varb_0);
+	for(varb_2=1;varb_2<=varb_0;varb_2++)
+	{
+		varb_5=0;
+	    scanf(""%d"",&varb_1);
+	    for(varb_3=0;varb_3<varb_1;varb_3++)
+	        for(varb_4=0;varb_4<varb_1;varb_4++)
+	        {
+	        	scanf(""%d"",&varb_6[varb_3][varb_4]);
+	        }
+	    for(varb_3=1;varb_3<varb_1;varb_3++)
+	        {
+	        	if(varb_6[varb_3][varb_4]==0)
+	        	  varb_5++;  
+	        }	   if(varb_5==((varb_1-1)*varb_1)/2)
+	       printf(""YES\n"");
+	   else
+	       printf(""NO\n"");
+	}
+}",0.0,19
+3,2c9f30a56edadc17016eea0da4e709c0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7=0;
+   scanf(""%d"",&varb_2);
+   for(varb_7=0;varb_7<varb_2;varb_7++)
+   {
+   scanf(""%d"",&varb_3);
+   int varb_8[varb_3][varb_3];
+   for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+           scanf(""%d "",&varb_8[varb_0][varb_1]);
+          }
+    }
+          for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+            if(varb_0>varb_1&&varb_8[varb_0][varb_1]==0)
+            varb_6++;
+         }
+       }
+       if(varb_6!=0)
+       printf(""YES\n"");
+       else
+       printf(""NO"");
+       varb_6=0;
+    }
+       return 0;
+       }
+",0.0,21
+4,2c9f30a56edadc17016eea0da4e709c0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0,varb_7=0;
+   scanf(""%d"",&varb_2);
+   for(varb_7=0;varb_7<varb_2;varb_7++)
+   {
+   scanf(""%d"",&varb_3);
+   int varb_8[varb_3][varb_3];
+   for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+           scanf(""%d "",&varb_8[varb_0][varb_1]);
+          }
+    }
+          for(varb_0=0;varb_0<varb_3;varb_0++)
+   {
+       for(varb_1=0;varb_1<varb_3;varb_1++)
+         {
+            if(varb_0>varb_1&&varb_8[varb_0][varb_1]==0)
+            varb_6++;
+         }
+       }
+       if(varb_6!=0)
+       printf(""YES\n"");
+       else
+       printf(""NO\n""); 
+       varb_6=0;    
+    }
+       return 0;
+       }
+",0.0,21
+5,2c9f30a56edadc17016eea0da4e709c0,"#include <stdio.h>
+int main()
+{
+	int varb_0[10][10];
+	int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6=0;
+	scanf(""%d"",&varb_1);
+	for(varb_2=1;varb_2<=varb_1;varb_2++)
+	{
+		scanf(""%d"",&varb_4);
+		for(varb_3=0;varb_3<varb_4;varb_3++)
+		{
+		   for(varb_5=0;varb_5<varb_4;varb_5++)
+		   {
+		   	scanf(""%d "",&varb_0[varb_3][varb_5]);       
+		   }
+		}
+		if(varb_4==1&&varb_0[0][0]==0)
+		{
+			printf(""YES\n"");
+		}
+		if(varb_4==1&&varb_0[0][0]!=0)
+		{
+			printf(""NO\n"");
+		}
+if(varb_4>1){
+			for(varb_5=1;varb_5<varb_4;varb_5++)
+	{
+		for(varb_3=0;varb_3<varb_5;varb_3++)
+		{
+		   if(varb_0[varb_5][varb_3]==0)
+		   {
+		   	varb_6++;
+		   }
+		   else
+		   {
+		   	varb_6=-1;
+		   }
+if(varb_6==(varb_4*(varb_4-1))/2)
+		{
+			printf(""YES\n"");
+		}
+		if(varb_6==-1)
+		{
+			printf(""NO\n"");
+		}
+	}
+	}
+	}
+    }
+	return 0;
+}",0.0,38

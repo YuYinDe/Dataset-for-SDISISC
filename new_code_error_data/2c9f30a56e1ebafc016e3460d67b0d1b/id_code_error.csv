@@ -1,0 +1,79 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e1ebafc016e3460d67b0d1b,"#include<stdio.h>
+
+int main()
+
+{
+
+    int n;
+
+    scanf(""%d"",&n);
+
+    float he=0,zjl;
+int i;
+    for(i=1;i<=n;i++)
+
+    {
+
+        zjl=(2*i+1)/(i*(1+i));
+
+        he+=zjl;
+
+    }
+
+    printf(""%.2f"",he);
+
+    
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    float varb_1=0,zjl;
+int varb_2;
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        zjl=(2*varb_2+1)/(varb_2*(1+varb_2));
+        varb_1+=zjl;
+    }
+    printf(""%.2f"",varb_1);
+}",7
+1,2c9f30a56e1ebafc016e3460d67b0d1b,"#include<stdio.h>
+
+#include<math.h>
+int main()
+{
+int n;
+float a,b;
+a=b=0.0;
+scanf(""%d"",&n);
+while(a<=n)
+{
+b+=(a+(a+1))/(a*(a+1));
+
+a++;
+}
+printf(""%.2f"",b);
+
+}
+
+
+
+
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+varb_1=varb_2=0.0;
+scanf(""%d"",&varb_0);
+while(varb_1<=varb_0)
+{
+varb_2+=(varb_1+(varb_1+1))/(varb_1*(varb_1+1));
+varb_1++;
+}
+printf(""%.2f"",varb_2);
+}
+",7

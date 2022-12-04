@@ -1,0 +1,1111 @@
+,id,code,is_true,errorline
+0,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}
+else
+{
+return false;
+}
+varb_1++;}
+return *varb_0;
+}",0.0,19
+1,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2;
+  varb_2=strlen(varb_0);
+  for(varb_1=0;varb_1<(2*varb_2)/4;varb_1++)
+   varb_0[varb_1]=varb_0[varb_2-varb_1-1];
+  return *varb_0;
+}",0.0,21
+2,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}varb_1++;}
+return *varb_0;
+}",0.0,19
+3,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return true;
+    else 
+    return false;
+}",0.0,28
+4,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char *varb_0)
+{
+	size_t n;
+	int varb_1,varb_2;
+	varb_2=0;
+	n=strlen(varb_0);
+	for(varb_1=0;varb_1<(n/2);varb_1++)
+	{
+		if(varb_0[varb_1]==varb_0[n-varb_1])
+		varb_2=1;
+	}
+	if(varb_2==1)
+	return true;
+	else
+	return false;
+}",0.0,21
+5,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char* varb_0)
+{
+	int varb_1 = 0;
+	int varb_2 = strlen(varb_0);
+	for(int varb_3 = 0; varb_3 < varb_2 / 2; varb_3++)
+	{
+		if(*(varb_0 + varb_3) == *(varb_0 + varb_2 - 1 - varb_3))
+		{
+			varb_1++;
+		}
+	}
+	if(varb_1 == varb_2 / 2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+",0.0,20
+6,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1=0,c;
+c=strlen(varb_0);
+for(;varb_1<=c/2;)
+{
+if(varb_0[varb_1]==varb_0[c-varb_1])
+varb_1++;
+else
+return false;
+}
+return true;
+}",0.0,23
+7,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<=varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return true;
+	else
+	return false;
+}",0.0,21
+8,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}
+else
+{
+return false;
+}
+varb_1++;}
+return *varb_0;
+}",0.0,19
+9,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return true;
+	else
+	return false;
+}",0.0,19
+10,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    #define ture 1
+    #define false 0
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return 1;
+    else 
+    return 0;
+}",0.0,20
+11,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3=1;
+	varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[varb_2-varb_1])
+		{
+			varb_3=0;
+			break;
+		}
+	} 
+	if(varb_3==0)
+	return false;
+	else
+	return true;
+}",0.0,6
+12,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    varb_4[varb_2]='\0';
+    if(strcmp(varb_0,varb_4)==0)
+    return true;
+    else 
+    return false;
+}",0.0,28
+13,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1;
+for(varb_1=0;varb_1<10;varb_1++)
+{
+if(varb_0[varb_1]!=varb_0[20-1-varb_1])
+return false;
+}
+return true;
+}",0.0,19
+14,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true}bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2;
+	varb_2=strlen(varb_0);
+	if(varb_2%2==1)
+	{
+		for(varb_1=0;(varb_1<varb_2-1)/2;varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+			return true;
+			else 
+			return false;
+		}
+	}
+	else
+	{
+		for(varb_1=0;varb_1<varb_2/2;varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+			return true;
+			else
+			return false;
+		}
+	}
+}",0.0,19
+15,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"",varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",0.0,23
+16,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)!=0)
+    return true;
+    else 
+    return false;
+}",0.0,27
+17,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+for(varb_1=0;varb_1<(varb_2/2);varb_1++)
+{
+if(varb_0[varb_1]!=varb_0[varb_2-1-varb_1])
+return false;
+}
+return true;
+}",0.0,19
+18,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3;
+	varb_1=strlen(varb_0);
+	varb_2=varb_1/2;
+	for(varb_3=1;varb_3<varb_2;varb_3++)
+	{
+		if(varb_0[varb_3-1]!=varb_0[varb_1-varb_3])
+		return false;
+	}
+	return true;
+}",0.0,22
+19,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )  
+{  
+    int varb_1,varb_2;  
+    varb_2=strlen(varb_0);  
+    if(varb_2%2==1) {  
+        for(varb_1=0;varb_1<(varb_2-1)/2;varb_1++)  {  
+            if(varb_0[varb_1]==varb_0[varb_2-1-varb_1]){
+            }else {
+            	return false; 
+            } 
+        }  
+    }else {  
+        for(varb_1=0;varb_1<varb_2/2;varb_1++){  
+            if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+            {
+            } else 
+            {
+            	return false;  
+            } 
+        }  
+    }  
+    return true;  
+}",0.0,30
+20,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];  
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{  int varb_1=strlen(varb_0);
+   int varb_2,varb_3;
+   char varb_4;
+   for(varb_2=0,varb_3=varb_1-1;varb_2<varb_3;varb_2++,varb_3--)
+   { if(varb_0[varb_2]=varb_0[varb_3])
+     return 1;
+     else
+     return 0;
+   }
+}",0.0,22
+21,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4=varb_3/2)
+    return true;
+    else
+    return false;
+ }",0.0,23
+22,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char *varb_0)
+{
+	size_t n;
+	int varb_1,varb_2;
+	varb_2=1;
+	n=strlen(varb_0);
+	for(varb_1=0;varb_1<(n-1)/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[n-varb_1])
+		varb_2=0;
+	}
+	if(varb_2==1)
+	return true;
+	else
+	return false;
+}",0.0,22
+23,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-varb_1-1])
+       {
+         varb_4++;
+        }
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",0.0,19
+24,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}varb_1++;}
+return *varb_0;
+}",0.0,19
+25,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2;
+  varb_2=strlen(varb_0);
+  for(varb_1=0;varb_1<=(2*varb_2)/4;varb_1++)
+   varb_0[varb_1]=varb_0[varb_2-varb_1-1];
+  return *varb_0;
+}",0.0,21
+26,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return 1;
+    else 
+    return 0;
+}",0.0,28
+27,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2=strlen(varb_0);
+	if(varb_2%2==0)
+	{
+		for(varb_1=0;varb_1<=(varb_2/2);varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	if(varb_2%2!=0)
+	{
+		for(varb_1=0;varb_1<=((varb_2+1)/2);varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}",0.0,22
+28,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3;
+	varb_1=strlen(varb_0);
+	varb_2=varb_1/2;
+	for(varb_3=1;varb_3<varb_2;varb_3++)
+	{
+		if(varb_0[varb_3-1]!=varb_0[varb_1-varb_3])
+		return false;
+	}
+	return true;
+}",0.0,22
+29,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+}",0.0,19
+30,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1;
+varb_1=strlen(varb_0);
+int varb_2,varb_3;
+for(varb_2=0;varb_2<varb_1/2;varb_2++)
+{
+}
+}",0.0,19
+31,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",0.0,23
+32,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0)
+{
+	int varb_1;
+	varb_1=strlen(varb_0);
+	int varb_2,varb_3=1;
+	for(varb_2=0;varb_2<=varb_1;varb_2++,varb_1--)
+	{
+		if(varb_0[varb_2]!=varb_0[varb_1])
+		varb_3=0;	
+	}
+	if(varb_3)
+	return 0;
+	else return 1;
+}",0.0,24
+33,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return false;
+	else
+	return true;
+}",0.0,19
+34,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char* varb_0)
+{
+	int varb_1 = 0;
+	int varb_2 = strlen(varb_0);
+	for(int varb_3 = 0; varb_3 < varb_2 / 2; varb_3++)
+	{
+		if(*(varb_0 + varb_3) == *(varb_0 + varb_2 - 1 - varb_3))
+		{
+			varb_1++;
+		}
+	}
+	if(varb_1 == varb_2 / 2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}",0.0,20
+35,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3=1;
+	varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[varb_2-varb_1])
+		{
+			varb_3=0;
+			break;
+		}
+	} 
+	if(varb_3==0)
+	return true;
+	else
+	return false;
+}",0.0,6

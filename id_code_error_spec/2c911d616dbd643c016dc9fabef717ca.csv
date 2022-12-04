@@ -1,0 +1,685 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float x1,x2,y1,y2,a;
+scanf(""(%f,%f)(%f,%f)"",&x1,&y1,&x2,&y2);
+a=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2f"",a);
+return 0;
+   }
+       ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+printf(""%.2f"",varb_4);
+return 0;
+   }
+",10,2c911d616dbd643c016dc9fabef717ca_0.csv
+1,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+double distance, x1 ,x2, y1, y2;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+x1=0,x2=1,y1=0,y2=1;
+distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2lf"",distance);
+return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+double varb_0, varb_1 ,varb_2, varb_3, varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+printf(""%.2lf"",varb_0);
+return 0;
+}",7,2c911d616dbd643c016dc9fabef717ca_1.csv
+2,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,x2,y1,y2,result;
+    scanf(""(%f,%f) (%f,%f)"",&x1,&x2,&y1,&y2);
+    result=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    printf(""%.2f"",result);
+    return 0;
+  }
+",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_1,&varb_2,&varb_3);
+    varb_4=sqrt(pow(varb_1-varb_0,2)+pow(varb_3-varb_2,2));
+    printf(""%.2f"",varb_4);
+    return 0;
+  }
+",6,2c911d616dbd643c016dc9fabef717ca_2.csv
+3,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1=0,x2=1,y1=0,y2=1;
+  scanf(""(%.1lf,%.1lf)(%.1lf,%.1lf)"",&x1,&y1,&x2,&y2);
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  scanf(""(%.1lf,%.1lf)(%.1lf,%.1lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_3.csv
+4,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int  main( )
+{
+float x1,x2,y1,y2,E;
+scanf(""(%f,%f)(%f,%f)"",&x1,&y1,&x2,&y2);
+E=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2f"",E);
+
+
+return 0;
+}
+
+
+
+
+
+
+
+
+",0.0,"#include<stdio.h>
+#include<math.h>
+int  main( )
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+printf(""%.2f"",varb_4);
+return 0;
+}
+",10,2c911d616dbd643c016dc9fabef717ca_4.csv
+5,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double distance,x1,x2,y1,y2;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2f"",distance);
+return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+printf(""%.2f"",varb_0);
+return 0;
+}",10,2c911d616dbd643c016dc9fabef717ca_5.csv
+6,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,y1,x2,y2,result;
+    scanf(""(%f,%f) (%f,%f)"",&x1,&x2,&y1,&y2);
+    result=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    printf(""%.2f"",result);
+    return 0;
+  }",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+    varb_4=sqrt(pow(varb_2-varb_0,2)+pow(varb_3-varb_1,2));
+    printf(""%.2f"",varb_4);
+    return 0;
+  }",6,2c911d616dbd643c016dc9fabef717ca_6.csv
+7,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double L,x1,x2,y1,y2;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+L=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2lf"",L);
+
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+printf(""%.2lf"",varb_0);
+}
+",9,2c911d616dbd643c016dc9fabef717ca_7.csv
+8,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%.lf,%.lf)(%.lf,%.lf)"",&x1,&y1,&x2,&y2);
+  x1=0,x2=1,y1=0,y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%.lf,%.lf)(%.lf,%.lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",6,2c911d616dbd643c016dc9fabef717ca_8.csv
+9,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,y1,x2,y2,result;
+    scanf(""(%f,%f) (%f,%f)"",&x1,&x2,&y1,&y2);
+    result=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    printf(""%.2f"",result);
+    return 0;
+  }
+",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+    varb_4=sqrt(pow(varb_2-varb_0,2)+pow(varb_3-varb_1,2));
+    printf(""%.2f"",varb_4);
+    return 0;
+  }
+",6,2c911d616dbd643c016dc9fabef717ca_9.csv
+10,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  x1=0,y1=0,x2=1,y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0,varb_3=0,varb_2=1,varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",7,2c911d616dbd643c016dc9fabef717ca_10.csv
+11,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  x1=0;
+  x2=1;
+  y1=0;
+  y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0;
+  varb_2=1;
+  varb_3=0;
+  varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",7,2c911d616dbd643c016dc9fabef717ca_11.csv
+12,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  double len;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  double varb_5;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",3,2c911d616dbd643c016dc9fabef717ca_12.csv
+13,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double x1,x2,y1,y2,a;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+a=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2lf"",a);
+return 0;
+   }
+       ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+printf(""%.2lf"",varb_4);
+return 0;
+   }
+",6,2c911d616dbd643c016dc9fabef717ca_13.csv
+14,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1=0,x2=1,y1=0,y2=1;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_14.csv
+15,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,c,d,e;
+    scanf(""(%f,%f)(%f,%f)"",&a,&b,&c,&d);
+    e=sqrt((a-c)*(a-c)+((b-d)*(b-d)));
+    printf(""%.2f"",e);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_1,&varb_2,&varb_3);
+    varb_4=sqrt((varb_0-varb_2)*(varb_0-varb_2)+((varb_1-varb_3)*(varb_1-varb_3)));
+    printf(""%.2f"",varb_4);
+    return 0;
+}",7,2c911d616dbd643c016dc9fabef717ca_15.csv
+16,2c911d616dbd643c016dc9fabef717ca,"#include<math.h>
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""(%d,%d) (%d,%d)"",&a,&b,&c,&d);
+printf(""%.2lf"",sqrt(pow(a-c,2)+pow(b-d,2)));
+return 0;
+}",0.0,"#include<math.h>
+#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""(%d,%d)(%d,%d)"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""%.2lf"",sqrt(pow(varb_0-varb_2,2)+pow(varb_1-varb_3,2)));
+return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_16.csv
+17,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  x1=0,x2=1,y1=0,y2=1;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",6,2c911d616dbd643c016dc9fabef717ca_17.csv
+18,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,x2,y1,y2,d;
+    scanf(""(%f,%f)(%f,%f)"",&x1,&y1,&x2,&y2);
+    d=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    printf(""%.2f"",d);
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+    varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+    printf(""%.2f"",varb_4);
+}",5,2c911d616dbd643c016dc9fabef717ca_18.csv
+19,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,x2,y1,y2,result;
+    scanf(""(%f,%f) (%f,%f)"",&x1,&x2,&y1,&y2);
+    result=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    printf(""%.2f"",result);
+    return 0;
+  }",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_1,&varb_2,&varb_3);
+    varb_4=sqrt(pow(varb_1-varb_0,2)+pow(varb_3-varb_2,2));
+    printf(""%.2f"",varb_4);
+    return 0;
+  }",6,2c911d616dbd643c016dc9fabef717ca_19.csv
+20,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float x1,x2,y1,y2,d;
+    scanf(""(%f,%f) (%f,%f)"",&x1,&x2,&y1,&y2);
+    d=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    printf(""%.2f"",d);
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_1,&varb_2,&varb_3);
+    varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+    printf(""%.2f"",varb_4);
+}",5,2c911d616dbd643c016dc9fabef717ca_20.csv
+21,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double x1,x2,y1,y2,juli;
+    scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+    juli=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    printf(""%.2lf"",juli);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	double varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%lf,%lf)(%lf,%lf)"",&varb_0,&varb_2,&varb_1,&varb_3);
+    varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+    printf(""%.2lf"",varb_4);
+    return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_21.csv
+22,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float x1,x2,y1,y2,a;
+scanf(""(%f,%f)(%f,%f)"",&x1,&y1,&x2,&y2);
+a=sqrt((x1-y2)*(x1-y2)+(y1-x2)*(y1-x2));
+printf(""%.2f"",a);
+return 0;
+   }
+       ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=sqrt((varb_0-varb_3)*(varb_0-varb_3)+(varb_2-varb_1)*(varb_2-varb_1));
+printf(""%.2f"",varb_4);
+return 0;
+   }
+",7,2c911d616dbd643c016dc9fabef717ca_22.csv
+23,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double x1,x2,y1,y2,result;
+    scanf(""(%lf,%lf) (%lf,%lf)"",&x1,&x2,&y1,&y2);
+    result=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+    printf(""%.2lf"",result);
+    return 0;
+  }",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%lf,%lf)(%lf,%lf)"",&varb_0,&varb_1,&varb_2,&varb_3);
+    varb_4=sqrt(pow(varb_1-varb_0,2)+pow(varb_3-varb_2,2));
+    printf(""%.2lf"",varb_4);
+    return 0;
+  }",5,2c911d616dbd643c016dc9fabef717ca_23.csv
+24,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%.2lf,%.2lf)(%.2lf,%.2lf)"",&x1,&y1,&x2,&y2);
+  x1=0,x2=1,y1=0,y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%.2lf,%.2lf)(%.2lf,%.2lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",6,2c911d616dbd643c016dc9fabef717ca_24.csv
+25,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+  x1=0,x2=1,y1=0,y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",7,2c911d616dbd643c016dc9fabef717ca_25.csv
+26,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+double distance,x1,x2,y1,y2;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2f"",distance);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+printf(""%.2f"",varb_0);
+return 0;
+}",8,2c911d616dbd643c016dc9fabef717ca_26.csv
+27,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+void main()
+{
+	float x1,x2,y1,y2,d;
+	scanf(""%f%f%f%f"",&x1,&y1,&x2,&y2);
+	d=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+	printf(""%.2f"",d);
+	
+	}
+    ",0.0,"#include<stdio.h>
+#include<math.h>
+void main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%f%f%f%f"",&varb_0,&varb_2,&varb_1,&varb_3);
+	varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+	printf(""%.2f"",varb_4);
+	}
+",3,2c911d616dbd643c016dc9fabef717ca_27.csv
+28,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+double a,x1,y1,x2,y2;
+scanf(""(%lf,%lf)(%lf,%lf)"",&x1,&y1,&x2,&y2);
+a=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2lf"",a);
+}
+",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%lf,%lf)(%lf,%lf)"",&varb_1,&varb_2,&varb_3,&varb_4);
+varb_0=sqrt((varb_1-varb_3)*(varb_1-varb_3)+(varb_2-varb_4)*(varb_2-varb_4));
+printf(""%.2lf"",varb_0);
+}
+",6,2c911d616dbd643c016dc9fabef717ca_28.csv
+29,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double distance,x1,x2,y1,y2;
+  scanf(""(%.1lf,%.1lf)(%.1lf,%.1lf)"",&x1,&y1,&x2,&y2);
+  x1=0,x2=1,y1=0,y2=1;
+  distance=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+  printf(""%.2lf"",distance);
+  return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""(%.1lf,%.1lf)(%.1lf,%.1lf)"",&varb_1,&varb_3,&varb_2,&varb_4);
+  varb_1=0,varb_2=1,varb_3=0,varb_4=1;
+  varb_0=sqrt((varb_1-varb_2)*(varb_1-varb_2)+(varb_3-varb_4)*(varb_3-varb_4));
+  printf(""%.2lf"",varb_0);
+  return 0;
+}",6,2c911d616dbd643c016dc9fabef717ca_29.csv
+30,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float x1,x2,y1,y2,juli;
+    scanf(""(%f,%f)(%f,%f)"",&x1,&y1,&x2,&y2);
+    juli=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+    printf(""%.2f"",juli);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""(%f,%f)(%f,%f)"",&varb_0,&varb_2,&varb_1,&varb_3);
+    varb_4=sqrt((varb_0-varb_1)*(varb_0-varb_1)+(varb_2-varb_3)*(varb_2-varb_3));
+    printf(""%.2f"",varb_4);
+    return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_30.csv
+31,2c911d616dbd643c016dc9fabef717ca,"#include <stdio.h>
+#include<math.h>
+int main()
+    {
+float x1,y1,x2,y2,x;
+scanf(""(%f,%f) (%f,%lf)"",&x1,&y1,&x2,&y2);
+x=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+printf(""%.2f"",x);
+
+}
+",0.0,"#include <stdio.h>
+#include<math.h>
+int main()
+    {
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""(%f,%f)(%f,%lf)"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=sqrt((varb_0-varb_2)*(varb_0-varb_2)+(varb_1-varb_3)*(varb_1-varb_3));
+printf(""%.2f"",varb_4);
+}
+",6,2c911d616dbd643c016dc9fabef717ca_31.csv
+32,2c911d616dbd643c016dc9fabef717ca,"#include<stdio.h>
+#include<math.h>
+int main() 
+{
+	int x1,x2,y1,y2;
+	float a;
+	scanf(""(%d,%d) (%d,%d)"",&x1,&y1,&x2,&y2);
+	a=sqrt(pow(x2-x1,2)+pow(y2-y1,2));
+	printf(""%.2f"",a);
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main() 
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	float varb_4;
+	scanf(""(%d,%d)(%d,%d)"",&varb_0,&varb_2,&varb_1,&varb_3);
+	varb_4=sqrt(pow(varb_1-varb_0,2)+pow(varb_3-varb_2,2));
+	printf(""%.2f"",varb_4);
+	return 0;
+}",5,2c911d616dbd643c016dc9fabef717ca_32.csv

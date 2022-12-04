@@ -1,0 +1,87 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e1ebafc016e6e50a9224a41,"#include<stdio.h>
+int main()
+{
+	int i,n;
+	scanf(""%d"",&n);
+	double temp1=1,temp2=1,sum=0;
+	for(i=1;i<=n;i++)
+	{
+		temp1=i*temp1;
+		temp2=temp2*(1.0+2*i);
+		sum=sum+temp1/temp2;
+	}
+	printf(""%lf"",2+2*sum);
+	
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d"",&varb_1);
+	double varb_2=1,temp2=1,sum=0;
+	for(varb_0=1;varb_0<=varb_1;varb_0++)
+	{
+		varb_2=varb_0*varb_2;
+		temp2=temp2*(1.0+2*varb_0);
+		sum=sum+varb_2/temp2;
+	}
+	printf(""%lf"",2+2*sum);
+}",6
+1,2c9f30a56e1ebafc016e6e50a9224a41,"#include<stdio.h>
+
+int main()
+{
+    float a=1,b=1,c=1,i;
+    scanf(""%f"",&i);
+    for(;a<=i;a++)
+     {b=(b*a)/(2*a+1);
+      c=c+b;
+     }
+    c=c*2;
+    printf(""%5f"",c);
+}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0=1,b=1,c=1,i;
+    scanf(""%f"",&i);
+    for(;varb_0<=i;varb_0++)
+     {b=(b*varb_0)/(2*varb_0+1);
+      c=c+b;
+     }
+    c=c*2;
+    printf(""%5f"",c);
+}",11
+2,2c9f30a56e1ebafc016e6e50a9224a41,"#include<stdio.h>
+int main()
+{
+int b,i;
+double c=1.00000,e=1.00000,num,sum=0.00000;
+scanf(""%d"",&i);
+for(b=1;b<=i;b++)
+{
+c=b*c;
+e=e*(2*b+1);
+num=c/e;
+sum=num+sum;
+}
+printf (""%f"",2*(sum+1));
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+double varb_2=1.00000,e=1.00000,num,sum=0.00000;
+scanf(""%d"",&varb_1);
+for(varb_0=1;varb_0<=varb_1;varb_0++)
+{
+varb_2=varb_0*varb_2;
+e=e*(2*varb_0+1);
+num=varb_2/e;
+sum=num+sum;
+}
+printf(""%f"",2*(sum+1));
+return 0;
+}
+",14

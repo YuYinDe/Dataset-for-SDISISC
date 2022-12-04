@@ -1,0 +1,86 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dcd1421016dd3135b251720,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float x,y;
+scanf(""%f %f"",&x,&y);
+if(sqrt((x-0)*(x-0)+(y-0)*(y-0))<=10)
+   printf(""在圈内"");
+else 
+   printf(""不在圈内"");
+return  0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f %f"",&varb_0,&varb_1);
+if(sqrt((varb_0-0)*(varb_0-0)+(varb_1-0)*(varb_1-0))<=10)
+   printf(""在圈内"");
+else 
+   printf(""不在圈内"");
+return  0;
+}",8
+1,2c911d616dcd1421016dd3135b251720,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float x,y,R;
+scanf(""%f%f"",&x,&y);
+R=sqrt((x-0)*(x-0)+(y-0)*(y-0));
+if(R<10)
+printf(""在圆内"");
+else
+printf(""不再圆内"");
+
+return 0;
+}
+
+
+       
+  
+      
+
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2;
+scanf(""%f%f"",&varb_0,&varb_1);
+varb_2=sqrt((varb_0-0)*(varb_0-0)+(varb_1-0)*(varb_1-0));
+if(varb_2<10)
+printf(""在圆内"");
+else
+printf(""不再圆内"");
+return 0;
+}
+",11
+2,2c911d616dcd1421016dd3135b251720,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+  float distance,x,y;
+  scanf(""%f%f"",&x,&y);
+  distance=sqrt(pow(x-0,2-0)+pow(y-0,2-0));;
+  if(distance<10)
+  printf(""在圆内"");
+  else if(distance>10)
+  printf(""在圆外"");
+  return 0;
+ }
+  
+  ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+  float varb_0,varb_1,varb_2;
+  scanf(""%f%f"",&varb_1,&varb_2);
+  varb_0=sqrt(pow(varb_1-0,2-0)+pow(varb_2-0,2-0));;
+  if(varb_0<10)
+  printf(""在圆内"");
+  else if(varb_0>10)
+  printf(""在圆外"");
+  return 0;
+ }
+",7

@@ -1,0 +1,5935 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,pos;
+	for(i=0;i<n;i++)
+	if(p->num==num)
+	break;
+	if(i<n)
+	{
+		switch(course){
+			case1:p->math=score;break;
+			case2:p->english=score;break;
+			case3:p->computer=score;break;
+		}
+		pos=i;
+	}
+	else
+	pos=-1;
+	return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_12;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	if(varb_6->varb_0==varb_0)
+	break;
+	if(varb_11<varb_7)
+	{
+		switch(varb_9){
+			case1:varb_6->varb_2=varb_10;break;
+			case2:varb_6->varb_3=varb_10;break;
+			case3:varb_6->varb_4=varb_10;break;
+		}
+		varb_12=varb_11;
+	}
+	else
+	varb_12=-1;
+	return varb_12;
+}",33
+1,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+   int i,m;
+   int pos,flag=0;
+   for(i=0;i<n;i++)
+   {
+     if(p[i].num==num)
+     flag=1;
+     pos=1;
+     m=i;
+   }
+   //printf(""%d\n"",m);
+     if(flag)
+     {
+       if(course==1)
+       {
+         p[m-1].math=score;
+       }
+       if(course==2)
+       {
+         p[m-1].english=score;
+       }
+       if(course==3)
+       {
+         p[m-1].computer=score;
+       }
+     }
+     if(flag==0)
+     pos=-1;
+   
+   return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+   int varb_11,varb_26;
+   int varb_12,varb_28=0;
+   for(varb_11=0;varb_11<varb_7;varb_11++)
+   {
+     if(varb_6[varb_11].varb_0==varb_0)
+     varb_28=1;
+     varb_12=1;
+     varb_26=varb_11;
+   }
+     if(varb_28)
+     {
+       if(varb_9==1)
+       {
+         varb_6[varb_26-1].varb_2=varb_10;
+       }
+       if(varb_9==2)
+       {
+         varb_6[varb_26-1].varb_3=varb_10;
+       }
+       if(varb_9==3)
+       {
+         varb_6[varb_26-1].varb_4=varb_10;
+       }
+     }
+     if(varb_28==0)
+     varb_12=-1;
+   return varb_12;
+}",39
+2,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=n;i>0;i--)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].english=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=varb_7;varb_11>0;varb_11--)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+3,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<4;i++)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].english=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<4;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+4,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+    for(int i=0;i<n;i++,p++)
+    {
+        if(p->num==num)
+        {
+            if(course==1)
+                p->math=score;
+            if(course==2)
+                p->english=score;
+            if(course==3)
+                p->computer=score;
+            return 1;
+        }
+    }
+    return -1;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+    for(int varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+    {
+        if(varb_6->varb_0==varb_0)
+        {
+            if(varb_9==1)
+                varb_6->varb_2=varb_10;
+            if(varb_9==2)
+                varb_6->varb_3=varb_10;
+            if(varb_9==3)
+                varb_6->varb_4=varb_10;
+            return 1;
+        }
+    }
+    return -1;
+}",9
+5,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+
+/* 请在这里填写答案 */
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+    int i;
+    //如果有这个人，就把他的这门成绩替换，返回1；如果没有这个人，就返回-1
+    for(i=0;i<n;i++)
+    {
+        if((p+i)->num==num)
+        {
+            switch(course)
+            {
+                case 1: (p+i)->math=score;break;
+                case 2: (p+i)->english=score;break;
+                case 3: (p+i)->computer=score;break;
+            }
+            return 1;
+        }
+    }
+    return -1;
+}
+ ",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+    int varb_11;
+    for(varb_11=0;varb_11<varb_7;varb_11++)
+    {
+        if((varb_6+varb_11)->varb_0==varb_0)
+        {
+            switch(varb_9)
+            {
+                case 1:(varb_6+varb_11)->varb_2=varb_10;break;
+                case 2:(varb_6+varb_11)->varb_3=varb_10;break;
+                case 3:(varb_6+varb_11)->varb_4=varb_10;break;
+            }
+            return 1;
+        }
+    }
+    return -1;
+}
+",33
+6,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	
+	struct student *p1=p;
+	int flag=1;
+	for(;p1<p+n;p1++){
+		if(p1->num==num) {
+			flag=0;
+			if(course==1) p1->math=score;
+			if(course==2) p1->english=score;
+			if(course==3) p1->computer=score;
+			break;
+		} 
+	}
+	if(flag) return -1;
+	else return 0; 
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	struct varb_5 *varb_26=varb_6;
+	int varb_28=1;
+	for(;varb_26<varb_6+varb_7;varb_26++){
+		if(varb_26->varb_0==varb_0) {
+			varb_28=0;
+			if(varb_9==1) varb_26->varb_2=varb_10;
+			if(varb_9==2) varb_26->varb_3=varb_10;
+			if(varb_9==3) varb_26->varb_4=varb_10;
+			break;
+		} 
+	}
+	if(varb_28) return -1;
+	else return 0; 
+}",33
+7,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,pos;
+	for(i=0;i<n;i++)
+	if(p->num==num)
+	break;
+	if(i<n)
+	{
+		switch(course){
+			case1:p->math=score;break;
+			case2:p->english=score;break;
+			case3:p->computer=score;break;
+		}
+		pos=i;
+	}
+
+	return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_12;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	if(varb_6->varb_0==varb_0)
+	break;
+	if(varb_11<varb_7)
+	{
+		switch(varb_9){
+			case1:varb_6->varb_2=varb_10;break;
+			case2:varb_6->varb_3=varb_10;break;
+			case3:varb_6->varb_4=varb_10;break;
+		}
+		varb_12=varb_11;
+	}
+	return varb_12;
+}",33
+8,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+   int i,m;
+   int pos,flag=0;
+   for(i=0;i<n;i++)
+   {
+     if(p[i].num==num)
+     flag=1;
+     pos=1;
+     m=i;
+   }
+   printf(""%d\n"",m);
+     if(flag)
+     {
+       if(course==1)
+       {
+         p[m-1].math=score;
+       }
+       if(course==2)
+       {
+         p[m-1].english=score;
+       }
+       if(course==3)
+       {
+         p[m-1].computer=score;
+       }
+     }
+     if(flag==0)
+     pos=-1;
+   
+   return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+   int varb_11,varb_26;
+   int varb_12,varb_28=0;
+   for(varb_11=0;varb_11<varb_7;varb_11++)
+   {
+     if(varb_6[varb_11].varb_0==varb_0)
+     varb_28=1;
+     varb_12=1;
+     varb_26=varb_11;
+   }
+   printf(""%d\n"",varb_26);
+     if(varb_28)
+     {
+       if(varb_9==1)
+       {
+         varb_6[varb_26-1].varb_2=varb_10;
+       }
+       if(varb_9==2)
+       {
+         varb_6[varb_26-1].varb_3=varb_10;
+       }
+       if(varb_9==3)
+       {
+         varb_6[varb_26-1].varb_4=varb_10;
+       }
+     }
+     if(varb_28==0)
+     varb_12=-1;
+   return varb_12;
+}",39
+9,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+};
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++)
+  {
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,m=0;
+	for(i=0;i<n;i++)
+	{
+		if(num==p[i].num)
+		{
+			m++;
+			if(course==1)
+			{
+				p[i].math=score;
+                return 1;
+			}
+			if(course==2)
+			{
+				p[i].english=score;
+                return 1;
+			}
+			if(course==3)
+			{
+				p[i].computer=score;
+                return 1;
+			}
+		}
+	}
+	if(m==0) 
+	return -1;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++)
+  {
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=0;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	{
+		if(varb_0==varb_6[varb_11].varb_0)
+		{
+			varb_26++;
+			if(varb_9==1)
+			{
+				varb_6[varb_11].varb_2=varb_10;
+                return 1;
+			}
+			if(varb_9==2)
+			{
+				varb_6[varb_11].varb_3=varb_10;
+                return 1;
+			}
+			if(varb_9==3)
+			{
+				varb_6[varb_11].varb_4=varb_10;
+                return 1;
+			}
+		}
+	}
+	if(varb_26==0) 
+	return -1;
+}",13
+10,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<n;i++)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].math=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+11,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{ int i,pos;
+ for(i=0;i<n;i++)
+  {  if(p[i].num==num)
+       {if(course==1)
+        p[i].math=score;
+        pos=i;
+        break;
+        if(course==2)
+        p[i].english=score;
+        pos=i;
+        break;
+        if(course==3)
+        p[i].computer=score;
+        pos=i;
+        break;       
+       }
+   else
+   pos=-1;
+  }
+  
+ return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{ int varb_11,varb_12;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+  {  if(varb_6[varb_11].varb_0==varb_0)
+       {if(varb_9==1)
+        varb_6[varb_11].varb_2=varb_10;
+        varb_12=varb_11;
+        break;
+        if(varb_9==2)
+        varb_6[varb_11].varb_3=varb_10;
+        varb_12=varb_11;
+        break;
+        if(varb_9==3)
+        varb_6[varb_11].varb_4=varb_10;
+        varb_12=varb_11;
+        break;       
+       }
+   else
+   varb_12=-1;
+  }
+ return varb_12;
+}",32
+12,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+   int i,m;
+   int pos,flag=0;
+   for(i=0;i<n;i++)
+   {
+     if(p[i].num==num)
+     flag=1;
+     pos=1;
+     m=i;
+     if(flag==1)
+     break;
+   }
+   //printf(""%d\n"",m);
+     if(flag)
+     {
+       if(course==1)
+       {
+         p[m].math=score;
+       }
+       if(course==2)
+       {
+         p[m].english=score;
+       }
+       if(course==3)
+       {
+         p[m].computer=score;
+       }
+     }
+     if(flag==0)
+     pos=-1;
+   
+   return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+   int varb_11,varb_26;
+   int varb_12,varb_28=0;
+   for(varb_11=0;varb_11<varb_7;varb_11++)
+   {
+     if(varb_6[varb_11].varb_0==varb_0)
+     varb_28=1;
+     varb_12=1;
+     varb_26=varb_11;
+     if(varb_28==1)
+     break;
+   }
+     if(varb_28)
+     {
+       if(varb_9==1)
+       {
+         varb_6[varb_26].varb_2=varb_10;
+       }
+       if(varb_9==2)
+       {
+         varb_6[varb_26].varb_3=varb_10;
+       }
+       if(varb_9==3)
+       {
+         varb_6[varb_26].varb_4=varb_10;
+       }
+     }
+     if(varb_28==0)
+     varb_12=-1;
+   return varb_12;
+}",39
+13,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+
+/* 请在这里填写答案 */
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,m=-1;
+	for(i=0;i++;i<n)
+	{
+		if(p[i].num==num)
+		{
+		m=1;
+		if(course==1)
+		p[i].math=score;
+		if(course==2)
+		p[i].english=score;
+		if(course==3)
+		p[i].computer=score;
+		}
+		return m;
+	}
+}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=-1;
+	for(varb_11=0;varb_11++;varb_11<varb_7)
+	{
+		if(varb_6[varb_11].varb_0==varb_0)
+		{
+		varb_26=1;
+		if(varb_9==1)
+		varb_6[varb_11].varb_2=varb_10;
+		if(varb_9==2)
+		varb_6[varb_11].varb_3=varb_10;
+		if(varb_9==3)
+		varb_6[varb_11].varb_4=varb_10;
+		}
+		return varb_26;
+	}
+}
+",33
+14,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++,p++){
+if(p->num==num)
+{
+switch(course)
+{
+case 1:p->math=score;break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}return 1;}
+}
+return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++){
+if(varb_6->varb_0==varb_0)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}return 1;}
+}
+return -1;}
+",41
+15,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,a=5;
+	struct student;
+	for(i=0;i<=2;i++)
+	{
+		if(p[i].num==num);
+		a=i+1;
+		break;
+	}
+	if(a==5)
+	{
+		return -1;
+	}
+	switch (n-1)
+	{
+	case 1:
+		p[a].math=score;
+		break;
+	case 2:
+	    p[a].english=score;
+	    break;
+	case 3:
+		p[a].computer=score;
+		break;
+    }
+		return a;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=5;
+	struct varb_5;
+	for(varb_11=0;varb_11<=2;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0);
+		varb_26=varb_11+1;
+		break;
+	}
+	if(varb_26==5)
+	{
+		return -1;
+	}
+	switch(varb_7-1)
+	{
+	case 1:
+		varb_6[varb_26].varb_2=varb_10;
+		break;
+	case 2:
+	    varb_6[varb_26].varb_3=varb_10;
+	    break;
+	case 3:
+		varb_6[varb_26].varb_4=varb_10;
+		break;
+    }
+		return varb_26;
+}",33
+16,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+ int i,a,b;
+ a=0;
+ for(i=0;i<n;i++)
+ {
+  if(p[i].num==num)
+   a++;
+   b=i;
+   break;
+ }
+  if(a==0)
+  return -1;
+  else
+  { 
+    if(course==1)
+    p[b].math=score;
+    if(course==2)
+    p[b].english=score;
+     if(course==2)
+    p[b].computer=score;
+  }
+  return n;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+ int varb_11,varb_26,varb_27;
+ varb_26=0;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+ {
+  if(varb_6[varb_11].varb_0==varb_0)
+   varb_26++;
+   varb_27=varb_11;
+   break;
+ }
+  if(varb_26==0)
+  return -1;
+  else
+  { 
+    if(varb_9==1)
+    varb_6[varb_27].varb_2=varb_10;
+    if(varb_9==2)
+    varb_6[varb_27].varb_3=varb_10;
+     if(varb_9==2)
+    varb_6[varb_27].varb_4=varb_10;
+  }
+  return varb_7;
+}",33
+17,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<n;i++)
+if(num==p[i].num)
+break;
+else pos=-1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].math=score;
+if(course==3)
+p[i].computer=score;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+break;
+else varb_12=-1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+}",9
+18,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+  
+}    ",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+}    ",33
+19,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+  int i,pos;
+  for(i=0;i<n;i++,p++)
+    if(p->num==num)
+      break;
+  if(i<n)
+  {
+    switch(course){
+      case 1:p[i].math=score;break;
+      case 2:p[i].english=score;break;
+      case 3:p[i].computer=score;break;
+    }
+    pos=i;
+  }
+  else
+   return -1;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+  int varb_11,varb_12;
+  for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+    if(varb_6->varb_0==varb_0)
+      break;
+  if(varb_11<varb_7)
+  {
+    switch(varb_9){
+      case 1:varb_6[varb_11].varb_2=varb_10;break;
+      case 2:varb_6[varb_11].varb_3=varb_10;break;
+      case 3:varb_6[varb_11].varb_4=varb_10;break;
+    }
+    varb_12=varb_11;
+  }
+  else
+   return -1;
+}",40
+20,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++,p++){
+if(p->num==num)
+{
+switch(course)
+{
+case 1:p->math=score;break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}}return 1;
+}
+return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++){
+if(varb_6->varb_0==varb_0)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}}return 1;
+}
+return -1;}
+",41
+21,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++,p++)
+{
+if(p->num==num)
+{
+switch(course)
+{
+case 1:p->math=score;break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}return 1;
+}
+}return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+{
+if(varb_6->varb_0==varb_0)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}return 1;
+}
+}return -1;}
+",33
+22,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+    int i,pos=-1;
+    for(i=0;i<n;i++)
+    {
+    if(p[i].num==num)
+    {
+        pos=0;
+        switch(course)
+        {
+        case 1:p[i].math=score;break;
+        case 2:p[i].english=score;break;
+        case 3:p[i].computer=score;break;
+        }
+    }
+}
+return(pos);
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+    int varb_11,varb_12=-1;
+    for(varb_11=0;varb_11<varb_7;varb_11++)
+    {
+    if(varb_6[varb_11].varb_0==varb_0)
+    {
+        varb_12=0;
+        switch(varb_9)
+        {
+        case 1:varb_6[varb_11].varb_2=varb_10;break;
+        case 2:varb_6[varb_11].varb_3=varb_10;break;
+        case 3:varb_6[varb_11].varb_4=varb_10;break;
+        }
+    }
+}
+return(varb_12);
+}",33
+23,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+
+/* 请在这里填写答案 */
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+  int i,pos=-1;
+  for(i=0;i<n;i++)
+  {
+    if((*p).num==num)
+    {
+      if(course==1)
+        (*p).math=score;
+        else
+          if(course==2)
+            (*p).english=score;
+            else
+              (*p).computer=score;
+              pos=1;
+              }
+              p++;
+              
+              }
+              return pos;
+              }",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+  int varb_11,varb_12=-1;
+  for(varb_11=0;varb_11<varb_7;varb_11++)
+  {
+    if((*varb_6).varb_0==varb_0)
+    {
+      if(varb_9==1)(*varb_6).varb_2=varb_10;
+        else
+          if(varb_9==2)(*varb_6).varb_3=varb_10;
+            else(*varb_6).varb_4=varb_10;
+              varb_12=1;
+              }
+              varb_6++;
+              }
+              return varb_12;
+              }",33
+24,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i;
+for(i=0;i<n;i++)
+{
+if(p[i].num==num)
+break;
+}
+if(i>=n)
+return -1;
+if(course==1)
+p[i].math=score;
+else if(course==2)
+p[i].english=score;
+else if(course==2)
+p[i].computer=score;
+else
+return -1;
+return i;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+{
+if(varb_6[varb_11].varb_0==varb_0)
+break;
+}
+if(varb_11>=varb_7)
+return -1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+else if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+else if(varb_9==2)
+varb_6[varb_11].varb_4=varb_10;
+else
+return -1;
+return varb_11;
+}",50
+25,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+
+/* 请在这里填写答案 */
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+    int i;
+
+    for(i=0;i<n;i++,p++)
+    {
+        if(p->num==num)
+        {
+            switch(course)
+            {
+                case 1: p->math=score;break;
+                case 2: p->english=score;break;
+                case 3: p->computer=score;break;
+            }
+            return 1;
+        }
+    }
+    return -1;
+}
+ ",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+    int varb_11;
+    for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+    {
+        if(varb_6->varb_0==varb_0)
+        {
+            switch(varb_9)
+            {
+                case 1: varb_6->varb_2=varb_10;break;
+                case 2: varb_6->varb_3=varb_10;break;
+                case 3: varb_6->varb_4=varb_10;break;
+            }
+            return 1;
+        }
+    }
+    return -1;
+}
+",44
+26,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{ int i,pos;
+ for(i=0;i<n;i++)
+  {  if(p[i].num==num)
+       {if(course==1)
+        p[i].math=score;
+        pos=i;
+        break;
+        if(course==2)
+        p[i].english=score;
+        pos=i;
+        break;
+        if(course==3)
+        p[i].computer=score;
+        pos=i;
+        break;       
+       }
+   else
+   pos=-1;
+  }
+  
+ 
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{ int varb_11,varb_12;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+  {  if(varb_6[varb_11].varb_0==varb_0)
+       {if(varb_9==1)
+        varb_6[varb_11].varb_2=varb_10;
+        varb_12=varb_11;
+        break;
+        if(varb_9==2)
+        varb_6[varb_11].varb_3=varb_10;
+        varb_12=varb_11;
+        break;
+        if(varb_9==3)
+        varb_6[varb_11].varb_4=varb_10;
+        varb_12=varb_11;
+        break;       
+       }
+   else
+   varb_12=-1;
+  }
+}",32
+27,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,a=5;
+	struct student;
+	for(i=0;i<=2;i++)
+	{
+		if(p[i].num==num);
+		a=i;
+		break;
+	}
+	if(a=5)
+	{
+		return -1;
+	}
+	switch (n)
+	{
+	case 1:
+		p[a].math=score;
+		break;
+	case 2:
+	    p[a].english=score;
+	    break;
+	case 3:
+		p[a].computer=score;
+		break;
+    }
+		return a;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=5;
+	struct varb_5;
+	for(varb_11=0;varb_11<=2;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0);
+		varb_26=varb_11;
+		break;
+	}
+	if(varb_26=5)
+	{
+		return -1;
+	}
+	switch(varb_7)
+	{
+	case 1:
+		varb_6[varb_26].varb_2=varb_10;
+		break;
+	case 2:
+	    varb_6[varb_26].varb_3=varb_10;
+	    break;
+	case 3:
+		varb_6[varb_26].varb_4=varb_10;
+		break;
+    }
+		return varb_26;
+}",33
+28,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", &students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++,p++)
+if(p->num==num)
+break;
+if(i<n)
+{
+switch(course)
+{
+case 1:p->math=score;break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}return 1;
+}
+else
+return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", &varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+if(varb_6->varb_0==varb_0)
+break;
+if(varb_11<varb_7)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}return 1;
+}
+else
+return -1;}
+",43
+29,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++)
+{
+if(p->num==num)
+{
+switch(course)
+{
+case 1:p->math=score;
+break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}}return 1;
+}return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+{
+if(varb_6->varb_0==varb_0)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;
+break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}}return 1;
+}return -1;}
+",32
+30,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       
+  int num;            
+  char name[10];     
+  int math, english, computer;   
+}; 
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  pos = update_score(students, n, num, course, score);
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0,i<n;i++;p++)
+if(p->num==num)
+break;
+if(i<n)
+{
+switch(course){
+case 1:p->math=score;
+break;
+case 2:p->english=score;
+break;
+case 3:p->computer=score;
+break;
+pos=i;
+}
+}
+else
+pos=-1;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];     
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0,varb_11<varb_7;varb_11++;varb_6++)
+if(varb_6->varb_0==varb_0)
+break;
+if(varb_11<varb_7)
+{
+switch(varb_9){
+case 1:varb_6->varb_2=varb_10;
+break;
+case 2:varb_6->varb_3=varb_10;
+break;
+case 3:varb_6->varb_4=varb_10;
+break;
+varb_12=varb_11;
+}
+}
+else
+varb_12=-1;
+return varb_12;
+}",34
+31,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=n;i>0;i--)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==1)
+p[i].english=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=varb_7;varb_11>0;varb_11--)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==1)
+varb_6[varb_11].varb_3=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+32,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		if(num==p[i].num)
+		{
+			if(course==1)
+			{
+				p[i].math=score;
+			}
+			else if(course==2)
+			{
+				p[i].english=score;
+			}
+			else
+			{
+				p[i].computer=score;
+			}
+			return 0;
+		}
+		if(i==(n-1))
+		{
+			return -1;
+		}
+	}
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	{
+		if(varb_0==varb_6[varb_11].varb_0)
+		{
+			if(varb_9==1)
+			{
+				varb_6[varb_11].varb_2=varb_10;
+			}
+			else if(varb_9==2)
+			{
+				varb_6[varb_11].varb_3=varb_10;
+			}
+			else
+			{
+				varb_6[varb_11].varb_4=varb_10;
+			}
+			return 0;
+		}
+		if(varb_11==(varb_7-1))
+		{
+			return -1;
+		}
+	}
+}",50
+33,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,pos,s=0;
+	for(i=0;i<n;i++)
+	{
+		if(p[i].num==num)
+		{
+			pos=i;
+			s=1;
+			break;
+		}
+	}
+		if(s==1)
+		{
+    	switch(course)
+    	{
+    	 case 1:p->math=score;break;
+    	 case 2:p->english=score;break;
+    	 case 3:p->computer=score;break;
+        }
+		return pos;
+        }
+	else 
+	return -1;	
+	
+}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_12,varb_27=0;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0)
+		{
+			varb_12=varb_11;
+			varb_27=1;
+			break;
+		}
+	}
+		if(varb_27==1)
+		{
+    	switch(varb_9)
+    	{
+    	 case 1:varb_6->varb_2=varb_10;break;
+    	 case 2:varb_6->varb_3=varb_10;break;
+    	 case 3:varb_6->varb_4=varb_10;break;
+        }
+		return varb_12;
+        }
+	else 
+	return -1;	
+}
+",47
+34,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<n;i++)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=-1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].math=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=-1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+35,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,a=5;
+	struct student;
+	for(i=0;i<=2;i++)
+	{
+		if(p[i].num==num);
+		a=i;
+		break;
+	}
+	if(a==5)
+	{
+		return -1;
+	}
+	switch (n)
+	{
+	case 1:
+		p[a].math=score;
+		break;
+	case 2:
+	    p[a].english=score;
+	    break;
+	case 3:
+		p[a].computer=score;
+		break;
+    }
+		return a;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=5;
+	struct varb_5;
+	for(varb_11=0;varb_11<=2;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0);
+		varb_26=varb_11;
+		break;
+	}
+	if(varb_26==5)
+	{
+		return -1;
+	}
+	switch(varb_7)
+	{
+	case 1:
+		varb_6[varb_26].varb_2=varb_10;
+		break;
+	case 2:
+	    varb_6[varb_26].varb_3=varb_10;
+	    break;
+	case 3:
+		varb_6[varb_26].varb_4=varb_10;
+		break;
+    }
+		return varb_26;
+}",33
+36,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+   int i,m;
+   int pos,flag=0;
+   for(i=0;i<n;i++)
+   {
+     if(p[i].num==num)
+     flag=1;
+     pos=1;
+     m=i;
+   }
+  // printf(""%d\n"",m);
+     if(flag)
+     {
+       if(course==1)
+       {
+         p[m-1].math=score;
+       }
+       if(course==2)
+       {
+         p[m-1].english=score;
+       }
+       if(course==3)
+       {
+         p[m-1].computer=score;
+       }
+     }
+     if(flag==0)
+     pos=-1;
+   
+   return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+   int varb_11,varb_26;
+   int varb_12,varb_28=0;
+   for(varb_11=0;varb_11<varb_7;varb_11++)
+   {
+     if(varb_6[varb_11].varb_0==varb_0)
+     varb_28=1;
+     varb_12=1;
+     varb_26=varb_11;
+   }
+     if(varb_28)
+     {
+       if(varb_9==1)
+       {
+         varb_6[varb_26-1].varb_2=varb_10;
+       }
+       if(varb_9==2)
+       {
+         varb_6[varb_26-1].varb_3=varb_10;
+       }
+       if(varb_9==3)
+       {
+         varb_6[varb_26-1].varb_4=varb_10;
+       }
+     }
+     if(varb_28==0)
+     varb_12=-1;
+   return varb_12;
+}",39
+37,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p,int n,int num,int course,int score)
+{
+  int i;
+  for(i=0;i<n;i++)
+  { if(num==p[i].num)
+   {
+    if(course==1)
+     p[i].math=score;
+    if(course==2)
+     p[i].english=score;
+    if(course==3)
+     p[i].computer=score;
+     break;
+ }
+  }
+    if(i==n-1)
+    return -1;
+}   ",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6,int varb_7,int varb_0,int varb_9,int varb_10)
+{
+  int varb_11;
+  for(varb_11=0;varb_11<varb_7;varb_11++)
+  { if(varb_0==varb_6[varb_11].varb_0)
+   {
+    if(varb_9==1)
+     varb_6[varb_11].varb_2=varb_10;
+    if(varb_9==2)
+     varb_6[varb_11].varb_3=varb_10;
+    if(varb_9==3)
+     varb_6[varb_11].varb_4=varb_10;
+     break;
+ }
+  }
+    if(varb_11==varb_7-1)
+    return -1;
+}   ",46
+38,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+ int i,a,b;
+ a=0;
+ for(i=0;i<n;i++)
+ {
+  if(p[i].num==num)
+   a++;
+   b=i;
+   break;
+ }
+  if(a==0)
+  return -1;
+  else
+  { 
+    if(course==1)
+    p[b].math=score;
+    if(course==2)
+    p[b].english=score;
+     if(course==2)
+    p[b].computer=score;
+  }
+  return i;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+ int varb_11,varb_26,varb_27;
+ varb_26=0;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+ {
+  if(varb_6[varb_11].varb_0==varb_0)
+   varb_26++;
+   varb_27=varb_11;
+   break;
+ }
+  if(varb_26==0)
+  return -1;
+  else
+  { 
+    if(varb_9==1)
+    varb_6[varb_27].varb_2=varb_10;
+    if(varb_9==2)
+    varb_6[varb_27].varb_3=varb_10;
+     if(varb_9==2)
+    varb_6[varb_27].varb_4=varb_10;
+  }
+  return varb_11;
+}",33
+39,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+}",31
+40,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{int i;
+for(i=0;i<n;i++,p++)
+{
+if(p->num==num)
+{
+switch(course)
+{
+case 1:p->math=score;break;
+case 2:p->english=score;break;
+case 3:p->computer=score;break;
+}return 1;
+}
+}return -1;}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{int varb_11;
+for(varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+{
+if(varb_6->varb_0==varb_0)
+{
+switch(varb_9)
+{
+case 1:varb_6->varb_2=varb_10;break;
+case 2:varb_6->varb_3=varb_10;break;
+case 3:varb_6->varb_4=varb_10;break;
+}return 1;
+}
+}return -1;}
+",32
+41,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<n;i++)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].english=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+42,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+ int i,a,b;
+ a=0;
+ for(i=0;i<n;i++)
+ {
+  if(p[i].num==num)
+   a++;
+   b=i;
+   break;
+ }
+  if(a==0)
+  return -1;
+  else
+  { 
+    if(course==1)
+    p[b].math=score;
+    if(course==2)
+    p[b].english=score;
+     if(course==2)
+    p[b].computer=score;
+  }
+  return b+1;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+ int varb_11,varb_26,varb_27;
+ varb_26=0;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+ {
+  if(varb_6[varb_11].varb_0==varb_0)
+   varb_26++;
+   varb_27=varb_11;
+   break;
+ }
+  if(varb_26==0)
+  return -1;
+  else
+  { 
+    if(varb_9==1)
+    varb_6[varb_27].varb_2=varb_10;
+    if(varb_9==2)
+    varb_6[varb_27].varb_3=varb_10;
+     if(varb_9==2)
+    varb_6[varb_27].varb_4=varb_10;
+  }
+  return varb_27+1;
+}",33
+43,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int pos;
+int i;struct student;
+for(i=0;i<n;i++)
+{
+if(p[i].num==num)
+{
+if(course==1)
+p[i].math=score;
+else if(course==2)
+p[i].english=score;
+else
+p[i].computer=score;
+}
+else
+pos=-1;
+}
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_12;
+int varb_11;struct varb_5;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+{
+if(varb_6[varb_11].varb_0==varb_0)
+{
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+else if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+else
+varb_6[varb_11].varb_4=varb_10;
+}
+else
+varb_12=-1;
+}
+return varb_12;
+}",33
+44,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,a=5;
+	struct student;
+	for(i=0;i<=3;i++)
+	{
+		if(p[i].num==num);
+		a=i+1;
+		break;
+	}
+	if(a==5)
+	{
+		return -1;
+	}
+	switch (n-1)
+	{
+	case 1:
+		p[a].math=score;
+		break;
+	case 2:
+	    p[a].english=score;
+	    break;
+	case 3:
+		p[a].computer=score;
+		break;
+    }
+		return a;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=5;
+	struct varb_5;
+	for(varb_11=0;varb_11<=3;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0);
+		varb_26=varb_11+1;
+		break;
+	}
+	if(varb_26==5)
+	{
+		return -1;
+	}
+	switch(varb_7-1)
+	{
+	case 1:
+		varb_6[varb_26].varb_2=varb_10;
+		break;
+	case 2:
+	    varb_6[varb_26].varb_3=varb_10;
+	    break;
+	case 3:
+		varb_6[varb_26].varb_4=varb_10;
+		break;
+    }
+		return varb_26;
+}",33
+45,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+};
+
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{									
+	int i=0,t=-1;
+	for(i=0;i<n;i++)
+	{
+		if(p->num==num)
+		{
+			if(course==1)
+			{
+				p->math=score;
+			}
+			if(course==2)
+			{
+				p->english=score;
+			}
+			if(course==3)
+			{
+				p->computer=score;
+			}
+			t=1;
+		}
+		*p++;
+	}
+	return t;
+}
+",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{									
+	int varb_11=0,varb_26=-1;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	{
+		if(varb_6->varb_0==varb_0)
+		{
+			if(varb_9==1)
+			{
+				varb_6->varb_2=varb_10;
+			}
+			if(varb_9==2)
+			{
+				varb_6->varb_3=varb_10;
+			}
+			if(varb_9==3)
+			{
+				varb_6->varb_4=varb_10;
+			}
+			varb_26=1;
+		}
+		*varb_6++;
+	}
+	return varb_26;
+}
+",50
+46,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i,a=5;
+	struct student;
+	for(i=0;i<=2;i++)
+	{
+		if(p[i].num==num);
+		a=i+1;
+		break;
+	}
+	if(a==5)
+	{
+		return -1;
+	}
+	switch (n)
+	{
+	case 1:
+		p[a-1].math=score;
+		break;
+	case 2:
+	    p[a-1].english=score;
+	    break;
+	case 3:
+		p[a-1].computer=score;
+		break;
+    }
+		return a;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11,varb_26=5;
+	struct varb_5;
+	for(varb_11=0;varb_11<=2;varb_11++)
+	{
+		if(varb_6[varb_11].varb_0==varb_0);
+		varb_26=varb_11+1;
+		break;
+	}
+	if(varb_26==5)
+	{
+		return -1;
+	}
+	switch(varb_7)
+	{
+	case 1:
+		varb_6[varb_26-1].varb_2=varb_10;
+		break;
+	case 2:
+	    varb_6[varb_26-1].varb_3=varb_10;
+	    break;
+	case 3:
+		varb_6[varb_26-1].varb_4=varb_10;
+		break;
+    }
+		return varb_26;
+}",33
+47,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+ int i,a,b;
+ a=0;
+ for(i=0;i<n;i++)
+ {
+  if(p[i].num==num)
+   a++;
+   b=i;
+   break;
+ }
+  if(a==0)
+  return -1;
+  else
+  { 
+    if(course==1)
+    p[b].math=score;
+    if(course==2)
+    p[b].english=score;
+     if(course==2)
+    p[b].computer=score;
+  }
+  return p[b].num;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+ int varb_11,varb_26,varb_27;
+ varb_26=0;
+ for(varb_11=0;varb_11<varb_7;varb_11++)
+ {
+  if(varb_6[varb_11].varb_0==varb_0)
+   varb_26++;
+   varb_27=varb_11;
+   break;
+ }
+  if(varb_26==0)
+  return -1;
+  else
+  { 
+    if(varb_9==1)
+    varb_6[varb_27].varb_2=varb_10;
+    if(varb_9==2)
+    varb_6[varb_27].varb_3=varb_10;
+     if(varb_9==2)
+    varb_6[varb_27].varb_4=varb_10;
+  }
+  return varb_6[varb_27].varb_0;
+}",33
+48,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+   int i,m;
+   int pos,flag=0;
+   for(i=0;i<n;i++)
+   {
+     if(p[i].num==num)
+     flag=1;
+     pos=1;
+     m=i;
+     if(flag==1)
+     break;
+   }
+   //printf(""%d\n"",score);
+     if(flag)
+     {
+       if(course==1)
+       {
+         p[m].math=score;
+       }
+       if(course==2)
+       {
+         p[m].english=score;
+       }
+       if(course==3)
+       {
+         p[m].computer=score;
+       }
+     }
+     if(flag==0)
+     pos=-1;
+   
+   return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+   int varb_11,varb_26;
+   int varb_12,varb_28=0;
+   for(varb_11=0;varb_11<varb_7;varb_11++)
+   {
+     if(varb_6[varb_11].varb_0==varb_0)
+     varb_28=1;
+     varb_12=1;
+     varb_26=varb_11;
+     if(varb_28==1)
+     break;
+   }
+     if(varb_28)
+     {
+       if(varb_9==1)
+       {
+         varb_6[varb_26].varb_2=varb_10;
+       }
+       if(varb_9==2)
+       {
+         varb_6[varb_26].varb_3=varb_10;
+       }
+       if(varb_9==3)
+       {
+         varb_6[varb_26].varb_4=varb_10;
+       }
+     }
+     if(varb_28==0)
+     varb_12=-1;
+   return varb_12;
+}",39
+49,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i;
+    for( i=0;i<n;i++,p++)
+    {
+        if(p->num==num)
+        {
+            if(course==1)
+                p->math=score;
+            if(course==2)
+                p->english=score;
+            if(course==3)
+                p->computer=score;
+            return 1;
+        }
+    }
+    return -1;
+}
+",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11;
+    for( varb_11=0;varb_11<varb_7;varb_11++,varb_6++)
+    {
+        if(varb_6->varb_0==varb_0)
+        {
+            if(varb_9==1)
+                varb_6->varb_2=varb_10;
+            if(varb_9==2)
+                varb_6->varb_3=varb_10;
+            if(varb_9==3)
+                varb_6->varb_4=varb_10;
+            return 1;
+        }
+    }
+    return -1;
+}
+",9
+50,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+ int i,a,b;
+ a=0;
+ for(i=0;i<50;i++)
+ {
+  if(p[i].num==num)
+   a++;
+   b=i;
+   break;
+ }
+  if(a==0)
+  return -1;
+  else
+  { 
+    if(course==1)
+    p[b].math=score;
+    if(course==2)
+    p[b].english=score;
+     if(course==2)
+    p[b].computer=score;
+  }
+  return n;
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+ int varb_11,varb_26,varb_27;
+ varb_26=0;
+ for(varb_11=0;varb_11<50;varb_11++)
+ {
+  if(varb_6[varb_11].varb_0==varb_0)
+   varb_26++;
+   varb_27=varb_11;
+   break;
+ }
+  if(varb_26==0)
+  return -1;
+  else
+  { 
+    if(varb_9==1)
+    varb_6[varb_27].varb_2=varb_10;
+    if(varb_9==2)
+    varb_6[varb_27].varb_3=varb_10;
+     if(varb_9==2)
+    varb_6[varb_27].varb_4=varb_10;
+  }
+  return varb_7;
+}",33
+51,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		if(num==p[i].num)
+		{
+			if(course==1)
+			{
+				p[i].math=score;
+			}
+			else if(course==2)
+			{
+				p[i].english=score;
+			}
+			else
+			{
+				p[i].computer=score;
+			}
+			return i+1;
+		}
+		if(i==(n-1))
+		{
+			return -1;
+		}
+	}
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	int varb_11;
+	for(varb_11=0;varb_11<varb_7;varb_11++)
+	{
+		if(varb_0==varb_6[varb_11].varb_0)
+		{
+			if(varb_9==1)
+			{
+				varb_6[varb_11].varb_2=varb_10;
+			}
+			else if(varb_9==2)
+			{
+				varb_6[varb_11].varb_3=varb_10;
+			}
+			else
+			{
+				varb_6[varb_11].varb_4=varb_10;
+			}
+			return varb_11+1;
+		}
+		if(varb_11==(varb_7-1))
+		{
+			return -1;
+		}
+	}
+}",50
+52,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+
+struct student{       
+  int num;            
+
+  char name[10];      
+
+  int math, english, computer;   
+
+}; 
+
+int update_score(struct student *p, int n, int num, int course, int score); 
+
+int main(void)
+
+{    
+
+  int i, pos, n, num, course, score;
+
+  struct student students[50];   
+
+  scanf(""%d"", &n);
+
+  for(i = 0; i < n; i++){
+
+    scanf(""%d"", &students[i].num);
+
+    scanf(""%s"", students[i].name); 
+
+    scanf(""%d"", &students[i].math); 
+
+    scanf(""%d"", &students[i].english); 
+
+    scanf(""%d"", &students[i].computer);
+
+  }
+
+  
+
+  scanf(""%d"", &num);
+
+  scanf(""%d"", &course);
+
+  scanf(""%d"", &score);
+
+  
+
+  pos = update_score(students, n, num, course, score);
+
+  
+
+  if(pos == -1)
+
+    printf(""Not found!\n"");
+
+  else
+
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+
+  }
+
+  return 0;
+
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,j=0;
+for(i=0;i<n;i++)
+{
+if(p->num==num)
+{
+j=1;
+return 1;
+break;
+}
+p++;
+}
+if(j!=1)
+return -1;
+else
+{
+for(i=1;i<4;i++)
+{
+if(i==course)
+p->english=score;
+}
+}
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_26=0;
+for(varb_11=0;varb_11<varb_7;varb_11++)
+{
+if(varb_6->varb_0==varb_0)
+{
+varb_26=1;
+return 1;
+break;
+}
+varb_6++;
+}
+if(varb_26!=1)
+return -1;
+else
+{
+for(varb_11=1;varb_11<4;varb_11++)
+{
+if(varb_11==varb_9)
+varb_6->varb_3=varb_10;
+}
+}
+}",33
+53,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{
+int num;
+char name[10];
+int math, english, computer;
+};
+int update_score(struct student *p, int n, int num, int course, int score);
+int main(void)
+{
+int i, pos, n, num, course, score;
+struct student students[50];
+scanf(""%d"", &n);
+for(i = 0; i < n; i++){
+scanf(""%d"", &students[i].num);
+scanf(""%s"", students[i].name); 
+scanf(""%d"", &students[i].math); 
+scanf(""%d"", &students[i].english); 
+scanf(""%d"", &students[i].computer);
+}
+scanf(""%d"", &num);
+scanf(""%d"", &course);
+scanf(""%d"", &score);
+pos = update_score(students, n, num, course, score);
+if(pos == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+}
+return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+int i,pos;
+for(i=0;i<5;i++)
+if(num==p[i].num)
+{
+break;
+pos=0;
+}
+else pos=1;
+if(course==1)
+p[i].math=score;
+if(course==2)
+p[i].english=score;
+if(course==3)
+p[i].computer=score;
+return pos;
+}",0.0,"#include <stdio.h>
+struct varb_5{
+int varb_0;
+char varb_1[10];
+int varb_2, varb_3, varb_4;
+};
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10);
+int main(void)
+{
+int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+struct varb_5 varb_18[50];
+scanf(""%d"", &varb_7);
+for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+scanf(""%d"", &varb_18[varb_11].varb_0);
+scanf(""%s"", varb_18[varb_11].varb_1); 
+scanf(""%d"", &varb_18[varb_11].varb_2); 
+scanf(""%d"", &varb_18[varb_11].varb_3); 
+scanf(""%d"", &varb_18[varb_11].varb_4);
+}
+scanf(""%d"", &varb_0);
+scanf(""%d"", &varb_9);
+scanf(""%d"", &varb_10);
+varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+if(varb_12 == -1)
+printf(""Not found!\n"");
+else
+{
+printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+}
+return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+int varb_11,varb_12;
+for(varb_11=0;varb_11<5;varb_11++)
+if(varb_0==varb_6[varb_11].varb_0)
+{
+break;
+varb_12=0;
+}
+else varb_12=1;
+if(varb_9==1)
+varb_6[varb_11].varb_2=varb_10;
+if(varb_9==2)
+varb_6[varb_11].varb_3=varb_10;
+if(varb_9==3)
+varb_6[varb_11].varb_4=varb_10;
+return varb_12;
+}",9
+54,2c9f30a56f3306c4016f3319649c0036,"#include <stdio.h>
+struct student{       /*学生信息结构定义*/
+  int num;            /* 学号 */
+  char name[10];      /* 姓名 */
+  int math, english, computer;   /* 三门课程成绩 */
+}; 
+int update_score(struct student *p, int n, int num, int course, int score); /*函数声明*/
+
+int main(void)
+{    
+  int i, pos, n, num, course, score;
+  struct student students[50];   /* 定义结构数组 */
+  scanf(""%d"", &n);
+  for(i = 0; i < n; i++){
+    scanf(""%d"", &students[i].num);
+    scanf(""%s"", students[i].name); 
+    scanf(""%d"", &students[i].math); 
+    scanf(""%d"", &students[i].english); 
+    scanf(""%d"", &students[i].computer);
+  }
+
+  /* 输入待修改学生信息 */
+  scanf(""%d"", &num);
+  scanf(""%d"", &course);
+  scanf(""%d"", &score);
+
+  /*调用函数，修改学生成绩*/
+  pos = update_score(students, n, num, course, score);
+
+  /*输出修改后的学生信息*/
+  if(pos == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", students[pos].num, students[pos].math, students[pos].english, students[pos].computer);
+  }
+
+  return 0;
+}
+int update_score(struct student *p, int n, int num, int course, int score)
+{
+	
+	struct student *p1=p;
+	int flag=1;
+	for(;p1<p+50;p1++){
+		if(p1->num==num) {
+			flag=0;
+			if(course==1) p1->math=score;
+			if(course==2) p1->english=score;
+			if(course==3) p1->computer=score;
+			break;
+		} 
+	}
+	if(flag) return -1;
+	else return 0; 
+}",0.0,"#include <stdio.h>
+struct varb_5{       
+  int varb_0;            
+  char varb_1[10];      
+  int varb_2, varb_3, varb_4;   
+}; 
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10); 
+int main(void)
+{    
+  int varb_11, varb_12, varb_7, varb_0, varb_9, varb_10;
+  struct varb_5 varb_18[50];   
+  scanf(""%d"", &varb_7);
+  for(varb_11 = 0; varb_11 < varb_7; varb_11++){
+    scanf(""%d"", &varb_18[varb_11].varb_0);
+    scanf(""%s"", varb_18[varb_11].varb_1); 
+    scanf(""%d"", &varb_18[varb_11].varb_2); 
+    scanf(""%d"", &varb_18[varb_11].varb_3); 
+    scanf(""%d"", &varb_18[varb_11].varb_4);
+  }
+  scanf(""%d"", &varb_0);
+  scanf(""%d"", &varb_9);
+  scanf(""%d"", &varb_10);
+  varb_12 = func_0(varb_18, varb_7, varb_0, varb_9, varb_10);
+  if(varb_12 == -1)
+    printf(""Not found!\n"");
+  else
+  {  printf(""%d,%d,%d,%d\n"", varb_18[varb_12].varb_0, varb_18[varb_12].varb_2, varb_18[varb_12].varb_3, varb_18[varb_12].varb_4);
+  }
+  return 0;
+}
+int func_0(struct varb_5 *varb_6, int varb_7, int varb_0, int varb_9, int varb_10)
+{
+	struct varb_5 *varb_26=varb_6;
+	int varb_28=1;
+	for(;varb_26<varb_6+50;varb_26++){
+		if(varb_26->varb_0==varb_0) {
+			varb_28=0;
+			if(varb_9==1) varb_26->varb_2=varb_10;
+			if(varb_9==2) varb_26->varb_3=varb_10;
+			if(varb_9==3) varb_26->varb_4=varb_10;
+			break;
+		} 
+	}
+	if(varb_28) return -1;
+	else return 0; 
+}",33

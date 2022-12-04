@@ -1,0 +1,799 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case%d :大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case%d :大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_0.csv
+1,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+
+int main()
+{
+    int a,b,c,n,i=1;
+    scanf(""%d"",&n);
+    for(a=0; a<34; a++)
+    {   for(b=0; b<=50; b++)
+        {
+            c=100-a-b;
+            if(6*a+4*b+c==200&&a>=n&&c%2==0)
+                printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",i++,a,b,c);
+           }} if(a>n)
+                 printf(""没有找到符合条件的组合"");
+        
+    
+
+    return 0;
+}
+
+
+    ",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4=1;
+    scanf(""%d"",&varb_3);
+    for(varb_0=0; varb_0<34; varb_0++)
+    {   for(varb_1=0; varb_1<=50; varb_1++)
+        {
+            varb_2=100-varb_0-varb_1;
+            if(6*varb_0+4*varb_1+varb_2==200&&varb_0>=varb_3&&varb_2%2==0)
+                printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",varb_4++,varb_0,varb_1,varb_2);
+           }} if(varb_0>varb_3)
+                 printf(""没有找到符合条件的组合"");
+    return 0;
+}
+",12,2c911d616dea44ae016e0c9808e04991_1.csv
+2,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case %d:大马=%2d匹 中马=%2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case %d:大马=%2d匹 中马=%2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_2.csv
+3,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c,n;
+	scanf(""%d"",&n);
+	a=n,c=1;
+	for(a=n;a<30;a++)
+	{
+		for(b=0;b<100;b++)
+		{
+			if((a*3+b*2+(100-a-b)/2.0)==100)
+			{
+			printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",c,a,b,100-a-b);
+			c++;
+			}
+			
+		}
+		
+	}
+	      if(c==1)
+			printf(""没有找到符合条件的组合"");
+			return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d"",&varb_3);
+	varb_0=varb_3,varb_2=1;
+	for(varb_0=varb_3;varb_0<30;varb_0++)
+	{
+		for(varb_1=0;varb_1<100;varb_1++)
+		{
+			if((varb_0*3+varb_1*2+(100-varb_0-varb_1)/2.0)==100)
+			{
+			printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",varb_2,varb_0,varb_1,100-varb_0-varb_1);
+			varb_2++;
+			}
+		}
+	}
+	      if(varb_2==1)
+			printf(""没有找到符合条件的组合"");
+			return 0;
+}",7,2c911d616dea44ae016e0c9808e04991_3.csv
+4,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case %d :大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case %d :大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_4.csv
+5,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case %d: 大马=%2d匹 中马=%2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case %d: 大马=%2d匹 中马=%2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_5.csv
+6,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+    int cnt=0,i,j,k,l,n;
+    scanf(""%d"",&n);
+    for(i=n;3*i<=100;i++)
+    {
+        
+        for(j=1;i*3+2*j<=100;j++)
+        {
+            
+            for(k=1;i*3+j*2+k/2.0<=100;k++)
+            {
+                
+                if(i+j+k==100&&i*3+j*2+k/2.0==100)
+                 {
+                     if(i*2+j+k/2.0>100){break;}
+                    cnt++;
+                    printf(""case %d:大马%d匹 中马%d匹 小马%d匹\n"",cnt,i,j,k);
+                 }
+             }
+        }
+     }
+   if(cnt==0)
+   printf(""没有找到符合条件的组合"");
+}
+        
+    
+    ",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=0,i,j,k,l,n;
+    scanf(""%d"",&n);
+    for(i=n;3*i<=100;i++)
+    {
+        for(j=1;i*3+2*j<=100;j++)
+        {
+            for(k=1;i*3+j*2+k/2.0<=100;k++)
+            {
+                if(i+j+k==100&&i*3+j*2+k/2.0==100)
+                 {
+                     if(i*2+j+k/2.0>100){break;}
+                    varb_0++;
+                    printf(""case %d:大马%d匹 中马%d匹 小马%d匹\n"",varb_0,i,j,k);
+                 }
+             }
+        }
+     }
+   if(varb_0==0)
+   printf(""没有找到符合条件的组合"");
+}
+",8,2c911d616dea44ae016e0c9808e04991_6.csv
+7,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+   int a,b,c,n,i;
+   i=1;
+   scanf(""%d"",&n);
+   if(n>20)
+   {
+     printf(""没有找到符合条件的组合"");}
+   for(a=1;a<=100/3;a++)
+   {  
+     for(b=1;b<=100;b++)
+     { 
+       c=100-a-b;
+       if(a>=n&&2*3*a+4*b+c==2*100)
+       {
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",i,a,b,c);
+       i++;
+       }
+     }
+   }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4;
+   varb_4=1;
+   scanf(""%d"",&varb_3);
+   if(varb_3>20)
+   {
+     printf(""没有找到符合条件的组合"");}
+   for(varb_0=1;varb_0<=100/3;varb_0++)
+   {  
+     for(varb_1=1;varb_1<=100;varb_1++)
+     { 
+       varb_2=100-varb_0-varb_1;
+       if(varb_0>=varb_3&&2*3*varb_0+4*varb_1+varb_2==2*100)
+       {
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+       varb_4++;
+       }
+     }
+   }
+}",12,2c911d616dea44ae016e0c9808e04991_7.csv
+8,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case %d:大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case %d:大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_8.csv
+9,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+
+int main()
+
+{
+
+    int i,j,n,t,js=0;
+
+    scanf(""%d"",&n);
+
+    for(i=n;i<=50;i++)
+
+    {
+
+        for(j=0;j<=100-i;j++)
+
+        {
+
+           t=100-i-j;
+
+           if(100==i*3+j*2+t*0.5)
+
+           {
+
+               js++;
+
+               printf(""cesa %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",js,i,j,t);
+
+           }
+
+       }
+
+    }
+
+    if(js==0)
+
+    printf(""没有找到符合条件的组合"");
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4=0;
+    scanf(""%d"",&varb_2);
+    for(varb_0=varb_2;varb_0<=50;varb_0++)
+    {
+        for(varb_1=0;varb_1<=100-varb_0;varb_1++)
+        {
+           varb_3=100-varb_0-varb_1;
+           if(100==varb_0*3+varb_1*2+varb_3*0.5)
+           {
+               varb_4++;
+               printf(""cesa %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",varb_4,varb_0,varb_1,varb_3);
+           }
+       }
+    }
+    if(varb_4==0)
+    printf(""没有找到符合条件的组合"");
+}",14,2c911d616dea44ae016e0c9808e04991_9.csv
+10,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+    int a,b,c,n;
+    int cru=0;
+    scanf(""%d"",&n);
+    for(a=1;
+    a<=20;
+    a++)
+    {
+        b=(100-5*a)/3;
+        c=100-a-b;
+        if(a>=n&&b%5==0)
+        {
+            cru++;
+            printf(""case%d:大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",cru,a,b,c);
+        }
+    }
+    if(n>20)
+    printf(""没有找到符合条件的组合"");
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    int varb_4=0;
+    scanf(""%d"",&varb_3);
+    for(varb_0=1;
+    varb_0<=20;
+    varb_0++)
+    {
+        varb_1=(100-5*varb_0)/3;
+        varb_2=100-varb_0-varb_1;
+        if(varb_0>=varb_3&&varb_1%5==0)
+        {
+            varb_4++;
+            printf(""case%d:大马=%2d匹 中马= %2d匹 小马=%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+        }
+    }
+    if(varb_3>20)
+    printf(""没有找到符合条件的组合"");
+}
+",16,2c911d616dea44ae016e0c9808e04991_10.csv
+11,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+int n,a,b,c,d,i;
+i=0;
+scanf(""%d"",&n);
+a=n;
+while(a>=n&&a<=100) 
+  {
+   b=0;
+   while(b<=100-a) 
+    {
+b++;
+     c=100-a-b;
+     if(c%2!=0) 
+     continue;
+     d=3*a+2*b+(c/2);
+     if(d==100) 
+      {
+       i++;
+       printf (""case %d:大马%2d匹 中马%2d匹 小马%2d匹"",i,a,b,c);
+       printf(""\n"") ;
+      }
+    }
+a++;
+  }
+if(i==0) 
+printf(""没有找到符合条件的组合"") ;
+  
+return 0;
+}
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_5=0;
+scanf(""%d"",&varb_0);
+varb_1=varb_0;
+while(varb_1>=varb_0&&varb_1<=100) 
+  {
+   varb_2=0;
+   while(varb_2<=100-varb_1) 
+    {
+varb_2++;
+     varb_3=100-varb_1-varb_2;
+     if(varb_3%2!=0) 
+     continue;
+     varb_4=3*varb_1+2*varb_2+(varb_3/2);
+     if(varb_4==100) 
+      {
+       varb_5++;
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹"",varb_5,varb_1,varb_2,varb_3);
+       printf(""\n"") ;
+      }
+    }
+varb_1++;
+  }
+if(varb_5==0) 
+printf(""没有找到符合条件的组合"") ;
+return 0;
+}
+",10,2c911d616dea44ae016e0c9808e04991_11.csv
+12,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+int n,a,b,c,d,i;
+i=0;
+scanf(""%d"",&n);
+a=n;
+while(a>=n&&a<=100) 
+  {
+   b=0;
+   while(b<=100-a) 
+    {
+b++;
+     c=100-a-b;
+     if(c%2!=0) 
+     continue;
+     d=3*a+2*b+(c/2);
+     if(d==100) 
+      {
+       i++;
+       printf (""case %d:大马%2d匹 中马%2d匹 小马%2d匹"",i,a,b,c);
+       printf(""\n"") ;
+      }
+    }
+a++;
+  }
+if(i==0) 
+printf(""没有找到符合条件的组合"") ;
+  
+return 0;
+}
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+varb_5=0;
+scanf(""%d"",&varb_0);
+varb_1=varb_0;
+while(varb_1>=varb_0&&varb_1<=100) 
+  {
+   varb_2=0;
+   while(varb_2<=100-varb_1) 
+    {
+varb_2++;
+     varb_3=100-varb_1-varb_2;
+     if(varb_3%2!=0) 
+     continue;
+     varb_4=3*varb_1+2*varb_2+(varb_3/2);
+     if(varb_4==100) 
+      {
+       varb_5++;
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹"",varb_5,varb_1,varb_2,varb_3);
+       printf(""\n"") ;
+      }
+    }
+varb_1++;
+  }
+if(varb_5==0) 
+printf(""没有找到符合条件的组合"") ;
+return 0;
+}
+",10,2c911d616dea44ae016e0c9808e04991_12.csv
+13,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+
+int main()
+{
+    int a,b,c,n,i=1;
+    scanf(""%d"",&n);
+    for(a=0; a<34; a++)
+    {   for(b=0; b<=50; b++)
+        {
+            c=100-a-b;
+            if(6*a+4*b+c==200&&a>=n&&c%2==0)
+                printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",i++,a,b,c);
+                
+           }
+		   }
+        if(a>20)
+		printf(""没有找到符合条件的组合"");
+    
+
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4=1;
+    scanf(""%d"",&varb_3);
+    for(varb_0=0; varb_0<34; varb_0++)
+    {   for(varb_1=0; varb_1<=50; varb_1++)
+        {
+            varb_2=100-varb_0-varb_1;
+            if(6*varb_0+4*varb_1+varb_2==200&&varb_0>=varb_3&&varb_2%2==0)
+                printf(""case %d:大马 %2d匹 中马%2d匹 小马%2d匹\n"",varb_4++,varb_0,varb_1,varb_2);
+           }
+		   }
+        if(varb_0>20)
+		printf(""没有找到符合条件的组合"");
+    return 0;
+}",14,2c911d616dea44ae016e0c9808e04991_13.csv
+14,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+   int a,b,c,n,i;
+   i=1;
+   scanf(""%d"",&n);
+   if(n>20)
+   {
+     printf(""没有找到符合条件的组合"");}
+   for(a=1;a<=100/3;a++)
+   {  
+     for(b=1;b<=100/2;b++)
+     { 
+       c=100-a-b;
+       if(a>=n&&2*3*a+4*b+c==2*100)
+       {
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",i,a,b,c);
+       i++;
+       }
+     }
+   }
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4;
+   varb_4=1;
+   scanf(""%d"",&varb_3);
+   if(varb_3>20)
+   {
+     printf(""没有找到符合条件的组合"");}
+   for(varb_0=1;varb_0<=100/3;varb_0++)
+   {  
+     for(varb_1=1;varb_1<=100/2;varb_1++)
+     { 
+       varb_2=100-varb_0-varb_1;
+       if(varb_0>=varb_3&&2*3*varb_0+4*varb_1+varb_2==2*100)
+       {
+       printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",varb_4,varb_0,varb_1,varb_2);
+       varb_4++;
+       }
+     }
+   }
+}",12,2c911d616dea44ae016e0c9808e04991_14.csv
+15,2c911d616dea44ae016e0c9808e04991,"#include <stdio.h>
+int main()
+{
+   int n,i,a,b,c;
+
+   scanf(""%d"",&n);
+   
+   i=1;
+   for(c=n;c<34;c++)
+  {
+  for(b=0;b<50;b++)
+{
+a=100-b-c;
+ if(0.5*a+2*b+3*c==100)
+{
+   printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",i,c,b,a);
+i++;
+}
+}
+}
+if(i=1)
+printf(""没有找到符合条件的组合"");
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3,varb_4;
+   scanf(""%d"",&varb_0);
+   varb_1=1;
+   for(varb_4=varb_0;varb_4<34;varb_4++)
+  {
+  for(varb_3=0;varb_3<50;varb_3++)
+{
+varb_2=100-varb_3-varb_4;
+ if(0.5*varb_2+2*varb_3+3*varb_4==100)
+{
+   printf(""case %d:大马%2d匹 中马%2d匹 小马%2d匹\n"",varb_1,varb_4,varb_3,varb_2);
+varb_1++;
+}
+}
+}
+if(varb_1=1)
+printf(""没有找到符合条件的组合"");
+  return 0;
+}",19,2c911d616dea44ae016e0c9808e04991_15.csv
+16,2c911d616dea44ae016e0c9808e04991,"#include<stdio.h>
+int main()
+{
+    int cnt=0,i,j,k,l,n;
+    scanf(""%d"",&n);
+    for(i=n;3*i<=100;i++)
+    {
+        
+        for(j=1;i*3+2*j<=100;j++)
+        {
+            
+            for(k=1;i*3+j*2+k/2.0<=100;k++)
+            {
+                
+                if(i+j+k==100&&i*3+j*2+k/2.0==100)
+                {
+                    cnt++;
+                    printf(""case %d:大马%d匹 中马%d匹 小马%d匹\n"",cnt,i,j,k);
+                 }
+             }
+        }
+     }
+   if(cnt==0)
+   printf(""没有找到符合条件的组合"");
+}
+        
+    
+    ",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=0,i,j,k,l,n;
+    scanf(""%d"",&n);
+    for(i=n;3*i<=100;i++)
+    {
+        for(j=1;i*3+2*j<=100;j++)
+        {
+            for(k=1;i*3+j*2+k/2.0<=100;k++)
+            {
+                if(i+j+k==100&&i*3+j*2+k/2.0==100)
+                {
+                    varb_0++;
+                    printf(""case %d:大马%d匹 中马%d匹 小马%d匹\n"",varb_0,i,j,k);
+                 }
+             }
+        }
+     }
+   if(varb_0==0)
+   printf(""没有找到符合条件的组合"");
+}
+",8,2c911d616dea44ae016e0c9808e04991_16.csv

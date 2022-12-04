@@ -1,0 +1,846 @@
+,id,code,is_true,errorline
+0,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1,varb_2,varb_3; 
+    scanf(""%d %d"",&varb_0,&varb_1); 
+      printf(""%d  %d\n"",varb_0,varb_1); 
+    if(varb_0<varb_1) 
+    { 
+        varb_2=varb_1; 
+        varb_1=varb_0; 
+        varb_0=varb_2; 
+    } 
+    varb_3=varb_0%varb_1; 
+    int varb_4=varb_0*varb_1; 
+    while(varb_3!=0) 
+    { 
+        varb_0=varb_1; 
+        varb_1=varb_3; 
+        varb_3=varb_0%varb_1; 
+    } 
+    printf(""最大公约数为%d,最小公倍数为%d\n"",varb_1,varb_4/varb_1); 
+    return 0; 
+}",0.0,6
+1,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h> 
+int main()   
+  {
+     int varb_0, varb_1, varb_2, varb_3, varb_4, varb_5; 
+    printf(""Input two integer numbers:\n""); 
+   scanf(""%d%d"", &varb_2, &varb_3); 
+    varb_0=varb_2;   varb_1=varb_3; 
+    while(varb_3!=0)  
+    { varb_5=varb_2%varb_3; varb_2=varb_3;  varb_3=varb_5;}
+    printf(""最大公约数为%d,最小公倍数为%d"",varb_2,varb_0*varb_1/varb_2);
+ }",0.0,5
+2,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d%d"",&varb_0,&varb_1);
+	printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),(varb_0*varb_1)/func_0(varb_0,varb_1)); 
+	return 0;
+ } 
+ int func_0(int varb_0,int varb_1)
+ {
+ 	int varb_4=1,varb_5;
+ 	while(varb_4<varb_0&&varb_4<varb_1)
+ 	{
+ 		varb_4++;
+ 		if(varb_0%varb_4==0&&varb_1%varb_4==0)
+ 		{
+ 			varb_5=varb_4;
+		 }
+	 }
+	 return varb_4;
+ }",0.0,21
+3,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    int varb_3;
+    int varb_4,varb_5;
+    scanf(""%d %d"",&varb_0,&varb_3);
+    if(varb_0<=varb_3)
+    {for(varb_4=2;varb_4<=varb_0;varb_4++)
+    {
+       if(varb_3%varb_0==0)
+       varb_1=varb_0;
+       if(varb_0%varb_4==0&&varb_3%varb_4==0)
+       varb_1=varb_4;  
+    }}
+       if(varb_3%varb_0==0)
+       varb_2=varb_3;
+       else
+       {varb_5=varb_0*varb_3;
+       varb_2=varb_5;}
+    printf(""最大公约数为%d,最小公倍数为%d"",varb_1,varb_2);
+    return 0;
+}",0.0,19
+4,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1;
+int varb_2,varb_3;
+int varb_4;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_2=varb_0;varb_2<=varb_0;varb_2--)
+{
+if(varb_0%varb_2==0&&varb_1%varb_2==0)
+break;
+}
+if(varb_0%varb_1==0)
+varb_3=varb_0;
+else if(varb_1%varb_0==0)
+varb_3=varb_1;
+else
+varb_3=varb_0*varb_1;
+printf(""最大公约数为%d,最小公倍数为%d"",varb_2,varb_3);
+}",0.0,18
+5,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+func_0(varb_0,varb_1);
+func_1(varb_0,varb_1);
+printf(""最大公约数为%d，最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_2;
+for(varb_2=varb_0;varb_2<=varb_1;varb_2--)
+{
+if(varb_1%varb_2==0&&varb_0%varb_2==0)
+break;
+}
+return varb_2;
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_3;
+for(varb_3=varb_0;varb_3>varb_1;varb_3--)
+    {
+if(0==varb_3%varb_1)
+break;
+    }
+return varb_3;
+}    ",0.0,10
+6,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+func_0(varb_0,varb_1);
+func_1(varb_0,varb_1);
+printf(""最大公约数为%d，最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_2;
+for(varb_2=varb_0;varb_2<=varb_1;varb_2--)
+{
+if(varb_1%varb_2==0&&varb_0%varb_2==0)
+break;
+}
+return varb_2;
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_3;
+varb_3=(varb_0*varb_1)/func_0(varb_0,varb_1);
+return varb_3;
+}    ",0.0,10
+7,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1,varb_2,varb_3; 
+    scanf(""%d %d"",&varb_0,&varb_1); 
+      printf(""%d %d\n"",varb_0,varb_1); 
+    if(varb_0<varb_1) 
+    { 
+        varb_2=varb_1; 
+        varb_1=varb_0; 
+        varb_0=varb_2; 
+    } 
+    varb_3=varb_0%varb_1; 
+    int varb_4=varb_0*varb_1; 
+    while(varb_3!=0) 
+    { 
+        varb_0=varb_1; 
+        varb_1=varb_3; 
+        varb_3=varb_0%varb_1; 
+    } 
+    printf(""最大公约数为%d,最小公倍数为%d\n"",varb_1,varb_4/varb_1); 
+    return 0; 
+}",0.0,6
+8,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_3=varb_1%varb_0;
+    int varb_4=varb_0*varb_1;
+    while(varb_3!=0)
+    {
+        varb_0=varb_1;
+        varb_1=varb_3;
+        varb_3=varb_0%varb_1;
+    }
+    printf(""最大公约数为%d,最小公倍数为%d\n"",varb_1,varb_4/varb_1);
+    return 0;
+}",0.0,6
+9,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+;int func_1(int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0,varb_1);
+  varb_3=func_1(varb_0,varb_1);
+  printf(""最大公约数为%d,最小公倍数为%d"",varb_3,varb_2);
+  return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+  int varb_6;
+  if(varb_1%varb_0==0)
+  {
+   varb_6=varb_1;
+   return varb_1;
+  }
+  while(varb_1%varb_0!=0)
+  {
+   varb_6=varb_1%varb_0;
+   varb_1=varb_0;
+   varb_0=varb_6;
+   if(varb_1%varb_0==0)
+   return varb_6;
+  }
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_6;
+varb_6=varb_0*varb_1/func_0(varb_0,varb_1);
+return varb_6;
+}",0.0,10
+10,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+    return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+    int varb_6;
+    for(varb_6=varb_0; varb_6>1; --varb_6)
+    {   if(varb_0%varb_6==0&&varb_1%varb_6==0)
+            return varb_6;
+    }
+}
+int func_1(int varb_0,int varb_1)
+{
+    int varb_6;
+    for(varb_6=1; varb_6<varb_1; ++varb_6)
+    {   if(varb_6%varb_0==0&&varb_6%varb_1==0)
+            return varb_6;
+    }
+}",0.0,22
+11,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d%d"",&varb_0,&varb_1);
+printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_6;
+for(varb_6=varb_0;varb_6>1;--varb_6)
+{if(varb_0%varb_6==0&&varb_1%varb_6==0)
+return varb_6;}
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_6;
+for(varb_6=varb_0;varb_6>=varb_0&&varb_6>=varb_1;++varb_6)
+{if(varb_6%varb_0==0&&varb_6%varb_1==0)
+return varb_6;}
+}",0.0,16
+12,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    if(varb_0<varb_1)
+    {
+        varb_2=varb_1;
+        varb_1=varb_0;
+        varb_0=varb_2;
+    }
+    varb_3=varb_0%varb_1;
+    int varb_4=varb_0*varb_1;
+    while(varb_3!=0)
+    {
+        varb_0=varb_1;
+        varb_1=varb_3;
+        varb_3=varb_0%varb_1;
+    }
+    printf(""这两个数的最大公约数为%d,最小公倍数为%d\n"",varb_1,varb_4/varb_1);
+    return 0;
+}",0.0,20
+13,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main(){
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d%d"",&varb_2,&varb_3);
+	if(varb_2<varb_3){
+		varb_4 = varb_2;
+		varb_2 = varb_3;
+		varb_3 = varb_4;
+	}
+	varb_0 = varb_2;
+	varb_1 = varb_3;
+	while(varb_1!=0){   
+		varb_4 = varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	printf(""%d %d"",varb_0,varb_2*varb_3/varb_0);
+}",0.0,17
+14,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d"",&varb_0,&varb_1); 
+    if(varb_0<varb_1) 
+    { 
+        varb_2=varb_1; 
+        varb_1=varb_0; 
+        varb_0=varb_2; 
+    } 
+    varb_3=varb_0%varb_1; 
+    int varb_4=varb_0*varb_1; 
+    while(varb_3!=0) 
+    { 
+        varb_0=varb_1; 
+        varb_1=varb_3; 
+        varb_3=varb_0%varb_1; 
+    } 
+    printf(""这两个数的最大公约数为%d,最小公倍数为%d\n"",varb_1,varb_4/varb_1); 
+    return 0; 
+}",0.0,20
+15,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+void func_0(int,int);
+int main()
+{
+    int varb_0,varb_1;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    func_0(varb_0,varb_1);
+    return 0;
+}
+void func_0(int varb_0,int varb_1)
+{
+    int varb_4,varb_5,varb_6,varb_7=1;
+    varb_4=varb_0;
+    varb_5=varb_1;
+    if(varb_4%varb_5==0||varb_5%varb_4==0)
+        printf(""最大公约数为%d,最小公倍数为%d"",varb_4,varb_5);
+    else
+    {
+        while(varb_5!=0)
+        {
+            varb_6=varb_4%varb_5;
+            varb_4=varb_5;
+            varb_5=varb_6;
+        }
+        printf(""最大公约数为%d,最小公倍数为%d"",varb_4,(varb_0*varb_1));
+    }
+}",0.0,25
+16,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>       
+int func_0(int varb_0,int varb_1);
+int func_2(int varb_0,int varb_1);
+int main()                                      
+{
+    int varb_2,varb_3,varb_4,varb_5;
+	scanf(""%d %d"",&varb_2,&varb_3);                       
+	varb_4=func_2(varb_2,varb_3);                             
+	varb_5=func_0(varb_2,varb_3);
+	printf(""最大公约数为%d，最小公倍数为%d"",varb_5,varb_4);                      
+	return 0;
+}
+int func_0(int varb_0,int varb_1)                               
+{
+	int varb_3,varb_4;                                           
+	while(varb_1!=0)                                       
+	{
+		if(varb_0<varb_1)                                     
+	    {
+		    varb_3=varb_0;
+		    varb_0=varb_1;
+		    varb_1=varb_3;
+	    }
+		varb_4=varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	return(varb_0);                                       
+}
+int func_2(int varb_0,int varb_1)                           
+{
+	int varb_4,varb_3,varb_2;
+	varb_3=varb_0*varb_1;
+	varb_4=func_0(varb_0,varb_1);                              
+	varb_2=varb_3/varb_0;
+	return(varb_2);
+}",0.0,10
+17,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+;int func_1(int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0,varb_1);
+  varb_3=func_1(varb_0,varb_1);
+  printf(""最大公约数为%d,最小公倍数为%d"",varb_2,varb_3);
+  return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+  int varb_6;
+  if(varb_1%varb_0==0)
+  {
+   varb_6=varb_1;
+   return varb_1;
+  }
+  while(varb_1%varb_0!=0)
+  {
+   varb_6=varb_1%varb_0;
+   varb_1=varb_0;
+   varb_0=varb_6;
+   if(varb_1%varb_0==0)
+   return varb_6;
+  }
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_6;
+varb_6=varb_0*varb_1/func_0(varb_0,varb_1);
+return varb_6;
+}",0.0,18
+18,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+func_0(varb_0,varb_1);
+func_1(varb_0,varb_1);
+printf(""最大公约数为%d，最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_2;
+for(varb_2=varb_0;varb_2<=varb_1;varb_2--)
+{
+if(varb_1%varb_2==0&&varb_0%varb_2==0)
+break;
+}
+return varb_2;
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_3;
+for(varb_3=1;varb_3>=0;varb_3++)
+    {
+if(0==varb_3%varb_1)
+break;
+    }
+return varb_3;
+}    ",0.0,10
+19,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	func_1(varb_0,varb_1);
+	printf("","");
+	func_0(varb_0,varb_1);
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_4;
+	for(varb_4=2;varb_4<=varb_0*varb_1;varb_4++)
+	{
+		if(varb_4%varb_0==0 && varb_4%varb_1==0)
+		{
+			printf(""最小公倍数为%d"",varb_4);
+			break;
+		}
+	}
+}
+int func_1(int varb_0,int varb_1)
+{
+	if(varb_0==varb_1)
+	printf(""最大公约数为%d"",varb_0);
+	else
+	{
+	int varb_4,varb_13;
+	if(varb_0<varb_1)
+	varb_13=varb_0;
+	else
+	varb_13=varb_1;
+	for(varb_4=varb_13;varb_4<=varb_13;varb_4--)
+	{
+		if(varb_0%varb_4==0 && varb_1%varb_4==0)
+		printf(""最大公约数为%d"",varb_4);
+		break;
+	}
+}
+}",0.0,6
+20,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>
+int func_0(int,int);
+int main()
+{
+   int varb_0,varb_1;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   if(varb_0<varb_1)
+   func_0(varb_0,varb_1);
+   else
+   func_0(varb_1,varb_0);
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_4,varb_5,varb_6;
+	for(varb_4=1;varb_4<=varb_0;varb_4++)
+	{
+		if(varb_0%varb_4==0&&varb_1%varb_4==0)
+		varb_5=varb_4;
+	}
+	printf(""最大公约数为%d"",varb_5);
+    varb_6=(varb_0/varb_5)*(varb_1/varb_5);
+    printf(""最小公倍数为%d"",varb_6*varb_5);
+}",0.0,21
+21,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+	return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_4;
+	varb_4=varb_0;
+	for(;varb_4<=1;varb_4--)
+	{
+		if(varb_0%varb_4==0&&varb_1%varb_4==0)
+		break;
+	}	
+	return varb_4; 
+}
+int func_1(int varb_0,int varb_1)
+{
+	int varb_7;
+	varb_7=varb_1;
+	for(;varb_7>=varb_1;varb_7++)
+	{
+		if(varb_7%varb_0==0&&varb_7%varb_1==0)
+		break;
+    }
+		return varb_7;
+}",0.0,15
+22,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d%d"",&varb_0,&varb_1);
+printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+int varb_6;
+for(varb_6=varb_0;varb_6>1;--varb_6)
+{if(varb_0%varb_6==0&&varb_1%varb_6==0)
+return varb_6;}
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_6;
+for(varb_6=varb_0;varb_6>=varb_0&&varb_6>=varb_1;++varb_6)
+{if(varb_6%varb_0==0&&varb_6%varb_1==0)
+return varb_6;}
+}",0.0,16
+23,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+;int func_1(int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0,varb_1);
+  varb_3=func_1(varb_0,varb_1);
+  printf(""最大公约数为%d，最小公倍数为%d"",varb_3,varb_2);
+  return 0;
+}
+int func_0(int varb_0,int varb_1)
+{
+  int varb_6;
+  if(varb_1%varb_0==0)
+  {
+   varb_6=varb_1;
+   return varb_1;
+  }
+  while(varb_1%varb_0!=0)
+  {
+   varb_6=varb_1%varb_0;
+   varb_1=varb_0;
+   varb_0=varb_6;
+   if(varb_1%varb_0==0)
+   return varb_6;
+  }
+}
+int func_1(int varb_0,int varb_1)
+{
+int varb_6;
+varb_6=varb_0*varb_1/func_0(varb_0,varb_1);
+return varb_6;
+}",0.0,10
+24,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>       
+int func_0(int varb_0,int varb_1);
+int func_2(int varb_0,int varb_1);
+int main()                                      
+{
+    int varb_2,varb_3,varb_4,varb_5;
+	scanf(""%d %d"",&varb_2,&varb_3);                       
+	varb_4=func_2(varb_2,varb_3);                             
+	varb_5=func_0(varb_2,varb_3);
+	printf(""最大公约数为%d，最小公倍数为%d"",varb_5,varb_4);                      
+	return 0;
+}
+int func_0(int varb_0,int varb_1)                               
+{
+	int varb_3,varb_4;                                           
+	while(varb_1!=0)                                       
+	{
+		if(varb_0<varb_1)                                     
+	    {
+		    varb_3=varb_0;
+		    varb_0=varb_1;
+		    varb_1=varb_3;
+	    }
+		varb_4=varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	return(varb_0);                                       
+}
+int func_2(int varb_0,int varb_1)                           
+{
+	int varb_4,varb_3,varb_2;
+	varb_3=varb_0*varb_1;
+	varb_4=func_0(varb_0,varb_1);                              
+	varb_2=varb_3/varb_4;
+	return(varb_2);
+}",0.0,10
+25,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>
+int func_0(int varb_0,int varb_1);
+int func_2(int varb_0,int varb_1);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""最大公约数为%d，最小公倍数为%d"",func_0(varb_0,varb_1),func_2(varb_0,varb_1));
+	return 0;
+}
+ int func_0(int varb_0,int varb_1)
+{
+   int varb_6;
+   if(varb_0>varb_1)
+   {
+	do{
+		varb_6=varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_6;
+	  }while(varb_6!=0);
+	return varb_0;
+   }
+   else
+   {
+	do{
+		varb_6=varb_1%varb_0;
+		varb_1=varb_0;
+		varb_0=varb_6;
+	 }while(varb_6!=0);
+	 return varb_1;
+   }
+}
+int func_2(int varb_0,int varb_1)
+{
+	int varb_9;
+	varb_9=varb_0*varb_1/func_0(varb_0,varb_1);
+	return varb_9 ;
+}
+",0.0,8
+26,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    int varb_3;
+    int varb_4,varb_5;
+    scanf(""%d %d"",&varb_0,&varb_3);
+    if(varb_0<=varb_3)
+    {for(varb_4=2;varb_4<=varb_0;varb_4++)
+    {
+       if(varb_3%varb_0==0)
+       varb_1=varb_0;
+       if(varb_0%varb_4==0&&varb_3%varb_4==0)
+       varb_1=varb_4;  
+    }}
+       if(varb_3%varb_0==0)
+       varb_2=varb_3;
+       else
+       {varb_5=varb_0*varb_3%varb_1;
+       varb_2=varb_5;}
+    printf(""最大公约数为%d,最小公倍数为%d"",varb_1,varb_2);
+    return 0;
+}",0.0,19
+27,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main(){
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d%d"",&varb_2,&varb_3);
+	if(varb_2<varb_3){
+		varb_4 = varb_2;
+		varb_2 = varb_3;
+		varb_3 = varb_4;
+	}
+	varb_0 = varb_2;
+	varb_1 = varb_3;
+	while(varb_1!=0){   
+		varb_4 = varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	printf(""gongyueshu:%d\n"",varb_0);
+	printf(""gongbeishu:%d\n"",varb_2*varb_3/varb_0);
+}",0.0,17
+28,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int,int);
+int varb_0,varb_1,varb_2,varb_3;
+int main()
+{
+   scanf(""%d %d"",&varb_0,&varb_1);
+   printf(""最大公约数为%d,最小公倍数为%d"",func_0(varb_0,varb_1),func_1(varb_0,varb_1));
+}
+int func_0(int varb_0,int varb_1)
+{
+  int varb_6;
+  if(varb_0<varb_1)
+  {
+    varb_6=varb_0;
+    varb_0=varb_1;
+    varb_1=varb_6;
+  }
+  while(varb_1!=0)
+  {
+    varb_6=varb_0%varb_1;
+    varb_0=varb_1;
+    varb_1=varb_6;  
+  } 
+  varb_2=varb_1;
+  return varb_2;
+}
+int func_1(int varb_0,int varb_1)
+{
+  varb_3=(varb_0*varb_1)/func_0(varb_0,varb_1);
+  return varb_3;
+}",0.0,25
+29,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h> 
+int main()   
+  {
+     int varb_0, varb_1, varb_2, varb_3, varb_4, varb_5; 
+    printf(""Input two integer numbers:\n""); 
+   scanf(""%d%d"", &varb_2, &varb_3); 
+    varb_0=varb_2;   varb_1=varb_3; 
+    while(varb_3!=0)  
+    { varb_5=varb_2%varb_3; varb_2=varb_3;  varb_3=varb_5;}
+    printf(""最大公约数为%d,最小公倍数为%d"", varb_2,varb_0*varb_1/varb_2);
+ }",0.0,5
+30,2c9f30a56e1ebafc016e40bd24151c40,"#include <stdio.h>       
+int func_0(int varb_0,int varb_1);
+int func_2(int varb_0,int varb_1);
+int main()                                      
+{
+    int varb_2,varb_3,varb_4,varb_5;
+	scanf(""%d %d"",&varb_2,&varb_3);                       
+	varb_4=func_2(varb_2,varb_3);                             
+	varb_5=func_0(varb_2,varb_3);
+	printf(""最大公约数为%d，最小公倍数为%d"",varb_5,varb_4);                      
+	return 0;
+}
+int func_0(int varb_0,int varb_1)                               
+{
+	int varb_3,varb_4;                                           
+	while(varb_1!=0)                                       
+	{
+		if(varb_0<varb_1)                                     
+	    {
+		    varb_3=varb_0;
+		    varb_0=varb_1;
+		    varb_1=varb_3;
+	    }
+		varb_4=varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	return(varb_0);                                       
+}
+int func_2(int varb_0,int varb_1)                           
+{
+	int varb_4,varb_3,varb_2;
+	varb_3=varb_0*varb_1;
+	varb_4=func_0(varb_0,varb_1);                              
+	varb_2=varb_3;
+	return(varb_2);
+}",0.0,10
+31,2c9f30a56e1ebafc016e40bd24151c40,"#include<stdio.h>
+int main(){
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d%d"",&varb_2,&varb_3);
+	if(varb_2<varb_3){
+		varb_4 = varb_2;
+		varb_2 = varb_3;
+		varb_3 = varb_4;
+	}
+	varb_0 = varb_2;
+	varb_1 = varb_3;
+	while(varb_1!=0){   
+		varb_4 = varb_0%varb_1;
+		varb_0=varb_1;
+		varb_1=varb_4;
+	}
+	printf(""最大公约数为%d，最小公倍数为 %d"",varb_0,varb_2*varb_3/varb_0);
+}",0.0,17

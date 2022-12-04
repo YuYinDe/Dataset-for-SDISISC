@@ -1,0 +1,140 @@
+,id,code,is_true,errorline
+0,2c9f30a56e1ebafc016e6519cb2f4183,"#include <stdio.h>
+int func_0( int number );
+void func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    if( func_0(varb_0) ) printf(""%d is varb_5 narcissistic number\n"", varb_0);
+    func_2(varb_0, varb_1);
+    if( func_0(varb_1) ) printf(""%d is varb_5 narcissistic number\n"", varb_1);
+    return 0;
+}
+int func_0( int number )
+{
+    int varb_4 = 0, sum = 0, i,j,x;
+    int varb_5 = number;
+    while(varb_5=number) 
+    {
+        varb_5 /= 10;
+        varb_4 ++;
+    }         
+     varb_5 = number;
+    for(i = 0; i < varb_4; i ++) 
+    {
+        x = varb_5 % 10;           
+        int varb_6 = 1;
+        for(j = 0;j < varb_4; j ++)
+        {
+            varb_6 *= x;
+        }
+        sum += varb_6;
+        varb_5 /= 10;
+    }
+    if(sum == number)
+        return 1;
+    else return 0;
+}
+void func_2( int varb_0,int varb_1 )
+{
+	while(varb_0 <= varb_1)
+	{	
+		varb_0++;
+		if(func_0(varb_0))
+		{
+			printf(""%d\n"",varb_0);
+		}
+	}
+} 
+",0.0,17
+1,2c9f30a56e1ebafc016e6519cb2f4183,"#include <stdio.h>
+#include <math.h>
+int func_0( int number );
+void func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    if( func_0(varb_0)==1 ) 
+    printf(""%d is a narcissistic number\n"", varb_0);
+    func_2(varb_0,varb_1);
+    return 0;
+}
+int func_0(int a)
+{
+    int varb_4,varb_5,varb_6,varb_7;
+    varb_4=a/1000;
+    varb_5=a%1000/100;
+    varb_6=a%1000%100/10;
+    varb_7=a%1000%100%10;
+    if((a>=1000&&a<=10000&&a==pow(varb_4,4)+pow(varb_5,4)+pow(varb_6,4)+pow(varb_7,4))||a>=100&&a<1000&&a==pow(varb_5,3)+pow(varb_6,3)+pow(varb_7,3))
+    return(1);
+    else
+    return(0);
+}
+void func_2(int varb_8,int varb_9)
+{
+    int varb_10,varb_11,varb_12,varb_13;
+        for(varb_8++;
+        varb_8<=varb_9;
+        varb_8++)
+    {
+        varb_10=varb_8/1000;
+        varb_11=varb_8%1000/100;
+        varb_12=varb_8%1000%100/10;
+        varb_13=varb_8%1000%100%10;
+        if((varb_8>=1000&&varb_8<=10000&&varb_8==pow(varb_10,4)+pow(varb_11,4)+pow(varb_12,4)+pow(varb_13,4))||varb_8>=100&&varb_8<1000&&varb_8==pow(varb_11,3)+pow(varb_12,3)+pow(varb_13,3))
+        printf(""%d\n"",varb_8);
+    }
+}
+",0.0,37
+2,2c9f30a56e1ebafc016e6519cb2f4183,"#include <stdio.h>
+int func_0( int number );
+void func_2( int varb_0, int varb_1 );
+int main()
+{
+    int varb_0, varb_1;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    if( func_0(varb_0) ) printf(""%d is varb_5 narcissistic number\n"", varb_0);
+    func_2(varb_0, varb_1);
+    if( func_0(varb_1) ) printf(""%d is varb_5 narcissistic number\n"", varb_1);
+    return 0;
+}
+int func_0( int number )
+{
+    int varb_4 = 0, sum = 0, i,j,x;
+    int varb_5;
+    while(varb_5=number) 
+    {
+        varb_5 /= 10;
+        varb_4 ++;
+    }         
+     varb_5 = number;
+    for(i = 0; i < varb_4; i ++) 
+    {
+        x = varb_5 % 10;           
+        int varb_6 = 1;
+        for(j = 0;j < varb_4; j ++)
+        {
+            varb_6 *= x;
+        }
+        sum += varb_6;
+        varb_5 /= 10;
+    }
+    if(sum == number)
+        return 1;
+    else return 0;
+}
+void func_2( int varb_0,int varb_1 )
+{
+	while(varb_0 <= varb_1)
+	{	
+		varb_0++;
+		if(func_0(varb_0))
+		{
+			printf(""%d\n"",varb_0);
+		}
+	}
+} 
+",0.0,16

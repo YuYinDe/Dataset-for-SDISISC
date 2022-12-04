@@ -1,0 +1,2277 @@
+,id,code,is_true,errorline
+0,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0=0,mid,end,N,i,m,lemp,a;
+	scanf(""%d"",&N);
+	int varb_1[N];
+	for(i=0;i<=N-1;i++)
+	{
+		scanf(""%d"",&varb_1[i]);
+	}
+		for(a=0;a<=N-2;a++)
+	   {
+		    for(i=0;i<=N-a-2;i++)
+		    {
+			    if(varb_1[i]<varb_1[i+1])
+		       {
+			     	lemp=varb_1[i];
+				    varb_1[i]=varb_1[i+1];
+				    varb_1[i+1]=lemp;
+			   }
+		    }
+       }
+    end=N-1;
+    scanf(""%d"",&m);
+    while(varb_0<=end)
+    {
+    	mid=(varb_0+end)/2;
+    	if(m==varb_1[mid])
+    	{
+    		printf(""Found"");
+    		return 0;
+		}
+		else if(m>varb_1[mid])
+		varb_0=mid+1;
+		else
+		end=mid-1;
+	}
+	printf(""Not exist"");
+}",0.0,15
+1,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2=0,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[10];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0;varb_5++) 
+	{
+		for(varb_6=varb_5;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_3=varb_0-1;
+	varb_4=(varb_2+varb_3)/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4+1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4-1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,46
+2,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2)-1;varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[(varb_7/2)+1]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+3,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    varb_2=1;
+    scanf(""%d"",&varb_0);
+    int varb_3[varb_0];
+   for(varb_1=0;varb_1<varb_0;varb_1++)
+   scanf(""%d"",&varb_3[varb_1]);
+   int varb_4;
+   scanf(""%d"",&varb_4);
+   func_0(varb_3,varb_0);
+    int varb_5,varb_6,varb_7;
+    varb_5 = 0;
+    varb_6 = varb_0-1;
+    while(varb_5<=varb_6)
+    {
+        varb_7 =(varb_5 + varb_6)/2;
+        if(varb_3[varb_7]==varb_4)
+       {
+          printf(""Found"");
+          varb_2=0;
+        }
+        if(varb_3[varb_7]<varb_4)
+       {
+            varb_5 =varb_7 + 1;
+        }
+        if(varb_3[varb_7]>varb_4) 
+       {
+            varb_6= varb_7 - 1;
+        }
+    }
+       if(varb_2==1)
+       printf(""Not exist"");
+       return 0;
+}
+void func_0(int varb_3[],int varb_0)
+{
+    int varb_1,varb_10,varb_11;
+    for(varb_1=0;varb_1<varb_0-1;varb_1++)
+    {
+    for(varb_10=1;varb_10<varb_0;varb_10++)
+    {
+      if(varb_3[varb_10]<varb_3[varb_10-1])
+      {
+      varb_11=varb_3[varb_10];
+      varb_3[varb_10]=varb_3[varb_10-1];
+      varb_3[varb_10-1]=varb_11;
+      }
+    }
+    }
+}
+",0.0,23
+4,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2);varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+if(varb_1[0]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+5,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[4000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<4000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right+1)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+6,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[5000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<5000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,20
+7,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2);varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+8,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int,int);
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+scanf(""%d"",&varb_3[varb_2]);
+scanf(""%d"",&varb_1);
+func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3[],int varb_0,int varb_1)
+{
+int varb_7;
+for(varb_7=0;varb_7<varb_0;varb_7++)
+{
+if(varb_1==varb_3[varb_7])
+{printf(""Found"");
+break;}
+else
+printf(""Not exist"");
+}
+}
+",0.0,15
+9,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	 int varb_0,varb_1,varb_2;
+	 scanf(""%d\n"",&varb_0);
+	int varb_3,varb_4,varb_5,varb_6[varb_0];
+    for(varb_1=0;varb_1<varb_0;varb_1++)
+    {
+    scanf(""%d "",&varb_6[varb_1]);
+}
+    scanf(""%d"",&varb_2);
+	for(varb_3=0;varb_3<varb_0-1;varb_3++)
+	{
+	for(varb_4=0;varb_4<varb_0-varb_3-1;varb_4++)
+	{
+		if(varb_6[varb_4]>varb_6[varb_4+1])
+		{
+			varb_5=varb_6[varb_4];
+			varb_6[varb_4]=varb_6[varb_4+1];
+			varb_6[varb_4+1]=varb_5;
+		}		
+	}
+}
+int varb_8,varb_9,varb_10;
+varb_8=0;
+varb_9=varb_0-1;
+while(varb_8<=varb_9)
+{
+varb_10=(varb_8+varb_9)/2;
+if(varb_2==varb_6[varb_10])
+{
+printf(""Found"");
+break;
+}
+else if(varb_2<varb_6[varb_10])
+varb_9=varb_10-1;
+else
+varb_8=varb_10+1;
+}
+if(varb_8<=varb_9)
+printf(""Found"");
+else
+printf(""Not exist"");
+return 0;
+}
+",0.0,1
+10,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int,int);
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+for(varb_2=0;varb_2<varb_0;varb_2++)
+scanf(""%d"",&varb_3[varb_2]);
+scanf(""%d"",&varb_1);
+func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3[],int varb_0,int varb_1)
+{
+int varb_7,varb_8=0;
+for(varb_7=0;varb_7<varb_0;varb_7++)
+{
+if(varb_1==varb_3[varb_7])
+{
+varb_8=1;
+printf(""Found"");
+break;}
+}
+if(varb_8=0)
+printf(""Not exist"");
+}
+",0.0,24
+11,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{  int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   int varb_3[varb_0];
+   for(varb_2=0;varb_2<=varb_0-1;varb_2++)
+    {scanf(""%d"",&varb_3[varb_2]);}
+   scanf(""%d"",&varb_1);
+   for(varb_2=0;varb_2<=varb_0-1;varb_2++)
+    if(varb_3[varb_2]==varb_1)
+     {printf(""Found"");
+     break;}
+    if(varb_2==(varb_0-1))
+     printf(""Not exist"");  
+   return 0;
+ }
+",0.0,13
+12,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    varb_2=1;
+    scanf(""%d"",&varb_0);
+    int varb_3[varb_0];
+   for(varb_1=0;varb_1<varb_0;varb_1++)
+   scanf(""%d"",&varb_3[varb_1]);
+   int varb_4;
+   scanf(""%d"",&varb_4);
+   func_0(varb_3,varb_0);
+    int varb_5,varb_6,varb_7;
+    varb_5 = 0;
+    varb_6 = varb_0-1;
+    while(varb_5<=varb_6)
+    {
+        varb_7 =(varb_5 + varb_6)/2;
+        if(varb_3[varb_7]==varb_4)
+       {
+          printf(""Found"");
+          varb_2=0;
+        }
+        if(varb_3[varb_7]<varb_4)
+       {
+            varb_5 =varb_7 + 1;
+        }
+        if(varb_3[varb_7]>varb_4) 
+       {
+            varb_6= varb_7 - 1;
+        }
+    }
+       if(varb_2==1)
+       printf(""Not exist"");
+       return 0;
+}
+void func_0(int varb_3[],int varb_0)
+{
+    int varb_1,varb_10,varb_11;
+    for(varb_1=0;varb_1<=varb_0-1;varb_1++)
+    {
+    for(varb_10=1;varb_10<varb_0;varb_10++)
+    {
+      if(varb_3[varb_10]<varb_3[varb_10-1])
+      {
+      varb_11=varb_3[varb_10];
+      varb_3[varb_10]=varb_3[varb_10-1];
+      varb_3[varb_10-1]=varb_11;
+      }
+    }
+    }
+}
+",0.0,23
+13,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3=0;
+	scanf(""%d"",&varb_0);
+	int varb_4[varb_0];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%d"",&varb_4[varb_1]);
+	}
+	scanf(""%d"",&varb_2);
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		if(varb_4[varb_1]==varb_2)
+		{
+			varb_3++;
+		}
+	}
+	if(varb_3==1)
+	printf(""Found"");
+	else
+	printf(""Not"");
+}",0.0,22
+14,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2=0,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[10];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0;varb_5++) 
+	{
+		for(varb_6=varb_5;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_3=varb_0;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,24
+15,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[5000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<5000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right+1)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,20
+16,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+int varb_4,varb_5,varb_6,varb_7;
+for(varb_4=0;varb_4<=varb_0-1;varb_4++)
+{
+scanf(""%d"",&varb_3[varb_4]);
+}
+scanf(""%d"",&varb_1);
+varb_6=0; varb_7=varb_0-1;
+for(varb_4=varb_0-1;varb_4>0;varb_4--)
+{
+for(varb_5=0;varb_5<varb_4;varb_5++)
+{
+if(varb_3[varb_5]>varb_3[varb_5+1])
+{
+varb_2=varb_3[varb_5];
+varb_3[varb_5]=varb_3[varb_5+1];
+varb_3[varb_5+1]=varb_3[varb_5];
+}
+}
+}
+varb_5=(varb_6+varb_7)/2;
+while(varb_6<=varb_7)
+{
+if(varb_3[varb_5]==varb_1)
+{
+printf(""Found"");
+return 0;
+}
+else if(varb_3[varb_5]<varb_1)
+varb_7=varb_5-1;
+else 
+varb_6=varb_5+1;
+}
+printf(""No exist"");
+return 0;
+}",0.0,26
+17,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[varb_0];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0-1;varb_5++) 
+	{
+		for(varb_6=varb_5+1;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_2=0;
+	varb_3=varb_0-1;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4+1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4-1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,4
+18,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[(varb_7/2)+1]>varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[(varb_7/2)+1]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+19,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int,int varb_0[],int);
+int main()
+{  
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+ scanf(""%d"",&varb_1);
+  int varb_0[varb_1]; 
+  for(varb_2=0;varb_2<varb_1;varb_2++)
+   scanf(""%d "",&varb_0[varb_2]);
+   scanf(""%d"",&varb_3);
+for(varb_4=varb_1-1;varb_4>0;varb_4--)
+{
+  for(varb_5=0;varb_5<varb_4;varb_5++)
+ {
+   if(varb_0[varb_5]>varb_0[varb_5+1])
+  {
+     varb_6=varb_0[varb_5];
+     varb_0[varb_5]=varb_0[varb_5+1];
+     varb_0[varb_5+1]=varb_6;
+             }
+              }
+                }
+ func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3,int varb_0[],int varb_1)
+{
+  int varb_9=0,varb_10,varb_11,varb_12=0;
+  varb_10=varb_1-1; 
+  while(varb_9<varb_10)
+{
+  varb_11=(varb_9+varb_10)/2;
+  if(varb_3<varb_0[varb_11])
+  varb_10=varb_11-1;
+  else if(varb_3>varb_0[varb_11])
+  varb_9=varb_11+1;
+  else if(varb_3=varb_0[varb_11])
+  {
+    printf(""Found"");
+    varb_12++;
+    break;
+   }
+ }
+    if(varb_12==0)
+   printf(""Not exist"");
+}",0.0,29
+20,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[40001]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	scanf(""%d"",&varb_6);
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	 int varb_7=0;
+	for(varb_2=0;varb_2<40001;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist。"");
+}",0.0,4
+21,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[4000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<4000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+22,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[4000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<4000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right+1)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+23,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[40001]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	scanf(""%d"",&varb_6);
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	 int varb_7=0;
+	for(varb_2=0;varb_2<40001;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+24,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2)-1;varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+25,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int,int varb_0[],int);
+int main()
+{  
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+ scanf(""%d"",&varb_1);
+  int varb_0[varb_1]; 
+  for(varb_2=0;varb_2<varb_1;varb_2++)
+   scanf(""%d "",&varb_0[varb_2]);
+   scanf(""%d"",&varb_3);
+for(varb_4=varb_1-1;varb_4>0;varb_4--)
+{
+  for(varb_5=0;varb_5<varb_4;varb_5++)
+ {
+   if(varb_0[varb_5]>varb_0[varb_5+1])
+  {
+     varb_6=varb_0[varb_5];
+     varb_0[varb_5]=varb_0[varb_5+1];
+     varb_0[varb_5+1]=varb_6;
+             }
+              }
+                }
+ func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3,int varb_0[],int varb_1)
+{
+  int varb_9=0,varb_10,varb_11,varb_12=0;
+  varb_10=varb_1-1; 
+  while(varb_9<varb_10)
+{
+  varb_11=(varb_9+varb_10)/2;
+  if(varb_3<varb_0[varb_11])
+  varb_10=varb_11-1;
+  else if(varb_3>varb_0[varb_11])
+  varb_9=varb_11+1;
+  else if(varb_3==varb_0[varb_11])
+  {
+    printf(""Found"");
+    varb_12++;
+    break;
+   }
+ }
+    if(varb_12==0)
+   printf(""Not exist"");
+}",0.0,29
+26,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2=0,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[10];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0;varb_5++) 
+	{
+		for(varb_6=varb_5;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_3=varb_0;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4+1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4-1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,24
+27,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+int func_0(int[],int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%d"",&varb_1);
+    int varb_5[varb_1];
+    for(varb_2=0;
+    varb_2<varb_1;
+    varb_2++)
+    scanf(""%d"",&varb_5[varb_2]);
+    scanf(""%d"",&varb_4);
+    varb_3=func_0(varb_5,varb_1,varb_4);
+    if(varb_3==0)
+    printf(""Found"");
+    else
+    printf(""Not exist"");
+}
+int func_0(int varb_6[],int varb_7,int varb_4)
+{
+    int varb_2;
+    for(varb_2=0;varb_2<varb_7-1;varb_2++)
+    { if(varb_6[varb_2]==varb_4)
+      return 0;
+      else 
+      continue;
+    }
+   return 1;
+}",0.0,22
+28,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+void hanshu(int,int,int);
+main()
+{
+	int varb_0,varb_1[10000],varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_2);
+	for(varb_0=0;varb_0<varb_2;varb_0++)
+	{
+		scanf(""%d"",&varb_1[10000]);
+	}
+	scanf(""%d"",&varb_3);
+	for(varb_0=0;varb_0<varb_2;varb_0++)
+	{
+		if(varb_1[varb_0]==varb_3)
+		varb_4=0;
+		else
+		varb_4=1;
+	}
+	if(varb_4)
+	printf(""Found"");
+	else
+	printf(""Not exist"");
+}",0.0,5
+29,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int varb_0,int varb_1[])
+{
+    int varb_2,varb_3,varb_4;
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+    {
+        for(varb_3=0;varb_3<varb_0-1-varb_2;varb_3++)
+        {
+            if(varb_1[varb_3]>varb_1[varb_3+1])
+            {
+                varb_4=varb_1[varb_3];
+                varb_1[varb_3]=varb_1[varb_3+1];
+                varb_1[varb_3+1]=varb_4;
+            }
+        }
+    }
+}
+void func_1(int varb_0,int varb_1[],int varb_7)
+{
+    int varb_8,varb_9,varb_10,varb_11=0;
+    varb_8=1;
+    varb_9=varb_0;
+    while(varb_8<=varb_9)
+    {
+        varb_10=(varb_8+varb_9)/2;
+        if(varb_7==varb_1[varb_10])
+        {    
+            varb_11=1;
+             break;
+        }
+        else if(varb_7<varb_1[varb_10])
+             varb_9=varb_10-1;
+        else
+             varb_8=varb_10+1;
+    }
+    if(varb_11==0)
+        printf(""Not exist"");
+    else
+        printf(""Found"");
+}
+int main()
+{
+    int varb_0,varb_1[10],varb_2,varb_7;
+    scanf(""%d"",&varb_0);
+    for(varb_2=0;varb_2<varb_0;varb_2++)
+       scanf(""%d"",&varb_1[varb_2]);
+    scanf(""%d"",&varb_7);
+    func_0(varb_0,varb_1);
+    func_1(varb_0,varb_1,varb_7);
+}
+",0.0,21
+30,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int,int varb_0[],int);
+int main()
+{  
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+ scanf(""%d"",&varb_1);
+  int varb_0[varb_1]; 
+  for(varb_2=0;varb_2<varb_1;varb_2++)
+   scanf(""%d "",&varb_0[varb_2]);
+   scanf(""%d"",&varb_3);
+for(varb_4=varb_1-1;varb_4>0;varb_4--)
+{
+  for(varb_5=0;varb_5<varb_4;varb_5++)
+ {
+   if(varb_0[varb_5]>varb_0[varb_5+1])
+  {
+     varb_6=varb_0[varb_5];
+     varb_0[varb_5]=varb_0[varb_5+1];
+     varb_0[varb_5+1]=varb_6;
+             }
+              }
+                }
+ func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3,int varb_0[],int varb_1)
+{
+  int varb_9=0,varb_10,varb_11,varb_12=0;
+  varb_10=varb_1-1; 
+  while(varb_9<varb_10)
+{
+  varb_11=(varb_9+varb_10)/2;
+  if(varb_3==varb_0[varb_11])
+  {
+    printf(""Found"");
+    varb_12++;
+    break;
+   }
+  else if(varb_3<varb_0[varb_11])
+  varb_10=varb_11-1;
+  else if(varb_3>varb_0[varb_11])
+  varb_9=varb_11+1;
+ }
+    if(varb_12==0)
+   printf(""Not exist"");
+}",0.0,29
+31,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[50000000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+   scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<50000000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<=right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+32,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[40001]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	scanf(""%d"",&varb_6);
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	 int varb_7=0;
+	for(varb_2=0;varb_2<40001;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+33,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int varb_0[10];
+int main()
+{
+ int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8,varb_9,varb_10;
+ scanf(""%d"",&varb_4);
+ varb_8=0;varb_9=varb_4-1,varb_6=0;
+ for(varb_1=0;varb_1<=varb_4-1;varb_1++)
+  {
+    scanf(""%d"",&varb_0[varb_1]);
+  }
+  for(varb_2=varb_4-1;varb_2>0;varb_2--)
+  {
+   for(varb_3=0;varb_3<varb_2;varb_3++)
+   {
+    if(varb_0[varb_3]<varb_0[varb_3+1])
+    {
+     varb_5=varb_0[varb_3+1];
+     varb_0[varb_3+1]=varb_0[varb_3];
+     varb_0[varb_3]=varb_5;
+     }
+   }
+   }
+ scanf(""%d"",&varb_10);
+ while(varb_8<=varb_9)
+ {
+   varb_7=(varb_8+varb_9)/2;
+   if(varb_10==varb_0[varb_7])
+   {
+   varb_6++;
+   break;
+   }
+   if(varb_10<varb_0[varb_7])
+   {
+    varb_9=varb_7-1;
+   }
+   if(varb_10>varb_0[varb_7])
+   { 
+   varb_8=varb_7+1;
+   }
+}
+ if(varb_6==0)
+ printf(""Not exist"");
+ else
+ printf(""Found"");
+        return 0;
+}
+",0.0,16
+34,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2=0,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[varb_0];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0-1;varb_5++) 
+	{
+		for(varb_6=varb_5+1;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_3=varb_0;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,6
+35,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2);varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6||varb_1[0]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+36,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+int varb_4,varb_5;
+for(varb_4=0;varb_4<=varb_0-1;varb_4++)
+{
+scanf(""%d"",&varb_3[varb_4]);
+}
+scanf(""%d"",&varb_1);
+for(varb_4=varb_0-1;varb_4>0;varb_4--)
+{
+for(varb_5=0;varb_5<varb_4;varb_5++)
+{
+if(varb_3[varb_5]>varb_3[varb_5+1])
+{
+varb_2=varb_3[varb_5];
+varb_3[varb_5]=varb_3[varb_5+1];
+varb_3[varb_5+1]=varb_3[varb_5];
+}
+}
+}
+varb_5=varb_0/2;
+for(;varb_3[0]<varb_3[varb_0-1];)
+{
+if(varb_3[varb_5]==varb_1)
+{
+printf(""Found"");
+return 0;
+}
+else if(varb_3[varb_5]<varb_1)
+varb_5+=1;
+else 
+varb_5-=1;
+if(varb_5<0 || varb_5==varb_0)
+{
+printf(""No exist"");
+return 0;
+}
+}
+}",0.0,7
+37,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int,int varb_0[],int);
+int main()
+{  
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+ scanf(""%d"",&varb_1);
+  int varb_0[varb_1]; 
+  for(varb_2=0;varb_2<varb_1;varb_2++)
+   scanf(""%d "",&varb_0[varb_2]);
+   scanf(""%d"",&varb_3);
+for(varb_4=varb_1-1;varb_4>0;varb_4--)
+{
+  for(varb_5=0;varb_5<varb_4;varb_5++)
+ {
+   if(varb_0[varb_5]>varb_0[varb_5+1])
+  {
+     varb_6=varb_0[varb_5];
+     varb_0[varb_5]=varb_0[varb_5+1];
+     varb_0[varb_5+1]=varb_6;
+             }
+              }
+                }
+ func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3,int varb_0[],int varb_1)
+{
+  int varb_9=0,varb_10,varb_11,varb_12=0;
+  varb_10=varb_1-1; 
+  while(varb_9<varb_10)
+{
+  varb_11=(varb_9+varb_10)/2;
+  if(varb_3==varb_0[varb_11])
+  {
+    printf(""Found"");
+    varb_12++;
+    break;
+   }
+  else if(varb_3<varb_0[varb_11])
+  varb_10=varb_11-1;
+  else
+  varb_9=varb_11+1;
+ }
+    if(varb_12==0)
+   printf(""Not exist"");
+}",0.0,29
+38,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+int varb_4,varb_5,varb_6,varb_7;
+for(varb_4=0;varb_4<=varb_0-1;varb_4++)
+{
+scanf(""%d"",&varb_3[varb_4]);
+}
+scanf(""%d"",&varb_1);
+varb_6=0; varb_7=varb_0-1;
+for(varb_4=varb_0-1;varb_4>0;varb_4--)
+{
+for(varb_5=0;varb_5<varb_4;varb_5++)
+{
+if(varb_3[varb_5]>varb_3[varb_5+1])
+{
+varb_2=varb_3[varb_5];
+varb_3[varb_5]=varb_3[varb_5+1];
+varb_3[varb_5+1]=varb_3[varb_5];
+}
+}
+}
+while(varb_6<=varb_7)
+{
+varb_5=(varb_6+varb_7)/2;
+if(varb_3[varb_5]==varb_1)
+{
+printf(""Found"");
+return 0;
+}
+else if(varb_3[varb_5]<varb_1)
+varb_7=varb_5-1;
+else 
+varb_6=varb_5+1;
+}
+printf(""No exist"");
+return 0;
+}",0.0,39
+39,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[varb_0];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0-1;varb_5++) 
+	{
+		for(varb_6=varb_5+1;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_2=0;
+	varb_3=varb_0;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,4
+40,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[40001]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	scanf(""%d"",&varb_6);
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	 int varb_7=0;
+	for(varb_2=0;varb_2<40001;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4
+41,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+#define N 10
+#define FALSE 0
+#define TRUE 1
+void main()
+{
+  int varb_0[N];
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8;
+  scanf(""%d"",&varb_7);
+  for(varb_1=0;varb_1<varb_7;varb_1++)
+  scanf(""%d"",varb_0+varb_1);
+  scanf(""%d"",&varb_8);
+  varb_3=FALSE;
+  varb_5=0;
+  varb_4=varb_7-1;
+  varb_2=-1;
+  while(varb_5<=varb_4&&!varb_3)
+  {
+  varb_6=varb_5+varb_4;
+  if(varb_8==varb_0[varb_6])
+  {
+  varb_2=varb_6;
+  varb_3=TRUE;
+  }
+  if(varb_8>varb_0[varb_6])
+  varb_5=varb_6+1;
+  if(varb_8<varb_0[varb_6])
+  varb_5=varb_6-1;
+  }
+  if(varb_2>=0)
+printf(""Found"");
+else
+printf(""Not exist"");
+}
+",0.0,7
+42,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+int varb_3[varb_0];
+int varb_4,varb_5;
+for(varb_4=0;varb_4<=varb_0-1;varb_4++)
+{
+scanf(""%d"",&varb_3[varb_4]);
+}
+scanf(""%d"",&varb_1);
+for(varb_4=varb_0-1;varb_4>0;varb_4--)
+{
+for(varb_5=0;varb_5<varb_4;varb_5++)
+{
+if(varb_3[varb_5]>varb_3[varb_5+1])
+{
+varb_2=varb_3[varb_5];
+varb_3[varb_5]=varb_3[varb_5+1];
+varb_3[varb_5+1]=varb_3[varb_5];
+}
+}
+}
+varb_5=varb_0/2;
+while(varb_3[0]<varb_3[varb_0-1])
+{
+if(varb_3[varb_5]==varb_1)
+{
+printf(""Found"");
+return 0;
+}
+else if(varb_3[varb_5]<varb_1)
+varb_5+=1;
+else 
+varb_5-=1;
+if(varb_5<0 || varb_5==varb_0)
+{
+printf(""No exist"");
+return 0;
+}
+}
+}",0.0,7
+43,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+void func_0(int,int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=varb_0;
+	func_0(varb_0,varb_1);
+	return 0;
+ }
+void func_0(int varb_0,int varb_1)
+{
+	int varb_4=0;
+	int varb_5;
+	int varb_6,varb_7;
+	int varb_8[varb_0];
+	int varb_9=0;
+	for(;varb_0>0;varb_0--,varb_9++)
+	{
+		scanf(""%d"",&varb_8[varb_9]);
+		if(varb_0>=2)
+		scanf("" "");
+	}
+	for(;varb_0<varb_1-1;varb_0++)
+	{
+		for(varb_7=varb_1-1;varb_7>varb_0;varb_7--)
+		{
+			if(varb_8[varb_7]<varb_8[varb_7-1])
+			{
+				varb_6=varb_8[varb_7-1];
+				varb_8[varb_7-1]=varb_8[varb_7];
+				varb_8[varb_7]=varb_6;
+			}
+		}
+	}
+	scanf(""%d"",&varb_5);
+	if(varb_5>=varb_8[varb_1/2])
+	{
+		for(varb_0=(varb_1/2);varb_0<varb_1;varb_0++)
+		{
+			if(varb_5==varb_8[varb_0])
+			{
+			printf(""found"");varb_4=1;
+			break;
+			}
+		}
+	}
+	else
+	{
+		for(varb_0=0;varb_0<(varb_1/2);varb_0++)
+		{
+			if(varb_5==varb_8[varb_0])
+			{
+			printf(""found"");varb_4=1;
+			break;
+			}
+		}
+	}
+	if(varb_4==0)
+	printf(""Not exist"");
+  } ",0.0,43
+44,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[varb_0];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0;varb_5++) 
+	{
+		for(varb_6=varb_5;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_2=0;
+	varb_3=varb_0-1;
+	varb_4=varb_0/2;
+	while(varb_2<varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4+1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4-1;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>=varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,4
+45,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+int main()
+{ 
+     int varb_0,varb_1[100],varb_2,varb_3,varb_4;
+     scanf(""%d"",&varb_0);
+     for(varb_2=0;varb_2<varb_0;varb_2++)
+     scanf(""%d"",&varb_1[varb_2]);
+     scanf(""%d"",&varb_3);
+     for(varb_4=0;varb_4<varb_0;varb_4++)
+     {
+     	if(varb_1[varb_4]==varb_3)
+		{
+     	  printf(""Found"");
+		  break;
+	    }
+	    else printf(""Not exist"");
+	 }
+	 return 0;
+}",0.0,4
+46,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int varb_0[10];
+int main()
+{
+ int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8,varb_9,varb_10;
+ scanf(""%d"",&varb_4);
+ varb_8=0;varb_9=varb_4-1,varb_6=0;
+ for(varb_1=0;varb_1<=varb_4-1;varb_1++)
+  {
+    scanf(""%d"",&varb_0[varb_1]);
+  }
+  for(varb_2=varb_4-1;varb_2>0;varb_2--)
+  {
+   for(varb_3=0;varb_3<varb_2;varb_3++)
+   {
+    if(varb_0[varb_3]<varb_0[varb_3+1])
+    {
+     varb_5=varb_0[varb_3+1];
+     varb_0[varb_3+1]=varb_0[varb_3];
+     varb_0[varb_3]=varb_5;
+     }
+   }
+   }
+ scanf(""%d"",&varb_10);
+ while(varb_8<=varb_9)
+ {
+   varb_7=(varb_8+varb_9)/2;
+   if(varb_10==varb_0[varb_7])
+   {
+   varb_6++;
+   }
+   if(varb_10<varb_0[varb_7])
+   {
+    varb_9=varb_7-1;
+   }
+   if(varb_10>varb_0[varb_7])
+   { 
+   varb_8=varb_7+1;
+   }
+}
+ if(varb_6==0)
+ printf(""Not exist"");
+ else
+ printf(""Found"");
+        return 0;
+}
+",0.0,16
+47,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+int main()
+{ 
+     int varb_0,varb_1[100],varb_2,varb_3,varb_4;
+     scanf(""%d"",&varb_0);
+     for(varb_2=0;varb_2<varb_0;varb_2++)
+     scanf(""%d"",&varb_1[varb_2]);
+     scanf(""%d"",&varb_3);
+     for(varb_4=0;varb_4<varb_0;varb_4++)
+     {
+     	if(varb_1[varb_4]==varb_3)
+		{
+     	  printf(""Found"");
+		  break;
+	    }
+	 }
+	 return 0;
+}",0.0,4
+48,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int,int varb_0[],int);
+int main()
+{  
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+ scanf(""%d"",&varb_1);
+  int varb_0[varb_1]; 
+  for(varb_2=0;varb_2<varb_1;varb_2++)
+   scanf(""%d "",&varb_0[varb_2]);
+   scanf(""%d"",&varb_3);
+for(varb_4=varb_1-1;varb_4>0;varb_4--)
+{
+  for(varb_5=0;varb_5<varb_4;varb_5++)
+ {
+   if(varb_0[varb_5]>varb_0[varb_5+1])
+  {
+     varb_6=varb_0[varb_5];
+     varb_0[varb_5]=varb_0[varb_5+1];
+     varb_0[varb_5+1]=varb_6;
+             }
+              }
+                }
+ func_0(varb_3,varb_0,varb_1);
+}
+void func_0(int varb_3,int varb_0[],int varb_1)
+{
+  int varb_9=0,varb_10,varb_11,varb_12=0;
+  varb_10=varb_1-1; 
+  while(varb_9<varb_10)
+{
+  varb_11=(varb_9+varb_10)/2;
+  if(varb_3<varb_0[varb_11])
+  varb_10=varb_11-1;
+  else if(varb_3>varb_0[varb_11])
+  varb_9=varb_11+1;
+  else if(varb_3==varb_0[varb_11])
+  {
+    printf(""Found"");
+    varb_12++;
+    break;
+   }
+ }
+    if(varb_12==0)
+   printf(""Not exist"");
+}",0.0,29
+49,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2);varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+50,2c9f30a56eaa009f016eb4b343651481,"#include <stdio.h>
+void hanshu(int,int,int);
+main()
+{
+	int varb_0,varb_1[10],varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_2);
+	for(varb_0=0;varb_0<varb_2;varb_0++)
+	{
+		scanf(""%d"",&varb_1[10]);
+	}
+	scanf(""%d"",&varb_3);
+	for(varb_0=0;varb_0<varb_2;varb_0++)
+	{
+		if(varb_1[varb_0]==varb_3)
+		varb_4=0;
+		else
+		varb_4=1;
+	}
+	if(varb_4)
+	printf(""Found"");
+	else
+	printf(""Not exist"");
+}",0.0,16
+51,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+void func_1(int [],int,int);
+int main() 
+{
+int varb_0[10],varb_7,varb_8,varb_6;
+scanf(""%d"",&varb_7);
+func_0(varb_0,varb_7);
+scanf(""%d"",&varb_6) ;
+func_1(varb_0,varb_6,varb_7);
+}
+void func_0(int varb_1[10],int varb_7) 
+{
+int varb_2,varb_3,varb_4,varb_5;
+for(varb_2=0;varb_2<varb_7;varb_2++) 
+  {  
+   scanf(""%d"",&varb_1[varb_2]);
+  }
+for(varb_3=varb_7-1;varb_3>0;varb_3--)
+ {
+   for(varb_4=0;varb_4<varb_3;varb_4++)
+   {
+    if(varb_1[varb_4]<varb_1[varb_4+1]) 
+     {
+      varb_5=varb_1[varb_4];
+      varb_1[varb_4]=varb_1[varb_4+1];
+      varb_1[varb_4+1]=varb_5;
+     }
+   }
+ }
+}
+void func_1(int varb_1[10],int varb_6,int varb_7) 
+{
+int varb_8,varb_9;
+varb_9=0;
+if(varb_1[varb_7/2]<varb_6)
+   {
+    for(varb_8=(varb_7/2)+1;varb_8<varb_7;varb_8++) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]>varb_6)
+   {
+    for(varb_8=(varb_7/2);varb_8>=0;varb_8--) 
+       {
+        if(varb_1[varb_8]==varb_6)
+           varb_9++;
+       }
+      if(varb_9==0)
+       printf(""Not exist"");
+      else
+       printf(""Found"") ;
+   }
+if(varb_1[varb_7/2]==varb_6) 
+printf(""Found"") ;
+}",0.0,23
+52,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2=0,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_0);
+	int varb_8[10];
+	for(varb_5=0;varb_5<varb_0;varb_5++)
+	{
+		scanf(""%d"",&varb_8[varb_5]);
+	}
+	scanf(""%d"",&varb_1);
+	for(varb_5=0;varb_5<varb_0;varb_5++) 
+	{
+		for(varb_6=varb_5;varb_6<varb_0;varb_6++)
+		{
+			if(varb_8[varb_6]<varb_8[varb_5])
+			{
+				varb_7=varb_8[varb_6];
+				varb_8[varb_6]=varb_8[varb_5];
+				varb_8[varb_5]=varb_7;
+			}
+		}
+	}
+	varb_3=varb_0;
+	varb_4=varb_0/2;
+	while(varb_2<=varb_3)
+	{
+		if(varb_8[varb_4]==varb_1)
+		{
+			printf(""Found"");
+			break;
+		}
+		else if(varb_8[varb_4]<varb_1)
+		{
+			varb_2=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+		else if(varb_8[varb_4]>varb_1)
+		{
+			varb_3=varb_4;
+			varb_4=(varb_2+varb_3)/2;
+		}
+	}
+	if(varb_2>varb_3)
+	{
+		printf(""Not exist"");
+	}
+	return 0;
+}",0.0,24
+53,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+void func_0(int [],int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    varb_2=1;
+    scanf(""%d"",&varb_0);
+    int varb_3[varb_0];
+   for(varb_1=0;varb_1<varb_0;varb_1++)
+   scanf(""%d"",&varb_3[varb_1]);
+   int varb_4;
+   scanf(""%d"",&varb_4);
+   func_0(varb_3,varb_0);
+    int varb_5,varb_6,varb_7;
+    varb_5 = 0;
+    varb_6 = varb_0-1;
+    while(varb_5<=varb_6)
+    {
+        varb_7 =(varb_5 + varb_6)/2;
+        if(varb_3[varb_7]==varb_4)
+       {
+          printf(""Found"");
+          varb_2=0;
+        }
+        if(varb_3[varb_7]<varb_4)
+       {
+            varb_5 =varb_7 + 1;
+        }
+        if(varb_3[varb_7]>varb_4) 
+       {
+            varb_6= varb_7 - 1;
+        }
+    }
+       if(varb_2==1)
+       printf(""Not exist"");
+       return 0;
+}
+void func_0(int varb_3[],int varb_0)
+{
+    int varb_1,varb_10,varb_11;
+    for(varb_1=0;varb_1<varb_0-1;varb_1++)
+    {
+    for(varb_10=1;varb_10<varb_0;varb_10++)
+    {
+      if(varb_3[varb_10]>varb_3[varb_10-1])
+      {
+      varb_11=varb_3[varb_10];
+      varb_3[varb_10]=varb_3[varb_10-1];
+      varb_3[varb_10-1]=varb_11;
+      }
+    }
+    }
+}
+",0.0,23
+54,2c9f30a56eaa009f016eb4b343651481,"#include<stdio.h>
+int main()
+{
+	int varb_0[4000]={0};
+	int varb_1,varb_2,varb_3,varb_4;
+	scanf(""%d"",&varb_1);
+	int varb_5[varb_1+1];
+	int varb_6;
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{   scanf(""%d"",&varb_4);
+		varb_0[varb_4]+=1;}
+	scanf(""%d"",&varb_6);
+	int varb_7=0;
+	for(varb_2=0;varb_2<4000;varb_2++){
+	    if(varb_0[varb_2]!=0){
+	      for(varb_3=1;varb_3<=varb_0[varb_2];varb_3++)
+	         varb_5[++varb_7]=varb_2;}}
+	int varb_8=1,right=varb_1;
+	int varb_9,varb_10=1;
+	while(varb_8<right){
+	     varb_9=(varb_8+right+1)>>1;
+	     if(varb_5[varb_9]==varb_6){varb_10=0;break;}
+	     if(varb_6>varb_5[varb_9]) varb_8=varb_9+1;
+	     if(varb_6<varb_5[varb_9]) right=varb_9-1;}
+	     if(varb_10==0) printf(""Found"");
+	     else  printf(""Not exist"");
+}",0.0,4

@@ -1,0 +1,221 @@
+,id,code,is_true,errorline
+0,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    varb_5=pow(varb_1,2)-4*varb_0*varb_2;
+    if(varb_0==0)
+    {
+      if(varb_1==0&&varb_2==0)
+        printf(""Zero Equation"");
+      else if(varb_1=0&&varb_2!=0)
+        printf(""Not An Equation"");
+      else
+        printf(""%0.2lf\n"",-varb_2/varb_1);
+     }
+    else if(varb_5>0)
+    {
+        varb_6=sqrt(varb_5);
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        varb_4=(-varb_1-varb_6)/2/varb_0;
+        printf(""%0.2lf\n %0.2lf\n"",varb_3,varb_4);
+    }
+    else if(varb_5==0)
+    {    
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        printf(""%0.2lf\n"",varb_3);
+    }
+    else 
+    {
+        varb_6=sqrt(-varb_5);
+        printf(""%0.2lf+%0.2lf\n,%0.2lf-%0.2lf\n"",-varb_1/2/varb_0,varb_6/2/varb_0,-varb_1/2/varb_0,varb_6/2/varb_0);
+    }
+    return 0;
+}",0.0,12
+1,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+	varb_3 = varb_1*varb_1-4*varb_0*varb_2;
+	varb_4 = -1;
+	if(varb_0!=0&&varb_3>0)
+         {
+         	varb_5 =(varb_4*varb_1+sqrt(varb_3))/(2*varb_0);
+         	varb_6 =(varb_4*varb_1-sqrt(varb_3))/(2*varb_0);
+         	printf(""%.2f\n"",varb_5);
+         	printf(""%.2f\n"",varb_6);
+		 }	
+	else if(varb_0!=0&&varb_3<0)
+		printf(""%.2f+%.2fi\n%.2f-%.2fi"",-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)),-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)));
+	else if(varb_0!=0&&varb_3==0)
+	    printf(""%.2f"",(varb_4*varb_1+sqrt(varb_3))/(2*varb_0));
+	else if(varb_0==0&&varb_1==0&&varb_2==0)
+	     printf(""Zero Equation"");
+	else if(varb_0==0&&varb_1==0&&varb_2!=0)
+	     printf(""Not An Equation"");
+	return 0;
+ }    ",0.0,17
+2,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    varb_5=pow(varb_1,2)-4*varb_0*varb_2;
+    if(varb_0==0)
+    {
+      if(varb_1==0&&varb_2==0)
+        printf(""Zero Equation"");
+      else if(varb_1==0&&varb_2!=0)
+        printf(""Not An Equation"");
+      else
+        printf(""%0.2lf\n"",-varb_2/varb_1);
+     }
+    else if(varb_5>0)
+    {
+        varb_6=sqrt(varb_5);
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        varb_4=(-varb_1-varb_6)/2/varb_0;
+        printf(""%0.2lf\n %0.2lf\n"",varb_3,varb_4);
+    }
+    else if(varb_5==0)
+    {    
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        printf(""%0.2lf\n"",varb_3);
+    }
+    else 
+    {
+        varb_6=sqrt(-varb_5);
+        printf(""%0.2lf+%0.2lf\n,%0.2lf-%0.2lf\n"",-varb_1/2/varb_0,varb_6/2/varb_0,-varb_1/2/varb_0,varb_6/2/varb_0);
+    }
+    return 0;
+}",0.0,32
+3,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+ scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+ varb_3=pow(varb_1,2)-4*varb_0*varb_2;
+ if(varb_0==0&&varb_1==0)
+  {
+     if(varb_2==0)
+      printf(""Zero Equation"");
+     else
+     printf(""Not An Equation"");
+    }
+  else
+ if(varb_3>0)
+  {
+   varb_4=((-1)*varb_1+sqrt(varb_3))/(2*varb_0);
+   varb_5=((-1)*varb_1-sqrt(varb_3))/(2*varb_0);
+    if(varb_4>varb_5)
+     printf(""%.2f\varb_5%.2f"",varb_4,varb_5);
+    else
+     printf(""%.2f\varb_5%.2f"",varb_5,varb_4);
+   }
+  else if(varb_3==0)
+   printf(""%.2f"",-varb_1/2*varb_0);
+  else
+   {
+    float varb_6,varb_7;
+    varb_6=-varb_1/2*varb_0;
+    varb_7=sqrt(-varb_3)/2*varb_0;
+    if(varb_7>0)
+     printf(""%.2f+%.2fi\varb_5%.2f-%.2fi"",varb_6,varb_7,varb_6,varb_7);
+    else
+     printf(""%.2f+%.2fi\varb_5%.2f-%.2fi"",varb_6,-varb_7,varb_6,-varb_7);
+    }
+    return 0;
+}",0.0,8
+4,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    varb_5=pow(varb_1,2)-4*varb_0*varb_2;
+    if(varb_0==0)
+    {
+      if(varb_1==0&&varb_2==0)
+        printf(""Zero Equation"");
+      else if(varb_1==0&&varb_2!=0)
+        printf(""Not An Equation"");
+      else
+        printf(""%0.2lf\n"",-varb_2/varb_1);
+     }
+    else if(varb_5>0)
+    {
+        varb_6=sqrt(varb_5);
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        varb_4=(-varb_1-varb_6)/2/varb_0;
+        printf(""%0.2lf\n %0.2lf\n"",varb_3,varb_4);
+    }
+    else if(varb_5==0)
+    {    
+        varb_3=(-varb_1+varb_6)/2/varb_0;
+        printf(""%0.2lf\n"",varb_3);
+    }
+    else 
+    {
+        varb_6=sqrt(-varb_5);
+        printf(""%0.2lf+%0.2lf\n%0.2lf-%0.2lf\n"",-varb_1/2/varb_0,varb_6/2/varb_0,-varb_1/2/varb_0,varb_6/2/varb_0);
+    }
+    return 0;
+}",0.0,32
+5,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	varb_3 = varb_1*varb_1-4*varb_0*varb_2;
+	varb_4 = -1;
+	if(varb_0!=0&&varb_3>0)
+         {
+         	varb_5 =(varb_4*varb_1+sqrt(varb_3))/(2*varb_0);
+         	varb_6 =(varb_4*varb_1-sqrt(varb_3))/(2*varb_0);
+         	printf(""%.2f\n"",varb_5);
+         	printf(""%.2f\n"",varb_6);
+		 }	
+	else if(varb_0!=0&&varb_3<0)
+		printf(""%.2f+%.2fi\n%.2f-%.2fi"",-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)),-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)));
+	else if(varb_0!=0&&varb_3==0)
+	    printf(""%.2f"",(varb_4*varb_1+sqrt(varb_3))/(2*varb_0));
+	else if(varb_0==0&&varb_1==0&&varb_2==0)
+	     printf(""Zero Equation"");
+	else if(varb_0==0&&varb_1==0&&varb_2!=0)
+	     printf(""Not An Equation"");
+	return 0;
+ }    ",0.0,6
+6,2c9f30a576c1c3dd017bdd33267a6a60,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+	varb_3 = varb_1*varb_1-4*varb_0*varb_2;
+	varb_4 = -1;
+	if(varb_0!=0&&varb_3>0)
+         {
+         	varb_5 =(varb_4*varb_1+sqrt(varb_3))/(2*varb_0);
+         	varb_6 =(varb_4*varb_1-sqrt(varb_3))/(2*varb_0);
+         	printf(""%.2f\n"",varb_5);
+         	printf(""%.2f\n"",varb_6);
+		 }	
+	else if(varb_0!=0&&varb_3<0)
+		printf(""%.2f+%.2fi\n%.2f-%.2fi"",-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)),-varb_1/(varb_0*2),abs(sqrt(-varb_3)/(varb_0*2)));
+	else if(varb_0!=0&&varb_3==0)
+	    printf(""%.2f"",(varb_4*varb_1+sqrt(varb_3))/(2*varb_0));
+	else if(varb_0==0&&varb_1!=0)
+	    printf(""%.2f"",varb_4*varb_2/varb_1);
+	else if(varb_0==0&&varb_1==0&&varb_2==0)
+	     printf(""Zero Equation"");
+	else if(varb_0==0&&varb_1==0&&varb_2!=0)
+	     printf(""Not An Equation"");
+	return 0;
+ }    ",0.0,17

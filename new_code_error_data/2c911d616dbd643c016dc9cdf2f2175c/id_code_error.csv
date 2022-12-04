@@ -1,0 +1,1082 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  float n,a,b,c,d,e,f;
+  a=0.00417;
+  scanf (""%f"",&n);
+  b=n*(1+a);
+  c=(n+b)*(1+a);
+  d=(n+c)*(1+a);
+  e=(n+d)*(1+a);
+  f=(n+e)*(1+a);
+  printf(""%.3f"",n);
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+  varb_1=0.00417;
+  scanf(""%f"",&varb_0);
+  varb_2=varb_0*(1+varb_1);
+  varb_3=(varb_0+varb_2)*(1+varb_1);
+  varb_4=(varb_0+varb_3)*(1+varb_1);
+  varb_5=(varb_0+varb_4)*(1+varb_1);
+  varb_6=(varb_0+varb_5)*(1+varb_1);
+  printf(""%.3f"",varb_0);
+  return 0;
+}
+",12
+1,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+	float a;
+	double b=0;
+	scanf(""%f"",&a);
+	b=(a+b)*1.00417;
+	b=(a+b)*1.00417;
+	b=(a+b)*1.00417;
+	b=(a+b)*1.00417;
+	b=(a+b)*1.00417;
+	printf(""%.3f"",b);
+}",0.0,"#include<stdio.h>
+int main()
+{
+	float varb_0;
+	double varb_1=0;
+	scanf(""%f"",&varb_0);
+	varb_1=(varb_0+varb_1)*1.00417;
+	varb_1=(varb_0+varb_1)*1.00417;
+	varb_1=(varb_0+varb_1)*1.00417;
+	varb_1=(varb_0+varb_1)*1.00417;
+	varb_1=(varb_0+varb_1)*1.00417;
+	printf(""%.3f"",varb_1);
+}",2
+2,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+   double a,b;
+   scanf(""%f"",&a);
+   b=a*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   printf(""%.3f"",b);
+   
+   }",0.0,"#include <stdio.h>
+int main()
+{
+   double varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=varb_0*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   printf(""%.3f"",varb_1);
+   }",4
+3,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+double a,b,c,d,e,n;
+scanf(""%1f"",&n);
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%1f"",&varb_5);
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+4,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float a,b,c,d,e,g;
+  scanf(""%f"",&a);
+  b=a*(1+rate);
+  c=(b+100)*(1+rate);
+  d=(c+100)*(1+rate);
+  e=(d+100)*(1+rate);
+  g=(e+100)*(1+rate);
+  printf(""%f"",g);
+  
+   return 0; 
+  
+  
+  
+  }",0.0,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_0);
+  varb_1=varb_0*(1+rate);
+  varb_2=(varb_1+100)*(1+rate);
+  varb_3=(varb_2+100)*(1+rate);
+  varb_4=(varb_3+100)*(1+rate);
+  varb_5=(varb_4+100)*(1+rate);
+  printf(""%f"",varb_5);
+   return 0; 
+  }",7
+5,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+double a,b,c,d,e,n;
+scanf(""%.1f"",&n);
+n=100;
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%.1f"",&varb_5);
+varb_5=100;
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+6,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+   float a,b,c,d,e,n;
+   scanf(""%d"",n);
+   a=(1+0.00417)*n;
+   b=(1+0.00417)*(n+a);
+   c=(1+0.00417)*(n+b);
+   d=(1+0.00417)*(n+c);
+   e=(1+0.00417)*(n+d);
+   printf(""%.3f"",a);
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+   scanf(""%d"",varb_5);
+   varb_0=(1+0.00417)*varb_5;
+   varb_1=(1+0.00417)*(varb_5+varb_0);
+   varb_2=(1+0.00417)*(varb_5+varb_1);
+   varb_3=(1+0.00417)*(varb_5+varb_2);
+   varb_4=(1+0.00417)*(varb_5+varb_3);
+   printf(""%.3f"",varb_0);
+   return 0;
+}",5
+7,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float a,b,c,d,e,g;
+  scanf(""%f"",&a);
+  b=a*(1+rate);
+  c=(b+100)*(1+rate);
+  d=(c+100)*(1+rate);
+  e=(d+100)*(1+rate);
+  g=(e=100)*(1+rate);
+  printf(""%f"",g);
+  
+   return 0; 
+  
+  
+  
+  }",0.0,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_0);
+  varb_1=varb_0*(1+rate);
+  varb_2=(varb_1+100)*(1+rate);
+  varb_3=(varb_2+100)*(1+rate);
+  varb_4=(varb_3+100)*(1+rate);
+  varb_5=(varb_4=100)*(1+rate);
+  printf(""%f"",varb_5);
+   return 0; 
+  }",7
+8,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  float n,a,b,c,d,e;
+  scanf(""%f"",&n);
+  a=(0.00417+1)*n;
+  b=(0.00417+1)*a;
+  c=(0.00417+1)*b;
+  d=(0.00417+1)*c;
+  e=(0.00417+1)*d;
+  printf(""%.3f"",e);
+  return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_0);
+  varb_1=(0.00417+1)*varb_0;
+  varb_2=(0.00417+1)*varb_1;
+  varb_3=(0.00417+1)*varb_2;
+  varb_4=(0.00417+1)*varb_3;
+  varb_5=(0.00417+1)*varb_4;
+  printf(""%.3f"",varb_5);
+  return 0;
+}",7
+9,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%f"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+
+ ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",5
+10,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%lf"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%lf"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",13
+11,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+   float a,b,c,d,e,n;
+   scanf(""%d"",n);
+   a=(1+0.00417)*n;
+   b=(1+0.00417)*(n+a);
+   c=(1+0.00417)*(n+b);
+   d=(1+0.00417)*(n+c);
+   e=(1+0.00417)*(n+d);
+   printf(""%.3f"",e);
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+   scanf(""%d"",varb_5);
+   varb_0=(1+0.00417)*varb_5;
+   varb_1=(1+0.00417)*(varb_5+varb_0);
+   varb_2=(1+0.00417)*(varb_5+varb_1);
+   varb_3=(1+0.00417)*(varb_5+varb_2);
+   varb_4=(1+0.00417)*(varb_5+varb_3);
+   printf(""%.3f"",varb_4);
+   return 0;
+}",5
+12,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  float a,b,c;
+  scanf(""f%"",&a);
+  b=0.00417;
+  c=a*(1+b);
+  c=(a+c)*(1+b);
+  c=(a+c)*(1+b);
+  c=(a+c)*(1+b);
+  c=(a+c)*(1+b);
+  printf(""%0.3f"",c);
+  return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2;
+  scanf(""f%"",&varb_0);
+  varb_1=0.00417;
+  varb_2=varb_0*(1+varb_1);
+  varb_2=(varb_0+varb_2)*(1+varb_1);
+  varb_2=(varb_0+varb_2)*(1+varb_1);
+  varb_2=(varb_0+varb_2)*(1+varb_1);
+  varb_2=(varb_0+varb_2)*(1+varb_1);
+  printf(""%0.3f"",varb_2);
+  return 0;
+ }",5
+13,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+
+int main()
+{
+    int a;
+    float b;
+    float c;
+    float d;
+    float e;
+    float m;
+    scanf(""%d"",&a);
+    b=a*(1+0.00417);
+    c=(a+b)*(1+0.00417);
+    d=(a+c)*(1+0.00417);
+    e=(a+d)*(1+0.00417);
+    m=(a+e)*(1+0.00417);
+    printf(""%.3f"",m);
+    return 0;
+  }",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    float varb_2;
+    float varb_3;
+    float varb_4;
+    float varb_5;
+    scanf(""%d"",&varb_0);
+    varb_1=varb_0*(1+0.00417);
+    varb_2=(varb_0+varb_1)*(1+0.00417);
+    varb_3=(varb_0+varb_2)*(1+0.00417);
+    varb_4=(varb_0+varb_3)*(1+0.00417);
+    varb_5=(varb_0+varb_4)*(1+0.00417);
+    printf(""%.3f"",varb_5);
+    return 0;
+  }",4
+14,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+float n,a,b,c,d,e;
+scanf(""%d"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+  }
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d"",&varb_0);
+  varb_1=varb_0*(1+0.00417);
+  varb_2=(varb_0+varb_1)*(1+0.00417);
+  varb_3=(varb_0+varb_2)*(1+0.00417);
+  varb_4=(varb_0+varb_3)*(1+0.00417);
+  varb_5=(varb_0+varb_4)*(1+0.00417);
+  printf(""%.3f"",varb_5);
+  return 0;
+  }
+",5
+15,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%lf"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%lf"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",13
+16,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main(){
+    int a;
+    double t=0;
+    scanf(""%d"",&a);
+    t=(a+t)*1.00417;
+    t=(a+t)*1.00417;
+    t=(a+t)*1.00417;
+    t=(a+t)*1.00417;
+    t=(a+t)*1.00417;
+    printf(""%.3f"",t);
+}",0.0,"#include<stdio.h>
+int main(){
+    int varb_0;
+    double varb_1=0;
+    scanf(""%d"",&varb_0);
+    varb_1=(varb_0+varb_1)*1.00417;
+    varb_1=(varb_0+varb_1)*1.00417;
+    varb_1=(varb_0+varb_1)*1.00417;
+    varb_1=(varb_0+varb_1)*1.00417;
+    varb_1=(varb_0+varb_1)*1.00417;
+    printf(""%.3f"",varb_1);
+}",3
+17,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{float a,b=0;
+scanf(""%f"",&a);
+b=a*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+printf(""%.3f"",b);}",0.0,"#include<stdio.h>
+int main()
+{float varb_0,varb_1=0;
+scanf(""%f"",&varb_0);
+varb_1=varb_0*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+printf(""%.3f"",varb_1);}",6
+18,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+   double a,b;
+   scanf(""%f"",&a);
+   b=a*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   printf(""%.3f"",b);
+   return 0;
+   
+   }",0.0,"#include <stdio.h>
+int main()
+{
+   double varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=varb_0*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   printf(""%.3f"",varb_1);
+   return 0;
+   }",4
+19,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  float n,a,b,c,d,e;
+  scanf(""%f"",&n);
+  a=(0.00417+1)*n;
+  b=(0.00417+1)*(a+100);
+  c=(0.00417+1)*(b+100);
+  d=(0.00417+1)*(c+100);
+  e=(0.00417+1)*(d+100);
+  printf(""%.3f"",e);
+  return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_0);
+  varb_1=(0.00417+1)*varb_0;
+  varb_2=(0.00417+1)*(varb_1+100);
+  varb_3=(0.00417+1)*(varb_2+100);
+  varb_4=(0.00417+1)*(varb_3+100);
+  varb_5=(0.00417+1)*(varb_4+100);
+  printf(""%.3f"",varb_5);
+  return 0;
+}",7
+20,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+main()
+{
+int i=1,a;
+float sum=0;
+scanf(""%d"",&a);
+while(i<=5)
+ {
+  sum=(sum+a)*(1+0.00417);
+  i++;
+  }
+ printf(""%.3f"",sum);
+ return 0;
+ }",0.0,"#include<stdio.h>
+main()
+{
+int varb_0=1,a;
+float varb_1=0;
+scanf(""%d"",&a);
+while(varb_0<=5)
+ {
+  varb_1=(varb_1+a)*(1+0.00417);
+  varb_0++;
+  }
+ printf(""%.3f"",varb_1);
+ return 0;
+ }",4
+21,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main(void)
+{
+double a,b,c,d,e,n;
+scanf(""%1f"",&n);
+n=100,2;
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%1f"",&varb_5);
+varb_5=100,2;
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+22,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+    float a,b,s;
+    int i;
+    b=i+0.00417;
+    scanf(""%f"",&a);
+    for(i=1;i<=5;i++)
+    {
+    s=(a+5)*b;
+    }
+    printf(""%.3f"",s);
+}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    int varb_3;
+    varb_1=varb_3+0.00417;
+    scanf(""%f"",&varb_0);
+    for(varb_3=1;varb_3<=5;varb_3++)
+    {
+    varb_2=(varb_0+5)*varb_1;
+    }
+    printf(""%.3f"",varb_2);
+}",10
+23,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+   double a,b;
+   scanf(""%f"",&a);
+   b=a*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   printf(""%.3f"",b);
+   return 0;
+   }",0.0,"#include <stdio.h>
+int main()
+{
+   double varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=varb_0*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   printf(""%.3f"",varb_1);
+   return 0;
+   }",4
+24,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float a,b,c,d,e,g;
+  scanf(""%f"",&a);
+  b=a*(1+rate);
+  c=(b+100)*(1+rate);
+  d=(c+100)*(1+rate);
+  e=(d+100)*(1+rate);
+  g=(e+100)*(1+rate);
+  printf(""%.3f"",g);
+  
+   return 0; 
+  
+  
+  
+  }",0.0,"#include<stdio.h>
+#define rate 0.00417
+  int main()
+  {float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_0);
+  varb_1=varb_0*(1+rate);
+  varb_2=(varb_1+100)*(1+rate);
+  varb_3=(varb_2+100)*(1+rate);
+  varb_4=(varb_3+100)*(1+rate);
+  varb_5=(varb_4+100)*(1+rate);
+  printf(""%.3f"",varb_5);
+   return 0; 
+  }",7
+25,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+int n;
+scanf(""%d"",&n);
+float a=n*(1+0.00417);
+float b=(a+n)*(1+0.00417);
+float c=(b+n)*(1+0.00417);
+float d=(c+n)*(1+0.00417);
+float e=(d+n)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+float varb_1=varb_0*(1+0.00417);
+float varb_2=(varb_1+varb_0)*(1+0.00417);
+float varb_3=(varb_2+varb_0)*(1+0.00417);
+float varb_4=(varb_3+varb_0)*(1+0.00417);
+float varb_5=(varb_4+varb_0)*(1+0.00417);
+printf(""%.3f"",varb_5);
+return 0;
+}
+",4
+26,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%lf"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%3f"",e);
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%lf"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%3f"",varb_4);
+  return 0;
+}
+",11
+27,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{double a,b;
+scanf(""%f"",&a);
+b=a*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+printf(""%.3f"",b);}",0.0,"#include<stdio.h>
+int main()
+{double varb_0,varb_1;
+scanf(""%f"",&varb_0);
+varb_1=varb_0*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+printf(""%.3f"",varb_1);}",3
+28,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  float n,a,b,c,d,e;
+  scanf(""%f"",n);
+  a=n*(1+0.00417);
+  b=(a+n)*(1+0.00417);
+  c=(b+n)*(1+0.00417);
+  d=(c+n)*(1+0.00417);
+  e=(d+n)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+
+   ",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",varb_0);
+  varb_1=varb_0*(1+0.00417);
+  varb_2=(varb_1+varb_0)*(1+0.00417);
+  varb_3=(varb_2+varb_0)*(1+0.00417);
+  varb_4=(varb_3+varb_0)*(1+0.00417);
+  varb_5=(varb_4+varb_0)*(1+0.00417);
+  printf(""%.3f"",varb_5);
+  return 0;
+}
+",5
+29,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main(void)
+{
+double a,b,c,d,e,n;
+scanf(""%1f"",&n);
+n=100;
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%1f"",&varb_5);
+varb_5=100;
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+30,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{double a,b=0;
+scanf(""%f"",&a);
+b=a*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+b=(b+100)*(1+0.00417);
+printf(""%.3f"",b);}",0.0,"#include<stdio.h>
+int main()
+{double varb_0,varb_1=0;
+scanf(""%f"",&varb_0);
+varb_1=varb_0*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+varb_1=(varb_1+100)*(1+0.00417);
+printf(""%.3f"",varb_1);}",3
+31,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main(void)
+{
+double a,b,c,d,e,n;
+scanf(""%1f"",&n);
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%1f"",&varb_5);
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+32,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main(void)
+{
+double a,b,c,d,e,n;
+scanf(""%1f"",&n);
+n=100;n=0;
+a=n*(1+0.00417);
+b=(n+a)*(1+0.00417);
+c=(n+b)*(1+0.00417);
+d=(n+c)*(1+0.00417);
+e=(n+d)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%1f"",&varb_5);
+varb_5=100;varb_5=0;
+varb_0=varb_5*(1+0.00417);
+varb_1=(varb_5+varb_0)*(1+0.00417);
+varb_2=(varb_5+varb_1)*(1+0.00417);
+varb_3=(varb_5+varb_2)*(1+0.00417);
+varb_4=(varb_5+varb_3)*(1+0.00417);
+printf(""%.3f"",varb_4);
+return 0;
+}",5
+33,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+float n;
+scanf(""%d"",&n);
+float a=n*(1+0.00417);
+float b=(a+n)*(1+0.00417);
+float c=(b+n)*(1+0.00417);
+float d=(c+n)*(1+0.00417);
+float e=(d+n)*(1+0.00417);
+printf(""%.3f"",e);
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0;
+scanf(""%d"",&varb_0);
+float varb_1=varb_0*(1+0.00417);
+float varb_2=(varb_1+varb_0)*(1+0.00417);
+float varb_3=(varb_2+varb_0)*(1+0.00417);
+float varb_4=(varb_3+varb_0)*(1+0.00417);
+float varb_5=(varb_4+varb_0)*(1+0.00417);
+printf(""%.3f"",varb_5);
+return 0;
+}
+",5
+34,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+    int i;
+    float a,c;
+    a=1+0.00417;
+    float b;
+    scanf(""%f"",&b);
+    for(i=1;i<=5;i++)
+    {
+    c=(c+100)*a;
+    
+    }
+    printf(""%.3f"",c);
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1,varb_2;
+    varb_1=1+0.00417;
+    float varb_3;
+    scanf(""%f"",&varb_3);
+    for(varb_0=1;varb_0<=5;varb_0++)
+    {
+    varb_2=(varb_2+100)*varb_1;
+    }
+    printf(""%.3f"",varb_2);
+}",11
+35,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%lf"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%lf"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",13
+36,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+  float a,b,c,d,e,n;
+  scanf(""%lf"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%lf"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",4
+37,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+   double a,b;
+   scanf(""%f"",&a);
+   b=a*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   b=(a+b)*(1.0+0.00417);
+   printf(""%f"",b);
+   return 0;
+   }",0.0,"#include <stdio.h>
+int main()
+{
+   double varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   varb_1=varb_0*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   varb_1=(varb_0+varb_1)*(1.0+0.00417);
+   printf(""%f"",varb_1);
+   return 0;
+   }",4
+38,2c911d616dbd643c016dc9cdf2f2175c,"#include <stdio.h>
+int main()
+{
+  double a,b,c,d,e,n;
+  scanf(""%f"",&n);
+  a=n*(1+0.00417);
+  b=(n+a)*(1+0.00417);
+  c=(n+b)*(1+0.00417);
+  d=(n+c)*(1+0.00417);
+  e=(n+d)*(1+0.00417);
+  printf(""%.3f"",e);
+  return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%f"",&varb_5);
+  varb_0=varb_5*(1+0.00417);
+  varb_1=(varb_5+varb_0)*(1+0.00417);
+  varb_2=(varb_5+varb_1)*(1+0.00417);
+  varb_3=(varb_5+varb_2)*(1+0.00417);
+  varb_4=(varb_5+varb_3)*(1+0.00417);
+  printf(""%.3f"",varb_4);
+  return 0;
+}
+",5
+39,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+#define a 0.00417
+int main()
+{
+ int n;
+ float b,c,d,e,f;
+ scanf(""%d"",&n);
+ b=(1+a)*n;
+ c=(n+b)*(1+a);
+ d=(n+c)*(1+a);
+ e=(n+d)*(1+a);
+f=(n+e)*(1+a);
+ printf(""%.3f"",f);
+ return 0;
+ }",0.0,"#include<stdio.h>
+#define a 0.00417
+int main()
+{
+ int varb_0;
+ float varb_1,varb_2,varb_3,varb_4,varb_5;
+ scanf(""%d"",&varb_0);
+ varb_1=(1+a)*varb_0;
+ varb_2=(varb_0+varb_1)*(1+a);
+ varb_3=(varb_0+varb_2)*(1+a);
+ varb_4=(varb_0+varb_3)*(1+a);
+varb_5=(varb_0+varb_4)*(1+a);
+ printf(""%.3f"",varb_5);
+ return 0;
+ }",5
+40,2c911d616dbd643c016dc9cdf2f2175c,"#include<stdio.h>
+int main()
+{
+ float a,b,c,d,e,f;
+ scanf(""%d"",&a);
+ b=a*(1+0.00417);
+ c=(a+b)*(1+0.00417);
+ d=(a+c)*(1+0.00417);
+ e=(a+d)*(1+0.00417);
+ f=(a+e)*(1+0.00417);
+ printf(""%.3f"",f);
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+ scanf(""%d"",&varb_0);
+ varb_1=varb_0*(1+0.00417);
+ varb_2=(varb_0+varb_1)*(1+0.00417);
+ varb_3=(varb_0+varb_2)*(1+0.00417);
+ varb_4=(varb_0+varb_3)*(1+0.00417);
+ varb_5=(varb_0+varb_4)*(1+0.00417);
+ printf(""%.3f"",varb_5);
+ return 0;
+ }",5

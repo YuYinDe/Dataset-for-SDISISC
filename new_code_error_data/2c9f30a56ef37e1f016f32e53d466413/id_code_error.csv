@@ -1,0 +1,398 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56ef37e1f016f32e53d466413,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct ListNode {
+    char code[8];
+    struct ListNode *next;
+};
+
+struct ListNode *createlist(); /*裁判实现，细节不表*/
+int countcs( struct ListNode *head );
+
+int main()
+{
+    struct ListNode  *head;
+
+    head = createlist();
+    printf(""%d\n"", countcs(head));
+	
+    return 0;
+}
+
+struct ListNode *createlist()
+{
+	char temp[8];
+	struct ListNode *head,*p,*q;
+	int num;
+	head=(struct ListNode *)malloc(sizeof(struct ListNode));
+	head->next=NULL;
+	p=head;
+	gets(temp);
+	while(strcmp(temp,""#"")!=0)
+	{
+		q=(struct ListNode *)malloc(sizeof(struct ListNode));
+		strcpy(p->code,temp);
+		p->next=q;
+		p=q;
+		gets(temp);
+	}
+	p->next=NULL;
+	return head;
+}
+int countcs( struct ListNode *head )
+{  struct ListNode *p;
+   p=head;
+   
+     
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct varb_1 {
+    char varb_0[8];
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0(); 
+int func_1( struct varb_1 *varb_4 );
+int main()
+{
+    struct varb_1  *varb_4;
+    varb_4 = func_0();
+    printf(""%d\n"", func_1(varb_4));
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	char varb_5[8];
+	struct varb_1 *varb_4,*varb_8,*varb_9;
+	int varb_10;
+	varb_4=(struct varb_1 *)malloc(sizeof(struct varb_1));
+	varb_4->varb_2=NULL;
+	varb_8=varb_4;
+	gets(varb_5);
+	while(strcmp(varb_5,""#"")!=0)
+	{
+		varb_9=(struct varb_1 *)malloc(sizeof(struct varb_1));
+		strcpy(varb_8->varb_0,varb_5);
+		varb_8->varb_2=varb_9;
+		varb_8=varb_9;
+		gets(varb_5);
+	}
+	varb_8->varb_2=NULL;
+	return varb_4;
+}
+int func_1( struct varb_1 *varb_4 )
+{  struct varb_1 *varb_8;
+   varb_8=varb_4;
+}",38
+1,2c9f30a56ef37e1f016f32e53d466413,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct ListNode {
+    char code[8];
+    struct ListNode *next;
+};
+
+struct ListNode *createlist(); 
+int countcs( struct ListNode *head );
+
+int main()
+{
+    struct ListNode  *head;
+
+    head = createlist();
+    printf(""%d\n"", countcs(head));
+	
+    return 0;
+}
+
+struct ListNode *createlist()
+{
+	char temp[8];
+	struct ListNode *head,*p,*q;
+	int num;
+	head=(struct ListNode *)malloc(sizeof(struct ListNode));
+	head->next=NULL;
+	p=head;
+	gets(temp);
+	while(strcmp(temp,""#"")!=0)
+	{
+		q=(struct ListNode *)malloc(sizeof(struct ListNode));
+		strcpy(p->code,temp);
+		p->next=q;
+		p=q;
+		gets(temp);
+	}
+	p->next=NULL;
+	return head;
+}
+int countcs( struct ListNode *head )
+{
+ struct ListNode *temp,*p;
+int countcs=0;
+  while(temp!=NULL)
+{
+if(temp->code[1]==0&&temp->code[2]==2) 
+countcs++;
+p->next=temp->next;
+temp=p->next;
+}
+return countcs;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct varb_1 {
+    char varb_0[8];
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0(); 
+int func_1( struct varb_1 *varb_4 );
+int main()
+{
+    struct varb_1  *varb_4;
+    varb_4 = func_0();
+    printf(""%d\n"", func_1(varb_4));
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	char varb_5[8];
+	struct varb_1 *varb_4,*varb_8,*varb_9;
+	int varb_10;
+	varb_4=(struct varb_1 *)malloc(sizeof(struct varb_1));
+	varb_4->varb_2=NULL;
+	varb_8=varb_4;
+	gets(varb_5);
+	while(strcmp(varb_5,""#"")!=0)
+	{
+		varb_9=(struct varb_1 *)malloc(sizeof(struct varb_1));
+		strcpy(varb_8->varb_0,varb_5);
+		varb_8->varb_2=varb_9;
+		varb_8=varb_9;
+		gets(varb_5);
+	}
+	varb_8->varb_2=NULL;
+	return varb_4;
+}
+int func_1( struct varb_1 *varb_4 )
+{
+ struct varb_1 *varb_5,*varb_8;
+int varb_14=0;
+  while(varb_5!=NULL)
+{
+if(varb_5->varb_0[1]==0&&varb_5->varb_0[2]==2) 
+varb_14++;
+varb_8->varb_2=varb_5->varb_2;
+varb_5=varb_8->varb_2;
+}
+return varb_14;
+}",39
+2,2c9f30a56ef37e1f016f32e53d466413,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct ListNode {
+    char code[8];
+    struct ListNode *next;
+};
+
+struct ListNode *createlist(); /*裁判实现，细节不表*/
+int countcs( struct ListNode *head );
+
+int main()
+{
+    struct ListNode  *head;
+
+    head = createlist();
+    printf(""%d\n"", countcs(head));
+	
+    return 0;
+}
+
+struct ListNode *createlist()
+{
+	char temp[8];
+	struct ListNode *head,*p,*q;
+	int num;
+	head=(struct ListNode *)malloc(sizeof(struct ListNode));
+	head->next=NULL;
+	p=head;
+	gets(temp);
+	while(strcmp(temp,""#"")!=0)
+	{
+		q=(struct ListNode *)malloc(sizeof(struct ListNode));
+		strcpy(p->code,temp);
+		p->next=q;
+		p=q;
+		gets(temp);
+	}
+	p->next=NULL;
+	return head;
+}
+int countcs( struct ListNode *head )
+{
+    int num = 0;
+    struct ListNode *p = head;
+    while(p != NULL)
+{
+    if(p->code[1] == '0' && p->code[2] == '2')
+    num++;
+    p = p->next;
+}
+return num;
+}
+
+",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct varb_1 {
+    char varb_0[8];
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0(); 
+int func_1( struct varb_1 *varb_4 );
+int main()
+{
+    struct varb_1  *varb_4;
+    varb_4 = func_0();
+    printf(""%d\n"", func_1(varb_4));
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	char varb_5[8];
+	struct varb_1 *varb_4,*varb_8,*varb_9;
+	int varb_10;
+	varb_4=(struct varb_1 *)malloc(sizeof(struct varb_1));
+	varb_4->varb_2=NULL;
+	varb_8=varb_4;
+	gets(varb_5);
+	while(strcmp(varb_5,""#"")!=0)
+	{
+		varb_9=(struct varb_1 *)malloc(sizeof(struct varb_1));
+		strcpy(varb_8->varb_0,varb_5);
+		varb_8->varb_2=varb_9;
+		varb_8=varb_9;
+		gets(varb_5);
+	}
+	varb_8->varb_2=NULL;
+	return varb_4;
+}
+int func_1( struct varb_1 *varb_4 )
+{
+    int varb_10 = 0;
+    struct varb_1 *varb_8 = varb_4;
+    while(varb_8 != NULL)
+{
+    if(varb_8->varb_0[1] == '0' && varb_8->varb_0[2] == '2')
+    varb_10++;
+    varb_8 = varb_8->varb_2;
+}
+return varb_10;
+}
+",19
+3,2c9f30a56ef37e1f016f32e53d466413,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct ListNode {
+    char code[8];
+    struct ListNode *next;
+};
+
+struct ListNode *createlist(); 
+int countcs( struct ListNode *head );
+
+int main()
+{
+    struct ListNode  *head;
+
+    head = createlist();
+    printf(""%d\n"", countcs(head));
+	
+    return 0;
+}
+
+struct ListNode *createlist()
+{
+	char temp[8];
+	struct ListNode *head,*p,*q;
+	int num;
+	head=(struct ListNode *)malloc(sizeof(struct ListNode));
+	head->next=NULL;
+	p=head;
+	gets(temp);
+	while(strcmp(temp,""#"")!=0)
+	{
+		q=(struct ListNode *)malloc(sizeof(struct ListNode));
+		strcpy(p->code,temp);
+		p->next=q;
+		p=q;
+		gets(temp);
+	}
+	p->next=NULL;
+	return head;
+}
+int countcs( struct ListNode *head )
+{
+ struct ListNode *temp,*p;
+int countcs=3;
+  while(temp!=NULL)
+{
+if(temp->code[1]==0&&temp->code[2]==2) 
+countcs++;
+p->next=temp->next;
+temp=p->next;
+}
+return countcs;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct varb_1 {
+    char varb_0[8];
+    struct varb_1 *varb_2;
+};
+struct varb_1 *func_0(); 
+int func_1( struct varb_1 *varb_4 );
+int main()
+{
+    struct varb_1  *varb_4;
+    varb_4 = func_0();
+    printf(""%d\n"", func_1(varb_4));
+    return 0;
+}
+struct varb_1 *func_0()
+{
+	char varb_5[8];
+	struct varb_1 *varb_4,*varb_8,*varb_9;
+	int varb_10;
+	varb_4=(struct varb_1 *)malloc(sizeof(struct varb_1));
+	varb_4->varb_2=NULL;
+	varb_8=varb_4;
+	gets(varb_5);
+	while(strcmp(varb_5,""#"")!=0)
+	{
+		varb_9=(struct varb_1 *)malloc(sizeof(struct varb_1));
+		strcpy(varb_8->varb_0,varb_5);
+		varb_8->varb_2=varb_9;
+		varb_8=varb_9;
+		gets(varb_5);
+	}
+	varb_8->varb_2=NULL;
+	return varb_4;
+}
+int func_1( struct varb_1 *varb_4 )
+{
+ struct varb_1 *varb_5,*varb_8;
+int varb_14=3;
+  while(varb_5!=NULL)
+{
+if(varb_5->varb_0[1]==0&&varb_5->varb_0[2]==2) 
+varb_14++;
+varb_8->varb_2=varb_5->varb_2;
+varb_5=varb_8->varb_2;
+}
+return varb_14;
+}",39

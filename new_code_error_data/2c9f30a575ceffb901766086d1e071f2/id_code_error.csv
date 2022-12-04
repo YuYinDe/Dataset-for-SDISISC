@@ -1,0 +1,2877 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart ){
+	*intpart = (int)x;
+	*fracpart = x- (*intpart);	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0-(*varb_1);	
+}",9
+1,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart)
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2)
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}",9
+2,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+/* 你的代码将被嵌在这里 */
+void splitfloat(float x, int *intpart,float *fracpart) 
+{
+	*intpart=x/1;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0(float varb_0, int *varb_1,float *varb_2) 
+{
+	*varb_1=varb_0/1;
+	*varb_2=varb_0-*varb_1;
+}",9
+3,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+}
+void splitfloat( float x, int *intpart, float *fracpart ){
+	*intpart = (int)x;
+  *fracpart = x- (int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+  *varb_2 = varb_0-(int)varb_0;
+}",9
+4,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x);
+     splitfloat(x, &intpart, &fracpart);
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart);
+     return 0;
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+  *intpart=(int)x;
+  *fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0);
+     func_0(varb_0, &varb_1, &varb_2);
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2);
+     return 0;
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+  *varb_1=(int)varb_0;
+  *varb_2=varb_0-(int)varb_0;
+}",9
+5,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+}
+void splitfloat( float x, int *intpart, float *fracpart ){
+ *intpart=(int)x;
+ *fracpart=x-*intpart; 
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+ *varb_1=(int)varb_0;
+ *varb_2=varb_0-*varb_1; 
+}",9
+6,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+    int m;
+    float n;
+    m=x/1;
+    n=x-m;
+    *intpart=m;
+    *fracpart=n;
+}
+    ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+    int varb_11;
+    float varb_12;
+    varb_11=varb_0/1;
+    varb_12=varb_0-varb_11;
+    *varb_1=varb_11;
+    *varb_2=varb_12;
+}
+",9
+7,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+ 
+void splitfloat( float x, int *intpart, float *fracpart );
+ 
+int main()
+{
+    float x, fracpart;
+    int intpart;
+ 
+    scanf(""%f"", &x);
+    splitfloat(x, &intpart, &fracpart);
+    printf(""The integer part is %d\n"", intpart);
+    printf(""The fractional part is %g\n"", fracpart);
+ 
+    return 0;
+}
+void splitfloat( float x, int *intpart, float *fracpart ) {
+	*intpart = (int)x;
+	*fracpart = x - (int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 );
+int main()
+{
+    float varb_0, varb_2;
+    int varb_1;
+    scanf(""%f"", &varb_0);
+    func_0(varb_0, &varb_1, &varb_2);
+    printf(""The integer part is %d\n"", varb_1);
+    printf(""The fractional part is %g\n"", varb_2);
+    return 0;
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 ) {
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0 -(int)varb_0;
+}",9
+8,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+ {
+ 	*intpart=x/1;
+ 	*fracpart=x-*intpart;
+ }",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+ {
+ 	*varb_1=varb_0/1;
+ 	*varb_2=varb_0-*varb_1;
+ }",9
+9,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+
+void splitfloat( float x, int *intpart, float *fracpart ){
+	*intpart = (int)x;
+	*fracpart = x- (*intpart);	
+}
+ 
+ ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0-(*varb_1);	
+}
+",9
+10,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart );
+int main()
+{
+     float x,fracpart;
+     int intpart;
+     scanf(""%f"",&x);
+     splitfloat(x, &intpart, &fracpart);
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart);
+     return 0;
+}
+
+void splitfloat( float x, int *intpart, float *fracpart)
+{
+  *intpart=(int)x;
+  *fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 );
+int main()
+{
+     float varb_0,varb_2;
+     int varb_1;
+     scanf(""%f"",&varb_0);
+     func_0(varb_0, &varb_1, &varb_2);
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2);
+     return 0;
+}
+void func_0( float varb_0, int *varb_1, float *varb_2)
+{
+  *varb_1=(int)varb_0;
+  *varb_2=varb_0-(int)varb_0;
+}",9
+11,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-(int)varb_0;
+}",9
+12,2c9f30a575ceffb901766086d1e071f2,"#include<stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+  *intpart=x/1;
+  *fracpart=x-*intpart;
+}",0.0,"#include<stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+  *varb_1=varb_0/1;
+  *varb_2=varb_0-*varb_1;
+}",9
+13,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=x;
+	*fracpart=x-*intpart;
+	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=varb_0;
+	*varb_2=varb_0-*varb_1;
+}",9
+14,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+}
+
+void splitfloat( float x, int *intpart, float *fracpart )
+
+{
+
+*intpart=x;
+
+*fracpart=x-*intpart;
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=varb_0;
+*varb_2=varb_0-*varb_1;
+}",9
+15,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""%d\n"", intpart);
+     printf(""%g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=x;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""%d\n"", varb_1);
+     printf(""%g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=varb_0;
+	*varb_2=varb_0-*varb_1;
+}",15
+16,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+  
+   *intpart=(int)x;
+   *fracpart=x-*intpart;
+}
+
+  
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+   *varb_1=(int)varb_0;
+   *varb_2=varb_0-*varb_1;
+}
+",9
+17,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart)
+{  
+     *intpart=x/1;
+     *fracpart=x-*intpart;
+     
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2)
+{  
+     *varb_1=varb_0/1;
+     *varb_2=varb_0-*varb_1;
+}",9
+18,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart ) {
+	*intpart = (int)x;
+	*fracpart = x - (int)x;
+}
+ ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ) {
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0 -(int)varb_0;
+}
+",9
+19,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=x;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=varb_0;
+	*varb_2=varb_0-*varb_1;
+}",9
+20,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat(float x,int *intpart,float *fracpart)
+{
+   int k;
+     k=x;
+     if(k<x)
+     *intpart=k;
+     else
+     *intpart=k-1;
+     *fracpart=x-*intpart;
+}
+     ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0(float varb_0,int *varb_1,float *varb_2)
+{
+   int varb_11;
+     varb_11=varb_0;
+     if(varb_11<varb_0)
+     *varb_1=varb_11;
+     else
+     *varb_1=varb_11-1;
+     *varb_2=varb_0-*varb_1;
+}
+",9
+21,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""%d\n"", intpart);
+
+     printf(""%f\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart = (int)x;
+	*fracpart = x - *intpart;
+
+}
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""%d\n"", varb_1);
+     printf(""%f\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0 - *varb_1;
+}
+",10
+22,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=x;
+*fracpart=x-*intpart;
+
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=varb_0;
+*varb_2=varb_0-*varb_1;
+}",9
+23,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-*intpart;
+	
+	
+ } ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-*varb_1;
+ } ",9
+24,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+}
+void splitfloat( float x, int *intpart, float *fracpart ){
+
+ *intpart=(int)x;
+
+ *fracpart=x-*intpart; 
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+ *varb_1=(int)varb_0;
+ *varb_2=varb_0-*varb_1; 
+}",9
+25,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart);
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart ){
+	*intpart = (int)x;
+	*fracpart = x- (*intpart);	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2);
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0-(*varb_1);	
+}",9
+26,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=x/1;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=varb_0/1;
+	*varb_2=varb_0-*varb_1;
+}",9
+27,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+}
+void splitfloat( float x, int *intpart, float *fracpart ){
+	*intpart = (int)x;
+  *fracpart = x- (*intpart);
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+  *varb_2 = varb_0-(*varb_1);
+}",9
+28,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x,int *z,float *xs)
+{
+	*z=(int)x;
+	*xs=x-*z;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0,int *varb_9,float *varb_10)
+{
+	*varb_9=(int)varb_0;
+	*varb_10=varb_0-*varb_9;
+}",9
+29,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=(int)x;
+*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-*varb_1;
+}",9
+30,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}",9
+31,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	int n;
+	n=x;
+	*intpart=n;
+	*fracpart=x-n;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	int varb_11;
+	varb_11=varb_0;
+	*varb_1=varb_11;
+	*varb_2=varb_0-varb_11;
+}",9
+32,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-*varb_1;
+}",9
+33,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart , float *fracpart )
+{
+	*intpart=x;
+	*fracpart=x-(*intpart);
+	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1 , float *varb_2 )
+{
+	*varb_1=varb_0;
+	*varb_2=varb_0-(*varb_1);
+}",9
+34,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+ 
+/* 你的代码将被嵌在这里 */  
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart = (int)x;
+*fracpart = x - (int)x;
+}
+
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1 =(int)varb_0;
+*varb_2 = varb_0 -(int)varb_0;
+}
+",9
+35,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	int a,b;
+	a=(int)x;
+	b=x-a;
+	*intpart=a;
+	*fracpart=(float)b;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	int varb_11,varb_12;
+	varb_11=(int)varb_0;
+	varb_12=varb_0-varb_11;
+	*varb_1=varb_11;
+	*varb_2=(float)varb_12;
+}",9
+36,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=x;
+	*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=varb_0;
+	*varb_2=varb_0-*varb_1;
+}",9
+37,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+int z;
+double xiao;
+z=x*10/10;
+xiao=x-z;
+*intpart=z;
+*fracpart=xiao;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+int varb_11;
+double varb_12;
+varb_11=varb_0*10/10;
+varb_12=varb_0-varb_11;
+*varb_1=varb_11;
+*varb_2=varb_12;
+}",9
+38,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	int a,b;
+	a=(int)x;
+	*intpart=a;
+	*fracpart=x-(*intpart);
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	int varb_11,varb_12;
+	varb_11=(int)varb_0;
+	*varb_1=varb_11;
+	*varb_2=varb_0-(*varb_1);
+}",9
+39,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int * intpart, float * fracpart)
+{
+    *intpart = (int)(x);
+    *fracpart = x - *intpart;
+}
+
+ ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int * varb_1, float * varb_2)
+{
+    *varb_1 =(int)(varb_0);
+    *varb_2 = varb_0 - *varb_1;
+}
+",9
+40,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart = (int)x;
+	*fracpart = x - *intpart;
+
+}
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0 - *varb_1;
+}
+",9
+41,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+}
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}
+",9
+42,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart ){
+
+	*intpart = (int)x;
+
+	*fracpart = x- (*intpart);	
+    }",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0-(*varb_1);	
+    }",9
+43,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+	float x, fracpart;
+	int intpart;
+	scanf(""%f"", &x); 
+	splitfloat(x, &intpart, &fracpart); 
+	printf(""The integer part is %d\n"", intpart);
+	printf(""The fractional part is %g\n"", fracpart); 
+	return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-*intpart;
+	
+	
+ } ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+	float varb_0, varb_2;
+	int varb_1;
+	scanf(""%f"", &varb_0); 
+	func_0(varb_0, &varb_1, &varb_2); 
+	printf(""The integer part is %d\n"", varb_1);
+	printf(""The fractional part is %g\n"", varb_2); 
+	return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-*varb_1;
+ } ",5
+44,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x,int *intpart, float *fracpart)
+{
+ *intpart=(int)x;
+
+ *fracpart=x-*intpart;
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0,int *varb_1, float *varb_2)
+{
+ *varb_1=(int)varb_0;
+ *varb_2=varb_0-*varb_1;
+}",9
+45,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x,int *intpart, float *fracpart)
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0,int *varb_1, float *varb_2)
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}",9
+46,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+{
+
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{  *intpart=(int)x;
+   *fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{  *varb_1=(int)varb_0;
+   *varb_2=varb_0-*varb_1;
+}",9
+47,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-(int)varb_0;
+}",9
+48,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+   float c;
+   c=x-*intpart;
+   fracpart=&c;
+ 
+   
+}
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+   float varb_11;
+   varb_11=varb_0-*varb_1;
+   varb_2=&varb_11;
+}
+",9
+49,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat(float x,int *intpart,float *fracpart)
+{
+     *intpart=(int)x;
+     *fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0(float varb_0,int *varb_1,float *varb_2)
+{
+     *varb_1=(int)varb_0;
+     *varb_2=varb_0-(int)varb_0;
+}",9
+50,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	int m;
+	m=(int)x/1;
+	*intpart=m;
+	*fracpart=(float)x-m;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	int varb_11;
+	varb_11=(int)varb_0/1;
+	*varb_1=varb_11;
+	*varb_2=(float)varb_0-varb_11;
+}",9
+51,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=x/1;
+*fracpart=x-*intpart;
+}
+",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=varb_0/1;
+*varb_2=varb_0-*varb_1;
+}
+",9
+52,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+{
+
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+   
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+}",9
+53,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=x/1;
+	*fracpart=x-*intpart;
+	
+	
+	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=varb_0/1;
+	*varb_2=varb_0-*varb_1;
+}",9
+54,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+#include<math.h>
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=floor(x);
+*fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+#include<math.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=floor(varb_0);
+*varb_2=varb_0-*varb_1;
+}",10
+55,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+ int a;
+ a=x/1;
+ *intpart=a;
+ *fracpart=x-a;
+ }",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+ int varb_11;
+ varb_11=varb_0/1;
+ *varb_1=varb_11;
+ *varb_2=varb_0-varb_11;
+ }",9
+56,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+ void splitfloat( float x, int *intpart, float *fracpart )
+ {
+ *intpart=(int)x;
+ *fracpart=x-*intpart;
+ }",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+ void func_0( float varb_0, int *varb_1, float *varb_2 )
+ {
+ *varb_1=(int)varb_0;
+ *varb_2=varb_0-*varb_1;
+ }",9
+57,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+    *intpart=(int)x;
+    *fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+    *varb_1=(int)varb_0;
+    *varb_2=varb_0-*varb_1;
+}",9
+58,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+}
+void splitfloat( float x,int *intpart, float *fracpart)
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0,int *varb_1, float *varb_2)
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}",9
+59,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+*intpart=(int) x;
+*fracpart=x-*intpart;
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+*varb_1=(int) varb_0;
+*varb_2=varb_0-*varb_1;
+}",9
+60,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+   *intpart=x;
+   *fracpart=x-(*intpart);
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+   *varb_1=varb_0;
+   *varb_2=varb_0-(*varb_1);
+}",9
+61,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+}
+void splitfloat( float x,int *intpart, float *fracpart)
+{
+*intpart=(int)x;
+*fracpart=x-(int)x;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+}
+void func_0( float varb_0,int *varb_1, float *varb_2)
+{
+*varb_1=(int)varb_0;
+*varb_2=varb_0-(int)varb_0;
+}",9
+62,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart = (int)x;
+	*fracpart = x- (*intpart);	
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1 =(int)varb_0;
+	*varb_2 = varb_0-(*varb_1);	
+}",9
+63,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h> 
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %g\n"", fracpart); 
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+	*intpart=(int)x;
+	*fracpart=x-*intpart;
+	
+	
+ } ",0.0,"#include <stdio.h> 
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+	*varb_1=(int)varb_0;
+	*varb_2=varb_0-*varb_1;
+ } ",9
+64,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main()
+{
+     float x, fracpart;
+     int intpart;
+     scanf(""%f"", &x); 
+     splitfloat(x, &intpart, &fracpart); 
+     printf(""The integer part is %d\n"", intpart);
+     printf(""The fractional part is %\n"", fracpart); 
+     return 0; 
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+   int a;
+   float b;
+   a=(int)x;
+   b=x-a;
+	*intpart=a;
+	*fracpart=b;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main()
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+   int varb_11;
+   float varb_12;
+   varb_11=(int)varb_0;
+   varb_12=varb_0-varb_11;
+	*varb_1=varb_11;
+	*varb_2=varb_12;
+}",9
+65,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+    *intpart=(int)x;
+    *fracpart=x-*intpart;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+    *varb_1=(int)varb_0;
+    *varb_2=varb_0-*varb_1;
+}",9
+66,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+void splitfloat( float x, int *intpart, float *fracpart ); 
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+    int m,n;
+    m=x/1;
+    n=x-m;
+    *intpart=m;
+    *fracpart=n;
+}
+    ",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+    int varb_11,varb_12;
+    varb_11=varb_0/1;
+    varb_12=varb_0-varb_11;
+    *varb_1=varb_11;
+    *varb_2=varb_12;
+}
+",9
+67,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+void splitfloat( float x, int *intpart, float *fracpart ){
+int a;
+a=x;
+*intpart=a;
+*fracpart=x-a;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 ){
+int varb_11;
+varb_11=varb_0;
+*varb_1=varb_11;
+*varb_2=varb_0-varb_11;
+}",9
+68,2c9f30a575ceffb901766086d1e071f2,"#include <stdio.h>
+
+
+
+void splitfloat( float x, int *intpart, float *fracpart ); 
+
+int main() 
+
+{
+
+     float x, fracpart;
+
+     int intpart;
+
+     scanf(""%f"", &x); 
+
+     splitfloat(x, &intpart, &fracpart); 
+
+     printf(""The integer part is %d\n"", intpart);
+
+     printf(""The fractional part is %g\n"", fracpart); 
+
+     return 0; 
+
+} 
+
+void splitfloat( float x, int *intpart, float *fracpart )
+{
+
+    *intpart=(int)x;
+    *fracpart=x-*intpart;
+
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, int *varb_1, float *varb_2 ); 
+int main() 
+{
+     float varb_0, varb_2;
+     int varb_1;
+     scanf(""%f"", &varb_0); 
+     func_0(varb_0, &varb_1, &varb_2); 
+     printf(""The integer part is %d\n"", varb_1);
+     printf(""The fractional part is %g\n"", varb_2); 
+     return 0; 
+} 
+void func_0( float varb_0, int *varb_1, float *varb_2 )
+{
+    *varb_1=(int)varb_0;
+    *varb_2=varb_0-*varb_1;
+}",9

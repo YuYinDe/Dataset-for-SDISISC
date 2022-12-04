@@ -1,0 +1,45 @@
+,id,code,is_true,errorline
+0,2c911d616dea44ae016e0c7cf19348ee,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0, varb_1, varb_2, varb_3;
+	float varb_4, varb_5;
+	varb_5 = 0;
+	varb_3 = 1;
+	scanf(""%d"", &varb_2);
+	for(varb_0 = 1; varb_0 <= varb_2; ++varb_0)
+	{
+		for(varb_1 = 1; varb_1 <= varb_0; ++varb_1)
+		{
+			varb_3 = varb_3 * varb_1;
+		}
+		varb_4 = varb_3;
+		varb_3 = 1;
+		varb_5 = varb_5 + 1 /(varb_4 * pow(-1, varb_1 + 1));
+	}
+	printf(""%.6f"", varb_5);
+	return 0;
+}",0.0,18
+1,2c911d616dea44ae016e0c7cf19348ee,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0, varb_1, varb_2, varb_3;
+	float varb_4, varb_5;
+	varb_5 = 0;
+	varb_3 = 1;
+	scanf(""%d"", &varb_2);
+	for(varb_0 = 1; varb_0 <= varb_2; ++varb_0)
+	{
+		for(varb_1 = 1; varb_1 <= varb_0; ++varb_1)
+		{
+			varb_3 = varb_3 * varb_1;
+		}
+		varb_4 = varb_3;
+		varb_3 = 1;
+		varb_5 = varb_5 + 1 /(varb_4 * pow(1, varb_1 + 1));
+	}
+	printf(""%.6f"", varb_5);
+	return 0;
+}",0.0,18

@@ -1,0 +1,1140 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int f(int m,int n);
+int main()
+{
+	int m,n,z;
+	scanf(""%d"",&m);
+	for(z=1;z<=m;z++)
+	{
+		for (n=1;n<=z;n++) 
+		{
+			if(n<z)
+			printf(""%d "",f(z,n));
+			else
+			printf(""%d"",f(z,n));
+		}
+		printf(""\n"");
+	}
+}
+
+int f(int m,int n)
+{
+	int sum;
+	if(n==1||n==m||m==1)
+	sum=1;
+	else
+		sum=f(m-1,n-1)+f(m-1,n-1);
+	return sum;
+ } 
+
+",0.0,"#include <stdio.h>
+int func_0(int varb_0,int varb_1);
+int main()
+{
+	int varb_0,varb_1,varb_4;
+	scanf(""%d"",&varb_0);
+	for(varb_4=1;varb_4<=varb_0;varb_4++)
+	{
+		for(varb_1=1;varb_1<=varb_4;varb_1++) 
+		{
+			if(varb_1<varb_4)
+			printf(""%d "",func_0(varb_4,varb_1));
+			else
+			printf(""%d"",func_0(varb_4,varb_1));
+		}
+		printf(""\n"");
+	}
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_7;
+	if(varb_1==1||varb_1==varb_0||varb_0==1)
+	varb_7=1;
+	else
+		varb_7=func_0(varb_0-1,varb_1-1)+func_0(varb_0-1,varb_1-1);
+	return varb_7;
+ } 
+",25
+1,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+main()
+{ int i,j,n=0,a[17][17]={0};
+while(n<1 || n>16)
+{ printf(""请输入杨辉三角形的行数:"");
+scanf(""%d"",&n);
+}
+for(i=0;i<n;i++)
+a[i][0]=1; 
+for(i=1;i<n;i++)
+for(j=1;j<=i;j++)
+a[i][j]=a[i-1][j-1]+a[i-1][j];
+for(i=0;i<n;i++) 
+{ for(j=0;j<=i;j++)
+printf(""%5d"",a[i][j]);
+printf(""\n"");
+}
+}",0.0,"#include <stdio.h>
+main()
+{ int varb_0,varb_1,varb_2=0,varb_3[17][17]={0};
+while(varb_2<1 || varb_2>16)
+{ printf(""请输入杨辉三角形的行数:"");
+scanf(""%d"",&varb_2);
+}
+for(varb_0=0;varb_0<varb_2;varb_0++)
+varb_3[varb_0][0]=1; 
+for(varb_0=1;varb_0<varb_2;varb_0++)
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+varb_3[varb_0][varb_1]=varb_3[varb_0-1][varb_1-1]+varb_3[varb_0-1][varb_1];
+for(varb_0=0;varb_0<varb_2;varb_0++) 
+{ for(varb_1=0;varb_1<=varb_0;varb_1++)
+printf(""%5d"",varb_3[varb_0][varb_1]);
+printf(""\n"");
+}
+}",5
+2,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int f(int m,int n);
+int main()
+{
+	int m,n,z;
+	scanf(""%d"",&m);
+	for(z=1;z<=m;z++)
+	{
+		for (n=1;n<=z;n++) 
+		{
+			if(n<z)
+			printf(""%d "",f(z,n));
+			else
+			printf(""%d"",f(z,n));
+		}
+		printf(""\n"");
+	}
+}
+
+int f(int m,int n)
+{
+	int sum;
+	if(n==1||n==m||m==1)
+	sum=1;
+	else
+	sum=f(m-1,n-1)+f(m-1,n-2);
+	return sum;
+ } 
+
+",0.0,"#include <stdio.h>
+int func_0(int varb_0,int varb_1);
+int main()
+{
+	int varb_0,varb_1,varb_4;
+	scanf(""%d"",&varb_0);
+	for(varb_4=1;varb_4<=varb_0;varb_4++)
+	{
+		for(varb_1=1;varb_1<=varb_4;varb_1++) 
+		{
+			if(varb_1<varb_4)
+			printf(""%d "",func_0(varb_4,varb_1));
+			else
+			printf(""%d"",func_0(varb_4,varb_1));
+		}
+		printf(""\n"");
+	}
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_7;
+	if(varb_1==1||varb_1==varb_0||varb_0==1)
+	varb_7=1;
+	else
+	varb_7=func_0(varb_0-1,varb_1-1)+func_0(varb_0-1,varb_1-2);
+	return varb_7;
+ } 
+",25
+3,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+int yh(int ,int);
+int main()
+{
+	int a,i,j;
+	scanf(""%d"",&a);
+	for(i=1;i<=a;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf(""%d"",yh(i,j));
+			if(j!=i)
+			printf("" "");
+			else
+			printf(""\n"");
+		}
+	}
+}
+int yh(int x,int y)
+{
+	if(y==1||x==y)
+	return 1;
+	else
+	return yh(x-1,y-1)+yh(x,y-1);
+}",0.0,"#include<stdio.h>
+int func_0(int ,int);
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	scanf(""%d"",&varb_0);
+	for(varb_1=1;varb_1<=varb_0;varb_1++)
+	{
+		for(varb_2=1;varb_2<=varb_1;varb_2++)
+		{
+			printf(""%d"",func_0(varb_1,varb_2));
+			if(varb_2!=varb_1)
+			printf("" "");
+			else
+			printf(""\n"");
+		}
+	}
+}
+int func_0(int varb_3,int varb_4)
+{
+	if(varb_4==1||varb_3==varb_4)
+	return 1;
+	else
+	return func_0(varb_3-1,varb_4-1)+func_0(varb_3,varb_4-1);
+}",12
+4,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(r)*func2(m-2));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_1)*func_1(varb_2-2));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",23
+5,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+int y(int,int);
+int main()
+{
+    int n,i,j;
+    scanf(""%d"",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf(""%d"",y(i,j));
+            if(j==i)printf(""\n"");
+}
+}
+}
+
+int y(int m,int n)
+{
+    if(m==1||m==n)return 1;
+    else return y(m-1,n)+y(m-1,n-1);
+}
+
+
+
+",0.0,"#include<stdio.h>
+int func_0(int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_1=1;varb_1<=varb_0;varb_1++)
+    {
+        for(varb_2=1;varb_2<=varb_1;varb_2++)
+        {
+            printf(""%d"",func_0(varb_1,varb_2));
+            if(varb_2==varb_1)printf(""\n"");
+}
+}
+}
+int func_0(int varb_3,int varb_0)
+{
+    if(varb_3==1||varb_3==varb_0)return 1;
+    else return func_0(varb_3-1,varb_0)+func_0(varb_3-1,varb_0-1);
+}
+",18
+6,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h> 
+int main() 
+{ 
+    int i,j; 
+    int n;//自定义行数，可灵活输出杨辉三角 
+    scanf(""%d"",&n); 
+      printf(""%d"",n); 
+    int a[n][n]; 
+    printf(""\n""); 
+    for(i=0;i<n;i++)  
+    { 
+        a[i][0]=1; 
+        a[i][i]=1; 
+    } 
+    for(i=2;i<n;i++) 
+        for(j=1;j<i;j++) 
+            a[i][j]=a[i-1][j-1]+a[i-1][j]; 
+    for(i=0;i<n;i++)  
+    { 
+        for(j=0;j<=i;j++) 
+            printf(""%5d"",a[i][j]); 
+        printf(""\n""); 
+    } 
+}",0.0,"#include <stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1; 
+    int varb_2;
+    scanf(""%d"",&varb_2); 
+      printf(""%d"",varb_2); 
+    int varb_3[varb_2][varb_2]; 
+    printf(""\n""); 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        varb_3[varb_0][0]=1; 
+        varb_3[varb_0][varb_0]=1; 
+    } 
+    for(varb_0=2;varb_0<varb_2;varb_0++) 
+        for(varb_1=1;varb_1<varb_0;varb_1++) 
+            varb_3[varb_0][varb_1]=varb_3[varb_0-1][varb_1-1]+varb_3[varb_0-1][varb_1]; 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        for(varb_1=0;varb_1<=varb_0;varb_1++) 
+            printf(""%5d"",varb_3[varb_0][varb_1]); 
+        printf(""\n""); 
+    } 
+}",4
+7,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+int y(int,int);
+int main()
+{
+    int n,i,j;
+    scanf(""%d"",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf(""%d"",y(i,j));
+            if(j==i)printf(""\n"");
+}
+}
+}
+
+int y(int i,int j)
+{
+    if(i==1||i==j)return 1;
+    else return y(i-1,j)+y(i-1,j-1);
+}
+
+
+
+",0.0,"#include<stdio.h>
+int func_0(int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_1=1;varb_1<=varb_0;varb_1++)
+    {
+        for(varb_2=1;varb_2<=varb_1;varb_2++)
+        {
+            printf(""%d"",func_0(varb_1,varb_2));
+            if(varb_2==varb_1)printf(""\n"");
+}
+}
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==1||varb_1==varb_2)return 1;
+    else return func_0(varb_1-1,varb_2)+func_0(varb_1-1,varb_2-1);
+}
+",18
+8,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<=m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(m-r));
+}
+int func2(int x)
+{
+    if(x==1)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<=varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_2-varb_1));
+}
+int func_1(int x)
+{
+    if(x==1)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",10
+9,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int fm(int,int);
+int main()
+{
+    int m,n,z;
+	scanf(""%d"",&n);
+	for(z=1;z<=n;z++)
+	{
+		for (m=1;m<=z;m++) 
+		{
+          if(m<z)
+			printf(""%d "",fm(z,m));
+          else
+            printf(""%d"",fm(z,m));
+		}
+		printf(""\n"");
+	}
+}
+int fm(int m,int n)
+{
+	if(n==1||n==m||m==1)
+      return 1;
+	else
+      return(fm(n-1,m-1)+fm(n-1,m));
+ } ",0.0,"#include <stdio.h>
+int func_0(int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+	scanf(""%d"",&varb_1);
+	for(varb_2=1;varb_2<=varb_1;varb_2++)
+	{
+		for(varb_0=1;varb_0<=varb_2;varb_0++) 
+		{
+          if(varb_0<varb_2)
+			printf(""%d "",func_0(varb_2,varb_0));
+          else
+            printf(""%d"",func_0(varb_2,varb_0));
+		}
+		printf(""\n"");
+	}
+}
+int func_0(int varb_0,int varb_1)
+{
+	if(varb_1==1||varb_1==varb_0||varb_0==1)
+      return 1;
+	else
+      return(func_0(varb_1-1,varb_0-1)+func_0(varb_1-1,varb_0));
+ } ",19
+10,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+int yhsj(int ,int);
+int main()
+{
+	int n,i,j;
+	scanf(""%d"",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf(""%d"",yhsj(i,j));
+			if(j!=i)
+			printf("" "");
+			else
+			printf(""\n"");
+		}
+	}
+}
+int yhsj(int x,int y)
+{
+	if(y==1||x==y)
+	return 1;
+	else
+	return yhsj(x-1,y-1)+yhsj(x,y-1);
+}",0.0,"#include<stdio.h>
+int func_0(int ,int);
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	scanf(""%d"",&varb_0);
+	for(varb_1=1;varb_1<=varb_0;varb_1++)
+	{
+		for(varb_2=1;varb_2<=varb_1;varb_2++)
+		{
+			printf(""%d"",func_0(varb_1,varb_2));
+			if(varb_2!=varb_1)
+			printf("" "");
+			else
+			printf(""\n"");
+		}
+	}
+}
+int func_0(int varb_3,int varb_4)
+{
+	if(varb_4==1||varb_3==varb_4)
+	return 1;
+	else
+	return func_0(varb_3-1,varb_4-1)+func_0(varb_3,varb_4-1);
+}",12
+11,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/(func2(r)*func2(m-2)));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/(func_1(varb_1)*func_1(varb_2-2)));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",23
+12,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h> 
+int main() 
+{ 
+    int i,j; 
+    int n;//自定义行数，可灵活输出杨辉三角 
+    printf(""请输入你想输出的行数：\n""); 
+    scanf(""%d"",&n); 
+    int a[n][n]; 
+    printf(""\n""); 
+    for(i=0;i<n;i++)  
+    { 
+        a[i][0]=1; 
+        a[i][i]=1; 
+    } 
+    for(i=2;i<n;i++) 
+        for(j=1;j<i;j++) 
+            a[i][j]=a[i-1][j-1]+a[i-1][j]; 
+    for(i=0;i<n;i++)  
+    { 
+        for(j=0;j<=i;j++) 
+            printf(""%5d"",a[i][j]); 
+        printf(""\n""); 
+    } 
+}",0.0,"#include <stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1; 
+    int varb_2;
+    printf(""请输入你想输出的行数：\n""); 
+    scanf(""%d"",&varb_2); 
+    int varb_3[varb_2][varb_2]; 
+    printf(""\n""); 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        varb_3[varb_0][0]=1; 
+        varb_3[varb_0][varb_0]=1; 
+    } 
+    for(varb_0=2;varb_0<varb_2;varb_0++) 
+        for(varb_1=1;varb_1<varb_0;varb_1++) 
+            varb_3[varb_0][varb_1]=varb_3[varb_0-1][varb_1-1]+varb_3[varb_0-1][varb_1]; 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        for(varb_1=0;varb_1<=varb_0;varb_1++) 
+            printf(""%5d"",varb_3[varb_0][varb_1]); 
+        printf(""\n""); 
+    } 
+}",6
+13,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(m-1-r));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_2-1-varb_1));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",23
+14,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(r));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_1));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",23
+15,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h> 
+int main() 
+{ 
+    int i,j; 
+    int n;//自定义行数，可灵活输出杨辉三角 
+    scanf(""%d"",&n); 
+      printf(""%d\n"",n); 
+    int a[n][n]; 
+    printf(""\n""); 
+    for(i=0;i<n;i++)  
+    { 
+        a[i][0]=1; 
+        a[i][i]=1; 
+    } 
+    for(i=2;i<n;i++) 
+        for(j=1;j<i;j++) 
+            a[i][j]=a[i-1][j-1]+a[i-1][j]; 
+    for(i=0;i<n;i++)  
+    { 
+        for(j=0;j<=i;j++) 
+            printf(""%5d"",a[i][j]); 
+        printf(""\n""); 
+    } 
+}",0.0,"#include <stdio.h> 
+int main() 
+{ 
+    int varb_0,varb_1; 
+    int varb_2;
+    scanf(""%d"",&varb_2); 
+      printf(""%d\n"",varb_2); 
+    int varb_3[varb_2][varb_2]; 
+    printf(""\n""); 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        varb_3[varb_0][0]=1; 
+        varb_3[varb_0][varb_0]=1; 
+    } 
+    for(varb_0=2;varb_0<varb_2;varb_0++) 
+        for(varb_1=1;varb_1<varb_0;varb_1++) 
+            varb_3[varb_0][varb_1]=varb_3[varb_0-1][varb_1-1]+varb_3[varb_0-1][varb_1]; 
+    for(varb_0=0;varb_0<varb_2;varb_0++)  
+    { 
+        for(varb_1=0;varb_1<=varb_0;varb_1++) 
+            printf(""%5d"",varb_3[varb_0][varb_1]); 
+        printf(""\n""); 
+    } 
+}",4
+16,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<=n;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(m-r));
+}
+int func2(int x)
+{
+    if(x==1)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include<stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<=varb_0;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_2-varb_1));
+}
+int func_1(int x)
+{
+    if(x==1)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",10
+17,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(m-r));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_2-varb_1));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",23
+18,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int f(int m,int n);
+int main()
+{
+	int m,n,z;
+	scanf(""%d"",&m);
+	for(z=1;z<=m;z++)
+	{
+		for (n=1;n<=z;n++) 
+		{
+			if(n<z)
+			printf(""%d "",f(z,n));
+			else
+			printf(""%d"",f(z,n));
+		}
+		printf(""\n"");
+	}
+}
+
+int f(int m,int n)
+{
+	int sum;
+	if(n==1||n==m||m==1)
+	sum=1;
+	else
+	sum=f(m-1,n-1)+f(m-1,n-1);
+	return sum;
+ } 
+
+",0.0,"#include <stdio.h>
+int func_0(int varb_0,int varb_1);
+int main()
+{
+	int varb_0,varb_1,varb_4;
+	scanf(""%d"",&varb_0);
+	for(varb_4=1;varb_4<=varb_0;varb_4++)
+	{
+		for(varb_1=1;varb_1<=varb_4;varb_1++) 
+		{
+			if(varb_1<varb_4)
+			printf(""%d "",func_0(varb_4,varb_1));
+			else
+			printf(""%d"",func_0(varb_4,varb_1));
+		}
+		printf(""\n"");
+	}
+}
+int func_0(int varb_0,int varb_1)
+{
+	int varb_7;
+	if(varb_1==1||varb_1==varb_0||varb_0==1)
+	varb_7=1;
+	else
+	varb_7=func_0(varb_0-1,varb_1-1)+func_0(varb_0-1,varb_1-1);
+	return varb_7;
+ } 
+",25
+19,2c9f30a56e72f8ae016e7974a7130729,"#include <stdio.h>
+int func1(int,int);
+int func2(int);
+int main()
+{
+    int n,r,m;
+    scanf(""%d"",&n);
+   
+    for(m=1;m<=n;m++)
+    {
+        for(r=0;r<=m;r++)
+        {
+            printf(""%d "",func1(r,m));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+
+int func1(int r,int m)
+{
+    if(r==0)
+    return 1;
+    else
+    return (func2(m-1)/func2(m-r));
+}
+int func2(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return (x*func2(x-1));
+}",0.0,"#include <stdio.h>
+int func_0(int,int);
+int func_1(int);
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        for(varb_1=0;varb_1<=varb_2;varb_1++)
+        {
+            printf(""%d "",func_0(varb_1,varb_2));
+        }
+        printf(""\n"");
+    }
+        return 0;
+}
+int func_0(int varb_1,int varb_2)
+{
+    if(varb_1==0)
+    return 1;
+    else
+    return(func_1(varb_2-1)/func_1(varb_2-varb_1));
+}
+int func_1(int x)
+{
+    if(x==0)
+    return 1;
+    else
+    return(x*func_1(x-1));
+}",10
+20,2c9f30a56e72f8ae016e7974a7130729,"#include<stdio.h>
+
+main()
+
+{ int i,j,n=0,a[17][17]={0};
+
+while(n<1 || n>16)
+
+{ printf(""请输入杨辉三角形的行数:"");
+
+scanf(""%d"",&n);
+
+}
+
+for(i=0;i<n;i++)
+
+a[i][0]=1;
+
+for(i=1;i<n;i++)
+
+for(j=1;j<=i;j++)
+
+a[i][j]=a[i-1][j-1]+a[i-1][j];
+
+for(i=0;i<n;i++)
+
+{ for(j=0;j<=i;j++)
+
+printf(""%5d"",a[i][j]);
+
+printf(""\n"");
+
+}
+}",0.0,"#include<stdio.h>
+main()
+{ int varb_0,varb_1,varb_2=0,varb_3[17][17]={0};
+while(varb_2<1 || varb_2>16)
+{ printf(""请输入杨辉三角形的行数:"");
+scanf(""%d"",&varb_2);
+}
+for(varb_0=0;varb_0<varb_2;varb_0++)
+varb_3[varb_0][0]=1;
+for(varb_0=1;varb_0<varb_2;varb_0++)
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+varb_3[varb_0][varb_1]=varb_3[varb_0-1][varb_1-1]+varb_3[varb_0-1][varb_1];
+for(varb_0=0;varb_0<varb_2;varb_0++)
+{ for(varb_1=0;varb_1<=varb_0;varb_1++)
+printf(""%5d"",varb_3[varb_0][varb_1]);
+printf(""\n"");
+}
+}",5

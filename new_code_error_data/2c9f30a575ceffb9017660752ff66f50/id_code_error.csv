@@ -1,0 +1,213 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+
+void sum_diff( float op1, float op2, float *psum, float *pdiff ); 
+
+int main()
+
+{
+
+  float a, b, sum, diff;
+
+  scanf(""%f %f"", &a, &b);
+
+  sum_diff(a, b, &sum, &diff);
+
+  printf(""%.2f\n%.2f"", sum, diff);
+
+  return 0;
+
+}
+void sum_diff( float op1, float op2, float *psum, float *pdiff )
+{
+*psum=op1+op2;
+*pdiff=op1-op2;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+*varb_2=varb_0+varb_1;
+*varb_3=varb_0-varb_1;
+}",13
+1,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void sum_diff( float op1, float op2, float *psum, float *pdiff ); 
+
+int main()
+{
+ float a, b, sum, diff;
+ scanf(""%f %f"", &a, &b);
+ sum_diff(a, b, &sum, &diff);
+ printf(""%.2f\n%.2f"", sum, diff);
+ return 0;
+}
+void sum_diff( float op1, float op2, float *psum, float *pdiff )
+{
+   *psum=op1+op2;
+   *pdiff=op1-op2;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+ float varb_4, varb_5, varb_6, varb_7;
+ scanf(""%f %f"", &varb_4, &varb_5);
+ func_0(varb_4, varb_5, &varb_6, &varb_7);
+ printf(""%.2f\n%.2f"", varb_6, varb_7);
+ return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+   *varb_2=varb_0+varb_1;
+   *varb_3=varb_0-varb_1;
+}",13
+2,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void sum_diff( float op1, float op2, float *psum, float *pdiff ); 
+int main()
+{
+  float a, b, sum, diff;
+  scanf(""%f %f"", &a, &b);
+  sum_diff(a, b, &sum, &diff);
+  printf(""%.2f\n%.2f"", sum, diff);
+
+  return 0;
+}
+void sum_diff( float op1, float op2, float *psum, float *pdiff )
+{
+    *psum=op1+op2;
+    *pdiff=op1-op2;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+    *varb_2=varb_0+varb_1;
+    *varb_3=varb_0-varb_1;
+}",13
+3,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void sum_diff(float op1,float op2,float *psum,float *pdiff); 
+int main()
+{
+  float a,b,sum,diff;
+  scanf(""%f %f"",&a,&b);
+  sum_diff(a,b,&sum,&diff);
+  printf(""%.2f\n%.2f"",sum,diff);
+  return 0;
+}
+void sum_diff(float op1,float op2,float *psum,float *pdiff)
+{
+	*psum=op1+op2;
+	if(op1>op2)
+	*pdiff=op1-op2;
+	else
+	*pdiff=op2-op1;
+}
+ ",0.0,"#include <stdio.h>
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3); 
+int main()
+{
+  float varb_4,varb_5,varb_6,varb_7;
+  scanf(""%f %f"",&varb_4,&varb_5);
+  func_0(varb_4,varb_5,&varb_6,&varb_7);
+  printf(""%.2f\n%.2f"",varb_6,varb_7);
+  return 0;
+}
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3)
+{
+	*varb_2=varb_0+varb_1;
+	if(varb_0>varb_1)
+	*varb_3=varb_0-varb_1;
+	else
+	*varb_3=varb_1-varb_0;
+}
+",14
+4,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+
+void sum_diff( float op1, float op2, float *psum, float *pdiff ); 
+
+int main()
+
+{
+
+  float a, b, sum, diff;
+
+  scanf(""%f %f"", &a, &b);
+
+  sum_diff(a, b, &sum, &diff);
+
+  printf(""%.2f\n%.2f"", sum, diff);
+
+  return 0;
+
+}
+void sum_diff( float op1, float op2, float *psum, float *pdiff )
+{
+  float c,d;
+  c=op2-op1;
+  d=op2+op1;
+  *psum=c;
+  *pdiff=d;
+}",0.0,"#include <stdio.h>
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 ); 
+int main()
+{
+  float varb_4, varb_5, varb_6, varb_7;
+  scanf(""%f %f"", &varb_4, &varb_5);
+  func_0(varb_4, varb_5, &varb_6, &varb_7);
+  printf(""%.2f\n%.2f"", varb_6, varb_7);
+  return 0;
+}
+void func_0( float varb_0, float varb_1, float *varb_2, float *varb_3 )
+{
+  float varb_12,varb_13;
+  varb_12=varb_1-varb_0;
+  varb_13=varb_1+varb_0;
+  *varb_2=varb_12;
+  *varb_3=varb_13;
+}",14
+5,2c9f30a575ceffb9017660752ff66f50,"#include <stdio.h>
+void sum_diff(float op1,float op2,float *psum,float *pdiff); 
+int main()
+{
+  float a,b,sum,diff;
+  scanf(""%f %f"",&a,&b);
+  sum_diff(a,b,&sum,&diff);
+  printf(""%.2f\n%.2f"",sum,diff);
+  return 0;
+}
+void sum_diff(float op1,float op2,float *psum,float *pdiff)
+{
+	*psum=op1+op2;
+	if(op1>op2)
+	*pdiff=op1-op2;
+}
+ ",0.0,"#include <stdio.h>
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3); 
+int main()
+{
+  float varb_4,varb_5,varb_6,varb_7;
+  scanf(""%f %f"",&varb_4,&varb_5);
+  func_0(varb_4,varb_5,&varb_6,&varb_7);
+  printf(""%.2f\n%.2f"",varb_6,varb_7);
+  return 0;
+}
+void func_0(float varb_0,float varb_1,float *varb_2,float *varb_3)
+{
+	*varb_2=varb_0+varb_1;
+	if(varb_0>varb_1)
+	*varb_3=varb_0-varb_1;
+}
+",14

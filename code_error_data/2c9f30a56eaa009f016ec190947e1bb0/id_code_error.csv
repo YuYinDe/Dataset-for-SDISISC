@@ -1,0 +1,1206 @@
+,id,code,is_true,errorline
+0,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100],c[100],*p1;
+   int varb_1=strlen(b);
+	gets(varb_0);
+	gets(b);
+   gets(c);
+	if(strstr(varb_0,b))
+	{
+    char *varb_2=strstr(varb_0,b);
+    for(p1=varb_0;p1<varb_2;p1++)
+     printf(""%c"",*p1);
+    puts(c);
+    for(p1=varb_2+varb_1;*p1!='\0';p1++)
+    printf(""%c"",*p1);
+   }
+   else
+   puts(varb_0);
+   return 0;
+}",0.0,5
+1,2c9f30a56eaa009f016ec190947e1bb0,"#include <stdio.h>
+#include <string.h>
+#define N 100
+int main(){
+char varb_0[N+N],B[N],C[N],t[N+N],*p;
+scanf(""%s%s%s"",varb_0,B,C);
+p=strstr(varb_0,B);
+if(strstr(varb_0,B)!=NULL){
+strcpy(t,p+strlen(B));
+strcpy(p,C);
+strcat(varb_0,t);
+printf(""%s"",varb_0);
+}
+else
+printf(""%s"",varb_0);
+return 0;
+}",0.0,4
+2,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+	char varb_1[100];
+	char varb_2[100];
+	gets(varb_0);
+	gets(varb_1);
+	gets(varb_2);
+	char *varb_3=strstr(varb_0,varb_1);
+	if(varb_3==NULL)
+		puts(varb_0);
+	else
+	{
+		char varb_4[200];
+		int varb_5;
+		varb_5=varb_3-varb_0;
+		strncpy(varb_4,varb_0,varb_5);
+		strcat(varb_4,varb_2);
+		char varb_6[100];
+		for(int varb_7=0;varb_7<=sizeof(varb_0)-varb_5-strlen(varb_2);varb_7++)
+		{
+			varb_6[varb_7]=varb_6[varb_5+strlen(varb_2)+varb_7];
+		}
+		varb_6[sizeof(varb_0)-varb_5-strlen(varb_2)+1]='\0';
+		strcat(varb_4,varb_6);
+		puts(varb_4);
+	}
+}",0.0,22
+3,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8;
+gets(varb_0);
+gets(b);
+gets(c);
+varb_1=strlen(varb_0);
+varb_2=strlen(b);
+varb_3=strlen(c);
+for(varb_4=0;varb_4<varb_1;varb_4++)
+{
+varb_6=1;varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+{
+if(b[varb_7++]!=varb_0[varb_5])
+varb_6=0;
+if(varb_6==1&&varb_2==varb_3)
+{
+varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3>varb_2)
+{
+varb_7=0;
+varb_8=varb_3-varb_2;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_8+varb_2]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3<varb_2)
+{
+varb_7=0;
+varb_8=varb_2-varb_3;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_2-varb_8]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+}
+}
+puts(varb_0);
+return 0;
+}",0.0,4
+4,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+char varb_6[100];
+char varb_7[100];
+char varb_8[100];
+gets(varb_6);
+gets(varb_7);
+gets(varb_8);
+varb_0=strlen(varb_6);
+varb_1=strlen(varb_7);
+varb_2=strlen(varb_8);
+if(strcmp(varb_6,varb_7)>=0)
+{
+	varb_5=0;
+	for(varb_4=0;varb_4<varb_0;varb_4++){
+		for(varb_3=0;varb_3<varb_1;varb_3++){	
+		if(varb_6[varb_4]==varb_7[varb_3]&&varb_6[varb_4-1]==varb_7[varb_3-1]){
+			varb_6[varb_4]=varb_8[varb_5];
+			varb_0++;
+			varb_1++;
+			varb_5++;
+			break;	
+		}
+		}
+	}
+	puts(varb_6);
+}
+else
+puts(varb_6);
+ } ",0.0,6
+5,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;C[varb_3]!='\0';varb_2++,varb_3++) 
+       varb_4[varb_1]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+6,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);
+	if(strstr(varb_0,b)==NULL)
+	puts(varb_0);
+	else
+	{
+	    while(p=strstr(varb_0,b)) 
+	    *p = '\0';    
+	    strcat(varb_0,c);
+	    printf(""%c\n"",varb_0);
+	}
+	return 0;
+}",0.0,16
+7,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1,*varb_2;char varb_3[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_3,varb_1+strlen(varb_0)-strlen(b)+2);
+   strcat(varb_3,c);
+    puts(varb_3);}
+else
+puts(varb_0);
+}",0.0,12
+8,2c9f30a56eaa009f016ec190947e1bb0,"	#include<stdio.h>
+	#include<string.h>
+	int main()
+	{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);	
+	if(strstr(varb_0,b)==NULL)
+	puts(varb_0);
+	else
+	{
+	while(p=strstr(varb_0,b))
+	*p = '\0';
+    strcat(varb_0,p);
+	strcat(varb_0, c);
+	puts(varb_0);
+	}
+	return 0;
+	}",0.0,1
+9,2c9f30a56eaa009f016ec190947e1bb0,"#include <stdio.h>
+#include <string.h>
+#define N 100
+int main(){
+char varb_0[N+N],B[N],C[N],t[N+N],*p;
+scanf(""%s%s%s"",varb_0,B,C);
+if(p=strstr(varb_0,B)){
+strcpy(t,p+strlen(B));
+strcpy(p,C);
+strcat(varb_0,t);
+printf(""%s"",varb_0);
+}
+else
+printf(""%s"",varb_0);
+return 0;
+}",0.0,6
+10,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8;
+gets(varb_0);
+gets(b);
+gets(c);
+varb_1=strlen(varb_0);
+varb_2=strlen(b);
+varb_3=strlen(c);
+for(varb_4=0;varb_4<varb_1;varb_4++)
+{
+varb_6=1;varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+{
+if(b[varb_7++]!=varb_0[varb_5])
+varb_6=0;
+if(varb_6==1&&varb_2==varb_3)
+{
+varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3>varb_2)
+{
+varb_7=0;
+varb_8=varb_3-varb_2;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_8+varb_2]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3<varb_2)
+{
+varb_7=0;
+varb_8=varb_2-varb_3;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_2-varb_8]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=varb_0[varb_7++];
+}
+}
+}
+puts(varb_0);
+return 0;
+}",0.0,4
+11,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[101],b[101],c[101],*p; 
+	int varb_1,varb_2,varb_3;
+	gets(varb_0);
+	gets(b);
+	gets(c);
+	varb_1=strlen(varb_0);
+	varb_2=strlen(b);
+	p=strstr(varb_0,b);
+	if(p!=NULL)
+	puts(varb_0);
+	printf(""\n"");
+	puts(b);
+	printf(""\n"");
+	if(p!=NULL)	
+	{
+		for(varb_3=0;varb_3<varb_1-varb_2;varb_3++)
+		putchar(varb_0[varb_3]);
+		puts(c);
+	}
+	else
+	puts(varb_0);
+} ",0.0,13
+12,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1,*varb_2;char varb_3[100];
+   varb_1=strstr(varb_0,b);varb_2=varb_0;
+   *varb_1='\0';
+   strcpy(varb_3,varb_1+strlen(varb_0)-strlen(b));
+   strcat(varb_3,c);
+    puts(varb_3);}
+else
+puts(varb_0);
+}",0.0,10
+13,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0=0,j=0,x=-1,m=0,y;
+	char varb_1[100];
+	char varb_2[100];
+	char varb_3[100];
+	gets(varb_1);
+	gets(varb_2);
+	gets(varb_3);
+    while(varb_0<strlen(varb_1)&&j<strlen(varb_2))
+  		{
+        	if(varb_1[varb_0]==varb_2[j])
+			{
+         	    varb_0++;
+        		j++;
+       		}
+			else
+			{
+      	      j=0;
+      	      varb_0++;
+      		}
+      	}
+       		if(j==strlen(varb_2))
+			{
+				for(;m<strlen(varb_2);varb_0++)
+				{
+					varb_1[varb_0-j]=varb_3[m];
+					m++;
+				}
+				printf(""%s"",varb_1);
+        	}
+       		else
+       		{
+       	 		printf(""%s"",varb_1);
+       		}
+}",0.0,27
+14,2c9f30a56eaa009f016ec190947e1bb0,"#include <stdio.h>
+#include <string.h>
+#define N 100
+int main(){
+char varb_0[N+N],B[N],C[N],t[N+N],*p;
+scanf(""%s%s%s"",varb_0,B,C);
+if(p=strstr(varb_0,B)!=NULL){
+strcpy(t,p+strlen(B));
+strcpy(p,C);
+strcat(varb_0,t);
+printf(""%s"",varb_0);
+}
+else
+printf(""%s"",varb_0);
+return 0;
+}",0.0,6
+15,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;C[varb_3]!='\0';varb_2++,varb_3++) 
+       varb_4[varb_1]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_6<79;varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+16,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7,varb_8;
+gets(varb_0);
+gets(b);
+gets(c);
+varb_1=strlen(varb_0);
+varb_2=strlen(b);
+varb_3=strlen(c);
+for(varb_4=0;varb_4<varb_1;varb_4++)
+{
+varb_6=1;varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+{
+if(b[varb_7++]!=varb_0[varb_5])
+varb_6=0;
+if(varb_6==1&&varb_2==varb_3)
+{
+varb_7=0;
+for(varb_5=varb_4;varb_5<varb_2+varb_4;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3>varb_2)
+{
+varb_7=0;
+varb_8=varb_3-varb_2;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_8+varb_2]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+if(varb_6==1&&varb_3<varb_2)
+{
+varb_7=0;
+varb_8=varb_2-varb_3;
+for(varb_5=varb_4;varb_5<varb_1;varb_5++)
+varb_0[varb_5+varb_2-varb_8]=varb_0[varb_5+varb_2];
+for(varb_5=varb_4;varb_5<varb_4+varb_3;varb_5++)
+varb_0[varb_5]=c[varb_7++];
+}
+}
+}
+puts(varb_0);
+return 0;
+}",0.0,4
+17,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1;char varb_2[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_2,varb_1);
+   strcpy(varb_2,c);
+    puts(varb_2);}
+else
+puts(varb_0);
+}",0.0,4
+18,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;varb_3<79;varb_2++,varb_3++) 
+       varb_4[varb_2]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+19,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;varb_3<99;varb_2++,varb_3++) 
+       varb_4[varb_2]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+20,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1;char varb_2[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_2,varb_1+strlen(b));
+   strcat(varb_2,c);
+    puts(varb_2);}
+else
+puts(varb_0);
+}",0.0,4
+21,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100],c[100],*p1;
+   int varb_1=strlen(b);
+	gets(varb_0);
+	gets(b);
+   gets(c);
+	if(strstr(varb_0,b))
+	{
+    char *varb_2=strstr(varb_0,b);
+    for(p1=varb_0;p1<varb_2;p1++)
+     printf(""%c"",*p1);
+    puts(c);
+    for(p1=varb_2+varb_1;*p1!='\0';p1++)
+    printf(""%c"",*p1);
+   }
+   else
+   puts(varb_0);
+   return 0;
+}",0.0,5
+22,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0=0,j=0,x=-1,m=0,y;
+	char varb_1[100];
+	char varb_2[100];
+	char varb_3[100];
+	gets(varb_1);
+	gets(varb_2);
+	gets(varb_3);
+    while(varb_0<strlen(varb_1)&&j<strlen(varb_2))
+  		{
+        	if(varb_1[varb_0]==varb_2[j])
+			{
+         	    varb_0++;
+        		j++;
+       		}
+			else
+			{
+      	      j=0;
+      	      varb_0++;
+      		}
+      	}
+       		if(j==strlen(varb_2))
+			{
+				for(;m<strlen(varb_3);varb_0++)
+				{
+					varb_1[varb_0-j]=varb_3[m];
+					m++;
+				}
+				printf(""%s"",varb_1);
+        	}
+       		else
+       		{
+       	 		printf(""%s"",varb_1);
+       		}
+}",0.0,27
+23,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;varb_3<100;varb_2++,varb_3++) 
+       varb_4[varb_2]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+24,2c9f30a56eaa009f016ec190947e1bb0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+   	char varb_0[200],B[100],C[100],*p,t[200];
+   	gets(varb_0);
+   	gets(B);
+   	gets(C);
+	if(p=strstr(varb_0,B))
+	  {
+	    t==strlen(B)+p;
+	    strcpy(p,C);
+	    strcat(varb_0,t);
+	    printf(""%s"",varb_0);
+	  }
+	else
+	  {
+	  	printf(""%s"",varb_0);
+	  }
+} ",0.0,11
+25,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char varb_0[100];
+  char varb_1[100];
+  char varb_2[100];
+  gets(varb_0);
+  gets(varb_1);
+  gets(varb_2);
+  if(strstr(varb_0,varb_1)){
+     strcpy(varb_0,varb_2);
+     printf(""%s"",varb_0);
+     }
+   else
+     printf(""%s"",varb_0);
+ return 0;
+}
+",0.0,5
+26,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);
+	if(varb_0==b)
+	printf(""%s"",varb_0);
+	else
+	{
+	    while(p=strstr(varb_0,b)) 
+	    *p = '\0';    
+	    strcat(varb_0,c);
+	    printf(""%s"",varb_0);
+	}
+	return 0;
+}",0.0,9
+27,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);
+	if(strstr(varb_0,b)==NULL)
+	puts(varb_0);
+	else
+	{
+	    while(p=strstr(varb_0,b)) 
+	    *p = '\0';    
+	    strcat(varb_0,c);
+	    printf(""%c"",varb_0);
+	}
+	return 0;
+}",0.0,16
+28,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;varb_3<79;varb_2++,varb_3++) 
+       varb_4[varb_1]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+29,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1;char varb_2[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_2,varb_1+strlen(b));
+   strcpy(varb_2,c);
+    puts(varb_2);}
+else
+puts(varb_0);
+}",0.0,4
+30,2c9f30a56eaa009f016ec190947e1bb0,"	#include<stdio.h>
+	#include<string.h>
+	int main()
+	{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);	
+	if(strstr(varb_0,b))
+	puts(varb_0);
+	else
+	{
+	while(p=strstr(varb_0,b))
+	*p = '\0';
+	strcat(varb_0, c);
+	puts(varb_0);
+	}
+	return 0;
+	}",0.0,1
+31,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100],*p;
+gets(varb_0);
+gets(b);
+gets(c);
+if(strstr(varb_0,b)==NULL)
+puts(varb_0);
+else
+{
+while(p=strstr(varb_0,b))
+strcat(varb_0, c);
+puts(varb_0);
+}
+return 0;}",0.0,17
+32,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],b[100],c[100],*p;
+   gets(varb_0);gets(b);gets(c);
+   p=strstr(varb_0,b);
+   char *varb_1,*varb_2;
+   if(p==NULL)
+   puts(varb_0);
+   else
+   {
+     for(varb_1=varb_0;varb_1!=p;varb_1++)
+     printf(""%c"",varb_1);
+     puts(c);
+   }
+}",0.0,14
+33,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+char varb_6[100];
+char varb_7[100];
+char varb_8[100];
+gets(varb_6);
+gets(varb_7);
+gets(varb_8);
+varb_0=strlen(varb_6);
+varb_1=strlen(varb_7);
+varb_2=strlen(varb_8);
+if(strcmp(varb_6,varb_7)>=0)
+{
+	varb_5=0;
+	for(varb_4=0;varb_4<varb_0;varb_4++){
+		for(varb_3=0;varb_3<varb_1;varb_3++){	
+		if(varb_6[varb_4]==varb_7[varb_3]){
+			varb_6[varb_4]=varb_8[varb_5];
+			varb_5++;
+			break;	
+		}
+		}
+	}
+	puts(varb_6);
+}
+else
+puts(varb_6);
+ } ",0.0,6
+34,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1,*varb_2;char varb_3[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_3,varb_1+strlen(varb_0));
+   strcat(varb_3,c);
+    puts(varb_3);}
+else
+puts(varb_0);
+}",0.0,12
+35,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int f1(char[],char[]) ;
+int func_1(char[],char[], int *);
+int main() 
+{
+int *varb_0,varb_1,varb_2,varb_3;
+char varb_4[100], varb_5[100],C[100];
+gets(varb_4);
+gets(varb_5);
+gets(C);
+if(func_0(varb_4,varb_5,&varb_1)==0) 
+   puts(varb_4);
+if(func_0(varb_4,varb_5,&varb_1)==1)
+  {
+   for(varb_2=varb_1,varb_3=0;varb_3<varb_0;varb_2++,varb_3++) 
+       varb_4[varb_2]=C[varb_3];
+   puts(varb_4);
+  } 
+}
+int func_0(char varb_4[], char varb_5[]) 
+{
+int varb_6,varb_7=0,varb_8=0;
+  for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]!=varb_5[varb_7])
+        varb_8=0, varb_7=0;
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {    
+       varb_8++;
+       varb_7++;
+      }
+     if(varb_8==strlen(varb_5)) 
+       break;
+   }
+if(varb_8!=strlen(varb_5))
+   return 0;
+if(varb_8==strlen(varb_5)) 
+   return 1;
+}  
+int func_1(char varb_4[], char varb_5[], int *varb_0) 
+{
+int varb_6,varb_7=0;
+for(varb_6=0;varb_4[varb_6]!='\0';varb_6++)
+   {
+     if(varb_4[varb_6]==varb_5[varb_7]) 
+      {
+        *varb_0=varb_6;
+        break;
+      }    
+   }
+}",0.0,4
+36,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+const int varb_0=1e3;
+int main()
+{
+	char varb_1[varb_0],b[varb_0],c[varb_0],d[varb_0],*p;
+	gets(varb_1);gets(b);gets(c);
+	p=strstr(varb_1,b);
+	if(p==NULL) puts(varb_1);
+	else 
+	{
+		for(char *varb_2=varb_1;varb_2!=p;varb_2++)
+		    printf(""%c"",*varb_2);
+	    puts(c);
+	    for(char *varb_3=p+strlen(b);*varb_3!='\0';varb_3++)
+	    printf(""%c"",*varb_3);
+	}
+	}
+",0.0,6
+37,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100],c[100];
+gets(varb_0);gets(b);gets(c);
+if(strstr(varb_0,b))
+{
+   char *varb_1;char varb_2[100];
+   varb_1=strstr(varb_0,b);
+   *varb_1='\0';
+   strcpy(varb_2,varb_1);
+   strcpy(varb_0,varb_2);
+    puts(varb_2);}
+else
+puts(varb_0);
+}",0.0,4
+38,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+char varb_6[100];
+char varb_7[100];
+char varb_8[100];
+gets(varb_6);
+gets(varb_7);
+gets(varb_8);
+varb_0=strlen(varb_6);
+varb_1=strlen(varb_7);
+varb_2=strlen(varb_8);
+if(strcmp(varb_6,varb_7)>=0)
+{
+	varb_5=0;
+	for(varb_4=0;varb_4<varb_0;varb_4++){
+		for(varb_3=0;varb_3<varb_1;varb_3++){	
+		if(varb_6[varb_4]==varb_7[varb_3]){
+			varb_6[varb_4]=varb_8[varb_5];
+			varb_0++;
+			varb_1++;
+			varb_5++;
+			break;	
+		}
+		}
+	}
+	puts(varb_6);
+}
+else
+puts(varb_6);
+ } ",0.0,6
+39,2c9f30a56eaa009f016ec190947e1bb0,"#include <stdio.h>
+#include <string.h>
+#define N 100
+int main(){
+char varb_0[N+N],B[N],C[N],t[N+N],*p;
+scanf(""%s%s%s"",varb_0,B,C);
+if(strstr(varb_0,B)!=NULL){
+strcpy(t,p+strlen(B));
+strcpy(p,C);
+strcat(varb_0,t);
+printf(""%s"",varb_0);
+}
+else
+printf(""%s"",varb_0);
+return 0;
+}",0.0,6
+40,2c9f30a56eaa009f016ec190947e1bb0,"	#include<stdio.h>
+	#include<string.h>
+	int main()
+	{
+	char varb_0[100],b[100],c[100],*p;
+	gets(varb_0);
+	gets(b);
+	gets(c);	
+	if(strstr(varb_0,b==NULL))
+	puts(varb_0);
+	else
+	{
+	while(p=strstr(varb_0,b))
+	*p = '\0';
+	strcat(varb_0, c);
+	puts(varb_0);
+	}
+	return 0;
+	}",0.0,1
+41,2c9f30a56eaa009f016ec190947e1bb0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+char varb_6[100];
+char varb_7[100];
+char varb_8[100];
+gets(varb_6);
+gets(varb_7);
+gets(varb_8);
+varb_0=strlen(varb_6);
+varb_1=strlen(varb_7);
+varb_2=strlen(varb_8);
+if(strcmp(varb_6,varb_7)>=0)
+{
+	varb_5=0;
+	for(varb_4=0;varb_4<varb_0;varb_4++){
+		for(varb_3=0;varb_3<varb_1;varb_3++){	
+		if(varb_6[varb_4]==varb_7[varb_3]&&varb_6[varb_4+1]==varb_7[varb_3+1]){
+			varb_6[varb_4]=varb_8[varb_5];
+			varb_0++;
+			varb_1++;
+			varb_5++;
+			break;	
+		}
+		}
+	}
+	puts(varb_6);
+}
+else
+puts(varb_6);
+ } ",0.0,6

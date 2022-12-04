@@ -1,0 +1,2234 @@
+,id,code,is_true,errorline
+0,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+  else if(varb_0<0||varb_0>100)
+  printf(""分数不得超出[0，100]区间"");
+  return 0;
+  }
+",0.0,16
+1,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+switch(varb_1)
+ {
+  case 10:printf(""A"");break;
+  case 9:printf(""A"");break;
+  case 8:printf(""B"");break;
+  case 7:printf(""C"");break;
+  case 6:printf(""D"");break;
+  default:printf(""不能超[0,100]"");break;
+ }
+return 0;
+}",0.0,9
+2,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1;
+	scanf(""%d"",&varb_0);
+	varb_1=varb_0/10;
+	if(varb_0<=100&&varb_0>0)
+	{
+	switch(varb_1)
+	{
+		case 10:printf(""A"");
+		break;
+		case 9:printf(""A"");
+		break;
+		case 8:printf(""B"");
+		break;
+		case 7:printf(""C"");
+		break;
+		case 6:printf(""D"");
+		break;
+		default:printf(""E"");
+	}
+}
+    else
+    printf(""分数不得超过[0,100]区间""); 
+}",0.0,25
+3,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(varb_0<=100&&varb_0>=0);
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+return 0;
+}",0.0,4
+4,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  varb_0=(varb_1/10);
+  scanf(""%d"",&varb_0);
+  switch(varb_0)
+  {
+  case 10:
+  case 9:printf(""A"");break;
+  case 8:printf(""B"");break;
+  case 7:printf(""C"");break;
+  case 6:printf(""D"");break;
+  case 5:printf(""E"");break;
+  case 4:printf(""E"");break;
+  case 3:printf(""E"");break;
+  case 2:printf(""E"");break;
+  case 1:printf(""E"");break;
+  case 0:printf(""E"");break;
+  default:printf(""分数不得超出[0, 100]区间"");
+  }
+return 0;
+}",0.0,6
+5,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0>100&&varb_0<0)
+    printf(""分数不得超出[0，100]区间"");
+    else
+    return 0;
+}",0.0,16
+6,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(""a>=70&&varb_0<=79"")
+printf(""C"");
+else if(""a>=60&&varb_0<=69"")
+printf(""D"");
+else if(""a>=0&&varb_0<=60"") 
+printf(""E"");
+else 
+printf(""分数不得超出[0, 100]区间"");
+return 0;
+}
+",0.0,5
+7,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<70&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+ return  0;
+}
+",0.0,4
+8,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<=80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<=70)
+printf(""D"");
+else
+printf(""E"");
+return 0;
+}",0.0,4
+9,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+    printf(""A"");
+  else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+  else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+  else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+  else if(varb_0>=0&&varb_0<=59)
+     printf(""E"");
+  return 0;
+}",0.0,17
+10,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(varb_0<=100&&varb_0>=0)
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+return 0;
+}",0.0,7
+11,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+   scanf(""%f"",&varb_0);
+  if(varb_0>=90 && varb_0<=100)
+   printf(""A"");
+    else if(varb_0>=80 && varb_0<=89)
+     printf(""B"");
+    else if(varb_0>=70 && varb_0<=79)
+     printf(""C"");
+    else if(varb_0>=60 && varb_0<=69)
+     printf(""D"");
+    else if(varb_0>=0 && varb_0<60)
+     printf(""E"");
+   else
+    printf(""分数不得超过[0，100]区间"");
+    return 0;
+}",0.0,17
+12,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90&&varb_0<=100)
+    printf(""A"");
+    else if(varb_0>=80&&varb_0<90)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<80)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<70)
+    printf(""D"");
+    else
+    printf(""E"");
+    return 0;
+  }
+",0.0,15
+13,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+   scanf(""%f"",&varb_0);
+  if(varb_0>=90 && varb_0<=100)
+   printf(""A"");
+    else if(varb_0>=80 && varb_0<=89)
+     printf(""B"");
+    else if(varb_0>=70 && varb_0<=79)
+     printf(""C"");
+    else if(varb_0>=60 && varb_0<=69)
+     printf(""D"");
+    else if(varb_0>=0 && varb_0<60)
+     printf(""E"");
+   else
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,17
+14,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<=89&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<=79&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<=69&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+else if(varb_0>100&varb_0<0)
+printf(""分数不得超出[0,100]区间"");
+ return  0;
+}",0.0,16
+15,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+   else if(varb_0<=89&&varb_0>=80)
+   printf(""B"");
+   else if(varb_0<=79&&varb_0>=70)
+   printf(""C"");
+   else if(varb_0<=69&&varb_0>=60)
+   printf(""D"");
+   else if(varb_0>=0&&varb_0<60)
+   printf(""E"");
+   else 
+   printf(""分数不得超出［0，100］区间"");
+   return 0;
+   }",0.0,17
+16,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(""a>=0 && varb_0<=100"") 
+{
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+}
+else;
+return 0;
+}",0.0,4
+17,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",varb_0);
+   if(varb_0>=90&&varb_0<=100)
+     printf(""A"");
+   else if(varb_0>=80&&varb_0<=89)
+     printf(""B"");
+   else if(varb_0>=70&&varb_0<=79)
+     printf(""C"");
+   else if(varb_0>=60&&varb_0<=69)
+     printf(""D"");
+   else if(varb_0>=0&&varb_0<=59)
+     printf(""E"");
+   else 
+     printf(""分数不得超出[0, 100]区间"");  
+ return 0;
+}",0.0,4
+18,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(""a>=70&&varb_0<=79"")
+printf(""C"");
+else if(""a>=60&&varb_0<=69"")
+printf(""D"");
+else if(""a>=0&&varb_0<=60"") 
+printf(""E"");
+else 
+printf(""分数不得超出[0, 100]区间"");
+return 0;
+}",0.0,10
+19,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90)
+    printf(""A"");
+      else if(varb_0>=80)
+    printf(""B"");
+      else if(varb_0>=70)
+    printf(""C"");
+      else if(varb_0>=60)
+    printf(""D"");
+      else
+    printf(""E"");
+    return 0;
+}",0.0,4
+20,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ float varb_0;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+ else if(varb_0>=80&&varb_0<=89)
+   printf(""B"");
+ else if(varb_0>=70&&varb_0<=79)
+ printf(""C"");
+ else if(varb_0>=60&&varb_0<=69)
+ printf(""D"");
+ else if(varb_0>=0&&varb_0<=60)
+ printf(""E"");
+ else
+ printf(""the grade can't over the range of the zero to one hundred"");
+ return 0;
+}",0.0,14
+21,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+main(){
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<=100 && varb_0>=90)
+      printf(""A"");
+    else if(varb_0>=80 && varb_0<90)
+      printf(""B"");
+    else if(varb_0>=70 && varb_0<80)
+      printf(""C"");
+    else if(varb_0>=60 && varb_0<70)
+      printf(""D"");
+    else 
+      printf(""E"");}",0.0,14
+22,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100){printf(""分数不得超出[0, 100]区间"");return 0;}
+if(varb_0>=90){printf(""A"");varb_0=0;}
+if(varb_0>=80){printf(""B"");varb_0=0;}
+if(varb_0>=70){printf(""C"");varb_0=0;}
+if(varb_0>=60){printf(""D"");varb_0=0;}
+if(varb_0!=0){printf(""F"");varb_0=0;}
+return 0;
+}",0.0,11
+23,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else 
+    printf(""输入错误显示"");
+    return 0;
+}",0.0,16
+24,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+switch(varb_1)
+{
+  case 10:printf(""A"");break;
+  case 9:printf(""A"");break;
+  case 8:printf(""B"");break;
+  case 7:printf(""C"");break;
+  case 6:printf(""D"");break;
+  default:printf(""E"");break;
+}
+return 0;
+}",0.0,14
+25,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+  else
+  printf(""分数不得超出[0,100]区间"");
+  return 0;
+  }
+",0.0,19
+26,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1;
+    scanf(""%d"",&varb_0);
+    varb_1=varb_0/10;
+    switch(varb_1)
+    {
+        case 10:printf(""A"");
+        break;
+        case 9:printf(""A"");
+        break;
+        case 8:printf(""B"");
+        break;
+        case 7:printf(""C"");
+        break;
+        case 6:printf(""D"");
+        break;
+        default:printf(""E"");
+    }
+    return 0;
+}
+",0.0,9
+27,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0 >= 90&&varb_0 <= 100)
+	 printf(""A"");
+	else if(varb_0 >=80&&varb_0 <=90)
+	 printf(""B"");
+	else if(varb_0 >=70&&varb_0 <=80)
+	 printf(""C"");
+	else if(varb_0 >=60&&varb_0 <=70)
+	 printf(""D"");
+	else if(varb_0 <=60)
+	 printf(""F"");
+	return 0;
+}
+",0.0,15
+28,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+  else
+  printf(""分数不得超出【0，100】区间"");
+  return 0;
+  }
+",0.0,17
+29,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+ else if(varb_0>=80&&varb_0<=89)
+   printf(""B"");
+ else if(varb_0>=70&&varb_0<=79)
+   printf(""C"");
+ else if(varb_0>=60&&varb_0<=69)
+   printf(""D"");
+ else if(varb_0>=0&&varb_0<60)
+   printf(""E"");
+ else 
+    printf(""分数不得超出[0，100]区间"");
+ }
+",0.0,17
+30,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else 
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,17
+31,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90)
+  printf(""A"");
+else if(varb_0>=80)
+  printf(""B"");
+else if(varb_0>=70)
+  printf(""C"");
+else if(varb_0>=60)
+  printf(""D"");
+else if(varb_0>=0)
+  printf(""E"");
+else
+  printf(""分数不得超出［0, 100］区间"");
+return 0;
+}",0.0,4
+32,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+if(varb_1<=100&&varb_1>0)
+{
+varb_0=varb_1/10;
+switch(varb_0)
+{
+case 10:
+printf(""A"");
+break;
+case 9:
+printf(""A"");
+break;
+case 8:
+printf(""B"");
+break;
+case 7:
+printf(""C"");
+break;
+case 6:
+printf(""D"");
+break;
+default:
+printf(""E"");
+break;
+}
+}
+else
+printf(""分数不得超出[0,100]区间"");
+}",0.0,6
+33,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    varb_0=(varb_0>=0&&varb_0<=100);
+    if(varb_0>=90&&varb_0<=100)
+    printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    return 0;
+}",0.0,6
+34,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60)
+    printf(""E"");
+    else
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,4
+35,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+  if(varb_0>100&&varb_0<0)
+ printf(""分数不得超出[0, 100]区间"");
+ else if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<70&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+ return  0;
+}
+",0.0,6
+36,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<=89&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<=79&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<=69&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+else if(varb_0>100,varb_0<0)
+printf(""分数不得超出[0,100]区间"");
+ return  0;
+}",0.0,16
+37,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+   else if(varb_0<=89&&varb_0>=80)
+   printf(""B"");
+   else if(varb_0<=79&&varb_0>=70)
+   printf(""C"");
+   else if(varb_0<=69&&varb_0>=60)
+   printf(""D"");
+   else if(varb_0>=0&&varb_0<60)
+   printf(""E"");
+   else 
+   printf(""分数不得超出[0，100]区间"");
+   return 0;
+   }",0.0,17
+38,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<=89&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<=79&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<=69&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+else if(varb_0>100&&varb_0<0)
+printf(""分数不得超出[0,100]区间"");
+ return  0;
+}",0.0,14
+39,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+  else if(varb_0<0&&varb_0>100)
+  printf(""分数不得超出[0，100]区间"");
+  return 0;
+  }
+",0.0,16
+40,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(varb_0>=70&&varb_0<=79)
+printf(""C"");
+else if(varb_0>=60&&varb_0<=69)
+printf(""D"");
+else if(varb_0>=0&&varb_0<=59)
+printf(""E"");
+else
+printf(""分数不得超出[0，100]区间"");
+}",0.0,17
+41,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+}",0.0,2
+42,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+printf(""D"");
+else
+printf(""E"");
+}",0.0,15
+43,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else if(varb_0>=0&&varb_0<60)
+printf(""E"");
+else
+printf(""分数不得超出[0,100]"");
+return 0;
+}
+",0.0,17
+44,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+else if(varb_0<90&&varb_0>=80)
+   printf(""B"");
+else if(varb_0<80&&varb_0>=70)
+   printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+   printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+   printf(""E"");
+else if(varb_0>100)
+   printf(""The varb_0 does not exist"");
+return 0;
+}",0.0,4
+45,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90)
+    printf(""A"");
+      else if(varb_0>=80)
+    printf(""B"");
+      else if(varb_0>=70)
+    printf(""C"");
+      else if(varb_0>=60)
+    printf(""D"");
+      else
+    printf(""E"");
+    return 0;
+}",0.0,4
+46,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   int varb_1;
+   scanf(""%d"",&varb_0);
+   varb_1=varb_0/10;
+if(varb_0>=0&&varb_0<=100)
+{
+   switch(varb_1)
+   {
+    case 10:
+      printf(""A"");break;
+    case 9:
+      printf(""A""); break;
+    case 8:
+      printf(""B"");break;
+    case '7':
+      printf(""C"");break;
+    case 6:
+      printf(""D"");break;
+     default:
+       printf(""E"");break;
+       }
+    }
+    else if(varb_0<0||varb_0>100)
+       {
+        printf(""分数不得超出[0, 100]区间"");
+       }
+       }",0.0,18
+47,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+void main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>100)
+printf(""分数不得超出[0，100]区间"");
+else if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else
+printf(""E"");
+}
+",0.0,7
+48,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+    return 0;
+}",0.0,4
+49,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0/10==9)
+    printf(""A"");
+else if(varb_0/10==10)
+    printf(""A"");
+else if(varb_0/10==8)
+    printf(""B"");
+else if(varb_0/10==7)
+    printf(""C"");
+else if(varb_0/10==6)
+    printf(""D"");
+else if(varb_0<60)
+    printf(""E"");
+else if(varb_0<0&&varb_0>100)
+    printf(""分数不得超出【0,100】区间"");
+return 0;
+}
+",0.0,18
+50,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+    else
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,4
+51,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+void main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else
+printf(""E"");
+}
+",0.0,6
+52,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90)
+    printf(""A"");
+      else if(varb_0>=80)
+    printf(""B"");
+      else if(varb_0>=70)
+    printf(""C"");
+      else if(varb_0>=60)
+    printf(""D"");
+      else
+    printf(""E"");
+    return 0;
+}",0.0,4
+53,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=100&&varb_0>=90)
+  printf(""A"");
+else if(varb_0<90&&varb_0>=80)
+  printf(""B"");
+else if(varb_0<80&&varb_0>=70)
+  printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+  printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+  printf(""E"");
+else
+  printf(""分数不得超出［0, 100］区间"");
+return 0;
+}",0.0,4
+54,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(varb_0<=100&&varb_0>=0);
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+return 0;
+}",0.0,4
+55,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+switch(varb_1)
+ {
+  case 10:printf(""A"");break;
+  case 9:printf(""A"");break;
+  case 8:printf(""B"");break;
+  case 7:printf(""C"");break;
+  case 6:printf(""D"");break;
+  default:printf(""E"");break;
+ }
+return 0;
+}",0.0,14
+56,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(varb_0<=100&&varb_0>=0)
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+else;
+return 0;
+}",0.0,7
+57,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+else if(varb_0>100||varb_0<0)
+   printf(""分数不得超过[0,100]区间"");
+}",0.0,2
+58,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ float varb_0;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+ else if(varb_0>=80&&varb_0<=89)
+   printf(""B"");
+ else if(varb_0>=70&&varb_0<=79)
+ printf(""C"");
+ else if(varb_0>=60&&varb_0<=69)
+ printf(""D"");
+ else if(varb_0>=0&&varb_0<=60)
+ printf(""E"");
+ else
+ printf(""分数不得超出[0，100]区间"");
+ return 0;
+}",0.0,14
+59,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(varb_0>=70&&varb_0<=79)
+printf(""C"");
+else if(varb_0>=60&&varb_0<=69)
+printf(""D"");
+else if(varb_0>=0&&varb_0<=59)
+printf(""E"");
+else
+printf(""分数不得超出[0，100]区间"");
+}",0.0,4
+60,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else 
+    printf(""输入错误显示"");
+    return 0;
+}",0.0,17
+61,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+printf(""D"");
+else if(varb_0<60&&varb_0>0)
+printf(""E"");
+else
+printf(""分数不能超出[0,100]区间"");
+}",0.0,17
+62,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else
+printf(""E"");
+return 0;
+}",0.0,15
+63,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+ int main()
+ {
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(100>=varb_0>=90)
+    printf(""A"");
+   else if(90>varb_0>=80)
+    printf(""B"");
+   else if(80>varb_0>=70)
+    printf(""C"");
+   else if(70>varb_0>=60)
+    printf(""D"");
+   else if(60>varb_0)
+    printf(""E"");
+   else
+    printf(""分数不得超出[0, 100]区间"");   
+ }",0.0,4
+64,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+if(""a>=0 && varb_0<=100"") 
+{
+switch(varb_1)
+{
+case 10: printf(""A"");break;
+case 9: printf(""A"");break;
+case 8: printf(""B"");break;
+case 7: printf(""C"");break;
+case 6: printf(""D"");break;
+default: printf(""E"");break;
+}
+}
+else;
+return 0;
+}",0.0,4
+65,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+else if(varb_0>100)
+   printf(""分数不得超过[0,100]区间"");
+}",0.0,2
+66,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+else if(varb_0<0||varb_0>100)
+   printf(""分数不得超过[0,100]区间"");
+}",0.0,2
+67,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+  else if(varb_0>=80&&varb_0<90)
+  printf(""B"");
+  else if(varb_0>=70&&varb_0<80)
+  printf(""C"");
+  else if(varb_0>=60&&varb_0<70)
+  printf(""D"");
+  else if(varb_0>=0&&varb_0<60)
+  printf(""E"");
+  else 
+  printf(""分数不得超过[0，100]区间"");
+  return 0;
+}",0.0,17
+68,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(100>varb_0>=90)
+  printf(""A"");
+else if(varb_0>=80)
+  printf(""B"");
+else if(varb_0>=70)
+  printf(""C"");
+else if(varb_0>=60)
+  printf(""D"");
+else if(varb_0>=0)
+  printf(""E"");
+else
+  printf(""分数不得超出［0, 100］区间"");
+return 0;
+}",0.0,4
+69,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<=89&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<=79&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<=69&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+else 
+printf(""分数不得超出[0,100]区间"");
+ return  0;
+}",0.0,5
+70,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(90<=varb_0<=100)
+  printf(""A"");
+else if(80<=varb_0<90)
+  printf(""B"");
+else if(70<=varb_0<80)
+  printf(""C"");
+else if(60<=varb_0<70)
+  printf(""D"");
+else if(varb_0<60)
+  printf(""E"");
+else
+  printf(""分数不得超出［0, 100］区间"");
+return 0;
+}",0.0,4
+71,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0>100&&varb_0<0)
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,16
+72,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+    else if(varb_0>100&&varb_0<0)
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,4
+73,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+void main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else
+printf(""F"");
+}
+",0.0,6
+74,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+printf(""D"");
+else if(varb_0<60&&varb_0>0)
+printf(""E"");
+else
+printf(""分数不能超出[0，100]区间"");
+}",0.0,17
+75,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else 
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,16
+76,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(100>=varb_0>=90)
+  printf(""A"");
+else if(varb_0>=80)
+  printf(""B"");
+else if(varb_0>=70)
+  printf(""C"");
+else if(varb_0>=60)
+  printf(""D"");
+else if(varb_0>=0)
+  printf(""E"");
+else
+  printf(""分数不得超出［0, 100］区间"");
+return 0;
+}",0.0,4
+77,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0>100&&varb_0<0)
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,16
+78,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+}",0.0,2
+79,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ float varb_0;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+ else if(varb_0>=80&&varb_0<=89)
+   printf(""B"");
+ else if(varb_0>=70&&varb_0<=79)
+ printf(""C"");
+ else if(varb_0>=60&&varb_0<=69)
+ printf(""D"");
+ else if(varb_0>=0&&varb_0<60)
+ printf(""E"");
+ else
+ printf(""分数不得超出[0，100]区间"");
+ return 0;
+}",0.0,17
+80,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=100&&varb_0>=90)
+  printf(""A"");
+else if(varb_0<90&&varb_0>=80)
+  printf(""B"");
+else if(varb_0<80&&varb_0>=70)
+  printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+  printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+  printf(""E"");
+else
+  printf(""分数不得超出［0,100］区间"");
+return 0;
+}",0.0,4
+81,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0>=0&&varb_0<60)
+    printf(""E"");
+  else
+  printf(""分数不得超出[0，100]区间"");
+  return 0;
+  }
+",0.0,17
+82,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0<=100&&varb_0>=90)
+  printf(""A"");
+  else if(varb_0<=89&&varb_0>=80)
+  printf(""B"");
+  else if(varb_0<=79&&varb_0>=70)
+  printf(""C"");
+  else if(varb_0<=69&&varb_0>=60)
+  printf(""D"");
+  else
+  printf(""E"");
+  return 0;
+}",0.0,4
+83,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0 >= 90&&varb_0 <= 100)
+	 printf(""A"");
+	else if(varb_0 >=80&&varb_0 <=90)
+	 printf(""B"");
+	else if(varb_0 >=70&&varb_0 <=80)
+	 printf(""C"");
+	else if(varb_0 >=60&&varb_0 <=70)
+	 printf(""D"");
+	else if(varb_0 <=60)
+	 printf(""E"");
+	return 0;
+}",0.0,17
+84,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_0=varb_1/10;
+if(varb_1<=100&&varb_1>0)
+{
+ switch(varb_0)
+{
+case 10:
+printf(""A"");
+break;
+case 9:
+printf(""A"");
+break;
+case 8:
+printf(""B"");
+break;
+case 7:
+printf(""C"");
+break;
+case 6:
+printf(""D"");
+break;
+default:
+printf(""E"");
+ }
+}
+else
+printf(""分数不得超过[0,100]区间\n"");
+}",0.0,6
+85,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+while(varb_0>=0&&varb_0<=100)
+{
+if(varb_0/10==9)
+    printf(""A"");
+else if(varb_0/10==10)
+    printf(""A"");
+else if(varb_0/10==8)
+    printf(""B"");
+else if(varb_0/10==7)
+    printf(""C"");
+else if(varb_0/10==6)
+    printf(""D"");
+else if(varb_0<60)
+    printf(""E"");break;
+    if(varb_0<0||varb_0>100)
+    printf(""分数不得超出[0, 100]区间"");
+    }
+return 0;
+}
+",0.0,6
+86,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90&&varb_0<=100)
+    printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0<60)
+    printf(""E"");
+    return 0;
+}",0.0,16
+87,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+else if(varb_0<90&&varb_0>=80)
+   printf(""B"");
+else if(varb_0<80&&varb_0>=70)
+   printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+   printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+   printf(""E"");
+else 
+   printf(""The varb_0 does not exist"");
+return 0;
+}",0.0,4
+88,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+  printf(""A"");
+  else if(varb_0>=80&&varb_0<90)
+  printf(""B"");
+  else if(varb_0>=70&&varb_0<80)
+  printf(""C"");
+  else if(varb_0>=60&&varb_0<70)
+  printf(""D"");
+  else if(varb_0>=0&&varb_0<60)
+  printf(""E"");
+  else 
+  printf(""分数不得超过[0,100]区间"");
+  return 0;
+}",0.0,17
+89,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/10;
+switch(varb_1)
+ {
+  case 10:printf(""A"");break;
+  case 9:printf(""A"");break;
+  case 8:printf(""B"");break;
+  case 7:printf(""C"");break;
+  case 6:printf(""D"");break;
+  case 5:printf(""E"");break;
+  case 4:printf(""E"");break;
+  case 3:printf(""E"");break;
+  case 2:printf(""E"");break;
+  case 1:printf(""E"");break;
+  case 0:printf(""E"");break;
+  default:printf(""分数不得超过[0,100]区间"");break;
+ }
+return 0;
+}",0.0,20
+90,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+   printf(""E"");
+else 
+   printf(""分数不得超过[0,100]区间"");
+}",0.0,17
+91,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(""a>=70&&varb_0<=79"")
+printf(""C"");
+else if(""a>=60&&varb_0<=69"")
+printf(""D"");
+else if(""a>=0&&varb_0<60"") 
+printf(""E"");
+else 
+printf(""分数不得超出[0, 100]区间"");
+return 0;
+}
+",0.0,5
+92,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+ {
+      float varb_0;
+   scanf(""%f"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+   printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+   printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+   printf(""D"");
+else if(varb_0<60)
+   printf(""E"");
+else 
+   printf(""分数不得超过[0,100]区间"");
+}",0.0,2
+93,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=100&&varb_0>=90)
+ printf(""A"");
+ else if(varb_0<90&&varb_0>=80)
+ printf(""B"");
+ else if(varb_0<80&&varb_0>=70)
+ printf(""C"");
+ else if(varb_0<70&&varb_0>=60)
+ printf(""D"");
+ else if(varb_0<60)
+ printf(""E"");
+ else if(varb_0>100&&varb_0<0)
+ printf(""分数不得超出[0, 100]区间"");
+ return  0;
+}
+",0.0,4
+94,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0==120)
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,16
+95,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main( )
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=89)
+printf(""B"");
+else if(varb_0>=70&&varb_0<=79)
+printf(""C"");
+else if(varb_0>=60&&varb_0<=69)
+printf(""D"");
+else if(varb_0>=0&&varb_0<60)
+printf(""E"");
+else
+printf(""分数不得超出[0，100]区间"");
+return 0;
+}
+",0.0,17
+96,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0>=90&&varb_0<=100)
+    printf(""A"");
+    else if(varb_0>=80&&varb_0<=89)
+    printf(""B"");
+    else if(varb_0>=70&&varb_0<=79)
+    printf(""C"");
+    else if(varb_0>=60&&varb_0<=69)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+     else if(varb_0<0||varb_0>100)
+    printf(""failed"");
+    return 0;
+}",0.0,16
+97,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+   else if(varb_0<=89&&varb_0>=80)
+   printf(""B"");
+   else if(varb_0<=79&&varb_0>=70)
+   printf(""C"");
+   else if(varb_0<=69&&varb_0>=60)
+   printf(""D"");
+   else if(varb_0>=0&&varb_0<60)
+   printf(""E"");
+   else 
+   printf(""分数不得超出［0,100］区间"");
+   return 0;
+   }",0.0,17
+98,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+   scanf(""%f"",&varb_0);
+  if(varb_0>=90 && varb_0<=100)
+   printf(""A"");
+    else if(varb_0>=80 && varb_0<=89)
+     printf(""B"");
+    else if(varb_0>=70 && varb_0<=79)
+     printf(""C"");
+    else if(varb_0>=60 && varb_0<=69)
+     printf(""D"");
+    else if(varb_0>=0 && varb_0<60)
+     printf(""E"");
+   else
+    printf(""error"");
+    return 0;
+}",0.0,17
+99,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+if(varb_0>=90&&varb_0<=100)
+   printf(""A"");
+ else if(varb_0>=80&&varb_0<=89)
+   printf(""B"");
+ else if(varb_0>=70&&varb_0<=79)
+   printf(""C"");
+ else if(varb_0>=60&&varb_0<=69)
+   printf(""D"");
+ else if(varb_0>=0&&varb_0<=59)
+   printf(""E"");
+ }
+",0.0,16
+100,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0/10==9)
+    printf(""A"");
+else if(varb_0/10==10)
+    printf(""A"");
+else if(varb_0/10==8)
+    printf(""B"");
+else if(varb_0/10==7)
+    printf(""C"");
+else if(varb_0/10==6)
+    printf(""D"");
+else if(varb_0<60)
+    printf(""E"");
+else if(varb_0<0&&varb_0>100)
+    printf(""分数不得超出【0,100】区间"");
+return 0;
+}
+",0.0,18
+101,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0>=100&&varb_0<=0)
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,16
+102,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+void main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0>100)
+printf(""分数不得超出[0，100]区间"");
+else if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<70)
+printf(""D"");
+else
+printf(""E"");
+}
+",0.0,7
+103,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=0&&varb_0<=100)
+printf(""into next"");
+else if(varb_0>=90&&varb_0<=100)
+printf(""A"");
+else if(varb_0>=80&&varb_0<=90)
+printf(""B"");
+else if(varb_0>=70&&varb_0<=80)
+printf(""C"");
+else if(varb_0>=60&&varb_0<=70)
+printf(""D"");
+else
+printf(""E"");
+return 0;
+}",0.0,4
+104,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else if(varb_0>100&&varb_0<0)
+    printf(""分数不得超出[0，100]区间"");
+    else
+    return 0;
+}",0.0,16
+105,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100||varb_0<0)
+printf(""输入错误显示”分数不得超出[0, 100]区间"");
+if(varb_0>=90)
+printf(""A"");
+else if(varb_0>=80)
+printf(""B"");
+else if(varb_0>=70)
+printf(""C"");
+else if(varb_0>=60)
+printf(""D"");
+else
+printf(""E"");
+return 0;
+}",0.0,7
+106,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=100&&varb_0>=90)
+   printf(""A"");
+else if(varb_0<90&&varb_0>=80)
+   printf(""B"");
+else if(varb_0<80&&varb_0>=70)
+   printf(""C"");
+else if(varb_0<70&&varb_0>=60)
+   printf(""D"");
+else if(varb_0<60&&varb_0>=0)
+   printf(""E"");
+else
+   printf(""no grade"");
+return 0;
+}",0.0,4
+107,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(0<=varb_0&&varb_0<=100)
+  {
+  if(90<=varb_0&&varb_0<=100)
+  printf(""A"");
+  else if(80<=varb_0&&varb_0<=89)
+  printf(""B"");
+  else if(70<=varb_0&&varb_0<=79)
+  printf(""C"");
+  else if(60<=varb_0&&varb_0<=69)
+  printf(""D"");
+  else
+  printf(""D"");
+}
+  else
+  printf(""分数不得超出[0, 100]区间"");
+  return 0;
+}",0.0,15
+108,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_0=varb_1/10;
+if(varb_1<=100&&varb_1>0)
+{
+ switch(varb_1)
+{
+case 10:
+printf(""A"");
+break;
+case 9:
+printf(""A"");
+break;
+case 8:
+printf(""B"");
+break;
+case 7:
+printf(""C"");
+break;
+case 6:
+printf(""D"");
+break;
+default:
+printf(""E"");
+ }
+}
+else
+printf(""分数不得超过[0,100]区间\n"");
+}",0.0,6
+109,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0/10==9)
+    printf(""A"");
+else if(varb_0/10==10)
+    printf(""A"");
+else if(varb_0/10==8)
+    printf(""B"");
+else if(varb_0/10==7)
+    printf(""C"");
+else if(varb_0/10==6)
+    printf(""D"");
+else if(varb_0<60)
+    printf(""E"");
+else if(varb_0<0&&varb_0>100)
+    printf(""分数不得超出【0,100】区间"");
+return 0;
+}
+",0.0,18
+110,2c911d616dcd1421016dd2a3a14d15a3,"#include <stdio.h>
+int main()
+{
+    float varb_0;
+    scanf(""%f"",&varb_0);
+    if(varb_0<=100&&varb_0>=90)
+    printf(""A"");
+    else if(varb_0<=89&&varb_0>=80)
+    printf(""B"");
+    else if(varb_0<=79&&varb_0>=70)
+    printf(""C"");
+    else if(varb_0<=69&&varb_0>=60)
+    printf(""D"");
+    else if(varb_0<60&&varb_0>=0)
+    printf(""E"");
+    else
+    printf(""分数不得超出[0，100]区间"");
+    return 0;
+}",0.0,17
+111,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0<=100&&varb_0>=90)
+  printf(""A"");
+  else if(varb_0<=89&&varb_0>=80)
+  printf(""B"");
+  else if(varb_0<=79&&varb_0>=70)
+  printf(""C"");
+  else if(varb_0<=69&&varb_0>=60)
+  printf(""D"");
+  else if(varb_0<60&&varb_0>=0)
+  printf(""E"");
+  else
+  printf(""分数不得超出[0，100]区间"");
+  return 0;
+}",0.0,17
+112,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h> 
+int main()
+{  int varb_0,varb_1;
+   scanf(""%d"",&varb_0); 
+   varb_1=varb_0%10;
+   if(varb_1<=10)
+   {
+   switch(varb_1)
+   {
+     	case 10 :
+     	printf(""A"");
+     	break;
+        case 9: 
+        printf(""A"");
+        break;
+        case 8:
+        printf(""B"");
+        break;
+        case 7:
+        printf(""C"");
+        break; 
+        case 6:
+        printf(""D"");
+        break;
+	    default:
+	    printf(""E""); 
+	    break;
+   }
+}
+   else
+   printf(""分数不得超出[0, 100]区间"");
+   return 0;
+}",0.0,5
+113,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+  float varb_0;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=90&&varb_0<=100)
+     printf(""A"");
+  else if(varb_0>=80&&varb_0<90)
+         printf(""B"");
+  else if(varb_0>=70&&varb_0<80)
+         printf(""C"");
+  else if(varb_0>=60&&varb_0<70)
+         printf(""D"");
+  else 
+         printf(""E"");
+  return 0;
+}
+",0.0,4
+114,2c911d616dcd1421016dd2a3a14d15a3,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0>0 && varb_0<60)
+	printf(""E"");
+	if(varb_0>=60 && varb_0<70)
+	printf(""D"");
+	else if(varb_0>=70 && varb_0<80)
+	printf(""C"");
+	else if(varb_0>=80 && varb_0<90)
+	printf(""B"");
+	else if(varb_0>=90 && varb_0<=100)
+	printf(""A"");
+	else 
+	printf(""分数不得超出[0, 100]区间"");
+}",0.0,6

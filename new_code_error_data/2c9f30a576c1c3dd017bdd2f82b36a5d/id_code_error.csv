@@ -1,0 +1,2046 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,cost;
+scanf(""%.2f"",&a);
+if(a<0)
+{
+printf(""Invalid Value!"");
+}
+if(a<=50)
+{
+cost=0.53*a;
+printf(""cost=%.2f"",cost);
+}
+else if(a>50)
+{
+cost=50*0.53+(a-50)*0.58;
+printf(""cost=%.2f"",cost);
+}
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0<0)
+{
+printf(""Invalid Value!"");
+}
+if(varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+{
+varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+}
+return 0;
+}",5
+1,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+float coast,x;
+
+scanf(""%f"",&x);
+
+if (x<0)
+
+{
+
+printf(""Invalid Value!"");
+
+}
+
+else
+
+if (x<=50)
+
+{
+
+coast=0.53*x;
+
+printf(""coast= %.2f"",coast);
+
+}
+
+else 
+
+{
+
+coast=0.53*50+0.58*(x-50);
+
+printf(""coast= %.2f"",coast);
+}
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_1);
+if(varb_1<0)
+{
+printf(""Invalid Value!"");
+}
+else
+if(varb_1<=50)
+{
+varb_0=0.53*varb_1;
+printf(""coast= %.2f"",varb_0);
+}
+else 
+{
+varb_0=0.53*50+0.58*(varb_1-50);
+printf(""coast= %.2f"",varb_0);
+}
+}",15
+2,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int x;
+	double y;
+	scanf(""%d"",&x);
+	if (x<0)
+	 printf(""Invalid Value!"") ; 
+	else if(x<=50)
+	{
+		y=x*0.53;
+		printf(""cost=%.2f"",y);
+	}
+	else if(x>50)
+	{
+		y=x*0.53+(x-50)*0.58;
+		printf(""cost=%.2f"",y);
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+	scanf(""%d"",&varb_0);
+	if(varb_0<0)
+	 printf(""Invalid Value!"") ; 
+	else if(varb_0<=50)
+	{
+		varb_1=varb_0*0.53;
+		printf(""cost=%.2f"",varb_1);
+	}
+	else if(varb_0>50)
+	{
+		varb_1=varb_0*0.53+(varb_0-50)*0.58;
+		printf(""cost=%.2f"",varb_1);
+	}
+	return 0;
+}",17
+3,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+
+{ 
+
+int x;
+
+double cost;
+
+scanf(""%d"",&x);
+
+if(0<=x&&x<=50){
+
+cost=0.53*x;
+
+    printf(""cost=%.2lf"",cost);}
+
+    else if(x>50){
+
+    cost=50*0.53+0.58*(x-59);
+
+    printf(""cost=%.2lf"",cost);}
+
+    else 
+
+    printf(""Invalid Value!"");
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{ 
+int varb_0;
+double varb_1;
+scanf(""%d"",&varb_0);
+if(0<=varb_0&&varb_0<=50){
+varb_1=0.53*varb_0;
+    printf(""cost=%.2lf"",varb_1);}
+    else if(varb_0>50){
+    varb_1=50*0.53+0.58*(varb_0-59);
+    printf(""cost=%.2lf"",varb_1);}
+    else 
+    printf(""Invalid Value!"");
+    return 0;
+}",11
+4,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,c;
+scanf(""%f"",&a);
+if(a>50)
+{
+c=26.5+0.58*a;
+}
+else if(a<0)
+{
+    printf(""Invalid Value!"");
+    return 0;
+}
+else
+{
+c=0.53*a;
+}
+printf(""cost = %.2f"",c);
+return 0;
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+if(varb_0>50)
+{
+varb_1=26.5+0.58*varb_0;
+}
+else if(varb_0<0)
+{
+    printf(""Invalid Value!"");
+    return 0;
+}
+else
+{
+varb_1=0.53*varb_0;
+}
+printf(""cost = %.2f"",varb_1);
+return 0;
+}
+",8
+5,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+  double a,cost;
+    a=-10;
+    scanf(""%lf"",&a);
+  if(a>=0&&a<=50)
+    {printf(""cost=%.2f"",cost=0.53*a);
+}
+  else if(a>50)
+    {printf(""cost=%.2f"",cost=50*0.53+0.58*(a-50));
+}
+   else
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1;
+    varb_0=-10;
+    scanf(""%lf"",&varb_0);
+  if(varb_0>=0&&varb_0<=50)
+    {printf(""cost=%.2f"",varb_1=0.53*varb_0);
+}
+  else if(varb_0>50)
+    {printf(""cost=%.2f"",varb_1=50*0.53+0.58*(varb_0-50));
+}
+   else
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+",14
+6,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+  double a,cost;
+    a=-10;
+    scanf(""%lf"",&a);
+  if(a>=0&&a<=50)
+    {printf(""cost=%.2f"",cost=0.53*a);
+}
+  else if(a>50)
+    {printf(""cost=%.2f"",cost=50*0.53+(a-50)*0.58);
+}
+   else
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1;
+    varb_0=-10;
+    scanf(""%lf"",&varb_0);
+  if(varb_0>=0&&varb_0<=50)
+    {printf(""cost=%.2f"",varb_1=0.53*varb_0);
+}
+  else if(varb_0>50)
+    {printf(""cost=%.2f"",varb_1=50*0.53+(varb_0-50)*0.58);
+}
+   else
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+",11
+7,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,cost;
+scanf(""%.2f"",&a);
+if(a>0&&a<=50)
+{cost=0.53*a;
+printf(""cost=%.2f"",cost);
+}
+else if(a>50)
+{cost=50*0.53+(a-50)*0.58;
+printf(""cost=%.2f"",cost);
+}
+else{
+printf(""Invalid Value!"");}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0>0&&varb_0<=50)
+{varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+{varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+}
+else{
+printf(""Invalid Value!"");}
+return 0;
+}",5
+8,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float x,cost;
+scanf(""%f"",&x);
+  if(x>=0&&x<=50)
+  { 
+    cost=0.53*x;
+    printf(""xost=%.2f"",cost);
+    }
+  else if(x>50)
+   { 
+     cost=0.53*50+0.58*(x-50);
+     printf(""cost=%.2f"",cost);
+     }
+  else
+     printf(""Invalid Value!"");
+  return 0;
+  }
+     ",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+  if(varb_0>=0&&varb_0<=50)
+  { 
+    varb_1=0.53*varb_0;
+    printf(""xost=%.2f"",varb_1);
+    }
+  else if(varb_0>50)
+   { 
+     varb_1=0.53*50+0.58*(varb_0-50);
+     printf(""cost=%.2f"",varb_1);
+     }
+  else
+     printf(""Invalid Value!"");
+  return 0;
+  }
+",9
+9,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    float a,b,cost;
+    scanf(""%f"",&a);
+	if(a<0)
+	printf(""Invalid Value!"");
+	else if(a>=0&&a<=50)
+	cost=0.53*a;
+	else if(a>50)
+	cost=0.53*a+0.58*(a-50);
+	printf(""cost=%.2f"",cost);
+	
+
+	return 0;
+	}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    scanf(""%f"",&varb_0);
+	if(varb_0<0)
+	printf(""Invalid Value!"");
+	else if(varb_0>=0&&varb_0<=50)
+	varb_2=0.53*varb_0;
+	else if(varb_0>50)
+	varb_2=0.53*varb_0+0.58*(varb_0-50);
+	printf(""cost=%.2f"",varb_2);
+	return 0;
+	}",11
+10,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+int x;
+float y;
+scanf(""%d"",&x);
+if(x<=50)
+{
+if(x<0) printf(""Invalid Value!\n"");
+else y=0.53*x;printf(""cost=%.2f"",y);
+}
+else
+{
+y=50*0.53+(x-50)*0.58;printf(""cost=%.2f"",y);
+}
+
+
+ return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0<=50)
+{
+if(varb_0<0) printf(""Invalid Value!\n"");
+else varb_1=0.53*varb_0;printf(""cost=%.2f"",varb_1);
+}
+else
+{
+varb_1=50*0.53+(varb_0-50)*0.58;printf(""cost=%.2f"",varb_1);
+}
+ return 0;
+}",4
+11,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    int electric;
+    float electric_money;
+    scanf(""%d"",&electric);
+     if(electric>50)
+      {
+        electric_money=50.0*0.53+(electric-50.0)*0.58;
+        printf(""cost = %.2f\n"",electric_money);
+       }
+      else if(electric<=50)//判断用电量是否超过50
+      {
+        electric_money=electric*0.53;//计算50度以下电费
+        printf(""cost = %.2f"",electric_money);
+       }
+      
+        else if(electric<0) 
+           printf(""Invalid Value!"");
+         
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+     if(varb_0>50)
+      {
+        varb_1=50.0*0.53+(varb_0-50.0)*0.58;
+        printf(""cost = %.2f\n"",varb_1);
+       }
+      else if(varb_0<=50)
+      {
+        varb_1=varb_0*0.53;
+        printf(""cost = %.2f"",varb_1);
+       }
+        else if(varb_0<0) 
+           printf(""Invalid Value!"");
+    return 0;
+}",4
+12,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,cost;
+	scanf(""%f"",&a);
+	if(a<0)
+	printf(""Invalid Value!"");
+	else if(a<=50)
+	{
+	cost=0.53*a;
+	printf(""%.2f"",cost);
+    } 
+	else
+	{
+		cost=0.53*50+0.58*(a-50);
+		printf(""%.2f"",cost);
+	}
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0<0)
+	printf(""Invalid Value!"");
+	else if(varb_0<=50)
+	{
+	varb_1=0.53*varb_0;
+	printf(""%.2f"",varb_1);
+    } 
+	else
+	{
+		varb_1=0.53*50+0.58*(varb_0-50);
+		printf(""%.2f"",varb_1);
+	}
+}",9
+13,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,cost;
+scanf(""%.2f"",&a);
+if(a<=50)
+{
+cost=0.53*a;
+printf(""cost=%.2f"",cost);
+}
+else if(a>50)
+{
+cost=50*0.53+(a-50)*0.58;
+printf(""cost=%.2f"",cost);
+}
+else
+{
+printf(""Invalid Value!"");
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+{
+varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+}
+else
+{
+printf(""Invalid Value!"");
+}
+return 0;
+}",5
+14,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main(void)
+{
+float a,cost,k;
+k=0.53;
+scanf(""%f"",&a);
+if(a>=50)
+ printf(""cost=%.2f"",cost=(a-50)*(k+0.05)+k*a);
+else if(a>=0)
+ printf(""cost=%.2f"",cost=a*k);
+else
+ printf(""Invalid Value!"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+float varb_0,varb_1,varb_2;
+varb_2=0.53;
+scanf(""%f"",&varb_0);
+if(varb_0>=50)
+ printf(""cost=%.2f"",varb_1=(varb_0-50)*(varb_2+0.05)+varb_2*varb_0);
+else if(varb_0>=0)
+ printf(""cost=%.2f"",varb_1=varb_0*varb_2);
+else
+ printf(""Invalid Value!"");
+return 0;
+}",8
+15,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float cost,e;
+scanf(""%f"",&e);
+
+if(e>50)
+{cost=0.53*50+(e-50)*0.58;
+printf(""cost=%.2f"",cost);}
+else
+if(e>=0)
+{cost=0.53*e;
+printf(""cost=%.2f"",cost);}
+else
+printf(""Invalid Value"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_1);
+if(varb_1>50)
+{varb_0=0.53*50+(varb_1-50)*0.58;
+printf(""cost=%.2f"",varb_0);}
+else
+if(varb_1>=0)
+{varb_0=0.53*varb_1;
+printf(""cost=%.2f"",varb_0);}
+else
+printf(""Invalid Value"");
+return 0;
+}",14
+16,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main(void)
+{
+float a,cost,k;
+k=0.53;
+scanf(""%f"",&a);
+if(a>=50)
+ printf(""cost=%.2f"",cost=a*(k+0.05));
+else if(a>=0)
+printf(""cost=%.2f"",cost=a*k);
+else
+printf(""Invalid Value!"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+float varb_0,varb_1,varb_2;
+varb_2=0.53;
+scanf(""%f"",&varb_0);
+if(varb_0>=50)
+ printf(""cost=%.2f"",varb_1=varb_0*(varb_2+0.05));
+else if(varb_0>=0)
+printf(""cost=%.2f"",varb_1=varb_0*varb_2);
+else
+printf(""Invalid Value!"");
+return 0;
+}",8
+17,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else if (val > 50)
+	{
+		cost = (val * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	else 
+	{
+		printf (""Invalid Value"");
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else if(varb_0 > 50)
+	{
+		varb_1 =(varb_0 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else 
+	{
+		printf(""Invalid Value"");
+	}
+	return 0;
+}",7
+18,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    int electric;
+    float electric_money;
+    scanf(""%d"",&electric);
+     if(electric>50)
+      {
+        electric_money=50.0*0.53+(electric-50.0)*0.58;
+        printf(""cost = %.2f\n"",electric_money);
+        }
+      else if(electric<=50)//判断用电量是否超过50
+      {
+        electric_money=electric*0.53;//计算50度以下电费
+        printf(""cost = %.2f"",electric_money);
+       }
+      
+      else  
+        printf(""Invalid Value!"");
+         
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+     if(varb_0>50)
+      {
+        varb_1=50.0*0.53+(varb_0-50.0)*0.58;
+        printf(""cost = %.2f\n"",varb_1);
+        }
+      else if(varb_0<=50)
+      {
+        varb_1=varb_0*0.53;
+        printf(""cost = %.2f"",varb_1);
+       }
+      else  
+        printf(""Invalid Value!"");
+    return 0;
+}",4
+19,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+int t;
+float cost;
+scanf(""%d"",&t);
+if(t<=50 && t>0)
+{
+	cost=0.53*t;
+ printf(""cost=%.2f"",cost);
+}
+else if(t>50){
+	cost=0.53*50+0.05*(t-50);
+ printf(""cost=%.2f"",cost);
+}
+ else
+ printf(""Invalid Value!"");
+ return 0;
+ }
+ ",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0<=50 && varb_0>0)
+{
+	varb_1=0.53*varb_0;
+ printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50){
+	varb_1=0.53*50+0.05*(varb_0-50);
+ printf(""cost=%.2f"",varb_1);
+}
+ else
+ printf(""Invalid Value!"");
+ return 0;
+ }
+",13
+20,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+  double a,cost;
+    a=-10;
+    scanf(""%f"",&a);
+  if(a>=0&&a<=50)
+    {printf(""cost=%.2f"",cost=0.53*a);
+}
+  else if(a>50)
+    {printf(""cost=%.2f"",cost=50*0.53+0.58*(a-50));
+}
+   else if(a<0)
+     {printf(""Invalid Value!"");
+}
+     return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1;
+    varb_0=-10;
+    scanf(""%f"",&varb_0);
+  if(varb_0>=0&&varb_0<=50)
+    {printf(""cost=%.2f"",varb_1=0.53*varb_0);
+}
+  else if(varb_0>50)
+    {printf(""cost=%.2f"",varb_1=50*0.53+0.58*(varb_0-50));
+}
+   else if(varb_0<0)
+     {printf(""Invalid Value!"");
+}
+     return 0;
+}
+",6
+21,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else
+	{
+		cost = (val * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else
+	{
+		varb_1 =(varb_0 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	return 0;
+}",7
+22,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+float x,cost;
+scanf(""%f"",&x);
+if(x<0)
+{
+printf(""Invalid Value!"");
+}
+else if(x<=50)
+{
+cost=0.53*x;
+printf(""cost=%.2f"",cost);
+}
+else 
+cost=50*0.53+(x-50)*0.58;
+printf(""cost=%.2f"",cost);
+    
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+if(varb_0<0)
+{
+printf(""Invalid Value!"");
+}
+else if(varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else 
+varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+return 0;
+}
+",6
+23,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,cost;
+scanf(""%.2f"",&a);
+if(a<=50)
+{cost=0.53*a;
+printf(""cost=%.2f"",cost);
+}
+else if(a>50)
+{cost=50*0.53+(a-50)*0.58;
+printf(""cost=%.2f"",cost);
+}
+else{
+printf(""Invalid Value!"");}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0<=50)
+{varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+{varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+}
+else{
+printf(""Invalid Value!"");}
+return 0;
+}",5
+24,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float cost,e;
+scanf(""%f"",&e);
+
+if(e>50)
+{cost=0.53*50+(e-50)*0.58;
+printf(""cost=%f"",cost);}
+else
+if(e>=0)
+{cost=0.53*e;
+printf(""cost=%f"",cost);}
+else
+printf(""Invalid Value"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_1);
+if(varb_1>50)
+{varb_0=0.53*50+(varb_1-50)*0.58;
+printf(""cost=%f"",varb_0);}
+else
+if(varb_1>=0)
+{varb_0=0.53*varb_1;
+printf(""cost=%f"",varb_0);}
+else
+printf(""Invalid Value"");
+return 0;
+}",8
+25,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float x,cost;
+scanf(""%d"",&x);
+if(x<0)
+printf(""Invalid Value!"");
+else if(x<=50)
+{
+ cost =0.53*x;
+ printf(""cost = %.2f"",cost);
+}
+if(x>50)
+{
+cost =0.53*50+0.58*(x-50);
+printf(""cost = %.2f"",cost);
+}
+return 0;
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0<0)
+printf(""Invalid Value!"");
+else if(varb_0<=50)
+{
+ varb_1 =0.53*varb_0;
+ printf(""cost = %.2f"",varb_1);
+}
+if(varb_0>50)
+{
+varb_1 =0.53*50+0.58*(varb_0-50);
+printf(""cost = %.2f"",varb_1);
+}
+return 0;
+}
+",5
+26,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h> 
+#include<math.h>
+int main()
+{
+	float x,result;
+	scanf(""%f"",&x);
+	if (x>=0&&x<=50)
+	{
+	result=0.53*x;
+	printf(""cost=%0.2f"",result);
+	}
+	else if(x>50)
+	{
+	result=0.53*50+0.05*(x-50);
+	printf(""cost=%0.2f"",result);
+	}
+    else
+    printf(""Invalid Value!"");
+    return 0;
+}",0.0,"#include<stdio.h> 
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0&&varb_0<=50)
+	{
+	varb_1=0.53*varb_0;
+	printf(""cost=%0.2f"",varb_1);
+	}
+	else if(varb_0>50)
+	{
+	varb_1=0.53*50+0.05*(varb_0-50);
+	printf(""cost=%0.2f"",varb_1);
+	}
+    else
+    printf(""Invalid Value!"");
+    return 0;
+}",14
+27,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include <stdio.h>
+int main()
+{
+double cost;
+int a;
+scanf(""%f"",&a);
+if (a>50)
+   { cost=50*0.53+(a-50)*0.58;
+    printf(""cost=%.2f"",cost);
+    }
+else if (a<=50&&a>0)
+    {cost=a*0.53;
+     printf(""cost=%.2f"",cost);}
+else
+    printf(""Invalid Value!"");
+    return 0;
+}    ",0.0,"#include <stdio.h>
+int main()
+{
+double varb_0;
+int varb_1;
+scanf(""%f"",&varb_1);
+if(varb_1>50)
+   { varb_0=50*0.53+(varb_1-50)*0.58;
+    printf(""cost=%.2f"",varb_0);
+    }
+else if(varb_1<=50&&varb_1>0)
+    {varb_0=varb_1*0.53;
+     printf(""cost=%.2f"",varb_0);}
+else
+    printf(""Invalid Value!"");
+    return 0;
+}    ",5
+28,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{int a;
+float cost;
+if(0<a<=50)
+{cost=0.53*a;printf(""cost = %.2f"",cost);}
+if(a>50)
+{cost=0.58*(a-50)+0.53*50;printf(""cost = %.2f"",cost);}
+if(a<0)
+{printf(""Invalid Value!"");}
+return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0;
+float varb_1;
+if(0<varb_0<=50)
+{varb_1=0.53*varb_0;printf(""cost = %.2f"",varb_1);}
+if(varb_0>50)
+{varb_1=0.58*(varb_0-50)+0.53*50;printf(""cost = %.2f"",varb_1);}
+if(varb_0<0)
+{printf(""Invalid Value!"");}
+return 0;
+}",3
+29,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    int electric;
+    float electric_money;
+    scanf(""%d"",&electric);
+     if(electric>50)
+      {
+        electric_money=50.0*0.53+(electric-50.0)*0.58;
+        printf(""cost = %.2f\n"",electric_money);
+       }
+      else if(electric<=50)//判断用电量是否超过50
+      {
+        electric_money=electric*0.53;//计算50度以下电费
+        printf(""cost = %.2f"",electric_money);
+       }
+        else 
+           printf(""Invalid Value!"");
+         
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+     if(varb_0>50)
+      {
+        varb_1=50.0*0.53+(varb_0-50.0)*0.58;
+        printf(""cost = %.2f\n"",varb_1);
+       }
+      else if(varb_0<=50)
+      {
+        varb_1=varb_0*0.53;
+        printf(""cost = %.2f"",varb_1);
+       }
+        else 
+           printf(""Invalid Value!"");
+    return 0;
+}",4
+30,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+	int x;
+	float price;
+	scanf(""%d"",&x);
+	if (0<x<=50)
+	{
+		price=x*0.53;
+		printf(""cost=%.2f"",price);
+	}
+	else if(x>50)
+	{
+		price=50*0.53+(x-50)*0.58;
+		printf(""cost=%.2f"",price);
+	}
+	else if(x<=0)
+		printf(""Invalid Value!"");
+	return 0;
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	float varb_1;
+	scanf(""%d"",&varb_0);
+	if(0<varb_0<=50)
+	{
+		varb_1=varb_0*0.53;
+		printf(""cost=%.2f"",varb_1);
+	}
+	else if(varb_0>50)
+	{
+		varb_1=50*0.53+(varb_0-50)*0.58;
+		printf(""cost=%.2f"",varb_1);
+	}
+	else if(varb_0<=0)
+		printf(""Invalid Value!"");
+	return 0;
+}
+",4
+31,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main(void)
+{
+float a,cost,k;
+k=0.53;
+scanf(""%f"",&a);
+if(a>=50)
+ printf(""cost=%.2f"",cost=(a-50)*(k+0.05)+k*a);
+else if(a>=0)
+ printf(""cost=%.2f"",cost=a*k);
+else
+ printf(""Invalid Value!"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+float varb_0,varb_1,varb_2;
+varb_2=0.53;
+scanf(""%f"",&varb_0);
+if(varb_0>=50)
+ printf(""cost=%.2f"",varb_1=(varb_0-50)*(varb_2+0.05)+varb_2*varb_0);
+else if(varb_0>=0)
+ printf(""cost=%.2f"",varb_1=varb_0*varb_2);
+else
+ printf(""Invalid Value!"");
+return 0;
+}",8
+32,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else
+	{
+		cost = (val * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else
+	{
+		varb_1 =(varb_0 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	return 0;
+}",7
+33,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    
+	
+    float a,b,cost;
+    scanf(""%f"",&a);
+	if(a<0)
+    {
+	printf(""Invalid Value!"");
+    
+    fflush(stdin);
+    }
+	else if(a>=0&&a<=50)
+	cost=0.53*a;
+	else if(a>50)
+	cost=0.53*50+0.58*(a-50);
+	printf(""cost=%.2f"",cost);
+	
+
+	return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    scanf(""%f"",&varb_0);
+	if(varb_0<0)
+    {
+	printf(""Invalid Value!"");
+    fflush(stdin);
+    }
+	else if(varb_0>=0&&varb_0<=50)
+	varb_2=0.53*varb_0;
+	else if(varb_0>50)
+	varb_2=0.53*50+0.58*(varb_0-50);
+	printf(""cost=%.2f"",varb_2);
+	return 0;
+}
+",9
+34,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    float a,b,cost;
+    scanf(""%f"",&a);
+	if(a<0)
+	printf(""Invalid Value!"");
+	else if(a>=0&&a<=50)
+	cost=0.53*a;
+	else if(a>50)
+	cost=0.53*50+0.58*(a-50);
+	printf(""cost=%.2f"",cost);
+	
+
+	return 0;
+	}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    scanf(""%f"",&varb_0);
+	if(varb_0<0)
+	printf(""Invalid Value!"");
+	else if(varb_0>=0&&varb_0<=50)
+	varb_2=0.53*varb_0;
+	else if(varb_0>50)
+	varb_2=0.53*50+0.58*(varb_0-50);
+	printf(""cost=%.2f"",varb_2);
+	return 0;
+	}",14
+35,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50 && val >= 0)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else if (val > 50)
+	{
+		cost = (val * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	else 
+	{
+		printf (""Invalid Value"");
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50 && varb_0 >= 0)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else if(varb_0 > 50)
+	{
+		varb_1 =(varb_0 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else 
+	{
+		printf(""Invalid Value"");
+	}
+	return 0;
+}",14
+36,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main(void)
+{
+float a,cost,k;
+k=0.53;
+scanf(""%f"",&a);
+if(a>=50)
+ printf(""cost=%.2f"",cost=a*(k+0.05));
+else if(a>=0)
+ printf(""cost=%.2f"",cost=a*k);
+else
+ printf(""Invalid Value!"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main(void)
+{
+float varb_0,varb_1,varb_2;
+varb_2=0.53;
+scanf(""%f"",&varb_0);
+if(varb_0>=50)
+ printf(""cost=%.2f"",varb_1=varb_0*(varb_2+0.05));
+else if(varb_0>=0)
+ printf(""cost=%.2f"",varb_1=varb_0*varb_2);
+else
+ printf(""Invalid Value!"");
+return 0;
+}",8
+37,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    
+	
+    float a,b,cost;
+    scanf(""%f"",&a);
+	if(a<0)
+	printf(""Invalid Value!"");
+	else if(a>=0&&a<=50)
+	cost=0.53*a;
+	else if(a>50)
+	cost=0.53*50+0.58*(a-50);
+	printf(""cost=%.2f"",cost);
+	
+
+	return 0;
+	}",0.0,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    scanf(""%f"",&varb_0);
+	if(varb_0<0)
+	printf(""Invalid Value!"");
+	else if(varb_0>=0&&varb_0<=50)
+	varb_2=0.53*varb_0;
+	else if(varb_0>50)
+	varb_2=0.53*50+0.58*(varb_0-50);
+	printf(""cost=%.2f"",varb_2);
+	return 0;
+	}",14
+38,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+  double a,cost;
+    a=-10;
+    scanf(""%lf"",&a);
+  if(a>=0&&a<=50)
+    {printf(""cost=%.2f"",cost=0.53*a);
+}
+  else if(a>50)
+    {printf(""cost=%.2f"",cost=50*0.53+0.58*(a-50));
+}
+   else if(a<0)
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1;
+    varb_0=-10;
+    scanf(""%lf"",&varb_0);
+  if(varb_0>=0&&varb_0<=50)
+    {printf(""cost=%.2f"",varb_1=0.53*varb_0);
+}
+  else if(varb_0>50)
+    {printf(""cost=%.2f"",varb_1=50*0.53+0.58*(varb_0-50));
+}
+   else if(varb_0<0)
+     {printf(""Invalid Valve!"");
+}
+     return 0;
+}
+",14
+39,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a;
+scanf(""%f"",&a);
+if(a=0)
+printf(""Invalid Value!"");
+else if(a>=0 && a<=50)
+printf(""cost=%.2f"",a*0.53);
+else
+printf(""cost=%.2f"",50*0.53+(a-50)*0.05); 
+return 0;       
+}
+     
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0;
+scanf(""%f"",&varb_0);
+if(varb_0=0)
+printf(""Invalid Value!"");
+else if(varb_0>=0 && varb_0<=50)
+printf(""cost=%.2f"",varb_0*0.53);
+else
+printf(""cost=%.2f"",50*0.53+(varb_0-50)*0.05); 
+return 0;       
+}
+",7
+40,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+float a,cost;
+scanf(""%.2f"",&a);
+if(a<0)
+{
+printf(""Invalid Value!"");
+}
+else if(a<=50)
+{
+cost=0.53*a;
+printf(""cost=%.2f"",cost);
+}
+else if(a>50)
+{
+cost=50*0.53+(a-50)*0.58;
+printf(""cost=%.2f"",cost);
+}
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0<0)
+{
+printf(""Invalid Value!"");
+}
+else if(varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+{
+varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+}
+return 0;
+}",5
+41,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+ float t,cost;
+ scanf(""%f"",&t);
+ if(t<0)
+ printf(""Invalid Value!"");
+ else if(t<=50){
+ cost=0.53*t;
+ printf(""cost=%.2f"");
+ }
+ else if(t>50){
+ cost=50*0.53+(t-50)*(0.05+0.53);
+ printf(""cost=%.2f"");
+ }
+  return 0;
+ }
+ 
+ 
+",0.0,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ if(varb_0<0)
+ printf(""Invalid Value!"");
+ else if(varb_0<=50){
+ varb_1=0.53*varb_0;
+ printf(""cost=%.2f"");
+ }
+ else if(varb_0>50){
+ varb_1=50*0.53+(varb_0-50)*(0.05+0.53);
+ printf(""cost=%.2f"");
+ }
+  return 0;
+ }
+",10
+42,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50 && val >= 0)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else if (val > 50)
+	{
+		cost = (50 * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	else 
+	{
+		printf (""Invalid Value"");
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50 && varb_0 >= 0)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else if(varb_0 > 50)
+	{
+		varb_1 =(50 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else 
+	{
+		printf(""Invalid Value"");
+	}
+	return 0;
+}",19
+43,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+  float x,cost;
+  scanf(""%f"",&x);
+  
+
+  if (0<x<=50)
+{  
+   cost=x*0.53;
+   printf(""cost=%.2f"",cost);
+}
+  else if (x>50)
+{
+   cost=26.5+(x-50)*0.58;
+   printf(""cost=%.2f"",cost);
+}
+   else
+  {  printf (""Invalid Value!"");
+ }
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  if(0<varb_0<=50)
+{  
+   varb_1=varb_0*0.53;
+   printf(""cost=%.2f"",varb_1);
+}
+  else if(varb_0>50)
+{
+   varb_1=26.5+(varb_0-50)*0.58;
+   printf(""cost=%.2f"",varb_1);
+}
+   else
+  {  printf(""Invalid Value!"");
+ }
+  return 0;
+}",6
+44,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	float cost,x;
+	scanf(""%f"",&x);
+	if(x<0)
+	printf(""Invalid Value!"");
+
+
+	else if(x<50)
+{
+	cost=0.53*x;
+	printf(""cost=%.2f"",cost);
+
+}
+	else
+	cost=0.53*50+0.58*(x-50);
+	printf(""cost=%.2f"",cost);
+	return 0;
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	if(varb_1<0)
+	printf(""Invalid Value!"");
+	else if(varb_1<50)
+{
+	varb_0=0.53*varb_1;
+	printf(""cost=%.2f"",varb_0);
+}
+	else
+	varb_0=0.53*50+0.58*(varb_1-50);
+	printf(""cost=%.2f"",varb_0);
+	return 0;
+}",17
+45,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+int x;
+float y;
+scanf(""%d"",&x);
+if(x<0)
+{
+printf(""Invalid Value!"");
+if(x<=50)
+y=0.53*x;printf(""cost=%.2f"",y);
+}
+else
+{
+y=50*0.53+(x-50)*0.58;printf(""cost=%.2f"",y);
+}
+
+
+ return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0<0)
+{
+printf(""Invalid Value!"");
+if(varb_0<=50)
+varb_1=0.53*varb_0;printf(""cost=%.2f"",varb_1);
+}
+else
+{
+varb_1=50*0.53+(varb_0-50)*0.58;printf(""cost=%.2f"",varb_1);
+}
+ return 0;
+}",7
+46,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+int x;
+double y;
+scanf(""%d"",&x);
+if(x<=0)
+printf(""Invalid Value!"");
+else if(0<x<=50)
+{
+y=0.53*x;
+printf(""cost = %0.2lf"",y);
+}
+if(x>50)
+{
+y=(0.53*50)+((x-50)*0.58);
+printf(""cost = %0.2lf"",y);
+}
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+double varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0<=0)
+printf(""Invalid Value!"");
+else if(0<varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost = %0.2lf"",varb_1);
+}
+if(varb_0>50)
+{
+varb_1=(0.53*50)+((varb_0-50)*0.58);
+printf(""cost = %0.2lf"",varb_1);
+}
+return 0;
+}
+",9
+47,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+    int electric;
+    float electric_money;
+    scanf(""%d"",&electric);
+     if(electric>50)
+      {
+        electric_money=50.0*0.53+(electric-50.0)*0.58;
+        printf(""cost = %.2f\n"",electric_money);
+       }
+      else if(electric<=50)//判断用电量是否超过50
+      {
+        electric_money=electric*0.53;//计算50度以下电费
+        printf(""cost = %.2f"",electric_money);
+       }
+      else 
+           printf(""Invalid Value!"");
+         
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d"",&varb_0);
+     if(varb_0>50)
+      {
+        varb_1=50.0*0.53+(varb_0-50.0)*0.58;
+        printf(""cost = %.2f\n"",varb_1);
+       }
+      else if(varb_0<=50)
+      {
+        varb_1=varb_0*0.53;
+        printf(""cost = %.2f"",varb_1);
+       }
+      else 
+           printf(""Invalid Value!"");
+    return 0;
+}",4
+48,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+	int val;
+	double cost;
+   scanf (""%d"",&val);
+   if (val <= 50)
+	{
+		cost = val * 0.53;
+		printf (""cost = %.2lf"",cost);
+	}
+	else if (val > 50)
+	{
+		cost = (val * 0.53) + (val - 50)*(0.53 + 0.05);
+		printf (""cost = %.2lf"",cost);
+	}
+	else 
+	{
+		printf (""Invalid Value!"");
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	double varb_1;
+   scanf(""%d"",&varb_0);
+   if(varb_0 <= 50)
+	{
+		varb_1 = varb_0 * 0.53;
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else if(varb_0 > 50)
+	{
+		varb_1 =(varb_0 * 0.53) +(varb_0 - 50)*(0.53 + 0.05);
+		printf(""cost = %.2lf"",varb_1);
+	}
+	else 
+	{
+		printf(""Invalid Value!"");
+	}
+	return 0;
+}",7
+49,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+int main()
+{
+float x,cost;
+scanf(""%f"",&x);
+if(x<0)
+{
+printf(""Invalid Value!"");
+}
+else if(x<=50)
+{
+cost=0.53*x;
+printf(""cost=%.2f"",cost);
+}
+else if(x>50)
+cost=50*0.53+(x-50)*0.58;
+printf(""cost=%.2f"",cost);
+    
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+if(varb_0<0)
+{
+printf(""Invalid Value!"");
+}
+else if(varb_0<=50)
+{
+varb_1=0.53*varb_0;
+printf(""cost=%.2f"",varb_1);
+}
+else if(varb_0>50)
+varb_1=50*0.53+(varb_0-50)*0.58;
+printf(""cost=%.2f"",varb_1);
+return 0;
+}
+",6
+50,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+float coast,x;
+
+scanf(""%f"",&x);
+
+if (x<0)
+
+{
+
+printf(""Invalid Value!"");
+
+}
+
+else
+
+if (x<=50)
+
+{
+
+coast=0.53*x;
+
+printf(""coast=%.2f"",coast);
+
+}
+
+else 
+
+{
+
+coast=0.53*50+0.58*(x-50);
+
+printf(""coast=%.2f"",coast);
+}
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_1);
+if(varb_1<0)
+{
+printf(""Invalid Value!"");
+}
+else
+if(varb_1<=50)
+{
+varb_0=0.53*varb_1;
+printf(""coast=%.2f"",varb_0);
+}
+else 
+{
+varb_0=0.53*50+0.58*(varb_1-50);
+printf(""coast=%.2f"",varb_0);
+}
+}",15
+51,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+	int a;
+	float c;
+	scanf(""%d"",&a);
+	if(a<=50&&a>0)
+	{
+	  c=0.53*a;
+	  printf(""cost=%.2f"",c);
+	}
+	else if(a>50)
+	{
+	  c=50*0.53+(a-50)*0.58;
+	  printf(""cost=%02f"",c);
+	}
+	else
+	  printf(""Invalid Value!"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	float varb_1;
+	scanf(""%d"",&varb_0);
+	if(varb_0<=50&&varb_0>0)
+	{
+	  varb_1=0.53*varb_0;
+	  printf(""cost=%.2f"",varb_1);
+	}
+	else if(varb_0>50)
+	{
+	  varb_1=50*0.53+(varb_0-50)*0.58;
+	  printf(""cost=%02f"",varb_1);
+	}
+	else
+	  printf(""Invalid Value!"");
+return 0;
+}",15
+52,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include<stdio.h>
+int main()
+{
+ int x;
+ double cost;
+ scanf(""%d"",&x);
+ if(x<=50)
+ cost=0.53*x;
+ else if(x<0)
+ printf(""Invalid Value!"");
+ else
+ cost=0.53*50+0.58*(x-50);
+ if(x>0)
+printf(""cost=%.2f"",cost);
+}",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ double varb_1;
+ scanf(""%d"",&varb_0);
+ if(varb_0<=50)
+ varb_1=0.53*varb_0;
+ else if(varb_0<0)
+ printf(""Invalid Value!"");
+ else
+ varb_1=0.53*50+0.58*(varb_0-50);
+ if(varb_0>0)
+printf(""cost=%.2f"",varb_1);
+}",9
+53,2c9f30a576c1c3dd017bdd2f82b36a5d,"#include <stdio.h>
+#include<math.h>
+int main()
+{
+	float a,cost;
+	scanf(""%f"",&a);
+	if(a<0)
+	printf(""Invalid Value!"");
+    else if(a<=50)
+    {
+    cost=0.53*a;
+    printf(""cost=%f"",cost);
+    }
+    else
+    printf(""cost=%f"",0.53*50+(a-50)*0.58);
+}",0.0,"#include <stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0<0)
+	printf(""Invalid Value!"");
+    else if(varb_0<=50)
+    {
+    varb_1=0.53*varb_0;
+    printf(""cost=%f"",varb_1);
+    }
+    else
+    printf(""cost=%f"",0.53*50+(varb_0-50)*0.58);
+}",12

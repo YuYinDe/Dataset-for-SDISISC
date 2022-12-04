@@ -1,0 +1,1162 @@
+,id,code,is_true,errorline
+0,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+gets(varb_0);
+gets(varb_1);
+if(strncmp(varb_0,varb_1,100)!=0)
+printf(""Yes"");
+else
+printf(""No"");
+ } ",0.0,9
+1,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+gets(varb_0);
+gets(varb_1);
+if(strncmp(varb_0,varb_1,100)==0)
+printf(""No"");
+else
+printf(""Yes"");
+ } ",0.0,9
+2,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(varb_0[b]!=B[c])
+      d=0;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,16
+3,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B))
+     {printf(""Yes"");}
+   else
+     {printf(""No"");}
+   return 0;
+}",0.0,6
+4,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B)!=NULL)
+      printf(""No"");
+      else
+      printf(""Yes"");
+   return 0;
+}",0.0,5
+5,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[varb_1]!='\0';b++)
+   {
+      if(varb_0[b]!=B[c])
+      d=0;
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     if(varb_1==d)
+     printf(""yes"");
+     else
+     printf(""no"");
+return 0;
+}
+",0.0,9
+6,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+char *varb_2;
+scanf(""%s%s"",varb_0,varb_1);
+varb_2=strstr(varb_0,varb_1);
+if(varb_2!=NULL)
+printf(""Yes"");
+else
+printf(""No"");
+return 0;
+}",0.0,5
+7,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+int varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+gets(varb_0);
+gets(varb_1);
+varb_2=strlen(varb_0);
+varb_3=strlen(varb_1);
+for(varb_4=0;varb_4<varb_2;varb_4++)
+{varb_6=0;varb_7=1;
+for(varb_5=varb_4;varb_5<varb_3+varb_4;varb_5++)
+{if(varb_0[varb_5]!=varb_1[varb_6++])
+varb_7=0;}}
+if(varb_7==1)
+printf(""Yes"");
+else printf(""No"");
+return 0;}",0.0,7
+8,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0, varb_4=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_5==strlen(varb_2))
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_5!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,16
+9,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+  for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0';varb_3++)
+   {
+     if(varb_0[varb_3]!=varb_2[varb_4])
+       varb_5=0, varb_4=0;
+     if(varb_0[varb_3]==varb_2[varb_4]) 
+     {    
+       varb_5++;
+       varb_4++;
+     }
+   }
+if(varb_5!=strlen(varb_2))
+  printf(""Yes"");
+if(varb_5==strlen(varb_2)) 
+  printf(""No"") ;
+}  ",0.0,14
+10,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100]={'\0'},b[100]={'\0'},*p;
+	gets(varb_0);
+	gets(b);
+	p=strstr(varb_0,b);
+	if(p!=NULL)
+		printf(""yes"");
+	else
+	printf(""no"");
+}",0.0,10
+11,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1+1]!='\0';varb_1++)
+   for(b=0;varb_0[b+1]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,8
+12,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1+1]!='\0';varb_1++)
+   for(b=0;varb_0[b+1]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(c==varb_1)
+      break;
+      if(varb_0[b]!=B[c])
+      d=0;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,8
+13,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0',varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_4==strlen(varb_2)&&varb_5!=0)
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_4!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,14
+14,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0',varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0, varb_4=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_5==strlen(varb_2))
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_5!=strlen(varb_2)||varb_5!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,19
+15,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]!=B[c])
+      d=0;
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     if(varb_1==d)
+     printf(""yes"");
+     if(varb_1!=d)
+     printf(""No"");
+return 0;
+}
+",0.0,20
+16,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(c==(varb_1-1))
+      break;
+      if(varb_0[b]!=B[c])
+     { c=0;
+      d=0;
+      }
+   }
+     if(varb_1==d&&varb_1==c)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,16
+17,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+gets(varb_0);
+gets(varb_1);
+if(varb_0[100]==varb_1[100])
+printf(""Yes"");
+else
+printf(""NO"");
+}",0.0,9
+18,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B)==NULL)
+      printf(""No"");
+      else
+      printf(""Yes"");
+   return 0;
+}",0.0,6
+19,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char varb_0[100],b[100];
+    gets(varb_0);
+    gets(b);
+    if(strstr(varb_0,b)==NULL)
+    {
+        printf(""Yes"");
+    }
+    else
+    {
+        printf(""No"");
+    }
+    return 0;
+}",0.0,10
+20,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+  for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0';varb_3++)
+   {
+     if(varb_0[varb_3]!=varb_2[varb_4])
+       varb_5=0, varb_4=0;
+     if(varb_0[varb_3]==varb_2[varb_4]) 
+     {    
+       varb_5++;
+       varb_4++;
+     }
+   }
+if(varb_5==strlen(varb_2))
+  printf(""Yes"");
+if(varb_5!=strlen(varb_2)) 
+  printf(""No"") ;
+}
+",0.0,14
+21,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+char *varb_2;
+scanf(""%s%s"",varb_0,varb_1);
+varb_2=strstr(varb_0,varb_1);
+if(varb_2 != NULL)
+printf(""Yes"");
+else
+printf(""No"");
+return 0;
+}",0.0,8
+22,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+  for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0';varb_3++)
+   {
+     if(varb_0[varb_3]!=varb_2[varb_4])
+       varb_5=0, varb_4=0;
+     if(varb_0[varb_3]==varb_2[varb_4]) 
+     {    
+       varb_5++;
+       varb_4++;
+     }
+   }
+if(varb_5!=strlen(varb_2))
+  printf(""No"");
+if(varb_5==strlen(varb_2)) 
+  printf(""Yes"") ;
+}  ",0.0,14
+23,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char *varb_0;
+	char *varb_1;
+	gets(varb_0);
+	gets(varb_1);
+	char *varb_2=strstr(varb_0,varb_1);
+	if(varb_2==NULL)
+		printf(""No"");
+	else
+		printf(""Yes"");	
+} ",0.0,5
+24,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B))
+     {printf(""No"");}
+   else
+     {printf(""Yes"");}
+   return 0;
+}",0.0,6
+25,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[varb_1]!='\0';b++)
+   {
+      if(varb_0[b]!=B[c])
+      d=0;
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     if(varb_1==d)
+     printf(""yes"");
+     if(varb_1!=d)
+     printf(""no"");
+return 0;
+}
+",0.0,9
+26,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+#define M 100
+void main()
+{
+    char varb_0[M],B[M];
+    gets(varb_0);
+    gets(B);
+    if(strstr(varb_0,B))
+    printf(""YES"");
+    else
+    printf(""NO"");
+}",0.0,10
+27,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0, varb_4=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_5==strlen(varb_2))
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_5!=strlen(varb_2)||varb_5!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,16
+28,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char varb_0[100],B[100];
+    gets(varb_0);
+    gets(B);
+    if(strstr(varb_0,B))
+    printf(""YES"");
+    else
+    printf(""NO"");
+    return 0;
+}",0.0,5
+29,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[varb_1]!='\0';b++)
+   {
+      if(varb_0[b]!=B[c])
+      d=0;
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     if(varb_1==d)
+     printf(""yes"");
+     if(varb_1!=d)
+     printf(""no"");
+return 0;
+}
+",0.0,9
+30,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+  char varb_0[100],b[100],i,j;
+  scanf(""%s"",varb_0);
+  scanf(""%s"",b);
+  for(i=0;b[i]='\0';i++)
+  {
+    for(j=0;varb_0[j]='\n';j++)
+    {
+      if(varb_0[i]==b[j])
+      {
+       printf(""Yes""); 
+      }
+      else 
+      {printf(""No"");}
+    }
+  }
+}",0.0,9
+31,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(varb_0[b]!=B[c])
+      b=0;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,16
+32,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+        if(varb_0[b]!=B[c])
+     { c=0;
+      d=0;
+      } 
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }           
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""%d"",d);
+     return 0;
+   }
+",0.0,24
+33,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char varb_0[100],b[100];
+    gets(varb_0);
+    gets(b);
+    if(strstr(varb_0,b)==1)
+    {
+        printf(""Yes"");
+    }
+    else
+    {
+        printf(""No"");
+    }
+    return 0;
+}",0.0,6
+34,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]!=B[c])
+      d=0;
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+   }
+     printf(""%d"",d);
+     return 0;
+     }
+",0.0,19
+35,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0=0,j=0,x=-1;
+	char varb_1[100];
+	char varb_2[100];
+	gets(varb_1);
+	gets(varb_2);
+  while(varb_0<strlen(varb_1)&&j<strlen(varb_2)){
+        if(varb_1[varb_0]==varb_2[j])
+		{
+            varb_0++;
+            j++;
+        }else{
+            varb_0=0;
+            j++;
+        }
+        if(varb_0==strlen(varb_2))
+		{
+            x=1;
+            break;
+        }
+    }
+    if(x==1)
+    printf(""Yes"");
+    else 
+    printf(""No"");
+}",0.0,16
+36,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100];
+   char varb_1[100];
+   char *varb_2;
+   scanf(""%s%s"",varb_0,varb_1);
+   varb_2=strstr(varb_0,varb_1);
+   if(varb_2!=NULL)
+     printf(""Yes"");
+   else
+     printf(""No"");
+   return 0;
+}",0.0,5
+37,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[1024];
+char varb_1[1024];
+char *varb_2;
+scanf(""%s%s"",varb_0,varb_1);
+varb_2=strstr(varb_0,varb_1);
+if(varb_2!=NULL)
+printf(""Yes"");
+else
+printf(""No"");
+return 0;
+}",0.0,5
+38,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1+1]!='\0';varb_1++)
+   for(b=0;varb_0[b+1]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(c==varb_1)
+      break;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,8
+39,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(c==varb_1)
+      break;
+      if(varb_0[b]!=B[c])
+      d=0;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,16
+40,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",varb_0,B);
+   if(strstr(varb_0,B)!=NULL)
+     {printf(""Yes"");}
+   else
+     {printf(""No"");}
+   return 0;
+}",0.0,6
+41,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+ char varb_0[20],s2[20];
+ gets(varb_0);
+ gets(s2);
+ if(strstr(varb_0,s2))
+ printf(""YES"");
+ else
+ printf(""NO"");	
+	return 0;
+ } ",0.0,9
+42,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+char varb_1[100];
+char *varb_2;
+scanf(""%s%s"",varb_0,varb_1);
+varb_2=strstr(varb_0,varb_1);
+if(varb_2!=NULL)
+printf(""Yes"");
+else
+printf(""No"");
+return 0;
+}",0.0,5
+43,2c9f30a56eaa009f016ec1c34cbf1c28,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char *varb_0[100],*b[100];
+	char *varb_1;
+	gets(*varb_0);
+	gets(*b);
+   strstr(*varb_0,*b);
+    if(varb_1)
+        printf(""Yes"");
+    else
+        printf(""No"");
+    return 0;
+}",0.0,9
+44,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100],b[100];
+	gets(varb_0);
+	gets(b);
+	if(strstr(b,varb_0)==NULL)
+	printf(""Yes"");
+	else
+	printf(""No"");		
+	return 0;
+}",0.0,5
+45,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+#define M 100
+void main()
+{
+    char varb_0[M],B[M];
+    gets(varb_0);
+    gets(B);
+    if(strstr(varb_0,B))
+    printf(""YES"");
+    else
+    printf(""NO"");
+}",0.0,10
+46,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }
+      if(c==varb_1)
+      break;
+      if(varb_0[b]!=B[c])
+      b=0;
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,16
+47,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0',varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_4==strlen(varb_2)&&varb_5==strlen(varb_2))
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_4!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,25
+48,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+  for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0';varb_3++)
+   {
+     if(varb_0[varb_3]!=varb_2[varb_4])
+       varb_5=0, varb_4=0;
+     if(varb_0[varb_3]==varb_2[varb_4]) 
+     {    
+       varb_5++;
+       varb_4++;
+     }
+   }
+if(varb_5==strlen(varb_2))
+  printf(""Yes"");
+if(varb_5!=strlen(varb_2)) 
+  printf(""No"") ;
+}  ",0.0,14
+49,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void func_0(char[],char[]) ;
+int main() 
+{
+char varb_0[100], varb_2[100];
+gets(varb_0);
+gets(varb_2);
+func_0(varb_0, varb_2) ;
+return 0;
+}
+void func_0(char varb_0[],char varb_2[]) 
+{
+int varb_3,varb_4,varb_5;
+varb_5=0;
+for(varb_3=0,varb_4=0;varb_0[varb_3]!='\0',varb_2[varb_4]!='\0';varb_3++)
+ {
+   if(varb_0[varb_3]!=varb_2[varb_4])
+     varb_5=0;
+   if(varb_0[varb_3]==varb_2[varb_4]) 
+     {
+      varb_4++;
+      varb_5++;
+     }
+   if(varb_4==strlen(varb_2)&&varb_5==strlen(varb_2))
+    {
+    printf(""Yes"");
+    break;
+    }
+ }
+if(varb_4!=strlen(varb_2)&&varb_5!=strlen(varb_2)) 
+ printf(""No"") ;
+}
+",0.0,31
+50,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B)==NULL)
+     printf(""No"");
+   else
+     printf(""Yes"");
+   return 0;
+}",0.0,6
+51,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B)!=NULL)
+     {printf(""No"");}
+   else
+     {printf(""Yes"");}
+   return 0;
+}",0.0,6
+52,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char varb_0[100],B[100];
+    gets(varb_0);
+    gets(B);
+    if(strstr(varb_0,B))
+    printf(""YES"");
+    else
+    printf(""NO"");
+}",0.0,3
+53,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char varb_0[100],b[100];
+  gets(varb_0);
+  gets(b);
+      if(strstr(varb_0,b))
+       printf(""Yes""); 
+      else 
+     printf(""No"");
+     return 0;
+}",0.0,13
+54,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+int main()
+{
+   char varb_0[100],B[100];
+   int varb_1=0,b=0,c=0,d=0;
+   gets(varb_0);
+   gets(B);
+   for(varb_1=0;B[varb_1]!='\0';varb_1++)
+   for(b=0;varb_0[b]!='\0';b++)
+   {
+      if(varb_0[b]==B[c])
+      {
+        c++;
+        d++;
+      }     
+      if(varb_0[b]!=B[c])
+     { c=0;
+      d=0;
+      }
+   }
+     if(varb_1==d)
+     printf(""Yes"");
+     else
+     printf(""No"");
+     return 0;
+   }
+",0.0,15
+55,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char varb_0[100],B[100];
+   scanf(""%s%s"",&varb_0,&B);
+   if(strstr(varb_0,B)==NULL)
+     printf(""No"");
+   else
+     printf(""Yes"");
+   return 0;
+}",0.0,6
+56,2c9f30a56eaa009f016ec1c34cbf1c28,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char varb_0[100],B[100];
+    gets(varb_0);
+    gets(B);
+    if(strstr(varb_0,B))
+    printf(""YES"");
+    else
+    printf(""NO"");
+}",0.0,5

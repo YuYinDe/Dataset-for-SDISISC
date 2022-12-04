@@ -1,0 +1,83 @@
+,id,code,is_true,errorline
+0,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+printf(""%f %f"",varb_3,varb_4);
+}
+",0.0,7
+1,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+    else printf(""no real number solution"");
+printf(""%f %f"",varb_3,varb_4);
+}
+",0.0,7
+2,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0)
+    {
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+printf(""%f %f"",varb_3,varb_4);
+    }
+    else printf(""no real number solution"");
+}
+",0.0,7
+3,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0)
+    {
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+printf(""%f %f"",varb_3,varb_4);
+    }
+    else printf(""no real number solution"");
+}
+",0.0,7
+4,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+printf(""%f %f"",varb_3,varb_4);
+}
+",0.0,7
+5,2c911d616dd52a5e016de9fe2e4114f5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2,varb_3,varb_4;
+    scanf(""%f%f%f"",&varb_2,&varb_3,&varb_4);
+    varb_0=(-varb_3+sqrt(pow(varb_3,2)-4*varb_2*varb_4))/(2*varb_2);
+    varb_1=(-varb_3-sqrt(pow(varb_3,2)-4*varb_2*varb_4))/(2*varb_2);
+    printf(""%f %f"",varb_0,varb_1);
+    return 0;
+}",0.0,6

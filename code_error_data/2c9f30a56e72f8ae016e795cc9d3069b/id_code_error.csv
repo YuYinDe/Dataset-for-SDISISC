@@ -1,0 +1,1386 @@
+,id,code,is_true,errorline
+0,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int varb_0,varb_1;
+int func_0(int);
+int main()
+{
+    int varb_2;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+    printf(""%d"",varb_2);
+}
+int func_0(int i)
+{
+    if(i==0)
+    return(1);
+    else
+    return(i*func_0(i-1));
+}",0.0,3
+1,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long int varb_0, long long int varb_1)
+{long long	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+2,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int main()
+{
+	int func_0(int x);
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	int varb_2;
+	varb_2=(func_0(varb_0))/((func_0(varb_1))*func_0(varb_0-varb_1));
+	printf(""%d"",varb_2); 
+}
+int func_0(int x)
+{
+	return x*func_0(x-1);
+}",0.0,4
+3,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int x);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  varb_1<=varb_0<=20;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+  printf(""%d"",varb_2);
+  return 0;
+}
+int func_0(x)
+{
+  if(x<0)
+  printf(""error"");
+  else if(x==0||x==1)
+  return 1;
+  else
+  return func_0(x-1)*x;
+}
+",0.0,2
+4,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int x);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+  printf(""%d"",varb_2);
+  return 0;
+}
+int func_0(x)
+{
+  if(x<0)
+  printf(""error"");
+  else if(x==0||x==1)
+  return 1;
+  else if(x<=20)
+  return func_0(x-1)*x;
+}
+",0.0,2
+5,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(int varb_1)
+{
+if(varb_1==1||varb_1==0)
+   return 1;
+else
+   return varb_1*func_0(varb_1-1);
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}",0.0,2
+6,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long func_0(int varb_1);
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	float varb_3;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	if(varb_0<varb_1)
+	{
+		varb_2=varb_0;
+		varb_0=varb_1;
+		varb_1=varb_2;
+	}
+	varb_3=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+	printf(""%.0f"",varb_3);
+}
+long  func_0(int varb_1)
+{
+	int varb_4;
+	long varb_2=1;
+	for(varb_4=1;varb_4<=varb_1;varb_4++)
+	varb_2*=varb_4;
+	return varb_2;
+}",0.0,2
+7,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(int);
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d%d"",&varb_0,&varb_1);
+long int varb_2,varb_3,varb_4,varb_5;
+varb_2=func_0(varb_0);
+varb_3=func_0(varb_1);
+varb_4=func_0(varb_0-varb_1);
+varb_5=varb_2/(varb_3*varb_4);
+printf(""%d"",varb_5);
+}
+long int func_0(int k)
+{
+if(k==0)
+return 1;
+if(k==1)
+return 1;
+else return(k*func_0(k-1));
+}",0.0,2
+8,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long int varb_0, long long int varb_1)
+{long long	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));return varb_6;
+}
+",0.0,2
+9,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int main()
+{
+   long int func_0(int);
+	long int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+	return 0;
+}
+ long int func_0(int varb_1)
+ {
+long int varb_2,varb_3=1;
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+ varb_3=varb_2*varb_3;	
+return varb_3;
+ }",0.0,4
+10,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+int func_0(int varb_1);
+int func_2(int varb_0, int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf_s(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+int func_2(int varb_0, int varb_1)
+{
+	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+11,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+int func_0(int varb_1);
+int func_2(int varb_0, int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+int func_2(int varb_0, int varb_1)
+{
+	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+12,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+double func_0(double);
+int main()
+{
+   int varb_0,varb_1;
+   double varb_2;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%d"",varb_2);
+}
+double func_0(double a)
+{
+    if(a==1)
+       return 1;
+    else
+       return(func_0(a-1)*a);
+}",0.0,5
+13,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_1);
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}
+int func_0(int varb_1)
+{
+if(varb_1==1||varb_1==0)
+ return 1;
+else
+return varb_1*func_0(varb_1-1);
+}",0.0,2
+14,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int);
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%d"",varb_2);
+}
+int func_0(int varb_1)
+{
+   if(varb_1==0)
+   return(1);
+   else
+   return(varb_1*func_0(varb_1-1));
+}",0.0,2
+15,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+ long  int func_0(int varb_1)
+{
+if(varb_1==1||varb_1==0)
+   return 1;
+else
+   return varb_1*func_0(varb_1-1);
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}",0.0,2
+16,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int x);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+  printf(""%d"",varb_2);
+  return 0;
+}
+int func_0(x)
+{
+  if(x<0)
+  printf(""error"");
+  else if(x==0||x==1)
+  return 1;
+  else
+  return func_0(x-1)*x;
+}
+",0.0,2
+17,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long int func_0(int varb_1)
+{
+if(varb_1==0||varb_1==1)
+return(1);
+else 
+return(func_0(varb_1-1)*varb_1);
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0))/(func_0(varb_1)*func_0(varb_0-varb_1));
+}",0.0,13
+18,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long int func_0(int varb_0);
+int main()
+{
+     int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_1)/(func_0(varb_0)*func_0(varb_1-varb_0)));
+}
+long long int func_0( int varb_0)
+{
+	if( varb_0 == 0||varb_0 == 1)
+      return( 1);
+    else
+       return(func_0(varb_0-1)*varb_0);
+}",0.0,2
+19,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+	int func_0(int varb_1);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+	return 0;
+}
+ int func_0(int varb_1)
+ {
+int varb_2,varb_3=1;
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+ varb_3=varb_2*varb_3;	
+return varb_3;
+ }",0.0,2
+20,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+long long func_0(int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%ld"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}
+long long func_0(int varb_1)
+{
+	long long varb_2=1;
+	for(;varb_1>0;varb_1--)
+	{
+		varb_2=varb_1*varb_2;
+		printf(""%lld %d\n"",varb_2,varb_1);
+	}
+	return varb_2;
+}
+",0.0,15
+21,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long int varb_0, long long int varb_1)
+{long long	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+     return varb_6;
+}
+",0.0,2
+22,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_0);
+int func_2(int varb_1);
+int func_3(int varb_2);
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*(func_3(varb_2)));
+   printf(""%d"",varb_3);
+}
+int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+int func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+int func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,2
+23,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(int);
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+long int varb_2,varb_3,varb_4,varb_5;
+varb_2=func_0(varb_0);
+varb_3=func_0(varb_1);
+varb_4=func_0(varb_0-varb_1);
+varb_5=varb_2/(varb_3*varb_4);
+printf(""%d"",varb_5);
+}
+long int func_0(int k)
+{
+if(k==0)
+return 1;
+if(k==1)
+return 1;
+else return(k*func_0(k-1));
+}",0.0,2
+24,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long int func_0(int varb_0);
+int main()
+{
+     int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_1)/(func_0(varb_0)*func_0(varb_1-varb_0)));
+	return 0;
+}
+long long int func_0( int varb_0)
+{
+    long long int varb_2;
+	if( varb_0 == 0||varb_0 == 1)
+      varb_2 = 1;
+    else
+       varb_2=func_0(varb_0-1)*varb_0;
+    return(varb_2);
+}",0.0,6
+25,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_0);
+int func_2(int varb_1);
+int func_3(int varb_2);
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%ld%ld"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%ld"",varb_3);
+}
+int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+int func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+int func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,2
+26,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+float func_0(int);
+int main()
+{
+    float varb_0,varb_1,varb_2;
+    scanf(""%f %f"",&varb_0,&varb_1);
+    varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+    printf(""%f"",varb_2);
+    return 0;
+}
+float func_0(int x)
+{
+    float varb_3;
+    if(x==0)
+    return 1;
+    else
+    varb_3=x*func_0(x-1);
+    return varb_3;
+}
+",0.0,8
+27,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long int func_0(int varb_0);
+int main()
+{
+     int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_1)/(func_0(varb_0)*func_0(varb_1-varb_0)));
+	return 0;
+}
+long long int func_0( int varb_0)
+{
+    long long int varb_2;
+	if( varb_0 == 0||varb_0 == 1)
+      varb_2 = 1;
+    else
+       varb_2=func_0(varb_0-1)*varb_0;
+    return(varb_2);
+}",0.0,6
+28,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int main()
+{
+   int func_0(int);
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+	return 0;
+}
+ int func_0(int varb_1)
+ {
+int varb_2,varb_3=1;
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+ varb_3=varb_2*varb_3;	
+return varb_3;
+ }",0.0,4
+29,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+	int func_0(int varb_1);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+	return 0;
+}
+ int func_0(int varb_1)
+ {
+int varb_2,varb_3=1;
+for(varb_2=1;varb_2<=varb_1;varb_2++)
+ varb_3=varb_2*varb_3;	
+return varb_3;
+ }",0.0,2
+30,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long int varb_0, long long int varb_1)
+{
+	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+31,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+double func_0(double);
+int main()
+{
+   int varb_0,varb_1;
+   double varb_2;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%lf"",varb_2);
+}
+double func_0(double a)
+{
+    if(a==1)
+       return 1;
+    else
+       return(func_0(a-1)*a);
+}",0.0,5
+32,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_1);
+int main()
+{
+ int varb_0,varb_1,varb_2;
+int varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_2=varb_0-varb_1;
+varb_3=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+printf(""%d"",varb_3);
+}
+int func_0(int varb_1)
+{int varb_4,varb_5=1;
+ for(varb_4=1;varb_4<=varb_1;varb_4++)
+  varb_5=varb_4*varb_5;
+  return varb_5;
+}",0.0,2
+33,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long func_0(int varb_1);
+int main()
+{
+	int varb_0,varb_1;
+	long long varb_2;
+	scanf(""%d%d"",varb_0,varb_1);
+	varb_2=func_0( varb_0)/(func_0( varb_1)*func_0( varb_0-varb_1));
+	printf(""%lld"",varb_2);
+}
+long long func_0(int varb_1)
+{
+	if(varb_1 == 1)
+	{
+		return 1;
+	}
+	 else 
+	{
+		return func_0(varb_1-1)*varb_1;
+	}
+}",0.0,7
+34,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int x);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+  printf(""%d"",varb_2);
+  return 0;
+}
+int func_0(x)
+{
+  if(x<0)
+  printf(""error"");
+  else if(x==0||x==1)
+  return 1;
+  else
+  return func_0(x-1)*x;
+}
+",0.0,2
+35,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+int func_0(int varb_1);
+  long long int func_2(int varb_0, int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2(int varb_0, int varb_1)
+{
+	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+36,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%d"",varb_2);
+}
+int func_0(int varb_1)
+{
+  if(varb_1==0)
+    return 1;
+  else
+    return(varb_1*func_0(varb_1-1));
+}",0.0,2
+37,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_1);
+int main()
+{
+ int varb_0,varb_1,varb_2;
+long long int varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_2=varb_0-varb_1;
+varb_3=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+printf(""%d"",varb_3);
+}
+int func_0(int varb_1)
+{long long int varb_4,varb_5=1;
+ for(varb_4=1;varb_4<=varb_1;varb_4++)
+  varb_5=varb_4*varb_5;
+  return varb_5;
+}",0.0,2
+38,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long  varb_0, long long varb_1)
+{
+long long	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+     return varb_6;
+}
+",0.0,2
+39,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+unsigned long long int func_0(int varb_0);
+long int func_3(int varb_1);
+unsigned long int func_1(int varb_2);
+main()
+{
+   int varb_0,varb_1,varb_2;
+   long int varb_3;
+   scanf(""%ld%ld"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_3(varb_1)*func_1(varb_2));
+   printf(""%lld"",varb_3);
+}
+unsigned long long int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+long int func_3(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_3(varb_1-1);
+   else
+   return 1;
+}
+unsigned long int func_1(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_1(varb_2-1);
+  else
+  return 1;
+}",0.0,4
+40,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_0);
+int func_2(int varb_1);
+int func_3(int mn);
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%d"",varb_3);
+}
+int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+int func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+int func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,2
+41,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_1)
+{
+if(varb_1==1||varb_1==0)
+   return 1;
+else
+   return varb_1*func_0(varb_1-1);
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}",0.0,2
+42,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int a);
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	scanf(""%d%d"",&varb_0,&varb_1);
+	varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+	printf(""%d"",varb_2);
+	return 0;
+}
+int func_0(int a)
+{
+ if(a==0||a==1)
+ return 1;
+ if(a>1)
+ return a*func_0(a-1);
+}",0.0,2
+43,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2(int varb_0, int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2(int varb_0, int varb_1)
+{
+	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+	return varb_6;
+}
+",0.0,2
+44,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int(varb_1));
+int main()
+{
+     int varb_0,varb_1,varb_2;
+     scanf(""%d %d"",&varb_0,&varb_1);
+     varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+     printf(""%d"",varb_2);
+}
+int func_0(int varb_1)
+{
+     int varb_3,varb_4=1;
+     for(varb_3=1;varb_3<=varb_1;varb_3++)
+     {
+         varb_4=varb_3*varb_4;
+     }
+     return varb_4;
+}",0.0,2
+45,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+long long func_0(int);
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",varb_0,varb_1);
+	printf(""%lld"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}
+long long func_0(int varb_1)
+{
+	long long varb_2=1;
+	for(;varb_1>0;varb_1--)
+	{
+		varb_2=varb_1*varb_2;
+	}
+	return varb_2;
+}
+",0.0,6
+46,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long func_0(long long varb_0);
+long long func_2(long long varb_1);
+long long func_3(long long varb_2);
+ main()
+{
+   long long varb_0,varb_1;
+   long long varb_2;
+   long long varb_3;
+   scanf(""%||d %||d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%||d"",varb_3);
+}
+long long func_0(long long varb_0)
+{
+if(varb_0==0)
+return 1;
+else
+return(varb_0*func_0(varb_0-1));
+}
+long long func_2(long long varb_1)
+{
+if(varb_1==0)
+return 1;
+else
+return(varb_1*func_2(varb_1-1));
+}
+long long func_3(long long varb_2)
+{
+if(varb_2==0)
+return 1;
+else
+return(varb_2*func_3(varb_2-1));
+}",0.0,10
+47,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(int);
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d%d"",&varb_0,&varb_1);
+long int varb_2,varb_3,varb_4,varb_5;
+varb_2=func_0(varb_0);
+varb_3=func_0(varb_1);
+varb_4=func_0(varb_0-varb_1);
+varb_5=varb_2/(varb_3*varb_4);
+printf(""%d\n"",varb_5);
+}
+long int func_0(int k)
+{
+if(k==0)
+return 1;
+if(k==1)
+return 1;
+else return(k*func_0(k-1));
+}",0.0,2
+48,2c9f30a56e72f8ae016e795cc9d3069b,"#include <stdio.h>
+   int func_0(int varb_1);
+  long long int func_2( long long int varb_0,  long long int varb_1);
+ void main()
+{
+	int varb_0, varb_1;
+	while(1)
+	{
+		scanf(""%d%d"", &varb_0, &varb_1);
+		if(varb_0>varb_1)
+			break;
+		else
+		{
+			printf(""输入有误，请重新输入\n"");
+			continue;
+		}
+	}
+	printf(""%d"", func_2(varb_0, varb_1));	
+}
+int func_0(int varb_1)
+{
+	if(varb_1 == 1)
+		return 1;
+	else
+		return func_0(varb_1 - 1)*varb_1;
+}
+  long  long int func_2( long long  varb_0, long long varb_1)
+{long long	int  varb_6;
+	varb_6 = func_0(varb_0) /(func_0(varb_1)*func_0(varb_0 - varb_1));
+     return varb_6;
+}
+",0.0,2
+49,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int varb_0,varb_1;
+int func_0(int);
+int main()
+{
+    int varb_2;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+    printf(""%d"",varb_2);
+}
+int func_0(int i)
+{
+    if(i==0)
+    return(1);
+    else
+    return(i*func_0(i-1));
+}",0.0,3
+50,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(long int);
+int main()
+{
+   long int varb_0,varb_1,varb_2;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%d"",varb_2);
+  return 0;
+}
+long int func_0(long int varb_1)
+{
+   if(varb_1==0)
+   return(1);
+   else
+   return(varb_1*func_0(varb_1-1));
+}",0.0,2
+51,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_0);
+int func_2(int varb_1);
+int func_3(int varb_2);
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d %d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%d"",varb_3);
+}
+int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+int func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+int func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,2
+52,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+double func_0(double);
+int main()
+{
+   double varb_0,varb_1;
+   double varb_2;
+   scanf(""%lf %lf"",&varb_0,&varb_1);
+   varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+   printf(""%lf"",varb_2);
+}
+double func_0(double a)
+{
+    if(a==1)
+       return 1;
+    else
+       return(func_0(a-1)*a);
+}",0.0,9
+53,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int main()
+{
+	int func_0(int x);
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	int varb_2;
+	varb_2=(func_0(varb_0))/((func_0(varb_1))*func_0(varb_0-varb_1));
+	printf(""%d"",varb_2); 
+}
+int func_0(int x)
+{
+return x<=1?1:x*func_0(x-1);
+}",0.0,4
+54,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long long func_0(long long varb_0);
+long long func_2(long long varb_1);
+long long func_3(long long varb_2);
+int main()
+{
+   long long varb_0,varb_1;
+   long long varb_2;
+   long long varb_3;
+   scanf(""%||d %||d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%||d"",varb_3);
+}
+long long func_0(long long varb_0)
+{
+if(varb_0==0)
+return 1;
+else
+return(varb_0*func_0(varb_0-1));
+}
+long long func_2(long long varb_1)
+{
+if(varb_1==0)
+return 1;
+else
+return(varb_1*func_2(varb_1-1));
+}
+long long func_3(long long varb_2)
+{
+if(varb_2==0)
+return 1;
+else
+return(varb_2*func_3(varb_2-1));
+}",0.0,10
+55,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+long int func_0(int n)
+{
+if(n==0)
+return 1;
+else
+return(n*func_0(n-1));
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}",0.0,2
+56,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+double func_0(int varb_0);
+double func_2(int varb_1);
+double func_3(int varb_2);
+main()
+{
+   double varb_0,varb_1,varb_2,varb_3;
+   scanf(""%f %f"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%f"",varb_3);
+}
+double func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+double func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+double func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,7
+57,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(long int);
+main()
+{
+  long long int varb_0;
+  int varb_2,varb_3;
+  scanf(""%d %d"",&varb_2,&varb_3);
+  varb_0=func_0(varb_2)/(func_0(varb_3)*func_0(varb_2-varb_3));
+  printf(""%d"",varb_0);
+}
+int func_0(long int x)
+{
+if(x==1)
+return 1;
+else
+return(x*func_0(x-1));
+}",0.0,2
+58,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int(varb_1));
+int main()
+{
+     long long int varb_0,varb_1,varb_2;
+     scanf(""%lld %lld"",&varb_0,&varb_1);
+     varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+     printf(""%lld"",varb_2);
+}
+int func_0(int varb_1)
+{
+     long long int varb_3,varb_4=1;
+     for(varb_3=1;varb_3<=varb_1;varb_3++)
+     {
+         varb_4=varb_3*varb_4;
+     }
+     return varb_4;
+}",0.0,2
+59,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int varb_0);
+int func_2(int varb_1);
+int func_3(int varb_2);
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d%d"",&varb_0,&varb_1);
+   varb_2=varb_0-varb_1;
+   varb_3=func_0(varb_0)/(func_2(varb_1)*func_3(varb_2));
+   printf(""%d"",varb_3);
+}
+int func_0(int varb_0)
+{  
+   if(varb_0>0)
+   return varb_0*func_0(varb_0-1);
+   else
+   return 1;
+}
+int func_2(int varb_1)
+{
+   if(varb_1>0)
+   return varb_1*func_2(varb_1-1);
+   else
+   return 1;
+}
+int func_3(int varb_2)
+{
+  if(varb_2>0)
+  return varb_2*func_3(varb_2-1);
+  else
+  return 1;
+}",0.0,2
+60,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int n)
+{
+if(n==0)
+return 1;
+else
+return(n*func_0(n-1));
+}
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}",0.0,2
+61,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int varb_0,varb_1;
+int func_0(int);
+int main()
+{
+    int varb_2;
+    scanf(""%d %d"",&varb_0,&varb_1);
+    varb_2=func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1));
+    printf(""%d"",varb_2);
+}
+int func_0(int i)
+{
+    if(i==1)
+    return(1);
+    else
+    return(i*func_0(i-1));
+}",0.0,3
+62,2c9f30a56e72f8ae016e795cc9d3069b,"#include<stdio.h>
+int func_0(int);
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d%d"",&varb_0,&varb_1);
+printf(""%d"",func_0(varb_0)/(func_0(varb_1)*func_0(varb_0-varb_1)));
+}
+int func_0(int varb_1)
+{
+if(varb_1==0||varb_1==1)
+return 1;
+else
+return varb_1*func_0(varb_1-1);
+}",0.0,2

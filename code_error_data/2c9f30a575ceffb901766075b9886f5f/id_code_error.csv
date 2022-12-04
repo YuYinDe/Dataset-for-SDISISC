@@ -1,0 +1,277 @@
+,id,code,is_true,errorline
+0,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+  if(varb_0>varb_1) 
+  varb_2=varb_0;
+  else
+  varb_2=varb_1;
+}
+",0.0,13
+1,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+	int varb_4,varb_5,varb_3;
+	varb_0=&varb_4;
+	varb_1=&varb_5;
+	if(*varb_0>*varb_1)
+	*varb_2=*varb_0;
+	else
+	*varb_2=*varb_1;
+	varb_2=&varb_3;
+}",0.0,4
+2,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_4, int *varb_5, int *varb_3)
+{
+if(*varb_4>*varb_5)varb_3=varb_4;
+else varb_3=varb_5;
+}",0.0,13
+3,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 ){
+if(*varb_0>*varb_1)varb_2=varb_0;
+else varb_2=varb_1;
+}",0.0,11
+4,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+	if(varb_0>varb_1)
+	{
+		varb_2=varb_0;
+	}
+	else
+	    {varb_2=varb_1;}
+}",0.0,13
+5,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_4, int *varb_5, int *varb_3)
+{
+if(*varb_4>*varb_5)varb_3=varb_4;
+else varb_3=varb_5;
+return varb_3;
+}",0.0,13
+6,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+	if(*varb_0>*varb_1)
+		varb_2=varb_0;
+	else
+		varb_2=varb_1;
+}",0.0,13
+7,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+if(*varb_0>*varb_1)
+*varb_0=*varb_2;
+else
+*varb_1=*varb_2;
+return *varb_2;
+}",0.0,14
+8,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+if(*varb_0>*varb_1)
+*varb_0=*varb_2;
+else
+*varb_1=*varb_2;
+}",0.0,14
+9,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 ){
+  if(varb_0>varb_1)
+   varb_2=varb_0;
+  else
+   varb_2=varb_1;
+}",0.0,11
+10,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+int varb_4,varb_5,varb_3;
+if(varb_4<varb_5)
+varb_3=varb_5;
+else
+varb_3=varb_4;
+}",0.0,13
+11,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+}
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+if(varb_0>varb_1)
+{
+varb_2=varb_0;
+}
+else
+{
+varb_2=varb_1;
+}
+}",0.0,13
+12,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", varb_4, varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+*varb_2=(*varb_0>*varb_1)?*varb_0:*varb_1;
+}",0.0,6
+13,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+  if(varb_0>varb_1) 
+  *varb_2=*varb_0;
+  else
+  *varb_2=*varb_1;
+}
+",0.0,13
+14,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+} 
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+  if(varb_0<varb_1)
+   varb_2=varb_1;
+  else
+   varb_2=varb_0;
+}",0.0,13
+15,2c9f30a575ceffb901766075b9886f5f,"#include <stdio.h>
+void func_0( int *varb_0, int *varb_1, int *varb_2 );
+int main()
+{    
+    int varb_3, varb_4, varb_5; 
+    scanf(""%d %d"", &varb_4, &varb_5);
+    func_0( &varb_4, &varb_5, &varb_3 );
+    printf(""%d\n"", varb_3);
+    return 0;
+}
+void func_0( int *varb_0, int *varb_1, int *varb_2 )
+{
+	if(varb_0<varb_1)
+	varb_2=varb_1;
+	else
+	varb_2=varb_0;
+}",0.0,13

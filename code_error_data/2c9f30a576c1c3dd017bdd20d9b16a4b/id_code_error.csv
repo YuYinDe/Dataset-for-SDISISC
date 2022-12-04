@@ -1,0 +1,1033 @@
+,id,code,is_true,errorline
+0,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+int varb_0;
+double varb_1;
+scanf(""%e"",&varb_0);
+if(varb_0>=0){
+varb_1=pow(varb_0,0.5);
+printf(""f(%.2lf) = %.2lf"",varb_0*1.0,varb_1);}
+   else {
+  varb_1=sqrt(varb_0+1.0)+2*varb_0+1/varb_0;
+   printf(""f(%.2lf)=%.2lf"",varb_0*1.0,varb_1);}
+    return 0;
+}",0.0,5
+1,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+int varb_0;
+double varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>=0){
+varb_1=pow(varb_0,0.5);
+printf(""f(%.2lf) = %.2lf"",varb_0*1.0,varb_1);}
+   else {
+  varb_1=sqrt(varb_0)+2*varb_0+1/varb_0;
+   printf(""f(%.2lf)=%.2lf"",varb_0,varb_1);}
+    return 0;
+}",0.0,5
+2,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+double varb_0,varb_1;
+scanf(""%1f"",&varb_0);
+if(varb_0>=0)
+varb_1=pow(varb_0,0.5);
+else
+varb_1=pow(varb_0+1,2)+2*varb_0+1.0/varb_0;
+printf(""f(%.2f)=%.2f"");
+return 0;
+}
+",0.0,6
+3,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+		varb_1=sqrt(varb_0);
+	}
+	else
+	{
+		varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+	}
+	printf(""f(%。2f) = %.2f"",varb_0,varb_1);
+	return 0;
+} ",0.0,15
+4,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=0)
+    {
+	varb_1=sqrt(varb_0);
+    printf(""f(varb_0)=%.2f"",varb_1);
+	}
+  else
+    {
+	varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+    printf(""f(varb_0)=%.2f"",varb_1);
+    }
+return 0;
+}
+",0.0,9
+5,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2;
+	scanf(""%f"",&varb_2);
+	if(varb_2>=0)
+{
+	varb_0=sqrt(varb_2);
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+}
+	else
+{
+	varb_1=(varb_2+1)*(varb_2+1)+2*varb_2+1/varb_2;
+	printf(""f(%.2f)=%.2f\n"",varb_2,varb_0);
+	return 0;
+}
+}",0.0,15
+6,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+   scanf(""%1f"",&varb_0);
+   if(varb_0>=0)
+  {
+     varb_1=sqrt(varb_0);
+     printf("" f(%.2f)=%.2f"",varb_0,varb_1);
+   }
+   else
+   {
+     varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+     printf("" f(%.2f)=%.2f"",varb_0,varb_1);
+     }
+}",0.0,5
+7,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+		varb_1=sqrt(varb_0);
+	}
+	else
+	{
+		varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+	}
+	printf(""f(varb_0) = %.2f"",varb_1);
+	return 0;
+} ",0.0,15
+8,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%.2f"",&varb_0);
+ if(varb_0>=0)
+ { varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);}
+  else
+    { varb_1=(pow(varb_0+1,2)+2*varb_0+1/varb_0);}
+     printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+     return 0;
+     }",0.0,6
+9,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	if(varb_1>=0)
+	{
+		varb_0=sqrt(varb_1);
+		printf(""f(%0.2f)=%0.2f\n"",varb_1,varb_0);
+	}
+	else if(varb_1<0)
+	{
+		varb_0=(varb_1+1)*(varb_1+1)+(2*varb_1+1)/varb_1;
+		printf(""f(%0.2x)=%0.2f\n"",varb_1,varb_0);
+	}
+	return 0;
+ } ",0.0,14
+10,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0); 
+  else
+    varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2lf)=%.2lf"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+11,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0);
+  else
+    varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f\n"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+12,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+	varb_1=pow(varb_0,0.5);
+	printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+    }
+    else
+    {
+	varb_1,pow(varb_0+1,2)+2*varb_0+1/varb_0;
+    printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+    }
+	return 0;
+}",0.0,5
+13,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0);
+  else
+    varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f\n"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+14,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0; double varb_1;
+scanf(""%f"",&varb_0);
+if(varb_0>=0){
+varb_1=pow(varb_0,0.5);
+}else varb_1=sqrt(varb_0+1)+2*varb_0+1/varb_0;
+printf(""f(%.2f) = %.2f"",varb_0,varb_1);
+return 0;
+}",0.0,9
+15,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	printf(""f(%.2f) = %.2float"",varb_0,sqrt(varb_0));
+	else
+	printf(""f(%.2f) = %.2float"",varb_0,(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0);
+	return 0;
+}",0.0,8
+16,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+	  varb_1=sqrt(varb_0);
+	  printf(""f(%f)=%.2f"",varb_0,varb_1);
+	}
+	  else
+	  {
+	  varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+	  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+      }
+      return 0;
+}",0.0,10
+17,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{  double varb_0;
+   scanf(""%lf"",&varb_0);
+   if(varb_0>=0)
+   {printf(""f(%lf) = %lf"",varb_0,sqrt(varb_0));
+   }
+   else
+   {printf(""f(%lf) = %lf"",varb_0,pow(varb_0+1,2)+2*varb_0+1/varb_0);
+   }
+   return 0;
+   }",0.0,7
+18,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=pow(varb_0,0.5);
+  else
+    varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f\n"",varb_0,varb_1);
+  return 0;
+}
+",0.0,6
+19,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1;
+scanf(""%lf"",&varb_1);
+if(varb_1>=0)
+   {
+   varb_0=sqrt(varb_1);
+   printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+   }
+if(varb_1<0)
+  {
+  varb_0=(pow(varb_1+1,2)+varb_1*2.0+1.0)/varb_1;
+   printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+   }
+return 0;
+}
+",0.0,14
+20,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   float varb_0,varb_1;
+   scanf(""%f"",&varb_0);
+   if(varb_0>=0)
+      varb_1=sqrt(varb_0);
+   else
+      varb_1=pow(varb_0+1,2)+2*varb_0+1.0/varb_0;
+   printf(""f(varb_0)=%0.2f"",varb_1);
+   return 0;
+}
+",0.0,11
+21,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0);
+  else
+    varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f\n"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+22,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+int varb_0;
+double varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>=0){
+varb_1=pow(varb_0,0.5);
+printf(""f(%.2lf) = %.2lf"",varb_0*1.0,varb_1);}
+   else {
+  varb_1=sqrt(varb_0+1.0)+2*varb_0+1/varb_0;
+   printf(""f(%.2lf)=%.2lf"",varb_0*1.0,varb_1);}
+    return 0;
+}",0.0,5
+23,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   float varb_0;
+   scanf(""%f"",&varb_0);
+   if(varb_0>=0)
+   {
+     float varb_1=0.5;
+     float varb_2;
+     varb_2=pow(varb_0,varb_1);
+     printf(""f(%.2f) = %.2f"",varb_0,varb_2);
+   }
+   else
+   {
+    float varb_2;
+    varb_2=sqrt(varb_0+1)+2*varb_0+1/varb_0;
+    printf(""f(%.2f) = %.2f"",varb_0,varb_2);
+    }
+    return 0;
+}
+",0.0,5
+24,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2;
+	scanf(""%f"",&varb_2);
+	if(varb_2>=0)
+{
+	varb_0=sqrt(varb_2);
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+}
+	else
+{
+	varb_1=(varb_2+1)*(varb_2+1)+2*varb_2+1/varb_2;
+	printf(""f(%.2f)=%.2f\n"",varb_2,varb_0);
+	return 0;
+}
+}",0.0,15
+25,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%.2f"",&varb_0);
+	if(varb_0>=0)
+	{
+		varb_1=sqrt(varb_0);
+	}
+	else
+	{
+		varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+	}
+	printf(""f(%.2f) = %.2f"",varb_0,varb_1);
+	return 0;
+} ",0.0,6
+26,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include <stdio.h>
+#include <math.h>
+    int main()
+    {
+    float varb_0,varb_1;
+    scanf(""%f"",&varb_0);
+    if(varb_0>=0)
+    printf(""f(%.2f)=%.2f"",varb_0,sqrt(varb_0));
+    else
+    printf(""f(%.2f)=&.2f"",varb_0,pow((varb_0+1),2)+2*varb_0+1/varb_0);
+    return 0;
+    }",0.0,5
+27,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1;
+scanf(""%lf"",&varb_1);
+if(varb_1>=0)
+   {
+   varb_0=sqrt(varb_1);
+   printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+   }
+if(varb_1<0)
+  {
+  varb_0=(pow(varb_1+1,2)+2*varb_1+1)/varb_1;
+  printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+  }
+  return 0;
+}
+",0.0,14
+28,2c9f30a576c1c3dd017bdd20d9b16a4b," #include<stdio.h>
+ #include<math.h>
+ int main()
+ {
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=0)
+ {
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ if(varb_0<0)
+ {
+ varb_1+pow((varb_0+1),2)+2*varb_0+1/varb_0;
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ return 0;
+ }",0.0,14
+29,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main( )
+{
+float varb_0;
+float varb_1;
+varb_0=10;
+if(varb_0>=0)
+{
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+else
+{
+varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+printf(""f(%.2f)=%.2f"",varb_1);
+}
+return 0;
+}",0.0,5
+30,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main( )
+{
+float varb_0;
+float varb_1;
+varb_0=10;
+if(varb_0>=0)
+{
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+else
+{
+varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+printf(""f(%.2f)=%.2f"",varb_1);
+}
+return 0;
+}",0.0,5
+31,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include ""stdio.h""
+#include""math.h""
+int main(void)
+{
+	double varb_0;
+	scanf(""%1f"",&varb_0);
+    if(varb_0>=0)
+      printf(""f(%.2f)=%.2f"",varb_0,sqrt(varb_0));
+    else
+      printf(""f(%.2f)=%.2f"",varb_0,pow(varb_0+1,2)+2*varb_0+1/varb_0);
+    return 0;
+}",0.0,6
+32,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f\n"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0);
+  else
+    varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f\n"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+33,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=pow(varb_0,0.5); 
+  else
+    varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+  return 0;
+}
+",0.0,6
+34,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float varb_0,varb_1;
+   scanf(""%d"",&varb_0);
+if(varb_0>=0)
+  {varb_1=sqrt(varb_0);
+   printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+  else 
+  {varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+    printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+    return 0;
+}
+",0.0,6
+35,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main( )
+{
+float varb_0;
+float varb_1;
+varb_0=10;
+if(varb_0>=0)
+{
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+else
+{
+varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+return 0;
+}",0.0,5
+36,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main( )
+{
+float varb_0;
+float varb_1;
+scanf(""%.2f"",&varb_0);
+if(varb_0>=0)
+{
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+else
+{
+varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+return 0;
+}",0.0,7
+37,2c9f30a576c1c3dd017bdd20d9b16a4b," #include <stdio.h>
+ #include <math.h>
+ int main()
+ {
+ float varb_0,varb_1;
+ varb_0=10;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=0)
+ {
+   varb_1=sqrt(varb_0);
+   printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ if(varb_0<0)
+ { 
+   varb_1+pow(varb_0+1,2)+2*varb_0+1/varb_0;
+   printf(""%.2f"",varb_0,varb_1);
+ }
+    return 0;
+ }",0.0,6
+38,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2;
+	scanf(""%f"",&varb_2);
+	if(varb_2>=0)
+{
+	varb_0=sqrt(varb_2);
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+}
+	else
+{
+	varb_1=(varb_2+1)*(varb_2+1)+2*varb_2+1/varb_2;
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+	return 0;
+}
+}",0.0,10
+39,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2;
+	scanf(""%d"",&varb_2);
+	if(varb_2>=0)
+{
+	varb_0=sqrt(varb_2);
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+}
+	else
+{
+	varb_1=(varb_2+1)*(varb_2+1)+2*varb_2+1/varb_2;
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+	return 0;
+}
+}",0.0,6
+40,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+double varb_0,varb_1;
+scanf(""%lf"",&varb_1);
+if(varb_1>=0)
+   {
+   varb_0=sqrt(varb_1);
+   printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+   }
+if(varb_1<0)
+  {
+  varb_0=(pow(varb_1+1,2)+varb_1*2.0+1.0)/varb_1;
+   printf(""f(%0.2lf) = %0.2lf"",varb_1,varb_0);
+   }
+return 0;
+}
+",0.0,14
+41,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%f"",&varb_0);
+if(varb_0>=0)
+{varb_1=pow(varb_0,0.5);
+printf(""fx=%.2f"",varb_1);
+}
+ else
+varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+printf(""fx=%.2f"",varb_1);
+ return 0;
+}",0.0,9
+42,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{ 
+int varb_0;
+double varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>=0){
+varb_1=pow(varb_0,0.5);
+printf(""f(%.2lf) = %.2lf"",varb_0*1.0,varb_1);}
+   else {
+  varb_1=sqrt(varb_0)+2*varb_0+1/varb_0;
+   printf(""f(%.2lf)=%.2lf"",varb_0*1.0,varb_1);}
+    return 0;
+}",0.0,5
+43,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2;
+	scanf(""%f"",&varb_2);
+	if(varb_2>=0)
+{
+	varb_0=sqrt(varb_2);
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+}
+	else
+{
+	varb_1=(varb_2+1)*(varb_2+1)+2*varb_2+1/varb_2;
+	printf(""f(%0.2f)=%0.2f\n"",varb_2,varb_0);
+	return 0;
+}
+}",0.0,10
+44,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	printf(""f(%.2f) = %.2float"",varb_0,sqrt(varb_0));
+	else
+	printf(""f(%.2f) =%.2float"",varb_0,(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0);
+	return 0;
+}",0.0,8
+45,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%.2f"",&varb_0);
+ if(varb_0>=0.00)
+ { varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);}
+  else
+    { varb_1=(pow(varb_0+1,2)+2*varb_0+1/varb_0);}
+     printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+     return 0;
+     }",0.0,6
+46,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%1f"",&varb_0);
+  if(varb_0>=0)
+    varb_1=sqrt(varb_0); 
+  else
+    varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+  return 0;
+}
+",0.0,5
+47,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<math.h>
+#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1;
+  scanf(""%if"",&varb_0);
+  if(varb_0>=0)
+{
+  varb_1=pow(varb_0,1/2);
+  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+  else
+{  
+  varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+  return 0;
+}
+",0.0,2
+48,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include ""stdio.h""
+#include""math.h""
+int main(void)
+{
+	double varb_0,varb_1;
+	scanf(""%1f"",&varb_0);
+    if(varb_0>=0)
+      printf(""f(%.21f)=%.21f"",varb_0,sqrt(varb_0));
+    else
+      printf(""f(%.21f)=%.21f"",varb_0,pow(varb_0+1,2)+2*varb_0+1/varb_0);
+    return 0;
+}",0.0,5
+49,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+ float varb_0;
+ float varb_1;
+ scanf(""%.2f"",&varb_0);
+ if(varb_0>=0){
+   varb_1=sqrt(varb_0);
+ }
+ else varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ return 0;
+ }",0.0,7
+50,2c9f30a576c1c3dd017bdd20d9b16a4b," #include<stdio.h>
+ #include<math.h>
+ int main()
+ {
+ float varb_0,varb_1;
+ scanf(""%f"",&varb_0);
+ if(varb_0>=0)
+ {
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+if(varb_0<0)
+{
+varb_1+pow((varb_0+1),2)+2*varb_0+1/varb_0;
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ return 0;
+ }",0.0,14
+51,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	printf(""f(%.2f) = %.2float\n"",varb_0,sqrt(varb_0));
+	else
+	printf(""f(%.2f) = %.2float\n"",varb_0,(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0);
+	return 0;
+}",0.0,8
+52,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+		varb_1=sqrt(varb_0);
+	}
+	else
+	{
+		varb_1=(varb_0+1)*(varb_0+1)+2*varb_0+1/varb_0;
+	}
+	printf(""f(10.00) = %.2f"",varb_1);
+	return 0;
+} ",0.0,15
+53,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+  int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+   if(varb_0>=0)
+ {
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ if(varb_0<0)
+ {
+  varb_1+pow((varb_0+1),2)+2*varb_0+1/varb_0;
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+ return 0;
+ }",0.0,14
+54,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main( )
+{
+float varb_0;
+float varb_1;
+scanf(""%.2f"",varb_0);
+if(varb_0>=0)
+{
+ varb_1=sqrt(varb_0);
+ printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+ }
+else
+{
+varb_1=pow(varb_0+1,2)+2*varb_0+1/varb_0;
+printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+}
+return 0;
+}",0.0,5
+55,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include ""stdio.h""
+#include""math.h""
+int main(void)
+{
+	double varb_0,varb_1;
+	scanf(""%1f"",&varb_0);
+    if(varb_0>=0)
+      printf(""f(%.2f)=%.2f"",varb_0,sqrt(varb_0));
+    else
+      printf(""f(%.2f)=%.2f"",varb_0,pow(varb_0+1,2)+2*varb_0+1/varb_0);
+    return 0;
+}",0.0,5
+56,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_1);
+	if(varb_1>=0)
+	{
+		varb_0=sqrt(varb_1);
+		printf(""f(%0.2f)=%0.2f\n"",varb_1,varb_0);
+	}
+	else if(varb_1<0)
+	{
+		varb_0=(varb_1+1)*(varb_1+1)+(2*varb_1+1)/varb_1;
+		printf(""f(%.2f)=%.2f\n"",varb_1,varb_0);
+	}
+	return 0;
+ } ",0.0,14
+57,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1;
+   scanf(""%1f"",&varb_0);
+   if(varb_0>=0)
+  {
+     varb_1=sqrt(varb_0);
+     printf("" f(%.2f)=%.2f"",varb_0,varb_1);
+   }
+   else
+   {
+     varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+     printf("" f(%.2f)=%.2f"",varb_0,varb_1);
+   }
+}",0.0,5
+58,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>=0)
+varb_1=sqrt(varb_0);
+else
+varb_1=pow(1+varb_0,2)+2*varb_0+1/varb_0;
+  printf(""f(%.2f)=%.2f"",varb_0,varb_1);
+return 0;
+ }",0.0,6
+59,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  float varb_0,varb_1;
+  scanf(""%f"",&varb_0);
+  if(varb_0>=0)
+    {
+	varb_1=sqrt(varb_0);
+    printf(""f(%f)=%.2f"",varb_0,varb_1);
+	}
+  else
+    {
+	varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+    printf(""f(%f)=%.2f"",varb_0,varb_1);
+    }
+return 0;
+}
+",0.0,5
+60,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	scanf(""%f"",&varb_0);
+	if(varb_0>=0)
+	{
+	  varb_1=sqrt(varb_0);
+	  printf(""f(%f)=%.2f"",varb_0,varb_1);
+	}
+	  else
+	  {
+	  varb_1=pow((varb_0+1),2)+2*varb_0+1/varb_0;
+	  printf(""f(2f)=%.2f"",varb_0,varb_1);
+      }
+      return 0;
+}",0.0,10
+61,2c9f30a576c1c3dd017bdd20d9b16a4b,"#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+	double varb_0, varb_1;
+	scanf(""%lf"", &varb_0);
+	if(varb_0 >= 0)
+	{
+		varb_1 = sqrt(varb_0);
+	}
+	else
+	{
+		varb_1 = pow((varb_0 + 1), 2) + 2 * varb_0 + 1 / varb_0;
+	}
+	printf(""f(%.2f) = %.2f\n"", varb_0, varb_1);
+	system(""pause"");
+	return 0;
+}",0.0,18
+62,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double varb_0;
+    double varb_1;
+    double varb_2;
+    scanf(""%lf"",&varb_1);
+    if(varb_1>=0)
+      varb_0=sqrt(varb_1);
+    else
+      varb_0=pow((varb_1-1),2)+(2*varb_1+1)/varb_1;
+    printf(""f(%.2lf)=%.2lf"",varb_1,varb_0);
+    return 0;
+}",0.0,12
+63,2c9f30a576c1c3dd017bdd20d9b16a4b,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double varb_0;
+    double varb_1;
+    double varb_2;
+    scanf(""%lf"",&varb_1);
+    if(varb_1>=0)
+      varb_0=sqrt(varb_1);
+    else
+      varb_0=pow((varb_1+1),2)+(2*varb_1+1)/varb_1;
+    printf(""f(%.2lf)=%.2lf"",varb_1,varb_0);
+    return 0;
+}",0.0,12

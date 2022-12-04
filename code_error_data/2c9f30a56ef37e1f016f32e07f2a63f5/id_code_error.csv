@@ -1,0 +1,2976 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List h,p,q,w;
+w=L->Next;
+p=(varb_2)malloc(sizeof(struct varb_1));
+p->Data=X;
+while(w->Next!=NULL)
+{
+h=w->Next;
+if(w->Data<p->Data && p->Data<h->Data)
+{
+w->Next=p;
+p->Next=h;
+}
+w=w->Next;
+}
+if(p->Data>w->Data)
+{
+w->Next=p;
+p->Next=NULL;
+}
+return L;
+}",0.0,69
+1,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List q,p,node;
+	p=L;
+	q=p;
+	p=p->Next;
+	while(p)
+	{
+		if(p->Data>X)
+		{
+			node=(List)malloc(sizeof(List));
+			node->Data=X;
+			node->Next=p;
+			q->Next=node;
+			break;
+		}
+		else
+		{
+			q=p;
+			p=p->Next;
+		}
+	}
+}",0.0,61
+2,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL;
+   while(L->Next!=NULL)
+   {
+      if(L->Next->Data<X)
+      L->Next=L->Next->Next;
+      if(p->Next->Next->Data>X)
+      {
+        p->Next=L->Next->Next;
+        L->Next=p;
+       }
+    }
+    return L;
+}    
+",0.0,55
+3,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+int varb_5=0;
+List p,q;
+p=L;
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=X;
+q->Next=NULL;
+while(p->Next!=NULL)
+    {
+     if(p->Next->Data>X)
+       {
+        q->Next=p->Next;
+        p->Next=q;
+        varb_5=1;
+        break;
+       }
+     p=p->Next;
+    }
+if(varb_5==1)
+  {
+   p->Next=q;
+  }
+return L;
+}",0.0,72
+4,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert(List L, varb_0 X)
+{
+	List p = L, q = p, s;
+	s =(List)malloc(sizeof(struct varb_1));
+	while(p)
+	{
+		if(p->Data>X) break;
+		q = p;
+		p = p->Next;
+	}
+	s->Data = X;
+	s->Next = q->Next;
+	q->Next = s;
+	p = q;
+	return L;
+}
+",0.0,55
+5,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL; 
+   if(L->Next==NULL)
+   L->Next=p;
+   else
+   {
+     q=L->Next;
+     a=L;
+     while(q&&q->Data<=X)
+     {
+        a=q;
+        q=q->Next;
+      }
+      if(q->Next==NULL)
+      a->Next=p;
+      else
+      {
+        p->Next=q;
+        a->Next=p;
+       }
+      }
+     return L;
+}
+",0.0,55
+6,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+    List head = L;
+    L = L->Next;
+    List p =(List)malloc(sizeof(struct varb_1));
+    p->Data = X;
+    p->Next = NULL;
+    List q = head;
+    if(L == NULL)
+    {
+        head->Next = p;
+        return head;
+    }
+    while(L->Data < X)
+    {
+        q = L;
+        L = L->Next;
+        if(L->Next == NULL)
+        {
+            L->Next = p;
+            break;
+        }
+    }
+    p->Next = L;
+    q->Next = p;
+    return head;
+}",0.0,73
+7,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List q,p,node;
+	p=L;
+	q=p;
+	p=L->Next;
+	while(p)
+	{
+		if(p->Data>X)
+		{
+			node=(List)malloc(sizeof(List));
+			node->Next=p;
+			q->Next=node;
+			break;
+		}
+		else
+		{
+			q=p;
+			p=p->Next;
+		}
+	}
+}",0.0,58
+8,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert(List L, varb_0 X)
+{
+	List p = L, q = p, s;
+	s =(List)malloc(sizeof(struct varb_1));
+	while(p)
+	{
+		if(p->Data>X) break;
+		q = p;
+		p = p->Next;
+	}
+	s->Data = X;
+	s->Next = q->Next;
+	q->Next = s;
+	p = q;
+	return L;
+}",0.0,55
+9,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List h,p,q,w;
+w=L->Next;
+p=(varb_2)malloc(sizeof(struct varb_1));
+p->Data=X;
+while(w->Next!=NULL)
+{
+h=w->Next;
+if(w->Data<p->Data && p->Data<h->Data)
+{
+p=w->Next;
+p->Next=h;
+}
+w=w->Next;
+}
+return L;
+}",0.0,64
+10,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+int varb_5=0;
+List p,q;
+p=L;
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=X;
+q->Next=NULL;
+while(p->Next!=NULL)
+    {
+     if(p->Next->Data>X)
+       {
+        q->Next=p->Next;
+        p->Next=q;
+        varb_5=1;
+        break;
+       }
+     p=p->Next;
+    }
+if(varb_5==1)
+   p->Next=q;
+return L;
+}",0.0,72
+11,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+		List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List p,q;
+	p=L;
+	q=(varb_2)malloc(sizeof(struct varb_1));
+	q->Data=X;
+	while(p->Next!=NULL)
+	{
+		if(p->Next->Data>X)
+		{
+			q->Next=p->Next;
+			p->Next=q;
+	        break;
+		}
+	}
+	return L;
+} ",0.0,25
+12,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+    List head = L;
+    L = L->Next;
+    List p =(List)malloc(sizeof(struct varb_1));
+    p->Data = X;
+    p->Next = NULL;
+    List q = head;
+    if(L == NULL)
+    {
+        head->Next = p;
+    }
+    while(L->Data < X)
+    {
+        q = L;
+        L = L->Next;
+        if(L->Next == NULL)
+        {
+            L->Next = p;
+            break;
+        }
+    }
+    p->Next = L;
+    q->Next = p;
+    return head;
+}",0.0,72
+13,2c9f30a56ef37e1f016f32e07f2a63f5,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d"",&varb_0);
+	int varb_4[varb_0+1];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	scanf(""%d"",&varb_4[varb_1]);
+	scanf(""%d"",&varb_3);
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		if(varb_4[varb_1]<varb_3&&varb_3<varb_4[varb_1+1])
+		{
+			for(varb_2=varb_0;varb_2>varb_1+1;varb_2--)
+		    varb_4[varb_2]=varb_4[varb_2-1];
+		    varb_4[varb_1+1]=varb_3;
+		}	
+	}
+	for(varb_1=0;varb_1<=varb_0;varb_1++)
+	printf(""%d "",varb_4[varb_1]);
+}",0.0,12
+14,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL;
+   while(L->Next!=NULL)
+   {
+      if(L->Next->Data<X)
+      L->Next=L->Next->Next;
+      if(L->Next->Data>X)
+      {
+        p->Next=L->Next;
+        L->Next=p;
+       }
+    }
+    return L;
+}    
+",0.0,55
+15,2c9f30a56ef37e1f016f32e07f2a63f5,"#include<stdio.h>
+main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d"",&varb_0);
+	int varb_4[varb_0+1];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	scanf(""%d"",&varb_4[varb_1]);
+	scanf(""%d"",&varb_3);
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		if(varb_4[varb_1]<=varb_3&&varb_3<=varb_4[varb_1+1])
+		{
+			for(varb_2=varb_0;varb_2>varb_1+1;varb_2--)
+		    varb_4[varb_2]=varb_4[varb_2-1];
+		    varb_4[varb_1+1]=varb_3;
+		}	
+	}
+	for(varb_1=0;varb_1<=varb_0;varb_1++)
+	printf(""%d "",varb_4[varb_1]);
+}",0.0,12
+16,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL; 
+   if(L->Next==NULL)
+   L->Next=p;
+   else
+   {
+     q=L->Next;
+     a=L;
+     while(q->Data<=X)
+     {
+        a=q;
+        q=q->Next;
+      }
+      if(q->Next==NULL)
+      a->Next=p;
+      else
+      {
+        p->Next=q;
+        a->Next=p;
+       }
+      }
+     return L;
+}
+",0.0,55
+17,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL; 
+   if(L->Next==NULL)
+   L->Next=p;
+   else
+   {
+     q=L->Next;
+     a=L;
+     while(q&&q->Data<X)
+     {
+        a=q;
+        q=q->Next;
+      }
+      if(q->Next==NULL)
+      a->Next=p;
+      else
+      {
+        p->Next=q;
+        a->Next=p;
+       }
+      }
+     return L;
+}
+",0.0,55
+18,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3+1>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+    List head = L;
+    L = L->Next;
+    List p =(List)malloc(sizeof(struct varb_1));
+    p->Data = X;
+    p->Next = NULL;
+    List q = head;
+    if(L == NULL)
+    {
+        head->Next = p;
+        return head;
+    }
+    while(L->Data < X)
+    {
+        q = L;
+        L = L->Next;
+        if(L->Next == NULL)
+        {
+            L->Next = p;
+            return head;
+        }
+    }
+    p->Next = L;
+    q->Next = p;
+    return head;
+}",0.0,31
+19,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+		List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List p,q;
+	p=L;
+	q=(varb_2)malloc(sizeof(struct varb_1));
+	q->Data=X;
+	while(p->Next!=NULL)
+	{
+		if(p->Next->Data>X)
+		{
+			q->Next=p->Next;
+			p->Next=q;
+	        break;
+		}
+		else
+			p=p->Next;
+	}
+	return L;
+} ",0.0,61
+20,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+q=(varb_2)malloc(sizeof(struct varb_1));
+p=L;
+q->Data=X;
+while(p->Next!=NULL)
+      { 
+        if(X>p->Data&&p->Next==NULL) 
+          {
+           p->Next=q;
+           break;
+          }
+        if(p->Next->Data>X)
+          {
+             q->Next=p->Next;
+             p->Next=q;
+             break;
+          }
+         p=p->Next;
+      }
+return L;
+}",0.0,66
+21,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	varb_2 p,temp,q,head;
+     head=p=L;		
+    while(p->Next!=NULL)
+	{    temp=p->Next;
+		if((temp->Data)>X&&(p->Data)<X)  
+		{  q=(varb_2)malloc(sizeof(struct varb_1));
+			q->Data=X;
+			q->Next=p->Next;
+			p->Next=q;			
+		}
+	p=p->Next;					
+	}
+	return head;
+}",0.0,59
+22,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert(List L, varb_0 X)
+{
+	List p = L, q = p, s;
+	s =(List)malloc(sizeof(struct varb_1));
+	while(p)
+	{
+		if(p->Data>X) break;
+		q = p;
+		p = p->Next;
+	}
+	s->Data = X;
+	s->Next = q->Next;
+	q->Next = s;
+	p = q;
+	return L;
+}",0.0,55
+23,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+q=(varb_2)malloc(sizeof(struct varb_1));
+p=L;
+q->Data=X;
+while(p->Next!=NULL)
+      { 
+        if(X>p->Next->Data&&p->Next->Next==NULL) 
+          {
+           p->Next->Next=q;
+           q->Next=NULL;
+           break;
+          }
+        if(p->Next->Data>X)
+          {
+             q->Next=p->Next;
+             p->Next=q;
+             break;
+          }
+         p=p->Next;
+      }
+return L;
+}",0.0,61
+24,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert(List L, varb_0 X)
+{
+	List p = L, q = p, s;
+	s =(List)malloc(sizeof(struct varb_1));
+	while(p)
+	{
+		if(p->Data>X) break;
+		q = p;
+		p = p->Next;
+	}
+	s->Data = X;
+	s->Next = q->Next;
+	q->Next = s;
+	p = q;
+	return L;
+}",0.0,55
+25,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+int varb_5=0;
+List p,q;
+p=L;
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=X;
+while(p->Next!=NULL)
+    {
+     if(p->Next->Data>X)
+       {
+        q->Next=p->Next;
+        p->Next=q;
+        varb_5=1;
+        break;
+       }
+     p=p->Next;
+    }
+if(varb_5==1)
+  {
+   p->Next=q;
+   q->Next=NULL;
+  }
+return L;
+}",0.0,71
+26,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3+1>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert(List L, varb_0 X)
+{
+	List p = L, q = p, s;
+	s =(List)malloc(sizeof(struct varb_1));
+	while(p)
+	{
+		if(p->Data>X) break;
+		q = p;
+		p = p->Next;
+	}
+	s->Data = X;
+	s->Next = q->Next;
+	q->Next = s;
+	p = q;
+	return L;
+}
+",0.0,31
+27,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	varb_2 p,temp,q,head;
+     head=p=L;		
+    while(p->Next!=NULL)
+	{    temp=p->Next;
+		if((temp->Data)>X&&(p->Data)<X||(p->Data)==X)  
+		{  q=(varb_2)malloc(sizeof(struct varb_1));
+			q->Data=X;
+			q->Next=p->Next;
+			p->Next=q;			
+		}
+	p=p->Next;					
+	}
+	return head;
+}",0.0,59
+28,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+	if(p->Data>X)
+	printf(""%d"",p->Data);
+   p=p->Next;}
+return p;
+}",0.0,55
+29,2c9f30a56ef37e1f016f32e07f2a63f5,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+int varb_4[20];
+scanf(""%d"",&varb_0);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%d"",&varb_4[varb_1]);
+scanf(""%d"",&varb_2);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+if(varb_2>varb_4[varb_1]&&varb_2<varb_4[varb_1+1])
+{
+for(varb_3=varb_0-1;varb_3>varb_1;varb_3--)
+varb_4[varb_3+1]=varb_4[varb_3];
+break;
+}
+}
+varb_4[varb_1+1]=varb_2;
+for(varb_1=0;varb_1<varb_0+1;varb_1++)
+printf(""%d "",varb_4[varb_1]);
+}
+",0.0,12
+30,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List q,p,node;
+	p=L;
+	q=p;
+	p=p->Next;
+	while(p)
+	{
+		if(p->Data>X)
+		{
+			node=(List)malloc(sizeof(List));
+			node->Data=X;
+			node->Next=p;
+			q->Next=node;
+			break;
+		}
+		else
+		{
+			q=p;
+			p=p->Next;
+		}
+	}
+	return L;
+}",0.0,61
+31,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+    List t,p,q;
+     p=L;
+     q=(List)malloc(sizeof(L));
+     p->Data=X;
+     q->Data=X;
+     while(p){
+        if(q->Data<X){
+            t=p;
+            p=p->Next;
+        }
+        else{
+            break;
+        }
+        q->Next=p;
+        t->Next=q;
+    }return L;
+}
+",0.0,55
+32,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL;
+   while(L->Next!=NULL)
+   {
+      if(L->Next->Data<X)
+      L->Next=L->Next->Next;
+      if(L->Next->Data>X)
+      {
+        p->Next=L->Next;
+        L->Next=p;
+       }
+    }
+    return L;
+}    
+",0.0,55
+33,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+	varb_0 Data;
+	varb_2 Next;
+};
+typedef varb_2 List;
+List Read();
+void Print(List L);
+List Insert(List L, varb_0 X);
+int main()
+{
+	List L;
+	varb_0 X;
+	L = Read();
+	scanf(""%d"", &X);
+	L = Insert(L, X);
+	Print(L);
+	return 0;
+}
+List Read()
+{
+		List head, p, q;
+	int varb_3, varb_4;
+	head =(varb_2)malloc(sizeof(struct varb_1));
+	head->Next = NULL;
+	p = head;
+	scanf(""%d"", &varb_3);
+	while(varb_3 > 0)
+	{
+		scanf(""%d"", &varb_4);
+		q =(varb_2)malloc(sizeof(struct varb_1));
+		q->Data = varb_4;
+		p->Next = q;
+		p = q;
+		varb_3--;
+	}
+	p->Next = NULL;
+	return head;
+}
+void Print(List L)
+{
+	varb_2 p;
+	p =(L)->Next;
+	while(p != NULL)
+	{
+		printf(""%d "", p->Data);
+		p = p->Next;
+	}
+}
+List Insert(List L, varb_0 X){
+	List head, p1,p2;
+	head = L;
+	p1 = head;
+	p2=(varb_2)malloc(sizeof(struct varb_1));
+	p2->Data = X;
+	while(p1)
+	{
+		if(p1->Data<p2->Data &&(p1->Next)->Data>p2->Data)
+		{		p2->Next = p1->Next;
+		p1->Next = p2;
+	}
+		p1 = p1->Next;
+	}
+	return head;
+}",0.0,25
+34,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+    List t,p,q;
+     p=L->Next;
+     q=(List)malloc(sizeof(L));     
+     q->Data=X;
+     while(p){
+        if(X>p->Data){
+            t=p;
+            p=p->Next;
+        }
+        else{
+            break;
+        }
+        q->Next=p;
+        t->Next=q;
+    }return L;
+}
+",0.0,55
+35,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+p=L;
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=X;
+while(p->Next!=NULL)
+      {
+        if(p->Next->Data>X)
+          {
+             q->Next=p->Next;
+             p->Next=q;
+          }
+         p=p->Next;
+      }
+return L;
+}",0.0,34
+36,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X ){
+	List j=L->Next;
+	List k=L;
+	do{
+		if(j->Data>X){
+			k->Next=(List)malloc(sizeof(struct varb_1));
+			k=k->Next;
+			k->Data=X;
+			k->Next=j;
+			break;
+		}
+		k=j;
+		j=j->Next;
+		if(j==NULL){
+			k->Next=(List)malloc(sizeof(struct varb_1));
+			break;
+		}
+	}while(1);
+	return L; 
+} ",0.0,72
+37,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+	List q,p,node;
+	p=L;
+	q=p;
+	p=p->Next;
+	while(p)
+	{
+		if(p->Data>X)
+		{
+			node=(List)malloc(sizeof(List));
+			node->Data=X;
+			node->Next=p;
+			q->Next=node;
+			break;
+		}
+		else
+		{
+			q=p;
+			p=p->Next;
+		}
+	}
+	if(q->Data<=X)
+	{
+		node=(List)malloc(sizeof(List));
+		node->Data=X;
+		q->Next=node;
+		node->Next=NULL;
+	}
+	return L;
+}",0.0,61
+38,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+q=(varb_2)malloc(sizeof(struct varb_1));
+p=L;
+q->Data=X;
+while(p->Next!=NULL)
+      { 
+        if(X>p->Data&&p->Next==NULL) 
+          {
+           p->Next=q;
+           q->Next=NULL;
+           break;
+          }
+        if(p->Next->Data>X)
+          {
+             q->Next=p->Next;
+             p->Next=q;
+             break;
+          }
+         p=p->Next;
+      }
+return L;
+}",0.0,64
+39,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+q=(varb_2)malloc(sizeof(struct varb_1));
+p=L;
+q->Data=X;
+while(p->Next!=NULL)
+      {
+        if(p->Next->Data>X)
+          {
+             q->Next=p->Next;
+             p->Next=q;
+             break;
+          }
+         p=p->Next;
+      }
+return L;
+}",0.0,61
+40,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+   varb_2 p,q,a;
+   p=(varb_2)malloc(sizeof(struct varb_1));
+   p->Data=X;
+   p->Next=NULL; 
+   if(L->Next==NULL)
+   L->Next=p;
+   else
+   {
+     q=L->Next;
+     a=L;
+     while(q->Data<=X)
+     {
+        a=q;
+        q=q->Next;
+      }
+      if(q->Next==NULL)
+      a->Next=p;
+      else
+      {
+        p->Next=q;
+        a->Next=p;
+       }
+      }
+     return L;
+}
+",0.0,55
+41,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+List p,q;
+p=L;
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=X;
+q->Next=NULL;
+while(p->Next!=NULL)
+    {
+     if(p->Next->Data>X)
+       {
+        q->Next=p->Next;
+        p->Next=q;
+        break;
+       }
+     p=p->Next;
+    }
+return L;
+}",0.0,34
+42,2c9f30a56ef37e1f016f32e07f2a63f5,"#include <stdio.h>
+#include <stdlib.h>
+typedef int varb_0;
+typedef struct varb_1 *varb_2;
+struct varb_1 {
+varb_0 Data;
+varb_2 Next;
+};
+typedef varb_2 List;
+List Read(); 
+void Print( List L ); 
+List Insert( List L, varb_0 X );
+int main()
+{
+List L;
+varb_0 X;
+L = Read();
+scanf(""%d"", &X);
+L = Insert(L, X);
+Print(L);
+return 0;
+}
+List Read()
+{
+List head,p,q;
+int varb_3,varb_4;
+head=(varb_2)malloc(sizeof(struct varb_1));
+head->Next=NULL;
+p=head;
+scanf(""%d"",&varb_3);
+while(varb_3>0)
+{
+scanf(""%d"",&varb_4);
+q=(varb_2)malloc(sizeof(struct varb_1));
+q->Data=varb_4;
+p->Next=q;
+p=q;
+varb_3--;
+}
+p->Next=NULL;
+return head;
+}
+void Print( List L )
+{
+varb_2 p;
+p=(L)->Next;
+while(p!=NULL)
+{
+printf(""%d "",p->Data);
+p=p->Next;
+}
+}
+List Insert( List L, varb_0 X )
+{
+  varb_2 p; p;p=(L);
+  while(p->Data<X&&p)
+  p=p->Next;
+}",0.0,6

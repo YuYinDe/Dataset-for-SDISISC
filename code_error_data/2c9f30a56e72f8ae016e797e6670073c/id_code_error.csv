@@ -1,0 +1,224 @@
+,id,code,is_true,errorline
+0,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+#define SIZE 100
+int varb_0[SIZE]={0}; 
+int varb_1,varb_2;
+int func_0(int varb_3,int varb_1)
+{
+	int varb_5=varb_1-varb_3+1;
+	if(varb_5%2==0)
+		return varb_5/2+1;
+	else
+		return(varb_5+1)/2;
+}
+int func_1(int varb_8,int varb_9,int varb_10)
+{
+	int varb_3=0,varb_12,varb_13;
+	int varb_14=0;
+	int varb_15[SIZE]={0};
+	for(varb_3=0;varb_3<varb_10;varb_3++)
+	{
+		varb_13=varb_8-1; 
+		for(varb_12=varb_8;varb_12<=varb_9;varb_12++) 
+		{
+			if(varb_15[varb_12]==1)
+				continue;
+			if(varb_0[varb_12]<varb_0[varb_13])
+				varb_13=varb_12;
+		}
+		varb_0[varb_13]++;
+		varb_14+=varb_0[varb_13];
+		varb_15[varb_13]=1;
+	}
+	for(varb_3=varb_8;varb_3<=varb_9;varb_3++)
+	{
+		if(varb_15[varb_3]==0)
+			varb_0[varb_3]=0;
+	}
+	return varb_14;
+}
+int main()
+{
+	scanf(""%d%d"",&varb_1,&varb_2);
+	varb_0[varb_2-2]=varb_1-1;
+	varb_0[varb_2-1]=1;
+	varb_0[varb_2]=0;
+	int varb_3,varb_12;
+	int varb_18;
+	int varb_19;
+	for(varb_3=varb_2-3;varb_3>=1;varb_3--)
+	{
+		varb_19=func_0(varb_3,varb_2);
+		varb_19-=1;
+		int varb_20=func_1(varb_3+2,varb_2,varb_19);
+		varb_0[varb_3+1]=0;
+		varb_0[varb_3]=varb_1-varb_20;
+	}
+	printf(""%d"",varb_0[1]);
+}",0.0,2
+1,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d%d"",&varb_0,&varb_1);
+if(varb_1==3)
+printf(""%d"",varb_0);
+else printf(""%d"",varb_0-varb_1/2-1);
+return 0;
+}",0.0,2
+2,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+#define SIZE 100
+int varb_0[SIZE]={0}; 
+int varb_1,varb_2;
+int func_0(int varb_3,int varb_1)
+{
+	int varb_5=varb_1-varb_3+1;
+	if(varb_5%2==0)
+		return varb_5/2+1;
+	else
+		return(varb_5+1)/2;
+}
+int func_1(int varb_8,int varb_9,int varb_10)
+{
+	int varb_3=0,varb_12,varb_13;
+	int varb_14=0;
+	int varb_15[SIZE]={0};
+	for(varb_3=0;varb_3<varb_10;varb_3++)
+	{
+		varb_13=varb_8-1; 
+		for(varb_12=varb_8;varb_12<=varb_9;varb_12++) 
+		{
+			if(varb_15[varb_12]==1)
+				continue;
+			if(varb_0[varb_12]<varb_0[varb_13])
+				varb_13=varb_12;
+		}
+		varb_0[varb_13]++;
+		varb_14+=varb_0[varb_13];
+		varb_15[varb_13]=1;
+	}
+	for(varb_3=varb_8;varb_3<=varb_9;varb_3++)
+	{
+		if(varb_15[varb_3]==0)
+			varb_0[varb_3]=0;
+	}
+	return varb_14;
+}
+int main()
+{
+	scanf(""%d%d"",&varb_1,&varb_2);
+	varb_0[varb_2-2]=varb_1-1;
+	varb_0[varb_2-1]=1;
+	varb_0[varb_2]=0;
+	int varb_3,varb_12;
+	int varb_18;
+	int varb_19;
+	for(varb_3=varb_2-3;varb_3>=1;varb_3--)
+	{
+		varb_19=func_0(varb_3,varb_2);
+		varb_19-=1;
+		int varb_20=func_1(varb_3+2,varb_2,varb_19);
+		varb_0[varb_3+1]=0;
+		varb_0[varb_3]=varb_1-varb_20;
+	}
+	printf(""%d"",varb_0[1]);
+}",0.0,2
+3,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+if(varb_1==3)printf(""%d"",varb_0-1);
+else printf(""%d"",varb_0-varb_1/2);
+return 0;
+}",0.0,7
+4,2c9f30a56e72f8ae016e797e6670073c,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d %d"",&varb_0,&varb_1);
+        if(varb_1==3)
+           varb_2=varb_0-1;
+        else
+           varb_2=varb_0-(varb_1/2-1);
+        printf(""%d\n"",varb_2);
+    return 0;
+}",0.0,9
+5,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d %d"",&varb_0,&varb_1);
+     if(varb_1==3)
+     printf(""%d"",varb_0-1);
+     else 
+     {
+     if(varb_1%2==0)
+     printf(""%d"",varb_0-varb_1/2-1);
+     else 
+     printf(""%d"",varb_0-(varb_1+1)/2-1);
+     }
+     }",0.0,2
+6,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_1,&varb_0);
+	if(varb_0==3)
+	 	varb_1=varb_0-1;
+	else
+		varb_1=varb_0-varb_1/2-1;
+	printf(""%d"",varb_1);
+ } ",0.0,4
+7,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	if(varb_0==3)
+	 	varb_1=2;
+	else
+		varb_1=varb_0-varb_1/2-1;
+	printf(""%d"",varb_1);
+ } ",0.0,2
+8,2c9f30a56e72f8ae016e797e6670073c,"#include <stdio.h>
+int main()
+{
+    int varb_0, varb_1;
+    while(scanf(""%d %d"",&varb_0,&varb_1))
+    {
+        int varb_2;
+        if(varb_1 == 3)
+            varb_2 = varb_0-varb_1/2;
+        else
+            varb_2 = varb_0-(varb_1)/2-1;
+        printf(""%d\n"",varb_2);
+    }
+    return 0;
+}",0.0,5
+9,2c9f30a56e72f8ae016e797e6670073c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	if(varb_0==3)
+	 	varb_1=varb_0-1;
+	else
+		varb_1=varb_0-varb_1/2-1;
+	printf(""%d"",varb_1);
+ } ",0.0,2
+10,2c9f30a56e72f8ae016e797e6670073c,"#include <stdio.h>
+int main()
+{
+    int varb_0, varb_1;
+    while(scanf(""%d %d"",&varb_0,&varb_1))
+    {
+        int varb_2;
+        if(varb_1==3)
+           varb_2=varb_0-varb_1/2;
+        else
+           varb_2=varb_0-varb_1/2-1;
+        printf(""%d\n"",varb_2);
+    }
+    return 0;
+}",0.0,5

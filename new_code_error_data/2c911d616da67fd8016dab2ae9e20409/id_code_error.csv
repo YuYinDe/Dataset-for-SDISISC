@@ -1,0 +1,1193 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+
+int main()
+
+{
+
+ int a,b;
+
+ scanf(""%d %d"",&a,&b);
+
+ printf(""c=%d\na=%d"",2*(a+b),a*b);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ printf(""c=%d\na=%d"",2*(varb_0+varb_1),varb_0*varb_1);
+    return 0;
+}",5
+1,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+       int a,b;
+       scanf(""%d,%d"",&a,&b);
+ printf(""c=%d,a=%d"",a*b,  2*(a+b));           return 0;
+ }",0.0,"#include <stdio.h>
+int main()
+{
+       int varb_0,varb_1;
+       scanf(""%d,%d"",&varb_0,&varb_1);
+ printf(""c=%d,varb_0=%d"",varb_0*varb_1,  2*(varb_0+varb_1));           return 0;
+ }",5
+2,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d %d"",&a,&b);
+c=2*(a+b);
+d=a;
+a=d*b;
+printf(""c=%d\na=%d"",c,a);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d"",&varb_0,&varb_1);
+varb_2=2*(varb_0+varb_1);
+varb_3=varb_0;
+varb_0=varb_3*varb_1;
+printf(""c=%d\na=%d"",varb_2,varb_0);
+return 0;
+}",4
+3,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+    int a,b,c,s;
+    scanf(""%d%d"",&a,&b);
+    c=(a+b)*2;
+    s=a*b;
+	printf(""c=%d"",c);
+	printf(""a=%d"",s);
+    return 0;
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+	printf(""c=%d"",varb_2);
+	printf(""a=%d"",varb_3);
+    return 0;
+}",4
+4,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+   int a,b;
+   scanf(""%d,%d"",&a,&b);
+   printf(""c=%d\na=%d"",a*2+b*2);
+   return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+   printf(""c=%d\na=%d"",varb_0*2+varb_1*2);
+   return 0;
+}",5
+5,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	scanf(""%d,%d"",&a,&b);
+	printf(""c=%d\n"",2*a+2*b);
+	printf(""s=%d"",a*b);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d,%d"",&varb_0,&varb_1);
+	printf(""c=%d\n"",2*varb_0+2*varb_1);
+	printf(""s=%d"",varb_0*varb_1);
+return 0;
+}",7
+6,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+   int a,b;
+   scanf(""%d,%d"",&a,&b);
+   printf(""c=%dna=%d"",a*2+b*2);
+   return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+   printf(""c=%dna=%d"",varb_0*2+varb_1*2);
+   return 0;
+}",5
+7,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+scanf(""%d,%d"",&a,&b);
+printf(""c=%d"",2*(a+b));
+printf(""a=%d"",a*b);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d"",2*(varb_0+varb_1));
+printf(""a=%d"",varb_0*varb_1);
+return 0;
+}",4
+8,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+
+  int main()
+  {int a,b,c,s;
+  a=3;
+  b=4;
+  c=2*(a+b);
+  s=a*b;
+  printf(""the circumstance of the circle is %d"",c);
+  printf(""\nthe square of the ciecle is %d"",s);
+  
+  return 0;
+  }",0.0,"#include<stdio.h>
+  int main()
+  {int varb_0,varb_1,varb_2,varb_3;
+  varb_0=3;
+  varb_1=4;
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""the circumstance of the circle is %d"",varb_2);
+  printf(""\nthe square of the ciecle is %d"",varb_3);
+  return 0;
+  }",8
+9,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	scanf(""%d,%d"",&a,&b);
+	int c,d;
+	c=2*(a+b);
+	d=a*b;
+	printf(""c=%d,a=%d"",c,d);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	scanf(""%d,%d"",&varb_0,&varb_1);
+	int varb_2,varb_3;
+	varb_2=2*(varb_0+varb_1);
+	varb_3=varb_0*varb_1;
+	printf(""c=%d,varb_0=%d"",varb_2,varb_3);
+	return 0;
+}",9
+10,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{ int a,b;
+scanf(""%d,%d"",&a,&b);
+printf(""c=%d,a=%d"",a*b,2*(a+b)); return 0;
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,varb_0=%d"",varb_0*varb_1,2*(varb_0+varb_1)); return 0;
+ }",3
+11,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+  int a,b;
+  scanf(""%d,%d"",&a,&b);
+  printf(""c=%dna=%d"",a*2+b*2);
+  return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  scanf(""%d,%d"",&varb_0,&varb_1);
+  printf(""c=%dna=%d"",varb_0*2+varb_1*2);
+  return 0;
+}",5
+12,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+	int a,b,s,c;
+	a=3;
+	b=4;
+
+	c=(a+b)*2;
+	s=a*b;
+	printf(""%d\n"",c);
+	printf(""%d\n"",s);
+	return 0;
+	
+	
+	
+	
+	
+	
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	varb_0=3;
+	varb_1=4;
+	varb_3=(varb_0+varb_1)*2;
+	varb_2=varb_0*varb_1;
+	printf(""%d\n"",varb_3);
+	printf(""%d\n"",varb_2);
+	return 0;
+ } ",9
+13,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+   int a,b;
+   scanf(""%d,%d"",&a,&b);
+   printf(""c=%d/na=%d"",a*2+b*2);
+   return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+   printf(""c=%d/na=%d"",varb_0*2+varb_1*2);
+   return 0;
+}",5
+14,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+
+{ int a,b;
+
+   scanf(""%d,%d"",&a,&b);
+
+printf(""c=%d,\n a=%d"",2*(a+b),a*b);
+
+   return 0;
+
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,\n varb_0=%d"",2*(varb_0+varb_1),varb_0*varb_1);
+   return 0;
+ }",3
+15,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+
+{ 
+
+  int a,b,c;
+
+  scanf(""%d,%d"",&a,&b);
+
+  printf(""c=%d,a=%d"",a*2+b*2,a*b);
+
+   return 0;
+
+ }",0.0,"#include <stdio.h>
+int main()
+{ 
+  int varb_0,varb_1,varb_2;
+  scanf(""%d,%d"",&varb_0,&varb_1);
+  printf(""c=%d,varb_0=%d"",varb_0*2+varb_1*2,varb_0*varb_1);
+   return 0;
+ }",4
+16,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+ int a,b,c,s;
+ scanf(""%d%d"",&a,&b);
+ c=(a+b)*2;
+ s=a*b;
+ printf(""c=%d\ns=%d"",c,s);
+ return 0;
+}
+ 
+ ",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2,varb_3;
+ scanf(""%d%d"",&varb_0,&varb_1);
+ varb_2=(varb_0+varb_1)*2;
+ varb_3=varb_0*varb_1;
+ printf(""c=%d\ns=%d"",varb_2,varb_3);
+ return 0;
+}
+",5
+17,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d,%d"",a,b);
+
+c=2*a+2*b;
+d=a*b;
+printf(""c=%d"",c);
+printf(""a=%d"",d);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d,%d"",varb_0,varb_1);
+varb_2=2*varb_0+2*varb_1;
+varb_3=varb_0*varb_1;
+printf(""c=%d"",varb_2);
+printf(""a=%d"",varb_3);
+}",5
+18,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+	int a;
+	int b;
+	int c;
+	int d;
+	scanf(""%d%d"",&a,&b);
+	c=2*a+2*b;
+	d=a*b;
+	printf(""c=%d\n"",c);
+	printf(""a=%d\n"",d);
+	return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0;
+	int varb_1;
+	int varb_2;
+	int varb_3;
+	scanf(""%d%d"",&varb_0,&varb_1);
+	varb_2=2*varb_0+2*varb_1;
+	varb_3=varb_0*varb_1;
+	printf(""c=%d\n"",varb_2);
+	printf(""a=%d\n"",varb_3);
+	return 0;
+}",4
+19,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+	int a=3;
+	int b=4;
+	scanf(""%d %d"",&a,&b);
+	printf(""c=%d a=%d"",2*(a+b),a*b);
+	return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0=3;
+	int varb_1=4;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""c=%d varb_0=%d"",2*(varb_0+varb_1),varb_0*varb_1);
+	return 0;
+}",7
+20,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+     int a,b;
+     scanf(""%d,%d"",&a,&b);
+     printf(""c=%d\n"",a*b);
+     printf(""a=%d\n"",2*(a+b));
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d,%d"",&varb_0,&varb_1);
+     printf(""c=%d\n"",varb_0*varb_1);
+     printf(""a=%d\n"",2*(varb_0+varb_1));
+     return 0;
+}",6
+21,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+{
+  int a,b,c,d;
+  scanf(""%d,%d"",&a,&b);
+  c=(a+b)*2;
+  d=a*b;
+  printf(""c=%d,d=%d"",c,d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d,%d"",&varb_0,&varb_1);
+  varb_2=(varb_0+varb_1)*2;
+  varb_3=varb_0*varb_1;
+  printf(""c=%d,d=%d"",varb_2,varb_3);
+}",8
+22,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+ int main()
+{
+ int a,b;
+ float c,d;
+ scanf(""%d,%d"",&a,&b);
+ c=2*a+2*b;
+ d=a*b;
+ printf(""c=%lf\n"",c);
+ printf(""a=%lf\n"",d);
+ return 0;
+ }",0.0,"#include<stdio.h>
+ int main()
+{
+ int varb_0,varb_1;
+ float varb_2,varb_3;
+ scanf(""%d,%d"",&varb_0,&varb_1);
+ varb_2=2*varb_0+2*varb_1;
+ varb_3=varb_0*varb_1;
+ printf(""c=%lf\n"",varb_2);
+ printf(""a=%lf\n"",varb_3);
+ return 0;
+ }",9
+23,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+
+  int main()
+  {int A,b,c,a;
+  A=3;
+  b=4;
+  c=2*(A+b);
+  a=A*b;
+  printf(""the circumstance of the circle is %d"",c);
+  printf(""\nthe square of the ciecle is %d"",a);
+  
+  return 0;
+  }",0.0,"#include<stdio.h>
+  int main()
+  {int varb_0,varb_1,varb_2,varb_3;
+  varb_0=3;
+  varb_1=4;
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""the circumstance of the circle is %d"",varb_2);
+  printf(""\nthe square of the ciecle is %d"",varb_3);
+  return 0;
+  }",8
+24,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{int s,b;
+scanf(""%d,%d"",&s,&b);
+int c,a;
+c=(s+b)*2;
+a=s*b;
+printf(""c=%d"",c);
+printf(""a=%d"",a);
+return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+scanf(""%d,%d"",&varb_0,&varb_1);
+int varb_2,varb_3;
+varb_2=(varb_0+varb_1)*2;
+varb_3=varb_0*varb_1;
+printf(""c=%d"",varb_2);
+printf(""a=%d"",varb_3);
+return 0;
+}",3
+25,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+    int a,b,c,s;
+    scanf(""%d%d"",&a,&b);
+    c=(a+b)*2;
+    s=a*b;
+	printf(""c=%d\n"",c);
+	printf(""a=%d\n"",s);
+    return 0;
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+	printf(""c=%d\n"",varb_2);
+	printf(""a=%d\n"",varb_3);
+    return 0;
+}",4
+26,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+    int a,b,c,s;
+    scanf(""%d%d"",&a,&b);
+    c=(a+b)*2;
+    s=a*b;
+	printf(""c=%d"",c);
+	printf(""a=%d"",s);
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+	printf(""c=%d"",varb_2);
+	printf(""a=%d"",varb_3);
+}",4
+27,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+
+{
+    int a,b,c,d;
+    scanf(""%d,%d"",&a,&b);
+    c=(a+b)*2;
+    d=a*b;
+    printf(""c=%d,a=%d"",c,d);  
+    return 0; 
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d,%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+    printf(""c=%d,varb_0=%d"",varb_2,varb_3);  
+    return 0; 
+}",8
+28,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+float x,b;
+float a,c;
+
+scanf(""%f,%f"",&x,&b);
+a=x*b;
+c=2*(x+b);
+
+printf(""c=%f\n"",c);
+printf(""a=%f"",a);
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+float varb_2,varb_3;
+scanf(""%f,%f"",&varb_0,&varb_1);
+varb_2=varb_0*varb_1;
+varb_3=2*(varb_0+varb_1);
+printf(""c=%f\n"",varb_3);
+printf(""a=%f"",varb_2);
+  return 0;
+}",4
+29,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+	int a,b,c,s;
+	scanf(""%d %d"",&a,&b);
+	c=(a+b)*2;
+	s=a*b;
+	printf(""c=%d\ns=%d"",c,s);
+	return 0;
+ } ",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	varb_2=(varb_0+varb_1)*2;
+	varb_3=varb_0*varb_1;
+	printf(""c=%d\ns=%d"",varb_2,varb_3);
+	return 0;
+ } ",4
+30,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+{
+  int x,y,c,a;
+  scanf(""%d,%d"",&x,&y);
+  c=(x+y)*2;
+  a=x*y;
+  printf(""c=%d,a=%d"",c,a);
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d,%d"",&varb_0,&varb_1);
+  varb_2=(varb_0+varb_1)*2;
+  varb_3=varb_0*varb_1;
+  printf(""c=%d,varb_3=%d"",varb_2,varb_3);
+}",8
+31,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{ int a,b;
+
+scanf(""%d,%d"",&a,&b);
+printf(""c=%d,a=%d"",2*(a+b),a*b);           return 0;
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,varb_0=%d"",2*(varb_0+varb_1),varb_0*varb_1);           return 0;
+ }",3
+32,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+main()
+{
+   int a,b,c,area;
+   a=3;
+   b=4;
+   c=2*a+2*b;
+   area=a*b;
+ printf(""矩形的周长为%d\n"",c);
+ printf(""矩形的面积为%d\n"",area);
+ }
+ ",0.0,"#include<stdio.h>
+main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   varb_0=3;
+   varb_1=4;
+   varb_2=2*varb_0+2*varb_1;
+   varb_3=varb_0*varb_1;
+ printf(""矩形的周长为%d\n"",varb_2);
+ printf(""矩形的面积为%d\n"",varb_3);
+ }
+",9
+33,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+	int a;
+	int b;
+	scanf(""%d %d"",&a,&b);
+	printf(""c=%d a=%d"",2*(a+b),a*b);
+	return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0;
+	int varb_1;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	printf(""c=%d varb_0=%d"",2*(varb_0+varb_1),varb_0*varb_1);
+	return 0;
+}",4
+34,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main () 
+{
+ int a,b,c,f;
+ b=3;
+ f=4;
+ a=b*f;
+ c=2*b+2*f;
+printf(""a=%d\n"",a);
+printf(""c=%d\n"",c);  
+return 0;
+}",0.0,"#include<stdio.h>
+int main() 
+{
+ int varb_0,varb_1,varb_2,varb_3;
+ varb_1=3;
+ varb_3=4;
+ varb_0=varb_1*varb_3;
+ varb_2=2*varb_1+2*varb_3;
+printf(""a=%d\n"",varb_0);
+printf(""c=%d\n"",varb_2);  
+return 0;
+}",10
+35,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+    int a,b,c,s;
+    scanf(""%d%d"",&a,&b);
+    c=(a+b)*2;
+    s=a*b;
+	printf(""c=%d\n"",c);
+	printf(""a=%d"",s);
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+	printf(""c=%d\n"",varb_2);
+	printf(""a=%d"",varb_3);
+}",4
+36,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+  int x,y,c,a;
+  x=3,y=4;
+  c=2*(x+y);
+  a=x*y;
+  printf(""%d,%d"",c,a);
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_0=3,varb_1=4;
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""%d,%d"",varb_2,varb_3);
+  return 0;
+  }",8
+37,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+     int a,b;
+     scanf(""%d,%d"",&a,&b);
+     printf(""c=%d"",a*b);
+     printf(""a=%d\n"",2*(a+b));
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d,%d"",&varb_0,&varb_1);
+     printf(""c=%d"",varb_0*varb_1);
+     printf(""a=%d\n"",2*(varb_0+varb_1));
+     return 0;
+}",5
+38,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{int s,b;
+scanf(""%d,%d"",&s,&b);
+int c,a;
+c=s+b;
+a=s*b;
+printf(""c=%d"",c);
+printf(""a=%d"",a);
+return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+scanf(""%d,%d"",&varb_0,&varb_1);
+int varb_2,varb_3;
+varb_2=varb_0+varb_1;
+varb_3=varb_0*varb_1;
+printf(""c=%d"",varb_2);
+printf(""a=%d"",varb_3);
+return 0;
+}",3
+39,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+
+c=2*a+2*b;
+d=a*b;
+printf(""c=%d"",c);
+printf(""a=%d"",d);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_2=2*varb_0+2*varb_1;
+varb_3=varb_0*varb_1;
+printf(""c=%d"",varb_2);
+printf(""a=%d"",varb_3);
+}",7
+40,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+  int a1,b,c,a;
+  scanf(""%d,%d"",&a1,b);
+  c=2*(a1+b);
+  a=a1*b;
+  printf(""c=%d\na=%d"",c,a);
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d,%d"",&varb_0,varb_1);
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""c=%d\na=%d"",varb_2,varb_3);
+  return 0;
+  }",4
+41,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf(""%d,%d"",&a,&b);
+    c=(a+b)*2;
+    d=a*b;
+    printf(""c=%d,d=%d"",c,d);
+    return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d,%d"",&varb_0,&varb_1);
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+    printf(""c=%d,d=%d"",varb_2,varb_3);
+    return 0;
+}
+",8
+42,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+
+{ int a,b;
+
+   scanf(""%d,%d"",&a,&b);
+
+printf(""c=%d,a=%d"",a*b,2*(a+b));
+
+   return 0;
+
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,varb_0=%d"",varb_0*varb_1,2*(varb_0+varb_1));
+   return 0;
+ }",3
+43,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+
+int main()
+
+{
+
+ int a,b;
+
+ scanf(""%d %d"",&a,&b);
+
+ printf(""c=%d\na=%d"",(a+b)*2,a*b);
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1;
+ scanf(""%d %d"",&varb_0,&varb_1);
+ printf(""c=%d\na=%d"",(varb_0+varb_1)*2,varb_0*varb_1);
+    return 0;
+}",5
+44,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+  int a1,b,c,a;
+  a1=3,b=4;
+  c=2*(a1+b);
+  a=a1*b;
+  printf(""%d\n%d"",c,a);
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_0=3,varb_1=4;
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""%d\n%d"",varb_2,varb_3);
+  return 0;
+  }",3
+45,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int x,y,c,a;
+scanf(""%d,%d"",x,y);
+c=2*x+2*y;
+a=x*y;
+printf(""c=%d\n"",c);
+printf(""a=%d"",a);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d,%d"",varb_0,varb_1);
+varb_2=2*varb_0+2*varb_1;
+varb_3=varb_0*varb_1;
+printf(""c=%d\n"",varb_2);
+printf(""a=%d"",varb_3);
+return 0;
+}",5
+46,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,s ;
+  scanf(""%d%d"",&a,&b);
+  c=2*a+2*b;
+  s=a*b;
+  printf(""c=%d\n"",c);
+  printf(""a=%d\n"",s);
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3 ;
+  scanf(""%d%d"",&varb_0,&varb_1);
+  varb_2=2*varb_0+2*varb_1;
+  varb_3=varb_0*varb_1;
+  printf(""c=%d\n"",varb_2);
+  printf(""a=%d\n"",varb_3);
+  return 0;
+}",5
+47,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+    int a,b;
+	int c,A; 
+	scanf(""%d%d"",&a,&b);
+	c=2*(a+b);
+	A=a*b;
+	printf(""c=%d\na=%d"",c,A);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1;
+	int varb_2,varb_3; 
+	scanf(""%d%d"",&varb_0,&varb_1);
+	varb_2=2*(varb_0+varb_1);
+	varb_3=varb_0*varb_1;
+	printf(""c=%d\na=%d"",varb_2,varb_3);
+	return 0;
+}",4
+48,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+
+c=2*(a+b);
+d=a*b;
+printf(""%d\n"",c);
+printf(""%d"",d);
+return 0;
+}
+
+
+
+
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_2=2*(varb_0+varb_1);
+varb_3=varb_0*varb_1;
+printf(""%d\n"",varb_2);
+printf(""%d"",varb_3);
+return 0;
+}
+",3
+49,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    a=3;
+    b=4;
+    c=(a+b)*2;
+    d=a*b;
+    printf(""c=%d,d=%d"",c,d);
+    return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    varb_0=3;
+    varb_1=4;
+    varb_2=(varb_0+varb_1)*2;
+    varb_3=varb_0*varb_1;
+    printf(""c=%d,d=%d"",varb_2,varb_3);
+    return 0;
+}
+",5
+50,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+  int a1,b,c,a;
+  a1=3,b=4;
+  c=2*(a1+b);
+  a=a1*b;
+  printf(""%d,%d"",c,a);
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_0=3,varb_1=4;
+  varb_2=2*(varb_0+varb_1);
+  varb_3=varb_0*varb_1;
+  printf(""%d,%d"",varb_2,varb_3);
+  return 0;
+  }",8
+51,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+
+{ int a,b;
+
+   scanf(""%d,%d"",&a,&b);
+
+printf(""c=%d,\na=%d"",2*(a+b),a*b);
+
+   return 0;
+
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,\na=%d"",2*(varb_0+varb_1),varb_0*varb_1);
+   return 0;
+ }",3
+52,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+ int a,b,c,s;
+ scanf(""%d,%d"",&a,&b);
+ c=(a+b)*2;
+ s=a*b;
+ printf(""c=%d\n"",c);
+ printf(""a=%d"",a);
+ return 0;
+}
+ 
+ ",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2,varb_3;
+ scanf(""%d,%d"",&varb_0,&varb_1);
+ varb_2=(varb_0+varb_1)*2;
+ varb_3=varb_0*varb_1;
+ printf(""c=%d\n"",varb_2);
+ printf(""a=%d"",varb_0);
+ return 0;
+}
+",8
+53,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+
+int main()
+{
+  int a,b,c,d;
+  scanf(""%d,%d"",&a,&b);
+  c=(a+b)*2;
+  d=a*b;
+  printf(""c=%d,a=%d"",c,d);
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d,%d"",&varb_0,&varb_1);
+  varb_2=(varb_0+varb_1)*2;
+  varb_3=varb_0*varb_1;
+  printf(""c=%d,varb_0=%d"",varb_2,varb_3);
+}",8
+54,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{ int a,b;
+scanf(""%d,%d"",&a,&b);
+printf(""c=%d,a=%d"",2*(a+b),a*b);           return 0;
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,varb_0=%d"",2*(varb_0+varb_1),varb_0*varb_1);           return 0;
+ }",3
+55,2c911d616da67fd8016dab2ae9e20409,"#include <stdio.h>
+int main()
+{ int a,b;
+   scanf(""%d,%d"",&a,&b);
+printf(""c=%d,a=%d"",a*b,2*(a+b));
+   return 0;
+ }",0.0,"#include <stdio.h>
+int main()
+{ int varb_0,varb_1;
+   scanf(""%d,%d"",&varb_0,&varb_1);
+printf(""c=%d,varb_0=%d"",varb_0*varb_1,2*(varb_0+varb_1));
+   return 0;
+ }",3
+56,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d%d"",&a,&b);
+c=2*(a+b);
+d=a*b;
+printf(""%d\n"",c);
+printf(""%d"",d);
+return 0;
+}
+
+
+
+
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d%d"",&varb_0,&varb_1);
+varb_2=2*(varb_0+varb_1);
+varb_3=varb_0*varb_1;
+printf(""%d\n"",varb_2);
+printf(""%d"",varb_3);
+return 0;
+}
+",3
+57,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+     int a,b;
+     scanf(""%d,%d"",&a,&b);
+     printf(""c=%d\n"",a*b);
+     printf(""a=%d"",2*(a+b));
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d,%d"",&varb_0,&varb_1);
+     printf(""c=%d\n"",varb_0*varb_1);
+     printf(""a=%d"",2*(varb_0+varb_1));
+     return 0;
+}",6
+58,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+a=3;
+b=4;
+
+c=2*a+2*b;
+d=a*b;
+printf(""c=%d"",c);
+printf(""a=%d"",d);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+varb_0=3;
+varb_1=4;
+varb_2=2*varb_0+2*varb_1;
+varb_3=varb_0*varb_1;
+printf(""c=%d"",varb_2);
+printf(""a=%d"",varb_3);
+}",9
+59,2c911d616da67fd8016dab2ae9e20409,"#include<stdio.h>
+int main()
+{
+     int a,b;
+     scanf(""%d,%d"",&a,&b);
+     printf(""c=%d\n"",a*b);
+     printf(""a=%d"",(2*(a+b)));
+     return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+     int varb_0,varb_1;
+     scanf(""%d,%d"",&varb_0,&varb_1);
+     printf(""c=%d\n"",varb_0*varb_1);
+     printf(""a=%d"",(2*(varb_0+varb_1)));
+     return 0;
+}",4

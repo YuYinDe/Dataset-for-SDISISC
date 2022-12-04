@@ -1,0 +1,2541 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+ 
+char *match( char *s, char ch1, char ch2 )
+{
+
+int a,b,m,n;char s1[10];m=10;n=9;
+ for(a=0;a<10;a++)
+{
+  if(s[a]==ch1) {m=a;break;}}
+for(a=0;a<10;a++)
+{  
+  if(s[a]==ch2) n=a;
+}
+  for(a=m;a<=n;a++)
+   printf(""%c"",s[a]);
+   printf(""\n"");
+    return &s[m];
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=9;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",15
+1,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+    char str[MAXS], ch_start, ch_end, *p; 
+    scanf(""%s\n"", str);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+	return 0; 
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+	int i=0;
+	char *p;
+	while(s[i]!=ch1)
+	{
+		i++;
+	}
+	if(i<MAXS)
+	{
+		p=s+i;
+		for(;s[i-1]!=ch2&&s[i]!='\0';i++)
+		{
+			printf(""%c"",s[i]);
+		}
+		printf(""\n"");
+		return p;
+	}
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	if(varb_7<MAXS)
+	{
+		varb_8=varb_0+varb_7;
+		for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+		{
+			printf(""%c"",varb_0[varb_7]);
+		}
+		printf(""\n"");
+		return varb_8;
+	}
+}",17
+2,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+   int i=0;
+    while(*s!=ch1&&*s!='\0')
+      s++;
+     for(*s;*s!=ch2&&*s!='\0';s++)
+     {
+         if(*s==ch2)//相等则停止打印
+            break;
+         printf(""%c"",*s);
+         i++;
+     }
+     printf(""%c"",ch2);
+     printf(""\n""); 
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+   int varb_7=0;
+    while(*varb_0!=varb_1&&*varb_0!='\0')
+      varb_0++;
+     for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+     {
+         if(*varb_0==varb_2)
+            break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+     }
+     printf(""%c"",varb_2);
+     printf(""\n""); 
+}",15
+3,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+    char str[MAXS], ch_start, ch_end, *p; 
+    scanf(""%s\n"", str);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+	return 0; 
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+	int i=0,*p;
+	while(s[i]!='ch1')
+	{
+		i++;
+	}
+	p=&s[i];
+	for(;s[i]!='ch2';i++)
+	{
+		printf(""%c"",s[i]);
+	}
+	return *p;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0,*varb_8;
+	while(varb_0[varb_7]!='ch1')
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7]!='ch2';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	return *varb_8;
+}",15
+4,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         if(*s==ch2)//相等则停止打印
+             break;
+         printf(""%c"",*s);
+         i++;
+        }
+        if(*s!='\0')
+           printf(""%c\n"",ch2);
+ }
+ 
+ return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c\n"",varb_2);
+ }
+ return varb_0-varb_7; 
+}
+",15
+5,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+#define MAXS 10 
+
+ 
+
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+
+char *match( char *s, char ch1, char ch2 )
+{
+  char a[MAXS]="""",*p;
+  int i,j;
+  i=0;j=0;
+  while(*(s+i)!=ch1)
+  i++;
+  p=s+i;
+  
+  a[j]=*p;
+  i++;j++;
+  while(*(s+i)!=ch2)
+  {
+  a[j]=*(s+i);
+  i++;j++;
+  }
+  a[j]=*(s+i);
+  puts(a);
+  printf(""\n"");
+  return p;
+}
+",0.0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  char varb_7[varb_8]="""",*varb_9;
+  int varb_10,varb_11;
+  varb_10=0;varb_11=0;
+  while(*(varb_0+varb_10)!=varb_1)
+  varb_10++;
+  varb_9=varb_0+varb_10;
+  varb_7[varb_11]=*varb_9;
+  varb_10++;varb_11++;
+  while(*(varb_0+varb_10)!=varb_2)
+  {
+  varb_7[varb_11]=*(varb_0+varb_10);
+  varb_10++;varb_11++;
+  }
+  varb_7[varb_11]=*(varb_0+varb_10);
+  puts(varb_7);
+  printf(""\n"");
+  return varb_9;
+}
+",18
+6,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         printf(""%c"",*s);
+         i++;
+         if(*s==ch2)//相等则停止打印
+              printf(""%c"",ch2);
+         printf(""\n"");break;
+        }
+        /*if(*s!='\0')
+           printf(""%c"",ch2);
+         printf(""\n"");*/
+   }
+   else
+       printf(""\n"");
+   return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+              printf(""%c"",varb_2);
+         printf(""\n"");break;
+        }
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",26
+7,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;s[i];i++)
+	{
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	if(s[i]=='\0')
+		return q;
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+				break;
+	}
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+				break;
+	}
+	return varb_8;
+}",15
+8,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+  int i=0,len;
+  char *q;
+  len=strlen(s);
+  for(i=0;i<len&&s[i]!=ch1;i++)
+   q=&s[i];
+   for(;i<len;i++)
+   {
+    printf(""%c"",s[i]);
+     if(s[i]==ch2)
+     break;
+   }
+   printf(""\n"");
+   return q;
+	
+}
+",0.0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  int varb_7=0,varb_8;
+  char *varb_9;
+  varb_8=strlen(varb_0);
+  for(varb_7=0;varb_7<varb_8&&varb_0[varb_7]!=varb_1;varb_7++)
+   varb_9=&varb_0[varb_7];
+   for(;varb_7<varb_8;varb_7++)
+   {
+    printf(""%c"",varb_0[varb_7]);
+     if(varb_0[varb_7]==varb_2)
+     break;
+   }
+   printf(""\n"");
+   return varb_9;
+}
+",19
+9,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;;i++)
+	{
+	
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",15
+10,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+    char str[MAXS], ch_start, ch_end, *p; 
+    scanf(""%s\n"", str);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+	return 0; 
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+	int i=0;
+	char *p;
+	while(s[i]!=ch1)
+	{
+		i++;
+	}
+	p=&s[i];
+	for(;s[i]!=ch2;i++)
+	{
+		printf(""%c"",s[i]);
+	}
+	return p;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7]!=varb_2;varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	return varb_8;
+}",11
+11,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+	char str[MAXS], ch_start, ch_end, *p; 
+	scanf(""%s\n"", str);
+	scanf(""%c %c"", &ch_start, &ch_end); 
+	p = match(str, ch_start, ch_end); 
+	printf(""%s\n"", p); 
+	return 0; 
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	char a[100];
+	char *p1=NULL;
+   *p1='\0';
+	int i=0,j=0,flag=0;
+	while(*(s+i)){
+		if(*(s+i)==ch1){
+			p1=s+i;
+			while(1){
+				if(!*(s+i)||*(s+i)==ch2){flag=1;a[j]=*(s+i);break;}
+				a[j++]=*(s+i);i++;
+			}
+		}
+		if(flag==1) break;
+		i++;
+	} 
+	if(flag!=0) puts(a);
+	else printf(""\n"");
+//	if(flag!=0)
+	return p1;
+//	else return s+strlen(s);
+}
+/*
+program
+r g
+*/
+ ",0.0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+	char varb_3[MAXS], ch_start, ch_end, *p; 
+	scanf(""%s\n"", varb_3);
+	scanf(""%c %c"", &ch_start, &ch_end); 
+	p = func_0(varb_3, ch_start, ch_end); 
+	printf(""%s\n"", p); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	char varb_7[100];
+	char *varb_8=NULL;
+   *varb_8='\0';
+	int varb_9=0,j=0,flag=0;
+	while(*(varb_0+varb_9)){
+		if(*(varb_0+varb_9)==varb_1){
+			varb_8=varb_0+varb_9;
+			while(1){
+				if(!*(varb_0+varb_9)||*(varb_0+varb_9)==varb_2){flag=1;varb_7[j]=*(varb_0+varb_9);break;}
+				varb_7[j++]=*(varb_0+varb_9);varb_9++;
+			}
+		}
+		if(flag==1) break;
+		varb_9++;
+	} 
+	if(flag!=0) puts(varb_7);
+	else printf(""\n"");
+	return varb_8;
+}
+",18
+12,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;;i++)
+	{
+	
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	for(i=0;;i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+			break;
+	}
+	printf(""\n"");
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;;varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+			break;
+	}
+	printf(""\n"");
+	return varb_8;
+}",15
+13,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;s[i];i++)
+	{
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	if(s[i]=='\0')
+	return q;
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+	return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",15
+14,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+char a[MAXS]="""",*p;
+int i=0;
+int j=0;
+while((*(s+i)!=ch1)&&(*(s+i)!=0))
+{
+i++;
+}
+p=s+i;
+a[j]=*(s+i);
+ j++;i++;
+    while((*(s+i)!=0)&&(*(s+i)!=ch2))
+    {
+    a[j]=*(s+1);
+    j++;i++;}
+    a[j]=*(s+i);
+   printf(""%s\n"",a);
+    return p;
+}",0.0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+   printf(""%s\n"",varb_7);
+    return varb_9;
+}",16
+15,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;;i++)
+	{
+	
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	for(i=0;;i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;;varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",15
+16,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include <string.h>
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *b;
+	for(i=0;(i<strlen(s))&&(s[i]!=ch1);i++)
+	{
+	    b=&s[i];
+	    for(;i<strlen(s);i++)
+	    {
+	    	printf(""%c"",s[i]);
+	    	if(s[i]==ch2)
+	    	  break;
+	    }
+	    printf(""\n"");
+	}	
+   return b;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	for(varb_7=0;(varb_7<strlen(varb_0))&&(varb_0[varb_7]!=varb_1);varb_7++)
+	{
+	    varb_8=&varb_0[varb_7];
+	    for(;varb_7<strlen(varb_0);varb_7++)
+	    {
+	    	printf(""%c"",varb_0[varb_7]);
+	    	if(varb_0[varb_7]==varb_2)
+	    	  break;
+	    }
+	    printf(""\n"");
+	}	
+   return varb_8;
+}",16
+17,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include <string.h>
+#define MAXS 10  
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+     char str[MAXS], ch_start, ch_end, *p; 
+   scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *match( char *s, char ch1, char ch2 ) { int i;
+char *a; 
+for(;(i<strlen(s))&&(s[i]!=ch1);i++); 
+a=&s[i]; 
+for(i=0;i<strlen(s);i++) 
+{ 
+  printf(""%c"",s[i]); 
+  if(s[i]==ch2)
+  break;   
+} 
+printf(""\n""); 
+return a;
+}
+ 
+
+
+",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXS 10  
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+   scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 ) { int varb_7;
+char *varb_8; 
+for(;(varb_7<strlen(varb_0))&&(varb_0[varb_7]!=varb_1);varb_7++); 
+varb_8=&varb_0[varb_7]; 
+for(varb_7=0;varb_7<strlen(varb_0);varb_7++) 
+{ 
+  printf(""%c"",varb_0[varb_7]); 
+  if(varb_0[varb_7]==varb_2)
+  break;   
+} 
+printf(""\n""); 
+return varb_8;
+}
+",14
+18,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         printf(""%c"",*s);
+         i++;
+         if(*s==ch2)//相等则停止打印
+         {     printf(""%c"",ch2);
+         printf(""\n"");break;}
+        }
+        /*if(*s!='\0')
+           printf(""%c"",ch2);
+         printf(""\n"");*/
+   }
+   else
+       printf(""\n"");
+   return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+         {     printf(""%c"",varb_2);
+         printf(""\n"");break;}
+        }
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",25
+19,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *match( char *s, char ch1, char ch2 )
+ { 
+ int i;
+char *a; 
+for(i=0;(s[i]!='\0')&&(s[i]!=ch1);i++); 
+a=&s[i]; 
+for(i=0;(s[i]!='\0');i++) 
+{ 
+  printf(""%c"",s[i]); 
+  if(s[i]==ch2)
+  break; 
+  
+} 
+printf(""\n""); 
+return a;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+ { 
+ int varb_7;
+char *varb_8; 
+for(varb_7=0;(varb_0[varb_7]!='\0')&&(varb_0[varb_7]!=varb_1);varb_7++); 
+varb_8=&varb_0[varb_7]; 
+for(varb_7=0;(varb_0[varb_7]!='\0');varb_7++) 
+{ 
+  printf(""%c"",varb_0[varb_7]); 
+  if(varb_0[varb_7]==varb_2)
+  break; 
+} 
+printf(""\n""); 
+return varb_8;
+}",5
+20,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         if(*s==ch2)//相等则停止打印
+             break;
+         printf(""%c"",*s);
+         i++;
+        }
+        if(*s!='\0')
+           printf(""%c"",ch2);
+ }
+ else
+ printf(""\n"");
+ return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c"",varb_2);
+ }
+ else
+ printf(""\n"");
+ return varb_0-varb_7; 
+}
+",15
+21,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+    char str[MAXS], ch_start, ch_end, *p; 
+    scanf(""%s\n"", str);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+	return 0; 
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+	int i=0;
+	char *p;
+	while(s[i]!=ch1)
+	{
+		i++;
+	}
+	/*for(i=0;i<10;i++)
+	{
+		printf(""%c"",s[i]);
+	}*/
+	p=&s[i];
+	for(;s[i-1]!=ch2&&s[i]!='\0';i++)
+	{
+		printf(""%c"",s[i]);
+	}
+	printf(""\n"");
+	return p;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	printf(""\n"");
+	return varb_8;
+}",17
+22,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+#define MAXS 10 
+
+ 
+
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+
+char *match( char *s, char ch1, char ch2 )
+{
+  char a[MAXS]="""",*p;
+  int i,j;
+  i=0;j=0;
+  while(*(s+i)!=ch1)
+  i++;
+  p=s+i;
+  
+  a[j]=*p;
+  i++;j++;
+  while(*(s+i)!=ch2)
+  {
+  a[j]=*(s+i);
+  i++;j++;
+  }
+  a[j]=*(s+i);
+  puts(a);
+
+  return p;
+}
+",0.0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  char varb_7[varb_8]="""",*varb_9;
+  int varb_10,varb_11;
+  varb_10=0;varb_11=0;
+  while(*(varb_0+varb_10)!=varb_1)
+  varb_10++;
+  varb_9=varb_0+varb_10;
+  varb_7[varb_11]=*varb_9;
+  varb_10++;varb_11++;
+  while(*(varb_0+varb_10)!=varb_2)
+  {
+  varb_7[varb_11]=*(varb_0+varb_10);
+  varb_10++;varb_11++;
+  }
+  varb_7[varb_11]=*(varb_0+varb_10);
+  puts(varb_7);
+  return varb_9;
+}
+",18
+23,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;s[i];i++)
+	{
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	if(s[i]=='\0')
+	return q;
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+		{
+			
+			break;
+		}
+	}
+	printf(""\n"");
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+	return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			break;
+		}
+	}
+	printf(""\n"");
+	return varb_8;
+}",15
+24,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;s[i];i++)
+	{
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	if(s[i]=='\0')
+		return q;
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+				break;
+	}
+	printf(""\n"");
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+				break;
+	}
+	printf(""\n"");
+	return varb_8;
+}",15
+25,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+   int i=0;
+    while(*s!=ch1&&*s!='\0')
+      s++;
+     for(*s;*s!=ch2&&*s!='\0';s++)
+     {
+         if(*s==ch2)//相等则停止打印
+            break;
+         printf(""%c"",*s);
+         i++;
+     }
+     printf(""%c"",ch2);
+     //printf(""\n""); 
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+   int varb_7=0;
+    while(*varb_0!=varb_1&&*varb_0!='\0')
+      varb_0++;
+     for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+     {
+         if(*varb_0==varb_2)
+            break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+     }
+     printf(""%c"",varb_2);
+}",15
+26,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+ 
+char *match( char *s, char ch1, char ch2 )
+{
+
+int a,b,m,n;char s1[10];
+ for(a=0;a<10;a++)
+{
+  if(s[a]==ch1) {m=a;break;}}
+for(a=0;a<10;a++)
+{
+  if(s[a]==ch2) n=a;
+}
+  for(a=m;a<=n;a++)
+   printf(""%c"",s[a]);
+   printf(""\n"");
+    return &s[m];
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",15
+27,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+char a[MAXS]="""",*p;
+int i=0;
+int j=0;
+while((*(s+i)!=ch1)&&(*(s+i)!=0))
+{
+i++;
+}
+p=s+i;
+a[j]=*(s+i);
+ j++;i++;
+    while((*(s+i)!=0)&&(*(s+i)!=ch2))
+    {
+    a[j]=*(s+1);
+    j++;i++;}
+    a[j]=*(s+i);
+   printf(""%s\n"",a);
+    return p;
+}",0.0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+   printf(""%s\n"",varb_7);
+    return varb_9;
+}",16
+28,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+{ 
+    char str[MAXS], ch_start, ch_end, *p; 
+    scanf(""%s\n"", str);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+	return 0; 
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+	int i=0;
+	char *p;
+	while(s[i]!=ch1)
+	{
+		i++;
+	}
+	p=&s[i];
+	for(;s[i-1]!=ch2&&s[i]!='\0';i++)
+	{
+		printf(""%c"",s[i]);
+	}
+	printf(""\n"");
+	return p;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	printf(""\n"");
+	return varb_8;
+}",17
+29,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *match( char *s, char ch1, char ch2 ); 
+int main()
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", str);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = match(str, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+	int i;
+	char *q;
+	q=NULL;
+	for(i=0;s[i];i++)
+	{
+		if(s[i]==ch1)
+		{
+			q=&s[i];
+			break;
+		}
+	}
+	if(s[i]=='\0')
+		return q;
+	for(i=0;q[i];i++)
+	{
+		printf(""%c"",q[i]);
+		if(q[i]==ch2)
+		{
+			
+			break;
+		}
+	}
+	printf(""\n"");
+	return q;
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			break;
+		}
+	}
+	printf(""\n"");
+	return varb_8;
+}",15
+30,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+char *match( char *s, char ch1, char ch2 )
+{
+char a[MAXS]="""",*p;
+int i=0;
+int j=0;
+while((*(s+i)!=ch1)&&(*(s+i)!=0))
+{
+i++;
+}
+p=s+i;
+a[j]=*(s+i);
+ j++;i++;
+    while((*(s+i)!=0)&&(*(s+i)!=ch2))
+    {
+    a[j]=*(s+1);
+    j++;i++;}
+    a[j]=*(s+i);
+ printf(""%s\n"",a);
+    return p;
+}",0.0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+ printf(""%s\n"",varb_7);
+    return varb_9;
+}",16
+31,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         printf(""%c"",*s);
+         i++;
+         if(*s==ch2)//相等则停止打印
+         {     printf(""%c\n"",ch2)
+        ;break;}
+        }
+         printf(""\n"");
+   }
+   else
+       printf(""\n"");
+   return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+         {     printf(""%c\n"",varb_2)
+        ;break;}
+        }
+         printf(""\n"");
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",25
+32,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+
+char *match( char *s, char ch1, char ch2 )
+{
+ 	int i=0;//记录移动的次数
+   while(*s!=ch1&&*s!='\0')//将指针s向后移知道*s的值为ch1
+       s++;
+   if(*s!='\0')
+   {
+       for(*s;*s!=ch2&&*s!='\0';s++)
+       {
+         if(*s==ch2)//相等则停止打印
+             break;
+         printf(""%c"",*s);
+         i++;
+        }
+        if(*s!='\0')
+           printf(""%c\n"",ch2);
+ }
+ else
+ printf(""\n"");
+ return s-i; //打印时先后移动多少就再往前移动多少
+}
+",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c\n"",varb_2);
+ }
+ else
+ printf(""\n"");
+ return varb_0-varb_7; 
+}
+",15
+33,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+ 
+char *match( char *s, char ch1, char ch2 )
+{
+
+int a,b,m,n;char s1[10];m=10;n=10;
+ for(a=0;a<10;a++)
+{
+  if(s[a]==ch1) {m=a;break;}}
+for(a=0;a<10;a++)
+{  
+  if(s[a]==ch2) n=a;
+}
+  for(a=m;a<=n;a++)
+   printf(""%c"",s[a]);
+   printf(""\n"");
+    return &s[m];
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=10;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",15
+34,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+
+
+
+#define MAXS 10 
+
+ 
+char *match( char *s, char ch1, char ch2 ); 
+
+ 
+int main()
+
+
+{ 
+
+     char str[MAXS], ch_start, ch_end, *p; 
+
+     scanf(""%s\n"", str);
+
+     scanf(""%c %c"", &ch_start, &ch_end); 
+
+    p = match(str, ch_start, ch_end); 
+
+    printf(""%s\n"", p); 
+
+    return 0; 
+
+}
+ 
+char *match( char *s, char ch1, char ch2 )
+{
+
+int a,b,m,n;char s1[10];m=10;n=8;
+ for(a=0;a<10;a++)
+{
+  if(s[a]==ch1) {m=a;break;}}
+for(a=0;a<10;a++)
+{  
+  if(s[a]==ch2) n=a;
+}
+  for(a=m;a<=n;a++)
+   printf(""%c"",s[a]);
+   printf(""\n"");
+    return &s[m];
+}",0.0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=8;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",15

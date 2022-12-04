@@ -1,0 +1,169 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float a,b,c,x1,x2;
+    scanf(""%f %f %f"",&a,&b,&c);
+    if(pow(b,2)-4*a*c>0){
+    x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+
+    }
+printf(""%f %f"",x1,x2);
+}
+
+",0.0,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+printf(""%f %f"",varb_3,varb_4);
+}
+",7
+1,2c911d616dd52a5e016de9fe2e4114f5,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float rootOne,rootTwo;
+    int a,b,c;
+    scanf(""%f%f%f"",&a,&b,&c);
+    rootOne=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    rootTwo=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+    printf(""%f %f"",rootOne,rootTwo);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2,varb_3,varb_4;
+    scanf(""%f%f%f"",&varb_2,&varb_3,&varb_4);
+    varb_0=(-varb_3+sqrt(pow(varb_3,2)-4*varb_2*varb_4))/(2*varb_2);
+    varb_1=(-varb_3-sqrt(pow(varb_3,2)-4*varb_2*varb_4))/(2*varb_2);
+    printf(""%f %f"",varb_0,varb_1);
+    return 0;
+}",6
+2,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float a,b,c,x1,x2;
+    scanf(""%f %f %f"",&a,&b,&c);
+    if(pow(b,2)-4*a*c>0)
+    {
+    x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+printf(""%f %f"",x1,x2);
+    }
+    else printf(""no real number solution"");
+
+}
+
+",0.0,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0)
+    {
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+printf(""%f %f"",varb_3,varb_4);
+    }
+    else printf(""no real number solution"");
+}
+",7
+3,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float a,b,c,x1,x2;
+    scanf(""%f %f %f"",&a,&b,&c);
+    if(pow(b,2)-4*a*c>0){
+    x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+
+    }
+    else printf(""no real number solution"");
+printf(""%f %f"",x1,x2);
+}
+
+",0.0,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+    else printf(""no real number solution"");
+printf(""%f %f"",varb_3,varb_4);
+}
+",7
+4,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float a,b,c,x1,x2;
+    scanf(""%f %f %f"",&a,&b,&c);
+    if(pow(b,2)-4*a*c>0){
+    x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+
+    }
+printf(""%f %f"",x1,x2);
+}
+
+",0.0,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0){
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    }
+printf(""%f %f"",varb_3,varb_4);
+}
+",7
+5,2c911d616dd52a5e016de9fe2e4114f5,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float a,b,c,x1,x2;
+    scanf(""%f %f %f"",&a,&b,&c);
+    if(pow(b,2)-4*a*c>0)
+    {
+    x1=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+    x2=(-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+printf(""%f %f"",x1,x2);
+    }
+    else printf(""no real number solution"");
+
+}
+
+",0.0,"#include""stdio.h""
+#include <math.h>
+int main() 
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+    if(pow(varb_1,2)-4*varb_0*varb_2>0)
+    {
+    varb_3=(-varb_1+sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+    varb_4=(-varb_1-sqrt(pow(varb_1,2)-4*varb_0*varb_2))/(2*varb_0);
+printf(""%f %f"",varb_3,varb_4);
+    }
+    else printf(""no real number solution"");
+}
+",7

@@ -1,0 +1,26 @@
+,id,code,is_true,errorline
+0,2c9f30a57c74a921017c774f631e059f,"#include<stdio.h>
+int main()
+{
+   int varb_0=10;
+   int varb_1=3;
+   float varb_2;
+   varb_2=(10*3*3)/2.0;
+   printf(""hight=%.2f"",varb_2);
+   return 0;
+}",0.0,8
+1,2c9f30a57c74a921017c774f631e059f,"#include<stdio.h>
+	int main()
+{
+	double varb_0;
+	varb_0=0.5*10*3*3;
+	printf(""%0.2f"",varb_0);
+	return 0;
+}",0.0,2
+2,2c9f30a57c74a921017c774f631e059f,"#include<stdio.h>
+int main()
+{
+  float varb_0=0.5*3.0*10.0*3.0;
+  printf(""%.2f"",varb_0);
+  return 0;
+  }",0.0,5

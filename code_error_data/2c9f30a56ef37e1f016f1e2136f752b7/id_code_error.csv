@@ -1,0 +1,428 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+struct varb_4 varb_8[MAXN];
+varb_11=0;
+varb_5=varb_8;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+ {
+   if(varb_5[varb_10].varb_2<60)
+   {varb_11++;}
+    }
+    return varb_11;
+}
+",0.0,27
+1,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4
+{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   
+    struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+    {
+      scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+    varb_11 = func_0(ptr, varb_6);
+    printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+    printf(""The grades:\n""); 
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+      printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+    int varb_10,varb_11=0; 
+    for(varb_10=0;varb_10<10;varb_10++)
+    {
+        if(varb_5->varb_2<=100&&varb_5->varb_2>=85)
+            varb_5->varb_3='A';
+        if(varb_5->varb_2<=84&&varb_5->varb_2>=70)
+            varb_5->varb_3='B';
+        if(varb_5->varb_2<=69&&varb_5->varb_2>=60)
+            varb_5->varb_3='C';
+        if(varb_5->varb_2<=59&&varb_5->varb_2>=0)
+        {
+            varb_5->varb_3='D';
+            varb_11++;
+        }
+        varb_5++;
+    }
+    return varb_11;
+}",0.0,31
+2,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+varb_11=0;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+ {
+   if(varb_5[varb_10].varb_2<60)
+   {varb_11++;varb_5[varb_10].varb_3='D';}
+else if(60<=varb_5[varb_10].varb_2<=69)
+   varb_5[varb_10].varb_3='C';
+else if(70<=varb_5[varb_10].varb_2<=84)
+   varb_5[varb_10].varb_3='B';
+else if(85<=varb_5[varb_10].varb_2<=100)
+   varb_5[varb_10].varb_3='A';
+    }
+    return varb_11;
+}
+",0.0,33
+3,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+	int varb_10,varb_16=0;
+	for(varb_10=0;varb_10<varb_6;varb_10++)
+	{
+		if((*varb_5).varb_2>=85)(*varb_5).varb_3='A';
+		else if((*varb_5).varb_2>=70&&(*varb_5).varb_2<=84)(*varb_5).varb_3='B';
+		else if((*varb_5).varb_2>=69&&(*varb_5).varb_2<=60)(*varb_5).varb_3='C';
+		else if((*varb_5).varb_2<=59)
+		{(*varb_5).varb_3='D';
+			varb_16++;
+		}
+      varb_5++;
+	}
+	return varb_16;
+}",0.0,27
+4,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+	int varb_10,varb_16=0;
+	for(varb_10=0;varb_10<varb_6;varb_10++){
+	   if(varb_5[varb_10].varb_2<=100&&varb_5[varb_10].varb_2>=85)  varb_5[varb_10].varb_3='A';
+		if(varb_5[varb_10].varb_2<=84&&varb_5[varb_10].varb_2>=70) varb_5[varb_10].varb_3='B';
+		if(varb_5[varb_10].varb_2<=69&&varb_5[varb_10].varb_2>=60) varb_5[varb_10].varb_3='C';
+		if(varb_5[varb_10].varb_2<=59&&varb_5[varb_10].varb_2>=0) {varb_5[varb_10].varb_3='D'; varb_16++;}
+	}
+	return varb_16;
+}",0.0,35
+5,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+    int varb_10, varb_11=0;
+    for(varb_10=0; varb_10<varb_6; varb_10++)
+    {
+        if(varb_5[varb_10].varb_2 >= 85)
+        {
+            varb_5[varb_10].varb_3 = 'A';
+        }
+        else if(varb_5[varb_10].varb_2 >= 70)
+        {
+            varb_5[varb_10].varb_3 = 'B';
+        }
+        else if(varb_5[varb_10].varb_2 >= 60)
+        {
+            varb_5[varb_10].varb_3 = 'C';
+        }
+        else 
+        {
+            varb_5[varb_10].varb_3 = 'D';
+            varb_11++;
+        }
+    }
+    return varb_11;
+}",0.0,30
+6,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+varb_11=0;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+{
+if(varb_5[varb_10].varb_2>=85)
+varb_5[varb_10].varb_2='A';
+if(varb_5[varb_10].varb_2>=70&&varb_5[varb_10].varb_2<=84)
+varb_5[varb_10].varb_2='B';
+if(varb_5[varb_10].varb_2>=60&&varb_5[varb_10].varb_2<=69)
+varb_5[varb_10].varb_2='C';
+else
+{
+varb_5[varb_10].varb_2='D';
+varb_11++;
+}
+}
+return varb_11;
+}
+",0.0,31
+7,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+varb_11=0;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+{
+if(varb_5[varb_10].varb_3>=85)
+varb_5[varb_10].varb_3='A';
+if(varb_5[varb_10].varb_3>=70&&varb_5[varb_10].varb_3<=84)
+varb_5[varb_10].varb_3='B';
+if(varb_5[varb_10].varb_3>=60&&varb_5[varb_10].varb_3<=69)
+varb_5[varb_10].varb_3='C';
+else
+{
+varb_5[varb_10].varb_3='D';
+varb_11++;
+}
+}
+return varb_11;
+}
+",0.0,30
+8,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );
+int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+struct varb_4 varb_8[MAXN];
+varb_11=0;
+varb_5=varb_8;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+ {
+   if(varb_5[varb_10].varb_2<60)
+   {varb_11++;varb_8[varb_10].varb_3='D';}
+else if(60<=varb_5[varb_10].varb_2<=69)
+   varb_8[varb_10].varb_3='C';
+else if(70<=varb_5[varb_10].varb_2<=84)
+   varb_8[varb_10].varb_3='B';
+else if(85<=varb_5[varb_10].varb_2<=100)
+   varb_8[varb_10].varb_3='A';
+    }
+    return varb_11;
+}
+",0.0,27
+9,2c9f30a56ef37e1f016f1e2136f752b7,"#include <stdio.h>
+#define MAXN 10
+struct varb_4{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    char varb_3;
+};
+int func_0( struct varb_4 *varb_5, int varb_6 );int main()
+{   struct varb_4 varb_8[MAXN], *ptr;
+    int varb_6, varb_10, varb_11;
+    ptr = varb_8;
+    scanf(""%d\n"", &varb_6);
+    for(varb_10 = 0; varb_10 < varb_6; varb_10++){
+       scanf(""%d%s%d"", &varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, &varb_8[varb_10].varb_2);
+    } 
+   varb_11 = func_0(ptr, varb_6);
+   printf(""The varb_11 for failed(<60): %d\n"", varb_11);
+   printf(""The grades:\n""); 
+   for(varb_10 = 0; varb_10 < varb_6; varb_10++)
+       printf(""%d %s %c\n"", varb_8[varb_10].varb_0, varb_8[varb_10].varb_1, varb_8[varb_10].varb_3);
+    return 0;
+}
+int func_0( struct varb_4 *varb_5, int varb_6 )
+{
+int varb_10,varb_11;
+varb_11=0;
+for(varb_10=0;varb_10<varb_6;varb_10++)
+{
+if(varb_5[varb_10].varb_2>=85)
+varb_5[varb_10].varb_3='A';
+else if(varb_5[varb_10].varb_2>=70)
+varb_5[varb_10].varb_3='B';
+else if(varb_5[varb_10].varb_2>=6)
+varb_5[varb_10].varb_3='C';
+else
+{
+varb_5[varb_10].varb_3='D';
+varb_11++;
+}
+}
+return varb_11;
+}
+",0.0,34

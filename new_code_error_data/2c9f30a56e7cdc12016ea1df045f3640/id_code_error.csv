@@ -1,0 +1,900 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+int a[100];
+int ll = 0;
+void dfs(int m, int step, int n)
+{
+	//不用分解
+	if (m <= 0)//数已经分解完了
+	{
+		if (step - 1 == 1)
+		{
+			printf(""%d=%d\n"", n, n);
+		}
+		else
+		{
+			printf(""%d="", n);
+			printf(""%d"", a[1]);
+			for (int i = 2;i<step; i++)
+			{
+				printf(""+%d"", a[i]);
+			}
+			ll++;
+			if (ll == 4)
+			{
+				printf(""\n"");
+				ll = 0;
+			}
+			else if (ll != 4) printf("";"");
+		}
+	}
+	//需要分解，枚举当前数字。
+	else
+	{
+		//可以改成i=1，就代表6 1这样重复的都行。
+		for (int i = a[step - 1]; i <= m; i++)
+		{
+			a[step] = i;
+			dfs(m - i, step + 1, n);
+		}
+	}
+}
+int main()
+{
+	int n;
+	scanf(""%d"", &n);
+	a[0] = 1;
+	dfs(n, 1, n);
+	return 0;
+}",0.0,"#include<stdio.h>
+int varb_0[100];
+int varb_1 = 0;
+void func_0(int varb_2, int varb_3, int varb_4)
+{
+	if(varb_2 <= 0)
+	{
+		if(varb_3 - 1 == 1)
+		{
+			printf(""%d=%d\n"", varb_4, varb_4);
+		}
+		else
+		{
+			printf(""%d="", varb_4);
+			printf(""%d"", varb_0[1]);
+			for(int varb_13 = 2;varb_13<varb_3; varb_13++)
+			{
+				printf(""+%d"", varb_0[varb_13]);
+			}
+			varb_1++;
+			if(varb_1 == 4)
+			{
+				printf(""\n"");
+				varb_1 = 0;
+			}
+			else if(varb_1 != 4) printf("";"");
+		}
+	}
+	else
+	{
+		for(int varb_13 = varb_0[varb_3 - 1]; varb_13 <= varb_2; varb_13++)
+		{
+			varb_0[varb_3] = varb_13;
+			func_0(varb_2 - varb_13, varb_3 + 1, varb_4);
+		}
+	}
+}
+int main()
+{
+	int varb_4;
+	scanf(""%d"", &varb_4);
+	varb_0[0] = 1;
+	func_0(varb_4, 1, varb_4);
+	return 0;
+}",9
+1,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+int a[100];
+int ll = 0;
+void dfs(int m, int step, int n)
+{
+	//不用分解
+	if (m <= 0)//数已经分解完了
+	{
+		if (step - 1 == 1)
+		{
+			printf(""%d=%d\n"", n, n);
+		}
+		else
+		{
+			printf(""%d="", n);
+			printf(""%d"", a[1]);
+			for (int i = 2; i < step; i++)
+			{
+				printf(""+%d"", a[i]);
+			}
+			ll++;
+			if (ll == 4)
+			{
+				printf(""\n"");
+				ll = 0;
+			}
+			else if (ll != 4) printf("";"");
+		}
+	}
+	//需要分解，枚举当前数字。
+	else
+	{
+		//可以改成i=1，就代表6 1这样重复的都行。
+		for (int i = a[step - 1]; i <= m; i++)
+		{
+			a[step] = i;
+			dfs(m - i, step + 1, n);
+		}
+	}
+}
+int main()
+{
+	int n;
+	scanf(""%d"", &n);
+	a[0] = 1;
+	dfs(n, 1, n);
+	return 0;
+}",0.0,"#include<stdio.h>
+int varb_0[100];
+int varb_1 = 0;
+void func_0(int varb_2, int varb_3, int varb_4)
+{
+	if(varb_2 <= 0)
+	{
+		if(varb_3 - 1 == 1)
+		{
+			printf(""%d=%d\n"", varb_4, varb_4);
+		}
+		else
+		{
+			printf(""%d="", varb_4);
+			printf(""%d"", varb_0[1]);
+			for(int varb_13 = 2; varb_13 < varb_3; varb_13++)
+			{
+				printf(""+%d"", varb_0[varb_13]);
+			}
+			varb_1++;
+			if(varb_1 == 4)
+			{
+				printf(""\n"");
+				varb_1 = 0;
+			}
+			else if(varb_1 != 4) printf("";"");
+		}
+	}
+	else
+	{
+		for(int varb_13 = varb_0[varb_3 - 1]; varb_13 <= varb_2; varb_13++)
+		{
+			varb_0[varb_3] = varb_13;
+			func_0(varb_2 - varb_13, varb_3 + 1, varb_4);
+		}
+	}
+}
+int main()
+{
+	int varb_4;
+	scanf(""%d"", &varb_4);
+	varb_0[0] = 1;
+	func_0(varb_4, 1, varb_4);
+	return 0;
+}",9
+2,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+int cnt=0;//控制换行以及输出;
+int n,a[50];//正整数n，数组存结果
+void dfs(int num,int n,int l,int sum)
+{
+   if(sum==n)
+   {
+      printf(""%d="",n);
+      for(int i=0;i<l;i++)
+         {if(i==0)
+            printf(""%d"",a[i]);
+         else
+            printf(""+%d"",a[i]);}
+    cnt++;
+    if(cnt%4==0&&cnt!=0)
+       printf(""\n"");
+    if(cnt%4!=0&&num!=n)
+       printf("";"");
+    }
+    if(sum>n)
+       return;
+    for(int i=num;i<=n;i++)
+    {
+         a[l]=i;
+         dfs(i,n,l+1,sum+i);
+    }
+}
+int main()
+{
+   scanf(""%d"",&n);
+   dfs(1,n,0,0);
+}",0.0,"#include<stdio.h>
+int varb_0=0;
+int varb_1,varb_2[50];
+void func_0(int varb_3,int varb_1,int varb_5,int varb_6)
+{
+   if(varb_6==varb_1)
+   {
+      printf(""%d="",varb_1);
+      for(int varb_12=0;varb_12<varb_5;varb_12++)
+         {if(varb_12==0)
+            printf(""%d"",varb_2[varb_12]);
+         else
+            printf(""+%d"",varb_2[varb_12]);}
+    varb_0++;
+    if(varb_0%4==0&&varb_0!=0)
+       printf(""\n"");
+    if(varb_0%4!=0&&varb_3!=varb_1)
+       printf("";"");
+    }
+    if(varb_6>varb_1)
+       return;
+    for(int varb_12=varb_3;varb_12<=varb_1;varb_12++)
+    {
+         varb_2[varb_5]=varb_12;
+         func_0(varb_12,varb_1,varb_5+1,varb_6+varb_12);
+    }
+}
+int main()
+{
+   scanf(""%d"",&varb_1);
+   func_0(1,varb_1,0,0);
+}",9
+3,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+ 
+int N;
+ 
+int s[31];  
+int top = -1; 
+int count = 0; 
+int sum = 0; 
+ 
+void division (int i);
+ 
+int main ()
+{
+    scanf (""%d"", &N);
+    
+    division (1);
+    
+    return 0; 
+}
+ 
+void division (int i) 
+{
+    if (sum == N)
+    {
+        count ++;
+        printf(""%d="", N);
+        int k;
+        for (k=0; k<top; k++)
+        {
+            printf(""%d+"", s[k]);
+        }
+        if (count%4 == 0 || s[top] == N)
+        {
+            printf(""%d\n"", s[top]);
+        }
+        else 
+        {
+            printf(""%d;"", s[top]);
+        }
+        return;
+    }  
+    if (sum > N)
+    {
+        return;
+    }
+    for (int j=i; j<=N; j++) 
+    {
+        s[++top] = j;
+        sum += j; 
+        division (j);
+        sum -= j;
+        top --;
+    }  
+}",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31];  
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+    scanf(""%d"", &varb_0);
+    func_0(1);
+    return 0; 
+}
+void func_0(int i) 
+{
+    if(varb_4 == varb_0)
+    {
+        varb_3 ++;
+        printf(""%d="", varb_0);
+        int varb_5;
+        for(varb_5=0; varb_5<varb_2; varb_5++)
+        {
+            printf(""%d+"", varb_1[varb_5]);
+        }
+        if(varb_3%4 == 0 || varb_1[varb_2] == varb_0)
+        {
+            printf(""%d\n"", varb_1[varb_2]);
+        }
+        else 
+        {
+            printf(""%d;"", varb_1[varb_2]);
+        }
+        return;
+    }  
+    if(varb_4 > varb_0)
+    {
+        return;
+    }
+    for(int varb_6=i; varb_6<=varb_0; varb_6++) 
+    {
+        varb_1[++varb_2] = varb_6;
+        varb_4 += varb_6; 
+        func_0(varb_6);
+        varb_4 -= varb_6;
+        varb_2 --;
+    }  
+}",8
+4,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+ 
+int N;
+ 
+int s[31]; // 存放划分结果 
+int top = -1; // 数组指针 
+int count = 0; // 统计输出的次数 
+int sum = 0; // 拆分项累加和 
+ 
+void division (int i);
+ 
+int main ()
+{
+    scanf (""%d"", &N);
+    
+    division (1);
+    
+    return 0; 
+}
+ 
+void division (int i) {
+    if (sum == N) {
+        count ++;
+        printf(""%d="", N);
+        int k;
+        for (k=0; k<top; k++) {
+            printf(""%d+"", s[k]);
+        }
+        if (count%4 == 0 || s[top] == N) {
+            printf(""%d\n"", s[top]);
+        } else {
+            printf(""%d;"", s[top]);
+        }
+        return;
+    } // 输出部分 
+    if (sum > N) {
+        return;
+    }
+    for (int j=i; j<=N; j++) {
+        s[++top] = j;
+        sum += j; 
+        division (j);
+        sum -= j;
+        top --;
+    } 
+}
+
+",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31]; 
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+    scanf(""%d"", &varb_0);
+    func_0(1);
+    return 0; 
+}
+void func_0(int i) {
+    if(varb_4 == varb_0) {
+        varb_3 ++;
+        printf(""%d="", varb_0);
+        int varb_5;
+        for(varb_5=0; varb_5<varb_2; varb_5++) {
+            printf(""%d+"", varb_1[varb_5]);
+        }
+        if(varb_3%4 == 0 || varb_1[varb_2] == varb_0) {
+            printf(""%d\n"", varb_1[varb_2]);
+        } else {
+            printf(""%d;"", varb_1[varb_2]);
+        }
+        return;
+    } 
+    if(varb_4 > varb_0) {
+        return;
+    }
+    for(int varb_6=i; varb_6<=varb_0; varb_6++) {
+        varb_1[++varb_2] = varb_6;
+        varb_4 += varb_6; 
+        func_0(varb_6);
+        varb_4 -= varb_6;
+        varb_2 --;
+    } 
+}
+",8
+5,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+int N;
+int s[31]; 
+int top = -1; 
+int count = 0; 
+int sum = 0; 
+
+void division (int i);
+
+int main ()
+{
+	scanf (""%d"", &N);
+	
+ 	division (1);
+ 	
+	return 0; 
+}
+
+void division (int i) {
+	if (sum == N) {
+		count ++;
+		printf(""%d="", N);
+		int k;
+		for (k=0; k<top; k++) {
+			printf(""%d+"", s[k]);
+		}
+		if (count%4 == 0 || s[top] == N) {
+			printf(""%d\n"", s[top]);
+		} else {
+			printf(""%d;"", s[top]);
+		}
+		return;
+	}  
+	if (sum > N) {
+		return;
+	}
+	for (int j=i; j<=N; j++) {
+		s[++top] = j;
+		sum += j; 
+		division (j);
+		sum -= j;
+		top --;
+	} 
+}",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31]; 
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+	scanf(""%d"", &varb_0);
+ 	func_0(1);
+	return 0; 
+}
+void func_0(int i) {
+	if(varb_4 == varb_0) {
+		varb_3 ++;
+		printf(""%d="", varb_0);
+		int varb_5;
+		for(varb_5=0; varb_5<varb_2; varb_5++) {
+			printf(""%d+"", varb_1[varb_5]);
+		}
+		if(varb_3%4 == 0 || varb_1[varb_2] == varb_0) {
+			printf(""%d\n"", varb_1[varb_2]);
+		} else {
+			printf(""%d;"", varb_1[varb_2]);
+		}
+		return;
+	}  
+	if(varb_4 > varb_0) {
+		return;
+	}
+	for(int varb_6=i; varb_6<=varb_0; varb_6++) {
+		varb_1[++varb_2] = varb_6;
+		varb_4 += varb_6; 
+		func_0(varb_6);
+		varb_4 -= varb_6;
+		varb_2 --;
+	} 
+}",8
+6,2c9f30a56e7cdc12016ea1df045f3640,"
+#include<stdio.h>
+
+int N;
+
+int s[31]; // 存放划分结果 
+
+int top = -1; // 数组指针 
+
+int count = 0; // 统计输出的次数 
+
+int sum = 0; // 拆分项累加和 
+
+void division (int i);
+
+int main ()
+
+{
+
+scanf (""%d"", &N);
+
+division (1);
+
+return 0; 
+
+}
+
+void division (int i) {
+
+if (sum == N) {
+
+count ++;
+
+printf(""%d="", N);
+
+int k;
+
+for (k=0; k<top; k++) {
+
+printf(""%d+"", s[k]);
+
+}
+
+if (count%4 == 0 || s[top] == N) {
+
+printf(""%d\n"", s[top]);
+
+} else {
+
+printf(""%d;"", s[top]);
+
+}
+
+return;
+
+} // 输出部分 
+
+if (sum > N) {
+
+return;
+
+}
+
+for (int j=i; j<=N; j++) {
+
+s[++top] = j;
+
+sum += j; 
+
+division (j);
+
+sum -= j;
+
+top --;
+
+} // 算法主体 
+
+}
+
+",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31]; 
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+scanf(""%d"", &varb_0);
+func_0(1);
+return 0; 
+}
+void func_0(int i) {
+if(varb_4 == varb_0) {
+varb_3 ++;
+printf(""%d="", varb_0);
+int varb_5;
+for(varb_5=0; varb_5<varb_2; varb_5++) {
+printf(""%d+"", varb_1[varb_5]);
+}
+if(varb_3%4 == 0 || varb_1[varb_2] == varb_0) {
+printf(""%d\n"", varb_1[varb_2]);
+} else {
+printf(""%d;"", varb_1[varb_2]);
+}
+return;
+} 
+if(varb_4 > varb_0) {
+return;
+}
+for(int varb_6=i; varb_6<=varb_0; varb_6++) {
+varb_1[++varb_2] = varb_6;
+varb_4 += varb_6; 
+func_0(varb_6);
+varb_4 -= varb_6;
+varb_2 --;
+} 
+}
+",8
+7,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+ 
+int N;
+ 
+int s[31]; // 存放划分结果 
+int top = -1; // 数组指针 
+int count = 0; // 统计输出的次数 
+int sum = 0; // 拆分项累加和 
+ 
+void division (int i);
+ 
+int main ()
+{
+    scanf (""%d"", &N);
+    
+    division (1);
+    
+    return 0; 
+}
+ 
+void division (int i) {
+    if (sum == N) {
+        count ++;
+        printf(""%d="", N);
+        int k;
+        for (k=0; k<top; k++) {
+            printf(""%d+"", s[k]);
+        }
+        if (count%4 == 0 || s[top] == N) {
+            printf(""%d\n"", s[top]);
+        } else {
+            printf(""%d;"", s[top]);
+        }
+        return;
+    } // 输出部分 
+    if (sum > N) {
+        return;
+    }
+    for (int j=i; j<=N; j++) {
+        s[++top] = j;
+        sum += j; 
+        division (j);
+        sum -= j;
+        top --;
+    } // 算法主体 
+}
+",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31]; 
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+    scanf(""%d"", &varb_0);
+    func_0(1);
+    return 0; 
+}
+void func_0(int i) {
+    if(varb_4 == varb_0) {
+        varb_3 ++;
+        printf(""%d="", varb_0);
+        int varb_5;
+        for(varb_5=0; varb_5<varb_2; varb_5++) {
+            printf(""%d+"", varb_1[varb_5]);
+        }
+        if(varb_3%4 == 0 || varb_1[varb_2] == varb_0) {
+            printf(""%d\n"", varb_1[varb_2]);
+        } else {
+            printf(""%d;"", varb_1[varb_2]);
+        }
+        return;
+    } 
+    if(varb_4 > varb_0) {
+        return;
+    }
+    for(int varb_6=i; varb_6<=varb_0; varb_6++) {
+        varb_1[++varb_2] = varb_6;
+        varb_4 += varb_6; 
+        func_0(varb_6);
+        varb_4 -= varb_6;
+        varb_2 --;
+    } 
+}
+",8
+8,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+ 
+int N;
+ 
+int s[31]; // 存放划分结果 
+int top = -1; // 数组指针 
+int count = 0; // 统计输出的次数 
+int sum = 0; // 拆分项累加和 
+ 
+void division (int i);
+ 
+int main ()
+{
+    scanf (""%d"", &N);
+    
+    division (1);
+    
+    return 0; 
+}
+ 
+void division (int i) {
+    if (sum == N) {
+        count ++;
+        printf(""%d="", N);
+        int k;
+        for (k=0; k<top; k++) {
+            printf(""%d+"", s[k]);
+        }
+        if (count%4 == 0 || s[top] == N) {
+            printf(""%d\n"", s[top]);
+        } else {
+            printf(""%d;"", s[top]);
+        }
+        return;
+    } // 输出部分 
+    if (sum > N) {
+        return;
+    }
+    for (int j=i; j<=N; j++) {
+        s[++top] = j;
+        sum += j; 
+        division (j);
+        sum -= j;
+        top --;
+    } // 算法主体 
+}",0.0,"#include<stdio.h>
+int varb_0;
+int varb_1[31]; 
+int varb_2 = -1; 
+int varb_3 = 0; 
+int varb_4 = 0; 
+void func_0(int i);
+int main()
+{
+    scanf(""%d"", &varb_0);
+    func_0(1);
+    return 0; 
+}
+void func_0(int i) {
+    if(varb_4 == varb_0) {
+        varb_3 ++;
+        printf(""%d="", varb_0);
+        int varb_5;
+        for(varb_5=0; varb_5<varb_2; varb_5++) {
+            printf(""%d+"", varb_1[varb_5]);
+        }
+        if(varb_3%4 == 0 || varb_1[varb_2] == varb_0) {
+            printf(""%d\n"", varb_1[varb_2]);
+        } else {
+            printf(""%d;"", varb_1[varb_2]);
+        }
+        return;
+    } 
+    if(varb_4 > varb_0) {
+        return;
+    }
+    for(int varb_6=i; varb_6<=varb_0; varb_6++) {
+        varb_1[++varb_2] = varb_6;
+        varb_4 += varb_6; 
+        func_0(varb_6);
+        varb_4 -= varb_6;
+        varb_2 --;
+    } 
+}",8
+9,2c9f30a56e7cdc12016ea1df045f3640,"#include<stdio.h>
+int a[100];
+int ll = 0;
+void dfs(int m, int step, int n)
+{
+	//不用分解
+	if (m <= 0)//数已经分解完了
+	{
+		if (step - 1 == 1)
+		{
+			printf(""%d=%d\n"", n, n);
+		}
+		else
+		{
+			printf(""%d="", n);
+			printf(""%d"", a[1]);
+			for (int i = 2; i < step; i++)
+			{
+				printf(""+%d"", a[i]);
+			}
+			ll++;
+			if (ll == 4)
+			{
+				printf(""\n"");
+				ll = 0;
+			}
+			else if (ll != 4) printf("";"");
+		}
+	}
+	//需要分解，枚举当前数字。
+	else
+	{
+		//可以改成i=1，就代表6 1这样重复的都行。
+		for (int i = a[step - 1]; i <= m; i++)
+		{
+			a[step] = i;
+			dfs(m - i, step + 1, n);
+		}
+	}
+}
+int main()
+{
+	int n;
+	scanf(""%d"", &n);
+	a[0] = 1;
+	dfs(n, 1, n);
+	return 0;
+}
+",0.0,"#include<stdio.h>
+int varb_0[100];
+int varb_1 = 0;
+void func_0(int varb_2, int varb_3, int varb_4)
+{
+	if(varb_2 <= 0)
+	{
+		if(varb_3 - 1 == 1)
+		{
+			printf(""%d=%d\n"", varb_4, varb_4);
+		}
+		else
+		{
+			printf(""%d="", varb_4);
+			printf(""%d"", varb_0[1]);
+			for(int varb_13 = 2; varb_13 < varb_3; varb_13++)
+			{
+				printf(""+%d"", varb_0[varb_13]);
+			}
+			varb_1++;
+			if(varb_1 == 4)
+			{
+				printf(""\n"");
+				varb_1 = 0;
+			}
+			else if(varb_1 != 4) printf("";"");
+		}
+	}
+	else
+	{
+		for(int varb_13 = varb_0[varb_3 - 1]; varb_13 <= varb_2; varb_13++)
+		{
+			varb_0[varb_3] = varb_13;
+			func_0(varb_2 - varb_13, varb_3 + 1, varb_4);
+		}
+	}
+}
+int main()
+{
+	int varb_4;
+	scanf(""%d"", &varb_4);
+	varb_0[0] = 1;
+	func_0(varb_4, 1, varb_4);
+	return 0;
+}
+",9

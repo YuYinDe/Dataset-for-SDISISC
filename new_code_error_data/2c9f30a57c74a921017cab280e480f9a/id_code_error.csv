@@ -1,0 +1,59 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a57c74a921017cab280e480f9a,"#include <stdio.h>
+#include <stdlib.h>
+int isPrime(int val )
+{
+int i;
+for( i=2; i<=(val/2); i++ )
+{
+if( val % i == 0 ) return 0;
+}
+return 1;
+}
+#define NUM_START 1000
+#define NUM_END 10000
+#define MAX_LINE_NUMS 5 //每输出5个素数后换行
+int main( void )
+{
+int i, cnt=0;
+for( i= NUM_START; i<=NUM_END; i++ )
+{
+if( isPrime( i ) ) //若 i 是素数
+{
+printf( ""%4d "", i ); //输出素数的值
+cnt++;
+//以下判断是否需要另起新行输出
+if( cnt % MAX_LINE_NUMS == 0 ) printf( ""\n"" );
+}
+}
+printf( ""\n"" );
+return 0;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int func_0(int val )
+{
+int varb_0;
+for( varb_0=2; varb_0<=(val/2); varb_0++ )
+{
+if( val % varb_0 == 0 ) return 0;
+}
+return 1;
+}
+#define NUM_START 1000
+#define NUM_END 10000
+#define MAX_LINE_NUMS 5 
+int main( void )
+{
+int varb_0, varb_2=0;
+for( varb_0= NUM_START; varb_0<=NUM_END; varb_0++ )
+{
+if( func_0( varb_0 ) ) 
+{
+printf( ""%4d "", varb_0 ); 
+varb_2++;
+if( varb_2 % MAX_LINE_NUMS == 0 ) printf( ""\n"" );
+}
+}
+printf( ""\n"" );
+return 0;
+}",13

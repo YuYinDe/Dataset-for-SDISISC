@@ -1,0 +1,791 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e72f8ae016e78838b95040f,"#include<string.h>
+#include<stdio.h>
+int main()
+{
+	char a[100];
+	char b[100];
+	int N,k;
+	gets(a);
+	scanf(""%d"",&N);
+	int step=0;
+	int stepX=0;
+	k=N%strlen(a);
+	for(step=N,stepX=0;step<strlen(a);step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	for(step=0,stepX=strlen(a)-N;step<N;step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	puts(b);
+		
+}",0.0,"#include<string.h>
+#include<stdio.h>
+int main()
+{
+	char varb_0[100];
+	char varb_1[100];
+	int varb_2,varb_3;
+	gets(varb_0);
+	scanf(""%d"",&varb_2);
+	int varb_4=0;
+	int varb_5=0;
+	varb_3=varb_2%strlen(varb_0);
+	for(varb_4=varb_2,varb_5=0;varb_4<strlen(varb_0);varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	for(varb_4=0,varb_5=strlen(varb_0)-varb_2;varb_4<varb_2;varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	puts(varb_1);
+}",2
+1,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+    int n,i;
+	gets(a);
+	scanf(""%d"",&n);
+	n=(strlen(a))%n;//如果超出字符串长度就相当于转了圈
+	for(i=n;i<strlen(a);i++) 
+       printf(""%c"",a[i]);//从第n个字符开始到末尾
+	for(i=0;i<n;i++) 
+       printf(""%c"",a[i]);//从第一个字符开始到第n-1个
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+    int varb_1,varb_2;
+	gets(varb_0);
+	scanf(""%d"",&varb_1);
+	varb_1=(strlen(varb_0))%varb_1;
+	for(varb_2=varb_1;varb_2<strlen(varb_0);varb_2++) 
+       printf(""%c"",varb_0[varb_2]);
+	for(varb_2=0;varb_2<varb_1;varb_2++) 
+       printf(""%c"",varb_0[varb_2]);
+	return 0;
+}",5
+2,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[101];
+	gets(a);
+	int n;
+	scanf(""%d"",&n);
+	n%=(strlen(a));//类似于转圈的操作，如果超出字符串长度就相当于转了圈
+	for(int i=n;i<strlen(a);i++) printf(""%c"",a[i]);//从第n个字符开始到末尾
+	for(int i=0;i<n;i++) printf(""%c"",a[i]);//从第一个字符开始到第n-1个
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[101];
+	gets(varb_0);
+	int varb_1;
+	scanf(""%d"",&varb_1);
+	varb_1%=(strlen(varb_0));
+	for(int varb_2=varb_1;varb_2<strlen(varb_0);varb_2++) printf(""%c"",varb_0[varb_2]);
+	for(int varb_2=0;varb_2<varb_1;varb_2++) printf(""%c"",varb_0[varb_2]);
+	return 0;
+}",7
+3,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#define max 105
+int main(){
+    char s;//指单独一个字符 
+    char t[max];//创建一个字符数组 
+    int i = 0, count = 0, flag = 0;
+    while ((s=getchar()) != '\n') {
+        t[i++] = s;
+        count++;
+    } 
+    int N;
+    scanf(""%d"",&N);
+    if(N > count) {
+        N %= count;
+    } //这里有个测试点
+    for(int i=N;i<count;i++){
+        printf(""%c"",t[i]);
+    }
+    for(int i=0;i<N;i++){
+        printf(""%c"",t[i]);
+    }
+	return 0;
+}",0.0,"#include<stdio.h>
+#define max 105
+int main(){
+    char varb_0;
+    char varb_1[max];
+    int varb_2 = 0, count = 0, flag = 0;
+    while((varb_0=getchar()) != '\n') {
+        varb_1[varb_2++] = varb_0;
+        count++;
+    } 
+    int varb_3;
+    scanf(""%d"",&varb_3);
+    if(varb_3 > count) {
+        varb_3 %= count;
+    } 
+    for(int varb_2=varb_3;varb_2<count;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+    for(int varb_2=0;varb_2<varb_3;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+	return 0;
+}",7
+4,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char a[100],b[100];
+int n,i,j,l1,m;
+gets(a);
+scanf(""%d"",&n);
+l1=strlen(a);
+m=n%l1;
+for(i=0,j=0;i<m;i++,j++)
+b[j]=a[i];
+for(i=0;i<=l1-m;i++)
+a[i]=a[i+m];
+strcat(a,b);
+puts(a);
+}
+
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100];
+int varb_1,varb_2,varb_3,varb_4,varb_5;
+gets(varb_0);
+scanf(""%d"",&varb_1);
+varb_4=strlen(varb_0);
+varb_5=varb_1%varb_4;
+for(varb_2=0,varb_3=0;varb_2<varb_5;varb_2++,varb_3++)
+b[varb_3]=varb_0[varb_2];
+for(varb_2=0;varb_2<=varb_4-varb_5;varb_2++)
+varb_0[varb_2]=varb_0[varb_2+varb_5];
+strcat(varb_0,b);
+puts(varb_0);
+}
+",16
+5,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+    int n,i;
+	gets(a);
+	scanf(""%d"",&n);
+	//n=n%(strlen(a));//类似于转圈的操作，如果超出字符串长度就相当于转了圈
+	for(i=n;i<strlen(a);i++) 
+       printf(""%c"",a[i]);//从第n个字符开始到末尾
+	for(i=0;i<n;i++) 
+       printf(""%c"",a[i]);//从第一个字符开始到第n-1个
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+    int varb_1,varb_2;
+	gets(varb_0);
+	scanf(""%d"",&varb_1);
+	for(varb_2=varb_1;varb_2<strlen(varb_0);varb_2++) 
+       printf(""%c"",varb_0[varb_2]);
+	for(varb_2=0;varb_2<varb_1;varb_2++) 
+       printf(""%c"",varb_0[varb_2]);
+	return 0;
+}",5
+6,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char a[100],b[100];
+int n,i,j,l1;
+gets(a);
+scanf(""%d"",&n);
+l1=strlen(a);
+for(i=0,j=0;i<n;i++,j++)
+b[j]=a[i];
+for(i=0;i<=l1-n;i++)
+a[i]=a[i+n];
+strcat(a,b);
+puts(a);
+}
+
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100];
+int varb_1,varb_2,varb_3,varb_4;
+gets(varb_0);
+scanf(""%d"",&varb_1);
+varb_4=strlen(varb_0);
+for(varb_2=0,varb_3=0;varb_2<varb_1;varb_2++,varb_3++)
+b[varb_3]=varb_0[varb_2];
+for(varb_2=0;varb_2<=varb_4-varb_1;varb_2++)
+varb_0[varb_2]=varb_0[varb_2+varb_1];
+strcat(varb_0,b);
+puts(varb_0);
+}
+",6
+7,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char arr[201] = {0};       
+	int n,i=0;
+	char ch;
+	while((ch=getchar())!='\n')
+	{
+		arr[i] = ch;
+		++i;
+	}
+	scanf(""%d"", &n);
+	int len = strlen(arr);   
+	while(n>len)
+	{
+		n = n%len;               
+	}
+	int k = 0;
+	for(; k < n; ++k) {
+		char a;                            
+		a=arr[k];                   
+		arr[k] = arr[k + len];    
+		arr[k + len] = a;
+	}
+	arr[k+len+1] = '\n';
+
+	for(int j = 0; j < (k + len); ++j) 
+    {
+		if(arr[j] == '\0') 
+        {
+			continue;
+		}                              
+		printf(""%c"", arr[j]);
+	}
+	return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[201] = {0};       
+	int varb_1,varb_2=0;
+	char varb_3;
+	while((varb_3=getchar())!='\n')
+	{
+		varb_0[varb_2] = varb_3;
+		++varb_2;
+	}
+	scanf(""%d"", &varb_1);
+	int varb_4 = strlen(varb_0);   
+	while(varb_1>varb_4)
+	{
+		varb_1 = varb_1%varb_4;               
+	}
+	int varb_5 = 0;
+	for(; varb_5 < varb_1; ++varb_5) {
+		char varb_6;                            
+		varb_6=varb_0[varb_5];                   
+		varb_0[varb_5] = varb_0[varb_5 + varb_4];    
+		varb_0[varb_5 + varb_4] = varb_6;
+	}
+	varb_0[varb_5+varb_4+1] = '\n';
+	for(int varb_7 = 0; varb_7 <(varb_5 + varb_4); ++varb_7) 
+    {
+		if(varb_0[varb_7] == '\0') 
+        {
+			continue;
+		}                              
+		printf(""%c"", varb_0[varb_7]);
+	}
+	return 0;
+}
+",3
+8,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[101];
+	gets(a);
+	int n,i;
+	scanf(""%d"",&n);
+	for(i=n;i<strlen(a);i++)          printf(""%c"",a[i]);
+	for(i=0;i<n;i++) 
+ printf(""%c"",a[i]);
+	return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[101];
+	gets(varb_0);
+	int varb_1,varb_2;
+	scanf(""%d"",&varb_1);
+	for(varb_2=varb_1;varb_2<strlen(varb_0);varb_2++)          printf(""%c"",varb_0[varb_2]);
+	for(varb_2=0;varb_2<varb_1;varb_2++) 
+ printf(""%c"",varb_0[varb_2]);
+	return 0;
+}
+",9
+9,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#define max 105
+int main(){
+    char s;//指单独一个字符 
+    char t[max];//创建一个字符数组 
+    int i = 0, count = 0, flag = 0;
+    while ((s=getchar()) != '\n') {
+        t[i++] = s;
+        count++;
+    } 
+    int N;
+    scanf(""%d"",&N);
+    if(N > count) {
+        N %= count;
+    }
+    for(int i=N;i<count;i++){
+        printf(""%c"",t[i]);
+    }
+    for(int i=0;i<N;i++){
+        printf(""%c"",t[i]);
+    }
+	return 0;
+}",0.0,"#include<stdio.h>
+#define max 105
+int main(){
+    char varb_0;
+    char varb_1[max];
+    int varb_2 = 0, count = 0, flag = 0;
+    while((varb_0=getchar()) != '\n') {
+        varb_1[varb_2++] = varb_0;
+        count++;
+    } 
+    int varb_3;
+    scanf(""%d"",&varb_3);
+    if(varb_3 > count) {
+        varb_3 %= count;
+    }
+    for(int varb_2=varb_3;varb_2<count;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+    for(int varb_2=0;varb_2<varb_3;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+	return 0;
+}",7
+10,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+	char b[100];
+	int N,k;
+	gets(a);
+	scanf(""%d"",&N);
+	int step=0;
+	int stepX=0;
+    k=N%strlen(a);
+	for(step=k,stepX=0;step<strlen(a);step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	for(step=0,stepX=strlen(a)-k;step<k;step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	puts(b);
+		
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+	char varb_1[100];
+	int varb_2,varb_3;
+	gets(varb_0);
+	scanf(""%d"",&varb_2);
+	int varb_4=0;
+	int varb_5=0;
+    varb_3=varb_2%strlen(varb_0);
+	for(varb_4=varb_3,varb_5=0;varb_4<strlen(varb_0);varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	for(varb_4=0,varb_5=strlen(varb_0)-varb_3;varb_4<varb_3;varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	puts(varb_1);
+}",5
+11,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#define max 105
+int main(){
+    char s;//指单独一个字符 
+    char t[max];//创建一个字符数组 
+    int i = 0, count = 0, flag = 0;
+    while ((s=getchar()) != '\n') {//getchar每次从标准输入读入一个字符 ，标准输入会有'\n'??? 
+        t[i++] = s;
+        count++;
+    } 
+    int N;
+    scanf(""%d"",&N);
+    if(N > count) {
+        N %= count;
+    } //这里有个测试点
+    for(int i=N;i<count;i++){
+        printf(""%c"",t[i]);
+    }
+    for(int i=0;i<N;i++){
+        printf(""%c"",t[i]);
+    }
+	return 0;
+}",0.0,"#include<stdio.h>
+#define max 105
+int main(){
+    char varb_0;
+    char varb_1[max];
+    int varb_2 = 0, count = 0, flag = 0;
+    while((varb_0=getchar()) != '\n') {
+        varb_1[varb_2++] = varb_0;
+        count++;
+    } 
+    int varb_3;
+    scanf(""%d"",&varb_3);
+    if(varb_3 > count) {
+        varb_3 %= count;
+    } 
+    for(int varb_2=varb_3;varb_2<count;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+    for(int varb_2=0;varb_2<varb_3;varb_2++){
+        printf(""%c"",varb_1[varb_2]);
+    }
+	return 0;
+}",7
+12,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[101];
+	char b[101];
+	int N,k;
+	gets(a);
+	scanf(""%d"",&N);
+	int step=0;
+	int stepX=0;
+	k=N%strlen(a);
+	for(step=N,stepX=0;step<strlen(a);step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	for(step=0,stepX=strlen(a)-N;step<N;step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	puts(b);	
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[101];
+	char varb_1[101];
+	int varb_2,varb_3;
+	gets(varb_0);
+	scanf(""%d"",&varb_2);
+	int varb_4=0;
+	int varb_5=0;
+	varb_3=varb_2%strlen(varb_0);
+	for(varb_4=varb_2,varb_5=0;varb_4<strlen(varb_0);varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	for(varb_4=0,varb_5=strlen(varb_0)-varb_2;varb_4<varb_2;varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	puts(varb_1);	
+}",5
+13,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char a[100],b[100];
+int n,i,j,l1;
+gets(a);
+scanf(""%d"",&n);
+l1=strlen(a);
+for(i=0,j=0;i<n;i++)
+b[j]=a[i];
+for(i=0;i<=l1-n;i++)
+a[i]=a[i+n];
+strcat(a,b);
+puts(a);
+}
+
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100];
+int varb_1,varb_2,varb_3,varb_4;
+gets(varb_0);
+scanf(""%d"",&varb_1);
+varb_4=strlen(varb_0);
+for(varb_2=0,varb_3=0;varb_2<varb_1;varb_2++)
+b[varb_3]=varb_0[varb_2];
+for(varb_2=0;varb_2<=varb_4-varb_1;varb_2++)
+varb_0[varb_2]=varb_0[varb_2+varb_1];
+strcat(varb_0,b);
+puts(varb_0);
+}
+",6
+14,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+#define NUMEL 100
+int main()
+{   char message[NUMEL];
+    int N,j,i;
+    int a;
+    gets(message); 
+    scanf(""%d"",&N);
+    a=strlen(message);
+    j=N%a;
+    for(i=j;i<a;i++)
+   { printf(""%d"",message[i]);}
+    for(i=0;i<j;i++)
+    {printf(""%d"",message[i]);}
+    
+    
+    
+}",0.0,"#include<stdio.h>
+#include<string.h>
+#define NUMEL 100
+int main()
+{   char varb_0[NUMEL];
+    int varb_1,varb_2,varb_3;
+    int varb_4;
+    gets(varb_0); 
+    scanf(""%d"",&varb_1);
+    varb_4=strlen(varb_0);
+    varb_2=varb_1%varb_4;
+    for(varb_3=varb_2;varb_3<varb_4;varb_3++)
+   { printf(""%d"",varb_0[varb_3]);}
+    for(varb_3=0;varb_3<varb_2;varb_3++)
+    {printf(""%d"",varb_0[varb_3]);}
+}",13
+15,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[101];
+	char b[101];
+	int N,k;
+	gets(a);
+	scanf(""%d"",&N);
+	int step=0;
+	int stepX=0;
+	k=N%strlen(a);
+	for(step=N,stepX=0;step<strlen(a);step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	for(step=0,stepX=strlen(a)-N;step<N;step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	puts(b);
+	return 0;	
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[101];
+	char varb_1[101];
+	int varb_2,varb_3;
+	gets(varb_0);
+	scanf(""%d"",&varb_2);
+	int varb_4=0;
+	int varb_5=0;
+	varb_3=varb_2%strlen(varb_0);
+	for(varb_4=varb_2,varb_5=0;varb_4<strlen(varb_0);varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	for(varb_4=0,varb_5=strlen(varb_0)-varb_2;varb_4<varb_2;varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	puts(varb_1);
+	return 0;	
+}",5
+16,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+	char b[100];
+	int N,k;
+	gets(a);
+	scanf(""%d"",&N);
+	int step=0;
+	int stepX=0;
+	k=N%strlen(a);
+	for(step=k,stepX=0;step<strlen(a);step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	for(step=0,stepX=strlen(a)-k;step<k;step++,stepX++)
+	{
+		b[stepX]=a[step];
+	}
+	puts(b);
+		
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+	char varb_1[100];
+	int varb_2,varb_3;
+	gets(varb_0);
+	scanf(""%d"",&varb_2);
+	int varb_4=0;
+	int varb_5=0;
+	varb_3=varb_2%strlen(varb_0);
+	for(varb_4=varb_3,varb_5=0;varb_4<strlen(varb_0);varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	for(varb_4=0,varb_5=strlen(varb_0)-varb_3;varb_4<varb_3;varb_4++,varb_5++)
+	{
+		varb_1[varb_5]=varb_0[varb_4];
+	}
+	puts(varb_1);
+}",5
+17,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char sb[100];
+int a,b,n;
+gets(a);
+scanf(""%d"",&n);
+a=strlen(sb);
+for(b=0;b<a;b++)
+printf(""%c"",sb[(n+b)%a]);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100];
+int varb_1,varb_2,varb_3;
+gets(varb_1);
+scanf(""%d"",&varb_3);
+varb_1=strlen(varb_0);
+for(varb_2=0;varb_2<varb_1;varb_2++)
+printf(""%c"",varb_0[(varb_3+varb_2)%varb_1]);
+return 0;
+}",7
+18,2c9f30a56e72f8ae016e78838b95040f,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char a[100],b[100];
+int n,i,j,l1,m;
+gets(a);
+scanf(""%d"",&n);
+l1=strlen(a);
+m=n%l1;
+for(i=0,j=0;i<m;i++,j++)
+b[j]=a[i];
+for(i=0;i<=l1-m;i++)
+a[i]=a[i+m];
+strcat(a,b);
+puts(a);
+}
+
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[100],b[100];
+int varb_1,varb_2,varb_3,varb_4,varb_5;
+gets(varb_0);
+scanf(""%d"",&varb_1);
+varb_4=strlen(varb_0);
+varb_5=varb_1%varb_4;
+for(varb_2=0,varb_3=0;varb_2<varb_5;varb_2++,varb_3++)
+b[varb_3]=varb_0[varb_2];
+for(varb_2=0;varb_2<=varb_4-varb_5;varb_2++)
+varb_0[varb_2]=varb_0[varb_2+varb_5];
+strcat(varb_0,b);
+puts(varb_0);
+}
+",16
+19,2c9f30a56e72f8ae016e78838b95040f,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[101];
+	int n,len,i,temp;
+	gets(a);
+	scanf(""%d"",&n);
+	len=strlen(a);
+	for(;n>0;n--)
+	{
+		temp=a[len-1];
+		for(i=len-1;i>=0;i--)
+		{
+			if(i==0)
+			{
+				a[i]=temp;
+			}
+			else
+			{
+				a[i]=a[i-1];
+			}
+		}
+	}
+	puts(a);
+}
+ ",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char varb_0[101];
+	int varb_1,varb_2,varb_3,varb_4;
+	gets(varb_0);
+	scanf(""%d"",&varb_1);
+	varb_2=strlen(varb_0);
+	for(;varb_1>0;varb_1--)
+	{
+		varb_4=varb_0[varb_2-1];
+		for(varb_3=varb_2-1;varb_3>=0;varb_3--)
+		{
+			if(varb_3==0)
+			{
+				varb_0[varb_3]=varb_4;
+			}
+			else
+			{
+				varb_0[varb_3]=varb_0[varb_3-1];
+			}
+		}
+	}
+	puts(varb_0);
+}
+",12

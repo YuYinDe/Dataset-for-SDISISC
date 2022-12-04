@@ -1,0 +1,81 @@
+,id,code,is_true,errorline
+0,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	varb_0=2;
+	varb_1=5;
+	varb_2=1;
+	printf(""%d=%d+10*%d+100*%d\n"",varb_0+10*varb_1+100*varb_2,varb_0,varb_1,varb_2);
+}",0.0,8
+1,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  varb_0=152;
+  varb_1=varb_0%100;
+  varb_2=varb_0/10%10;
+  varb_3=varb_0%10;
+  printf(""%d=%d+%d*10+%d*100"",varb_0,varb_3,varb_2,varb_1);
+  return 0;
+ }
+",0.0,6
+2,2c9f30a57c74a921017c7757377a05d4,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    varb_3=152;
+    varb_0=152%10;
+    varb_1=152/10%10;
+    varb_2=152/10/10%10;
+    printf(""%d = %d + %d*10 + %d*100"",varb_3,varb_2,varb_1,varb_0);
+    return 0;
+}",0.0,9
+3,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   varb_3=152;
+   varb_0=varb_3%10;
+   varb_1=(varb_3/10)%10;
+   varb_2=varb_3/100;
+   printf(""整数152的个位数字是%d，十位数字是%d，百位数字是%d\n"",varb_0,varb_1,varb_2);
+   return 0;
+}",0.0,9
+4,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	varb_0=2;
+	varb_1=1; 
+	varb_2=5; 
+	printf(""152 = %d + %d*100 + %d*10"",varb_0,varb_1,varb_2);
+	return 0;
+} ",0.0,8
+5,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{int varb_0=152%10;int varb_1=152%100/10;int varb_2=152/100;
+printf(""%d + %d*10 + %d*100 =152\n"",varb_0,varb_1,varb_2);
+return 0;}",0.0,4
+6,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+	printf(""152 = 2 + 1*100 + 5*10"");
+	return 0;
+} ",0.0,4
+7,2c9f30a57c74a921017c7757377a05d4,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+   varb_0=152/100,varb_1=152/10,varb_2=152%10;
+  printf(""152 = %d + %d*10 + %d*100"",varb_2,varb_1,varb_0);
+  return 0;
+}",0.0,5
+8,2c9f30a57c74a921017c7757377a05d4,"#include<stdio.h>
+int main()
+{
+int varb_0=2;
+int varb_1=5;
+int varb_2=1;
+printf(""152 = %d + %d*10 + %d*100"",varb_2,varb_1,varb_0);
+}",0.0,7

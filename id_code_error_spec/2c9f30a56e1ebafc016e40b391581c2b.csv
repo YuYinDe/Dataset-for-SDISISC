@@ -1,0 +1,3475 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+29+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_0.csv
+1,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int main()
+{
+    int nian,yue,ri,tian,n,i;
+    scanf(""%d %d %d"",&nian,&yue,&ri);
+    if(nian%4==0&&nian%100!=0||nian%400==0)
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=2;
+            i++;
+            tian=yue*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=182+(yue-7)*31+ri;
+
+    }
+    else
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=3;
+            i++;
+            tian=yue*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=181+(yue-7)*31-i+ri;
+        }
+        else
+            tian=181+(yue-7)*31+ri;
+    }
+    printf(""该天是本年的第%d天"",tian);
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=2;
+            varb_5++;
+            varb_3=varb_1*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=182+(varb_1-7)*31+varb_2;
+    }
+    else
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=3;
+            varb_5++;
+            varb_3=varb_1*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=181+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=181+(varb_1-7)*31+varb_2;
+    }
+    printf(""该天是本年的第%d天"",varb_3);
+    return 0;
+}",12,2c9f30a56e1ebafc016e40b391581c2b_1.csv
+2,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int runnian(int a);
+int tian(int b);
+int main()
+{
+    int y,m,d,a;
+    scanf(""%d %d %d"",&y,&m,&d);
+    a=tian(m);
+    printf(""该天是本年的第%d天"",a+d);
+    return 0;
+}
+/*判断闰年*/
+int runnian(int y)
+{
+    if((y%4==0&&y%100!=0)||(y%400==0))
+    return 1;
+    else
+    return 0;
+}
+int tian(int m)
+{
+    int i,j,y;
+    j=runnian(y);
+    switch(m-1)
+    {
+    case 11:i+=30;
+    case 10:i+=31;
+     case 9:i+=30;
+     case 8:i+=31;
+     case 7:i+=31;
+     case 6:i+=30; 
+     case 5:i+=31;
+     case 4:i+=30;
+     case 3:i+=31;
+          case 2:
+    {
+    if(j==1)
+    i+=29;
+    else
+    i+=28;
+    };
+    case 1:i+=31;
+    default:
+    break;
+    }
+    return i; 
+}",0.0,"#include<stdio.h>
+int func_0(int varb_3);
+int func_2(int b);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    varb_3=func_2(varb_1);
+    printf(""该天是本年的第%d天"",varb_3+varb_2);
+    return 0;
+}
+int func_0(int varb_0)
+{
+    if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+    return 1;
+    else
+    return 0;
+}
+int func_2(int varb_1)
+{
+    int varb_4,varb_5,varb_0;
+    varb_5=func_0(varb_0);
+    switch(varb_1-1)
+    {
+    case 11:varb_4+=30;
+    case 10:varb_4+=31;
+     case 9:varb_4+=30;
+     case 8:varb_4+=31;
+     case 7:varb_4+=31;
+     case 6:varb_4+=30; 
+     case 5:varb_4+=31;
+     case 4:varb_4+=30;
+     case 3:varb_4+=31;
+          case 2:
+    {
+    if(varb_5==1)
+    varb_4+=29;
+    else
+    varb_4+=28;
+    };
+    case 1:varb_4+=31;
+    default:
+    break;
+    }
+    return varb_4; 
+}",2,2c9f30a56e1ebafc016e40b391581c2b_2.csv
+3,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(a)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+   {
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_0)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+   {
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+   }
+ }
+",15,2c9f30a56e1ebafc016e40b391581c2b_3.csv
+4,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(a)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+  if(b==3)
+ { sum=59+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+   else
+   {
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_0)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+  if(varb_1==3)
+ { varb_8=59+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+   else
+   {
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+   }
+ }
+",15,2c9f30a56e1ebafc016e40b391581c2b_4.csv
+5,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int days(int n,int a[]);
+int main()
+{
+	int a,b,c;
+    int d[]={31,28,31,30,31,30,31,31,30,31,30,31};
+	scanf(""%d %d %d"",&a,&b,&c);
+	    if(((!(a%4))&&(a%100))||!(a%400))c++;
+	a=days(b,d)+c;
+    printf(""该天是本年的第315天"");
+    return 0;
+}
+int days(int n,int a[])
+{
+	int sum=0;
+	int step=0;
+	for(step=0;step<n-1;step++)
+	{
+		sum=a[step]+sum;
+	}
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1[]);
+int main()
+{
+	int varb_1,varb_3,varb_4;
+    int varb_5[]={31,28,31,30,31,30,31,31,30,31,30,31};
+	scanf(""%d %d %d"",&varb_1,&varb_3,&varb_4);
+	    if(((!(varb_1%4))&&(varb_1%100))||!(varb_1%400))varb_4++;
+	varb_1=func_0(varb_3,varb_5)+varb_4;
+    printf(""该天是本年的第315天"");
+    return 0;
+}
+int func_0(int varb_0,int varb_1[])
+{
+	int varb_8=0;
+	int varb_9=0;
+	for(varb_9=0;varb_9<varb_0-1;varb_9++)
+	{
+		varb_8=varb_1[varb_9]+varb_8;
+	}
+}",10,2c9f30a56e1ebafc016e40b391581c2b_5.csv
+6,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=29)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=60+day;
+                if(mou==4&&day<=30)
+               return day=90+day;
+                if(mou==5&&day<=31)
+               return day=121+day;
+               if(mou==6&&day<=30)
+               return day=151+day;
+               if(mou==7&&day<=31)
+               return day=182+day;
+               if(mou==8&&day<=31)
+               return day=213+day;
+               if(mou==9&&day<=30)
+               return day=243+day;
+               if(mou==10&&day<=31)
+               return day=274+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=335+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=90+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=151+day;
+               if(mou==7&&day<=31)
+               return day=181+day;
+               if(mou==8&&day<=31)
+               return day=212+day;
+               if(mou==9&&day<=30)
+               return day=243+day;
+               if(mou==10&&day<=31)
+               return day=273+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=334+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=29)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=60+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=121+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=182+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=213+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=274+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=335+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=181+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=212+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=273+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=334+varb_2;
+         }
+         return varb_2;
+}",20,2c9f30a56e1ebafc016e40b391581c2b_6.csv
+7,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int nian,yue,ri,tian,n,i;
+    scanf(""%d %d %d"",&nian,&yue,&ri);
+    if(nian%4==0&&nian%100!=0||nian%400==0)
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=2;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=182+(yue-7)*31+ri;
+
+    }
+    else
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=3;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=183+(yue-7)*31+ri;
+
+	}
+    printf(""该天是本年的第%d天"",tian);
+    return 0;
+}",0.0,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=2;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=182+(varb_1-7)*31+varb_2;
+    }
+    else
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=3;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=183+(varb_1-7)*31+varb_2;
+	}
+    printf(""该天是本年的第%d天"",varb_3);
+    return 0;
+}",20,2c9f30a56e1ebafc016e40b391581c2b_7.csv
+8,2c9f30a56e1ebafc016e40b391581c2b,"#include <stdio.h>
+
+int nyear(int,int,int);
+int lyear(int,int,int);
+int iyear(x);
+int main()
+{
+  int x,y,z;
+   scanf(""%d %d %d"",&x,&y,&z);
+    if (iyear(x)==0)
+     printf(""该天是本年的第%d天"",nyear(x,y,z));
+    else
+     printf(""该天是本年的第%d天"",lyear(x,y,z));
+}
+
+int iyear(x)
+{
+  if(x%4==0&&x%100!=0||x%400==0)
+  return 0;
+  else
+  return 1;
+}
+
+int nyear(x,y,z)
+{
+  int s;
+  switch(y)
+    {
+     case 1:
+       s=z;
+       break;
+     case 2:
+       s=31+z;
+       break;
+     case 3:
+       s =31+28+z;
+       break;
+      case 4:
+       s=31+31+28+z;
+       break;
+      case 5:
+       s=31+31+28+30+z;
+       break;
+     case 6:
+       s=31+31+28+30+31+z;
+       break;
+     case 7:
+       s=31+31+28+30+31+30+z;
+       break;
+     case 8:
+       s=31+31+28+30+31+30+31+z;
+       break;
+     case 9:
+       s=31+31+28+30+31+30+31+31+z;
+       break;
+     case 10:
+       s=31+31+28+30+31+30+31+31+30+z;
+       break;
+     case 11:
+       s=31+31+28+30+31+30+31+31+30+31+z;
+       break;
+     case 12:
+       s=31+31+28+30+31+30+31+31+30+31+30+z;
+       break;       
+
+    }
+
+return s;
+
+}
+
+int lyear(x,y,z)
+{
+  int s;
+  switch(y)
+    {
+     case 1:
+       s=z;
+       break;
+     case 2:
+       s=31+z;
+       break;
+     case 3:
+       s =31+29+z;
+       break;
+      case 4:
+       s=31+31+29+z;
+       break;
+      case 5:
+       s=31+31+29+30+z;
+       break;
+     case 6:
+       s=31+31+29+30+31+z;
+       break;
+     case 7:
+       s=31+31+29+30+31+30+z;
+       break;
+     case 8:
+       s=31+31+29+30+31+30+31+z;
+       break;
+     case 9:
+       s=31+31+29+30+31+30+31+31+z;
+       break;
+     case 10:
+       s=31+31+29+30+31+30+31+31+30+z;
+       break;
+     case 11:
+       s=31+31+29+30+31+30+31+31+30+31+z;
+       break;
+     case 12:
+       s=31+31+29+30+31+30+31+31+30+31+30+z;
+       break;       
+
+    }
+
+return s;
+
+}
+",0.0,"#include <stdio.h>
+int nyear(int,int,int);
+int lyear(int,int,int);
+int iyear(varb_0);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(iyear(varb_0)==0)
+     printf(""该天是本年的第%d天"",nyear(varb_0,varb_1,varb_2));
+    else
+     printf(""该天是本年的第%d天"",lyear(varb_0,varb_1,varb_2));
+}
+int iyear(varb_0)
+{
+  if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+  return 0;
+  else
+  return 1;
+}
+int nyear(varb_0,varb_1,varb_2)
+{
+  int varb_3;
+  switch(varb_1)
+    {
+     case 1:
+       varb_3=varb_2;
+       break;
+     case 2:
+       varb_3=31+varb_2;
+       break;
+     case 3:
+       varb_3 =31+28+varb_2;
+       break;
+      case 4:
+       varb_3=31+31+28+varb_2;
+       break;
+      case 5:
+       varb_3=31+31+28+30+varb_2;
+       break;
+     case 6:
+       varb_3=31+31+28+30+31+varb_2;
+       break;
+     case 7:
+       varb_3=31+31+28+30+31+30+varb_2;
+       break;
+     case 8:
+       varb_3=31+31+28+30+31+30+31+varb_2;
+       break;
+     case 9:
+       varb_3=31+31+28+30+31+30+31+31+varb_2;
+       break;
+     case 10:
+       varb_3=31+31+28+30+31+30+31+31+30+varb_2;
+       break;
+     case 11:
+       varb_3=31+31+28+30+31+30+31+31+30+31+varb_2;
+       break;
+     case 12:
+       varb_3=31+31+28+30+31+30+31+31+30+31+30+varb_2;
+       break;       
+    }
+return varb_3;
+}
+int lyear(varb_0,varb_1,varb_2)
+{
+  int varb_3;
+  switch(varb_1)
+    {
+     case 1:
+       varb_3=varb_2;
+       break;
+     case 2:
+       varb_3=31+varb_2;
+       break;
+     case 3:
+       varb_3 =31+29+varb_2;
+       break;
+      case 4:
+       varb_3=31+31+29+varb_2;
+       break;
+      case 5:
+       varb_3=31+31+29+30+varb_2;
+       break;
+     case 6:
+       varb_3=31+31+29+30+31+varb_2;
+       break;
+     case 7:
+       varb_3=31+31+29+30+31+30+varb_2;
+       break;
+     case 8:
+       varb_3=31+31+29+30+31+30+31+varb_2;
+       break;
+     case 9:
+       varb_3=31+31+29+30+31+30+31+31+varb_2;
+       break;
+     case 10:
+       varb_3=31+31+29+30+31+30+31+31+30+varb_2;
+       break;
+     case 11:
+       varb_3=31+31+29+30+31+30+31+31+30+31+varb_2;
+       break;
+     case 12:
+       varb_3=31+31+29+30+31+30+31+31+30+31+30+varb_2;
+       break;       
+    }
+return varb_3;
+}
+",4,2c9f30a56e1ebafc016e40b391581c2b_8.csv
+9,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int main()
+{
+    int nian,yue,ri,tian,n,i;
+    scanf(""%d %d %d"",&nian,&yue,&ri);
+    if(nian%4==0&&nian%100!=0||nian%400==0)
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=2;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=182+(yue-7)*31+ri;
+
+    }
+    else
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=3;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=181+(yue-7)*31-i+ri;
+        }
+        else
+            tian=181+(yue-7)*31+ri;
+    }
+    printf(""该天是本年的第%d天"",tian);
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=2;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=182+(varb_1-7)*31+varb_2;
+    }
+    else
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=3;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=181+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=181+(varb_1-7)*31+varb_2;
+    }
+    printf(""该天是本年的第%d天"",varb_3);
+    return 0;
+}",38,2c9f30a56e1ebafc016e40b391581c2b_9.csv
+10,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int nian,yue,ri,tian,n,i;
+    scanf(""%d %d %d"",&nian,&yue,&ri);
+    if(nian%4==0&&nian%100!=0||nian%400==0)
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=2;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=182+(yue-7)*31+ri;
+
+    }
+    else
+    {
+        if(yue<7)
+        {
+            i=3;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8)
+        {
+            i=0;
+            i++;
+            tian=181+(yue-7)*31-i+ri;
+        }
+        else
+            tian=181+(yue-6)*31+ri;
+
+	}
+    printf(""该天是本年的第%d天"",tian);
+    return 0;
+}",0.0,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=2;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=182+(varb_1-7)*31+varb_2;
+    }
+    else
+    {
+        if(varb_1<7)
+        {
+            varb_5=3;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=181+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=181+(varb_1-6)*31+varb_2;
+	}
+    printf(""该天是本年的第%d天"",varb_3);
+    return 0;
+}",29,2c9f30a56e1ebafc016e40b391581c2b_10.csv
+11,2c9f30a56e1ebafc016e40b391581c2b,"#include <stdio.h>
+#define Max 12
+int ryear(int);
+
+int main()
+{
+	int months[Max]={31,28,31,30,31,30,31,31,30,31,30,31};
+	int year,month,day,i,total;
+	scanf(""%d %d %d"",&year,&month,&day);
+	if(ryear(year))
+	{
+	 months[1]=29;
+for(i=month-1,total=0;i>0;i--)
+		total+=months[i];
+	}
+	else
+	{
+		for(i=month-1,total=0;i>0;i--)
+		total+=months[i];
+	}
+printf(""该天是本年的第%d天"",total+day);
+}
+int ryear(int n)
+{
+	if(n%100!=0)
+	{
+		if(n%4==0)
+		return 1;
+		else return 0;
+	}
+	else{
+		if(n%400==0)
+		return 1;
+		else return 0;
+		
+	}
+}
+
+    
+",0.0,"#include <stdio.h>
+#define Max 12
+int func_0(int);
+int main()
+{
+	int varb_0[Max]={31,28,31,30,31,30,31,31,30,31,30,31};
+	int varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_1,&varb_2,&varb_3);
+	if(func_0(varb_1))
+	{
+	 varb_0[1]=29;
+for(varb_4=varb_2-1,varb_5=0;varb_4>0;varb_4--)
+		varb_5+=varb_0[varb_4];
+	}
+	else
+	{
+		for(varb_4=varb_2-1,varb_5=0;varb_4>0;varb_4--)
+		varb_5+=varb_0[varb_4];
+	}
+printf(""该天是本年的第%d天"",varb_5+varb_3);
+}
+int func_0(int n)
+{
+	if(n%100!=0)
+	{
+		if(n%4==0)
+		return 1;
+		else return 0;
+	}
+	else{
+		if(n%400==0)
+		return 1;
+		else return 0;
+	}
+}
+",12,2c9f30a56e1ebafc016e40b391581c2b_11.csv
+12,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=152+day;
+               if(mou==7&&day<=31)
+               return day=183+day;
+               if(mou==8&&day<=31)
+               return day=214+day;
+               if(mou==9&&day<=30)
+               return day=244+day;
+               if(mou==10&&day<=31)
+               return day=275+day;
+               if(mou==11&&day<=30)
+               return day=305+day;
+               if(mou==12&&day<=31)
+               return day=336+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=29)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=60+day;
+                if(mou==4&&day<=30)
+               return day=90+day;
+                if(mou==5&&day<=31)
+               return day=121+day;
+               if(mou==6&&day<=30)
+               return day=151+day;
+               if(mou==7&&day<=31)
+               return day=182+day;
+               if(mou==8&&day<=31)
+               return day=213+day;
+               if(mou==9&&day<=30)
+               return day=243+day;
+               if(mou==10&&day<=31)
+               return day=274+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=335+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=183+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=214+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=275+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=305+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=336+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=29)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=60+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=121+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=182+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=213+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=274+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=335+varb_2;
+         }
+         return varb_2;
+}",42,2c9f30a56e1ebafc016e40b391581c2b_12.csv
+13,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b))
+  { sum=(b-2-f)*30+(31*f)+30+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1))
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+30+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_13.csv
+14,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_14.csv
+15,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(a)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+  if(b==3)
+ { sum=60+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+   else
+   {
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+   }
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_0)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+  if(varb_1==3)
+ { varb_8=60+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+   else
+   {
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+   }
+ }
+",31,2c9f30a56e1ebafc016e40b391581c2b_15.csv
+16,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=152+day;
+               if(mou==7&&day<=31)
+               return day=183+day;
+               if(mou==8&&day<=31)
+               return day=214+day;
+               if(mou==9&&day<=30)
+               return day=244+day;
+               if(mou==10&&day<=31)
+               return day=275+day;
+               if(mou==11&&day<=30)
+               return day=305+day;
+               if(mou==12&&day<=31)
+               return day=336+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=29)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=61-1+day;
+                if(mou==4&&day<=30)
+               return day=92-1+day;
+                if(mou==5&&day<=31)
+               return day=122-1+day;
+               if(mou==6&&day<=30)
+               return day=152-1+day;
+               if(mou==7&&day<=31)
+               return day=183-1+day;
+               if(mou==8&&day<=31)
+               return day=214-1+day;
+               if(mou==9&&day<=30)
+               return day=244-1+day;
+               if(mou==10&&day<=31)
+               return day=275-1+day;
+               if(mou==11&&day<=30)
+               return day=305-1+day;
+               if(mou==12&&day<=31)
+               return day=336-1+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=183+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=214+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=275+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=305+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=336+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=29)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=61-1+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=92-1+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=122-1+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152-1+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=183-1+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=214-1+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244-1+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=275-1+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=305-1+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=336-1+varb_2;
+         }
+         return varb_2;
+}",42,2c9f30a56e1ebafc016e40b391581c2b_16.csv
+17,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int main()
+{
+int year,month,day,a,s;
+a=0;
+scanf(""%d %d %d"",&year,&month,&day);
+if((year%4==0&&year%100!=0)||year%400==0)
+{
+switch(month-1)
+{case 0:a=0;break;
+case 1:a=31;break;
+case 2:a=31+29;break;
+case 3:a=31+29+31;break;
+case 4:a=31+29+31+30;break;
+case 5:a=31+29+31+30+31;break;
+case 6:a=31+29+31+30+31+30;break;
+case 7:a=31+29+31+30+31+30+31;break;
+case 8:a=31+29+31+30+31+30+31+31;break;
+case 9:a=31+29+31+30+31+30+31+31+30;break;
+case 10:a=31+29+31+30+31+30+31+31+30+31;break;
+case 11:a=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:a=31+29+31+30+31+30+31+31+30+31+30+31;
+}}
+else
+{
+switch(month-1)
+{case 0:a=0;break;
+case 1:a=31;break;
+case 2:a=31+28;break;
+case 3:a=31+29+31;break;
+case 4:a=31+29+31+30;break;
+case 5:a=31+29+31+30+31;break;
+case 6:a=31+29+31+30+31+30;break;
+case 7:a=31+29+31+30+31+30+31;break;
+case 8:a=31+29+31+30+31+30+31+31;break;
+case 9:a=31+29+31+30+31+30+31+31+30;break;
+case 10:a=31+29+31+30+31+30+31+31+30+31;break;
+case 11:a=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:a=31+29+31+30+31+30+31+31+30+31+30+31;
+ }   }
+s=day+a;
+printf(""该天是本年的第%d天"",s);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+varb_3=0;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+{
+switch(varb_1-1)
+{case 0:varb_3=0;break;
+case 1:varb_3=31;break;
+case 2:varb_3=31+29;break;
+case 3:varb_3=31+29+31;break;
+case 4:varb_3=31+29+31+30;break;
+case 5:varb_3=31+29+31+30+31;break;
+case 6:varb_3=31+29+31+30+31+30;break;
+case 7:varb_3=31+29+31+30+31+30+31;break;
+case 8:varb_3=31+29+31+30+31+30+31+31;break;
+case 9:varb_3=31+29+31+30+31+30+31+31+30;break;
+case 10:varb_3=31+29+31+30+31+30+31+31+30+31;break;
+case 11:varb_3=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:varb_3=31+29+31+30+31+30+31+31+30+31+30+31;
+}}
+else
+{
+switch(varb_1-1)
+{case 0:varb_3=0;break;
+case 1:varb_3=31;break;
+case 2:varb_3=31+28;break;
+case 3:varb_3=31+29+31;break;
+case 4:varb_3=31+29+31+30;break;
+case 5:varb_3=31+29+31+30+31;break;
+case 6:varb_3=31+29+31+30+31+30;break;
+case 7:varb_3=31+29+31+30+31+30+31;break;
+case 8:varb_3=31+29+31+30+31+30+31+31;break;
+case 9:varb_3=31+29+31+30+31+30+31+31+30;break;
+case 10:varb_3=31+29+31+30+31+30+31+31+30+31;break;
+case 11:varb_3=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:varb_3=31+29+31+30+31+30+31+31+30+31+30+31;
+ }   }
+varb_4=varb_2+varb_3;
+printf(""该天是本年的第%d天"",varb_4);
+}",13,2c9f30a56e1ebafc016e40b391581c2b_17.csv
+18,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_18.csv
+19,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int runnian(int a);
+int tian(int b);
+int main()
+{
+    int y,m,d,a;
+    scanf(""%d %d %d"",&y,&m,&d);
+    a=tian(m);
+    printf(""该天是本年的第%d天"",a+d);
+    return 0;
+}
+/*判断闰年*/
+int runnian(int y)
+{
+    if((y%4==0&&y%100!=0)||(y%400==0))
+    return 1;
+    else
+    return 0;
+}
+int tian(int m)
+{
+    int i,j,y;
+    j=runnian(y);
+    switch(m-1)
+    {
+    case 11:i+=30;
+    case 10:i+=31;
+     case 9:i+=30;
+     case 8:i+=31;
+     case 7:i+=31;
+      case 6:i+=30;
+       case 5:i+=31;
+        case 4:i+=30;
+        case 3:i+=31;
+          case 2:
+    {
+    if(j==1)
+    i+=29;
+    else
+    i+=28;
+    };
+    case 1:i+=30;
+  
+    
+   
+   
+   
+   
+    
+   
+    
+    
+    default:
+    break;
+    }
+    return i+1; 
+}",0.0,"#include<stdio.h>
+int func_0(int varb_3);
+int func_2(int b);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    varb_3=func_2(varb_1);
+    printf(""该天是本年的第%d天"",varb_3+varb_2);
+    return 0;
+}
+int func_0(int varb_0)
+{
+    if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+    return 1;
+    else
+    return 0;
+}
+int func_2(int varb_1)
+{
+    int varb_4,varb_5,varb_0;
+    varb_5=func_0(varb_0);
+    switch(varb_1-1)
+    {
+    case 11:varb_4+=30;
+    case 10:varb_4+=31;
+     case 9:varb_4+=30;
+     case 8:varb_4+=31;
+     case 7:varb_4+=31;
+      case 6:varb_4+=30;
+       case 5:varb_4+=31;
+        case 4:varb_4+=30;
+        case 3:varb_4+=31;
+          case 2:
+    {
+    if(varb_5==1)
+    varb_4+=29;
+    else
+    varb_4+=28;
+    };
+    case 1:varb_4+=30;
+    default:
+    break;
+    }
+    return varb_4+1; 
+}",2,2c9f30a56e1ebafc016e40b391581c2b_19.csv
+20,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int main()
+{
+ int year,month,day;
+ int a;
+ scanf(""%d %d %d"",&year,&month,&day);
+ if(year%400==0&&year%100!=0||year%4==0)
+ {
+ if(month==1)
+ a=day;
+else if(month==2)
+ a=31+day;
+ else if(month==3)
+ a=31+29+day;
+else if(month==4)
+ a=31+29+31+day;
+else if(month==5)
+ a=31+29+31+30+day;
+else if(month==6)
+ a=31+29+31+30+31+day;
+else if(month==7)
+ a=31+29+31+30+31+30+day;
+else if(month==8)
+a=31+29+31+30+31+30+31+day;
+else if(month==9)
+ a=31+29+31+30+31+30+31+31+day;
+else if(month==10)
+ a=31+29+31+30+31+30+31+31+30+day;
+else if(month==11)
+ a=31+29+31+30+31+30+31+31+30+31+day;
+else if(month==12)
+a=31+29+31+30+31+30+31+31+30+31+30+day;
+}
+else 
+{
+if(month==1)
+a=day;
+else if(month==2)
+a=31+day;
+else if(month==3)
+a=31+28+day;
+else if(month==4)
+a=31+29+31+day;
+else if(month==5)
+a=31+29+31+30+day;
+else if(month==6)
+ a=31+29+31+30+31+day;
+else if(month==7)
+a=31+29+31+30+31+30+day;
+else if(month==8)
+a=31+29+31+30+31+30+31+day;
+else if(month==9)
+a=31+29+31+30+31+30+31+31+day;
+else if(month==10)
+a=31+29+31+30+31+30+31+31+30+day;
+else if(month==11)
+ a=31+29+31+30+31+30+31+31+30+31+day;
+else if(month==12)
+a=31+29+31+30+31+30+31+31+30+31+30+day;
+
+
+}
+
+
+printf(""该天是本年的第%d天"",a);
+ }",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ int varb_3;
+ scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+ if(varb_0%400==0&&varb_0%100!=0||varb_0%4==0)
+ {
+ if(varb_1==1)
+ varb_3=varb_2;
+else if(varb_1==2)
+ varb_3=31+varb_2;
+ else if(varb_1==3)
+ varb_3=31+29+varb_2;
+else if(varb_1==4)
+ varb_3=31+29+31+varb_2;
+else if(varb_1==5)
+ varb_3=31+29+31+30+varb_2;
+else if(varb_1==6)
+ varb_3=31+29+31+30+31+varb_2;
+else if(varb_1==7)
+ varb_3=31+29+31+30+31+30+varb_2;
+else if(varb_1==8)
+varb_3=31+29+31+30+31+30+31+varb_2;
+else if(varb_1==9)
+ varb_3=31+29+31+30+31+30+31+31+varb_2;
+else if(varb_1==10)
+ varb_3=31+29+31+30+31+30+31+31+30+varb_2;
+else if(varb_1==11)
+ varb_3=31+29+31+30+31+30+31+31+30+31+varb_2;
+else if(varb_1==12)
+varb_3=31+29+31+30+31+30+31+31+30+31+30+varb_2;
+}
+else 
+{
+if(varb_1==1)
+varb_3=varb_2;
+else if(varb_1==2)
+varb_3=31+varb_2;
+else if(varb_1==3)
+varb_3=31+28+varb_2;
+else if(varb_1==4)
+varb_3=31+29+31+varb_2;
+else if(varb_1==5)
+varb_3=31+29+31+30+varb_2;
+else if(varb_1==6)
+ varb_3=31+29+31+30+31+varb_2;
+else if(varb_1==7)
+varb_3=31+29+31+30+31+30+varb_2;
+else if(varb_1==8)
+varb_3=31+29+31+30+31+30+31+varb_2;
+else if(varb_1==9)
+varb_3=31+29+31+30+31+30+31+31+varb_2;
+else if(varb_1==10)
+varb_3=31+29+31+30+31+30+31+31+30+varb_2;
+else if(varb_1==11)
+ varb_3=31+29+31+30+31+30+31+31+30+31+varb_2;
+else if(varb_1==12)
+varb_3=31+29+31+30+31+30+31+31+30+31+30+varb_2;
+}
+printf(""该天是本年的第%d天"",varb_3);
+ }",16,2c9f30a56e1ebafc016e40b391581c2b_20.csv
+21,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+  if(b==3)
+  { sum=31+29+c;
+   printf(""该天是本年的第%d天"",sum);
+   }
+   else
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+  if(varb_1==3)
+  { varb_8=31+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+   }
+   else
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_21.csv
+22,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=29)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=60+day;
+                if(mou==4&&day<=30)
+               return day=91+day;
+                if(mou==5&&day<=31)
+               return day=121+day;
+               if(mou==6&&day<=30)
+               return day=152+day;
+               if(mou==7&&day<=31)
+               return day=182+day;
+               if(mou==8&&day<=31)
+               return day=213+day;
+               if(mou==9&&day<=30)
+               return day=244+day;
+               if(mou==10&&day<=31)
+               return day=274+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=334+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=90+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=151+day;
+               if(mou==7&&day<=31)
+               return day=181+day;
+               if(mou==8&&day<=31)
+               return day=212+day;
+               if(mou==9&&day<=30)
+               return day=243+day;
+               if(mou==10&&day<=31)
+               return day=273+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=334+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=29)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=60+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=91+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=121+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=182+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=213+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=274+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=334+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=181+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=212+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=273+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=334+varb_2;
+         }
+         return varb_2;
+}",34,2c9f30a56e1ebafc016e40b391581c2b_22.csv
+23,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b))
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1))
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_23.csv
+24,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b))
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1))
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_24.csv
+25,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int nian,yue,ri,tian,n,i;
+    scanf(""%d %d %d"",&nian,&yue,&ri);
+    if(nian%4==0&&nian%100!=0||nian%400==0)
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=2;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=182+(yue-7)*31-i+ri;
+        }
+        else
+            tian=182+(yue-7)*31+ri;
+
+    }
+    else
+    {
+        if(yue<7&&yue%2==0)
+        {
+            i=3;
+            i++;
+            tian=(yue-1)*31-i+ri;
+        }
+        else if(yue>8&&yue%2!=0)
+        {
+            i=0;
+            i++;
+            tian=181+(yue-7)*31-i+ri;
+        }
+        else
+            tian=181+(yue-6)*31+ri;
+
+	}
+    printf(""该天是本年的第%d天"",tian);
+    return 0;
+}",0.0,"#include<stdio.h>
+#define da 31
+#define xiao 30
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=2;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=182+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=182+(varb_1-7)*31+varb_2;
+    }
+    else
+    {
+        if(varb_1<7&&varb_1%2==0)
+        {
+            varb_5=3;
+            varb_5++;
+            varb_3=(varb_1-1)*31-varb_5+varb_2;
+        }
+        else if(varb_1>8&&varb_1%2!=0)
+        {
+            varb_5=0;
+            varb_5++;
+            varb_3=181+(varb_1-7)*31-varb_5+varb_2;
+        }
+        else
+            varb_3=181+(varb_1-6)*31+varb_2;
+	}
+    printf(""该天是本年的第%d天"",varb_3);
+    return 0;
+}",40,2c9f30a56e1ebafc016e40b391581c2b_25.csv
+26,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_26.csv
+27,2c9f30a56e1ebafc016e40b391581c2b,"#include <stdio.h>
+
+int nyear(int,int,int);
+int lyear(int,int,int);
+int iyear(int);
+int main()
+{
+  int x,y,z;
+   scanf(""%d %d %d"",&x,&y,&z);
+    if (iyear(x)==1)
+     printf(""该天是本年的第%d天"",nyear(x,y,z));
+    else
+     printf(""该天是本年的第%d天"",lyear(x,y,z));
+}
+
+int iyear(x)
+{
+  if(x%4==0&&x%100!=0||x%400==0)
+  return 0;
+  else
+  return 1;
+}
+
+int nyear(x,y,z)
+{
+  int s;
+  switch(y)
+    {
+     case 1:
+       s=z;
+       break;
+     case 2:
+       s=31+z;
+       break;
+     case 3:
+       s =31+28+z;
+       break;
+      case 4:
+       s=31+31+28+z;
+       break;
+      case 5:
+       s=31+31+28+30+z;
+       break;
+     case 6:
+       s=31+31+28+30+31+z;
+       break;
+     case 7:
+       s=31+31+28+30+31+30+z;
+       break;
+     case 8:
+       s=31+31+28+30+31+30+31+z;
+       break;
+     case 9:
+       s=31+31+28+30+31+30+31+31+z;
+       break;
+     case 10:
+       s=31+31+28+30+31+30+31+31+30+z;
+       break;
+     case 11:
+       s=31+31+28+30+31+30+31+31+30+31+z;
+       break;
+     case 12:
+       s=31+31+28+30+31+30+31+31+30+31+30+z;
+       break;       
+
+    }
+
+return s;
+
+}
+
+int lyear(x,y,z)
+{
+  int s;
+  switch(y)
+    {
+     case 1:
+       s=z;
+       break;
+     case 2:
+       s=31+z;
+       break;
+     case 3:
+       s =31+29+z;
+       break;
+      case 4:
+       s=31+31+29+z;
+       break;
+      case 5:
+       s=31+31+29+30+z;
+       break;
+     case 6:
+       s=31+31+29+30+31+z;
+       break;
+     case 7:
+       s=31+31+29+30+31+30+z;
+       break;
+     case 8:
+       s=31+31+29+30+31+30+31+z;
+       break;
+     case 9:
+       s=31+31+29+30+31+30+31+31+z;
+       break;
+     case 10:
+       s=31+31+29+30+31+30+31+31+30+z;
+       break;
+     case 11:
+       s=31+31+29+30+31+30+31+31+30+31+z;
+       break;
+     case 12:
+       s=31+31+29+30+31+30+31+31+30+31+30+z;
+       break;       
+
+    }
+
+return s;
+
+}
+",0.0,"#include <stdio.h>
+int nyear(int,int,int);
+int lyear(int,int,int);
+int iyear(int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(iyear(varb_0)==1)
+     printf(""该天是本年的第%d天"",nyear(varb_0,varb_1,varb_2));
+    else
+     printf(""该天是本年的第%d天"",lyear(varb_0,varb_1,varb_2));
+}
+int iyear(varb_0)
+{
+  if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+  return 0;
+  else
+  return 1;
+}
+int nyear(varb_0,varb_1,varb_2)
+{
+  int varb_3;
+  switch(varb_1)
+    {
+     case 1:
+       varb_3=varb_2;
+       break;
+     case 2:
+       varb_3=31+varb_2;
+       break;
+     case 3:
+       varb_3 =31+28+varb_2;
+       break;
+      case 4:
+       varb_3=31+31+28+varb_2;
+       break;
+      case 5:
+       varb_3=31+31+28+30+varb_2;
+       break;
+     case 6:
+       varb_3=31+31+28+30+31+varb_2;
+       break;
+     case 7:
+       varb_3=31+31+28+30+31+30+varb_2;
+       break;
+     case 8:
+       varb_3=31+31+28+30+31+30+31+varb_2;
+       break;
+     case 9:
+       varb_3=31+31+28+30+31+30+31+31+varb_2;
+       break;
+     case 10:
+       varb_3=31+31+28+30+31+30+31+31+30+varb_2;
+       break;
+     case 11:
+       varb_3=31+31+28+30+31+30+31+31+30+31+varb_2;
+       break;
+     case 12:
+       varb_3=31+31+28+30+31+30+31+31+30+31+30+varb_2;
+       break;       
+    }
+return varb_3;
+}
+int lyear(varb_0,varb_1,varb_2)
+{
+  int varb_3;
+  switch(varb_1)
+    {
+     case 1:
+       varb_3=varb_2;
+       break;
+     case 2:
+       varb_3=31+varb_2;
+       break;
+     case 3:
+       varb_3 =31+29+varb_2;
+       break;
+      case 4:
+       varb_3=31+31+29+varb_2;
+       break;
+      case 5:
+       varb_3=31+31+29+30+varb_2;
+       break;
+     case 6:
+       varb_3=31+31+29+30+31+varb_2;
+       break;
+     case 7:
+       varb_3=31+31+29+30+31+30+varb_2;
+       break;
+     case 8:
+       varb_3=31+31+29+30+31+30+31+varb_2;
+       break;
+     case 9:
+       varb_3=31+31+29+30+31+30+31+31+varb_2;
+       break;
+     case 10:
+       varb_3=31+31+29+30+31+30+31+31+30+varb_2;
+       break;
+     case 11:
+       varb_3=31+31+29+30+31+30+31+31+30+31+varb_2;
+       break;
+     case 12:
+       varb_3=31+31+29+30+31+30+31+31+30+31+30+varb_2;
+       break;       
+    }
+return varb_3;
+}
+",13,2c9f30a56e1ebafc016e40b391581c2b_27.csv
+28,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-1-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+   else;
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-1-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+   else;
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_28.csv
+29,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(a)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+   {
+   sum=(b-2-f)*30+(31*f)+28+c;
+   }
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_0)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+   {
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   }
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",15,2c9f30a56e1ebafc016e40b391581c2b_29.csv
+30,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=152+day;
+               if(mou==7&&day<=31)
+               return day=183+day;
+               if(mou==8&&day<=31)
+               return day=214+day;
+               if(mou==9&&day<=30)
+               return day=244+day;
+               if(mou==10&&day<=31)
+               return day=275+day;
+               if(mou==11&&day<=30)
+               return day=305+day;
+               if(mou==12&&day<=31)
+               return day=336+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=150+day;
+               if(mou==7&&day<=31)
+               return day=181+day;
+               if(mou==8&&day<=31)
+               return day=212+day;
+               if(mou==9&&day<=30)
+               return day=242+day;
+               if(mou==10&&day<=31)
+               return day=273+day;
+               if(mou==11&&day<=30)
+               return day=303+day;
+               if(mou==12&&day<=31)
+               return day=334+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=183+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=214+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=275+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=305+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=336+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=150+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=181+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=212+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=242+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=273+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=303+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=334+varb_2;
+         }
+         return varb_2;
+}",18,2c9f30a56e1ebafc016e40b391581c2b_30.csv
+31,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=29)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=60+day;
+                if(mou==4&&day<=30)
+               return day=90+day;
+                if(mou==5&&day<=31)
+               return day=121+day;
+               if(mou==6&&day<=30)
+               return day=151+day;
+               if(mou==7&&day<=31)
+               return day=182+day;
+               if(mou==8&&day<=31)
+               return day=213+day;
+               if(mou==9&&day<=30)
+               return day=243+day;
+               if(mou==10&&day<=31)
+               return day=274+day;
+               if(mou==11&&day<=30)
+               return day=304+day;
+               if(mou==12&&day<=31)
+               return day=335+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=150+day;
+               if(mou==7&&day<=31)
+               return day=181+day;
+               if(mou==8&&day<=31)
+               return day=212+day;
+               if(mou==9&&day<=30)
+               return day=242+day;
+               if(mou==10&&day<=31)
+               return day=273+day;
+               if(mou==11&&day<=30)
+               return day=303+day;
+               if(mou==12&&day<=31)
+               return day=334+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=29)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=60+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=121+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=182+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=213+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=274+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=335+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=150+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=181+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=212+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=242+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=273+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=303+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=334+varb_2;
+         }
+         return varb_2;
+}",20,2c9f30a56e1ebafc016e40b391581c2b_31.csv
+32,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int main()
+{
+int year,month,day,a,s;
+a=0;
+scanf(""%d %d %d"",&year,&month,&day);
+if((year%4==0&&year%100!=0)||year%400==0)
+{
+switch(month-1)
+{case 0:a=0;break;
+case 1:a=31;break;
+case 2:a=31+29;break;
+case 3:a=31+29+31;break;
+case 4:a=31+29+31+30;break;
+case 5:a=31+29+31+30+31;break;
+case 6:a=31+29+31+30+31+30;break;
+case 7:a=31+29+31+30+31+30+31;break;
+case 8:a=31+29+31+30+31+30+31+31;break;
+case 9:a=31+29+31+30+31+30+31+31+30;break;
+case 10:a=31+29+31+30+31+30+31+31+30+31;break;
+case 11:a=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:a=31+29+31+30+31+30+31+31+30+31+30+31;
+}
+}
+s=day+a;
+printf(""该天是本年的第%d天"",s);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+varb_3=0;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+{
+switch(varb_1-1)
+{case 0:varb_3=0;break;
+case 1:varb_3=31;break;
+case 2:varb_3=31+29;break;
+case 3:varb_3=31+29+31;break;
+case 4:varb_3=31+29+31+30;break;
+case 5:varb_3=31+29+31+30+31;break;
+case 6:varb_3=31+29+31+30+31+30;break;
+case 7:varb_3=31+29+31+30+31+30+31;break;
+case 8:varb_3=31+29+31+30+31+30+31+31;break;
+case 9:varb_3=31+29+31+30+31+30+31+31+30;break;
+case 10:varb_3=31+29+31+30+31+30+31+31+30+31;break;
+case 11:varb_3=31+29+31+30+31+30+31+31+30+31+30;break;
+case 12:varb_3=31+29+31+30+31+30+31+31+30+31+30+31;
+}
+}
+varb_4=varb_2+varb_3;
+printf(""该天是本年的第%d天"",varb_4);
+}",23,2c9f30a56e1ebafc016e40b391581c2b_32.csv
+33,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int fact(int year,int mou,int day);
+int main()
+{
+    int year,mou,day,n;
+    scanf(""%d %d %d"",&year,&mou,&day);
+    printf(""该天是本年的第%d天"",fact(year, mou,day));
+}
+   int fact(int year,int mou,int day)
+{
+         if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=59+day;
+                if(mou==4&&day<=30)
+               return day=89+day;
+                if(mou==5&&day<=31)
+               return day=120+day;
+               if(mou==6&&day<=30)
+               return day=152+day;
+               if(mou==7&&day<=31)
+               return day=183+day;
+               if(mou==8&&day<=31)
+               return day=214+day;
+               if(mou==9&&day<=30)
+               return day=244+day;
+               if(mou==10&&day<=31)
+               return day=275+day;
+               if(mou==11&&day<=30)
+               return day=305+day;
+               if(mou==12&&day<=31)
+               return day=336+day;
+         }
+         else
+         {
+               if(mou==1&&day<=31)
+               return day;
+                if(mou==2&&day<=28)
+               return day=31+day;
+                if(mou==3&&day<=31)
+               return day=60-1+day;
+                if(mou==4&&day<=30)
+               return day=90-1+day;
+                if(mou==5&&day<=31)
+               return day=121-1+day;
+               if(mou==6&&day<=30)
+               return day=151-1+day;
+               if(mou==7&&day<=31)
+               return day=182-1+day;
+               if(mou==8&&day<=31)
+               return day=213-1+day;
+               if(mou==9&&day<=30)
+               return day=243-1+day;
+               if(mou==10&&day<=31)
+               return day=274-1+day;
+               if(mou==11&&day<=30)
+               return day=304-1+day;
+               if(mou==12&&day<=31)
+               return day=335-1+day;
+         }
+         return day;
+}",0.0,"#include<stdio.h>
+int func_0(int varb_0,int varb_1,int varb_2);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_6;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    printf(""该天是本年的第%d天"",func_0(varb_0, varb_1,varb_2));
+}
+   int func_0(int varb_0,int varb_1,int varb_2)
+{
+         if((varb_0 % 4 == 0 && varb_0 % 100 != 0) ||(varb_0 % 400 == 0))
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=59+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=89+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=120+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=152+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=183+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=214+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=244+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=275+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=305+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=336+varb_2;
+         }
+         else
+         {
+               if(varb_1==1&&varb_2<=31)
+               return varb_2;
+                if(varb_1==2&&varb_2<=28)
+               return varb_2=31+varb_2;
+                if(varb_1==3&&varb_2<=31)
+               return varb_2=60-1+varb_2;
+                if(varb_1==4&&varb_2<=30)
+               return varb_2=90-1+varb_2;
+                if(varb_1==5&&varb_2<=31)
+               return varb_2=121-1+varb_2;
+               if(varb_1==6&&varb_2<=30)
+               return varb_2=151-1+varb_2;
+               if(varb_1==7&&varb_2<=31)
+               return varb_2=182-1+varb_2;
+               if(varb_1==8&&varb_2<=31)
+               return varb_2=213-1+varb_2;
+               if(varb_1==9&&varb_2<=30)
+               return varb_2=243-1+varb_2;
+               if(varb_1==10&&varb_2<=31)
+               return varb_2=274-1+varb_2;
+               if(varb_1==11&&varb_2<=30)
+               return varb_2=304-1+varb_2;
+               if(varb_1==12&&varb_2<=31)
+               return varb_2=335-1+varb_2;
+         }
+         return varb_2;
+}",61,2c9f30a56e1ebafc016e40b391581c2b_33.csv
+34,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(b)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  }
+   else;
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_1)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  }
+   else;
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",26,2c9f30a56e1ebafc016e40b391581c2b_34.csv
+35,2c9f30a56e1ebafc016e40b391581c2b,"#include<stdio.h>
+int li(int);
+void zhang(int,int,int);
+int main()
+{
+  int a,b,c;
+  scanf(""%d  %d  %d"",&a,&b,&c);
+  zhang( a, b, c);
+  return 0;
+ }
+int li(int a)
+{ 
+  if((a%4==0&&a%100!=0)||(a%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void zhang(int a,int b,int c)
+{
+  int e,f=0,sum;
+  for(e=1;e<=c;e++)
+  {
+    if((e==1)||(e==3)||(e==5)||(e==7)||(e==8)||(e==10)||(e==12))
+    f++;
+   }
+  if(li(a)==1)
+  { sum=(b-2-f)*30+(31*f)+29+c;
+   printf(""该天是本年的第%d天"",sum);
+  } 
+   else
+  if(b==3)
+  { sum=31+28+c;
+   printf(""该天是本年的第%d天"",sum);}
+   sum=(b-2-f)*30+(31*f)+28+c;
+   printf(""该天是本年的第%d天"",sum);
+ }
+   ",0.0,"#include<stdio.h>
+int func_0(int);
+void func_1(int,int,int);
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d  %d  %d"",&varb_0,&varb_1,&varb_2);
+  func_1( varb_0, varb_1, varb_2);
+  return 0;
+ }
+int func_0(int varb_0)
+{ 
+  if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+  return 1;
+  else
+  return 0;
+ }
+void func_1(int varb_0,int varb_1,int varb_2)
+{
+  int varb_6,varb_7=0,varb_8;
+  for(varb_6=1;varb_6<=varb_2;varb_6++)
+  {
+    if((varb_6==1)||(varb_6==3)||(varb_6==5)||(varb_6==7)||(varb_6==8)||(varb_6==10)||(varb_6==12))
+    varb_7++;
+   }
+  if(func_0(varb_0)==1)
+  { varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+29+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+  } 
+   else
+  if(varb_1==3)
+  { varb_8=31+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);}
+   varb_8=(varb_1-2-varb_7)*30+(31*varb_7)+28+varb_2;
+   printf(""该天是本年的第%d天"",varb_8);
+ }
+",15,2c9f30a56e1ebafc016e40b391581c2b_35.csv

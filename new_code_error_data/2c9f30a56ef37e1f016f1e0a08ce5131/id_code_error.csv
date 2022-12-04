@@ -1,0 +1,1487 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+char *a[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+int n,b,c,d;
+scanf(""%d"",&n);
+b=n/100;
+printf(""%c"",a[3][b]);
+c=(n%100)/10;
+printf(""%c"",a[3][c]);
+d=n%10;
+printf(""%c"",a[3][d]);
+return 0;
+}
+
+
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+char *varb_0[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+int varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_1);
+varb_2=varb_1/100;
+printf(""%c"",varb_0[3][varb_2]);
+varb_3=(varb_1%100)/10;
+printf(""%c"",varb_0[3][varb_3]);
+varb_4=varb_1%10;
+printf(""%c"",varb_0[3][varb_4]);
+return 0;
+}
+",7
+1,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+
+int main()
+
+{
+
+  char *a[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+
+  int n,e,f,g;
+
+  scanf(""%d"",&n);
+
+  e=n % 10;
+
+  f = n / 10 % 10;
+
+  g = n / 100;
+  printf(""%s%s%s"",a[3][g],a[3][f],a[3][e]);
+}
+
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+  char *varb_0[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+  int varb_1,varb_2,varb_3,varb_4;
+  scanf(""%d"",&varb_1);
+  varb_2=varb_1 % 10;
+  varb_3 = varb_1 / 10 % 10;
+  varb_4 = varb_1 / 100;
+  printf(""%s%s%s"",varb_0[3][varb_4],varb_0[3][varb_3],varb_0[3][varb_2]);
+}
+",10
+2,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+    int n,i=0,a,b,ar[100],j,k,m;
+    int w[100],h,c,g;
+    for(h=0; h<3; h++)
+    {
+        scanf(""%d"",&w[h]);
+    }
+    g=h;
+    //for(h=0;h<3;h++)
+    //printf(""%d "",w[h]);
+    //printf(""%d\n"",g);
+    for(c=0; c<=g-1; c++)
+    {
+        while(w[c])
+        {
+            a=w[c]%10;
+            w[c]/=10;
+            ar[i]=a;
+            i++;
+        }
+        m=i;
+        //printf(""%d\n"",m);
+        for(j=m-1; j>=0; j--)
+        {
+            if(j==2)
+            {
+                if(ar[j]==1)
+                    printf(""C"");
+                if(ar[j]==2)
+                    printf(""CC"");
+                if(ar[j]==3)
+                    printf(""CCC"");
+                if(ar[j]==4)
+                    printf(""CD"");
+                if(ar[j]==5)
+                    printf(""D"");
+                if(ar[j]==6)
+                    printf(""DC"");
+                if(ar[j]==7)
+                    printf(""DCC"");
+                if(ar[j]==8)
+                    printf(""DCCC"");
+                if(ar[j]==9)
+                    printf(""CM"");
+            }
+            if(j==1)
+            {
+                if(ar[j]==1)
+                    printf(""X"");
+                if(ar[j]==2)
+                    printf(""XX"");
+                if(ar[j]==3)
+                    printf(""XXX"");
+                if(ar[j]==4)
+                    printf(""LX"");
+                if(ar[j]==5)
+                    printf(""X"");
+                if(ar[j]==6)
+                    printf(""XL"");
+                if(ar[j]==7)
+                    printf(""XLL"");
+                if(ar[j]==8)
+                    printf(""XLLL"");
+                if(ar[j]==9)
+                    printf(""XC"");
+            }
+            if(j==0)
+            {
+                if(ar[j]==1)
+                    printf(""I"");
+                if(ar[j]==2)
+                    printf(""II"");
+                if(ar[j]==3)
+                    printf(""III"");
+                if(ar[j]==4)
+                    printf(""IV"");
+                if(ar[j]==5)
+                    printf(""V"");
+                if(ar[j]==6)
+                    printf(""VI"");
+                if(ar[j]==7)
+                    printf(""VII"");
+                if(ar[j]==8)
+                    printf(""VIII"");
+                if(ar[j]==9)
+                    printf(""IX"");
+            printf(""\n"");
+            }i=0;
+        }
+    }
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1=0,varb_2,varb_3,varb_4[100],varb_5,varb_6,varb_7;
+    int varb_8[100],h,c,g;
+    for(h=0; h<3; h++)
+    {
+        scanf(""%d"",&varb_8[h]);
+    }
+    g=h;
+    for(c=0; c<=g-1; c++)
+    {
+        while(varb_8[c])
+        {
+            varb_2=varb_8[c]%10;
+            varb_8[c]/=10;
+            varb_4[varb_1]=varb_2;
+            varb_1++;
+        }
+        varb_7=varb_1;
+        for(varb_5=varb_7-1; varb_5>=0; varb_5--)
+        {
+            if(varb_5==2)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""C"");
+                if(varb_4[varb_5]==2)
+                    printf(""CC"");
+                if(varb_4[varb_5]==3)
+                    printf(""CCC"");
+                if(varb_4[varb_5]==4)
+                    printf(""CD"");
+                if(varb_4[varb_5]==5)
+                    printf(""D"");
+                if(varb_4[varb_5]==6)
+                    printf(""DC"");
+                if(varb_4[varb_5]==7)
+                    printf(""DCC"");
+                if(varb_4[varb_5]==8)
+                    printf(""DCCC"");
+                if(varb_4[varb_5]==9)
+                    printf(""CM"");
+            }
+            if(varb_5==1)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""X"");
+                if(varb_4[varb_5]==2)
+                    printf(""XX"");
+                if(varb_4[varb_5]==3)
+                    printf(""XXX"");
+                if(varb_4[varb_5]==4)
+                    printf(""LX"");
+                if(varb_4[varb_5]==5)
+                    printf(""X"");
+                if(varb_4[varb_5]==6)
+                    printf(""XL"");
+                if(varb_4[varb_5]==7)
+                    printf(""XLL"");
+                if(varb_4[varb_5]==8)
+                    printf(""XLLL"");
+                if(varb_4[varb_5]==9)
+                    printf(""XC"");
+            }
+            if(varb_5==0)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""I"");
+                if(varb_4[varb_5]==2)
+                    printf(""II"");
+                if(varb_4[varb_5]==3)
+                    printf(""III"");
+                if(varb_4[varb_5]==4)
+                    printf(""IV"");
+                if(varb_4[varb_5]==5)
+                    printf(""V"");
+                if(varb_4[varb_5]==6)
+                    printf(""VI"");
+                if(varb_4[varb_5]==7)
+                    printf(""VII"");
+                if(varb_4[varb_5]==8)
+                    printf(""VIII"");
+                if(varb_4[varb_5]==9)
+                    printf(""IX"");
+            printf(""\n"");
+            }varb_1=0;
+        }
+    }
+}
+",6
+3,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+int n,a1,b1,c1;
+scanf(""%d"",&n);
+a1=n/100;
+b1=n%100/10;
+c1=n%100%10;
+char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""}; 	 char *b[][10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+char *c[][10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+printf(""%s%s%s"",a[a1],b[b1],c[c1]);
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=varb_0%100/10;
+varb_3=varb_0%100%10;
+char *varb_4[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""}; 	 char *varb_5[][10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+char *varb_6[][10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+printf(""%s%s%s"",varb_4[varb_1],varb_5[varb_2],varb_6[varb_3]);
+}",6
+4,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+ char* gw[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* sw[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* bw[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int n; 
+ while (scanf(""%d"", &n) != EOF)//在while循环中以EOF作为文件结束标志
+ {
+  printf(""%s"",bw[n/100]);
+  printf(""%s"",sw[n/10]);
+  printf(""%s"",gw[n%10]);
+ }
+}",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* varb_0[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* varb_1[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* varb_2[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int varb_3; 
+ while(scanf(""%d"", &varb_3) != EOF)
+ {
+  printf(""%s"",varb_2[varb_3/100]);
+  printf(""%s"",varb_1[varb_3/10]);
+  printf(""%s"",varb_0[varb_3%10]);
+ }
+}",12
+5,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+
+int main()
+
+{
+
+  char *a[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+
+  int n,e,f,g;
+
+  scanf(""%d"",&n);
+
+  e=n % 10;
+
+  f = n / 10 % 10;
+
+  g = n / 100;
+
+  printf(""%s%s%s"",a[3][g],a[3][f],a[3][e]);
+
+}
+
+
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+  char *varb_0[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+  int varb_1,varb_2,varb_3,varb_4;
+  scanf(""%d"",&varb_1);
+  varb_2=varb_1 % 10;
+  varb_3 = varb_1 / 10 % 10;
+  varb_4 = varb_1 / 100;
+  printf(""%s%s%s"",varb_0[3][varb_4],varb_0[3][varb_3],varb_0[3][varb_2]);
+}
+",10
+6,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* a[10]={"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* b[10]={"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* c[10]={"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int n; 
+ scanf(""%d"",&n); 
+  printf(""%s"",a[n/100]);
+  printf(""%s"",b[n%100/10]);
+  printf(""%s"",c[n%10]);
+}",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* varb_0[10]={"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* varb_1[10]={"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* varb_2[10]={"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int varb_3; 
+ scanf(""%d"",&varb_3); 
+  printf(""%s"",varb_0[varb_3/100]);
+  printf(""%s"",varb_1[varb_3%100/10]);
+  printf(""%s"",varb_2[varb_3%10]);
+}",10
+7,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+main()
+{
+	char a[10][10]={""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char b[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char c[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCCC"",""CM""};
+	int i,n,ge,shi,bai;
+	scanf(""%d"",&n);
+	if(n<10)
+	{
+	ge=n;
+	printf(""%s"",a[ge-1]);	
+	}
+	else if(n>=10&&n<100)
+	{
+	shi=n/10;
+	ge=n%10;
+	printf(""%s%s"",a[shi-1],a[ge-1]);	
+	}
+	else if(n>=100)
+	{
+	bai=n/100;
+	shi=(n-bai*100)/10;
+	ge=n-shi*10-bai*100;
+	printf(""%s%s%s"",a[bai-1],a[shi-1],a[ge-1]);	
+	}
+	
+}",0.0,"#include<stdio.h>
+main()
+{
+	char varb_0[10][10]={""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char varb_1[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char varb_2[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCCC"",""CM""};
+	int varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_4);
+	if(varb_4<10)
+	{
+	varb_5=varb_4;
+	printf(""%s"",varb_0[varb_5-1]);	
+	}
+	else if(varb_4>=10&&varb_4<100)
+	{
+	varb_6=varb_4/10;
+	varb_5=varb_4%10;
+	printf(""%s%s"",varb_0[varb_6-1],varb_0[varb_5-1]);	
+	}
+	else if(varb_4>=100)
+	{
+	varb_7=varb_4/100;
+	varb_6=(varb_4-varb_7*100)/10;
+	varb_5=varb_4-varb_6*10-varb_7*100;
+	printf(""%s%s%s"",varb_0[varb_7-1],varb_0[varb_6-1],varb_0[varb_5-1]);	
+	}
+}",18
+8,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+	int n,d,f,g;
+	scanf(""%d"",&n);
+	char *a[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char *b[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char *c[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	if(n<10)
+	{
+	  printf(""%s"",a[n]);
+	}
+	if(n>=10&&n<100)
+	{
+		d=n%10;
+		f=n/10;
+		printf(""%s%s"",b[f],a[d]);
+	}
+	else
+	{
+		g=n/100;
+		d=n%10;
+		f=n/10;
+		printf(""%s%s%s"",c[g],b[f],a[d]);
+	}
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d"",&varb_0);
+	char *varb_4[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char *varb_5[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char *varb_6[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	if(varb_0<10)
+	{
+	  printf(""%s"",varb_4[varb_0]);
+	}
+	if(varb_0>=10&&varb_0<100)
+	{
+		varb_1=varb_0%10;
+		varb_2=varb_0/10;
+		printf(""%s%s"",varb_5[varb_2],varb_4[varb_1]);
+	}
+	else
+	{
+		varb_3=varb_0/100;
+		varb_1=varb_0%10;
+		varb_2=varb_0/10;
+		printf(""%s%s%s"",varb_6[varb_3],varb_5[varb_2],varb_4[varb_1]);
+	}
+}",9
+9,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+int a,b,c,d,i;
+scanf(""%d"",&a);
+b=a/100;
+c=a/10;
+d=((a%100)/10);
+for(i=0;i<b;i++)
+printf(""C"");
+for(i=0;i<d;i++)
+printf(""X"");
+for(i=0;i<c;i++)
+printf(""I"");
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=varb_0/10;
+varb_3=((varb_0%100)/10);
+for(varb_4=0;varb_4<varb_1;varb_4++)
+printf(""C"");
+for(varb_4=0;varb_4<varb_3;varb_4++)
+printf(""X"");
+for(varb_4=0;varb_4<varb_2;varb_4++)
+printf(""I"");
+}
+",7
+10,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+int n,a1,b1,c1;
+scanf(""%d"",&n);
+a1=n/100;
+b1=n%100/10;
+c1=n%100%10;
+char a[10][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""}; char b[10][10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+char c[10][10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+printf(""%s%s%s"",a[a1],b[b1],c[c1]);
+
+
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=varb_0%100/10;
+varb_3=varb_0%100%10;
+char varb_4[10][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""}; char varb_5[10][10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+char varb_6[10][10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+printf(""%s%s%s"",varb_4[varb_1],varb_5[varb_2],varb_6[varb_3]);
+}",6
+11,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+    int n,i=0,a,b,ar[100],j,k,m;
+    int w[100],h,c,g;
+    for(h=0; h<3; h++)
+    {
+        scanf(""%d"",&w[h]);
+    }
+    g=h;
+    //for(h=0;h<3;h++)
+    //printf(""%d "",w[h]);
+    //printf(""%d\n"",g);
+    for(c=0; c<=g-1; c++)
+    {
+        while(w[c])
+        {
+            a=w[c]%10;
+            w[c]/=10;
+            ar[i]=a;
+            i++;
+        }
+        m=i;
+        //printf(""%d\n"",m);
+        for(j=m-1; j>=0; j--)
+        {
+            if(j==2)
+            {
+                if(ar[j]==1)
+                    printf(""C"");
+                if(ar[j]==2)
+                    printf(""CC"");
+                if(ar[j]==3)
+                    printf(""CCC"");
+                if(ar[j]==4)
+                    printf(""CD"");
+                if(ar[j]==5)
+                    printf(""D"");
+                if(ar[j]==6)
+                    printf(""DC"");
+                if(ar[j]==7)
+                    printf(""DCC"");
+                if(ar[j]==8)
+                    printf(""DCCC"");
+                if(ar[j]==9)
+                    printf(""CM"");
+            }
+            if(j==1)
+            {
+                if(ar[j]==1)
+                    printf(""X"");
+                if(ar[j]==2)
+                    printf(""XX"");
+                if(ar[j]==3)
+                    printf(""XXX"");
+                if(ar[j]==4)
+                    printf(""LX"");
+                if(ar[j]==5)
+                    printf(""X"");
+                if(ar[j]==6)
+                    printf(""XL"");
+                if(ar[j]==7)
+                    printf(""XLL"");
+                if(ar[j]==8)
+                    printf(""XLLL"");
+                if(ar[j]==9)
+                    printf(""XC"");
+            }
+            if(j==0)
+            {
+                if(ar[j]==1)
+                    printf(""I"");
+                if(ar[j]==2)
+                    printf(""II"");
+                if(ar[j]==3)
+                    printf(""III"");
+                if(ar[j]==4)
+                    printf(""IV"");
+                if(ar[j]==5)
+                    printf(""V"");
+                if(ar[j]==6)
+                    printf(""VI"");
+                if(ar[j]==7)
+                    printf(""VII"");
+                if(ar[j]==8)
+                    printf(""VIII"");
+                if(ar[j]==9)
+                    printf(""IX"");
+            }i=0;
+        }if(c!=g-1)
+        printf(""\n"");
+    }
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1=0,varb_2,varb_3,varb_4[100],varb_5,varb_6,varb_7;
+    int varb_8[100],h,c,g;
+    for(h=0; h<3; h++)
+    {
+        scanf(""%d"",&varb_8[h]);
+    }
+    g=h;
+    for(c=0; c<=g-1; c++)
+    {
+        while(varb_8[c])
+        {
+            varb_2=varb_8[c]%10;
+            varb_8[c]/=10;
+            varb_4[varb_1]=varb_2;
+            varb_1++;
+        }
+        varb_7=varb_1;
+        for(varb_5=varb_7-1; varb_5>=0; varb_5--)
+        {
+            if(varb_5==2)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""C"");
+                if(varb_4[varb_5]==2)
+                    printf(""CC"");
+                if(varb_4[varb_5]==3)
+                    printf(""CCC"");
+                if(varb_4[varb_5]==4)
+                    printf(""CD"");
+                if(varb_4[varb_5]==5)
+                    printf(""D"");
+                if(varb_4[varb_5]==6)
+                    printf(""DC"");
+                if(varb_4[varb_5]==7)
+                    printf(""DCC"");
+                if(varb_4[varb_5]==8)
+                    printf(""DCCC"");
+                if(varb_4[varb_5]==9)
+                    printf(""CM"");
+            }
+            if(varb_5==1)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""X"");
+                if(varb_4[varb_5]==2)
+                    printf(""XX"");
+                if(varb_4[varb_5]==3)
+                    printf(""XXX"");
+                if(varb_4[varb_5]==4)
+                    printf(""LX"");
+                if(varb_4[varb_5]==5)
+                    printf(""X"");
+                if(varb_4[varb_5]==6)
+                    printf(""XL"");
+                if(varb_4[varb_5]==7)
+                    printf(""XLL"");
+                if(varb_4[varb_5]==8)
+                    printf(""XLLL"");
+                if(varb_4[varb_5]==9)
+                    printf(""XC"");
+            }
+            if(varb_5==0)
+            {
+                if(varb_4[varb_5]==1)
+                    printf(""I"");
+                if(varb_4[varb_5]==2)
+                    printf(""II"");
+                if(varb_4[varb_5]==3)
+                    printf(""III"");
+                if(varb_4[varb_5]==4)
+                    printf(""IV"");
+                if(varb_4[varb_5]==5)
+                    printf(""V"");
+                if(varb_4[varb_5]==6)
+                    printf(""VI"");
+                if(varb_4[varb_5]==7)
+                    printf(""VII"");
+                if(varb_4[varb_5]==8)
+                    printf(""VIII"");
+                if(varb_4[varb_5]==9)
+                    printf(""IX"");
+            }varb_1=0;
+        }if(c!=g-1)
+        printf(""\n"");
+    }
+}
+",6
+12,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+ char* gw[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* sw[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* bw[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int n, i, j; 
+ while (scanf(""%d"", &n) != EOF)
+ {
+  if (n < 1 || n > 3999)
+  {
+   printf(""1~3999\n"");
+   continue;
+  }
+  printf(""%s"", bw[n%1000/100]);
+  printf(""%s"", gw[n%100/10]);
+  printf(""%s\n"", sw[n%10]);
+ }
+}",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* varb_0[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* varb_1[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* varb_2[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int varb_3, varb_4, varb_5; 
+ while(scanf(""%d"", &varb_3) != EOF)
+ {
+  if(varb_3 < 1 || varb_3 > 3999)
+  {
+   printf(""1~3999\n"");
+   continue;
+  }
+  printf(""%s"", varb_2[varb_3%1000/100]);
+  printf(""%s"", varb_0[varb_3%100/10]);
+  printf(""%s\n"", varb_1[varb_3%10]);
+ }
+}",17
+13,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+ char* gw[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* sw[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* bw[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int n, i, j; 
+ while (scanf(""%d"", &n) != 0)
+ {
+  printf(""%s"",bw[n%1000/100]);
+  printf(""%s"",sw[n%100/10]);
+  printf(""%s"",gw[n%10]);
+ }
+}",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* varb_0[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* varb_1[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* varb_2[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int varb_3, varb_4, varb_5; 
+ while(scanf(""%d"", &varb_3) != 0)
+ {
+  printf(""%s"",varb_2[varb_3%1000/100]);
+  printf(""%s"",varb_1[varb_3%100/10]);
+  printf(""%s"",varb_0[varb_3%10]);
+ }
+}",9
+14,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h> 
+void main() 
+{   
+	static char *a[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};/*建立对照表*/   
+	int n,t,i,m; 
+   for(i=0;i<3;i++){ 
+   scanf(""%d"",&n);}
+   if(n<1000 && n>0)
+   {
+    for(m=0,i=1000;m<3;i/=10){
+    t=(n%i)/(i/10);
+   if(t==0)
+   {m++;}
+   else{
+    printf(""%s\n"",a[2-m][t]);
+    m++;}
+    }
+    }
+}",0.0,"#include<stdio.h> 
+void main() 
+{   
+	static char *varb_0[3][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};   
+	int varb_1,varb_2,varb_3,varb_4; 
+   for(varb_3=0;varb_3<3;varb_3++){ 
+   scanf(""%d"",&varb_1);}
+   if(varb_1<1000 && varb_1>0)
+   {
+    for(varb_4=0,varb_3=1000;varb_4<3;varb_3/=10){
+    varb_2=(varb_1%varb_3)/(varb_3/10);
+   if(varb_2==0)
+   {varb_4++;}
+   else{
+    printf(""%s\n"",varb_0[2-varb_4][varb_2]);
+    varb_4++;}
+    }
+    }
+}",15
+15,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+main()
+{
+	char a[10][10]={""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char b[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char c[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCCC"",""CM""};
+	int i,n,ge,shi,bai;
+	scanf(""%d"",&n);
+	if(n<10)
+	{
+	ge=n;
+	printf(""%s"",a[ge-1]);	
+	}
+	else if(n>=10&&n<100)
+	{
+	shi=n/10;
+	ge=n%10;
+	printf(""%s%s"",a[shi-1],a[ge-1]);	
+	}
+	else if(n>=100)
+	{
+	bai=n/100;
+	shi=(n-bai*100)/10;
+	ge=n-shi*10-bai*100;
+	printf(""%s%s%s"",a[bai-1],a[shi-1],a[ge-1]);	
+	}
+	
+}",0.0,"#include<stdio.h>
+main()
+{
+	char varb_0[10][10]={""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char varb_1[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char varb_2[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCCC"",""CM""};
+	int varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d"",&varb_4);
+	if(varb_4<10)
+	{
+	varb_5=varb_4;
+	printf(""%s"",varb_0[varb_5-1]);	
+	}
+	else if(varb_4>=10&&varb_4<100)
+	{
+	varb_6=varb_4/10;
+	varb_5=varb_4%10;
+	printf(""%s%s"",varb_0[varb_6-1],varb_0[varb_5-1]);	
+	}
+	else if(varb_4>=100)
+	{
+	varb_7=varb_4/100;
+	varb_6=(varb_4-varb_7*100)/10;
+	varb_5=varb_4-varb_6*10-varb_7*100;
+	printf(""%s%s%s"",varb_0[varb_7-1],varb_0[varb_6-1],varb_0[varb_5-1]);	
+	}
+}",4
+16,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+  char *a[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+  char *b[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+  char *c[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+  int n,x,y,z;
+  scanf(""%d"",&n);
+  x = n % 10;
+  y = n / 10 % 10;
+  z = n / 100;
+  printf(""%c%c%c"",c[z],b[y],a[x]);
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char *varb_0[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+  char *varb_1[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+  char *varb_2[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+  int varb_3,varb_4,varb_5,varb_6;
+  scanf(""%d"",&varb_3);
+  varb_4 = varb_3 % 10;
+  varb_5 = varb_3 / 10 % 10;
+  varb_6 = varb_3 / 100;
+  printf(""%c%c%c"",varb_2[varb_6],varb_1[varb_5],varb_0[varb_4]);
+}",12
+17,2c9f30a56ef37e1f016f1e0a08ce5131,"
+#include<stdio.h> 
+void main() 
+{   
+	static char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};/*建立对照表*/   
+	int n,t,i,m;
+	printf(""Please enter number:"");   
+	scanf(""%d"",&n);   
+	for(m=0,i=1000;m<3;m++,i/=10)   
+	{    
+		t=(n%i)/(i/10);    /*从高位向低位依次取各位的数字*/    
+		printf(""%s"",a[2-m][t]);   /*通过对照表翻译输出*/   
+	} 
+	
+	printf(""\n"");
+	
+}",0.0,"#include<stdio.h> 
+void main() 
+{   
+	static char *varb_0[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};   
+	int varb_1,varb_2,varb_3,varb_4;
+	printf(""Please enter number:"");   
+	scanf(""%d"",&varb_1);   
+	for(varb_4=0,varb_3=1000;varb_4<3;varb_4++,varb_3/=10)   
+	{    
+		varb_2=(varb_1%varb_3)/(varb_3/10);        
+		printf(""%s"",varb_0[2-varb_4][varb_2]);      
+	} 
+	printf(""\n"");
+}",6
+18,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+	int n,x,y,z;
+	char *a[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	 char *b[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *c[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+    scanf(""%d"",&n);
+    x=n/100;
+    printf(""%c"",*c[x]);
+    y=n/10%10;
+    printf(""%c"",*b[y]);
+    z=n%10;
+    printf(""%c"",*a[z]);
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	 char *varb_5[10]={"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *varb_6[10]={"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+    scanf(""%d"",&varb_0);
+    varb_1=varb_0/100;
+    printf(""%c"",*varb_6[varb_1]);
+    varb_2=varb_0/10%10;
+    printf(""%c"",*varb_5[varb_2]);
+    varb_3=varb_0%10;
+    printf(""%c"",*varb_4[varb_3]);
+    return 0;
+}",10
+19,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+int main()
+{
+ char *a[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *b[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *c[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int n,i,j,k;
+scanf(""%d"",&n);
+if(n>0&&n<10)
+    {
+        i=n;
+        j=0;
+        k=0;
+    }
+    else if(n>=10&&n<100)
+    {
+        i=n%10;
+        j=(n-i)/10;
+        k=0;
+    }
+    else if(n>=100&&n<1000)
+    {
+        i=n%10;
+        j=(n-i)%100/10;
+        k=n/100;
+    }
+    printf(""%s%s%s"",*c[k],*b[j],*a[i]);
+
+
+
+
+
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+ char *varb_0[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *varb_1[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *varb_2[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int varb_3,varb_4,varb_5,varb_6;
+scanf(""%d"",&varb_3);
+if(varb_3>0&&varb_3<10)
+    {
+        varb_4=varb_3;
+        varb_5=0;
+        varb_6=0;
+    }
+    else if(varb_3>=10&&varb_3<100)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)/10;
+        varb_6=0;
+    }
+    else if(varb_3>=100&&varb_3<1000)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)%100/10;
+        varb_6=varb_3/100;
+    }
+    printf(""%s%s%s"",*varb_2[varb_6],*varb_1[varb_5],*varb_0[varb_4]);
+}",26
+20,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[10][10]={""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char b[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char c[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int n;
+	scanf(""%d"",&n);
+	if(n<10)
+	{
+		printf(""%s"",a[n-1]);
+	}
+	if(n>=10&&n<100)
+	{
+		int g=n%10;
+		int s=n/10;
+		printf(""%s%s"",b[s-1],a[g-1]);
+	}
+	if(n>=100&&n<1000)
+	{
+		int ge=n%100;
+		int m=n/10;
+		int shi=m%10;
+		int bai=m/10;
+		printf(""%s%s%s"",c[bai-1],b[shi-1],a[ge-1]);
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[10][10]={""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char varb_1[10][10]={""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char varb_2[10][10]={""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int varb_3;
+	scanf(""%d"",&varb_3);
+	if(varb_3<10)
+	{
+		printf(""%s"",varb_0[varb_3-1]);
+	}
+	if(varb_3>=10&&varb_3<100)
+	{
+		int varb_4=varb_3%10;
+		int varb_5=varb_3/10;
+		printf(""%s%s"",varb_1[varb_5-1],varb_0[varb_4-1]);
+	}
+	if(varb_3>=100&&varb_3<1000)
+	{
+		int varb_6=varb_3%100;
+		int varb_7=varb_3/10;
+		int varb_8=varb_7%10;
+		int varb_9=varb_7/10;
+		printf(""%s%s%s"",varb_2[varb_9-1],varb_1[varb_8-1],varb_0[varb_6-1]);
+	}
+	return 0;
+}",22
+21,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h> 
+int main() 
+{   
+   char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int n,t,i,m; 
+	scanf(""%d"",&n); 
+	for(m=2,i=1000;m<3;m--,i/=10){    
+		t=(n%i)/(i/10);   
+		printf(""%s"",a[m][t]);  
+	} 
+}
+",0.0,"#include<stdio.h> 
+int main() 
+{   
+   char *varb_0[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int varb_1,varb_2,varb_3,varb_4; 
+	scanf(""%d"",&varb_1); 
+	for(varb_4=2,varb_3=1000;varb_4<3;varb_4--,varb_3/=10){    
+		varb_2=(varb_1%varb_3)/(varb_3/10);   
+		printf(""%s"",varb_0[varb_4][varb_2]);  
+	} 
+}
+",7
+22,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+ char* gw[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* sw[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* bw[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int n, i, j; 
+// while (scanf(""%d"", &n) != EOF)
+// {
+  printf(""%s"",bw[n%1000/100]);
+  printf(""%s"",sw[n%100/10]);
+  printf(""%s"",gw[n%10]);
+// }
+}",0.0,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char* varb_0[10] = {"""", ""I"", ""II"", ""III"", ""IV"", ""V"", ""VI"", ""VII"", ""VIII"", ""IX""};
+ char* varb_1[10] = {"""", ""X"", ""XX"", ""XXX"", ""XL"", ""L"", ""LX"", ""LXX"", ""LXXX"", ""XC""};
+ char* varb_2[10] = {"""", ""C"", ""CC"", ""CCC"", ""CD"", ""D"", ""DC"", ""DCC"", ""DCCC"", ""CM""};
+ int varb_3, varb_4, varb_5; 
+  printf(""%s"",varb_2[varb_3%1000/100]);
+  printf(""%s"",varb_1[varb_3%100/10]);
+  printf(""%s"",varb_0[varb_3%10]);
+}",8
+23,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+int a,b,c,d,i;
+scanf(""%d"",&a);
+b=a/100;
+c=a/10;
+d=((a%100)/10);
+for(i=1;i<=b;i++)
+printf(""C"");
+for(i=1;i<=d;i++)
+printf(""X"");
+for(i=1;i<=c;i++)
+printf(""I"");
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_1=varb_0/100;
+varb_2=varb_0/10;
+varb_3=((varb_0%100)/10);
+for(varb_4=1;varb_4<=varb_1;varb_4++)
+printf(""C"");
+for(varb_4=1;varb_4<=varb_3;varb_4++)
+printf(""X"");
+for(varb_4=1;varb_4<=varb_2;varb_4++)
+printf(""I"");
+}
+",7
+24,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+int main()
+{
+ char *a[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *b[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *c[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int n;
+scanf(""%d"",&n);
+
+
+
+
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+ char *varb_0[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *varb_1[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *varb_2[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int varb_3;
+scanf(""%d"",&varb_3);
+}",6
+25,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+int main()
+{
+ char *a[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *b[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *c[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int n,i,j,k,m;
+for(m=0;m<3;m++)
+scanf(""%d"",&n);
+if(n>0&&n<10)
+    {
+        i=n;
+        j=0;
+        k=0;
+    }
+    else if(n>=10&&n<100)
+    {
+        i=n%10;
+        j=(n-i)/10;
+        k=0;
+    }
+    else if(n>=100&&n<1000)
+    {
+        i=n%10;
+        j=(n-i)%100/10;
+        k=n/100;
+    }
+  for(m=0;m<3;m++)
+  printf(""%s%s%s"",*c[k],*b[j],*a[i]);
+
+
+
+
+return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+ char *varb_0[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *varb_1[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *varb_2[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int varb_3,varb_4,varb_5,varb_6,varb_7;
+for(varb_7=0;varb_7<3;varb_7++)
+scanf(""%d"",&varb_3);
+if(varb_3>0&&varb_3<10)
+    {
+        varb_4=varb_3;
+        varb_5=0;
+        varb_6=0;
+    }
+    else if(varb_3>=10&&varb_3<100)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)/10;
+        varb_6=0;
+    }
+    else if(varb_3>=100&&varb_3<1000)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)%100/10;
+        varb_6=varb_3/100;
+    }
+  for(varb_7=0;varb_7<3;varb_7++)
+  printf(""%s%s%s"",*varb_2[varb_6],*varb_1[varb_5],*varb_0[varb_4]);
+return 0;
+}",6
+26,2c9f30a56ef37e1f016f1e0a08ce5131,"#include <stdio.h>
+int main()
+{
+ char *a[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *b[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *c[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int n,i,j,k;
+
+scanf(""%d"",&n);
+if(n>0&&n<10)
+    {
+        i=n;
+        j=0;
+        k=0;
+    }
+    else if(n>=10&&n<100)
+    {
+        i=n%10;
+        j=(n-i)/10;
+        k=0;
+    }
+    else if(n>=100&&n<1000)
+    {
+        i=n%10;
+        j=(n-i)%100/10;
+        k=n/100;
+    }
+  
+  printf(""%s%s%s"",*c[k],*b[j],*a[i]);
+
+
+
+
+return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+ char *varb_0[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+    char *varb_1[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+    char *varb_2[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};int varb_3,varb_4,varb_5,varb_6;
+scanf(""%d"",&varb_3);
+if(varb_3>0&&varb_3<10)
+    {
+        varb_4=varb_3;
+        varb_5=0;
+        varb_6=0;
+    }
+    else if(varb_3>=10&&varb_3<100)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)/10;
+        varb_6=0;
+    }
+    else if(varb_3>=100&&varb_3<1000)
+    {
+        varb_4=varb_3%10;
+        varb_5=(varb_3-varb_4)%100/10;
+        varb_6=varb_3/100;
+    }
+  printf(""%s%s%s"",*varb_2[varb_6],*varb_1[varb_5],*varb_0[varb_4]);
+return 0;
+}",26
+27,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+int main()
+{
+	char *a[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char *b[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char *c[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int x,y,z;
+	int n; 
+    scanf(""%d"",&n);
+	{
+		x = n % 10;
+		y = n / 10 % 10;
+		z = n / 100;
+		
+	}
+    printf(""%c%c%c"",c[z],b[y],a[x]);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	char *varb_0[10]={"" "",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""};
+	char *varb_1[10]={"" "",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XC""};
+	char *varb_2[10]={"" "",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};
+	int varb_3,varb_4,varb_5;
+	int varb_6; 
+    scanf(""%d"",&varb_6);
+	{
+		varb_3 = varb_6 % 10;
+		varb_4 = varb_6 / 10 % 10;
+		varb_5 = varb_6 / 100;
+	}
+    printf(""%c%c%c"",varb_2[varb_5],varb_1[varb_4],varb_0[varb_3]);
+	return 0;
+}",15
+28,2c9f30a56ef37e1f016f1e0a08ce5131,"
+#include<stdio.h> 
+int main() 
+{   
+	static char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};/*建立对照表*/   
+	int n,t,i,m; 
+	scanf(""%d"",&n); /*输入整数*/
+	printf(""%d="",n);   
+	for(m=0,i=1000;m<3;m++,i/=10)   
+	{    
+		t=(n%i)/(i/10);    /*从高位向低位依次取各位的数字*/    
+		printf(""%s"",a[2-m][t]);   /*通过对照表翻译输出*/   
+	} 
+	
+	printf(""\n"");
+	}
+",0.0,"#include<stdio.h> 
+int main() 
+{   
+	static char *varb_0[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX"","""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"","""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""};   
+	int varb_1,varb_2,varb_3,varb_4; 
+	scanf(""%d"",&varb_1); 
+	printf(""%d="",varb_1);   
+	for(varb_4=0,varb_3=1000;varb_4<3;varb_4++,varb_3/=10)   
+	{    
+		varb_2=(varb_1%varb_3)/(varb_3/10);        
+		printf(""%s"",varb_0[2-varb_4][varb_2]);      
+	} 
+	printf(""\n"");
+	}
+",2
+29,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+enum Number {I,II};
+int main()
+{
+	char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""
+"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"",
+"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""
+};
+	int n,m;
+	scanf(""%d"",&n);
+	if(n/100>0)
+		{
+			m=n/100-1;
+			printf(""\n%d\n"",m);
+			printf(""%s"",a[2][m]);
+		}
+	if(n/10>0)
+		{
+			m=n/10-n/100*10-1;
+			printf(""\n%d\n"",m);
+			printf(""%s"",a[1][m]);
+		}
+	if(n>0)
+		{
+			m=n%10;
+			printf(""\n%d\n"",m);
+			printf(""%s"",a[0][m]);
+		}
+ } ",0.0,"#include<stdio.h>
+enum Number {I,II};
+int main()
+{
+	char *varb_0[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""
+"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"",
+"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""
+};
+	int varb_1,varb_2;
+	scanf(""%d"",&varb_1);
+	if(varb_1/100>0)
+		{
+			varb_2=varb_1/100-1;
+			printf(""\varb_1%d\n"",varb_2);
+			printf(""%s"",varb_0[2][varb_2]);
+		}
+	if(varb_1/10>0)
+		{
+			varb_2=varb_1/10-varb_1/100*10-1;
+			printf(""\varb_1%d\n"",varb_2);
+			printf(""%s"",varb_0[1][varb_2]);
+		}
+	if(varb_1>0)
+		{
+			varb_2=varb_1%10;
+			printf(""\varb_1%d\n"",varb_2);
+			printf(""%s"",varb_0[0][varb_2]);
+		}
+ } ",14
+30,2c9f30a56ef37e1f016f1e0a08ce5131,"#include<stdio.h>
+enum Number {I,II};
+int main()
+{
+	char *a[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""
+"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"",
+"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""
+};
+	int n,m;
+	scanf(""%d"",&n);
+	if(n/100>0)
+		{
+			m=n/100;
+			printf(""%s"",a[2][m]);
+		}
+	if(n/10>0)
+		{
+			m=n/10-n*10/100;
+			printf(""%s"",a[1][m]);
+		}
+	if(n>0)
+		{
+			m=n%10;
+			printf(""%s"",a[0][m]);
+		}
+ } ",0.0,"#include<stdio.h>
+enum Number {I,II};
+int main()
+{
+	char *varb_0[][10]={"""",""I"",""II"",""III"",""IV"",""V"",""VI"",""VII"",""VIII"",""IX""
+"""",""X"",""XX"",""XXX"",""XL"",""L"",""LX"",""LXX"",""LXXX"",""XCC"",
+"""",""C"",""CC"",""CCC"",""CD"",""D"",""DC"",""DCC"",""DCCC"",""CM""
+};
+	int varb_1,varb_2;
+	scanf(""%d"",&varb_1);
+	if(varb_1/100>0)
+		{
+			varb_2=varb_1/100;
+			printf(""%s"",varb_0[2][varb_2]);
+		}
+	if(varb_1/10>0)
+		{
+			varb_2=varb_1/10-varb_1*10/100;
+			printf(""%s"",varb_0[1][varb_2]);
+		}
+	if(varb_1>0)
+		{
+			varb_2=varb_1%10;
+			printf(""%s"",varb_0[0][varb_2]);
+		}
+ } ",13

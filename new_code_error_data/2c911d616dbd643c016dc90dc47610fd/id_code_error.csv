@@ -1,0 +1,614 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhansan\n1820xxxx 张三"") ;
+  
+
+    return 0;
+}",0.0,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhansan\n1820xxxx 张三"") ;
+    return 0;
+}",4
+1,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+
+
+int main()
+
+{
+
+    printf(""1820xxxx zhangsan/n"");
+    printf(""1820xxxx 张三/n"");
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    printf(""1820xxxx zhangsan/n"");
+    printf(""1820xxxx 张三/n"");
+    return 0;
+}",4
+2,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+printf(""1800xxx zhangsan"");
+printf(""\n1820xxxx  张三"");
+return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""1800xxx zhangsan"");
+printf(""\n1820xxxx  张三"");
+return 0;
+}",4
+3,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int  main()
+{
+  printf (""1820xxxx zhangsan"");
+  printf (""1820xxxx 张三"");
+  
+return 0;
+}",0.0,"#include <stdio.h>
+int  main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""1820xxxx 张三"");
+return 0;
+}",5
+4,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+    printf(""20201323 tanyizheng\n20201323 谭宜正"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    printf(""20201323 tanyizheng\n20201323 谭宜正"");
+    return 0;
+}",4
+5,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan/n"");
+printf(""1820xxxx 张三"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan/n"");
+printf(""1820xxxx 张三"");
+return 0;
+}",4
+6,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n 1820xxxx 张三"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n 1820xxxx 张三"");
+	return 0;
+}",4
+7,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""1820xxxx 张三"");
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""1820xxxx 张三"");
+  return 0;
+}",5
+8,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",5
+9,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820XXXX zhangsan\n"");
+	printf(""1820XXXX 张三"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820XXXX zhangsan\n"");
+	printf(""1820XXXX 张三"");
+	return 0;
+}",4
+10,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+printf(""\n1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""\n1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",4
+11,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan 1820xxxx 张三"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan 1820xxxx 张三"");
+	return 0;
+}",4
+12,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""/n1820xxxx 张三"");
+return 0;}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""/n1820xxxx 张三"");
+return 0;}",5
+13,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan /n1820xxxx 张三"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan /n1820xxxx 张三"");
+	return 0;
+}",4
+14,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""/n 1820xxxx 张三"");
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""/n 1820xxxx 张三"");
+  return 0;
+}",5
+15,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三\n"");
+return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三\n"");
+return 0;
+}",4
+16,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int  main()
+{
+printf (""1820xxxx zhangsan"");
+printf (""1820xxxx 张三"");
+return 0;
+}",0.0,"#include <stdio.h>
+int  main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",5
+17,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三/n"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三/n"");
+return 0;
+}",5
+18,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int main()
+{
+printf(""1800xxx zhangsan"");
+printf(""\n1820xxxx  张三"");
+return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""1800xxx zhangsan"");
+printf(""\n1820xxxx  张三"");
+return 0;
+}",4
+19,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+    printf(""20201323tanyizheng\n20201323谭宜正"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    printf(""20201323tanyizheng\n20201323谭宜正"");
+    return 0;
+}",4
+20,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+printf(""1800xxxx zhangsan\n"");
+printf(""1820xxxx 张三"");
+return 0;
+
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""1800xxxx zhangsan\n"");
+printf(""1820xxxx 张三"");
+return 0;
+}",4
+21,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int  main()
+{
+  printf (""1820xxxx zhangsan"");
+  printf (""1820xxxx 张三"");
+return 0;
+}",0.0,"#include <stdio.h>
+int  main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""1820xxxx 张三"");
+return 0;
+}",5
+22,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                            printf(""1820xxxx 张三\n"");
+	
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                            printf(""1820xxxx 张三\n"");
+}",4
+23,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+    printf(""20201414李安"");
+    return 0;
+  }
+",0.0,"#include <stdio.h>
+int main()
+{
+    printf(""20201414李安"");
+    return 0;
+  }
+",4
+24,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;}",5
+25,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""/n1820xxxx 张三"");
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""/n1820xxxx 张三"");
+  return 0;
+}",5
+26,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                              printf(""1820xxxx 张三"");
+	
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                              printf(""1820xxxx 张三"");
+}",4
+27,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan                                       1820xxxx 张三"");
+	
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan                                       1820xxxx 张三"");
+}",4
+28,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int  main()
+{
+printf (""1820xxxx zhangshan ,1820xxxx  张山"");
+return 0;
+}",0.0,"#include <stdio.h>
+int  main()
+{
+printf(""1820xxxx zhangshan ,1820xxxx  张山"");
+return 0;
+}",4
+29,2c911d616dbd643c016dc90dc47610fd,"
+#include<stdio.h>
+int main()
+
+{
+
+  printf(""\n1820xxxx zhangsan\n1820xxxx 张三"");
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""\n1820xxxx zhangsan\n1820xxxx 张三"");
+  return 0;
+}",1
+30,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int  main()
+{
+  printf (""1820xxxx zhangsan"");
+  printf (""1820xxxx 张三"");
+  
+  return 0;
+}",0.0,"#include <stdio.h>
+int  main()
+{
+  printf(""1820xxxx zhangsan"");
+  printf(""1820xxxx 张三"");
+  return 0;
+}",5
+31,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+int main()
+{printf(""1820xxxx zhangsan\n1802xxxx 张三"");
+
+}",0.0,"#include <stdio.h>
+int main()
+{printf(""1820xxxx zhangsan\n1802xxxx 张三"");
+}",3
+32,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                              printf(""1820xxxx 张三\n"");
+	
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan"");                                              printf(""1820xxxx 张三\n"");
+}",4
+33,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h>
+
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""1820xxxx 张三"");
+return 0;
+}",5
+34,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan\n"");
+  printf(""1820xxxz 张三"");
+  return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""1820xxxx zhangsan\n"");
+  printf(""1820xxxz 张三"");
+  return 0;
+}
+",5
+35,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhanshan"") ;
+    printf(""\n1820xxxx 张三"");
+
+    return 0;
+}",0.0,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhanshan"") ;
+    printf(""\n1820xxxx 张三"");
+    return 0;
+}",4
+36,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n1820xxxx 张三"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n1820xxxx 张三"");
+	return 0;
+}",4
+37,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxxzhangsan"");
+printf(""1820xxxx张三/n"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxxzhangsan"");
+printf(""1820xxxx张三/n"");
+return 0;
+}",4
+38,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan/n"");
+printf(""1820xxxx 张三"");
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan/n"");
+printf(""1820xxxx 张三"");
+return 0;
+}",4
+39,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""/n1820xxxx 张三"");
+
+return 0;}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxx zhangsan"");
+printf(""/n1820xxxx 张三"");
+return 0;}",5
+40,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820XXXX zhangsan"");
+	printf(""1820XXXX 张三\n"");
+	return 0;
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820XXXX zhangsan"");
+	printf(""1820XXXX 张三\n"");
+	return 0;
+}",4
+41,2c911d616dbd643c016dc90dc47610fd,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n1820xxxx 张三"");
+	
+}",0.0,"#include <stdio.h> 
+int main()
+{
+	printf(""1820xxxx zhangsan/n1820xxxx 张三"");
+}",3
+42,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxxzhangsan/n"");
+printf(""1820xxxx张三/n"");
+
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+printf(""1820xxxxzhangsan/n"");
+printf(""1820xxxx张三/n"");
+return 0;
+}",4
+43,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhansan\n1820xxxx 张三"") ;
+  
+
+    //return 0;
+}",0.0,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhansan\n1820xxxx 张三"") ;
+}",3
+44,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhanshan\n1820xxxx 张三"") ;
+  
+
+    return 0;
+}",0.0,"#include<stdio.h> 
+  int main()
+  { 
+    printf(""1820xxxx zhanshan\n1820xxxx 张三"") ;
+    return 0;
+}",4
+45,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+
+
+int main()
+
+{
+
+    printf(""1820xxxx zhangsan"");
+    printf(""1820xxxx 张三"");
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    printf(""1820xxxx zhangsan"");
+    printf(""1820xxxx 张三"");
+    return 0;
+}",5
+46,2c911d616dbd643c016dc90dc47610fd,"
+
+#include<stdio.h>
+int main()
+
+{
+
+  printf(""\n1820xxxxzhangsan\n1820xxxx张三"");
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  printf(""\n1820xxxxzhangsan\n1820xxxx张三"");
+  return 0;
+}",1
+47,2c911d616dbd643c016dc90dc47610fd,"#include<stdio.h>
+ int main()
+ {
+   printf(""1820xxxx zhansan\n1820xxxx 张三"");
+   return 0;
+}",0.0,"#include<stdio.h>
+ int main()
+ {
+   printf(""1820xxxx zhansan\n1820xxxx 张三"");
+   return 0;
+}",4

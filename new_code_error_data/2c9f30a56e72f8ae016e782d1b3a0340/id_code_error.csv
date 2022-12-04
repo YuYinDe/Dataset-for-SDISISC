@@ -1,0 +1,907 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+int main()
+{
+	char string1[40];
+	int i=0;
+    gets(string1);
+	while(string1[i]!='\0')
+	{
+	if(string1[i]<'z'&&string1[i]>'a')
+	{
+		string1[i]-=32;
+			
+	}
+    i++;
+	}
+	puts(string1);
+	return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+	char varb_0[40];
+	int varb_1=0;
+    gets(varb_0);
+	while(varb_0[varb_1]!='\0')
+	{
+	if(varb_0[varb_1]<'z'&&varb_0[varb_1]>'a')
+	{
+		varb_0[varb_1]-=32;
+	}
+    varb_1++;
+	}
+	puts(varb_0);
+	return 0;
+}",9
+1,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int b;
+	char a[30];
+    gets(a);
+    for(b=0;b<30;b++)
+    {
+    	toupper(a[b]);
+    	if(a[b]='/0')
+    	break;
+	}
+    puts(a);
+}",0.0,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int varb_0;
+	char varb_1[30];
+    gets(varb_1);
+    for(varb_0=0;varb_0<30;varb_0++)
+    {
+    	toupper(varb_1[varb_0]);
+    	if(varb_1[varb_0]='/0')
+    	break;
+	}
+    puts(varb_1);
+}",10
+2,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100]=""NchuChangHang"";
+	int i;
+	for(i=0;i<strlen(a);i++)
+	{
+	  if(a[i]>96&&a[i]<123)
+     {
+       a[i]=a[i]-32;
+       continue;
+     }
+    }  
+ printf(""%s"",a);
+ return 0;
+}",0.0,"#include <stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100]=""NchuChangHang"";
+	int varb_1;
+	for(varb_1=0;varb_1<strlen(varb_0);varb_1++)
+	{
+	  if(varb_0[varb_1]>96&&varb_0[varb_1]<123)
+     {
+       varb_0[varb_1]=varb_0[varb_1]-32;
+       continue;
+     }
+    }  
+ printf(""%s"",varb_0);
+ return 0;
+}",5
+3,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+#include<string.h>
+int main()
+{
+int i;
+char a[30];
+gets(a);
+for(i=1;i<strlen(a);i++)
+{
+if(a[i]>='a'&&a[i]<='z')
+a[i]=a[i]-32;
+}
+puts(a);
+return 0;
+}
+",0.0,"#include <stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0;
+char varb_1[30];
+gets(varb_1);
+for(varb_0=1;varb_0<strlen(varb_1);varb_0++)
+{
+if(varb_1[varb_0]>='a'&&varb_1[varb_0]<='z')
+varb_1[varb_0]=varb_1[varb_0]-32;
+}
+puts(varb_1);
+return 0;
+}
+",8
+4,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int b;
+	char a[30];
+    gets(a);
+    for(b=0;b<30;b++)
+    {
+    	toupper(a[b]);
+    	if(a[b]=='\0')
+    	break;
+	}
+    puts(a);
+}",0.0,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int varb_0;
+	char varb_1[30];
+    gets(varb_1);
+    for(varb_0=0;varb_0<30;varb_0++)
+    {
+    	toupper(varb_1[varb_0]);
+    	if(varb_1[varb_0]=='\0')
+    	break;
+	}
+    puts(varb_1);
+}",10
+5,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+ int i,n;
+ char str[30];
+ void convertToUpper(char str[]);
+ gets(str);
+convertToUpper(str);
+printf(""%c"",str);
+
+}
+void convertToUpper(char str[])
+{
+int i;
+for(i=0;str[i]!='\0';i++)
+str[i]=toupper(str[i]);
+}",0.0,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+ int varb_0,varb_1;
+ char varb_2[30];
+ void func_0(char varb_2[]);
+ gets(varb_2);
+func_0(varb_2);
+printf(""%c"",varb_2);
+}
+void func_0(char varb_2[])
+{
+int varb_0;
+for(varb_0=0;varb_2[varb_0]!='\0';varb_0++)
+varb_2[varb_0]=toupper(varb_2[varb_0]);
+}",10
+6,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char s[30];
+int i;
+gets(s);
+for(i=0;s[i]!='\0';i++);
+{
+if(s[i]>='a'&&s[i]<='z');
+{
+s[i]=s[i]-32;
+}
+}
+puts(s);
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[30];
+int varb_1;
+gets(varb_0);
+for(varb_1=0;varb_0[varb_1]!='\0';varb_1++);
+{
+if(varb_0[varb_1]>='a'&&varb_0[varb_1]<='z');
+{
+varb_0[varb_1]=varb_0[varb_1]-32;
+}
+}
+puts(varb_0);
+return 0;
+}
+",8
+7,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+#define MAXCHARS 30
+char str[MAXCHARS],n;
+gets(str);
+int i,a,b;
+i=0;
+b=strlen(str);
+for(a=0;a<b;a++)
+{
+n=toupper(str[a]);
+puts(n);
+}
+}
+  ",0.0,"#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+#define MAXCHARS 30
+char varb_0[MAXCHARS],n;
+gets(varb_0);
+int varb_1,varb_2,varb_3;
+varb_1=0;
+varb_3=strlen(varb_0);
+for(varb_2=0;varb_2<varb_3;varb_2++)
+{
+n=toupper(varb_0[varb_2]);
+puts(n);
+}
+}
+",15
+8,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{ char a[1000];
+  gets(a);
+  strupr(a);
+  puts(a);
+  }",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{ char varb_0[1000];
+  gets(varb_0);
+  strupr(varb_0);
+  puts(varb_0);
+  }",4
+9,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+int main()
+{
+	int i;
+	char a[30];
+	for(i=0;i<30;i++)
+	{
+		scanf(""%c"",&a[i]);
+		if(a[i]=='\n')
+		{
+			a[i]='\0';
+			break;
+		}
+		
+	}
+	for(i=0;i<30;i++)
+	{
+		if(a[i]>='a'&&a[i]<='z')
+		{
+			a[i]=a[i]-32;
+		}
+    }
+	for(i=0;i<30;i++)
+	{
+		printf(""%c"",a[i]);
+		if(a[i]=='\0')
+		break;
+	}
+	return 0;
+ } ",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0;
+	char varb_1[30];
+	for(varb_0=0;varb_0<30;varb_0++)
+	{
+		scanf(""%c"",&varb_1[varb_0]);
+		if(varb_1[varb_0]=='\n')
+		{
+			varb_1[varb_0]='\0';
+			break;
+		}
+	}
+	for(varb_0=0;varb_0<30;varb_0++)
+	{
+		if(varb_1[varb_0]>='a'&&varb_1[varb_0]<='z')
+		{
+			varb_1[varb_0]=varb_1[varb_0]-32;
+		}
+    }
+	for(varb_0=0;varb_0<30;varb_0++)
+	{
+		printf(""%c"",varb_1[varb_0]);
+		if(varb_1[varb_0]=='\0')
+		break;
+	}
+	return 0;
+ } ",24
+10,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+int main()
+{
+int i;
+char a[30];
+gets(a);
+for(i=1;i<30;i++)
+{
+if(a[i]>='a'&&a[i]<='z')
+a[i]=a[i]-32;
+}
+puts(a);
+return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0;
+char varb_1[30];
+gets(varb_1);
+for(varb_0=1;varb_0<30;varb_0++)
+{
+if(varb_1[varb_0]>='a'&&varb_1[varb_0]<='z')
+varb_1[varb_0]=varb_1[varb_0]-32;
+}
+puts(varb_1);
+return 0;
+}
+",7
+11,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int i;
+char s;
+char a[30];
+gets(a);
+
+for(i=0;i<30;i++)
+{
+s=a[i];
+printf(""%c"",a[i]);
+
+}
+
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0;
+char varb_1;
+char varb_2[30];
+gets(varb_2);
+for(varb_0=0;varb_0<30;varb_0++)
+{
+varb_1=varb_2[varb_0];
+printf(""%c"",varb_2[varb_0]);
+}
+return 0;
+}
+",9
+12,2c9f30a56e72f8ae016e782d1b3a0340,"#include <stdio.h>
+
+main()
+{
+	char s[30];
+	int i;
+	gets(s);
+    for(i=0;s[i];i++)
+     { 
+	    if(s[i]>'a'&&s[i]<'z')
+        {s[i]-=32;}
+    
+	}
+    puts(s);
+return 0;	
+ } ",0.0,"#include <stdio.h>
+main()
+{
+	char varb_0[30];
+	int varb_1;
+	gets(varb_0);
+    for(varb_1=0;varb_0[varb_1];varb_1++)
+     { 
+	    if(varb_0[varb_1]>'a'&&varb_0[varb_1]<'z')
+        {varb_0[varb_1]-=32;}
+	}
+    puts(varb_0);
+return 0;	
+ } ",9
+13,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char s[]=""wwwd"";
+printf(""%s"",strupr(s));
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[]=""wwwd"";
+printf(""%s"",strupr(varb_0));
+}",5
+14,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char s[]=""nchuChangHang"";
+printf(""%s"",strupr(s));
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[]=""nchuChangHang"";
+printf(""%s"",strupr(varb_0));
+}",5
+15,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	
+	char a[1000];
+    gets(a);
+	strlwr(a);
+	puts(a);
+	
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char varb_0[1000];
+    gets(varb_0);
+	strlwr(varb_0);
+	puts(varb_0);
+}",7
+16,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h> 
+#include<string.h>
+main()
+{
+	int i,len;
+	char a[30];
+	scanf(""%s"",&a);
+	len=strlen(a);
+	for(i=0;i<len;i++)
+	{
+	if((a[i]>'a')&&(a[i]<'z'))
+	{
+		a[i]=a[i]-32;
+	}
+	
+	}printf(""%s"",a);
+}",0.0,"#include<stdio.h> 
+#include<string.h>
+main()
+{
+	int varb_0,varb_1;
+	char varb_2[30];
+	scanf(""%s"",&varb_2);
+	varb_1=strlen(varb_2);
+	for(varb_0=0;varb_0<varb_1;varb_0++)
+	{
+	if((varb_2[varb_0]>'a')&&(varb_2[varb_0]<'z'))
+	{
+		varb_2[varb_0]=varb_2[varb_0]-32;
+	}
+	}printf(""%s"",varb_2);
+}",11
+17,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int i,n;
+char s[30];
+scanf(""%d"",&n);
+for(i=0;i<n;i++)
+scanf(""%c"",&s[i]);
+printf(""%s"",strupr(s));
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+char varb_2[30];
+scanf(""%d"",&varb_1);
+for(varb_0=0;varb_0<varb_1;varb_0++)
+scanf(""%c"",&varb_2[varb_0]);
+printf(""%s"",strupr(varb_2));
+}",9
+18,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+  #define MAXCHARS 30
+  char message[MAXCHARS];
+  void convertToUpper(char message[]);
+  }
+void convertToUpper(char message[])
+{
+int i;
+for(i=0;message[i]!='\0';i++)
+message[i]=toupper(message[i]);
+}
+",0.0,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+  #define MAXCHARS 30
+  char varb_0[MAXCHARS];
+  void func_0(char varb_0[]);
+  }
+void func_0(char varb_0[])
+{
+int varb_2;
+for(varb_2=0;varb_0[varb_2]!='\0';varb_2++)
+varb_0[varb_2]=toupper(varb_0[varb_2]);
+}
+",5
+19,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{char as[100],bs[100];int a,b=0;
+gets(as);
+for(a=0;as[a]!='\0';a++)
+{     if(('a'<=as[a])&&(as[a]<='z'))
+    bs[b++]=as[a]-32;}
+    bs[b]='\0';
+    puts(bs);}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{char varb_0[100],bs[100];int varb_1,varb_2=0;
+gets(varb_0);
+for(varb_1=0;varb_0[varb_1]!='\0';varb_1++)
+{     if(('a'<=varb_0[varb_1])&&(varb_0[varb_1]<='z'))
+    bs[varb_2++]=varb_0[varb_1]-32;}
+    bs[varb_2]='\0';
+    puts(bs);}",8
+20,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int b;
+	char a[30];
+    gets(a);
+    for(b=0;b<30;b++)
+    {
+    	toupper(a[b]);
+    	if(a[b]=='/0')
+    	break;
+	}
+    puts(a);
+}",0.0,"#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+	int varb_0;
+	char varb_1[30];
+    gets(varb_1);
+    for(varb_0=0;varb_0<30;varb_0++)
+    {
+    	toupper(varb_1[varb_0]);
+    	if(varb_1[varb_0]=='/0')
+    	break;
+	}
+    puts(varb_1);
+}",10
+21,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>  
+#include<stdlib.h>  
+#include<string.h>  
+#define N 100  
+int main()  
+{  
+    char a[N];  
+    int i;  
+    scanf(""%s"", a);  
+    for (i = 0; a[i] != '\0'; i++)  
+    {  
+        if ('A' <= a[i] &&a[i]<= 'Z')  
+            printf(""%c"", a[i] - 32);  
+
+        else  
+        printf(""%c"", a[i]);  
+    }  
+    return 0;  
+}  ",0.0,"#include<stdio.h>  
+#include<stdlib.h>  
+#include<string.h>  
+#define N 100  
+int main()  
+{  
+    char varb_0[N];  
+    int varb_1;  
+    scanf(""%s"", varb_0);  
+    for(varb_1 = 0; varb_0[varb_1] != '\0'; varb_1++)  
+    {  
+        if('A' <= varb_0[varb_1] &&varb_0[varb_1]<= 'Z')  
+            printf(""%c"", varb_0[varb_1] - 32);  
+        else  
+        printf(""%c"", varb_0[varb_1]);  
+    }  
+    return 0;  
+}  ",2
+22,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+int main()
+{
+    int i=0;
+    char a[100];
+    gets(a);
+    for(;a[i]!='\0';i++)
+        if(a[i]>='A'&&a[i]<='Z')
+              a[i]-=32;
+    puts(a);
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0=0;
+    char varb_1[100];
+    gets(varb_1);
+    for(;varb_1[varb_0]!='\0';varb_0++)
+        if(varb_1[varb_0]>='A'&&varb_1[varb_0]<='Z')
+              varb_1[varb_0]-=32;
+    puts(varb_1);
+    return 0;
+}",8
+23,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+int main()
+{
+  #define MAX 30
+  char s[MAX];
+  int i;
+  gets(s);
+  for(i=1;i<MAX;i++)
+    s[i]= s[i]>='a'&&s[i]<='z'? s[i]-32:s[i];
+  printf(""%s"",s);
+  return 0;
+}
+    ",0.0,"#include<stdio.h>
+int main()
+{
+  #define MAX 30
+  char varb_0[MAX];
+  int varb_1;
+  gets(varb_0);
+  for(varb_1=1;varb_1<MAX;varb_1++)
+    varb_0[varb_1]= varb_0[varb_1]>='a'&&varb_0[varb_1]<='z'? varb_0[varb_1]-32:varb_0[varb_1];
+  printf(""%s"",varb_0);
+  return 0;
+}
+",8
+24,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+void main()
+{
+  char a[30];
+  gets(a);
+  int i=0;
+  while(1)
+{
+  if(a[i]=='\0')
+  break;
+  else if(a[i]>='A'&&a[i]<='Z')
+  {a[i]=a[i]+32;
+  i++;}
+  else
+ { a[i]=a[i]-32;
+ i ++;}
+}
+puts(a);
+}
+  ",0.0,"#include<stdio.h>
+void main()
+{
+  char varb_0[30];
+  gets(varb_0);
+  int varb_1=0;
+  while(1)
+{
+  if(varb_0[varb_1]=='\0')
+  break;
+  else if(varb_0[varb_1]>='A'&&varb_0[varb_1]<='Z')
+  {varb_0[varb_1]=varb_0[varb_1]+32;
+  varb_1++;}
+  else
+ { varb_0[varb_1]=varb_0[varb_1]-32;
+ varb_1 ++;}
+}
+puts(varb_0);
+}
+",12
+25,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include <ctype.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+	scanf(""%s"",a);
+	int step=0;
+	for(step=0;step<strlen(a);step++)
+	{
+		toupper(a[step]);
+	}
+    printf(""%s"",a);
+}",0.0,"#include<stdio.h>
+#include <ctype.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+	scanf(""%s"",varb_0);
+	int varb_1=0;
+	for(varb_1=0;varb_1<strlen(varb_0);varb_1++)
+	{
+		toupper(varb_0[varb_1]);
+	}
+    printf(""%s"",varb_0);
+}",11
+26,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include <ctype.h>
+#include<string.h>
+int main()
+{
+	char a[100];
+	scanf(""%s"",a);
+	int step=0;
+	for(step=0;step<strlen(a);step++)
+	{
+		tolower(a[step]);
+	}
+}",0.0,"#include<stdio.h>
+#include <ctype.h>
+#include<string.h>
+int main()
+{
+	char varb_0[100];
+	scanf(""%s"",varb_0);
+	int varb_1=0;
+	for(varb_1=0;varb_1<strlen(varb_0);varb_1++)
+	{
+		tolower(varb_0[varb_1]);
+	}
+}",11
+27,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+int main()
+{
+ char a[30];
+ puts(a);
+ strupr(a);
+ gets(a);
+ return 0;
+ }",0.0,"#include<stdio.h>
+int main()
+{
+ char varb_0[30];
+ puts(varb_0);
+ strupr(varb_0);
+ gets(varb_0);
+ return 0;
+ }",6
+28,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char text[30],change[30];
+scanf(""%d"",&text);
+strcpy(text,change);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[30],change[30];
+scanf(""%d"",&varb_0);
+strcpy(varb_0,change);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",6
+29,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char text[30],change[30];
+scanf(""%d"",&text);
+strcpy(change,text);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[30],change[30];
+scanf(""%d"",&varb_0);
+strcpy(change,varb_0);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",6
+30,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char s[100];
+   gets(s);
+   printf(""%s"",strlwr(s));
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  char varb_0[100];
+   gets(varb_0);
+   printf(""%s"",strlwr(varb_0));
+}",7
+31,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char text[30],change[30];
+
+scanf(""%s"",&text);
+strcpy(text,change);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[30],change[30];
+scanf(""%s"",&varb_0);
+strcpy(varb_0,change);
+strupr(change);
+printf(""%s"",change);
+return 0;
+}",7
+32,2c9f30a56e72f8ae016e782d1b3a0340,"#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+int i;
+char s;
+char a[30];
+gets(a);
+
+for(i=0;i<30;i++)
+{
+s=a[i];
+printf(""%c"",toupper(s));
+
+}
+
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0;
+char varb_1;
+char varb_2[30];
+gets(varb_2);
+for(varb_0=0;varb_0<30;varb_0++)
+{
+varb_1=varb_2[varb_0];
+printf(""%c"",toupper(varb_1));
+}
+return 0;
+}
+",9

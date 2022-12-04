@@ -1,0 +1,1096 @@
+,id,code,is_true,errorline
+0,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>'a'&&varb_0<'z')
+{
+printf(""The character just entered is varb_0 lowercase letter"");
+}
+else
+printf(""The character just entered is not varb_0 lowercase letter"");
+return 0;
+}
+",0.0,6
+1,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>=97&&varb_0<=122)
+        printf(""The character just entered is varb_0 lowercase letter"");
+    else
+        printf(""The character just ertered is not varb_0 lowercase letter"");
+}",0.0,2
+2,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z');
+printf(""the varb_0 just entered is a lowercase letter"");
+printf(""\nthe varb_0 just entered is not a lowercase letter"");
+}",0.0,6
+3,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0==varb_0-32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,5
+4,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+{  
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if('a'<=varb_0<='z')
+    printf(""The character just entered is varb_0 lowercase letter""); 
+  else
+    printf(""The character just entered is not varb_0 lowercase letter"");
+  return 0;
+}
+",0.0,2
+5,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+	char varb_0;
+	scanf(""%c"",&varb_0);
+	if(varb_0-97>=0)
+	printf(""The character just entered is not varb_0 lowercase letter"");
+	else 
+	 printf(""The character just entered is varb_0 lowercase letter"");
+}",0.0,4
+6,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+  printf(""The varb_0 just entered is not a lowercase letter"");
+  else
+  printf(""The charaecter  just entered is a lowercase letter"");
+  return 0;
+  }",0.0,3
+7,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+   {char varb_0;
+       scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+       {printf(""The character just entered is  not varb_0 lowercase letter"");
+}
+  else {printf(""The character just entered is lowercase letter"");}
+}
+",0.0,3
+8,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>=97&&varb_0<=122)
+        printf(""The varb_0 just entered is a lowercase letter"");
+    else
+        printf(""The varb_0 just ertered is not a lowercase letter"");
+}",0.0,9
+9,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+  char varb_0;
+   scanf(""%d"",&varb_0);
+  if(varb_0-97>=0)
+    printf(""The character just entered is varb_0 lowercase letter"");
+  else
+    printf(""The character just entered is not varb_0 lowercase letter"");
+  return 0;
+}",0.0,5
+10,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if(varb_1<=varb_0<=varb_2)
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+11,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+ char  varb_0,varb_1,varb_2;
+ scanf(""%c"",&varb_0);
+ if(varb_0>=varb_1&&varb_0<=varb_2)
+ printf(""The character just entered is varb_1 lowercase letter"");
+ else
+  printf(""The character just entered is not varb_1 lowercase letter"");
+}
+",0.0,6
+12,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+char varb_0;
+scanf(""a"");
+if('a'<=varb_0&&varb_0<='z')
+printf(""The character just entered is varb_0 lowercase letter"");
+else
+printf("" The character just entered is not varb_0 lowercase letter"");
+return 0;
+}
+",0.0,4
+13,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+  printf(""The character just entered is a lowercase letter"");
+  else
+  printf(""The character just entered is not a lowercase letter"");
+  return 0;
+  }",0.0,4
+14,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0-97>=0)
+   printf(""The character just entered is varb_0 lowercase letter"");
+  else
+  printf(""The character just entered is not varb_0 lowercase letter."");
+}",0.0,9
+15,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{char varb_0;
+  scanf(""%c"",varb_0);
+  if(varb_0<90)
+  printf(""The character just entered is varb_0 lowercase letter"");
+  else
+  printf(""The character just entered is not varb_0 lowercase letter"");
+  return 0;
+}",0.0,3
+16,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+void main()
+{
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if('a'>='a'&&'a'<='z')
+  { 
+     printf(""The character just entered is varb_0 lowercase letter"");
+  }
+  else
+  {
+     printf(""The character just entered is not varb_0 lowercase letter"");
+  }
+}",0.0,6
+17,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is a lowercase letter."");
+     else
+     printf(""The character just entered is not a lowercase letter."");
+   return 0;
+}
+",0.0,4
+18,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+printf(""the varb_0 just entered is a lowercase letter"");
+else
+printf(""the varb_0 just entered is not a lowercase letter"");
+return 0;
+}",0.0,7
+19,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1,varb_2;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is varb_1 lowercase letter"");
+else
+   printf(""The character just entered is varb_1 not lowercase letter"");
+return 0;
+}",0.0,9
+20,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if(varb_1<=varb_0||varb_0<=varb_2)
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+21,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if('A'>='a'&&'A'<='z')
+  { 
+     printf(""The character just entered is a lowercase letter"");
+  }
+  else
+  {
+     printf(""The character just entered is not a lowercase letter"");
+  }
+}",0.0,2
+22,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+   {char varb_0;
+       scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+       {printf(""The character just entered is varb_0 lowercase letter"");
+}
+  else {printf(""The character just entered is not lowercase letter"");}
+}
+",0.0,2
+23,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0==varb_0+32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4
+24,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(""a<90"")
+ printf(""The character just entered is varb_0 lowercase letter"");
+else
+ printf(""The character just entered is not varb_0 lowercase letter"");
+ }",0.0,6
+25,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{  char varb_0;
+    scanf(""%c"",&varb_0);
+    if('a'<=varb_0||varb_0<='z')
+    printf(""The varb_0 just entered is a lowercase letter"",varb_0);
+    else
+    printf(""The varb_0 just entered is not a lowercase letter"",varb_0);
+return 0;
+} 
+",0.0,3
+26,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+    printf(""The character just entered is a lowercase letter"");
+else
+   printf(""The character just is not a lowercase letter"");
+return 0;
+}",0.0,6
+27,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+  printf(""The varb_0 just entered is not a lowercase letter"");
+  else
+  printf(""The charaecter  just entered is a lowercase letter"");
+  return 0;
+  }",0.0,3
+28,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is a lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not a lowercase letter"");
+    return 0;
+}",0.0,6
+29,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+   char varb_0;
+   if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is a lowercase letter"");
+   else
+   printf(""The character just entered is not a lowercase letter"");
+   return 0;
+  }",0.0,4
+30,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if('A'<=varb_0 && varb_0<='z')
+printf(""The character just entered is a lowercase letter"");
+else
+printf(""The character just entered is not a lowercase letter"");
+return 0;
+}",0.0,4
+31,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0<90)
+  printf(""The character just entered is not varb_0 lowercase letter"");
+  else
+  printf(""The character just entered is varb_0 lowercase letter"");
+}",0.0,3
+32,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>=97&&varb_0<=122)
+printf(""The character just entered is varb_0 lowercase letter"");
+else
+printf(""The character just entered is not varb_0 lowercase letter"");
+}",0.0,5
+33,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{char varb_0;
+  scanf(""%c"",varb_0);
+  if(varb_0<90)
+  printf(""The character just entered is a lowercase letter"");
+  else
+  printf(""The character just entered is not a lowercase letter"");
+  return 0;
+}",0.0,3
+34,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+printf(""the varb_0 just entered is a lowercase letter"");
+else
+printf(""the varb_0 just entered is not a lowercase letter"");
+}",0.0,7
+35,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0;
+	scanf(""%c"",&varb_0);
+	if(varb_0>=97 || varb_0<=122)
+	printf(""The character just entered is varb_0 lowercase letter"");
+	else
+	printf(""The character just entered is not varb_0 lowercase letter"");
+	return 0;
+}",0.0,4
+36,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if('A'<=varb_0&&varb_0<='z')
+        printf(""The varb_0 just entered is a lowercase letter"");
+    else
+        printf(""The varb_0 just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+37,2c911d616dd52a5e016de9bd79dc14ab,"#include<ctype.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(isupper(varb_0))printf(""The character just entered is not a lowercase letter"");
+else printf(""The character just entered is a lowercase letter"");
+return 0;
+}",0.0,1
+38,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0>'a'&&varb_0<'z')
+   printf(""The character just entered is a lowercase letter"");
+   else
+   printf(""The character just entered is not a lowercase letter"");
+   return 0;
+ }
+",0.0,6
+39,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if(varb_0>=varb_1&&varb_0<=varb_2)
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+40,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+   {char varb_0;
+       scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+       {printf(""The character just entered is varb_0 lowercase letter"");
+}
+  else {printf(""The character just entered is not lowercase letter"");}
+}
+",0.0,2
+41,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0==varb_0-32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4
+42,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1,varb_2;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is varb_1 lowercase letter"");
+if(varb_0>='A'&&varb_0<='Z')
+   printf(""The character just entered is varb_1 not lowercase letter"");
+return 0;
+}",0.0,4
+43,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if('A'<=varb_0&&varb_0<='z')
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}",0.0,6
+44,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<90)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4
+45,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if('a'>='a'&&'a'<='z')
+  { 
+     printf(""The character just entered is varb_0 lowercase letter"");
+  }
+  else
+  {
+     printf(""The character just entered is not varb_0 lowercase letter"");
+  }
+}",0.0,2
+46,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+  printf(""The character just entered is a lowercase letter."");
+  else
+  printf(""The character just entered is a lowercase letter"");
+  return 0;
+  }",0.0,7
+47,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if((varb_0>='A')&&(varb_0<='Z'))
+     printf(""The character just entered is not a lowercase letter"");
+    else
+     printf(""The character just entered is not a lowercase letter"");
+}",0.0,7
+48,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a'&&varb_0<='z')
+    printf(""The varb_0 just entered is not a lowercase letter"");
+    else
+    printf(""The varb_0 just entered is a lowercase letter"");
+    return 0;
+  }
+",0.0,3
+49,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0==varb_0-32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,5
+50,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0==varb_0+32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,5
+51,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if('a'<=varb_0&&varb_0<='z')
+   printf(""The varb_0 just entered is a lowercase letter"");
+  else
+  printf(""The varb_0 just entered is not a lowercase letter"");
+  return 0;
+}",0.0,4
+52,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a')
+    printf(""The character just entered is a lowercase letter"");
+    if(varb_0<='z')
+    printf(""The character just entered is not a lowercase letter"");
+    return 0;
+}",0.0,4
+53,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(""a<90"")
+ printf(""The character just entered is not varb_0 lowercase letter"");
+else
+ printf(""The character just entered is varb_0 lowercase letter"");
+ }",0.0,6
+54,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+{  
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if('a'<=varb_0<='z')
+    printf(""The character just entered is varb_0 lowercase letter""); 
+  else
+    printf(""The character just entered is not varb_0 lowercase letter"");
+}
+",0.0,2
+55,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+  printf(""The character just entered is a lowercase letter"");
+  else
+  printf(""The character just entered is a lowercase letter"");
+  return 0;
+  }",0.0,7
+56,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a' && varb_0<='z')
+    printf(""The varb_0 just entered is not a lowercase letter"");
+    else
+    printf(""The varb_0 just entered is a lowercase letter"");
+    return 0;
+  }
+",0.0,3
+57,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(""a>90"")
+ printf(""The character just entered is varb_0 lowercase letter"");
+else
+ printf(""The character just entered is not varb_0 lowercase letter"");
+ }",0.0,6
+58,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0-97>=0)
+   printf(""The character just entered is varb_0 lowercase letter"");
+  else
+  printf(""The character just entered is not varb_0 lowercase letter."");
+}",0.0,9
+59,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int  main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0<90)
+printf(""The character just entered is  not varb_0 loweecase letter"");
+else
+printf(""The character just entered is varb_0 lowercase letter"");
+}",0.0,7
+60,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+   {char varb_0;
+       scanf(""%c"",&varb_0);
+  if(varb_0>='a'&&varb_0<='z')
+       {printf(""The character just entered is varb_0 lowercase letter"");
+}
+  else {printf(""The character just entered is not lowercase letter"");}
+}
+",0.0,3
+61,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is a lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not a lowercase letter"");
+    return 0;
+}",0.0,5
+62,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a'&&varb_0<='z')
+    printf(""%c"",varb_0);
+    else
+    printf(""The character just entered is a lowercase letter"");
+    return 0;
+}",0.0,4
+63,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1,varb_2, varb_3, varb_4;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is varb_1 lowercase letter"");
+else
+   printf(""The character just entered is varb_1 not lowercase letter"");
+return 0;
+}",0.0,9
+64,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+  printf(""The varb_0  just  entered  is  not a lowercase letter"");
+  else
+  printf(""The charaecter   just  entered is a lowercase letter"");
+  return 0;
+  }",0.0,3
+65,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+  char varb_0;
+   scanf(""%d"",&varb_0);
+  if(varb_0-97>=0)
+    printf(""The character just entered is varb_0 lowercase letter"");
+  else
+    printf(""The character just entered is not varb_0 lowercase letter"");
+}",0.0,5
+66,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+  if('a'<=varb_0&&varb_0<='z')
+  {
+   printf(""The varb_0 just entered is a lowercase letter"",varb_0);
+   }
+  else
+  {
+  printf(""The varb_0 just entered is not a lowercase letter"",varb_0);
+  }
+  return 0;
+}",0.0,4
+67,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+  printf(""The varb_0  just  entered  is  not a lowercase letter"");
+  else
+  printf(""The charaecter is   just  enterd a lowercase letter"");
+  return 0;
+  }",0.0,3
+68,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+    return 0;
+}",0.0,5
+69,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%c"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+    return 0;
+}",0.0,6
+70,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a'&&varb_0<='z'){
+        printf(""The character just entered is a lowercase letter"");
+    }
+}",0.0,2
+71,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+  printf(""The varb_0   is  not a lowercase letter"");
+  else
+  printf(""The charaecter is  a lowercase letter"");
+  return 0;
+  }",0.0,3
+72,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0==varb_0+32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4
+73,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a'&&varb_0<='z')
+    printf(""%c"",varb_0);
+    else
+    printf(""The character just entered is varb_0 lowercase letter"");
+    return 0;
+}",0.0,4
+74,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+	char varb_0;
+	scanf(""%c"",&varb_0);
+	if(varb_0-97>=0)
+	printf(""the message The character just entered is not varb_0 lowercase letter"");
+	else 
+	 printf(""The character just entered is varb_0 lowercase letter"");
+}",0.0,4
+75,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1,varb_2, varb_3, varb_4;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+   printf(""The character just entered is varb_1 lowercase letter"");
+if(varb_0>='A'&&varb_0<='Z')
+   printf(""The character just entered is varb_1 not lowercase letter"");
+return 0;
+}",0.0,4
+76,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if(varb_1<=varb_0&&varb_0<=varb_2)
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+77,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%c"",&varb_0);
+   if(varb_0==varb_0-32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,5
+78,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+   char varb_0;
+   scanf(""%d"",&varb_0);
+  if('a'<=varb_0&&varb_0<='z')
+  {
+   printf(""The varb_0 just entered is a lowercase letter"",varb_0);
+   }
+  else
+  {
+  printf(""The varb_0 just entered is not a lowercase letter"",varb_0);
+  }
+  return 0;
+}",0.0,5
+79,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if((varb_0>='A')&&(varb_0<='Z'))
+     printf(""The character just entered is a lowercase letter"");
+    else
+     printf(""The character just entered is not a lowercase letter"");
+}",0.0,8
+80,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0,varb_1,varb_2;
+scanf(""%c"",&varb_0);
+if(varb_0>varb_1&&varb_0<varb_2)
+   printf(""The character just entered is varb_1 lowercase letter"");
+else
+   printf(""The character just entered is varb_1 not lowercase letter"");
+return 0;
+}",0.0,6
+81,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%c"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+}",0.0,4
+82,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%c"",&varb_0);
+    if('character'<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+    return 0;
+}",0.0,4
+83,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+void main()
+{
+    char varb_0;
+    scanf(""%c"",&varb_0);
+    if(varb_0>='a'&&varb_0<='z')
+        printf(""The varb_0 just entered is a lowercase letter"");
+    else
+        printf(""The varb_0 just ertered is not a lowercase letter"");
+}",0.0,2
+84,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%c"",&varb_0);
+    if('character'<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+    return 0;
+}",0.0,4
+85,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0,varb_1,varb_2;
+  scanf(""%c"",&varb_0);
+  if('c'>=varb_1,'c'<=varb_2)
+    printf(""The character just entered is varb_1 lowercase letter"");
+  else
+     printf(""The character just entered is not varb_1 lowercase letter"");
+   return 0;
+}",0.0,4
+86,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0;
+	scanf(""%c"",&varb_0);
+	if(varb_0>=97 || varb_0<=122)
+	printf(""The character just entered is varb_0 lowercase letter"");
+	else
+	printf(""The character just entered is not varb_0 lowercase letter"");
+	return 0;
+}",0.0,4
+87,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+printf(""the varb_0 just entered is a lowercase letter"");
+else
+printf(""the varb_0 just entered is not a lowercase letter"");
+}",0.0,7
+88,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{  
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if('a'<=varb_0<='z')
+    printf(""The varb_0 just entered is a lowercase letter""); 
+  else
+    printf(""The varb_0 just entered is not a lowercase letter"");
+  return 0;
+}
+",0.0,6
+89,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0,varb_1,varb_2;
+	scanf(""%c"",&varb_0);
+    if(varb_1<=varb_0<=varb_2)
+        printf(""The character just entered is a lowercase letter"");
+    else
+        printf(""The character just entered is not a lowercase letter"");
+	return 0;
+}
+",0.0,4
+90,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int  main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0<90)
+printf(""The character just entered is  not a loweecase letter"");
+else
+printf(""The character just entered is a lowercase letter"");
+}",0.0,7
+91,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{  char varb_0;
+    scanf(""%c"",&varb_0);
+    if('a'<=varb_0||varb_0<='z')
+    printf(""The varb_0 just entered is a lowercase letter"");
+    else
+    printf(""The varb_0 just entered is not a lowercase letter"");
+return 0;
+} 
+",0.0,3
+92,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+    char varb_0,varb_1,varb_2;
+    scanf(""%c"",&varb_0);
+    if(varb_0<='z'||varb_0>='a')
+      printf(""The varb_0 just entered is varb_1 lowercase letter"");
+    else
+      printf(""The varb_0 just entered is not varb_1 lowercase letter"");
+    return 0;
+}",0.0,6
+93,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<90)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4
+94,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+	char varb_0;
+	scanf(""%c"",&varb_0);
+    if('A'<=varb_0&&varb_0<='z')
+        printf(""The varb_0 just entered is a lowercase letter"");
+    else
+        printf(""The varb_0 just entered is not a lowercase letter"");
+	return 0;
+}",0.0,4
+95,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+    printf(""The character just entered is a lowercase letter"");
+if(varb_0>='A'&&varb_0<='Z')
+   printf(""The character just is not a lowercase letter"");
+return 0;
+}",0.0,7
+96,2c911d616dd52a5e016de9bd79dc14ab,"#include <stdio.h>
+int main()
+{
+char varb_0;
+scanf("""");
+if('a'<=varb_0&&varb_0<='z')
+printf(""The character just entered is varb_0 lowercase letter"");
+else
+printf("" The character just entered is not varb_0 lowercase letter"");
+return 0;
+}
+",0.0,5
+97,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if(varb_0>='A'&&varb_0<='Z')
+  printf(""The varb_0  just  entered  is  not a lowercase letter"");
+  else
+  printf(""The charaecter   just  enterd is a lowercase letter"");
+  return 0;
+  }",0.0,3
+98,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{  
+  char varb_0;
+  scanf(""%c"",&varb_0);
+  if('a'<=varb_0<='z')
+    printf(""The character just entered is varb_0 lowercase letter""); 
+  else
+    printf(""The character just entered is not varb_0 lowercase letter"");
+  return 0;
+}
+",0.0,6
+99,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z');
+printf(""the varb_0 just entered is a lowercase letter"");
+printf(""the varb_0 just entered is not a lowercase letter"");
+}",0.0,6
+100,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+int main()
+{
+char varb_0;
+scanf(""%c"",&varb_0);
+if(varb_0>='a'&&varb_0<='z')
+printf(""The character just entered is not a lowercase letter"");
+else
+printf(""The character just entered is a lowercase letter"");
+}",0.0,6
+101,2c911d616dd52a5e016de9bd79dc14ab,"#include<stdio.h>
+main(){
+   char varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0==varb_0-32)
+     printf(""The character just entered is not varb_0 lowercase letter"");
+   else
+     printf(""The character just entered is varb_0 lowercase letter"");
+     }",0.0,4

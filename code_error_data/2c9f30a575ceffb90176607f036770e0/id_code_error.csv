@@ -1,0 +1,1103 @@
+,id,code,is_true,errorline
+0,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;;varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+			break;
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,15
+1,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  int varb_7=0,varb_8;
+  char *varb_9;
+  varb_8=strlen(varb_0);
+  for(varb_7=0;varb_7<varb_8&&varb_0[varb_7]!=varb_1;varb_7++)
+   varb_9=&varb_0[varb_7];
+   for(;varb_7<varb_8;varb_7++)
+   {
+    printf(""%c"",varb_0[varb_7]);
+     if(varb_0[varb_7]==varb_2)
+     break;
+   }
+   printf(""\n"");
+   return varb_9;
+}
+",0.0,19
+2,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=8;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",0.0,15
+3,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0,*varb_8;
+	while(varb_0[varb_7]!='ch1')
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7]!='ch2';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	return *varb_8;
+}",0.0,15
+4,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c\n"",varb_2);
+ }
+ return varb_0-varb_7; 
+}
+",0.0,15
+5,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  char varb_7[varb_8]="""",*varb_9;
+  int varb_10,varb_11;
+  varb_10=0;varb_11=0;
+  while(*(varb_0+varb_10)!=varb_1)
+  varb_10++;
+  varb_9=varb_0+varb_10;
+  varb_7[varb_11]=*varb_9;
+  varb_10++;varb_11++;
+  while(*(varb_0+varb_10)!=varb_2)
+  {
+  varb_7[varb_11]=*(varb_0+varb_10);
+  varb_10++;varb_11++;
+  }
+  varb_7[varb_11]=*(varb_0+varb_10);
+  puts(varb_7);
+  return varb_9;
+}
+",0.0,18
+6,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+	return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			break;
+		}
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,15
+7,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+   int varb_7=0;
+    while(*varb_0!=varb_1&&*varb_0!='\0')
+      varb_0++;
+     for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+     {
+         if(*varb_0==varb_2)
+            break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+     }
+     printf(""%c"",varb_2);
+}",0.0,15
+8,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+   printf(""%s\n"",varb_7);
+    return varb_9;
+}",0.0,16
+9,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,17
+10,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include <string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	for(varb_7=0;(varb_7<strlen(varb_0))&&(varb_0[varb_7]!=varb_1);varb_7++)
+	{
+	    varb_8=&varb_0[varb_7];
+	    for(;varb_7<strlen(varb_0);varb_7++)
+	    {
+	    	printf(""%c"",varb_0[varb_7]);
+	    	if(varb_0[varb_7]==varb_2)
+	    	  break;
+	    }
+	    printf(""\n"");
+	}	
+   return varb_8;
+}",0.0,16
+11,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c\n"",varb_2);
+ }
+ else
+ printf(""\n"");
+ return varb_0-varb_7; 
+}
+",0.0,15
+12,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+	return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",0.0,15
+13,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=9;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",0.0,15
+14,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+              printf(""%c"",varb_2);
+         printf(""\n"");break;
+        }
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",0.0,26
+15,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",0.0,15
+16,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+         {     printf(""%c\n"",varb_2)
+        ;break;}
+        }
+         printf(""\n"");
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",0.0,25
+17,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+  char varb_7[varb_8]="""",*varb_9;
+  int varb_10,varb_11;
+  varb_10=0;varb_11=0;
+  while(*(varb_0+varb_10)!=varb_1)
+  varb_10++;
+  varb_9=varb_0+varb_10;
+  varb_7[varb_11]=*varb_9;
+  varb_10++;varb_11++;
+  while(*(varb_0+varb_10)!=varb_2)
+  {
+  varb_7[varb_11]=*(varb_0+varb_10);
+  varb_10++;varb_11++;
+  }
+  varb_7[varb_11]=*(varb_0+varb_10);
+  puts(varb_7);
+  printf(""\n"");
+  return varb_9;
+}
+",0.0,18
+18,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			break;
+		}
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,15
+19,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+ printf(""%s\n"",varb_7);
+    return varb_9;
+}",0.0,16
+20,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];varb_9=10;varb_10=10;
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{  
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",0.0,15
+21,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+				break;
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,15
+22,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7]!=varb_2;varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	return varb_8;
+}",0.0,11
+23,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;;varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	for(varb_7=0;;varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+		{
+			printf(""\n"");
+			break;
+		}
+	}
+	return varb_8;
+}",0.0,15
+24,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+int varb_7,varb_8,varb_9,varb_10;char varb_11[10];
+ for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_1) {varb_9=varb_7;break;}}
+for(varb_7=0;varb_7<10;varb_7++)
+{
+  if(varb_0[varb_7]==varb_2) varb_10=varb_7;
+}
+  for(varb_7=varb_9;varb_7<=varb_10;varb_7++)
+   printf(""%c"",varb_0[varb_7]);
+   printf(""\n"");
+    return &varb_0[varb_9];
+}",0.0,15
+25,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         printf(""%c"",*varb_0);
+         varb_7++;
+         if(*varb_0==varb_2)
+         {     printf(""%c"",varb_2);
+         printf(""\n"");break;}
+        }
+   }
+   else
+       printf(""\n"");
+   return varb_0-varb_7; 
+}
+",0.0,25
+26,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+ 	int varb_7=0;
+   while(*varb_0!=varb_1&&*varb_0!='\0')
+       varb_0++;
+   if(*varb_0!='\0')
+   {
+       for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+       {
+         if(*varb_0==varb_2)
+             break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+        }
+        if(*varb_0!='\0')
+           printf(""%c"",varb_2);
+ }
+ else
+ printf(""\n"");
+ return varb_0-varb_7; 
+}
+",0.0,15
+27,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+   int varb_7=0;
+    while(*varb_0!=varb_1&&*varb_0!='\0')
+      varb_0++;
+     for(*varb_0;*varb_0!=varb_2&&*varb_0!='\0';varb_0++)
+     {
+         if(*varb_0==varb_2)
+            break;
+         printf(""%c"",*varb_0);
+         varb_7++;
+     }
+     printf(""%c"",varb_2);
+     printf(""\n""); 
+}",0.0,15
+28,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	varb_8=&varb_0[varb_7];
+	for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+	{
+		printf(""%c"",varb_0[varb_7]);
+	}
+	printf(""\n"");
+	return varb_8;
+}",0.0,17
+29,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+    char varb_3[MAXS], ch_start, ch_end, *varb_8; 
+    scanf(""%s\n"", varb_3);
+    scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_8 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_8); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7=0;
+	char *varb_8;
+	while(varb_0[varb_7]!=varb_1)
+	{
+		varb_7++;
+	}
+	if(varb_7<MAXS)
+	{
+		varb_8=varb_0+varb_7;
+		for(;varb_0[varb_7-1]!=varb_2&&varb_0[varb_7]!='\0';varb_7++)
+		{
+			printf(""%c"",varb_0[varb_7]);
+		}
+		printf(""\n"");
+		return varb_8;
+	}
+}",0.0,17
+30,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define varb_8 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[varb_8], ch_start, ch_end, *varb_9; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    varb_9 = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", varb_9); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+char varb_7[varb_8]="""",*varb_9;
+int varb_10=0;
+int varb_11=0;
+while((*(varb_0+varb_10)!=varb_1)&&(*(varb_0+varb_10)!=0))
+{
+varb_10++;
+}
+varb_9=varb_0+varb_10;
+varb_7[varb_11]=*(varb_0+varb_10);
+ varb_11++;varb_10++;
+    while((*(varb_0+varb_10)!=0)&&(*(varb_0+varb_10)!=varb_2))
+    {
+    varb_7[varb_11]=*(varb_0+1);
+    varb_11++;varb_10++;}
+    varb_7[varb_11]=*(varb_0+varb_10);
+   printf(""%s\n"",varb_7);
+    return varb_9;
+}",0.0,16
+31,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+ { 
+ int varb_7;
+char *varb_8; 
+for(varb_7=0;(varb_0[varb_7]!='\0')&&(varb_0[varb_7]!=varb_1);varb_7++); 
+varb_8=&varb_0[varb_7]; 
+for(varb_7=0;(varb_0[varb_7]!='\0');varb_7++) 
+{ 
+  printf(""%c"",varb_0[varb_7]); 
+  if(varb_0[varb_7]==varb_2)
+  break; 
+} 
+printf(""\n""); 
+return varb_8;
+}",0.0,5
+32,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+     scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0;
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	int varb_7;
+	char *varb_8;
+	varb_8=NULL;
+	for(varb_7=0;varb_0[varb_7];varb_7++)
+	{
+		if(varb_0[varb_7]==varb_1)
+		{
+			varb_8=&varb_0[varb_7];
+			break;
+		}
+	}
+	if(varb_0[varb_7]=='\0')
+		return varb_8;
+	for(varb_7=0;varb_8[varb_7];varb_7++)
+	{
+		printf(""%c"",varb_8[varb_7]);
+		if(varb_8[varb_7]==varb_2)
+				break;
+	}
+	return varb_8;
+}",0.0,15
+33,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include<string.h>
+#define MAXS 10 
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+	char varb_3[MAXS], ch_start, ch_end, *p; 
+	scanf(""%s\n"", varb_3);
+	scanf(""%c %c"", &ch_start, &ch_end); 
+	p = func_0(varb_3, ch_start, ch_end); 
+	printf(""%s\n"", p); 
+	return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 )
+{
+	char varb_7[100];
+	char *varb_8=NULL;
+   *varb_8='\0';
+	int varb_9=0,j=0,flag=0;
+	while(*(varb_0+varb_9)){
+		if(*(varb_0+varb_9)==varb_1){
+			varb_8=varb_0+varb_9;
+			while(1){
+				if(!*(varb_0+varb_9)||*(varb_0+varb_9)==varb_2){flag=1;varb_7[j]=*(varb_0+varb_9);break;}
+				varb_7[j++]=*(varb_0+varb_9);varb_9++;
+			}
+		}
+		if(flag==1) break;
+		varb_9++;
+	} 
+	if(flag!=0) puts(varb_7);
+	else printf(""\n"");
+	return varb_8;
+}
+",0.0,18
+34,2c9f30a575ceffb90176607f036770e0,"#include <stdio.h>
+#include <string.h>
+#define MAXS 10  
+char *func_0( char *varb_0, char varb_1, char varb_2 ); 
+int main()
+{ 
+     char varb_3[MAXS], ch_start, ch_end, *p; 
+   scanf(""%s\n"", varb_3);
+     scanf(""%c %c"", &ch_start, &ch_end); 
+    p = func_0(varb_3, ch_start, ch_end); 
+    printf(""%s\n"", p); 
+    return 0; 
+}
+char *func_0( char *varb_0, char varb_1, char varb_2 ) { int varb_7;
+char *varb_8; 
+for(;(varb_7<strlen(varb_0))&&(varb_0[varb_7]!=varb_1);varb_7++); 
+varb_8=&varb_0[varb_7]; 
+for(varb_7=0;varb_7<strlen(varb_0);varb_7++) 
+{ 
+  printf(""%c"",varb_0[varb_7]); 
+  if(varb_0[varb_7]==varb_2)
+  break;   
+} 
+printf(""\n""); 
+return varb_8;
+}
+",0.0,14

@@ -1,0 +1,2328 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f%f%f"",&a,&b,&c);
+	if(a+b>c && a+c>b && b+c>a)
+	{
+	    perimeter=a+b+c;
+    	s=(a+b+c)/2.0;
+	    area=sqrt(s*(s-a)*(s-b)*(s-c));
+	    printf(""area=%.2f,perimeter=%.2f"",area,perimeter);
+    }
+    else
+	{
+		printf(""These sides do not correspond to a valid triangle"");
+	} 
+	 return 0;
+ } ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2 && varb_0+varb_2>varb_1 && varb_1+varb_2>varb_0)
+	{
+	    varb_5=varb_0+varb_1+varb_2;
+    	varb_3=(varb_0+varb_1+varb_2)/2.0;
+	    varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	    printf(""area=%.2f,varb_5=%.2f"",varb_4,varb_5);
+    }
+    else
+	{
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	} 
+	 return 0;
+ } ",12
+1,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+	float s,area;
+	scanf(""%d %d %d"",&a,&b,&c);
+	s=(a+b+c)/2.0;
+	if(a+b>c||b+c>a||a+c>b)
+	{
+		area=sqrt(s*(s-a)*(s-b)*(s-c));
+		printf(""area = %.2f;perimeter = %.2f"",area,2*s);
+	}
+	else
+		printf(""These sides do not correspond to a valid triangle"");
+	return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	float varb_3,varb_4;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	varb_3=(varb_0+varb_1+varb_2)/2.0;
+	if(varb_0+varb_1>varb_2||varb_1+varb_2>varb_0||varb_0+varb_2>varb_1)
+	{
+		varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+		printf(""area = %.2f;perimeter = %.2f"",varb_4,2*varb_3);
+	}
+	else
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	return 0;
+}",9
+2,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+    float area,perimeter,s;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a){
+		s=(s+b+c)/2;
+		perimeter=a+b+c;
+		area=sqrt(s*(s-a)*(s-b)*(s-c));
+		printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+	}
+	else
+		printf(""These sides do not correspond to a valid triangle"");
+		
+	return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+    float varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+		varb_5=(varb_5+varb_1+varb_2)/2;
+		varb_4=varb_0+varb_1+varb_2;
+		varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+		printf(""area = %.2f; varb_4 = %.2f"",varb_3,varb_4);
+	}
+	else
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	return 0;
+}",5
+3,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+   int a,b,c;
+   scanf(""%d %d %d"",&a,&b,&c);
+   
+   int s;
+   s=(a+b+c)/2.00;
+   
+   double area,perimeter;
+   
+   area=pow(s*(s-a)*(s-b)*(s-c),0.5);
+   perimeter=(a+b+c)*1.0;
+   
+   if(a+b>c&&a+c>b&&b+c>a)
+       printf(""area = %.2f;perimeter = %.2f"",area,perimeter);
+       
+   else
+       printf(""These sides do not correspond to a valid triangle"");
+       
+   return 0;
+}
+   
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   int varb_3;
+   varb_3=(varb_0+varb_1+varb_2)/2.00;
+   double varb_4,varb_5;
+   varb_4=pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5);
+   varb_5=(varb_0+varb_1+varb_2)*1.0;
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+       printf(""area = %.2f;varb_5 = %.2f"",varb_4,varb_5);
+   else
+       printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",7
+4,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;            
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if (a+b<=c&&a+c<=b&&b+c<=a)printf(""These sides do not correspond to a valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c);
+  return 0;
+  }
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;            
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1<=varb_2&&varb_0+varb_2<=varb_1&&varb_1+varb_2<=varb_0)printf(""These sides do not correspond to varb_0 valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2);
+  return 0;
+  }
+",8
+5,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b<=c,a+c<=b)  printf(""These sides do not correspond to a valid triangle"");  
+else  printf(""area =%.2f;perimeter =%.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c); 
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1<=varb_2,varb_0+varb_2<=varb_1)  printf(""These sides do not correspond to varb_0 valid triangle"");  
+else  printf(""area =%.2f;perimeter =%.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2); 
+return 0;
+}",8
+6,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+float a,b,c;
+float area,perimeter;
+float s;
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b>c||a+c>b||b+c>a)
+ printf(""area=%.2f; perimeter=%.2f"",area=sqrt(s*(s-a)*(s-b)*(s-c)),perimeter=a+b+c);
+else 
+printf(""These sides do not correspond to a valid triangle"");
+ return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+float varb_0,varb_1,varb_2;
+float varb_3,varb_4;
+float varb_5;
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_5=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1>varb_2||varb_0+varb_2>varb_1||varb_1+varb_2>varb_0)
+ printf(""area=%.2f; varb_4=%.2f"",varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2)),varb_4=varb_0+varb_1+varb_2);
+else 
+printf(""These sides do not correspond to varb_0 valid triangle"");
+ return 0;
+}",10
+7,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+int a,b,c;
+
+double area,perimeter,s;
+
+scanf(""%d %d %d"",&a,&b,&c);
+
+if(a+b>c && a+c>b && b+c>a)
+
+{
+
+perimeter=a+b+c;
+
+s=(a+b+c)/2;
+
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+
+printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+
+}
+
+else
+
+{
+
+printf(""These sides do not correspond to a valid triangle"");
+
+}
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+double varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if(varb_0+varb_1>varb_2 && varb_0+varb_2>varb_1 && varb_1+varb_2>varb_0)
+{
+varb_4=varb_0+varb_1+varb_2;
+varb_5=(varb_0+varb_1+varb_2)/2;
+varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+printf(""area=%.2f;varb_4=%.2f"",varb_3,varb_4);
+}
+else
+{
+printf(""These sides do not correspond to varb_0 valid triangle"");
+}
+}",11
+8,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf;perimeter = %.2lf\n"",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf;perimeter = %.2lf\n"",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+9,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double a,b,c,s,area,perimeter;
+  scanf (""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&b+c>a&&a+c>b)
+  {
+    s=(a+b+c)/2;
+    area==sqrt(s*(s-a)*(s-b)*(s-c));
+    perimeter==a+b+c;
+    printf (""area=%.2d;perimrter=%.2d"",area,perimeter);
+    }   
+    else
+   { printf (""These sides do not correspond to a valid triangle"");}
+    
+    return 0;
+    }
+      ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+  {
+    varb_3=(varb_0+varb_1+varb_2)/2;
+    varb_4==sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    varb_5==varb_0+varb_1+varb_2;
+    printf(""area=%.2d;perimrter=%.2d"",varb_4,varb_5);
+    }   
+    else
+   { printf(""These sides do not correspond to varb_0 valid triangle"");}
+    return 0;
+    }
+",5
+10,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;            
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if (a+b>=c&&a+c>=b&&b+c>=a) printf(""area = %.2f; perimeter = %.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c);
+ else printf(""These sides do not correspond to a valid triangle"");
+  return 0;
+  }
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;            
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1>=varb_2&&varb_0+varb_2>=varb_1&&varb_1+varb_2>=varb_0) printf(""area = %.2f; perimeter = %.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2);
+ else printf(""These sides do not correspond to varb_0 valid triangle"");
+  return 0;
+  }
+",8
+11,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf; perimeter = %.2lf\n"",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf; perimeter = %.2lf\n"",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+12,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf;  perimeter = %.2lf\n"",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf;  perimeter = %.2lf\n"",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+13,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f,%f,%f"",&a,&b,&c);
+	if(a+b<c&&a+c<b&&b+c<a)
+	{
+	    perimeter=a+b+c;
+    	s=(a+b+c)/2;
+	    area=sqrt(s*(s-a)*(s-b)*(s-c));
+	    printf(""area=%.2f,perimeter=%.2f"",area,perimeter);
+    }
+    else
+	{
+		printf(""These sides do not correspond to a valid triangle"");
+	} 
+	 return 0;
+ } ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f,%f,%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1<varb_2&&varb_0+varb_2<varb_1&&varb_1+varb_2<varb_0)
+	{
+	    varb_5=varb_0+varb_1+varb_2;
+    	varb_3=(varb_0+varb_1+varb_2)/2;
+	    varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	    printf(""area=%.2f,varb_5=%.2f"",varb_4,varb_5);
+    }
+    else
+	{
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	} 
+	 return 0;
+ } ",6
+14,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+float  a,b,c,s,area,perimeter;
+scanf(""%f%f%f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b>c&&a-b<c)
+{
+area=s*(s-a)*(s-b)*(s-c);
+area=sqrt(area);
+perimeter=a+b+c;
+printf(""area=%.2f;perimeter=%.2f"");
+}
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float  varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%f%f%f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1>varb_2&&varb_0-varb_1<varb_2)
+{
+varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+varb_4=sqrt(varb_4);
+varb_5=varb_0+varb_1+varb_2;
+printf(""area=%.2f;varb_5=%.2f"");
+}
+else
+printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}
+",7
+15,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h> 
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,C;
+	scanf(""%f%f%f"",&a,&b,&c);
+	if (a+b>c&&a+c>b&&b+c>a)
+	{
+	s=(a+b+c)/2;  
+	area=sqrt(s*(s-a)*(s-b)*(s-c));
+	C=a+b+c;
+	printf(""area =%0.2f ; perimeter =%0.2f "",area,C);
+	}
+
+	
+    else
+    printf(""These sides do not correspond to a valid triangle!"");
+    return 0;
+}",0.0,"#include<stdio.h> 
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+	{
+	varb_3=(varb_0+varb_1+varb_2)/2;  
+	varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	varb_5=varb_0+varb_1+varb_2;
+	printf(""area =%0.2f ; perimeter =%0.2f "",varb_4,varb_5);
+	}
+    else
+    printf(""These sides do not correspond to varb_0 valid triangle!"");
+    return 0;
+}",15
+16,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float  a,b,c,s,area,perimeter;
+scanf(""%f%f%f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b>c&&a-b<c)
+{
+area=s*(s-a)*(s-b)*(s-c);
+area=sqrt(area);
+perimeter=a+b+c;
+printf(""area=%.2f;perimeter=%.2f"");
+}
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float  varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%f%f%f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1>varb_2&&varb_0-varb_1<varb_2)
+{
+varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+varb_4=sqrt(varb_4);
+varb_5=varb_0+varb_1+varb_2;
+printf(""area=%.2f;varb_5=%.2f"");
+}
+else
+printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}
+",7
+17,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf; perimeter = %.2lf "",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf; perimeter = %.2lf "",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+18,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;            
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if (a+b<=c&&a+c<=b&&b+c<=a) printf(""These sides do not correspond to a valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c);
+  return 0;
+  }
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;            
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1<=varb_2&&varb_0+varb_2<=varb_1&&varb_1+varb_2<=varb_0) printf(""These sides do not correspond to varb_0 valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2);
+  return 0;
+  }
+",8
+19,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float perimeter,area,s;
+scanf(""%d %d %d"",&a,&b,&c);
+if(a+b>c && a+c>b && b+c>a)
+{
+perimeter=a+b+c;
+s=(a+b+c)/2;
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+printf(""area=%.2f;perimeter=%.2f\n"",area,perimeter);
+}
+else
+printf(""These sides do not correspond to a valid triangle\n"");
+}",0.0,"#include <stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if(varb_0+varb_1>varb_2 && varb_0+varb_2>varb_1 && varb_1+varb_2>varb_0)
+{
+varb_3=varb_0+varb_1+varb_2;
+varb_5=(varb_0+varb_1+varb_2)/2;
+varb_4=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+printf(""area=%.2f;varb_3=%.2f\n"",varb_4,varb_3);
+}
+else
+printf(""These sides do not correspond to varb_0 valid triangle\n"");
+}",11
+20,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+
+{
+int a, b, c;
+float s,area,perimeter;
+scanf(""%d %d %d"",&a,&b,&c);
+ s = (a+b+c)/2;
+ area = sqrt(s*(s-a)*(s-b)*(s-c));
+ perimeter=a+b+c;
+if(a+b>c&&a+c>b&&b+c>a)
+printf(""area=%0.2f;perimeter=%0.2f"",area,perimeter);
+else
+
+ printf(""These sides do not correspond to a valid triangle"");
+return 0;
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0, varb_1, varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+ varb_3 =(varb_0+varb_1+varb_2)/2;
+ varb_4 = sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+ varb_5=varb_0+varb_1+varb_2;
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+printf(""area=%0.2f;varb_5=%0.2f"",varb_4,varb_5);
+else
+ printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}",8
+21,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+    double area,perimeter,s;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a){
+		s=(s+b+c)/2;
+		perimeter=a+b+c;
+		area=sqrt(s*(s-a)*(s-b)*(s-c));
+		printf(""area = %.2f; perimeter = %.2f\n"",area,perimeter);
+	}
+	else
+		printf(""These sides do not correspond to a valid triangle\n"");
+		
+	return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+    double varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+		varb_5=(varb_5+varb_1+varb_2)/2;
+		varb_4=varb_0+varb_1+varb_2;
+		varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+		printf(""area = %.2f; varb_4 = %.2f\n"",varb_3,varb_4);
+	}
+	else
+		printf(""These sides do not correspond to varb_0 valid triangle\n"");
+	return 0;
+}",5
+22,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;double s,area,perimeter;
+scanf(""%d %d %d"",&a,&b,&c);
+s=(a+b+c)/2;
+if(c>=a+b) printf(""These sides do not correspond to a valid triangle\n"");
+else if(b>=a+c) printf(""These sides do not correspond to a valid triangle\n"");
+else if(a>=b+c) printf(""These sides do not correspond to a valid triangle\n"");
+else {area=sqrt(s*(s-a)*(s-b)*(s-c));perimeter=a+b+c;
+printf(""area=%.2f;perimeter=%.2f"",area,perimeter);}
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;double varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_2>=varb_0+varb_1) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+else if(varb_1>=varb_0+varb_2) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+else if(varb_0>=varb_1+varb_2) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+else {varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));varb_5=varb_0+varb_1+varb_2;
+printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);}
+return 0;
+}",7
+23,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f,%f,%f"",&a,&b,&c);
+	if(a+b<c&&a+c<b&&b+c<a)
+	{
+	    perimeter=a+b+c;
+    	s=(a+b+c)/2;
+	    area=sqrt(s*(s-a)*(s-b)*(s-c));
+	    printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+    }
+    else
+	{
+		printf(""These sides do not correspond to a valid triangle"");
+	} 
+	 return 0;
+ } ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f,%f,%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1<varb_2&&varb_0+varb_2<varb_1&&varb_1+varb_2<varb_0)
+	{
+	    varb_5=varb_0+varb_1+varb_2;
+    	varb_3=(varb_0+varb_1+varb_2)/2;
+	    varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	    printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+    }
+    else
+	{
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	} 
+	 return 0;
+ } ",6
+24,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float a,b,c,s,area,perimeter;
+ scanf(""%f %f %f"",&a,&b,&c);
+ if(a+b>c&&a+c>b&&b+c>a){
+  s=(a+b+c)/2;
+  area=sqrt(s*(s-a)*(s-b)*(s-c));
+  perimeter=a+b+c;
+  printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+ }
+ else{
+  printf(""These sides do not correspond to a valid trianglie"");
+ }
+  return 0;
+ }
+  
+ 
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+ scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+ if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+  varb_3=(varb_0+varb_1+varb_2)/2;
+  varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+  varb_5=varb_0+varb_1+varb_2;
+  printf(""area = %.2f; varb_5 = %.2f"",varb_4,varb_5);
+ }
+ else{
+  printf(""These sides do not correspond to varb_0 valid trianglie"");
+ }
+  return 0;
+ }
+",5
+25,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{int a,b,c;
+scanf(""%d %d %d"",&a,&b,&c);
+float area,perimeter,s;
+s=(a+b+c)/2;
+perimeter=a+b+c;
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+if(a+b>c&&a+c>b&&b+c>a)
+{printf(""area = %.2f; perimeter = %.2f"",area,perimeter);}
+else
+{printf(""These sides do not correspond to a valid triangle"");}
+return 0;
+
+
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{int varb_0,varb_1,varb_2;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+float varb_3,varb_4,varb_5;
+varb_5=(varb_0+varb_1+varb_2)/2;
+varb_4=varb_0+varb_1+varb_2;
+varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+{printf(""area = %.2f; varb_4 = %.2f"",varb_3,varb_4);}
+else
+{printf(""These sides do not correspond to varb_0 valid triangle"");}
+return 0;
+}",4
+26,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float a,b,c,s,area,perimeter;
+ printf(""%f %f %f"",a,b,c);
+ if(a+b>c&&a+c>b&&b+c>a){
+ s=(a+b+c)/2;
+ area=sqrt(s*(s-a)*(s-b)*(s-c));
+ perimeter=a+b+c;
+ printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+}
+ else
+ printf(""These sides do not correspond to a valid triangle"");
+
+ return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+ printf(""%f %f %f"",varb_0,varb_1,varb_2);
+ if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+ varb_3=(varb_0+varb_1+varb_2)/2;
+ varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+ varb_5=varb_0+varb_1+varb_2;
+ printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+}
+ else
+ printf(""These sides do not correspond to varb_0 valid triangle"");
+ return 0;
+}
+",6
+27,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f %f %f"",&a,&b,&c);
+	s=(a+b+c)/2;
+	if (a+b>c&&b+c>a&&a+c>b)
+	  {
+	  area=s*(s-a)*(s-b)*(s-c);
+	  perimeter=a+b+c;
+	  printf(""area =%.2f;perimeter=%.2f"",area,perimeter); 
+	  }
+	  else
+	  {
+	  printf(""These sides do not correspond to a valid triangle"");
+      }
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+	varb_3=(varb_0+varb_1+varb_2)/2;
+	if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+	  {
+	  varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+	  varb_5=varb_0+varb_1+varb_2;
+	  printf(""area =%.2f;varb_5=%.2f"",varb_4,varb_5); 
+	  }
+	  else
+	  {
+	  printf(""These sides do not correspond to varb_0 valid triangle"");
+      }
+	  return 0;
+}",7
+28,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float s,area,perimeter;
+scanf(""%d %d %d"",&a,&b,&c);
+s=(a+b+c)/2;
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+perimeter =a+b+c;
+if ((a+b)>c&&(a+c)>b&&(b+c)>a)
+printf(""area=%.2f;perimeter=%.2f"",area, perimeter);
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+varb_5 =varb_0+varb_1+varb_2;
+if((varb_0+varb_1)>varb_2&&(varb_0+varb_2)>varb_1&&(varb_1+varb_2)>varb_0)
+printf(""area=%.2f;varb_5=%.2f"",varb_4, varb_5);
+else
+printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}
+",8
+29,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double a,b,c,s,area,perimeter;
+  scanf (""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&b+c>a&&a+c>b)
+  {
+    s=(a+b+c)/2;
+    area==sqrt(s*(s-a)*(s-b)*(s-c));
+    perimeter==a+b+c;
+    printf (""area=%.2lf;perimrter=%.2lf"",area,perimeter);
+    }   
+    else
+   { printf (""These sides do not correspond to a valid triangle"");}
+    
+    return 0;
+    }
+      ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+  {
+    varb_3=(varb_0+varb_1+varb_2)/2;
+    varb_4==sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    varb_5==varb_0+varb_1+varb_2;
+    printf(""area=%.2lf;perimrter=%.2lf"",varb_4,varb_5);
+    }   
+    else
+   { printf(""These sides do not correspond to varb_0 valid triangle"");}
+    return 0;
+    }
+",5
+30,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c;
+	double area,perimeter,s;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a)
+	{
+		s=(a+b+c)/2;
+		area=pow(s*(s-a)*(s-b)*(s-c),1/2);
+		perimeter=a+b+c;
+		printf(""area = %.2f;perimeter = %.2f"",area,perimeter);
+	}
+	else
+      printf(""These sides do not correspond to a valid triangle"");
+return 0;	  	
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	double varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+	{
+		varb_5=(varb_0+varb_1+varb_2)/2;
+		varb_3=pow(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2),1/2);
+		varb_4=varb_0+varb_1+varb_2;
+		printf(""area = %.2f;varb_4 = %.2f"",varb_3,varb_4);
+	}
+	else
+      printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;	  	
+}",10
+31,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+
+{
+int a, b, c;
+scanf(""%d %d %d"",&a,&b,&c);
+float s,area,perimeter;
+ s = (a+b+c)/2;
+ area = sqrt(s*(s-a)*(s-b)*(s-c));
+ perimeter=a+b+c;
+if(a+b>c&&a+c>b&&b+c>a)
+printf(""area=%0.2f;perimeter=%0.2f"",area,perimeter);
+else
+
+ printf(""These sides do not correspond to a valid triangle"");
+return 0;
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0, varb_1, varb_2;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+float varb_3,varb_4,varb_5;
+ varb_3 =(varb_0+varb_1+varb_2)/2;
+ varb_4 = sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+ varb_5=varb_0+varb_1+varb_2;
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+printf(""area=%0.2f;varb_5=%0.2f"",varb_4,varb_5);
+else
+ printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}",7
+32,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+  scanf(""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&a+c>b&&b+c>a)
+  {
+   double s,area;
+   s=(a+b+c)/2;
+   area=s*(s-a)*(s-b)*(s-c);
+   printf(""area=%.2f;perimeter=%.2f\n"",area,s*2);
+   }
+  else
+  printf(""These sides do not correspond to a valid triangle\n"");
+   
+
+  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   double varb_3,varb_4;
+   varb_3=(varb_0+varb_1+varb_2)/2;
+   varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+   printf(""area=%.2f;perimeter=%.2f\n"",varb_4,varb_3*2);
+   }
+  else
+  printf(""These sides do not correspond to varb_0 valid triangle\n"");
+  return 0;
+}",3
+33,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float  a,b,c,s,area,perimeter;
+scanf(""%f%f%f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b>c&&a-b<c)
+{
+area=s*(s-a)*(s-b)*(s-c);
+area=sqrt(area);
+perimeter=a+b+c;
+printf(""area=%.2f;perimeter=%.2f"");
+}
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float  varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%f%f%f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1>varb_2&&varb_0-varb_1<varb_2)
+{
+varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+varb_4=sqrt(varb_4);
+varb_5=varb_0+varb_1+varb_2;
+printf(""area=%.2f;varb_5=%.2f"");
+}
+else
+printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}
+",7
+34,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+  scanf(""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&a+c>b&&b+c>a)
+  {
+   double s,area;
+   s=(a+b+c)/2;
+   area=s*(s-a)*(s-b)*(s-c);
+   printf(""area=%.2f;perimeter=%.2f\n"",area,s*2);
+   }
+  else
+  printf(""These sides do not correspond to a valid triangle"");
+   
+
+  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   double varb_3,varb_4;
+   varb_3=(varb_0+varb_1+varb_2)/2;
+   varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+   printf(""area=%.2f;perimeter=%.2f\n"",varb_4,varb_3*2);
+   }
+  else
+  printf(""These sides do not correspond to varb_0 valid triangle"");
+  return 0;
+}",3
+35,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+  scanf(""%d %d %d"",&a,&b,&c);
+  if(a+b>c&&a+c>b&&b+c>a)
+  {
+   float s,area;
+   s=(a+b+c)/2;
+   area=sqrt(s*(s-a)*(s-b)*(s-c));
+   printf(""area = %.2f; perimeter = %.2f"",area,s*2);
+   }
+   else
+   printf(""These sides do not correspond to a valid triangle"");
+   
+   return 0;
+}
+   ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   float varb_3,varb_4;
+   varb_3=(varb_0+varb_1+varb_2)/2;
+   varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+   printf(""area = %.2f; perimeter = %.2f"",varb_4,varb_3*2);
+   }
+   else
+   printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",10
+36,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d;
+	float s,area,perimeter;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if((a+b)>c||(b+c)>a||(a+c)>b)
+	{
+		s=(a+b+c)/2.0;
+		d=s*(s-a)*(s-b)*(s-c);
+		area=sqrt(d);
+		perimeter=a+b+c;
+		printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+	}
+	else
+	printf(""These sides do not correspond to a valid triangle"");
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	float varb_4,varb_5,varb_6;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if((varb_0+varb_1)>varb_2||(varb_1+varb_2)>varb_0||(varb_0+varb_2)>varb_1)
+	{
+		varb_4=(varb_0+varb_1+varb_2)/2.0;
+		varb_3=varb_4*(varb_4-varb_0)*(varb_4-varb_1)*(varb_4-varb_2);
+		varb_5=sqrt(varb_3);
+		varb_6=varb_0+varb_1+varb_2;
+		printf(""area = %.2f; varb_6 = %.2f"",varb_5,varb_6);
+	}
+	else
+	printf(""These sides do not correspond to varb_0 valid triangle"");
+	return 0;
+}",5
+37,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float area,perimeter,s;
+scanf(""%d %d %d"",&a,&b,&c);
+if(a+b>c&&a+c>b&&b+c>a)
+  {
+   s=(a+b+c)/2;
+   area=sqrt(s*(s-a)*(s-b)*(s-c));
+   perimeter=a+b+c;
+     printf(""area=%.2f,perimeter=%.2f"",area,perimeter);
+    }
+else
+   printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   varb_5=(varb_0+varb_1+varb_2)/2;
+   varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+   varb_4=varb_0+varb_1+varb_2;
+     printf(""area=%.2f,varb_4=%.2f"",varb_3,varb_4);
+    }
+else
+   printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}",5
+38,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float area,perimeter,s;
+scanf(""%d %d %d"",&a,&b,&c);
+if(a+b>c&&a+c>b&&b+c>a)
+  {
+   s=(a+b+c)/2;
+   area=sqrt(s*(s-a)*(s-b)*(s-c));
+   perimeter=a+b+c;
+     printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+    }
+else
+   printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   varb_5=(varb_0+varb_1+varb_2)/2;
+   varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+   varb_4=varb_0+varb_1+varb_2;
+     printf(""area=%.2f;varb_4=%.2f"",varb_3,varb_4);
+    }
+else
+   printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}",5
+39,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int d, e, f;
+double area, perimeter,s;
+scanf(""%lf %lf %lf"", &d, &e, &f);
+
+
+if ((d + e) > f&&(d+f)>e&&(e+f)>d)
+{
+s = (d + e + f) / 2;
+area = sqrt(s*(s - d)*(s - e)*(s - f));
+perimeter = d + e + f;
+printf(""area = %.2f; perimeter = %.2f"", area, perimeter);
+}
+else
+printf(""These sides do not correspond to a valid triangle"");
+
+return 0;
+}
+
+
+
+
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0, varb_1, varb_2;
+double varb_3, varb_4,varb_5;
+scanf(""%lf %lf %lf"", &varb_0, &varb_1, &varb_2);
+if((varb_0 + varb_1) > varb_2&&(varb_0+varb_2)>varb_1&&(varb_1+varb_2)>varb_0)
+{
+varb_5 =(varb_0 + varb_1 + varb_2) / 2;
+varb_3 = sqrt(varb_5*(varb_5 - varb_0)*(varb_5 - varb_1)*(varb_5 - varb_2));
+varb_4 = varb_0 + varb_1 + varb_2;
+printf(""area = %.2f; varb_4 = %.2f"", varb_3, varb_4);
+}
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",5
+40,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d;
+	float s,area,perimeter;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if((a+b)>c&&(b+c)>a&&(a+c)>b)
+	{
+		s=(a+b+c)/2.0;
+		d=s*(s-a)*(s-b)*(s-c);
+		area=sqrt(d);
+		perimeter=a+b+c;
+		printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+	}
+	else
+	printf(""These sides do not correspond to a valid triangle"");
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	float varb_4,varb_5,varb_6;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if((varb_0+varb_1)>varb_2&&(varb_1+varb_2)>varb_0&&(varb_0+varb_2)>varb_1)
+	{
+		varb_4=(varb_0+varb_1+varb_2)/2.0;
+		varb_3=varb_4*(varb_4-varb_0)*(varb_4-varb_1)*(varb_4-varb_2);
+		varb_5=sqrt(varb_3);
+		varb_6=varb_0+varb_1+varb_2;
+		printf(""area = %.2f; varb_6 = %.2f"",varb_5,varb_6);
+	}
+	else
+	printf(""These sides do not correspond to varb_0 valid triangle"");
+	return 0;
+}",5
+41,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+    float area,perimeter,s;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a){
+		s=(a+b+c)/2;
+		perimeter=a+b+c;
+		area=sqrt(s*(s-a)*(s-b)*(s-c));
+		printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+	}
+	else
+		printf(""These sides do not correspond to a valid triangle\n"");
+		
+	return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+    float varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+		varb_5=(varb_0+varb_1+varb_2)/2;
+		varb_4=varb_0+varb_1+varb_2;
+		varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+		printf(""area = %.2f; varb_4 = %.2f"",varb_3,varb_4);
+	}
+	else
+		printf(""These sides do not correspond to varb_0 valid triangle\n"");
+	return 0;
+}",5
+42,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf; perimeter = %.2lf"",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf; perimeter = %.2lf"",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+43,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float perimeter,s,area;
+ scanf(""%d %d %d"",&a,&b,&c);
+if(a+b>c && a+c>b && b+c>a)
+{
+ perimeter=a+b+c;
+ s = (a+b+c)/2.0;
+ area = sqrt(s*(s-a)*(s-b)*(s-c));
+ printf(""area= %.2f,perimeter= %.2f"",area,perimeter); 
+ }
+ else 
+ printf(""These sides do not correspond to a valid triangle"");
+ return 0;
+}
+ 
+
+
+
+
+
+
+
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+ scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+if(varb_0+varb_1>varb_2 && varb_0+varb_2>varb_1 && varb_1+varb_2>varb_0)
+{
+ varb_3=varb_0+varb_1+varb_2;
+ varb_4 =(varb_0+varb_1+varb_2)/2.0;
+ varb_5 = sqrt(varb_4*(varb_4-varb_0)*(varb_4-varb_1)*(varb_4-varb_2));
+ printf(""area= %.2f,varb_3= %.2f"",varb_5,varb_3); 
+ }
+ else 
+ printf(""These sides do not correspond to varb_0 valid triangle"");
+ return 0;
+}
+",13
+44,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+
+{
+int a, b, c;
+float s,area,perimeter;
+scanf(""%d%d%d"",&a,&b,&c);
+ s = (a+b+c)/2;
+ area = sqrt(s*(s-a)*(s-b)*(s-c));
+ perimeter=a+b+c;
+if(a+b>c&&a+c>b&&b+c>a)
+printf(""area=%0.2f;perimeter=%0.2f"",area,perimeter);
+else
+
+ printf(""These sides do not correspond to a valid triangle"");
+return 0;
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0, varb_1, varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d%d%d"",&varb_0,&varb_1,&varb_2);
+ varb_3 =(varb_0+varb_1+varb_2)/2;
+ varb_4 = sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+ varb_5=varb_0+varb_1+varb_2;
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+printf(""area=%0.2f;varb_5=%0.2f"",varb_4,varb_5);
+else
+ printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}",8
+45,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main(){
+    int a,b,c;
+    scanf(""%d %d %d"",&a,&b,&c);
+    if (a+b>c&&a+c>b&&b+c>a)
+    {
+        float s,area,perimeter;
+        s=(a+b+c)/2;
+        area=sqrt(s*(s-a)*(s-b)*(s-c));
+        perimeter=a+b+c;
+        printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+    }
+    else
+    printf(""These sides do not correspond to a valid triangle\n"");
+    return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main(){
+    int varb_0,varb_1,varb_2;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+    if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+    {
+        float varb_3,varb_4,varb_5;
+        varb_3=(varb_0+varb_1+varb_2)/2;
+        varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+        varb_5=varb_0+varb_1+varb_2;
+        printf(""area = %.2f; varb_5 = %.2f"",varb_4,varb_5);
+    }
+    else
+    printf(""These sides do not correspond to varb_0 valid triangle\n"");
+    return 0;
+}
+",9
+46,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+     a=5,b=5,c=3;
+  double area,perimeter,s;
+     s=(a+b+c)/2.0;
+     area=sqrt(s*(s-a)*(s-b)*(s-c));
+     perimeter=a+b+c;
+    scanf(""%d %d %d"",&a,&b,&c);
+   if(a+b>c&&a+c>b&&b+c>a)
+     printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+   else
+     printf(""These sides do not correspond to a valid triangle"");
+   return 0;
+}
+     
+   
+   
+   ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+     varb_0=5,varb_1=5,varb_2=3;
+  double varb_3,varb_4,varb_5;
+     varb_5=(varb_0+varb_1+varb_2)/2.0;
+     varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+     varb_4=varb_0+varb_1+varb_2;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+     printf(""area=%.2f;varb_4=%.2f"",varb_3,varb_4);
+   else
+     printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",6
+47,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+   int a,b,c;
+   scanf(""%d %d %d"",&a,&b,&c);
+   
+   int s;
+   s=(a+b+c)/2.0;
+   
+   double area,perimeter;
+   
+   area=pow(s*(s-a)*(s-b)*(s-c),0.5);
+   perimeter=(a+b+c)*1.0;
+   
+   if(a+b>c&&a+c>b&&b+c>a)
+       printf(""area = %.2f;perimeter = %.2f"",area,perimeter);
+       
+   else
+       printf(""These sides do not correspond to a valid triangle"");
+       
+   return 0;
+}
+   
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   int varb_3;
+   varb_3=(varb_0+varb_1+varb_2)/2.0;
+   double varb_4,varb_5;
+   varb_4=pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5);
+   varb_5=(varb_0+varb_1+varb_2)*1.0;
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+       printf(""area = %.2f;varb_5 = %.2f"",varb_4,varb_5);
+   else
+       printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",7
+48,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;            
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if (a+b<c&&a+c<b&&b+c<a)printf(""These sides do not correspond to a valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c);
+  return 0;
+  }
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;            
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1<varb_2&&varb_0+varb_2<varb_1&&varb_1+varb_2<varb_0)printf(""These sides do not correspond to varb_0 valid triangle"");
+ else printf(""area = %.2f; perimeter = %.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2);
+  return 0;
+  }
+",8
+49,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f,%f,%f"",&a,&b,&c);
+	if(a+b<c&&a+c<b&&b+c<a)
+	{
+	    perimeter=a+b+c;
+    	s=(a+b+c)/2;
+	    area=sqrt(s*(s-a)*(s-b)*(s-c));
+	    printf(""area=%.2f,perimeter=%.2f"",area,perimeter);
+    }
+    else
+	{
+		printf(""These sides do not correspond to a valid triangle"");
+	} 
+	 return 0;
+ } ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f,%f,%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1<varb_2&&varb_0+varb_2<varb_1&&varb_1+varb_2<varb_0)
+	{
+	    varb_5=varb_0+varb_1+varb_2;
+    	varb_3=(varb_0+varb_1+varb_2)/2;
+	    varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	    printf(""area=%.2f,varb_5=%.2f"",varb_4,varb_5);
+    }
+    else
+	{
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	} 
+	 return 0;
+ } ",6
+50,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int a,b,c;
+ scanf(""%d %d %d"",&a,&b,&c);
+ if(a+b>c&&a+c>b&&b+c>a){
+ float area,perimeter,s;
+ s=(a+b+c)/2;
+ area=sqrt(s*(s-a)*(s-b)*(s-c));
+ perimeter=a+b+c;
+ printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+ }
+ else{
+ printf(""These sides do not correspond to a valid trianglie"");
+ }
+  return 0;
+ }
+  
+ 
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+ if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+ float varb_3,varb_4,varb_5;
+ varb_5=(varb_0+varb_1+varb_2)/2;
+ varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+ varb_4=varb_0+varb_1+varb_2;
+ printf(""area=%.2f;varb_4=%.2f"",varb_3,varb_4);
+ }
+ else{
+ printf(""These sides do not correspond to varb_0 valid trianglie"");
+ }
+  return 0;
+ }
+",7
+51,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+   int a,b,c;
+   scanf(""%d %d %d"",&a,&b,&c);
+   
+   int s;
+   s=(a+b+c)/2.00;
+   
+   double area,perimeter;
+   
+   area=pow(s*(s-a)*(s-b)*(s-c),0.50);
+   perimeter=(a+b+c)*1.0;
+   
+   if(a+b>c&&a+c>b&&b+c>a)
+       printf(""area = %.2f;perimeter = %.2f"",area,perimeter);
+       
+   else
+       printf(""These sides do not correspond to a valid triangle"");
+       
+   return 0;
+}
+   
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   int varb_3;
+   varb_3=(varb_0+varb_1+varb_2)/2.00;
+   double varb_4,varb_5;
+   varb_4=pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.50);
+   varb_5=(varb_0+varb_1+varb_2)*1.0;
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+       printf(""area = %.2f;varb_5 = %.2f"",varb_4,varb_5);
+   else
+       printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",7
+52,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+     a=5,b=5,c=3;
+  double area,perimeter,s;
+     s=(a+b+c)/2.0;
+     area=sqrt(s*(s-a)*(s-b)*(s-c));
+     perimeter=a+b+c;
+    scanf(""%d %d %d"",&a,&b,&c);
+   if(a+b>c&&a+c>b&&b+c>a)
+     {printf(""area=%.2f;perimeter=%.2f"",area,perimeter);}
+   else
+    { printf(""These sides do not correspond to a valid triangle"");}
+   return 0;
+}
+     
+   
+   
+   ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+     varb_0=5,varb_1=5,varb_2=3;
+  double varb_3,varb_4,varb_5;
+     varb_5=(varb_0+varb_1+varb_2)/2.0;
+     varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+     varb_4=varb_0+varb_1+varb_2;
+    scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+     {printf(""area=%.2f;varb_4=%.2f"",varb_3,varb_4);}
+   else
+    { printf(""These sides do not correspond to varb_0 valid triangle"");}
+   return 0;
+}
+",6
+53,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int a,b,c;
+ scanf(""%d %d %d"",&a,&b,&c);
+ if(a+b>c&&a+c>b&&b+c>a){
+  float s,area,perimeter;
+  s=(a+b+c)/2;
+  area=sqrt(s*(s-a)*(s-b)*(s-c));
+  perimeter=a+b+c;
+  printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+}
+ else
+  printf(""These sides do not correspond to a valid triangle"");
+
+ return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int varb_0,varb_1,varb_2;
+ scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+ if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+  float varb_3,varb_4,varb_5;
+  varb_3=(varb_0+varb_1+varb_2)/2;
+  varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+  varb_5=varb_0+varb_1+varb_2;
+  printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+}
+ else
+  printf(""These sides do not correspond to varb_0 valid triangle"");
+ return 0;
+}
+",5
+54,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c;
+  scanf(""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&a+c>b&&b+c>a)
+  {
+   double s,area;
+   s=(a+b+c)/2;
+   area=s*(s-a)*(s-b)*(s-c);
+   printf(""area=%.2f;perimeter=%.2f\n"",area,s*2);
+   }
+  else
+  printf(""These sides do not correspond to a valid triangle"");
+
+  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+  {
+   double varb_3,varb_4;
+   varb_3=(varb_0+varb_1+varb_2)/2;
+   varb_4=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+   printf(""area=%.2f;perimeter=%.2f\n"",varb_4,varb_3*2);
+   }
+  else
+  printf(""These sides do not correspond to varb_0 valid triangle"");
+  return 0;
+}",3
+55,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d;
+	float s,area,perimeter;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if((a+b)>c&&(b+c)>a&&(a+c)>b)
+	{
+		s=(a+b+c)/2.0;
+		d=s*(s-a)*(s-b)*(s-c);
+		area=sqrt(d);
+		perimeter=a+b+c;
+		printf(""area = %0.2f; perimeter = %0.2f"",area,perimeter);
+	}
+	else
+	printf(""These sides do not correspond to a valid triangle"");
+	return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	float varb_4,varb_5,varb_6;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if((varb_0+varb_1)>varb_2&&(varb_1+varb_2)>varb_0&&(varb_0+varb_2)>varb_1)
+	{
+		varb_4=(varb_0+varb_1+varb_2)/2.0;
+		varb_3=varb_4*(varb_4-varb_0)*(varb_4-varb_1)*(varb_4-varb_2);
+		varb_5=sqrt(varb_3);
+		varb_6=varb_0+varb_1+varb_2;
+		printf(""area = %0.2f; varb_6 = %0.2f"",varb_5,varb_6);
+	}
+	else
+	printf(""These sides do not correspond to varb_0 valid triangle"");
+	return 0;
+}",5
+56,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;double s,area,perimeter;
+scanf(""%d %d %d"",&a,&b,&c);
+s=(a+b+c)/2;
+if(c>=a+b) printf(""These sides do not correspond to a valid triangle\n"");
+if(b>=a+c) printf(""These sides do not correspond to a valid triangle\n"");
+if(a>=b+c) printf(""These sides do not correspond to a valid triangle\n"");
+area=sqrt(s*(s-a)*(s-b)*(s-c));perimeter=a+b+c;
+printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;double varb_3,varb_4,varb_5;
+scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_2>=varb_0+varb_1) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+if(varb_1>=varb_0+varb_2) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+if(varb_0>=varb_1+varb_2) printf(""These sides do not correspond to varb_0 valid triangle\n"");
+varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));varb_5=varb_0+varb_1+varb_2;
+printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+return 0;
+}",7
+57,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float a,b,c,s,area,perimeter;
+ printf(""%f %f %f"",a,b,c);
+ if(a+b>c&&a+c>b&&b+c>a){
+  s=(a+b+c)/2;
+  area=sqrt(s*(s-a)*(s-b)*(s-c));
+  perimeter=a+b+c;
+  printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+}
+ else
+  printf(""These sides do not correspond to a valid triangle"");
+
+ return 0;
+}
+ ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+ printf(""%f %f %f"",varb_0,varb_1,varb_2);
+ if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+  varb_3=(varb_0+varb_1+varb_2)/2;
+  varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+  varb_5=varb_0+varb_1+varb_2;
+  printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+}
+ else
+  printf(""These sides do not correspond to varb_0 valid triangle"");
+ return 0;
+}
+",6
+58,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double a,b,c;
+    double s=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&a,&b,&c);
+    if((a+b<=c)||(a+c<=b)||(b+c)<=a)
+    {
+        printf(""These sides do not correspond to a valid triangle\n"");
+        return 0;
+    };
+    s=0.5*(a+b+c);
+    area=sqrt(s*(s-a)*(s-b)*(s-c));
+    printf(""area = &.2lf; perimeter = %.2lf \n"",area,a+b+c);
+    return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{    
+    double varb_0,varb_1,varb_2;
+    double varb_3=0.0,area=0.0;
+    scanf(""%lf %lf %lf"",&varb_0,&varb_1,&varb_2);
+    if((varb_0+varb_1<=varb_2)||(varb_0+varb_2<=varb_1)||(varb_1+varb_2)<=varb_0)
+    {
+        printf(""These sides do not correspond to varb_0 valid triangle\n"");
+        return 0;
+    };
+    varb_3=0.5*(varb_0+varb_1+varb_2);
+    area=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    printf(""area = &.2lf; perimeter = %.2lf \n"",area,varb_0+varb_1+varb_2);
+    return 0;
+}",15
+59,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int a,b,c;
+    float area,perimeter,s;
+	scanf(""%d %d %d"",&a,&b,&c);
+	if(a+b>c&&a+c>b&&b+c>a){
+		s=(s+b+c)/2;
+		perimeter=a+b+c;
+		area=sqrt(s*(s-a)*(s-b)*(s-c));
+		printf(""area = %.2f; perimeter = %.2f"",area,perimeter);
+	}
+	else
+		printf(""These sides do not correspond to a valid triangle\n"");
+		
+	return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+    float varb_3,varb_4,varb_5;
+	scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0){
+		varb_5=(varb_5+varb_1+varb_2)/2;
+		varb_4=varb_0+varb_1+varb_2;
+		varb_3=sqrt(varb_5*(varb_5-varb_0)*(varb_5-varb_1)*(varb_5-varb_2));
+		printf(""area = %.2f; varb_4 = %.2f"",varb_3,varb_4);
+	}
+	else
+		printf(""These sides do not correspond to varb_0 valid triangle\n"");
+	return 0;
+}",5
+60,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c;
+float s,area,perimeter;
+scanf(""%d%d%d"",&a,&b,&c);
+s=(a+b+c)/2;
+area=sqrt(s*(s-a)*(s-b)*(s-c));
+perimeter=a+b+c;
+if(a+b>c&&a+c>b&&b+c>a)
+{printf(""area=%.2f;perimeter=%.2f"",area,perimeter);}
+else
+printf(""These sides do not correspond to a valid triangle"");
+return 0;
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+float varb_3,varb_4,varb_5;
+scanf(""%d%d%d"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+varb_5=varb_0+varb_1+varb_2;
+if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+{printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);}
+else
+printf(""These sides do not correspond to varb_0 valid triangle"");
+return 0;
+}
+",8
+61,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double a,b,c,s,area,perimeter;
+  s=(a+b+c)/2;
+  scanf (""%d %d %d"",&a,&b,&c);
+  if (a+b>c&&b+c>a&&a+c>b)
+  {
+    area==sqrt(s*(s-a)*(s-b)*(s-c));
+    perimeter==a+b+c;
+    printf (""area=%.2d;perimrter=%.2d"",area,perimeter);
+    }   
+    else
+   { printf (""These sides do not correspond to a valid triangle"");}
+    
+    return 0;
+    }
+      ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  varb_3=(varb_0+varb_1+varb_2)/2;
+  scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+  {
+    varb_4==sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    varb_5==varb_0+varb_1+varb_2;
+    printf(""area=%.2d;perimrter=%.2d"",varb_4,varb_5);
+    }   
+    else
+   { printf(""These sides do not correspond to varb_0 valid triangle"");}
+    return 0;
+    }
+",5
+62,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double a,b,c,s,area,perimeter;
+  s=(a+b+c)/2;
+  scanf (""%d,%d,%d"",&a,&b,&c);
+  if (a+b>c&&b+c>a&&a+c>b)
+  {
+    area==sqrt(s*(s-a)*(s-b)*(s-c));
+    perimeter==a+b+c;
+    printf (""area=%.2d;perimrter=%.2d"",area,perimeter);
+    }   
+    else
+   { printf (""These sides do not correspond to a valid triangle"");}
+    
+    return 0;
+    }
+      ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+  varb_3=(varb_0+varb_1+varb_2)/2;
+  scanf(""%d,%d,%d"",&varb_0,&varb_1,&varb_2);
+  if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+  {
+    varb_4==sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+    varb_5==varb_0+varb_1+varb_2;
+    printf(""area=%.2d;perimrter=%.2d"",varb_4,varb_5);
+    }   
+    else
+   { printf(""These sides do not correspond to varb_0 valid triangle"");}
+    return 0;
+    }
+",5
+63,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,s;
+scanf(""%f %f %f"",&a,&b,&c);
+s=(a+b+c)/2;
+if(a+b<=c)  printf(""These sides do not correspond to a valid triangle"");  
+else  printf(""area =%.2f;perimeter =%.2f"",pow(s*(s-a)*(s-b)*(s-c),0.5),a+b+c); 
+return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+varb_3=(varb_0+varb_1+varb_2)/2;
+if(varb_0+varb_1<=varb_2)  printf(""These sides do not correspond to varb_0 valid triangle"");  
+else  printf(""area =%.2f;perimeter =%.2f"",pow(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2),0.5),varb_0+varb_1+varb_2); 
+return 0;
+}",8
+64,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a,b,c;
+   scanf (""%d %d %d"",&a,&b,&c);
+   if (a+b>c&&b+c>a&&a+c>b)
+   {
+     float s,area,perimeter;
+     s=(a+b+c)/2.0;
+     area==sqrt(s*(s-a)*(s-b)*(s-c));
+     perimeter==a+b+c;
+     printf (""area=%.2f;perimrter=%.2f"",area,perimeter);
+   }   
+    else
+     printf (""These sides do not correspond to a valid triangle\n"");
+    
+    return 0;
+    }
+      ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d %d %d"",&varb_0,&varb_1,&varb_2);
+   if(varb_0+varb_1>varb_2&&varb_1+varb_2>varb_0&&varb_0+varb_2>varb_1)
+   {
+     float varb_3,varb_4,varb_5;
+     varb_3=(varb_0+varb_1+varb_2)/2.0;
+     varb_4==sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+     varb_5==varb_0+varb_1+varb_2;
+     printf(""area=%.2f;perimrter=%.2f"",varb_4,varb_5);
+   }   
+    else
+     printf(""These sides do not correspond to varb_0 valid triangle\n"");
+    return 0;
+    }
+",5
+65,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,b,c,s,area,perimeter;
+	scanf(""%f,%f,%f"",&a,&b,&c);
+	if(a+b<c&&a+c<b&&b+c<a)
+	{
+	    perimeter=a+b+c;
+    	s=(a+b+c)/2;
+	    area=sqrt(s*(s-a)*(s-b)*(s-c));
+	    printf(""area=%.2f;perimeter=%.2f"",area,perimeter);
+    }
+    else
+	{
+		printf(""These sides do not correspond to a valid triangle"");
+	} 
+	 return 0;
+ } ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f,%f,%f"",&varb_0,&varb_1,&varb_2);
+	if(varb_0+varb_1<varb_2&&varb_0+varb_2<varb_1&&varb_1+varb_2<varb_0)
+	{
+	    varb_5=varb_0+varb_1+varb_2;
+    	varb_3=(varb_0+varb_1+varb_2)/2;
+	    varb_4=sqrt(varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2));
+	    printf(""area=%.2f;varb_5=%.2f"",varb_4,varb_5);
+    }
+    else
+	{
+		printf(""These sides do not correspond to varb_0 valid triangle"");
+	} 
+	 return 0;
+ } ",6
+66,2c9f30a576c1c3dd017bdd3d3ced6a66,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   float a,b,c,s,area,m;
+   scanf(""%f %f %f"",&a,&b,&c);
+   if(a+b>c&&a+c>b&&b+c>a)
+     {
+        s=a+b+c;
+        m=s*(s-a)*(s-b)*(s-c);
+        area=sqrt(m);
+        printf(""area=%.2f;perimeter=%.2f"",area,s);
+     }
+   else
+     printf(""These sides do not correspond to a valid triangle"");
+   return 0;
+}
+
+         ",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+   scanf(""%f %f %f"",&varb_0,&varb_1,&varb_2);
+   if(varb_0+varb_1>varb_2&&varb_0+varb_2>varb_1&&varb_1+varb_2>varb_0)
+     {
+        varb_3=varb_0+varb_1+varb_2;
+        varb_5=varb_3*(varb_3-varb_0)*(varb_3-varb_1)*(varb_3-varb_2);
+        varb_4=sqrt(varb_5);
+        printf(""area=%.2f;perimeter=%.2f"",varb_4,varb_3);
+     }
+   else
+     printf(""These sides do not correspond to varb_0 valid triangle"");
+   return 0;
+}
+",9

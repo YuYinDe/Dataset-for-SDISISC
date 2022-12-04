@@ -1,0 +1,3138 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+{
+   int n,i=500,count=0;
+   scanf(""%d"",&n);
+   while(count<n)
+   {
+     if(i%3==2 && i%5==2 && i%7==2)
+     {
+     printf(""%5d"",i);
+     count++;
+     if(count%10==0)
+     printf(""/n"");
+     }
+   i++;
+   }
+   return 0;
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1=500,varb_2=0;
+   scanf(""%d"",&varb_0);
+   while(varb_2<varb_0)
+   {
+     if(varb_1%3==2 && varb_1%5==2 && varb_1%7==2)
+     {
+     printf(""%5d"",varb_1);
+     varb_2++;
+     if(varb_2%10==0)
+     printf(""/n"");
+     }
+   varb_1++;
+   }
+   return 0;
+}
+",4
+1,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+   int a,b,n;
+   int i=1;
+   scanf(""%d"",&n);
+   for(a=1;i<=n;a++)
+   {
+     b=a+500;
+     if(b%3==2&&b%5==2&&b%7==2)
+     {
+       printf(""%5d "",b);
+       i++;
+       if(i%10==0)
+         printf(""\n"");
+     }        
+   }
+}",0.0,"#include<stdio.h>
+main()
+{
+   int varb_0,varb_1,varb_2;
+   int varb_3=1;
+   scanf(""%d"",&varb_2);
+   for(varb_0=1;varb_3<=varb_2;varb_0++)
+   {
+     varb_1=varb_0+500;
+     if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+     {
+       printf(""%5d "",varb_1);
+       varb_3++;
+       if(varb_3%10==0)
+         printf(""\n"");
+     }        
+   }
+}",13
+2,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+    int n,a,b;
+    scanf(""%d"",&n);
+    n<=100;
+    a=500;
+        for(a=500;;a++)
+        {
+            if(a%3==2&&a%5==2&&a%7==2)
+        {
+        
+        printf(""%5d "",a);
+        if(b%10==0)
+        printf(""\n"");
+        if(b%2==0)
+        printf("" "");
+        b++;
+    }
+        if(b==n)
+        break;
+        }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    varb_1=500;
+        for(varb_1=500;;varb_1++)
+        {
+            if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+        printf(""%5d "",varb_1);
+        if(varb_2%10==0)
+        printf(""\n"");
+        if(varb_2%2==0)
+        printf("" "");
+        varb_2++;
+    }
+        if(varb_2==varb_0)
+        break;
+        }
+}",15
+3,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+{
+  int a=500,n,m=1;
+  scanf(""%d"",&n);
+  for(;m<=n;a++)
+  {
+  if(a%3==2&&a%5==2&&a%7==2)
+  {printf(""%5d "",a);
+  m++;
+  }
+  if(m%10==0)
+  {printf(""\n"");
+  }
+  }
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0=500,n,m=1;
+  scanf(""%d"",&n);
+  for(;m<=n;varb_0++)
+  {
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+  {printf(""%5d "",varb_0);
+  m++;
+  }
+  if(m%10==0)
+  {printf(""\n"");
+  }
+  }
+  return 0;
+}",2
+4,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,m,a;
+m=500;
+a=0;
+scanf(""%d"",&n);
+while(a<=n)
+{
+if(m%3==2&&m%5==2&&m%7==2)
+{
+printf(""%5d"",m);
+a++;
+if(n%10==0)
+printf(""\n"");
+}
+m++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_1=500;
+varb_2=0;
+scanf(""%d"",&varb_0);
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d"",varb_1);
+varb_2++;
+if(varb_0%10==0)
+printf(""\n"");
+}
+varb_1++;
+}
+return 0;
+}",6
+5,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int n,a,n1,n2;
+	a=500;
+	n1=0;
+	scanf(""%d"",&n);
+	while(n1<=n)
+	{
+		if(a%3==2&&a%5==2&&a%7==2)
+		{
+		  printf(""%d "",a);
+		  n1++;
+		  n2++;
+	    }
+	    if(n2>=5)
+	    {
+	    	printf(""\n"");
+	    	n2=0;
+		}
+		a++; 
+		if(n1==n)
+		  break;
+		 	
+	}
+	
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	varb_1=500;
+	varb_2=0;
+	scanf(""%d"",&varb_0);
+	while(varb_2<=varb_0)
+	{
+		if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+		{
+		  printf(""%d "",varb_1);
+		  varb_2++;
+		  varb_3++;
+	    }
+	    if(varb_3>=5)
+	    {
+	    	printf(""\n"");
+	    	varb_3=0;
+		}
+		varb_1++; 
+		if(varb_2==varb_0)
+		  break;
+	}
+}",16
+6,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,a,b;
+  scanf(""%d"",&n);
+  i=1;
+  for(a=500;i<=n;a++){
+  if(a%3==2&&a%5==2&&a%7==2){
+    printf(""%5d "",a);
+    i++;
+   if(i%10==0)
+    printf(""\n"");
+    }}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  varb_1=1;
+  for(varb_2=500;varb_1<=varb_0;varb_2++){
+  if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2){
+    printf(""%5d "",varb_2);
+    varb_1++;
+   if(varb_1%10==0)
+    printf(""\n"");
+    }}
+}",6
+7,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<=n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d "",b);
+
+                i++;
+
+            }
+         }
+
+        if(i%10==0)
+
+        printf(""\n"");
+
+    
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<=varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d "",varb_1);
+                varb_2++;
+            }
+         }
+        if(varb_2%10==0)
+        printf(""\n"");
+    return 0;
+}",6
+8,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+   int a,b,n;
+   int i=0;
+   scanf(""%d"",&n);
+   for(a=1;i<=n;a++)
+   {
+     b=a+500;
+     if(b%3==2&&b%5==2&&b%7==2)
+     {
+       printf(""%5d "",b);
+       i++;
+       if(i%10==0)
+         printf(""\n"");
+     }        
+   }
+}",0.0,"#include<stdio.h>
+main()
+{
+   int varb_0,varb_1,varb_2;
+   int varb_3=0;
+   scanf(""%d"",&varb_2);
+   for(varb_0=1;varb_3<=varb_2;varb_0++)
+   {
+     varb_1=varb_0+500;
+     if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+     {
+       printf(""%5d "",varb_1);
+       varb_3++;
+       if(varb_3%10==0)
+         printf(""\n"");
+     }        
+   }
+}",5
+9,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int a,b,n,m;
+   a=500;
+   b=1;
+scanf(""%d"",&n);
+   for(;b<=n;)
+{
+  if(a%3==2&&a%5==2&&a%7==2)
+   {
+     printf(""%5d "",a);
+     a++;
+     b++;
+    }
+  else
+     a++;
+    for(m=1;m>=10;m++)
+    printf(""\n"");
+  
+}   
+    
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_0=500;
+   varb_1=1;
+scanf(""%d"",&varb_2);
+   for(;varb_1<=varb_2;)
+{
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+   {
+     printf(""%5d "",varb_0);
+     varb_0++;
+     varb_1++;
+    }
+  else
+     varb_0++;
+    for(varb_3=1;varb_3>=10;varb_3++)
+    printf(""\n"");
+}   
+}",18
+10,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b;
+  scanf(""%d"",&n);
+  a=500;
+  b=1;
+  while(b<=n)
+  {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf("" %-5d"",a);
+    b++;
+    if(b%10==0)
+    printf(""\n"");
+    }
+    a++;
+  }
+   return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d"",&varb_0);
+  varb_1=500;
+  varb_2=1;
+  while(varb_2<=varb_0)
+  {
+    if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+    {
+    printf("" %-5d"",varb_1);
+    varb_2++;
+    if(varb_2%10==0)
+    printf(""\n"");
+    }
+    varb_1++;
+  }
+   return 0;
+}",7
+11,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main(){
+  int a,i,n;
+  scanf(""%d"",&n);
+  for (a=500;a<11000;a++)
+     {
+      if(a%3==2 && a%5==2 && a%7==2)
+       {
+      if(i<10&&i<n)
+        {printf(""%d "",a);
+         i++;}
+       else if(i>=10 &&i<n)
+        {printf(""\n"");
+         i=0;}
+         else;}
+     else;}
+}",0.0,"#include<stdio.h>
+main(){
+  int varb_0,varb_1,varb_2;
+  scanf(""%d"",&varb_2);
+  for(varb_0=500;varb_0<11000;varb_0++)
+     {
+      if(varb_0%3==2 && varb_0%5==2 && varb_0%7==2)
+       {
+      if(varb_1<10&&varb_1<varb_2)
+        {printf(""%d "",varb_0);
+         varb_1++;}
+       else if(varb_1>=10 &&varb_1<varb_2)
+        {printf(""\n"");
+         varb_1=0;}
+         else;}
+     else;}
+}",3
+12,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,a,b;
+  scanf(""%d"",&n);
+  i=1;
+  for(a=500;i<=n;a++){
+  if(a%3==2&&a%5==2&&a%7==2){
+    printf(""%5d\t"",a);
+    i++;
+   if(i%10==0)
+    printf(""\n"");
+    }}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  varb_1=1;
+  for(varb_2=500;varb_1<=varb_0;varb_2++){
+  if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2){
+    printf(""%5d\t"",varb_2);
+    varb_1++;
+   if(varb_1%10==0)
+    printf(""\n"");
+    }}
+}",6
+13,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,a,b;
+  scanf(""%d"",&n);
+  i=0;
+  for(a=500;i<=n;a++){
+  if(a%3==2&&a%5==2&&a%7==2){
+    printf(""%5d\t"",a);
+    i++;
+   if(i%10==0)
+    printf(""\n"");
+    }}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  varb_1=0;
+  for(varb_2=500;varb_1<=varb_0;varb_2++){
+  if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2){
+    printf(""%5d\t"",varb_2);
+    varb_1++;
+   if(varb_1%10==0)
+    printf(""\n"");
+    }}
+}",7
+14,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int js=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			js++;
+			if(js%10!=0)
+			printf("" "");
+			if(js%10==0)
+			printf(""\n"");
+				}
+				if(js==n)
+				break;
+	}
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			varb_0++;
+			if(varb_0%10!=0)
+			printf("" "");
+			if(varb_0%10==0)
+			printf(""\n"");
+				}
+				if(varb_0==n)
+				break;
+	}
+}
+",8
+15,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d "",b);
+
+                i++;
+
+            }
+         
+}
+        if(i%10==0)
+
+        printf(""\n"");
+
+    
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d "",varb_1);
+                varb_2++;
+            }
+}
+        if(varb_2%10==0)
+        printf(""\n"");
+    return 0;
+}",14
+16,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int a,b,n,m;
+   a=500;
+   b=1;
+scanf(""%d"",&n);
+   for(;b<=n;)
+{
+  if(a%3==2&&a%5==2&&a%7==2)
+   {
+     printf(""%5d "",a);
+     a++;
+     b++;
+    for(m=1;m>=10;m++)
+    printf(""\n"");
+  
+}   
+  else
+     a++;
+}   
+    
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_0=500;
+   varb_1=1;
+scanf(""%d"",&varb_2);
+   for(;varb_1<=varb_2;)
+{
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+   {
+     printf(""%5d "",varb_0);
+     varb_0++;
+     varb_1++;
+    for(varb_3=1;varb_3>=10;varb_3++)
+    printf(""\n"");
+}   
+  else
+     varb_0++;
+}   
+}",15
+17,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,i,n;
+scanf(""%d"",&n);
+
+a=500;
+for(i=0;i<=n;)
+{
+   if (a%3==2&&a%5==2&&a%7==2)
+{
+ printf(""%5d"",a);
+ if(i%10==0&&i!=0) 
+printf(""\n"");
+i++;
+}
+a++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_2);
+varb_0=500;
+for(varb_1=0;varb_1<=varb_2;)
+{
+   if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+ printf(""%5d"",varb_0);
+ if(varb_1%10==0&&varb_1!=0) 
+printf(""\n"");
+varb_1++;
+}
+varb_0++;
+}
+return 0;
+}",7
+18,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+    int n,a,b;
+    scanf(""%d"",&n);
+    n<=100;
+    a=500;
+        for(a=500;;a++)
+        {
+            if(a%3==2&&a%5==2&&a%7==2)
+        {
+        
+        printf(""%5d"",a);
+        if(b%10==0)
+        printf(""\n"");
+        b++;
+    }
+        if(b==n)
+        break;
+        }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    varb_1=500;
+        for(varb_1=500;;varb_1++)
+        {
+            if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+        printf(""%5d"",varb_1);
+        if(varb_2%10==0)
+        printf(""\n"");
+        varb_2++;
+    }
+        if(varb_2==varb_0)
+        break;
+        }
+}",15
+19,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+  int n,i,t=0;
+  scanf(""%d"",&n);
+  for(i=500;i<=123456789;i++)
+  { 
+    if(i%3==2&&i%5==2&&i%7==2)
+    {
+    printf(""%5d "",i);
+    t++;
+    }
+    if(t%10==0)printf(""\n"");
+    if(t==n)
+      break;
+  }
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2=0;
+  scanf(""%d"",&varb_0);
+  for(varb_1=500;varb_1<=123456789;varb_1++)
+  { 
+    if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+    {
+    printf(""%5d "",varb_1);
+    varb_2++;
+    }
+    if(varb_2%10==0)printf(""\n"");
+    if(varb_2==varb_0)
+      break;
+  }
+  return 0;
+}",13
+20,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+    int n,num,i,z;
+    num=1;
+    scanf(""%d"",&n);
+    n<=100;
+    for(i=500;
+    ;
+    i++)
+    {
+        if((i%3==2)&&(i%5==2)&&(i%7==2))
+        {
+            printf(""%5d"",i);
+            num++;
+            if(num%10==0)
+            printf(""\n"");
+        }
+        if(num==n)
+        break;
+    }
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    varb_1=1;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    for(varb_2=500;
+    ;
+    varb_2++)
+    {
+        if((varb_2%3==2)&&(varb_2%5==2)&&(varb_2%7==2))
+        {
+            printf(""%5d"",varb_2);
+            varb_1++;
+            if(varb_1%10==0)
+            printf(""\n"");
+        }
+        if(varb_1==varb_0)
+        break;
+    }
+}
+",5
+21,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+
+
+int m,n,num;
+num=1;
+scanf(""%d"",&n);
+for(m=500;m>1;m++)
+{
+  if(m%3==2&&m%5==2&&m%7==2)
+  {printf(""%-5d"",m);
+  ++num;
+if((num-1)%2==0)
+printf("" "");
+if((num-1)%10==0)
+printf(""\n"");}
+
+  if(num>=n)
+  break;
+  }
+  return 0;
+  }",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_2=1;
+scanf(""%d"",&varb_1);
+for(varb_0=500;varb_0>1;varb_0++)
+{
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+  {printf(""%-5d"",varb_0);
+  ++varb_2;
+if((varb_2-1)%2==0)
+printf("" "");
+if((varb_2-1)%10==0)
+printf(""\n"");}
+  if(varb_2>=varb_1)
+  break;
+  }
+  return 0;
+  }",10
+22,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<c;)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d\t"",a);
+b++;
+if(b%10==0)
+{printf(""\n"");}
+
+}
+a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<varb_2;)
+{
+if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+printf(""%5d\t"",varb_0);
+varb_1++;
+if(varb_1%10==0)
+{printf(""\n"");}
+}
+varb_0++;
+}
+}",6
+23,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{
+
+    int i,a,b=0,j,n;
+
+    scanf(""%d"",&n);
+
+    i=0,b=1;
+
+    while(b<n)
+
+    {
+
+    i++;
+
+    a=500+i;
+
+    if(a%3==2 && a%5==2 && a%7==2)
+
+    {
+
+    b++;
+
+    printf(""%5d "",a);
+
+    
+
+    if(b%10==0)
+
+    printf(""\n"");
+
+    }
+
+    }
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2=0,varb_3,varb_4;
+    scanf(""%d"",&varb_4);
+    varb_0=0,varb_2=1;
+    while(varb_2<varb_4)
+    {
+    varb_0++;
+    varb_1=500+varb_0;
+    if(varb_1%3==2 && varb_1%5==2 && varb_1%7==2)
+    {
+    varb_2++;
+    printf(""%5d "",varb_1);
+    if(varb_2%10==0)
+    printf(""\n"");
+    }
+    }
+    return 0;
+}",6
+24,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+int n;
+scanf(""%d"",&n);
+if(n>100)
+printf(""输入值大于一百"");
+else
+ {
+  int i,num,a,b,c;
+  i=1;num=500;
+  while(i<=n)
+   {
+    a=num%3;
+    b=num%5;
+    c=num%7;
+    if(a==2&&b==2&&c==2)
+     {
+      printf(""%5d"",num);
+      num++;
+      i++;
+      if(i%10==0)
+      printf(""\n"");
+     }
+    else
+     {
+      num++;
+     }
+
+    }
+  }
+
+
+
+return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100)
+printf(""输入值大于一百"");
+else
+ {
+  int varb_1,varb_2,varb_3,varb_4,varb_5;
+  varb_1=1;varb_2=500;
+  while(varb_1<=varb_0)
+   {
+    varb_3=varb_2%3;
+    varb_4=varb_2%5;
+    varb_5=varb_2%7;
+    if(varb_3==2&&varb_4==2&&varb_5==2)
+     {
+      printf(""%5d"",varb_2);
+      varb_2++;
+      varb_1++;
+      if(varb_1%10==0)
+      printf(""\n"");
+     }
+    else
+     {
+      varb_2++;
+     }
+    }
+  }
+return 0;
+}",10
+25,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{   
+    int m,n,num;
+    num==1;
+    scanf(""%d"",&n);
+    for(m=500;m>1;m++)
+    {   
+        if(m%3==2&&m%5==2&&m%7==2)
+        {  printf(""%5d"",m);
+            num++;
+             if((num-1)%2==0)
+             printf("""");
+             if((num-1)%10==0)
+             printf(""\n"");
+             if(num>n)
+             break;
+        }
+        return 0;
+    }
+ }
+       ",0.0,"#include<stdio.h>
+int main()
+{   
+    int varb_0,varb_1,varb_2;
+    varb_2==1;
+    scanf(""%d"",&varb_1);
+    for(varb_0=500;varb_0>1;varb_0++)
+    {   
+        if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+        {  printf(""%5d"",varb_0);
+            varb_2++;
+             if((varb_2-1)%2==0)
+             printf("""");
+             if((varb_2-1)%10==0)
+             printf(""\n"");
+             if(varb_2>varb_1)
+             break;
+        }
+        return 0;
+    }
+ }
+",15
+26,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int js=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			js++;
+			if(js%5!=0)
+			printf("" "");
+			if(js%10==0)
+			printf(""\n"");
+				}
+	}
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			varb_0++;
+			if(varb_0%5!=0)
+			printf("" "");
+			if(varb_0%10==0)
+			printf(""\n"");
+				}
+	}
+}
+",8
+27,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,j;
+  i=500;
+  j=1;
+  scanf(""%d"",&n);
+  for(;j<=n;)
+   {if(i%3==2&&i%5==2&&i%7==2)
+    {printf(""%5d "",i);
+    i++;
+    j++;
+    if(j==10||j==20||j==30||j==40||j==50||j==60||j==70||j==80||j==90)
+    printf(""\n"");}
+    else
+    i++;}
+  return 0;
+}
+     
+    
+    
+  ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  varb_1=500;
+  varb_2=1;
+  scanf(""%d"",&varb_0);
+  for(;varb_2<=varb_0;)
+   {if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+    {printf(""%5d "",varb_1);
+    varb_1++;
+    varb_2++;
+    if(varb_2==10||varb_2==20||varb_2==30||varb_2==40||varb_2==50||varb_2==60||varb_2==70||varb_2==80||varb_2==90)
+    printf(""\n"");}
+    else
+    varb_1++;}
+  return 0;
+}
+",12
+28,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d"",a);
+if(b==50)
+break;
+else
+b++;
+if(b%10==1)
+printf(""\n"");
+else
+printf(""\t"");
+
+}
+a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+{
+if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+printf(""%5d"",varb_0);
+if(varb_1==50)
+break;
+else
+varb_1++;
+if(varb_1%10==1)
+printf(""\n"");
+else
+printf(""\t"");
+}
+varb_0++;
+}
+}",12
+29,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int n,a=500,b=0;
+	scanf(""%d"",&n);
+	while (n>0)
+	{
+		if(a%3==2&&a%5==2&&a%7==2)
+		{
+			n--;
+			b++;
+			printf(""%d "",a);
+			if(b==10)
+			printf(""\n"");
+		}
+		else 
+		a++;
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=500,varb_2=0;
+	scanf(""%d"",&varb_0);
+	while(varb_0>0)
+	{
+		if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+		{
+			varb_0--;
+			varb_2++;
+			printf(""%d "",varb_1);
+			if(varb_2==10)
+			printf(""\n"");
+		}
+		else 
+		varb_1++;
+	}
+	return 0;
+}",8
+30,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<=n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d "",b);
+
+                i++;
+
+            }
+
+        if(i%10==0)
+
+        printf(""\n"");
+
+    }
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<=varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d "",varb_1);
+                varb_2++;
+            }
+        if(varb_2%10==0)
+        printf(""\n"");
+    }
+    return 0;
+}",6
+31,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int n,m=1,num=1,count=0;
+	scanf(""%d"",&n);
+	for(;m<=n;num++)
+	{
+		if(num%3==2&&num%5==2&&num%7==2)
+		{
+		printf(""%5d"",num);
+		m++;
+		count++;
+		if(count==10)
+		    {
+		    printf(""\n"");
+		    count=0;
+		    }
+	    }
+	}
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=1,varb_2=1,varb_3=0;
+	scanf(""%d"",&varb_0);
+	for(;varb_1<=varb_0;varb_2++)
+	{
+		if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+		{
+		printf(""%5d"",varb_2);
+		varb_1++;
+		varb_3++;
+		if(varb_3==10)
+		    {
+		    printf(""\n"");
+		    varb_3=0;
+		    }
+	    }
+	}
+	return 0;
+}",4
+32,2c911d616dea44ae016e0c5a75634893," #include<stdio.h>
+int main()
+{
+
+
+int m,n,num;
+num=1;
+scanf(""%d"",&n);
+for(m=500;m>1;m++)
+{
+  if(m%3==2&&m%5==2&&m%7==2)
+  {printf(""%5d"",m);
+  ++num;
+if((num-1)%2==0)
+printf("" "");
+if((num-1)%10==0)
+printf(""\n"");}
+
+  if(num>=n)
+  break;
+  }
+  return 0;
+  }",0.0," #include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_2=1;
+scanf(""%d"",&varb_1);
+for(varb_0=500;varb_0>1;varb_0++)
+{
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+  {printf(""%5d"",varb_0);
+  ++varb_2;
+if((varb_2-1)%2==0)
+printf("" "");
+if((varb_2-1)%10==0)
+printf(""\n"");}
+  if(varb_2>=varb_1)
+  break;
+  }
+  return 0;
+  }",16
+33,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,m,a;
+m=500;
+a=0;
+scanf(""%d"",&m);
+while(a<=n)
+{
+if(m%3==2&&m%5==2&&m%7==2)
+{
+printf(""%5d"",m);
+a++;
+if(n%10==0)
+printf(""/n"");
+}
+m++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_1=500;
+varb_2=0;
+scanf(""%d"",&varb_1);
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d"",varb_1);
+varb_2++;
+if(varb_0%10==0)
+printf(""/n"");
+}
+varb_1++;
+}
+return 0;
+}",6
+34,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+int n;
+scanf(""%d"",&n);
+if(n>100)
+printf(""输入值大于一百"");
+else
+ {
+  int i,num,a,b,c;
+  i=1;num=500;
+  while(i<=n)
+   {
+    a=num%3;
+    b=num%5;
+    c=num%7;
+    if(a==2&&b==2&&c==2)
+     {
+      printf(""%5d"",num);
+      num++;
+      i++;
+      if(i%11==0)
+      printf(""\n"");
+     }
+    else
+     {
+      num++;
+     }
+
+    }
+  }
+
+
+
+return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100)
+printf(""输入值大于一百"");
+else
+ {
+  int varb_1,varb_2,varb_3,varb_4,varb_5;
+  varb_1=1;varb_2=500;
+  while(varb_1<=varb_0)
+   {
+    varb_3=varb_2%3;
+    varb_4=varb_2%5;
+    varb_5=varb_2%7;
+    if(varb_3==2&&varb_4==2&&varb_5==2)
+     {
+      printf(""%5d"",varb_2);
+      varb_2++;
+      varb_1++;
+      if(varb_1%11==0)
+      printf(""\n"");
+     }
+    else
+     {
+      varb_2++;
+     }
+    }
+  }
+return 0;
+}",10
+35,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,i,b; 
+scanf(""%d"",&n);
+i=0;
+b=500;
+while(i<=n)
+{
+if(b%3==2&&b%5==2&&b%7==2)
+{
+printf(""%5.d "",b);
+i++;
+if(i%10==0)
+printf(""\n"");
+}
+b++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2; 
+scanf(""%d"",&varb_0);
+varb_1=0;
+varb_2=500;
+while(varb_1<=varb_0)
+{
+if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+{
+printf(""%5.d "",varb_2);
+varb_1++;
+if(varb_1%10==0)
+printf(""\n"");
+}
+varb_2++;
+}
+return 0;
+}",8
+36,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,i,n;
+scanf(""%d"",&n);
+
+a=500;
+for(i=1,n=1;i<=n;)
+{
+   if (a%3==2&&a%5==2&&a%7==2)
+{
+ printf(""%5d"",a);
+ if(i%10==0&&i!=0) 
+printf(""\n"");
+i++;
+}
+a++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_2);
+varb_0=500;
+for(varb_1=1,varb_2=1;varb_1<=varb_2;)
+{
+   if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+ printf(""%5d"",varb_0);
+ if(varb_1%10==0&&varb_1!=0) 
+printf(""\n"");
+varb_1++;
+}
+varb_0++;
+}
+return 0;
+}",7
+37,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+    int n,a,b;
+    scanf(""%d"",&n);
+    n<=100;
+    a=500;
+        for(a=500;;a++)
+        {
+            if(a%3==2&&a%5==2&&a%7==2)
+        {
+        
+        printf(""%5d "",a);
+        printf("" "");
+        if(b%10==0)
+        printf(""\n"");
+        b++;
+    }
+        if(b==n)
+        break;
+        }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    varb_1=500;
+        for(varb_1=500;;varb_1++)
+        {
+            if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+        printf(""%5d "",varb_1);
+        printf("" "");
+        if(varb_2%10==0)
+        printf(""\n"");
+        varb_2++;
+    }
+        if(varb_2==varb_0)
+        break;
+        }
+}",13
+38,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,a,b;
+  scanf(""%d"",&n);
+  i=0;
+  for(a=500;i<=n;a++){
+  if(a%3==2&&a%5==2&&a%7==2){
+    printf(""%5d "",a);
+    i++;
+   if(i%10==0)
+    printf(""\n"");
+    }}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  varb_1=0;
+  for(varb_2=500;varb_1<=varb_0;varb_2++){
+  if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2){
+    printf(""%5d "",varb_2);
+    varb_1++;
+   if(varb_1%10==0)
+    printf(""\n"");
+    }}
+}",7
+39,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+    int n,a,b;
+    scanf(""%d"",&n);
+    n<=100;
+    a=500;
+        for(a=500;;a++)
+        {
+            if(a%3==2&&a%5==2&&a%7==2)
+        {
+        
+        printf(""%5d "",a);
+        if(b%10==0)
+        printf(""\n"");
+        b++;
+    }
+        if(b==n)
+        break;
+        }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    varb_1=500;
+        for(varb_1=500;;varb_1++)
+        {
+            if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+        printf(""%5d "",varb_1);
+        if(varb_2%10==0)
+        printf(""\n"");
+        varb_2++;
+    }
+        if(varb_2==varb_0)
+        break;
+        }
+}",15
+40,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+    {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf(""%4d"",a);
+      if(b==50)
+        break;
+      else
+        b++;
+      if(b%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+
+     }
+     a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+    {
+    if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+    {
+    printf(""%4d"",varb_0);
+      if(varb_1==50)
+        break;
+      else
+        varb_1++;
+      if(varb_1%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+     }
+     varb_0++;
+}
+}",11
+41,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+    int n,a,b;
+    b=0;
+    scanf(""%d"",&n);
+    n<=100;
+    a=500;
+        for(a=500;;a++)
+        {
+            if(a%3==2&&a%5==2&&a%7==2)
+        {
+        
+        printf(""%5d"",a);
+        if(b%10==0)
+        printf(""\n"");
+        b++;
+    }
+        if(b==n)
+        break;
+        }
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    varb_0<=100;
+    varb_1=500;
+        for(varb_1=500;;varb_1++)
+        {
+            if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+        printf(""%5d"",varb_1);
+        if(varb_2%10==0)
+        printf(""\n"");
+        varb_2++;
+    }
+        if(varb_2==varb_0)
+        break;
+        }
+}",16
+42,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,n,c=0;
+int b=422;
+scanf(""%d"",&n);
+for(a=1;a<=n;a++)
+{
+b+=105;
+printf(""%d "",b);
+c++;
+if(c==10)
+printf(""\n"");
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2=0;
+int varb_3=422;
+scanf(""%d"",&varb_1);
+for(varb_0=1;varb_0<=varb_1;varb_0++)
+{
+varb_3+=105;
+printf(""%d "",varb_3);
+varb_2++;
+if(varb_2==10)
+printf(""\n"");
+}
+}",12
+43,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,i,b; 
+scanf(""%d"",&n);
+i=0;
+b=500;
+while(i<=n)
+{
+if(b%3==2&&b%5==2&&b%7==2)
+{
+printf(""%5.d"",b);
+i++;
+if(i%10==0)
+printf(""\n"");
+}
+b++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2; 
+scanf(""%d"",&varb_0);
+varb_1=0;
+varb_2=500;
+while(varb_1<=varb_0)
+{
+if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+{
+printf(""%5.d"",varb_2);
+varb_1++;
+if(varb_1%10==0)
+printf(""\n"");
+}
+varb_2++;
+}
+return 0;
+}",8
+44,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+int n;
+scanf(""%d"",&n);
+if(n>100)
+printf(""输入值大于一百"");
+else
+ {
+  int i,num,a,b,c;
+  i=1;num=500;
+  while(i<=n)
+   {
+    a=num%3;
+    b=num%5;
+    c=num%7;
+    if(a==2&&b==2&&c==2)
+     {
+      printf(""%5d"",num);
+      num++;
+      i++;
+     }
+    else
+     {
+      num++;
+     }
+
+    }
+  }
+
+
+
+return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100)
+printf(""输入值大于一百"");
+else
+ {
+  int varb_1,varb_2,varb_3,varb_4,varb_5;
+  varb_1=1;varb_2=500;
+  while(varb_1<=varb_0)
+   {
+    varb_3=varb_2%3;
+    varb_4=varb_2%5;
+    varb_5=varb_2%7;
+    if(varb_3==2&&varb_4==2&&varb_5==2)
+     {
+      printf(""%5d"",varb_2);
+      varb_2++;
+      varb_1++;
+     }
+    else
+     {
+      varb_2++;
+     }
+    }
+  }
+return 0;
+}",10
+45,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int n,m=0,num=520,count=0;
+	scanf(""%d"",&n);
+	for(;m<=n;num++)
+	{
+		if(num%3==2&&num%5==2&&num%7==2)
+		{
+		printf(""%5d"",num);
+		m++;
+		count++;
+		if(count==10)
+		    {
+		    printf(""\n"");
+		    count=0;
+		    }
+	    }
+	}
+	
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1=0,varb_2=520,varb_3=0;
+	scanf(""%d"",&varb_0);
+	for(;varb_1<=varb_0;varb_2++)
+	{
+		if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+		{
+		printf(""%5d"",varb_2);
+		varb_1++;
+		varb_3++;
+		if(varb_3==10)
+		    {
+		    printf(""\n"");
+		    varb_3=0;
+		    }
+	    }
+	}
+}
+",4
+46,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b;
+  scanf(""%d"",&n);
+  a=500;
+  b=1;
+  while(b<=n)
+  {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf("" %5d"",a);
+    b++;
+    if(b%10==0)
+    printf(""\n"");
+    }
+    a++;
+  }
+   return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d"",&varb_0);
+  varb_1=500;
+  varb_2=1;
+  while(varb_2<=varb_0)
+  {
+    if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+    {
+    printf("" %5d"",varb_1);
+    varb_2++;
+    if(varb_2%10==0)
+    printf(""\n"");
+    }
+    varb_1++;
+  }
+   return 0;
+}",6
+47,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b;
+  scanf(""%d"",&n);
+  a=500;
+  b=1;
+  while(b<=n)
+  {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf(""%5d"",a);
+    b++;
+    if(b%10==0)
+    printf(""\n"");
+    }
+    a++;
+  }
+   return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  scanf(""%d"",&varb_0);
+  varb_1=500;
+  varb_2=1;
+  while(varb_2<=varb_0)
+  {
+    if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+    {
+    printf(""%5d"",varb_1);
+    varb_2++;
+    if(varb_2%10==0)
+    printf(""\n"");
+    }
+    varb_1++;
+  }
+   return 0;
+}",6
+48,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,m,a;
+m=500;
+a=0;
+scanf(""%d"",&n);
+while(a<=n)
+{
+if(m%3==2&&m%5==2&&m%7==2)
+{
+printf(""%5d"",m);
+a++;
+if(n%10==0)
+printf(""/n"");
+}
+m++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_1=500;
+varb_2=0;
+scanf(""%d"",&varb_0);
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d"",varb_1);
+varb_2++;
+if(varb_0%10==0)
+printf(""/n"");
+}
+varb_1++;
+}
+return 0;
+}",6
+49,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b,c;
+   b=0;
+c=0;
+  scanf(""%d"",&n);
+  for(a=500;a>0;a++)
+  {
+  if(a%3==2 && a%5==2 && a%7==2)
+  {
+  b+=1;
+c+=1;
+  printf(""%d "",a);
+  }
+  if(b>n)break;
+}
+if(c%10==0)
+printf(""\n"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_2=0;
+varb_3=0;
+  scanf(""%d"",&varb_0);
+  for(varb_1=500;varb_1>0;varb_1++)
+  {
+  if(varb_1%3==2 && varb_1%5==2 && varb_1%7==2)
+  {
+  varb_2+=1;
+varb_3+=1;
+  printf(""%d "",varb_1);
+  }
+  if(varb_2>varb_0)break;
+}
+if(varb_3%10==0)
+printf(""\n"");
+}",16
+50,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+	int js=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			js++;
+			if(js%10!=0)
+			printf("" "");
+		else
+			printf(""\n"");
+				}
+				if(js==n)
+				break;
+	}
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0=0,i,n,z=500;
+	scanf(""%d"",&n);
+	for(i=1;1;i++)
+	{
+		z+=i;
+		if(z%3==2&&z%5==2&&z%7==2)
+		{
+			printf(""%+5d"",z);
+			varb_0++;
+			if(varb_0%10!=0)
+			printf("" "");
+		else
+			printf(""\n"");
+				}
+				if(varb_0==n)
+				break;
+	}
+}
+",8
+51,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d\t"",a);
+b++;
+if(b%10==1)
+{printf(""\n"");}
+
+}
+a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+{
+if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+printf(""%5d\t"",varb_0);
+varb_1++;
+if(varb_1%10==1)
+{printf(""\n"");}
+}
+varb_0++;
+}
+}",11
+52,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d "",b);
+
+                i++;
+
+            }
+         
+
+        if(i%10==0)
+
+        printf(""\n"");
+
+    }
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d "",varb_1);
+                varb_2++;
+            }
+        if(varb_2%10==0)
+        printf(""\n"");
+    }
+    return 0;
+}",12
+53,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main(){
+  int a,i,n;
+  scanf(""%d"",&n);
+  for (a=500;a<11000;a++)
+     {
+      if(a%3==2 && a%5==2 && a%7==2)
+       {
+      if(i<10&&i<n)
+        {printf(""%d "",a);
+         i++;}
+       else if(i>=10 &&i<n)
+        {printf(""%d\n"",a);
+         i=0;}
+         else;}
+     else;}
+}",0.0,"#include<stdio.h>
+main(){
+  int varb_0,varb_1,varb_2;
+  scanf(""%d"",&varb_2);
+  for(varb_0=500;varb_0<11000;varb_0++)
+     {
+      if(varb_0%3==2 && varb_0%5==2 && varb_0%7==2)
+       {
+      if(varb_1<10&&varb_1<varb_2)
+        {printf(""%d "",varb_0);
+         varb_1++;}
+       else if(varb_1>=10 &&varb_1<varb_2)
+        {printf(""%d\n"",varb_0);
+         varb_1=0;}
+         else;}
+     else;}
+}",3
+54,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d\t"",a);
+b++;
+if(b%10==0)
+{printf(""\n"");}
+
+}
+a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+{
+if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+{
+printf(""%5d\t"",varb_0);
+varb_1++;
+if(varb_1%10==0)
+{printf(""\n"");}
+}
+varb_0++;
+}
+}",6
+55,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+{
+    int n,m,a,i;
+  
+    scanf(""%d"",&n);
+    i=0;
+    a=500;
+    while(i<n)
+    {
+        if(a%3==2&&a%5==2&&a%7==2)
+       {
+        i++;
+        printf(""%d "",a);
+        
+       }
+        a++;
+    }
+    if(i%10==0)
+    printf(""\n"");
+        
+    
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d"",&varb_0);
+    varb_3=0;
+    varb_2=500;
+    while(varb_3<varb_0)
+    {
+        if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+       {
+        varb_3++;
+        printf(""%d "",varb_2);
+       }
+        varb_2++;
+    }
+    if(varb_3%10==0)
+    printf(""\n"");
+    return 0;
+}",17
+56,2c911d616dea44ae016e0c5a75634893,"#include <stdio.h>
+int main()
+{
+int n,a,b,i;
+scanf(""%d"",&n);
+for(i=1;i<=n;i++)
+{a=422+i*105;
+printf(""%5d "",a);
+b+=1;}
+if(b%10==0)
+{printf(""\n"");}
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_0);
+for(varb_3=1;varb_3<=varb_0;varb_3++)
+{varb_1=422+varb_3*105;
+printf(""%5d "",varb_1);
+varb_2+=1;}
+if(varb_2%10==0)
+{printf(""\n"");}
+}
+",9
+57,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+    {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf(""%5d"",a);
+      if(b==c)
+        break;
+      else
+        b++;
+      if(b%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+
+     }
+     a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+    {
+    if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+    {
+    printf(""%5d"",varb_0);
+      if(varb_1==varb_2)
+        break;
+      else
+        varb_1++;
+      if(varb_1%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+     }
+     varb_0++;
+}
+}",19
+58,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main(){
+  int a,i=1,n;
+  scanf(""%d"",&n);
+  for (a=500;a<11000;a++)
+     {
+      if(a%3==2 && a%5==2 && a%7==2)
+       {
+      if(i<10&&i<n)
+        {printf(""%d "",a);
+         i++;}
+       else if(i>=10 &&i<n)
+        {printf(""%d\n"",a);
+         i=1;}
+         else
+             break;}
+     else;}
+}",0.0,"#include<stdio.h>
+main(){
+  int varb_0,varb_1=1,varb_2;
+  scanf(""%d"",&varb_2);
+  for(varb_0=500;varb_0<11000;varb_0++)
+     {
+      if(varb_0%3==2 && varb_0%5==2 && varb_0%7==2)
+       {
+      if(varb_1<10&&varb_1<varb_2)
+        {printf(""%d "",varb_0);
+         varb_1++;}
+       else if(varb_1>=10 &&varb_1<varb_2)
+        {printf(""%d\n"",varb_0);
+         varb_1=1;}
+         else
+             break;}
+     else;}
+}",3
+59,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b,c;
+   b=0;
+c=0;
+  scanf(""%d"",&n);
+  for(a=500;a>0;a++)
+  {
+  if(a%3==2 && a%5==2 && a%7==2)
+  {
+  b+=1;
+c+=1;
+  printf(""%d "",a);
+  }
+  if(b>=n)break;
+if(c%10==0&&c>=10)
+printf(""\n"");
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_2=0;
+varb_3=0;
+  scanf(""%d"",&varb_0);
+  for(varb_1=500;varb_1>0;varb_1++)
+  {
+  if(varb_1%3==2 && varb_1%5==2 && varb_1%7==2)
+  {
+  varb_2+=1;
+varb_3+=1;
+  printf(""%d "",varb_1);
+  }
+  if(varb_2>=varb_0)break;
+if(varb_3%10==0&&varb_3>=10)
+printf(""\n"");
+}
+}",17
+60,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<=n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d"",b);
+
+                i++;
+
+            }
+         }
+
+        if(i%10==0)
+
+        printf(""\n"");
+
+    
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<=varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d"",varb_1);
+                varb_2++;
+            }
+         }
+        if(varb_2%10==0)
+        printf(""\n"");
+    return 0;
+}",6
+61,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,i,b; 
+scanf(""%d"",&n);
+i=0;
+b=500;
+while(i<=n)
+{
+if(b%3==2&&b%5==2&&b%7==2)
+{
+printf("" %5.d"",b);
+i++;
+if(i%10==0)
+printf(""\n"");
+}
+b++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2; 
+scanf(""%d"",&varb_0);
+varb_1=0;
+varb_2=500;
+while(varb_1<=varb_0)
+{
+if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+{
+printf("" %5.d"",varb_2);
+varb_1++;
+if(varb_1%10==0)
+printf(""\n"");
+}
+varb_2++;
+}
+return 0;
+}",8
+62,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,n,c=0;
+int b=422;
+scanf(""%d"",&n);
+for(a=1;a<=n;a++)
+{
+b+=105;
+printf(""%2d"",b);
+c++;
+if(c==10)
+printf(""\n"");
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2=0;
+int varb_3=422;
+scanf(""%d"",&varb_1);
+for(varb_0=1;varb_0<=varb_1;varb_0++)
+{
+varb_3+=105;
+printf(""%2d"",varb_3);
+varb_2++;
+if(varb_2==10)
+printf(""\n"");
+}
+}",10
+63,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,a,b,c;
+   b=0;
+c=0;
+  scanf(""%d"",&n);
+  for(a=500;a>0;a++)
+  {
+  if(a%3==2 && a%5==2 && a%7==2)
+  {
+  b+=1;
+c+=1;
+  printf(""%d "",a);
+  }
+  if(b>=n)break;
+}
+if(c%10==0)
+printf(""\n"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+   varb_2=0;
+varb_3=0;
+  scanf(""%d"",&varb_0);
+  for(varb_1=500;varb_1>0;varb_1++)
+  {
+  if(varb_1%3==2 && varb_1%5==2 && varb_1%7==2)
+  {
+  varb_2+=1;
+varb_3+=1;
+  printf(""%d "",varb_1);
+  }
+  if(varb_2>=varb_0)break;
+}
+if(varb_3%10==0)
+printf(""\n"");
+}",18
+64,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int a,b,c;
+a=500;
+scanf(""%d"",&c);
+for(b=1;b<=c;)
+    {
+    if(a%3==2&&a%5==2&&a%7==2)
+    {
+    printf(""%5d"",a);
+      if(b==50)
+        break;
+      else
+        b++;
+      if(b%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+
+     }
+     a++;
+}
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_0=500;
+scanf(""%d"",&varb_2);
+for(varb_1=1;varb_1<=varb_2;)
+    {
+    if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+    {
+    printf(""%5d"",varb_0);
+      if(varb_1==50)
+        break;
+      else
+        varb_1++;
+      if(varb_1%10==1)
+        printf(""\n"");
+      else
+        printf(""\t"");
+     }
+     varb_0++;
+}
+}",12
+65,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,m,a;
+m=500;
+a=0;
+scanf(""%d"",&n);
+while(a<=n)
+{
+if(m%3==2&&m%5==2&&m%7==2)
+{
+printf(""%5d"",m);
+a++;
+if(a%10==0)
+printf(""\n"");
+}
+m++;
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_1=500;
+varb_2=0;
+scanf(""%d"",&varb_0);
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d"",varb_1);
+varb_2++;
+if(varb_2%10==0)
+printf(""\n"");
+}
+varb_1++;
+}
+return 0;
+}",6
+66,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,a,i;
+scanf(""%d"",&n);
+a=500,i=1;
+while(i<=n)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d "",a);
+i++;
+if(i%10==0)
+printf(""\n"");
+}
+a++;
+}
+return 0;
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+varb_1=500,varb_2=1;
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d "",varb_1);
+varb_2++;
+if(varb_2%10==0)
+printf(""\n"");
+}
+varb_1++;
+}
+return 0;
+}
+",6
+67,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+
+{   int n,b,i;
+
+    
+
+    i=0;
+
+    scanf(""%d"",&n);
+
+    for(b=500;i<n;b++)
+
+    {
+
+        
+
+        if(b%3==2&&b%5==2&&b%7==2)
+
+            {
+
+                printf(""%5d "",b);
+
+                i++;
+
+            }
+         }
+
+        if(i%10==0)
+
+        printf(""\n"");
+
+    
+
+    return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{   int varb_0,varb_1,varb_2;
+    varb_2=0;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<varb_0;varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+            {
+                printf(""%5d "",varb_1);
+                varb_2++;
+            }
+         }
+        if(varb_2%10==0)
+        printf(""\n"");
+    return 0;
+}",14
+68,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,a,i;
+scanf(""%d"",&n);
+a=500,i=1;
+while(i<=n)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d "",a);
+i++;
+if(i%10==0)
+printf(""/n"");
+}
+a++;
+}
+return 0;
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+varb_1=500,varb_2=1;
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d "",varb_1);
+varb_2++;
+if(varb_2%10==0)
+printf(""/n"");
+}
+varb_1++;
+}
+return 0;
+}
+",6
+69,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+int n,a,i;
+scanf(""%d"",&n);
+a=500,i=0;
+while(i<=n)
+{
+if(a%3==2&&a%5==2&&a%7==2)
+{
+printf(""%5d "",a);
+i++;
+if(i%10==0)
+printf(""\n"");
+}
+a++;
+}
+return 0;
+}
+
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+scanf(""%d"",&varb_0);
+varb_1=500,varb_2=0;
+while(varb_2<=varb_0)
+{
+if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+{
+printf(""%5d "",varb_1);
+varb_2++;
+if(varb_2%10==0)
+printf(""\n"");
+}
+varb_1++;
+}
+return 0;
+}
+",7
+70,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+    int n,a,b,c;
+    scanf(""%d"",&n);
+    for(a=1,b=500;a<=n;b++)
+    {
+        if(b%3==2&&b%5==2&&b%7==2)
+        {printf(""%5d"",b);a++;
+        if(a%10==0)
+        printf(""\n"");}
+    }
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d"",&varb_0);
+    for(varb_1=1,varb_2=500;varb_1<=varb_0;varb_2++)
+    {
+        if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2)
+        {printf(""%5d"",varb_2);varb_1++;
+        if(varb_1%10==0)
+        printf(""\n"");}
+    }
+    return 0;
+}",6
+71,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+
+int main()
+{
+    int n,t,i;
+    scanf(""%d"",&n);
+    for(t=500;i<=n; t++)
+    {
+        if(t%3==2&&t%5==2&&t%7==2)
+        {
+            printf(""%5d "",t);
+            i++;
+        }
+        if(i==10)
+            printf(""\n"");
+    }
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2;
+    scanf(""%d"",&varb_0);
+    for(varb_1=500;varb_2<=varb_0; varb_1++)
+    {
+        if(varb_1%3==2&&varb_1%5==2&&varb_1%7==2)
+        {
+            printf(""%5d "",varb_1);
+            varb_2++;
+        }
+        if(varb_2==10)
+            printf(""\n"");
+    }
+    return 0;
+}",4
+72,2c911d616dea44ae016e0c5a75634893," #include<stdio.h>
+int main()
+{
+
+
+int m,n,num;
+num=1;
+scanf(""%d"",&n);
+for(m=500;m>1;m++)
+{
+  if(m%3==2&&m%5==2&&m%7==2)
+  {printf(""%-5d"",m);
+  ++num;
+if((num-1)%2==0)
+printf("" "");
+if((num-1)%10==0)
+printf(""\n"");}
+
+  if(num>=n)
+  break;
+  }
+  return 0;
+  }",0.0," #include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2;
+varb_2=1;
+scanf(""%d"",&varb_1);
+for(varb_0=500;varb_0>1;varb_0++)
+{
+  if(varb_0%3==2&&varb_0%5==2&&varb_0%7==2)
+  {printf(""%-5d"",varb_0);
+  ++varb_2;
+if((varb_2-1)%2==0)
+printf("" "");
+if((varb_2-1)%10==0)
+printf(""\n"");}
+  if(varb_2>=varb_1)
+  break;
+  }
+  return 0;
+  }",10
+73,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+int main()
+{
+  int n,i,a,b;
+  scanf(""%d"",&n);
+  i=0;
+  for(a=500;i<n;a++){
+  if(a%3==2&&a%5==2&&a%7==2){
+    printf(""%5d "",a);
+    i++;
+   if(i%10==0)
+    printf(""\n"");
+    }}
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d"",&varb_0);
+  varb_1=0;
+  for(varb_2=500;varb_1<varb_0;varb_2++){
+  if(varb_2%3==2&&varb_2%5==2&&varb_2%7==2){
+    printf(""%5d "",varb_2);
+    varb_1++;
+   if(varb_1%10==0)
+    printf(""\n"");
+    }}
+}",7
+74,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main()
+{
+int n;
+scanf(""%d"",&n);
+if(n>100)
+printf(""输入值大于一百"");
+else
+ {
+  int i,num,a,b,c,d;
+  i=1;num=500;d=1;
+  while(i<=n)
+   {
+    a=num%3;
+    b=num%5;
+    c=num%7;
+    if(a==2&&b==2&&c==2)
+     {
+      printf(""%5d"",num);
+      num++;
+      i++;
+      d++;
+      if(d>10)
+       {
+        printf(""\n"");
+        d=0;
+       }
+        }
+    else
+     {
+      num++;
+     }
+
+    }
+  }
+
+
+
+return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0>100)
+printf(""输入值大于一百"");
+else
+ {
+  int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+  varb_1=1;varb_2=500;varb_6=1;
+  while(varb_1<=varb_0)
+   {
+    varb_3=varb_2%3;
+    varb_4=varb_2%5;
+    varb_5=varb_2%7;
+    if(varb_3==2&&varb_4==2&&varb_5==2)
+     {
+      printf(""%5d"",varb_2);
+      varb_2++;
+      varb_1++;
+      varb_6++;
+      if(varb_6>10)
+       {
+        printf(""\n"");
+        varb_6=0;
+       }
+        }
+    else
+     {
+      varb_2++;
+     }
+    }
+  }
+return 0;
+}",26
+75,2c911d616dea44ae016e0c5a75634893,"#include<stdio.h>
+main(){
+  int a,i=1,n;
+  scanf(""%d"",&n);
+  for (a=500;a<11000;a++)
+     {
+      if(a%3==2 && a%5==2 && a%7==2)
+       {
+      if(i<10&&i<n)
+        {printf(""%d "",a);
+         i++;}
+       else if(i>=10 &&i<n)
+        {printf(""%d\n"",a);
+         i=1;}
+         else;}
+     else;}
+}",0.0,"#include<stdio.h>
+main(){
+  int varb_0,varb_1=1,varb_2;
+  scanf(""%d"",&varb_2);
+  for(varb_0=500;varb_0<11000;varb_0++)
+     {
+      if(varb_0%3==2 && varb_0%5==2 && varb_0%7==2)
+       {
+      if(varb_1<10&&varb_1<varb_2)
+        {printf(""%d "",varb_0);
+         varb_1++;}
+       else if(varb_1>=10 &&varb_1<varb_2)
+        {printf(""%d\n"",varb_0);
+         varb_1=1;}
+         else;}
+     else;}
+}",3

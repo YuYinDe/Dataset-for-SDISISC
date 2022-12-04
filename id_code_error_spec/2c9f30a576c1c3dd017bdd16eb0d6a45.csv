@@ -1,0 +1,3911 @@
+,id,code,is_true,format_code,errorline,code_spec
+0,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+  int a,b;
+  float cost;
+  char c;
+  scanf(""%d %d %c"",&a,&b,&c);
+  if(b==90)
+  {
+    if(c=='m')
+     {
+	   cost=6.95*a*0.95;
+       printf(""%.2f"",cost);}
+  else
+     {
+	   cost=6.95*a*0.97;
+       printf(""%.2f"",cost);}
+       } 
+    else  if(b==93)
+    {
+	   if(c=='m')
+    {
+       cost=7.44*a*0.95;
+       printf(""%.2f"",cost);
+	}
+	
+    else
+   {
+     cost=7.44*a*0.97;
+     printf(""%.2f"",cost);
+   }
+   } 
+      else if(b==97)
+    {
+	  if(c=='m')
+    {
+	cost=7.93*a*0.95;
+    printf(""%.2f"",cost);
+	}
+	else
+   {
+   cost=7.93*a*0.97;
+   printf(""%.2f"",cost);
+   }
+   }
+  return 0;
+  }
+ ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  char varb_3;
+  scanf(""%d %d %c"",&varb_0,&varb_1,&varb_3);
+  if(varb_1==90)
+  {
+    if(varb_3=='m')
+     {
+	   varb_2=6.95*varb_0*0.95;
+       printf(""%.2f"",varb_2);}
+  else
+     {
+	   varb_2=6.95*varb_0*0.97;
+       printf(""%.2f"",varb_2);}
+       } 
+    else  if(varb_1==93)
+    {
+	   if(varb_3=='m')
+    {
+       varb_2=7.44*varb_0*0.95;
+       printf(""%.2f"",varb_2);
+	}
+    else
+   {
+     varb_2=7.44*varb_0*0.97;
+     printf(""%.2f"",varb_2);
+   }
+   } 
+      else if(varb_1==97)
+    {
+	  if(varb_3=='m')
+    {
+	varb_2=7.93*varb_0*0.95;
+    printf(""%.2f"",varb_2);
+	}
+	else
+   {
+   varb_2=7.93*varb_0*0.97;
+   printf(""%.2f"",varb_2);
+   }
+   }
+  return 0;
+  }
+",16,2c9f30a576c1c3dd017bdd16eb0d6a45_0.csv
+1,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+int main()
+{
+	int a,b;
+	double cost;
+	double ValueOf90 = 6.95;
+	double ValueOf93 = 7.44;
+	double ValueOf97 = 7.93;
+	char c;
+	scanf (""%d %d %c"",&a,&b,&c);
+	if (c == 'm')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.95;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+   }   
+	else if (c == 'e')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.97;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+	}
+	
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	double varb_2;
+	double varb_3 = 6.95;
+	double varb_4 = 7.44;
+	double varb_5 = 7.93;
+	char varb_6;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_6);
+	if(varb_6 == 'm')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+   }   
+	else if(varb_6 == 'e')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_1.csv
+2,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double a,b,x;
+    char c;
+    scanf(""%lf %lf %c"",&a,&b,&c);
+    if (c=='m')
+        c=1;
+    else if (c=='e')
+        c=2;
+    switch (c)
+	{
+    case (1):
+	{
+    if (b==90)
+    {
+    x=a*6.95*0.95;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.95;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.95;
+     printf(""%.2f"",x);
+    }
+	}
+    break;
+     case (2):
+	 {
+    if (b==90)
+    {
+    x=a*6.95*0.97;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.97;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.97;
+     printf(""%.2f"",x);break;
+    }
+	}
+    }
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double varb_0,varb_1,varb_2;
+    char varb_3;
+    scanf(""%lf %lf %c"",&varb_0,&varb_1,&varb_3);
+    if(varb_3=='m')
+        varb_3=1;
+    else if(varb_3=='e')
+        varb_3=2;
+    switch(varb_3)
+	{
+    case(1):
+	{
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.95;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.95;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.95;
+     printf(""%.2f"",varb_2);
+    }
+	}
+    break;
+     case(2):
+	 {
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.97;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.97;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.97;
+     printf(""%.2f"",varb_2);break;
+    }
+	}
+    }
+    return 0;
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_2.csv
+3,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.03);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.44-a*7.44*0.03);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.03);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.03);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.44-varb_0*7.44*0.03);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.05);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.03);
+}",9,2c9f30a576c1c3dd017bdd16eb0d6a45_3.csv
+4,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+  int a,b;
+  float cost;
+  char c;
+  scanf(""%d %d %c"",&a,&b,&c);
+  if(b==90)
+  {
+    if(c=='m')
+     {
+	   cost=6.95*a*0.95;
+       printf(""%.2f"",cost);}
+  else
+     {
+	   cost=6.95*a*0.97+0.005;
+       printf(""%.2f"",cost);}
+       } 
+    else  if(b==93)
+    {
+	   if(c=='m')
+    {
+       cost=7.44*a*0.95;
+       printf(""%.2f"",cost);
+	}
+	
+    else
+   {
+     cost=7.44*a*0.97;
+     printf(""%.2f"",cost);
+   }
+   } 
+      else if(b==97)
+    {
+	  if(c=='m')
+    {
+	cost=7.93*a*0.95+0.005;
+    printf(""%.2f"",cost);
+	}
+	else
+   {
+   cost=7.93*a*0.97;
+   printf(""%.2f"",cost);
+   }
+   }
+  return 0;
+  }
+ ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  char varb_3;
+  scanf(""%d %d %c"",&varb_0,&varb_1,&varb_3);
+  if(varb_1==90)
+  {
+    if(varb_3=='m')
+     {
+	   varb_2=6.95*varb_0*0.95;
+       printf(""%.2f"",varb_2);}
+  else
+     {
+	   varb_2=6.95*varb_0*0.97+0.005;
+       printf(""%.2f"",varb_2);}
+       } 
+    else  if(varb_1==93)
+    {
+	   if(varb_3=='m')
+    {
+       varb_2=7.44*varb_0*0.95;
+       printf(""%.2f"",varb_2);
+	}
+    else
+   {
+     varb_2=7.44*varb_0*0.97;
+     printf(""%.2f"",varb_2);
+   }
+   } 
+      else if(varb_1==97)
+    {
+	  if(varb_3=='m')
+    {
+	varb_2=7.93*varb_0*0.95+0.005;
+    printf(""%.2f"",varb_2);
+	}
+	else
+   {
+   varb_2=7.93*varb_0*0.97;
+   printf(""%.2f"",varb_2);
+   }
+   }
+  return 0;
+  }
+",16,2c9f30a576c1c3dd017bdd16eb0d6a45_4.csv
+5,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+int main()
+{
+	int a,b;
+	float cost;
+	float ValueOf90 = 6.95;
+	float ValueOf93 = 7.44;
+	float ValueOf97 = 7.93;
+	char c;
+	scanf (""%d %d %c"",&a,&b,&c);
+	if (c == 'm')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.95;
+			printf (""%.2f"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.95;
+			printf (""%.2f"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.95;
+			printf (""%.2f"",cost);
+		}
+	}
+	else if (c == 'e')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.97;
+			printf (""%.2f"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.97;
+			printf (""%.2f"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.97;
+			printf (""%.2f"",cost);
+		}
+	}
+	
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	float varb_2;
+	float varb_3 = 6.95;
+	float varb_4 = 7.44;
+	float varb_5 = 7.93;
+	char varb_6;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_6);
+	if(varb_6 == 'm')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.95;
+			printf(""%.2f"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.95;
+			printf(""%.2f"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.95;
+			printf(""%.2f"",varb_2);
+		}
+	}
+	else if(varb_6 == 'e')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.97;
+			printf(""%.2f"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.97;
+			printf(""%.2f"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.97;
+			printf(""%.2f"",varb_2);
+		}
+	}
+}",5,2c9f30a576c1c3dd017bdd16eb0d6a45_5.csv
+6,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93*0.95);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.44-a*7.44*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.05);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93*0.95);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.44-varb_0*7.44*0.05);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.05);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.05);
+}",11,2c9f30a576c1c3dd017bdd16eb0d6a45_6.csv
+7,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	double price;
+	scanf(""%d %d %c"",&a,&b,&c);
+	if(b==90)
+
+		{
+		if(c=='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+		else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==93)
+		{
+			if(c=='m')
+			{
+			price=a*7.44*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*7.44*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==97)
+		{
+			if(c=='m')
+			{
+			price=a*7.93*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*7.93*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	char varb_2;
+	double varb_3;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_2);
+	if(varb_1==90)
+		{
+		if(varb_2=='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+		else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==93)
+		{
+			if(varb_2=='m')
+			{
+			varb_3=varb_0*7.44*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*7.44*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==97)
+		{
+			if(varb_2=='m')
+			{
+			varb_3=varb_0*7.93*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*7.93*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+return 0;
+}",38,2c9f30a576c1c3dd017bdd16eb0d6a45_7.csv
+8,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	double price;
+	scanf(""%d %d %c"",&a,&b,&c);
+	if(b==90)
+
+		{
+		if(c=='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+		else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==93)
+		{
+			if(c=='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==97)
+		{
+			if(c=='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	char varb_2;
+	double varb_3;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_2);
+	if(varb_1==90)
+		{
+		if(varb_2=='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+		else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==93)
+		{
+			if(varb_2=='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==97)
+		{
+			if(varb_2=='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+return 0;
+}",12,2c9f30a576c1c3dd017bdd16eb0d6a45_8.csv
+9,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double a,b,x;
+    char c;
+    scanf(""%lf %lf %c"",&a,&b,&c);
+    if (c=='m')
+        c=1;
+    else if (c=='e')
+        c=2;
+    switch (c)
+	{
+    case (1):
+	{
+    if (b==90)
+    {
+    x=a*6.95*0.95;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.95;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.95;
+     printf(""%.2f"",x);
+    }
+	}
+    break;
+     case (2):
+	 {
+    if (b==90)
+    {
+    x=a*6.95*0.97;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.97;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.97;
+     printf(""%.2f"",x);break;
+    }
+	}
+    }
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double varb_0,varb_1,varb_2;
+    char varb_3;
+    scanf(""%lf %lf %c"",&varb_0,&varb_1,&varb_3);
+    if(varb_3=='m')
+        varb_3=1;
+    else if(varb_3=='e')
+        varb_3=2;
+    switch(varb_3)
+	{
+    case(1):
+	{
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.95;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.95;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.95;
+     printf(""%.2f"",varb_2);
+    }
+	}
+    break;
+     case(2):
+	 {
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.97;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.97;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.97;
+     printf(""%.2f"",varb_2);break;
+    }
+	}
+    }
+    return 0;
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_9.csv
+10,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+int main()
+{
+	int a,b;
+	float cost;
+	float ValueOf90 = 6.95;
+	float ValueOf93 = 7.44;
+	float ValueOf97 = 7.93;
+	char c;
+	scanf (""%d %d %c"",&a,&b,&c);
+	if (c == 'm')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.95;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+	}
+	else if (c == 'e')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.97;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+	}
+	
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	float varb_2;
+	float varb_3 = 6.95;
+	float varb_4 = 7.44;
+	float varb_5 = 7.93;
+	char varb_6;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_6);
+	if(varb_6 == 'm')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+	else if(varb_6 == 'e')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+}",5,2c9f30a576c1c3dd017bdd16eb0d6a45_10.csv
+11,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double a,b,x;
+    char c;
+    scanf(""%lf %lf %c"",&a,&b,&c);
+    if (c=='m')
+        c=1;
+    else if (c=='e')
+        c=2;
+    switch (c)
+	{
+    case (1):
+	{
+    if (b==90)
+    {
+    x=a*6.95*0.95;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.95;
+    printf(""%.2f"",x);
+    }
+	else if(b==97)
+    {
+     x=a*7.93*0.95;
+     printf(""%.2f"",x);
+    }
+	}
+    break;
+     case (2):
+	 {
+    if (b==90)
+    {
+    x=a*6.95*0.97;
+    printf(""%.2f"",x+0.01);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.97;
+    printf(""%.2f"",x+0.01);
+    }
+	else if(b==97)
+    {
+     x=a*7.93*0.97;
+     printf(""%.2f"",x);
+	 break;
+    }
+	}
+    }
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double varb_0,varb_1,varb_2;
+    char varb_3;
+    scanf(""%lf %lf %c"",&varb_0,&varb_1,&varb_3);
+    if(varb_3=='m')
+        varb_3=1;
+    else if(varb_3=='e')
+        varb_3=2;
+    switch(varb_3)
+	{
+    case(1):
+	{
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.95;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.95;
+    printf(""%.2f"",varb_2);
+    }
+	else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.95;
+     printf(""%.2f"",varb_2);
+    }
+	}
+    break;
+     case(2):
+	 {
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.97;
+    printf(""%.2f"",varb_2+0.01);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.97;
+    printf(""%.2f"",varb_2+0.01);
+    }
+	else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.97;
+     printf(""%.2f"",varb_2);
+	 break;
+    }
+	}
+    }
+}",28,2c9f30a576c1c3dd017bdd16eb0d6a45_11.csv
+12,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double a,b,x;
+    char c;
+    scanf(""%lf %lf %c"",&a,&b,&c);
+    if (c=='m')
+        c=1;
+    else if (c=='e')
+        c=2;
+    switch (c)
+	{
+    case (1):
+	{
+    if (b==90)
+    {
+    x=a*6.95*0.95;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.95;
+    printf(""%.2f"",x);
+    }
+	else if(b==97)
+    {
+     x=a*7.93*0.95;
+     printf(""%.2f"",x);
+    }
+	}
+    break;
+     case (2):
+	 {
+    if (b==90)
+    {
+    x=a*6.95*0.97;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.97;
+    printf(""%.2f"",x);
+    }
+	else if(b==97)
+    {
+     x=a*7.93*0.97;
+     printf(""%.2f"",x);
+	 break;
+    }
+	}
+    }
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double varb_0,varb_1,varb_2;
+    char varb_3;
+    scanf(""%lf %lf %c"",&varb_0,&varb_1,&varb_3);
+    if(varb_3=='m')
+        varb_3=1;
+    else if(varb_3=='e')
+        varb_3=2;
+    switch(varb_3)
+	{
+    case(1):
+	{
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.95;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.95;
+    printf(""%.2f"",varb_2);
+    }
+	else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.95;
+     printf(""%.2f"",varb_2);
+    }
+	}
+    break;
+     case(2):
+	 {
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.97;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.97;
+    printf(""%.2f"",varb_2);
+    }
+	else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.97;
+     printf(""%.2f"",varb_2);
+	 break;
+    }
+	}
+    }
+    return 0;
+}",28,2c9f30a576c1c3dd017bdd16eb0d6a45_12.csv
+13,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+int main()
+
+{
+
+  char c;
+
+  float cost;
+  
+  int a,b;
+
+  scanf(""%d %d %c"",&a,&b,&c);
+
+  switch(c)
+
+  {
+
+  case 'm':
+
+  {
+
+  if(b=90)
+
+    cost=6.95*a*0.95;
+
+  else if(b=93)
+
+    cost=7.44*a*0.95;
+
+  else{
+
+    cost=7.93*a*0.95;}
+
+  break;
+
+  }
+
+  case 'e':
+
+  {
+
+  if(b=90)
+
+    cost=6.95*a*0.97;
+
+  else if(b=93)
+
+    cost=7.44*a*0.97;
+
+  else
+
+    cost=7.93*a*0.97;
+
+  break;
+
+  }
+
+  }
+
+  printf(""%.2f"",cost);
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  float varb_1;
+  int varb_2,varb_3;
+  scanf(""%d %d %c"",&varb_2,&varb_3,&varb_0);
+  switch(varb_0)
+  {
+  case 'm':
+  {
+  if(varb_3=90)
+    varb_1=6.95*varb_2*0.95;
+  else if(varb_3=93)
+    varb_1=7.44*varb_2*0.95;
+  else{
+    varb_1=7.93*varb_2*0.95;}
+  break;
+  }
+  case 'e':
+  {
+  if(varb_3=90)
+    varb_1=6.95*varb_2*0.97;
+  else if(varb_3=93)
+    varb_1=7.44*varb_2*0.97;
+  else
+    varb_1=7.93*varb_2*0.97;
+  break;
+  }
+  }
+  printf(""%.2f"",varb_1);
+  return 0;
+}",12,2c9f30a576c1c3dd017bdd16eb0d6a45_13.csv
+14,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93*0.95);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93*0.95);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+}",11,2c9f30a576c1c3dd017bdd16eb0d6a45_14.csv
+15,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+    double a;
+    int b;
+    char c;
+    scanf(""%lf %d %c"",&a,&b,&c);
+    if(b==90)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf\n"",6.95*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf\n"",6.95*0.97*a);
+        }
+    }
+    else if(b==93)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf\n"",7.44*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*a);
+        }
+    }
+    else
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*a);
+        }
+    }
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    double varb_0;
+    int varb_1;
+    char varb_2;
+    scanf(""%lf %d %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==90)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf\n"",6.95*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf\n"",6.95*0.97*varb_0);
+        }
+    }
+    else if(varb_1==93)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf\n"",7.44*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*varb_0);
+        }
+    }
+    else
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*varb_0);
+        }
+    }
+    return 0;
+}",12,2c9f30a576c1c3dd017bdd16eb0d6a45_15.csv
+16,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+    double a;
+    int b;
+    char c;
+    scanf(""%lf %d %c"",&a,&b,&c);
+    if(b==90)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",6.95*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",6.95*0.97*a);
+        }
+    }
+    else if(b==93)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",7.44*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*a);
+        }
+    }
+    else
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*a);
+        }
+    }
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    double varb_0;
+    int varb_1;
+    char varb_2;
+    scanf(""%lf %d %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==90)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",6.95*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",6.95*0.97*varb_0);
+        }
+    }
+    else if(varb_1==93)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",7.44*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*varb_0);
+        }
+    }
+    else
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*varb_0);
+        }
+    }
+    return 0;
+}",34,2c9f30a576c1c3dd017bdd16eb0d6a45_16.csv
+17,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93+0.5;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93+0.5;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_17.csv
+18,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    double a,b,x;
+    char ch;
+    scanf(""%lf %lf %c"",&a,&b,&ch);
+    if (ch=='m')
+        ch=1;
+    else if (ch=='e')
+        ch=2;
+    switch (ch)
+	{
+    case (1):
+	{
+    if (b==90)
+    {
+    x=a*6.95*0.95;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.95;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.95;
+     printf(""%.2f"",x);
+    }
+	}
+    break;
+     case (2):
+	 {
+    if (b==90)
+    {
+    x=a*6.95*0.97;
+    printf(""%.2f"",x);
+    }
+    else if(b==93)
+    {
+    x=a*7.44*0.97;
+    printf(""%.2f"",x);
+    }else if(b==97)
+    {
+     x=a*7.93*0.97;
+     printf(""%.2f"",x);break;
+    }
+	}
+    }
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double varb_0,varb_1,varb_2;
+    char varb_3;
+    scanf(""%lf %lf %c"",&varb_0,&varb_1,&varb_3);
+    if(varb_3=='m')
+        varb_3=1;
+    else if(varb_3=='e')
+        varb_3=2;
+    switch(varb_3)
+	{
+    case(1):
+	{
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.95;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.95;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.95;
+     printf(""%.2f"",varb_2);
+    }
+	}
+    break;
+     case(2):
+	 {
+    if(varb_1==90)
+    {
+    varb_2=varb_0*6.95*0.97;
+    printf(""%.2f"",varb_2);
+    }
+    else if(varb_1==93)
+    {
+    varb_2=varb_0*7.44*0.97;
+    printf(""%.2f"",varb_2);
+    }else if(varb_1==97)
+    {
+     varb_2=varb_0*7.93*0.97;
+     printf(""%.2f"",varb_2);break;
+    }
+	}
+    }
+    return 0;
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_18.csv
+19,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+int main()
+
+{
+
+  char c;
+
+  float cost;
+  
+  int a,b;
+
+  scanf(""%d %d %c"",&a,&b,&c);
+
+  switch(c)
+
+  {
+
+  case 'm':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.95;
+
+  else if(b==93)
+
+    cost=7.44*a*0.95;
+
+  else
+
+    cost=7.93*a*0.95+0.005;
+
+  break;
+
+  }
+
+  case 'e':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.97+0.005;
+
+  else if(b==93)
+
+    cost=7.44*a*0.97;
+
+  else
+
+    cost=7.93*a*0.97;
+
+  break;
+
+  }
+
+  }
+
+  printf(""%.2f"",cost);
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  float varb_1;
+  int varb_2,varb_3;
+  scanf(""%d %d %c"",&varb_2,&varb_3,&varb_0);
+  switch(varb_0)
+  {
+  case 'm':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.95;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.95;
+  else
+    varb_1=7.93*varb_2*0.95+0.005;
+  break;
+  }
+  case 'e':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.97+0.005;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.97;
+  else
+    varb_1=7.93*varb_2*0.97;
+  break;
+  }
+  }
+  printf(""%.2f"",varb_1);
+  return 0;
+}",23,2c9f30a576c1c3dd017bdd16eb0d6a45_19.csv
+20,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b;
+    char c;
+    scanf(""%f %f %c"",&a,&b,&c);
+    if(c=='m')
+    {
+    if(b==90)
+    printf(""%.2f"",0.95*6.95*a);
+    if(b==93)
+    printf(""%.2f"",0.95*7.44*a);
+    if(b==97)
+    printf(""%.2f"",0.95*7.93*a);
+    }
+    else if(c=='e')
+    {
+    if(b==90)
+    printf(""%.2f"",0.97*6.95*a);
+    if(b==93)
+    printf(""%.2f"",0.97*7.44*a);
+    if(b==97)
+    printf(""%.2f"",0.97*7.93*a);
+    }
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_2=='m')
+    {
+    if(varb_1==90)
+    printf(""%.2f"",0.95*6.95*varb_0);
+    if(varb_1==93)
+    printf(""%.2f"",0.95*7.44*varb_0);
+    if(varb_1==97)
+    printf(""%.2f"",0.95*7.93*varb_0);
+    }
+    else if(varb_2=='e')
+    {
+    if(varb_1==90)
+    printf(""%.2f"",0.97*6.95*varb_0);
+    if(varb_1==93)
+    printf(""%.2f"",0.97*7.44*varb_0);
+    if(varb_1==97)
+    printf(""%.2f"",0.97*7.93*varb_0);
+    }
+}",15,2c9f30a576c1c3dd017bdd16eb0d6a45_20.csv
+21,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93+1;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93+1;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_21.csv
+22,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+    double a;
+    int b;
+    char c;
+    scanf(""%lf %d %c"",&a,&b,&c);
+    if(b==90)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",6.95*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",6.95*0.97*a);
+        }
+    }
+    else if(b==93)
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",7.44*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*a);
+        }
+    }
+    else
+    {
+        if(c=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*a);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*a);
+        }
+    }
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    double varb_0;
+    int varb_1;
+    char varb_2;
+    scanf(""%lf %d %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==90)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",6.95*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",6.95*0.97*varb_0);
+        }
+    }
+    else if(varb_1==93)
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",7.44*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.44*0.97*varb_0);
+        }
+    }
+    else
+    {
+        if(varb_2=='m')
+        {
+            printf(""%.2lf"",7.93*0.95*varb_0);
+        }
+        else
+        {
+            printf(""%.2lf"",7.93*0.97*varb_0);
+        }
+    }
+    return 0;
+}",34,2c9f30a576c1c3dd017bdd16eb0d6a45_22.csv
+23,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_23.csv
+24,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+int main()
+
+{
+
+  char c;
+
+  float cost;
+  
+  int a,b;
+
+  scanf(""%d %d %c"",&a,&b,&c);
+
+  switch(c)
+
+  {
+
+  case 'm':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.95;
+
+  else if(b==93)
+
+    cost=7.44*a*0.95;
+
+  else
+
+    cost=7.93*a*0.95;
+
+  break;
+
+  }
+
+  case 'e':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.97;
+
+  else if(b==93)
+
+    cost=7.44*a*0.97;
+
+  else
+
+    cost=7.93*a*0.97;
+
+  break;
+
+  }
+
+  }
+
+  printf(""%5.2f"",cost);
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  float varb_1;
+  int varb_2,varb_3;
+  scanf(""%d %d %c"",&varb_2,&varb_3,&varb_0);
+  switch(varb_0)
+  {
+  case 'm':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.95;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.95;
+  else
+    varb_1=7.93*varb_2*0.95;
+  break;
+  }
+  case 'e':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.97;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.97;
+  else
+    varb_1=7.93*varb_2*0.97;
+  break;
+  }
+  }
+  printf(""%5.2f"",varb_1);
+  return 0;
+}",17,2c9f30a576c1c3dd017bdd16eb0d6a45_24.csv
+25,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+int main()
+
+{
+
+  char c;
+
+  float cost;
+  
+  int a,b;
+
+  scanf(""%d %d %c"",&a,&b,&c);
+
+  switch(c)
+
+  {
+
+  case 'm':
+
+  {
+
+  if(b=90)
+
+    cost=6.95*a*0.95;
+
+  else if(b=93)
+
+    cost=7.44*a*0.95;
+
+  else
+
+    cost=7.93*a*0.95;
+
+  break;
+
+  }
+
+  case 'e':
+
+  {
+
+  if(b=90)
+
+    cost=6.95*a*0.97;
+
+  else if(b=93)
+
+    cost=7.44*a*0.97;
+
+  else
+
+    cost=7.93*a*0.97;
+
+  break;
+
+  }
+
+  }
+
+  printf(""%.2f"",cost);
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  float varb_1;
+  int varb_2,varb_3;
+  scanf(""%d %d %c"",&varb_2,&varb_3,&varb_0);
+  switch(varb_0)
+  {
+  case 'm':
+  {
+  if(varb_3=90)
+    varb_1=6.95*varb_2*0.95;
+  else if(varb_3=93)
+    varb_1=7.44*varb_2*0.95;
+  else
+    varb_1=7.93*varb_2*0.95;
+  break;
+  }
+  case 'e':
+  {
+  if(varb_3=90)
+    varb_1=6.95*varb_2*0.97;
+  else if(varb_3=93)
+    varb_1=7.44*varb_2*0.97;
+  else
+    varb_1=7.93*varb_2*0.97;
+  break;
+  }
+  }
+  printf(""%.2f"",varb_1);
+  return 0;
+}",12,2c9f30a576c1c3dd017bdd16eb0d6a45_25.csv
+26,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	double d,f;
+	char c;
+	scanf(""%d%d %c"",&a,&b,&c);
+	if(c=='m')
+	{
+	  if(b==90)
+	  { 
+		d=a*6.95*0.95;
+		printf(""%.2f"",d);
+      }
+      else if(b==93)
+      {
+      	d=a*7.44*0.95;
+      	printf(""%.2f"",d);
+	  }
+	  else if(b==97)
+	  {
+	  	d=a*7.93*0.05;
+	  	f=a*7.93;
+	  	printf(""%.2f"",d-f);
+	  } 
+	}
+	if(c=='e')
+	{
+	if(b==90)
+	  { 
+		d=a*6.95*0.97;
+		printf(""%.2f"",d);
+      }
+      else if(b==93)
+      {
+      	d=a*7.44*0.97;
+      printf(""%.2f"",d);
+	  }
+	  else if(b==97)
+	  {
+	  	d=a*7.93*0.03;
+	  	f=a*7.93;
+	  	printf(""%.2f"",d-f);
+	  }
+    }  
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	double varb_2,varb_3;
+	char varb_4;
+	scanf(""%d%d %c"",&varb_0,&varb_1,&varb_4);
+	if(varb_4=='m')
+	{
+	  if(varb_1==90)
+	  { 
+		varb_2=varb_0*6.95*0.95;
+		printf(""%.2f"",varb_2);
+      }
+      else if(varb_1==93)
+      {
+      	varb_2=varb_0*7.44*0.95;
+      	printf(""%.2f"",varb_2);
+	  }
+	  else if(varb_1==97)
+	  {
+	  	varb_2=varb_0*7.93*0.05;
+	  	varb_3=varb_0*7.93;
+	  	printf(""%.2f"",varb_2-varb_3);
+	  } 
+	}
+	if(varb_4=='e')
+	{
+	if(varb_1==90)
+	  { 
+		varb_2=varb_0*6.95*0.97;
+		printf(""%.2f"",varb_2);
+      }
+      else if(varb_1==93)
+      {
+      	varb_2=varb_0*7.44*0.97;
+      printf(""%.2f"",varb_2);
+	  }
+	  else if(varb_1==97)
+	  {
+	  	varb_2=varb_0*7.93*0.03;
+	  	varb_3=varb_0*7.93;
+	  	printf(""%.2f"",varb_2-varb_3);
+	  }
+    }  
+	return 0;
+}",24,2c9f30a576c1c3dd017bdd16eb0d6a45_26.csv
+27,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+int main()
+{
+	int a,b;
+	double cost;
+	double ValueOf90 = 6.95;
+	double ValueOf93 = 7.44;
+	double ValueOf97 = 7.93;
+	char c;
+	scanf (""%d %d %c"",&a,&b,&c);
+	if (c == 'm')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.95;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+	}
+	else if (c == 'e')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.97;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+	}
+	
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	double varb_2;
+	double varb_3 = 6.95;
+	double varb_4 = 7.44;
+	double varb_5 = 7.93;
+	char varb_6;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_6);
+	if(varb_6 == 'm')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+	else if(varb_6 == 'e')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_27.csv
+28,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93+0.05;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93+0.05;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_28.csv
+29,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	double price;
+	scanf(""%d %d %c"",&a,&b,&c);
+	if(b==90)
+
+		{
+		if(c='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+		else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==93)
+		{
+			if(c='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+	else if(b==97)
+		{
+			if(c=='m')
+			{
+			price=a*6.95*(1-0.05);
+			printf(""%.2f"",price);
+			}
+			else
+			{
+			price=a*6.95*(1-0.03);
+			printf(""%.2f"",price);
+			}
+		}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	char varb_2;
+	double varb_3;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_2);
+	if(varb_1==90)
+		{
+		if(varb_2='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+		else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==93)
+		{
+			if(varb_2='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+	else if(varb_1==97)
+		{
+			if(varb_2=='m')
+			{
+			varb_3=varb_0*6.95*(1-0.05);
+			printf(""%.2f"",varb_3);
+			}
+			else
+			{
+			varb_3=varb_0*6.95*(1-0.03);
+			printf(""%.2f"",varb_3);
+			}
+		}
+return 0;
+}",10,2c9f30a576c1c3dd017bdd16eb0d6a45_29.csv
+30,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+char c;
+double a,b,result;
+ scanf(""%lf %lf %c"",&a,&b,&c);
+      if(b==90&c=='m')
+      printf(""%0.2lf"",result=a*6.95*0.95);
+      if(b==93&c=='m')
+       printf(""%0.2lf"",result=a*7.44*0.95);
+      if(b==97&c=='m')
+       printf(""%0.2lf"",result=a*7.93*0.95);
+      if(b==90&c=='e')
+       printf(""%0.2lf"",result=a*6.95*0.97);
+      if(b==93&c=='e')
+       printf(""%0.2lf"",result=a*7.44*0.97);
+      if(b==97&c=='e')
+       printf(""%0.2lf"",result=a*7.93*0.97);
+       return 0;
+       }",0.0,"#include<stdio.h>
+int main()
+{
+char varb_0;
+double varb_1,varb_2,varb_3;
+ scanf(""%lf %lf %c"",&varb_1,&varb_2,&varb_0);
+      if(varb_2==90&varb_0=='m')
+      printf(""%0.2lf"",varb_3=varb_1*6.95*0.95);
+      if(varb_2==93&varb_0=='m')
+       printf(""%0.2lf"",varb_3=varb_1*7.44*0.95);
+      if(varb_2==97&varb_0=='m')
+       printf(""%0.2lf"",varb_3=varb_1*7.93*0.95);
+      if(varb_2==90&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*6.95*0.97);
+      if(varb_2==93&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*7.44*0.97);
+      if(varb_2==97&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*7.93*0.97);
+       return 0;
+       }",12,2c9f30a576c1c3dd017bdd16eb0d6a45_30.csv
+31,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+	int a,b;
+	double d;
+	char c;
+	scanf(""%d%d %c"",&a,&b,&c);
+	if(c=='m')
+	{
+	  if(b==90)
+	  { 
+		d=a*6.95*0.95;
+		printf(""%.2f"",d);
+      }
+      else if(b==93)
+      {
+      	d=a*7.44*0.95;
+      	printf(""%.2f"",d);
+	  }
+	  else if(b==97)
+	  {
+	  	d=a*7.93*0.95;
+	  	printf(""%.2f"",d);
+	  } 
+	}
+	if(c=='e')
+	{
+	if(b==90)
+	  { 
+		d=a*6.95*0.97;
+		printf(""%.2f"",d);
+      }
+      else if(b==93)
+      {
+      	d=a*7.44*0.97;
+      printf(""%.2f"",d);
+	  }
+	  else if(b==97)
+	  {
+	  	d=a*7.93*0.97;
+	  	printf(""%.2f"",d);
+	  }
+    }  
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	double varb_2;
+	char varb_3;
+	scanf(""%d%d %c"",&varb_0,&varb_1,&varb_3);
+	if(varb_3=='m')
+	{
+	  if(varb_1==90)
+	  { 
+		varb_2=varb_0*6.95*0.95;
+		printf(""%.2f"",varb_2);
+      }
+      else if(varb_1==93)
+      {
+      	varb_2=varb_0*7.44*0.95;
+      	printf(""%.2f"",varb_2);
+	  }
+	  else if(varb_1==97)
+	  {
+	  	varb_2=varb_0*7.93*0.95;
+	  	printf(""%.2f"",varb_2);
+	  } 
+	}
+	if(varb_3=='e')
+	{
+	if(varb_1==90)
+	  { 
+		varb_2=varb_0*6.95*0.97;
+		printf(""%.2f"",varb_2);
+      }
+      else if(varb_1==93)
+      {
+      	varb_2=varb_0*7.44*0.97;
+      printf(""%.2f"",varb_2);
+	  }
+	  else if(varb_1==97)
+	  {
+	  	varb_2=varb_0*7.93*0.97;
+	  	printf(""%.2f"",varb_2);
+	  }
+    }  
+	return 0;
+}",5,2c9f30a576c1c3dd017bdd16eb0d6a45_31.csv
+32,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+}",9,2c9f30a576c1c3dd017bdd16eb0d6a45_32.csv
+33,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+  int a,b;
+  float cost;
+  char c;
+  scanf(""%d %d %c"",&a,&b,&c);
+  if(b==90)
+  {
+    if(c=='m')
+     {
+	   cost=6.95*a*0.95;
+       printf(""%.2f"",cost);}
+  else
+     {
+	   cost=6.95*a*0.97-0.05;
+       printf(""%.2f"",cost);}
+       } 
+    else  if(b==93)
+    {
+	   if(c=='m')
+    {
+       cost=7.44*a*0.95;
+       printf(""%.2f"",cost);
+	}
+	
+    else
+   {
+     cost=7.44*a*0.97;
+     printf(""%.2f"",cost);
+   }
+   } 
+      else if(b==97)
+    {
+	  if(c=='m')
+    {
+	cost=7.93*a*0.95+0.05;
+    printf(""%.2f"",cost);
+	}
+	else
+   {
+   cost=7.93*a*0.97;
+   printf(""%.2f"",cost);
+   }
+   }
+  return 0;
+  }
+ ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  char varb_3;
+  scanf(""%d %d %c"",&varb_0,&varb_1,&varb_3);
+  if(varb_1==90)
+  {
+    if(varb_3=='m')
+     {
+	   varb_2=6.95*varb_0*0.95;
+       printf(""%.2f"",varb_2);}
+  else
+     {
+	   varb_2=6.95*varb_0*0.97-0.05;
+       printf(""%.2f"",varb_2);}
+       } 
+    else  if(varb_1==93)
+    {
+	   if(varb_3=='m')
+    {
+       varb_2=7.44*varb_0*0.95;
+       printf(""%.2f"",varb_2);
+	}
+    else
+   {
+     varb_2=7.44*varb_0*0.97;
+     printf(""%.2f"",varb_2);
+   }
+   } 
+      else if(varb_1==97)
+    {
+	  if(varb_3=='m')
+    {
+	varb_2=7.93*varb_0*0.95+0.05;
+    printf(""%.2f"",varb_2);
+	}
+	else
+   {
+   varb_2=7.93*varb_0*0.97;
+   printf(""%.2f"",varb_2);
+   }
+   }
+  return 0;
+  }
+",16,2c9f30a576c1c3dd017bdd16eb0d6a45_33.csv
+34,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95+0.05;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95+0.05;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",13,2c9f30a576c1c3dd017bdd16eb0d6a45_34.csv
+35,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+int main()
+
+{
+
+  char c;
+
+  float cost;
+  
+  int a,b;
+
+  scanf(""%d %d %c"",&a,&b,&c);
+
+  switch(c)
+
+  {
+
+  case 'm':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.95;
+
+  else if(b==93)
+
+    cost=7.44*a*0.95;
+
+  else
+
+    cost=7.93*a*0.95;
+
+  break;
+
+  }
+
+  case 'e':
+
+  {
+
+  if(b==90)
+
+    cost=6.95*a*0.97;
+
+  else if(b==93)
+
+    cost=7.44*a*0.97;
+
+  else
+
+    cost=7.93*a*0.97;
+
+  break;
+
+  }
+
+  }
+
+  printf(""%.2f"",cost);
+
+  return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  char varb_0;
+  float varb_1;
+  int varb_2,varb_3;
+  scanf(""%d %d %c"",&varb_2,&varb_3,&varb_0);
+  switch(varb_0)
+  {
+  case 'm':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.95;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.95;
+  else
+    varb_1=7.93*varb_2*0.95;
+  break;
+  }
+  case 'e':
+  {
+  if(varb_3==90)
+    varb_1=6.95*varb_2*0.97;
+  else if(varb_3==93)
+    varb_1=7.44*varb_2*0.97;
+  else
+    varb_1=7.93*varb_2*0.97;
+  break;
+  }
+  }
+  printf(""%.2f"",varb_1);
+  return 0;
+}",17,2c9f30a576c1c3dd017bdd16eb0d6a45_35.csv
+36,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93*0.97);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.93-a*7.93*0.05);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.44-a*7.44*0.03);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.05);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*6.95-a*6.95*0.03);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93*0.97);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93-varb_0*7.93*0.05);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.44-varb_0*7.44*0.03);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.05);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*6.95-varb_0*6.95*0.03);
+}",11,2c9f30a576c1c3dd017bdd16eb0d6a45_36.csv
+37,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+char c;
+double a,b,result;
+ scanf(""%lf %lf %c"",&a,&b,&c);
+      if(b==90&c=='m')
+      printf(""%0.2lf"",result=a*6.95*0.95);
+      if(b==93&c=='m')
+       printf(""%0.2lf"",result=a*7.44*0.95);
+      if(b==97&c=='m')
+       printf(""%0.2lf"",result=(a*7.93)-(a*7.93*0.05));
+      if(b==90&c=='e')
+       printf(""%0.2lf"",result=a*6.95*0.97);
+      if(b==93&c=='e')
+       printf(""%0.2lf"",result=a*7.44*0.97);
+      if(b==97&c=='e')
+       printf(""%0.2lf"",result=a*7.93*0.97);
+       return 0;
+       }",0.0,"#include<stdio.h>
+int main()
+{
+char varb_0;
+double varb_1,varb_2,varb_3;
+ scanf(""%lf %lf %c"",&varb_1,&varb_2,&varb_0);
+      if(varb_2==90&varb_0=='m')
+      printf(""%0.2lf"",varb_3=varb_1*6.95*0.95);
+      if(varb_2==93&varb_0=='m')
+       printf(""%0.2lf"",varb_3=varb_1*7.44*0.95);
+      if(varb_2==97&varb_0=='m')
+       printf(""%0.2lf"",varb_3=(varb_1*7.93)-(varb_1*7.93*0.05));
+      if(varb_2==90&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*6.95*0.97);
+      if(varb_2==93&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*7.44*0.97);
+      if(varb_2==97&varb_0=='e')
+       printf(""%0.2lf"",varb_3=varb_1*7.93*0.97);
+       return 0;
+       }",18,2c9f30a576c1c3dd017bdd16eb0d6a45_37.csv
+38,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+int main()
+{
+  int a,b;
+  float cost;
+  char c;
+  scanf(""%d %d %c"",&a,&b,&c);
+  if(b==90)
+  {
+    if(c=='m')
+     {
+	   cost=6.95*a*0.95;
+       printf(""%.2f"",cost);}
+  else
+     {
+	   cost=6.95*a*0.97+0.05;
+       printf(""%.2f"",cost);}
+       } 
+    else  if(b==93)
+    {
+	   if(c=='m')
+    {
+       cost=7.44*a*0.95;
+       printf(""%.2f"",cost);
+	}
+	
+    else
+   {
+     cost=7.44*a*0.97;
+     printf(""%.2f"",cost);
+   }
+   } 
+      else if(b==97)
+    {
+	  if(c=='m')
+    {
+	cost=7.93*a*0.95-0.05;
+    printf(""%.2f"",cost);
+	}
+	else
+   {
+   cost=7.93*a*0.97;
+   printf(""%.2f"",cost);
+   }
+   }
+  return 0;
+  }
+ ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  char varb_3;
+  scanf(""%d %d %c"",&varb_0,&varb_1,&varb_3);
+  if(varb_1==90)
+  {
+    if(varb_3=='m')
+     {
+	   varb_2=6.95*varb_0*0.95;
+       printf(""%.2f"",varb_2);}
+  else
+     {
+	   varb_2=6.95*varb_0*0.97+0.05;
+       printf(""%.2f"",varb_2);}
+       } 
+    else  if(varb_1==93)
+    {
+	   if(varb_3=='m')
+    {
+       varb_2=7.44*varb_0*0.95;
+       printf(""%.2f"",varb_2);
+	}
+    else
+   {
+     varb_2=7.44*varb_0*0.97;
+     printf(""%.2f"",varb_2);
+   }
+   } 
+      else if(varb_1==97)
+    {
+	  if(varb_3=='m')
+    {
+	varb_2=7.93*varb_0*0.95-0.05;
+    printf(""%.2f"",varb_2);
+	}
+	else
+   {
+   varb_2=7.93*varb_0*0.97;
+   printf(""%.2f"",varb_2);
+   }
+   }
+  return 0;
+  }
+",16,2c9f30a576c1c3dd017bdd16eb0d6a45_38.csv
+39,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+
+#include<math.h>
+
+int main()
+
+{
+
+    float a,b;
+
+    char c;
+
+    scanf(""%f %f %c"",&a,&b,&c);
+
+    
+
+    
+
+    if(b==97 && c=='m')
+
+    
+
+    printf(""%.2f"",a*7.93*0.95);
+
+    
+
+    
+
+    if(b==97 && c=='e')
+
+    printf(""%.2f"",a*7.93*0.97);
+
+    
+
+    
+
+    if(b==93 && c=='m')
+
+    printf(""%.2f"",a*7.44*0.95);
+
+    
+
+    
+
+    if(b==93 && c=='e')
+
+    printf(""%.2f"",a*7.44*0.97);
+
+    
+
+    
+
+    if(b==90 && c=='m')
+
+    printf(""%.2f"",a*6.95*0.95);
+
+    
+
+    
+
+    if(b==90 && c=='e')
+
+    printf(""%.2f"",a*6.95*0.97);
+
+    
+
+    
+
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1;
+    char varb_2;
+    scanf(""%f %f %c"",&varb_0,&varb_1,&varb_2);
+    if(varb_1==97 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.93*0.95);
+    if(varb_1==97 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.93*0.97);
+    if(varb_1==93 && varb_2=='m')
+    printf(""%.2f"",varb_0*7.44*0.95);
+    if(varb_1==93 && varb_2=='e')
+    printf(""%.2f"",varb_0*7.44*0.97);
+    if(varb_1==90 && varb_2=='m')
+    printf(""%.2f"",varb_0*6.95*0.95);
+    if(varb_1==90 && varb_2=='e')
+    printf(""%.2f"",varb_0*6.95*0.97);
+}",9,2c9f30a576c1c3dd017bdd16eb0d6a45_39.csv
+40,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include <stdio.h>
+int main()
+{
+	int a,b;
+	double cost;
+	double ValueOf90 = 6.95;
+	double ValueOf93 = 7.44;
+	double ValueOf97 = 7.93;
+	char c;
+	scanf (""%d %d %c"",&a,&b,&c);
+	if (c == 'm')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.95;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.95;
+			printf (""%.2lf"",cost);
+		}
+	else if (c == 'e')
+	{
+		if (b == 90)
+		{
+			cost = ValueOf90 * a * 0.97;
+			printf (""%.2lf"",cost);
+		} 
+		else if (b == 93)
+		{
+			cost = ValueOf93 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+		else if (b == 97)
+		{
+			cost = ValueOf97 * a * 0.97;
+			printf (""%.2lf"",cost);
+		}
+	}
+	}
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0,varb_1;
+	double varb_2;
+	double varb_3 = 6.95;
+	double varb_4 = 7.44;
+	double varb_5 = 7.93;
+	char varb_6;
+	scanf(""%d %d %c"",&varb_0,&varb_1,&varb_6);
+	if(varb_6 == 'm')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.95;
+			printf(""%.2lf"",varb_2);
+		}
+	else if(varb_6 == 'e')
+	{
+		if(varb_1 == 90)
+		{
+			varb_2 = varb_3 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		} 
+		else if(varb_1 == 93)
+		{
+			varb_2 = varb_4 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+		else if(varb_1 == 97)
+		{
+			varb_2 = varb_5 * varb_0 * 0.97;
+			printf(""%.2lf"",varb_2);
+		}
+	}
+	}
+}",25,2c9f30a576c1c3dd017bdd16eb0d6a45_40.csv
+41,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93+1.5;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93+1.5;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_41.csv
+42,2c9f30a576c1c3dd017bdd16eb0d6a45,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float a,s;
+	char c;
+	int b;
+	scanf(""%f %d %c"",&a,&b,&c);
+	if(b==90)
+	  {
+	  	if(c=='m')
+	  	{
+	    s=0.95*a*6.95;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*6.95;
+	  	printf(""%.2f"",s);
+	    }
+	  }
+	  else if(b==93)
+	  {
+	  	if(c=='m')
+	  	{
+		  s=0.95*a*7.44;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		  s=0.97*a*7.44;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  else
+	  {
+	  	if(c=='m')
+	  	{
+		s=0.95*a*7.93+0.005;
+	  	printf(""%.2f"",s);
+	  	}
+		  else
+	  	{
+		s=0.97*a*7.93;
+	  	printf(""%.2f"",s);
+	  }
+	  }
+	  
+	  return 0;
+}",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1;
+	char varb_2;
+	int varb_3;
+	scanf(""%f %d %c"",&varb_0,&varb_3,&varb_2);
+	if(varb_3==90)
+	  {
+	  	if(varb_2=='m')
+	  	{
+	    varb_1=0.95*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*6.95;
+	  	printf(""%.2f"",varb_1);
+	    }
+	  }
+	  else if(varb_3==93)
+	  {
+	  	if(varb_2=='m')
+	  	{
+		  varb_1=0.95*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		  varb_1=0.97*varb_0*7.44;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  else
+	  {
+	  	if(varb_2=='m')
+	  	{
+		varb_1=0.95*varb_0*7.93+0.005;
+	  	printf(""%.2f"",varb_1);
+	  	}
+		  else
+	  	{
+		varb_1=0.97*varb_0*7.93;
+	  	printf(""%.2f"",varb_1);
+	  }
+	  }
+	  return 0;
+}",18,2c9f30a576c1c3dd017bdd16eb0d6a45_42.csv

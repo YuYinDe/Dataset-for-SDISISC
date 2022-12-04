@@ -1,0 +1,2354 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+
+int fib(int a)
+{
+	int i,num1,num2,sum;
+	for(i=1;i<=a;i++)
+	{
+		if(i==1)
+		num1=1;
+		else if(i==2)
+		num2=1;
+		else if(i>=3&&i%2!=0)
+		{
+			sum=num1+num2;
+			num1=sum;
+		}
+		else
+		{
+			sum=num1+num2;
+			num2=sum;
+		}
+	}
+	return sum;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int a)
+{
+	int varb_1,varb_2,varb_3,varb_4;
+	for(varb_1=1;varb_1<=a;varb_1++)
+	{
+		if(varb_1==1)
+		varb_2=1;
+		else if(varb_1==2)
+		varb_3=1;
+		else if(varb_1>=3&&varb_1%2!=0)
+		{
+			varb_4=varb_2+varb_3;
+			varb_2=varb_4;
+		}
+		else
+		{
+			varb_4=varb_2+varb_3;
+			varb_3=varb_4;
+		}
+	}
+	return varb_4;
+}",16
+1,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib(int n)
+{
+    if(n<=2)
+    return 1;}
+    
+    
+    ",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+    if(varb_0<=2)
+    return 1;}
+",13
+2,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+
+/* 你的代码将被嵌在这里 */
+int fib( int n )
+{ int a,b,c,sum;
+
+if(n<=3)
+return sum=1;
+b=1;
+sum=1;
+for(c=3;c<=n;c++)
+{
+a=sum;
+sum=a+b;
+b=a;
+}
+return sum;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{ int varb_1,varb_2,varb_3,varb_4;
+if(varb_0<=3)
+return varb_4=1;
+varb_2=1;
+varb_4=1;
+for(varb_3=3;varb_3<=varb_0;varb_3++)
+{
+varb_1=varb_4;
+varb_4=varb_1+varb_2;
+varb_2=varb_1;
+}
+return varb_4;
+}",12
+3,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+  int i,a,b,sum;
+  a=1;b=1;
+  if(n<=2)
+  return 1;
+  else
+  {
+  for(i=3;i<=n;i++)
+  { 
+    sum=a+b;a=b;b=sum;
+  }}
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4;
+  varb_2=1;varb_3=1;
+  if(varb_0<=2)
+  return 1;
+  else
+  {
+  for(varb_1=3;varb_1<=varb_0;varb_1++)
+  { 
+    varb_4=varb_2+varb_3;varb_2=varb_3;varb_3=varb_4;
+  }}
+}
+",13
+4,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+
+int fib(int n)
+{
+int a=1,b=1,num,i;
+if(n==1||n==2)
+num=1;
+if(n%2==0)
+{
+for(i=2;i<=n/2;++i)
+{
+a=a+b;
+b=a+b;
+}
+return b;
+}
+if(n%2!=0)
+{
+for(i=1;i<=n/2;++i)
+{
+a=a+b;
+b=a+b;
+return a;
+}
+
+}
+
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+int varb_1=1,b=1,num,i;
+if(varb_0==1||varb_0==2)
+num=1;
+if(varb_0%2==0)
+{
+for(i=2;i<=varb_0/2;++i)
+{
+varb_1=varb_1+b;
+b=varb_1+b;
+}
+return b;
+}
+if(varb_0%2!=0)
+{
+for(i=1;i<=varb_0/2;++i)
+{
+varb_1=varb_1+b;
+b=varb_1+b;
+return varb_1;
+}
+}
+}",12
+5,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+
+int fib(int n)
+{
+int a=1,b=1,i;
+if(n==1||n==2)
+return 1;
+if(n%2==0)
+{
+for(i=2;i<=n/2;++i)
+{
+a=a+b;
+b=a+b;
+}
+return b;
+}
+if(n%2!=0)
+{
+for(i=1;i<=n/2;++i)
+{
+a=a+b;
+b=a+b;
+return a;
+}
+
+}
+
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+int varb_1=1,b=1,i;
+if(varb_0==1||varb_0==2)
+return 1;
+if(varb_0%2==0)
+{
+for(i=2;i<=varb_0/2;++i)
+{
+varb_1=varb_1+b;
+b=varb_1+b;
+}
+return b;
+}
+if(varb_0%2!=0)
+{
+for(i=1;i<=varb_0/2;++i)
+{
+varb_1=varb_1+b;
+b=varb_1+b;
+return varb_1;
+}
+}
+}",9
+6,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+
+int fib( int n )
+{
+  int z;
+  if(n==1)
+  z=1;
+  else
+  z=fib(n-1)+fib(n-2);
+  return z;
+}
+  ",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+  int varb_1;
+  if(varb_0==1)
+  varb_1=1;
+  else
+  varb_1=func_0(varb_0-1)+func_0(varb_0-2);
+  return varb_1;
+}
+",12
+7,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+if(n==1)
+return 0;
+else
+{
+for(a=1;a<n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+}
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+if(varb_0==1)
+return 0;
+else
+{
+for(varb_1=1;varb_1<varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}
+}",14
+8,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+	int i;
+    int f[1000];
+        f[0]=1;
+        f[1]=1;
+	for(i=2;i<=n;i++)
+	{
+	    f[i]=f[i-1]+f[i-2];	
+	}
+	return f[i];
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	int varb_1;
+    int varb_2[1000];
+        varb_2[0]=1;
+        varb_2[1]=1;
+	for(varb_1=2;varb_1<=varb_0;varb_1++)
+	{
+	    varb_2[varb_1]=varb_2[varb_1-1]+varb_2[varb_1-2];	
+	}
+	return varb_2[varb_1];
+}",12
+9,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib(int n)
+{
+    int f1=1,f2=1,f3,i;
+    if(n<=2)
+    return 1;
+    else{
+    for(i=1;i<=n-2;i++)
+    {
+        f3=f1+f2;
+        f2=f3;
+        f1=f2;
+    }
+    return f3;
+    }
+ }
+    
+    ",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+    int varb_1=1,f2=1,f3,i;
+    if(varb_0<=2)
+    return 1;
+    else{
+    for(i=1;i<=varb_0-2;i++)
+    {
+        f3=varb_1+f2;
+        f2=f3;
+        varb_1=f2;
+    }
+    return f3;
+    }
+ }
+",20
+10,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+      if(n==0||n==1) s=1;
+     else if (n>=2)
+    s=(fib(n-1)+fib(n-2));
+    
+    return s;
+    
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+      if(varb_0==0||varb_0==1) varb_1=1;
+     else if(varb_0>=2)
+    varb_1=(func_0(varb_0-1)+func_0(varb_0-2));
+    return varb_1;
+}",11
+11,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib(int n)
+{
+    int f1=1,f2=1,f3,i;
+    if(n<=2)
+    return 1;
+    else{
+    for(i=1;i<=n-2;i++)
+    {
+        f3=f1+f2;
+        f2=f3;
+        f1=f2;
+    }
+    return f3;
+    }
+ }
+    
+    ",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+    int varb_1=1,f2=1,f3,i;
+    if(varb_0<=2)
+    return 1;
+    else{
+    for(i=1;i<=varb_0-2;i++)
+    {
+        f3=varb_1+f2;
+        f2=f3;
+        varb_1=f2;
+    }
+    return f3;
+    }
+ }
+",20
+12,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{
+if(n<=2)
+return(n);
+else 
+return(fib(n-1)+fib(n-2));
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+if(varb_0<=2)
+return(varb_0);
+else 
+return(func_0(varb_0-1)+func_0(varb_0-2));
+}
+",13
+13,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+long k;
+scanf(""%d"",&n);
+if(n==1)
+{k=1;
+printf(""%lu"",k);}
+if(n==2)
+{k=1;
+printf(""%lu"",k);}
+if(n>=3)
+{
+int a,b,i;
+a=1,b=1;
+for(i=3;i<=n;i++)
+{
+k=a+b;
+a=b,b=k;}
+printf(""%lu"",k);}
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+long varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0==1)
+{varb_1=1;
+printf(""%lu"",varb_1);}
+if(varb_0==2)
+{varb_1=1;
+printf(""%lu"",varb_1);}
+if(varb_0>=3)
+{
+int varb_2,varb_3,varb_4;
+varb_2=1,varb_3=1;
+for(varb_4=3;varb_4<=varb_0;varb_4++)
+{
+varb_1=varb_2+varb_3;
+varb_2=varb_3,varb_3=varb_1;}
+printf(""%lu"",varb_1);}
+}
+",15
+14,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+      if(n==0||n==1) s=1;
+     else if (n>2)
+    s=(fib(n-1)+fib(n-2));
+    
+    return s;
+    
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+      if(varb_0==0||varb_0==1) varb_1=1;
+     else if(varb_0>2)
+    varb_1=(func_0(varb_0-1)+func_0(varb_0-2));
+    return varb_1;
+}",11
+15,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+  int i,a,b,sum;
+  a=1;b=1;
+  if(n<=2)
+  return 1;
+  else
+  {
+  for(i=1;i<=n-2;i++)
+  { 
+    sum=a+b;a=b;b=sum;
+  }}
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4;
+  varb_2=1;varb_3=1;
+  if(varb_0<=2)
+  return 1;
+  else
+  {
+  for(varb_1=1;varb_1<=varb_0-2;varb_1++)
+  { 
+    varb_4=varb_2+varb_3;varb_2=varb_3;varb_3=varb_4;
+  }}
+}
+",13
+16,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+long k;
+scanf(""%d"",&n);
+if(n==1)
+{k=1;
+printf(""%lu"",k);}
+if(n==2)
+{k=2;
+printf(""%lu"",k);}
+if(n>=3)
+{
+int a,b,i;
+a=1,b=1;
+for(i=3;i<=n;i++)
+{
+k=a+b;
+a=b,b=k;}
+printf(""%lu"",k);}
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+long varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0==1)
+{varb_1=1;
+printf(""%lu"",varb_1);}
+if(varb_0==2)
+{varb_1=2;
+printf(""%lu"",varb_1);}
+if(varb_0>=3)
+{
+int varb_2,varb_3,varb_4;
+varb_2=1,varb_3=1;
+for(varb_4=3;varb_4<=varb_0;varb_4++)
+{
+varb_1=varb_2+varb_3;
+varb_2=varb_3,varb_3=varb_1;}
+printf(""%lu"",varb_1);}
+}
+",15
+17,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+for(a=1;a<=n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+18,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+    int a=1,b=1,c=0,i;
+    for(i=1;i<=n-2;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    return c;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+    int varb_1=1,b=1,c=0,i;
+    for(i=1;i<=varb_0-2;i++)
+    {
+        c=varb_1+b;
+        varb_1=b;
+        b=c;
+    }
+    return c;
+}",12
+19,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+for(a=2;a<=n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+for(varb_1=2;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+20,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int i=1;
+int j=1;
+int k=1;
+int step=2;
+for(step=2;step<n;step++)
+{
+k=i+j;
+j=k;
+i=j;
+}
+return k;
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1=1;
+int varb_2=1;
+int varb_3=1;
+int varb_4=2;
+for(varb_4=2;varb_4<varb_0;varb_4++)
+{
+varb_3=varb_1+varb_2;
+varb_2=varb_3;
+varb_1=varb_2;
+}
+return varb_3;
+}
+",20
+21,2c9f30a56e1ebafc016e4bbb08ef2727,"#include<stdio.h>
+int fib(int n)
+{
+	if (n <= 2)
+	{
+		return 1;
+	}
+	else {
+		return fib(n - 1) + fib(n - 2);
+	}
+}
+int main()
+{
+	int n = 0;
+	scanf(""%d"", &n);
+	fib(n);
+	printf(""%d"", fib(n));
+	system(""pause"");
+	return 0;
+}
+",0.0,"#include<stdio.h>
+int func_0(int varb_0)
+{
+	if(varb_0 <= 2)
+	{
+		return 1;
+	}
+	else {
+		return func_0(varb_0 - 1) + func_0(varb_0 - 2);
+	}
+}
+int main()
+{
+	int varb_0 = 0;
+	scanf(""%d"", &varb_0);
+	func_0(varb_0);
+	printf(""%d"", func_0(varb_0));
+	system(""pause"");
+	return 0;
+}
+",18
+22,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=1;c=1;
+for(a=3;a<=n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=1;varb_3=1;
+for(varb_1=3;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+23,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+ int fib(int n)
+ {  int m;
+    scanf(""%d"",&m);
+    
+ 
+ 
+ 
+ 
+ 
+ }",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+ int func_0(int varb_0)
+ {  int varb_1;
+    scanf(""%d"",&varb_1);
+ }",11
+24,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{
+ int a=0,b=1,c;
+ int i;
+ for(i=1;i<=n;i++)
+ {
+    c=a;    
+    a=b;
+    b=b=c;
+ }
+ return a;
+ 
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+ int varb_1=0,b=1,c;
+ int varb_2;
+ for(varb_2=1;varb_2<=varb_0;varb_2++)
+ {
+    c=varb_1;    
+    varb_1=b;
+    b=b=c;
+ }
+ return varb_1;
+}",16
+25,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+      if (n>2)
+    s=(fib(n-1)+fib(n-2));
+    
+    return s;
+    
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+      if(varb_0>2)
+    varb_1=(func_0(varb_0-1)+func_0(varb_0-2));
+    return varb_1;
+}",11
+26,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+if(n<=1)
+return 0;
+else
+{
+for(a=1;a<n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+}
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+if(varb_0<=1)
+return 0;
+else
+{
+for(varb_1=1;varb_1<varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}
+}",8
+27,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+   int a;
+   a=fib(n-1)+fib(n-2);
+   return n;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+   int varb_1;
+   varb_1=func_0(varb_0-1)+func_0(varb_0-2);
+   return varb_0;
+}",14
+28,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+int i,a,b,c;
+scanf(""%d"",&n);
+a=1;b=0;c=0;
+for(i=1;i<=n;i++)
+{
+c=a+b;a=b+c;}
+return 0;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_2=1;varb_3=0;varb_4=0;
+for(varb_1=1;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;varb_2=varb_3+varb_4;}
+return 0;
+}",12
+29,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{
+ int a=0,b=1,c;
+ int i;
+ for(i=1;i<=n;i++)
+ {
+    c=a;    
+    a=b;
+    b=b=c;
+ }
+ return 0;
+ 
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+ int varb_1=0,b=1,c;
+ int varb_2;
+ for(varb_2=1;varb_2<=varb_0;varb_2++)
+ {
+    c=varb_1;    
+    varb_1=b;
+    b=b=c;
+ }
+ return 0;
+}",16
+30,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+for(a=1;a<n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+for(varb_1=1;varb_1<varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+31,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+int i,a,b,c;
+scanf(""%d"",&n);
+a=1;b=1;c=0;
+for(i=3;i<=n;i++)
+{
+c=a+b;a=b+c;}
+return 0;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_2=1;varb_3=1;varb_4=0;
+for(varb_1=3;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;varb_2=varb_3+varb_4;}
+return 0;
+}",12
+32,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+for(a=2;a<=n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+for(varb_1=2;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+33,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib(int n);
+
+int main()
+
+{
+
+    int n;
+
+    scanf(""%d"", &n);
+
+    printf(""%d\n"", fib(n));
+
+    return 0;
+
+}
+
+int fib(int n)
+
+{
+
+    int a=0,b=1;
+
+    int i;
+
+    int sum;
+
+    for(i=1;i<=n;i++)
+
+    {
+
+        
+
+        sum=a+b;
+
+        a=b;
+
+        b=sum;
+
+    }
+
+    return sum;
+
+}",0.0,"#include <stdio.h>
+int func_0(int varb_0);
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+    int varb_1=0,b=1;
+    int varb_2;
+    int varb_3;
+    for(varb_2=1;varb_2<=varb_0;varb_2++)
+    {
+        varb_3=varb_1+b;
+        varb_1=b;
+        b=varb_3;
+    }
+    return varb_3;
+}",15
+34,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+long k;
+scanf(""%d"",&n);
+if(n==1)
+k=1;
+
+if(n==2)
+k=1;
+
+if(n>=3)
+{
+int a,b,i;
+a=1,b=1;
+for(i=3;i<=n;i++)
+{
+k=a+b;
+a=b,b=k;
+return k;
+}
+}
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+long varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0==1)
+varb_1=1;
+if(varb_0==2)
+varb_1=1;
+if(varb_0>=3)
+{
+int varb_2,varb_3,varb_4;
+varb_2=1,varb_3=1;
+for(varb_4=3;varb_4<=varb_0;varb_4++)
+{
+varb_1=varb_2+varb_3;
+varb_2=varb_3,varb_3=varb_1;
+return varb_1;
+}
+}
+}
+",25
+35,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{
+if(n<=2)
+return(n);
+else if(n>3)
+return(fib(n-1)+fib(n-2));
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+if(varb_0<=2)
+return(varb_0);
+else if(varb_0>3)
+return(func_0(varb_0-1)+func_0(varb_0-2));
+}
+",13
+36,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{
+if(n<=2)
+return(n);
+else 
+return(fib(n-1)+fib(n-2));
+}
+",0.0,"#include <stdio.h>
+int func_0( int );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+if(varb_0<=2)
+return(varb_0);
+else 
+return(func_0(varb_0-1)+func_0(varb_0-2));
+}
+",13
+37,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+	int a,b,i,s,j;
+	a=1;
+	b=1;
+	if(n<3)
+	return 1;
+   else
+	for(i=3;i<=n;i++)
+	j=a+b;
+	a=b;
+   s=j;
+	return s;
+	
+	
+	
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	int varb_1,varb_2,varb_3,varb_4,varb_5;
+	varb_1=1;
+	varb_2=1;
+	if(varb_0<3)
+	return 1;
+   else
+	for(varb_3=3;varb_3<=varb_0;varb_3++)
+	varb_5=varb_1+varb_2;
+	varb_1=varb_2;
+   varb_4=varb_5;
+	return varb_4;
+}",12
+38,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int i=1;
+int j=1;
+int k=0;
+int step=2;
+for(step=2;step<n;step++)
+{
+k=i+j;
+j=k;
+i=j;
+}
+return k;
+}
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1=1;
+int varb_2=1;
+int varb_3=0;
+int varb_4=2;
+for(varb_4=2;varb_4<varb_0;varb_4++)
+{
+varb_3=varb_1+varb_2;
+varb_2=varb_3;
+varb_1=varb_2;
+}
+return varb_3;
+}
+",14
+39,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+	int a,b,i,s,j;
+	a=1;
+	b=1;
+	if(n<3)
+	return 1;
+   else
+	for(i=3;i<=n;i++)
+	{
+    j=a+b;
+	 a=b;
+    s=j;
+   }
+	return s;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	int varb_1,varb_2,varb_3,varb_4,varb_5;
+	varb_1=1;
+	varb_2=1;
+	if(varb_0<3)
+	return 1;
+   else
+	for(varb_3=3;varb_3<=varb_0;varb_3++)
+	{
+    varb_5=varb_1+varb_2;
+	 varb_1=varb_2;
+    varb_4=varb_5;
+   }
+	return varb_4;
+}",12
+40,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=1;c=1;
+for(a=3;a<=n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=1;varb_3=1;
+for(varb_1=3;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+41,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib( int n )
+{
+int i,a,b,c;
+scanf(""%d"",&n);
+a=1;b=0;c=0;
+for(i=3;i<=n;i++)
+{
+c=a+b;a=b+c;}
+return 0;
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+scanf(""%d"",&varb_0);
+varb_2=1;varb_3=0;varb_4=0;
+for(varb_1=3;varb_1<=varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;varb_2=varb_3+varb_4;}
+return 0;
+}",12
+42,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+int a,b,c,d;
+b=0;c=1;
+for(a=0;a<n;a++)
+{
+d=b+c;
+b=c;
+c=d;
+}
+return d;
+
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+int varb_1,varb_2,varb_3,varb_4;
+varb_2=0;varb_3=1;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+varb_4=varb_2+varb_3;
+varb_2=varb_3;
+varb_3=varb_4;
+}
+return varb_4;
+}",13
+43,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+      if(n==0||n==1) s=1;
+     else if (n>=2)
+    s=fib(n-1)+fib(n-2);
+    
+    return s;
+    
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+      if(varb_0==0||varb_0==1) varb_1=1;
+     else if(varb_0>=2)
+    varb_1=func_0(varb_0-1)+func_0(varb_0-2);
+    return varb_1;
+}",11
+44,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+int i=1;
+int a=1;
+int b=1;
+      if(n<2) 
+return 1;
+     else if (n>=2)
+for(;i<=n-2;i++)
+{
+    s=a+b;a=b;
+b=s;
+
+    return s;
+    
+}}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+int varb_2=1;
+int varb_3=1;
+int varb_4=1;
+      if(varb_0<2) 
+return 1;
+     else if(varb_0>=2)
+for(;varb_2<=varb_0-2;varb_2++)
+{
+    varb_1=varb_3+varb_4;varb_3=varb_4;
+varb_4=varb_1;
+    return varb_1;
+}}",15
+45,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+	int a,b,i,s,j;
+	a=1;
+	b=1;
+	if(n<3)
+	return 1;
+	else if(n=3)
+	return 3;
+	else
+	for(i=3;i<=n;i++)
+	j=a+b;
+	s=j+b;
+	return s;
+	
+	
+	
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	int varb_1,varb_2,varb_3,varb_4,varb_5;
+	varb_1=1;
+	varb_2=1;
+	if(varb_0<3)
+	return 1;
+	else if(varb_0=3)
+	return 3;
+	else
+	for(varb_3=3;varb_3<=varb_0;varb_3++)
+	varb_5=varb_1+varb_2;
+	varb_4=varb_5+varb_2;
+	return varb_4;
+}",12
+46,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+/* 你的代码将被嵌在这里 */
+int fib( int n )
+{
+	if(n==1&n==2)
+	return 1;
+	else
+	return(fib(n-2)+fib(n-1));
+	
+}
+
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	if(varb_0==1&varb_0==2)
+	return 1;
+	else
+	return(func_0(varb_0-2)+func_0(varb_0-1));
+}
+",12
+47,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib( int n )
+{
+	int a,b,i,s,j;
+	a=1;
+	b=1;
+	if(n<3)
+	return 1;
+   else
+	for(i=3;i<=n;i++)
+	j=a+b;
+	b=a;
+   s=j;
+	return s;
+	
+	
+	
+}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0( int varb_0 )
+{
+	int varb_1,varb_2,varb_3,varb_4,varb_5;
+	varb_1=1;
+	varb_2=1;
+	if(varb_0<3)
+	return 1;
+   else
+	for(varb_3=3;varb_3<=varb_0;varb_3++)
+	varb_5=varb_1+varb_2;
+	varb_2=varb_1;
+   varb_4=varb_5;
+	return varb_4;
+}",12
+48,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+int fib( int n );
+int main()
+{
+    int n;
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+    return 0;
+}
+int fib(int n)
+{
+  int a=0,b=1,c;
+  for(int i=1;i<=n;i++)
+  {
+  	c=a;
+  	a=b;
+  	b=c+b;
+  }
+  return a;
+}
+
+",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{
+  int varb_1=0,b=1,c;
+  for(int varb_2=1;varb_2<=varb_0;varb_2++)
+  {
+  	c=varb_1;
+  	varb_1=b;
+  	b=c+b;
+  }
+  return varb_1;
+}
+",13
+49,2c9f30a56e1ebafc016e4bbb08ef2727,"#include <stdio.h>
+
+int fib( int n );
+
+int main()
+{
+    int n;
+
+    scanf(""%d"", &n);
+    printf(""%d\n"", fib(n));
+
+    return 0;
+}
+int fib(int n)
+{    int s;
+int i=1;
+int a=1;
+int b=1;
+      if(n==0||n==1) 
+return 1;
+     else if (n>=2)
+for(;i<=n;i++)
+{
+    s=a+b;a=b;
+b=s;
+
+    return s;
+    
+}}",0.0,"#include <stdio.h>
+int func_0( int varb_0 );
+int main()
+{
+    int varb_0;
+    scanf(""%d"", &varb_0);
+    printf(""%d\n"", func_0(varb_0));
+    return 0;
+}
+int func_0(int varb_0)
+{    int varb_1;
+int varb_2=1;
+int varb_3=1;
+int varb_4=1;
+      if(varb_0==0||varb_0==1) 
+return 1;
+     else if(varb_0>=2)
+for(;varb_2<=varb_0;varb_2++)
+{
+    varb_1=varb_3+varb_4;varb_3=varb_4;
+varb_4=varb_1;
+    return varb_1;
+}}",15

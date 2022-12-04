@@ -1,0 +1,1307 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+	int varb_3;
+	int varb_4;    
+};
+int main()
+{   struct varb_5 varb_6[6];
+    int varb_7,varb_8,varb_9,varb_10,varb_11;
+    for(varb_7 = 0; varb_7 < 6; varb_7++)
+	{scanf(""%d%s%d%d"", &varb_6[varb_7].varb_0, varb_6[varb_7].varb_1, &varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+	varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;}  
+	 for(varb_7 = 0; varb_7 < 6; varb_7++)
+	 {
+	 	for(varb_9=varb_7+1;varb_9<6;varb_9++)
+	 	{
+	 	if(varb_6[varb_7].varb_4<varb_6[varb_9].varb_4)
+	 	{
+	 		varb_8=varb_6[varb_7].varb_4;varb_6[varb_7].varb_4=varb_6[varb_9].varb_4;varb_6[varb_9].varb_4=varb_8;
+	 	}	 	
+	   }	
+	 }
+	scanf(""%d"",&varb_11);    
+   for(varb_7 = varb_11; varb_7 < 6; varb_7++)
+       printf(""%8d%10s%5d%5d%5d\n"", varb_6[varb_7].varb_0, varb_6[varb_7].varb_1,varb_6[varb_7].varb_2, varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+    return 0;
+}",0.0,10
+1,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   struct varb_5 varb_6[MAXN];
+    struct varb_5 varb_8;
+    int varb_9, varb_10, varb_11, varb_12;
+    for(varb_10 = 0; varb_10 < MAXN;varb_10++){
+       scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, &varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+       varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;
+    }
+	 scanf(""%d"", &varb_9);
+for(varb_10=0;varb_10<6;varb_10++)
+	{
+		for(varb_11=varb_10+1;varb_11<6;varb_11++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_11].varb_4)
+			{
+				varb_8=varb_6[varb_10];
+				varb_6[varb_10]=varb_6[varb_11];
+				varb_6[varb_11]=varb_8;
+			}
+		}
+	}
+	for(varb_10=5;varb_10>=varb_9;varb_10--)
+	 printf(""%8d %10s %5d %5d %5d\n"", varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, varb_6[varb_10].varb_2, varb_6[varb_10].varb_3, varb_6[varb_10].varb_4);
+    return 0;
+}",0.0,31
+2,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   
+    struct varb_5 varb_6[MAXN];
+    int varb_7,varb_8;
+    int varb_9;
+     struct varb_5 varb_11;
+    for( varb_8 = 0; varb_8 < 6 ; varb_8++)
+	{
+		scanf(""%d%s%d%d"", &varb_6[varb_8].varb_0, varb_6[varb_8].varb_1, &varb_6[varb_8].varb_2,&varb_6[varb_8].varb_3);
+		varb_6[varb_8].varb_4=varb_6[varb_8].varb_2+varb_6[varb_8].varb_3;
+    } 
+    for(varb_9=0;varb_9<6;varb_9++)	
+	 {
+	  for(varb_8=0;varb_8<5;varb_8++)
+	  {
+	    if(varb_6[varb_8].varb_4<varb_6[varb_8+1].varb_4)
+	    {
+	    varb_11=varb_6[varb_8];
+	    varb_6[varb_8]=varb_6[varb_8+1];	
+	    varb_6[varb_8+1]=varb_11;
+		}
+      }
+	}
+   scanf(""%d"",&varb_7);
+   for(varb_8 = varb_7; varb_8 < 6 ; varb_8++)
+       printf(""%8d%10s%5d%5d%5d\n"", varb_6[varb_8].varb_0, varb_6[varb_8].varb_1, varb_6[varb_8].varb_2,varb_6[varb_8].varb_3,varb_6[varb_8].varb_4);
+    return 0;
+}
+",0.0,25
+3,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5
+{
+int varb_0;
+char varb_1[20];
+int varb_2;
+int varb_3;
+int varb_4;
+};
+int main()
+{
+struct varb_5 varb_6[6];
+int varb_7,varb_8,varb_9,varb_10;
+for(varb_7=0;varb_7<6;varb_7++)
+{
+scanf(""%d%s%d%d"",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+}
+scanf(""%d"",&varb_10);
+for(varb_7=varb_10;varb_7<6;varb_7++){
+printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,varb_6[varb_7].varb_2,varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+}}",0.0,12
+4,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+ typedef struct student
+ {
+  int varb_0;
+  char varb_1[10];
+  int varb_2;
+  int varb_3;
+  int varb_4;
+ }s;
+ int main()
+{
+  s a[6];
+  s f;
+  int varb_5,varb_6;
+  for(varb_5=0;varb_5<6;varb_5++){
+  scanf(""%d%s%d%d"",&a[varb_5].varb_0,&a[varb_5].varb_1,&a[varb_5].varb_2,&a[varb_5].varb_3);
+   a[varb_5].varb_4=a[varb_5].varb_2+a[varb_5].varb_3;}
+  for(varb_5=0;varb_5<5;varb_5++){
+  for(varb_6=1;varb_6<6;varb_6++){
+   if(a[varb_6].varb_4<a[varb_6-1].varb_4)
+   {
+   f=a[varb_6-1];
+   a[varb_6-1]=a[varb_6];
+   a[varb_6]=f;}
+   }
+   }
+   int varb_7;
+   scanf(""%d"",&varb_7);
+   for(varb_5=0;varb_5<5;varb_5++){
+   if(varb_5+1>=varb_7)
+  printf(""%8d%10s%5d%5d%5d\n"",a[varb_5].varb_0,a[varb_5].varb_1,a[varb_5].varb_2,a[varb_5].varb_3,a[varb_5].varb_4);}
+}",0.0,18
+5,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#define N 6
+struct varb_5
+{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+    struct varb_5 varb_6[N];
+    struct varb_5 varb_8;
+    int varb_9;
+    for(varb_9=0; varb_9<N; varb_9++) {
+        scanf(""%d%s%d%d"",&varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,&varb_6[varb_9].varb_2,&varb_6[varb_9].varb_3);
+    }
+    int varb_10;
+    for(varb_9=0; varb_9<5; varb_9++) {
+    varb_6[varb_9].varb_4=varb_6[varb_9].varb_2+varb_6[varb_9].varb_3;
+    for(varb_10=varb_9+1;varb_10<6;varb_10++){
+    if(varb_6[varb_10].varb_4<varb_6[varb_9].varb_4){
+    varb_8=varb_6[varb_9];
+    varb_6[varb_9]=varb_6[varb_10];
+    varb_6[varb_10]=varb_8;
+    }
+    } 
+    }
+    int varb_11;
+    scanf(""%d"",&varb_11);
+    for(varb_9=varb_11;varb_9<N;varb_9++){printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_2+varb_6[varb_9].varb_3);}
+    return 0;
+}",0.0,20
+6,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+main()
+{   struct varb_5 varb_6[MAXN],b;
+    int varb_7,varb_8,varb_9;
+   for(varb_7 = 0; varb_7<MAXN;varb_7++){
+       scanf(""%d%s%d%d"", &varb_6[varb_7].varb_0, &varb_6[varb_7].varb_1, &varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+    }
+	for(varb_7 = 0; varb_7<MAXN;varb_7++){
+		varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+	}
+	for(varb_7=0;varb_7<MAXN;varb_7++){
+		for(varb_9=1+varb_7;varb_9<MAXN;varb_9++){
+			if(varb_6[varb_7].varb_4>varb_6[varb_9].varb_4)
+			    b=varb_6[varb_7];
+			    varb_6[varb_7]=varb_6[varb_9];
+			    varb_6[varb_9]=b;
+		}
+	}
+	scanf(""%d"",&varb_8);
+  for(varb_7 = varb_8; varb_7<MAXN; varb_7++){
+       printf(""%8d%10s%5d%5d%5d\n"", varb_6[varb_7].varb_0, varb_6[varb_7].varb_1, varb_6[varb_7].varb_2,varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+    } }",0.0,12
+7,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5
+{
+   int varb_0;
+   char varb_1[10];
+   int varb_2,varb_3,varb_4;
+};
+struct varb_5 varb_6[6];
+void func_0(struct varb_5 varb_8[6],int n);
+int main()
+{
+   struct varb_5 varb_8[6];
+   int varb_9,varb_6;
+   for(varb_9=0;varb_9<6;varb_9++)
+   {
+	scanf(""%d %s %d %d"",&varb_8[varb_9].varb_0,varb_8[varb_9].varb_1,&varb_8[varb_9].varb_3,&varb_8[varb_9].varb_4);
+	varb_8[varb_9].varb_2=varb_8[varb_9].varb_3+varb_8[varb_9].varb_4;
+   }
+   func_0(varb_8,6);
+   for(varb_9=5;varb_9>=0;varb_9--)
+   {
+   	printf(""%8d %10s %5d %5d %5d\n"",varb_8[varb_9].varb_0,varb_8[varb_9].varb_1,varb_8[varb_9].varb_3,varb_8[varb_9].varb_4,varb_8[varb_9].varb_2);
+   }
+}
+void func_0(struct varb_5 varb_8[6],int n)
+{
+	int varb_9,varb_12;
+	for(varb_9=0;varb_9<n;varb_9++)
+	{
+		for(varb_12=varb_9+1;varb_12<n;varb_12++)
+		{
+			if(varb_8[varb_9].varb_2<varb_8[varb_12].varb_2)
+			{
+				varb_6[0]=varb_8[varb_9];
+				varb_8[varb_9]=varb_8[varb_12];
+				varb_8[varb_12]=varb_6[0];
+			}
+		}
+	}
+}",0.0,13
+8,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+typedef struct student
+{
+	int varb_0;
+	char varb_1[10];
+	int varb_2;
+	int varb_3;
+	int varb_4;
+} s1;
+int main()
+{
+	s1 a[6];
+	int varb_5,varb_6,varb_7,varb_8;
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d %s %d %d "",&a[varb_5].varb_0,a[varb_5].varb_1,&a[varb_5].varb_2,&a[varb_5].varb_3);
+		a[varb_5].varb_4=a[varb_5].varb_2+a[varb_5].varb_3;
+	}
+	scanf(""%d"",&varb_6);
+    for(varb_5=0;varb_5<6;varb_5++)
+	for(varb_7=varb_5;varb_7<6;varb_7++)
+		{
+			if(a[varb_7].varb_4>a[varb_7+1].varb_4)
+			{
+				varb_8=a[varb_7].varb_4;
+				a[varb_7].varb_4=a[varb_7+1].varb_4;
+				a[varb_7+1].varb_4=varb_8;
+			}
+		}
+		for(varb_7=varb_6;varb_7<6;varb_7++)
+		printf(""%8d%10s%5d%5d%5d\n"",a[varb_7].varb_0,a[varb_7].varb_1,a[varb_7].varb_2,a[varb_7].varb_3,a[varb_7].varb_4);
+		return 0;
+}",0.0,12
+9,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_9{
+	int varb_0;
+	char varb_1[10];
+	int varb_2,varb_3,varb_4;
+};
+int main()
+{
+	int varb_5,varb_6,varb_0=0,varb_8;
+	struct varb_9 varb_10[6]; 
+	for(varb_5=0;varb_5<6;varb_5++)
+{
+scanf(""%d"",&varb_10[varb_5].varb_0);
+scanf(""%s"",&varb_10[varb_5].varb_1);
+scanf(""%d"",&varb_10[varb_5].varb_2);
+scanf(""%d"",&varb_10[varb_5].varb_3);
+varb_10[varb_5].varb_4=(varb_10[varb_5].varb_2+varb_10[varb_5].varb_3);
+}
+scanf(""%d"",&varb_8);
+for(varb_5=varb_8;varb_5<6;varb_5++)
+printf(""%8d%10s%5d%5d%5d\n"",varb_10[varb_5].varb_0,varb_10[varb_5].varb_1,varb_10[varb_5].varb_2,varb_10[varb_5].varb_3,varb_10[varb_5].varb_4);
+return 0;
+}",0.0,9
+10,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_8{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+	int varb_5,varb_6,varb_7;
+    struct varb_8 varb_9[6];
+    struct varb_8 varb_11;   
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d %s %d %d"",&varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,&varb_9[varb_5].varb_2,&varb_9[varb_5].varb_3);
+		varb_9[varb_5].varb_4=varb_9[varb_5].varb_2+varb_9[varb_5].varb_3;
+	}
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		for(varb_7=varb_5+1;varb_7<6;varb_7++)
+		{
+			if(varb_9[varb_7].varb_4<varb_9[varb_5].varb_4)
+			{			
+			  varb_11=varb_9[varb_5];
+			  varb_9[varb_5]=varb_9[varb_7];
+			  varb_9[varb_7]=varb_11;
+		    }
+		}
+	}
+	for(;varb_6<6;varb_6++)
+	{
+		printf(""%8d%10s%5d%5d%5d"",varb_9[varb_6].varb_0,varb_9[varb_6].varb_1,varb_9[varb_6].varb_2,varb_9[varb_6].varb_3,varb_9[varb_6].varb_4);
+		printf(""\n"");
+	}
+}
+",0.0,2
+11,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5
+{
+  int varb_0;
+  char varb_1[10];
+  int varb_2;
+  int varb_3;
+  int varb_4;
+};
+int main()
+{
+  struct varb_5 varb_6[6];
+  struct varb_5 varb_8;
+  int varb_9,varb_10=0,varb_11;
+  for(varb_10=0;varb_10<6;varb_10++)
+    scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, &varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);    
+  for(varb_10=0;varb_10<6;varb_10++)
+    varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;       
+  scanf(""%d"",&varb_9);
+  for(varb_10=varb_9;varb_10<6;varb_10++)
+    for(varb_11=varb_10+1;varb_11<6;varb_11++)
+    {  
+       if(varb_6[varb_10].varb_4>varb_6[varb_11].varb_4)
+       {
+          varb_8=varb_6[varb_11];
+          varb_6[varb_11]=varb_6[varb_10];
+          varb_6[varb_10]=varb_8;
+       }
+    }
+  for(varb_10=0;varb_10<6;varb_10++)
+    printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,varb_6[varb_10].varb_2,varb_6[varb_10].varb_3,varb_6[varb_10].varb_4);
+ return 0;
+}",0.0,20
+12,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_8{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+	int varb_5,varb_6,varb_7;
+    struct varb_8 varb_9[6];
+    struct varb_8 varb_11;   
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d %s %d %d"",&varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,&varb_9[varb_5].varb_2,&varb_9[varb_5].varb_3);
+		varb_9[varb_5].varb_4=varb_9[varb_5].varb_2+varb_9[varb_5].varb_3;
+	}
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		for(varb_7=varb_5;varb_7<6;varb_7++)
+		{
+			if(varb_9[varb_7].varb_4<varb_9[varb_5].varb_4)
+			{			
+			  varb_11=varb_9[varb_5];
+			  varb_9[varb_5]=varb_9[varb_7];
+			  varb_9[varb_7]=varb_11;
+		    }
+		}
+	}
+	for(;varb_6<6;varb_6++)
+	{
+		printf(""%8d%10s%5d%5d%5d"",varb_9[varb_6].varb_0,varb_9[varb_6].varb_1,varb_9[varb_6].varb_2,varb_9[varb_6].varb_3,varb_9[varb_6].varb_4);
+		printf(""\n"");
+	}
+}
+",0.0,2
+13,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   struct varb_5 varb_6[MAXN];
+    struct varb_5 varb_8;
+    int varb_9, varb_10, varb_11, varb_12;
+    for(varb_10 = 0; varb_10 < MAXN;varb_10++){
+       scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, &varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+       varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;
+    }
+	 scanf(""%d"", &varb_9);
+for(varb_10=0;varb_10<6;varb_10++)
+	{
+		for(varb_11=varb_10+1;varb_11<6;varb_11++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_11].varb_4)
+			{
+				varb_8=varb_6[varb_10];
+				varb_6[varb_10]=varb_6[varb_11];
+				varb_6[varb_11]=varb_8;
+			}
+		}
+	}
+	for(varb_10=5;varb_10>=0;varb_10--)
+	 printf(""%8d %10s %5d %5d %5d\n"", varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, varb_6[varb_10].varb_2, varb_6[varb_10].varb_3, varb_6[varb_10].varb_4);
+    return 0;
+}",0.0,31
+14,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{struct varb_5 varb_6[6];
+    int varb_7,varb_8,varb_9,varb_10;
+	for(varb_7=0;varb_7<6;varb_7++)
+	{
+		scanf(""%d %s %d %d"",&varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+		varb_6[varb_7].varb_4==varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+	}
+	for(varb_7=0;varb_7<6;varb_7++)
+	{
+		for(varb_10=0;varb_10<6;varb_10++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_7].varb_4)
+			varb_6[varb_7].varb_4==varb_6[varb_10].varb_4;
+			varb_9==varb_6[varb_7].varb_4;
+			varb_6[varb_10].varb_4==varb_9;
+		}
+	}
+	for(;varb_8<6;varb_8++)
+	{
+		printf(""%8d%10s%5d%5d%5d"",varb_6[varb_8].varb_0,varb_6[varb_8].varb_1,varb_6[varb_8].varb_2,varb_6[varb_8].varb_3,varb_6[varb_8].varb_4);
+	}
+}
+",0.0,2
+15,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+	int varb_3;
+	int varb_4;    
+};
+int main()
+{   struct varb_5 varb_6[6];
+    int varb_7,varb_8,varb_9,varb_10,varb_11;
+    for(varb_7 = 0; varb_7 < 6; varb_7++)
+	{scanf(""%d%s%d%d"", &varb_6[varb_7].varb_0, varb_6[varb_7].varb_1, &varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+	varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;}  
+	 for(varb_7 = 0; varb_7 < 6; varb_7++)
+	 {
+	 	for(varb_9=varb_7+1;varb_9<6;varb_9++)
+	 	{
+	 	if(varb_6[varb_7].varb_4>varb_6[varb_9].varb_4)
+	 	{
+	 		varb_8=varb_6[varb_7].varb_4;varb_6[varb_7].varb_4=varb_6[varb_9].varb_4;varb_6[varb_9].varb_4=varb_8;
+	 	}	 	
+	   }	
+	 }
+	scanf(""%d"",&varb_11);    
+   for(varb_7 = varb_11; varb_7 < 6; varb_7++)
+       printf(""%8d%10s%5d%5d%5d\n"", varb_6[varb_7].varb_0, varb_6[varb_7].varb_1,varb_6[varb_7].varb_2, varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+    return 0;
+}",0.0,10
+16,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[20];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+struct varb_5 varb_6[MAXN],b;
+int varb_7,varb_8;
+for(varb_7=0;varb_7<MAXN;varb_7++)
+{
+scanf(""%d %s %d %d"",&varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,&varb_6[varb_7].varb_3,&varb_6[varb_7].varb_2);
+varb_6[varb_7].varb_4=varb_6[varb_7].varb_3+varb_6[varb_7].varb_2;
+}
+for(varb_7=0;varb_7<MAXN;varb_7++)
+{
+int varb_9=varb_7;
+for(varb_8=varb_7+1;varb_8<MAXN;varb_8++)
+{
+if(varb_6[varb_8].varb_4<varb_6[varb_9].varb_4)
+varb_9=varb_8;
+}
+if(varb_9!=varb_7)
+{
+b=varb_6[varb_9];
+varb_6[varb_9]=varb_6[varb_7];
+varb_6[varb_7]=b;
+}
+}
+for(varb_7=0;varb_7<MAXN;varb_7++)
+printf(""%8d %10s %5d %5d %5d\n"",varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,varb_6[varb_7].varb_3,varb_6[varb_7].varb_2,varb_6[varb_7].varb_4);
+}
+",0.0,14
+17,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5
+{
+int varb_0;
+char varb_1[20];
+int varb_2;
+int varb_3;
+int varb_4;
+};
+int main()
+{
+struct varb_5 varb_6[6];
+int varb_7,varb_8,varb_9;
+for(varb_7=0;varb_7<6;varb_7++)
+{
+scanf(""%d%s%d%d"",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+}
+struct varb_5 varb_11;
+for(varb_7=0;varb_7<5;varb_7++)
+{
+varb_9=varb_7;
+for(varb_8=varb_7+1;varb_8<6;varb_8++)
+if(varb_6[varb_8].varb_4<varb_6[varb_7].varb_4)
+varb_9=varb_8;
+varb_11=varb_6[varb_9];varb_6[varb_9]=varb_6[varb_7];varb_6[varb_7]=varb_11;
+}
+for(varb_7=0;varb_7<6;varb_7++){
+printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,varb_6[varb_7].varb_2,varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+}}",0.0,24
+18,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   struct varb_5 varb_6[MAXN];
+    struct varb_5 varb_8;
+    int varb_9,varb_10,varb_11=0;
+    for(varb_10 = 0; varb_10 < MAXN; varb_10++){
+       scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,&varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+       varb_6[varb_10].varb_4=varb_6[varb_10].varb_3+varb_6[varb_10].varb_2;
+    }
+   for(varb_10=0;varb_10<5;varb_10++)
+	{
+		for(varb_11=varb_10+1;varb_11<5;varb_11++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_11].varb_4)
+			{
+				varb_8=varb_6[varb_10];
+				varb_6[varb_10]=varb_6[varb_11];
+				varb_6[varb_11]=varb_8;
+			}
+		}
+	}
+    scanf(""%d"",&varb_9);
+    for(;varb_9<MAXN;varb_9++)
+    printf(""%8d %10s %5d %5d %5d\n"",&varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,varb_6[varb_10].varb_2,varb_6[varb_10].varb_3,&varb_6[varb_10].varb_4);
+}",0.0,20
+19,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#define MAXN 6
+typedef struct student
+{
+	int varb_0;
+   	char varb_1[10];
+	int varb_2;
+	int varb_3;
+	int varb_4; 
+}Stu;
+main()
+{
+	Stu stu[MAXN] ;
+	int varb_5,varb_6,varb_7;
+	Stu temp;
+	for(varb_5=0;varb_5<MAXN;varb_5++)
+		scanf(""%d %s %d %d %d"",&stu[varb_5].varb_0,&stu[varb_5].varb_1,&stu[varb_5].varb_2,&stu[varb_5].varb_3,&stu[varb_5].varb_4);
+		scanf(""%d"",&varb_7);
+	for(varb_6=0;varb_6<6;varb_6++)	
+	 {
+	  for(varb_5=0;varb_5<5;varb_5++)
+	  {
+	    if(stu[varb_5].varb_4<stu[varb_5+1].varb_4)
+	    {
+	    temp=stu[varb_5];
+	    stu[varb_5]=stu[varb_5+1];	
+	    stu[varb_5+1]=temp;
+		}
+      }
+	}
+	scanf(""%d"",&varb_7);
+	for(varb_5=varb_7;varb_5<MAXN;varb_5++)
+	printf(""%d %s %d %d %d"",stu[varb_5].varb_0,stu[varb_5].varb_1,stu[varb_5].varb_2,stu[varb_5].varb_3,stu[varb_5].varb_4);
+}",0.0,17
+20,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#define N 6
+struct varb_5
+{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+    struct varb_5 varb_6[N];
+    struct varb_5 varb_8;
+    int varb_9;
+    for(varb_9=0; varb_9<N; varb_9++) {
+        scanf(""%d%s%d%d"",&varb_6[varb_9].varb_0,&varb_6[varb_9].varb_1,&varb_6[varb_9].varb_2,&varb_6[varb_9].varb_3);
+    }
+    int varb_10,varb_11;
+    scanf(""%d"",&varb_10);
+    for(varb_9=varb_10; varb_9<N; varb_9++) {
+    varb_6[varb_9].varb_4=varb_6[varb_9].varb_2+varb_6[varb_9].varb_3;
+    for(varb_11=varb_9+1;varb_11<N;varb_11++){
+    if(varb_6[varb_11].varb_4<varb_6[varb_9].varb_4){
+    varb_8=varb_6[varb_9];
+    varb_6[varb_9]=varb_6[varb_11];
+    varb_6[varb_11]=varb_8;
+    }
+    } 
+    }
+    for(varb_9=0;varb_9<N;varb_9++){printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);}
+    return 0;
+}",0.0,17
+21,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_8
+{
+	int varb_0;
+	char varb_1[10];
+	int varb_2;
+	int varb_3;
+	int varb_4;
+};
+int main()
+{
+	int varb_5,varb_6,varb_7;
+	struct varb_8 varb_9[6],temp;
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d%s%d%d"",&varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,&varb_9[varb_5].varb_2,&varb_9[varb_5].varb_3);
+		varb_9[varb_5].varb_4=varb_9[varb_5].varb_2+varb_9[varb_5].varb_3;
+	}
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		for(varb_6=varb_5;varb_6<6;varb_6++)
+		{
+			if(varb_9[varb_5].varb_4>varb_9[varb_6].varb_4)
+			{
+				temp=varb_9[varb_5];
+				varb_9[varb_5]=varb_9[varb_6];
+				varb_9[varb_5]=temp;
+			}
+		}
+	}
+	scanf(""%d"",&varb_7);
+	for(varb_5=varb_7;varb_5<6;varb_5++)
+	{
+		printf(""%8d%10s%5d%5d%5d\n"",varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,varb_9[varb_5].varb_2,varb_9[varb_5].varb_3,varb_9[varb_5].varb_4);
+	}
+}",0.0,27
+22,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#define MAXN 6
+int main()
+{
+struct varb_8
+{
+int varb_0;
+char varb_1[10];
+int varb_2;
+int varb_3;
+int varb_4;
+};
+int varb_5,varb_6,varb_7;
+struct varb_8 varb_9[MAXN];
+struct varb_8 varb_11;
+for(varb_5=0;varb_5<6;varb_5++)
+{scanf(""%d %s %d %d"",&varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,&varb_9[varb_5].varb_2
+,&varb_9[varb_5].varb_3);}
+scanf(""%d"",&varb_7);
+for(varb_5=0;varb_5<6;varb_5++)
+{varb_9[varb_5].varb_4=varb_9[varb_5].varb_2+varb_9[varb_5].varb_3;}
+for(varb_5=5;varb_5>0;varb_5--)
+{
+for(varb_6=0;varb_6<varb_5-1;varb_6++)
+{
+if(varb_9[varb_6].varb_4>varb_9[varb_6+1].varb_4)
+{varb_11=varb_9[varb_6];
+varb_9[varb_6]=varb_9[varb_6+1];
+varb_9[varb_6+1]=varb_11;}
+}
+}
+for(varb_5=varb_7;varb_5<6;varb_5++)
+printf(""%8d%10s%5d%5d%5d\n"",varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,varb_9[varb_5].varb_2,varb_9[varb_5].varb_3,varb_9[varb_5].varb_4);
+return 0;
+} ",0.0,24
+23,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+main()
+{
+struct varb_5 varb_6[6];
+struct varb_5 varb_8;
+int varb_9,varb_10,varb_11;
+for(varb_10=0;varb_10<6;varb_10++)
+{
+scanf(""%d %s %d %d"",&varb_6[varb_10].varb_0,&varb_6[varb_10].varb_1,&varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;
+}
+scanf(""%d"",&varb_9);
+for(varb_10 = 0; varb_10 < 4; varb_10++) {
+for(varb_11 = 0; varb_11 < 4-1; varb_11++) {
+if(varb_6[varb_11].varb_4 > varb_6[varb_11 + 1].varb_4) {
+varb_8 = varb_6[varb_11];
+varb_6[varb_11] = varb_6[varb_11 + 1];
+varb_6[varb_11 + 1] = varb_8;
+}
+}
+}
+for(varb_10=0;varb_10<6;varb_10++)
+{
+printf(""%d %s %d %d %d\n"",varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,varb_6[varb_10].varb_2,varb_6[varb_10].varb_3,varb_6[varb_10].varb_4);
+}
+}",0.0,20
+24,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   struct varb_5 varb_6[MAXN];
+    struct varb_5 varb_8;
+    int varb_9,varb_10,varb_11=0;
+    for(varb_10 = 0; varb_10 < MAXN; varb_10++){
+       scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,&varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+       varb_6[varb_10].varb_4=varb_6[varb_10].varb_3+varb_6[varb_10].varb_2;
+    }
+   for(varb_10=0;varb_10<5;varb_10++)
+	{
+		for(varb_11=varb_10+1;varb_11<5;varb_11++)
+		{
+			if(varb_6[varb_10].varb_4>varb_6[varb_11].varb_4)
+			{
+				varb_8=varb_6[varb_10];
+				varb_6[varb_10]=varb_6[varb_11];
+				varb_6[varb_11]=varb_8;
+			}
+		}
+	}
+    scanf(""%d"",&varb_9);
+    for(;varb_9<MAXN;varb_9++)
+    printf(""%8d %10s %5d %5d %5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);
+}",0.0,20
+25,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5
+{
+int varb_0;
+char varb_1[20];
+int varb_2;
+int varb_3;
+int varb_4;
+};
+int main()
+{
+struct varb_5 varb_6[6];
+int varb_7,varb_8,varb_9;
+for(varb_7=0;varb_7<6;varb_7++)
+{
+scanf(""%d%s%d%d"",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+}
+struct varb_5 varb_11;
+for(varb_7=0;varb_7<5;varb_7++)
+{
+varb_9=varb_7;
+for(varb_8=varb_7+1;varb_8<6;varb_8++)
+if(varb_6[varb_8].varb_4<varb_6[varb_9].varb_4)
+varb_9=varb_8;
+varb_11=varb_6[varb_9];varb_6[varb_9]=varb_6[varb_7];varb_6[varb_7]=varb_11;
+}
+for(varb_7=0;varb_7<6;varb_7++){
+printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,varb_6[varb_7].varb_2,varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+}}",0.0,28
+26,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5
+{
+int varb_0;
+char varb_1[20];
+int varb_2;
+int varb_3;
+int varb_4;
+};
+int main()
+{
+struct varb_5 varb_6[6];
+int varb_7,varb_8,varb_9;
+for(varb_7=0;varb_7<6;varb_7++)
+{
+scanf(""%d%s%d%d"",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+}
+struct varb_5 varb_11;
+for(varb_7=0;varb_7<6;varb_7++)
+{
+varb_9=varb_7;
+for(varb_8=varb_7+1;varb_8<6;varb_8++)
+if(varb_6[varb_8].varb_4<varb_6[varb_9].varb_4)
+varb_9=varb_8;
+varb_11=varb_6[varb_9];varb_6[varb_9]=varb_6[varb_7];varb_6[varb_7]=varb_11;
+}
+for(varb_7=0;varb_7<6;varb_7++){
+printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,varb_6[varb_7].varb_2,varb_6[varb_7].varb_3,varb_6[varb_7].varb_4);
+}}",0.0,14
+27,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#define MAXN 6
+typedef struct student
+{
+	int varb_0;
+   	char varb_1[10];
+	int varb_2;
+	int varb_3;
+	int varb_4; 
+}Stu;
+main()
+{
+	Stu stu[MAXN] ;
+	int varb_5,varb_6,varb_7;
+	Stu temp;
+	for(varb_5=0;varb_5<MAXN;varb_5++)
+		scanf(""%d %s %d %d %d"",&stu[varb_5].varb_0,&stu[varb_5].varb_1,&stu[varb_5].varb_2,&stu[varb_5].varb_3,&stu[varb_5].varb_4);
+		scanf(""%d"",&varb_7);
+	for(varb_6=0;varb_6<6;varb_6++)	
+	 {
+	  for(varb_5=0;varb_5<5;varb_5++)
+	  {
+	    if(stu[varb_5].varb_4<stu[varb_5+1].varb_4)
+	    {
+	    temp=stu[varb_5];
+	    stu[varb_5]=stu[varb_5+1];	
+	    stu[varb_5+1]=temp;
+		  }
+      }
+	  }
+	scanf(""%d"",&varb_7);
+	for(varb_5=varb_7;varb_5<MAXN;varb_5++)
+	printf(""%8d %10s %5d %5d %5d\n"",stu[varb_5].varb_0,stu[varb_5].varb_1,stu[varb_5].varb_2,stu[varb_5].varb_3,stu[varb_5].varb_4);
+}",0.0,17
+28,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+#define MAXN 6
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{   struct varb_5 varb_6[MAXN];
+    struct varb_5 varb_8;
+    int varb_9,varb_10,varb_11=0;
+    for(varb_10 = 0; varb_10 < MAXN; varb_10++){
+       scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,&varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+       varb_6[varb_10].varb_4=varb_6[varb_10].varb_3+varb_6[varb_10].varb_2;
+    }
+   for(varb_10=0;varb_10<5;varb_10++)
+	{
+		for(varb_11=varb_10+1;varb_11<5;varb_11++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_11].varb_4)
+			{
+				varb_8=varb_6[varb_10];
+				varb_6[varb_10]=varb_6[varb_11];
+				varb_6[varb_11]=varb_8;
+			}
+		}
+	}
+    scanf(""%d"",&varb_9);
+    for(;varb_9<MAXN;varb_9++)
+    printf(""%8d %10s %5d %5d %5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);
+}",0.0,20
+29,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{struct varb_5 varb_6[6];
+    int varb_7,varb_8,varb_9,varb_10;
+	for(varb_7=0;varb_7<6;varb_7++)
+	{
+		scanf(""%d %s %d %d"",&varb_6[varb_7].varb_0,varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+		varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+	}
+	for(varb_7=0;varb_7<6;varb_7++)
+	{
+		for(varb_10=0;varb_10<6;varb_10++)
+		{
+			if(varb_6[varb_10].varb_4<varb_6[varb_7].varb_4)
+			varb_6[varb_7].varb_4==varb_6[varb_10].varb_4;
+			varb_9==varb_6[varb_7].varb_4;
+			varb_6[varb_10].varb_4==varb_9;
+		}
+	}
+	for(;varb_8<6;varb_8++)
+	{
+		printf(""%8d%10s%5d%5d%5d"",varb_6[varb_8].varb_0,varb_6[varb_8].varb_1,varb_6[varb_8].varb_2,varb_6[varb_8].varb_3,varb_6[varb_8].varb_4);
+        printf(""\n"");
+	}
+}
+",0.0,2
+30,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+    struct varb_5 varb_6[6],temp;
+    int varb_7,varb_8,varb_9,varb_10,varb_11;
+     for(varb_7=0;varb_7<6;varb_7++)
+    scanf(""%d %s %d %d "",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+    scanf(""%d"",&varb_8);
+   for(varb_7=0;varb_7<6;varb_7++)
+   varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+   for(varb_9=0;varb_9<6;varb_9++)
+   {
+   varb_10= varb_6[0].varb_4;
+   varb_11=0;
+   for(varb_7=varb_9;varb_7<6-varb_9;varb_7++)
+   {
+   if(varb_10>varb_6[varb_7].varb_4)
+   {
+   varb_10=varb_6[varb_7].varb_4;
+   temp=varb_6[varb_11];
+   varb_6[varb_11]=varb_6[varb_7];
+   varb_6[varb_7]=temp;
+   varb_11=varb_7;
+   }
+   }
+   }
+  for(varb_9=0;varb_9<6;varb_9++)
+    {
+    if(varb_9==varb_8)
+    {
+    printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);
+    varb_8++;
+}    
+    }
+}",0.0,18
+31,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_5
+{
+  int varb_0;
+  char varb_1[10];
+  int varb_2;
+  int varb_3;
+  int varb_4;
+};
+int main()
+{
+  struct varb_5 varb_6[6];
+  struct varb_5 varb_8;
+  int varb_9,varb_10=0,varb_11;
+  for(varb_10=0;varb_10<6;varb_10++)
+    scanf(""%d%s%d%d"", &varb_6[varb_10].varb_0, varb_6[varb_10].varb_1, &varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);    
+  for(varb_10=0;varb_10<6;varb_10++)
+    varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;       
+  scanf(""%d"",&varb_9);
+  for(varb_10=varb_9;varb_10<6;varb_10++)
+    for(varb_11=varb_10+1;varb_11<6;varb_11++)
+    {  
+       if(varb_6[varb_10].varb_4>varb_6[varb_11].varb_4)
+       {
+          varb_8=varb_6[varb_11];
+          varb_6[varb_11]=varb_6[varb_10];
+          varb_6[varb_10]=varb_8;
+       }
+    }
+  for(varb_10=varb_9;varb_10<6;varb_10++)
+    printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,varb_6[varb_10].varb_2,varb_6[varb_10].varb_3,varb_6[varb_10].varb_4);
+ return 0;
+}",0.0,20
+32,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+ typedef struct student
+ {
+  int varb_0;
+  char varb_1[10];
+  int varb_2;
+  int varb_3;
+  int varb_4;
+ }s;
+ int main()
+{
+  s a[6];
+  s f;
+  int varb_5,varb_6;
+  for(varb_5=0;varb_5<6;varb_5++){
+  scanf(""%d%s%d%d"",&a[varb_5].varb_0,&a[varb_5].varb_1,&a[varb_5].varb_2,&a[varb_5].varb_3);
+   a[varb_5].varb_4=a[varb_5].varb_2+a[varb_5].varb_3;}
+  for(varb_5=0;varb_5<5;varb_5++){
+  for(varb_6=1;varb_6<6;varb_6++){
+   if(a[varb_6].varb_4<a[varb_6-1].varb_4)
+   {
+   f=a[varb_6-1];
+   a[varb_6-1]=a[varb_6];
+   a[varb_6]=f;}
+   }
+   }
+   int varb_7;
+   scanf(""%d"",&varb_7);
+   for(varb_5=0;varb_5<5;varb_5++){
+   if(varb_5>=varb_7)
+  printf(""%8d%10s%5d%5d%5d\n"",a[varb_5].varb_0,a[varb_5].varb_1,a[varb_5].varb_2,a[varb_5].varb_3,a[varb_5].varb_4);}
+}",0.0,18
+33,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+main()
+{
+struct varb_5 varb_6[6];
+struct varb_5 varb_8;
+int varb_9,varb_10,varb_11;
+for(varb_10=0;varb_10<6;varb_10++)
+{
+scanf(""%d %s %d %d"",&varb_6[varb_10].varb_0,&varb_6[varb_10].varb_1,&varb_6[varb_10].varb_2,&varb_6[varb_10].varb_3);
+varb_6[varb_10].varb_4=varb_6[varb_10].varb_2+varb_6[varb_10].varb_3;
+}
+scanf(""%d"",&varb_9);
+for(varb_10 = 0; varb_10 < 5; varb_10++) {
+for(varb_11 = 0; varb_11 < 5-varb_10; varb_11++) {
+if(varb_6[varb_11].varb_4 > varb_6[varb_11 + 1].varb_4) {
+varb_8 = varb_6[varb_11];
+varb_6[varb_11] = varb_6[varb_11 + 1];
+varb_6[varb_11 + 1] = varb_8;
+}
+}
+}
+for(varb_10=0;varb_10<6;varb_10++)
+{
+printf(""%d %s %d %d %d\n"",varb_6[varb_10].varb_0,varb_6[varb_10].varb_1,varb_6[varb_10].varb_2,varb_6[varb_10].varb_3,varb_6[varb_10].varb_4);
+}
+}",0.0,14
+34,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+typedef struct student
+{
+	int varb_0;
+	char varb_1[10];
+	int varb_2;
+	int varb_3;
+	int varb_4;
+} s1;
+int main()
+{
+	s1 a[6],temp;
+	int varb_5,varb_6,varb_7;
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d %s %d %d "",&a[varb_5].varb_0,a[varb_5].varb_1,&a[varb_5].varb_2,&a[varb_5].varb_3);
+		a[varb_5].varb_4=a[varb_5].varb_2+a[varb_5].varb_3;
+	}
+	scanf(""%d"",&varb_6);
+    for(varb_5=0;varb_5<6;varb_5++)
+	for(varb_7=varb_5;varb_7<6;varb_7++)
+		{
+			if(a[varb_7].varb_4>a[varb_7+1].varb_4)
+			{
+			temp=a[varb_7];
+			a[varb_7]=a[varb_7+1];
+			a[varb_7+1]=temp;
+			}
+		}
+		for(varb_7=varb_6;varb_7<6;varb_7++)
+		printf(""%8d%10s%5d%5d%5d\n"",a[varb_7].varb_0,a[varb_7].varb_1,a[varb_7].varb_2,a[varb_7].varb_3,a[varb_7].varb_4);
+		return 0;
+}",0.0,21
+35,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5 {
+    char varb_0[10];
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+    struct varb_5 varb_6[6];
+    struct varb_5 varb_8;
+    int varb_9,varb_10,varb_11;
+    for(varb_9=0; varb_9<6; varb_9++)
+    {
+        scanf(""%s %s %d %d"",varb_6[varb_9].varb_0,&varb_6[varb_9].varb_1,&varb_6[varb_9].varb_2,&varb_6[varb_9].varb_3);
+        varb_6[varb_9].varb_4=varb_6[varb_9].varb_2+varb_6[varb_9].varb_3;
+    }
+    for(varb_11=0; varb_11<5; varb_11++)
+    {
+        for(varb_9=0; varb_9<6-varb_11-1; varb_9++)
+        {
+            if(varb_6[varb_9].varb_4>varb_6[varb_9+1].varb_4)
+            {
+                varb_8=varb_6[varb_9];
+                varb_6[varb_9]=varb_6[varb_9+1];
+                varb_6[varb_9+1]=varb_8;
+            }
+        }
+    }
+    scanf(""%d"",&varb_10);
+    for(varb_9=varb_10; varb_9<6; varb_9++)
+        printf(""%8s %10s %5d %5d %5d\n"",varb_6[varb_9].varb_1,varb_6[varb_9].varb_0,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);
+}",0.0,33
+36,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+struct varb_5{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+    struct varb_5 varb_6[6],temp;
+    int varb_7,varb_8,varb_9,varb_10,varb_11;
+     for(varb_7=0;varb_7<6;varb_7++)
+    scanf(""%d %s %d %d "",&varb_6[varb_7].varb_0,&varb_6[varb_7].varb_1,&varb_6[varb_7].varb_2,&varb_6[varb_7].varb_3);
+    scanf(""%d"",&varb_8);
+   for(varb_7=0;varb_7<6;varb_7++)
+   varb_6[varb_7].varb_4=varb_6[varb_7].varb_2+varb_6[varb_7].varb_3;
+   for(varb_9=0;varb_9<5;varb_9++)
+   {
+   varb_10= varb_6[varb_9].varb_4;
+   varb_11=varb_9;
+   for(varb_7=varb_9;varb_7<6-varb_9;varb_7++)
+   {
+   if(varb_10>varb_6[varb_7].varb_4)
+   {
+   varb_10=varb_6[varb_7].varb_4;
+   temp=varb_6[varb_11];
+   varb_6[varb_11]=varb_6[varb_7];
+   varb_6[varb_7]=temp;
+   varb_11=varb_7;
+   }
+   }
+   }
+  for(varb_9=0;varb_9<6;varb_9++)
+    {
+    if(varb_9==varb_8)
+    {
+    printf(""%8d%10s%5d%5d%5d\n"",varb_6[varb_9].varb_0,varb_6[varb_9].varb_1,varb_6[varb_9].varb_2,varb_6[varb_9].varb_3,varb_6[varb_9].varb_4);
+    varb_8++;
+}    
+    }
+}",0.0,22
+37,2c9f30a56ef37e1f016f0e0306282d2d,"#include <stdio.h>
+struct varb_8{
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+};
+int main()
+{
+	int varb_5,varb_6,varb_7;
+    struct varb_8 varb_9[6];
+    struct varb_8 varb_11;   
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		scanf(""%d %s %d %d"",&varb_9[varb_5].varb_0,varb_9[varb_5].varb_1,&varb_9[varb_5].varb_2,&varb_9[varb_5].varb_3);
+		varb_9[varb_5].varb_4=varb_9[varb_5].varb_2+varb_9[varb_5].varb_3;
+	}
+	for(varb_5=0;varb_5<6;varb_5++)
+	{
+		for(varb_7=0;varb_7<6;varb_7++)
+		{
+			if(varb_9[varb_7].varb_4<varb_9[varb_5].varb_4)
+			{			
+			  varb_11=varb_9[varb_5];
+			  varb_9[varb_5]=varb_9[varb_7];
+			  varb_9[varb_7]=varb_11;
+		    }
+		}
+	}
+	for(;varb_6<6;varb_6++)
+	{
+		printf(""%8d%10s%5d%5d%5d"",varb_9[varb_6].varb_0,varb_9[varb_6].varb_1,varb_9[varb_6].varb_2,varb_9[varb_6].varb_3,varb_9[varb_6].varb_4);
+		printf(""\n"");
+	}
+}
+",0.0,2
+38,2c9f30a56ef37e1f016f0e0306282d2d,"#include<stdio.h>
+#include<string.h>
+typedef struct {
+    int varb_0;
+    char varb_1[10];
+    int varb_2;
+    int varb_3;
+    int varb_4;
+} student;
+int main()
+{
+    student p[6];
+    student *j=p;
+    int varb_5=0;
+    for(; varb_5<6; varb_5++)
+    {
+    scanf(""%d%s%d%d"",&j[varb_5].varb_0,&j[varb_5].varb_1,&j[varb_5].varb_2,&j[varb_5].varb_3);
+          j[varb_5].varb_4=j[varb_5].varb_2+j[varb_5].varb_3;
+     }
+          int varb_6,varb_7,varb_8;char varb_9[10];
+          for(varb_6=5;varb_6>=0;varb_6--)
+          {
+          for(varb_7=varb_6;varb_7<5;varb_7++)
+          {
+          if(j[varb_7].varb_4>j[varb_7+1].varb_4)
+         {
+           varb_8=j[varb_7].varb_4;j[varb_7].varb_4=j[varb_7+1].varb_4;j[varb_7+1].varb_4=varb_8;
+           varb_8=j[varb_7].varb_0;j[varb_7].varb_0=j[varb_7+1].varb_0;j[varb_7+1].varb_0=varb_8;
+           varb_8=j[varb_7].varb_2;j[varb_7].varb_2=j[varb_7+1].varb_2;j[varb_7+1].varb_2=varb_8;
+           varb_8=j[varb_7].varb_3;j[varb_7].varb_3=j[varb_7+1].varb_3;j[varb_7+1].varb_3=varb_8;
+           strcpy(varb_9,j[varb_7].varb_1);strcpy(j[varb_7].varb_1,j[varb_7+1].varb_1);
+          }
+          }
+          }
+    int varb_10;
+    scanf(""%d"",&varb_10);
+    for(varb_5=varb_10; varb_5<6; varb_5++)
+        printf(""%d        %s     %d  %d  %d\n"",j[varb_5].varb_0,j[varb_5].varb_1,j[varb_5].varb_2,j[varb_5].varb_3,j[varb_5].varb_4);
+}",0.0,31

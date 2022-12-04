@@ -1,0 +1,2987 @@
+,id,code,is_true,format_code,errorline
+0,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int year;
+    scanf(""%d"",&year);
+    if(year<0){printf(""非法输入"");return 0;}
+    if(((!(year%4))&&(year%100))||!(year%400))printf(""%d是闰年"");
+    else printf(""%d不是闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<0){printf(""非法输入"");return 0;}
+    if(((!(varb_0%4))&&(varb_0%100))||!(varb_0%400))printf(""%d是闰年"");
+    else printf(""%d不是闰年"");
+    return 0;
+}",7
+1,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if(a<0)
+printf(""非法输入"");
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<0)
+printf(""非法输入"");
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+}
+",6
+2,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+
+  scanf(""%d"",&year);
+   if((year%4==0&&year%100!=0)||(year%400==0))
+    printf(""%d是闰年"",year);
+   else
+    printf(""%d不是闰年"",year);
+    
+    return 0;
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+   if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+    return 0;
+}",4
+3,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf(""输入错误显示非法输入"");
+   if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf(""输入错误显示非法输入"");
+   if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",7
+4,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a;
+   scanf(""%d"",&a);
+   if(a%4==0)
+      printf(""%d是闰年"",a);
+   else if(a%4!=0)
+      printf(""%d不是闰年"",a);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+      printf(""%d是闰年"",varb_0);
+   else if(varb_0%4!=0)
+      printf(""%d不是闰年"",varb_0);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",5
+5,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int year;
+	scanf(""%d"",&year);
+	if(year%4==0)
+	{
+		if(year%100==0&&year%400==0)
+		printf(""非法错误"");
+		else printf(""%d是闰年"",year);
+	}
+	else
+    printf(""%d不是闰年"",year);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0)
+	{
+		if(varb_0%100==0&&varb_0%400==0)
+		printf(""非法错误"");
+		else printf(""%d是闰年"",varb_0);
+	}
+	else
+    printf(""%d不是闰年"",varb_0);
+	return 0;
+}",6
+6,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+int n;
+scanf(""%d"",&n);
+if(n%4==0)
+printf(""%d年份是闰年"",n);
+else if(n%4!=0)
+printf(""%d该年份不是闰年"",n);
+else
+printf(""非法输入"");
+return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0%4==0)
+printf(""%d年份是闰年"",varb_0);
+else if(varb_0%4!=0)
+printf(""%d该年份不是闰年"",varb_0);
+else
+printf(""非法输入"");
+return 0;
+}
+",4
+7,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int year;
+	scanf(""%d"",&year);
+	if(year<0)
+	printf(""非法错误"");
+	else if(year%4==0)
+	{
+		if(year%100==0&&year%400==0)
+		printf(""非法错误"");
+		else printf(""%d是闰年"",year);
+	}
+	else
+    printf(""%d不是闰年"",year);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0<0)
+	printf(""非法错误"");
+	else if(varb_0%4==0)
+	{
+		if(varb_0%100==0&&varb_0%400==0)
+		printf(""非法错误"");
+		else printf(""%d是闰年"",varb_0);
+	}
+	else
+    printf(""%d不是闰年"",varb_0);
+	return 0;
+}",7
+8,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    if(n<=0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    if(varb_0<=0)
+    printf(""非法输入"");
+ return 0;
+ }
+",6
+9,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+ if(year%4!=0)
+  printf(""%d不是闰年"",year);
+  else if(year%4==0 && year%100!=0)
+   printf(""%d是闰年"");  
+  else if(year%4==0 && year%100==0 && year%400==0)
+   printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  
+  
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+ if(varb_0%4!=0)
+  printf(""%d不是闰年"",varb_0);
+  else if(varb_0%4==0 && varb_0%100!=0)
+   printf(""%d是闰年"");  
+  else if(varb_0%4==0 && varb_0%100==0 && varb_0%400==0)
+   printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  return 0;
+}",6
+10,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+void main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||a%400==0)
+printf(""%d年是闰年"",a);
+else
+printf(""%d不是闰年"",a);
+
+
+}",0.0,"#include<stdio.h>
+void main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+printf(""%d年是闰年"",varb_0);
+else
+printf(""%d不是闰年"",varb_0);
+}",6
+11,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+12,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int n;
+	float i;
+	scanf(""%d"", &n);
+	i = n%4;
+	if(i == 0)
+	printf(""%d是闰年"", n);
+	else
+	printf(""%d不是闰年"", n);
+	
+	return 0;
+	
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	float varb_1;
+	scanf(""%d"", &varb_0);
+	varb_1 = varb_0%4;
+	if(varb_1 == 0)
+	printf(""%d是闰年"", varb_0);
+	else
+	printf(""%d不是闰年"", varb_0);
+	return 0;
+}",4
+13,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{  int a;
+   scanf(""%d"",&a);
+   
+   if (a%100&&a>=0){
+   	if(a%4)
+   	 printf(""%d不是闰年"",a);
+   	else
+   	 printf(""%d是闰年"",a);
+   }
+   else {
+    if(a%400&&a>=0)
+     printf(""%d不是闰年"",a);
+    else
+     printf(""%d是闰年"",a);
+   }
+  if(a<0) 
+   puts(""非法输入"");
+   
+  return 0;
+
+}
+   
+   ",0.0,"#include <stdio.h>
+int main()
+{  int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%100&&varb_0>=0){
+   	if(varb_0%4)
+   	 printf(""%d不是闰年"",varb_0);
+   	else
+   	 printf(""%d是闰年"",varb_0);
+   }
+   else {
+    if(varb_0%400&&varb_0>=0)
+     printf(""%d不是闰年"",varb_0);
+    else
+     printf(""%d是闰年"",varb_0);
+   }
+  if(varb_0<0) 
+   puts(""非法输入"");
+  return 0;
+}
+",11
+14,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf(""非法输入"");
+   if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf(""非法输入"");
+   if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",8
+15,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if (n<=0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if(varb_0<=0)
+    printf(""非法输入"");
+ return 0;
+ }
+",4
+16,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+    int n;
+    
+    scanf(""%d"",&n);
+    
+    if(n%4==0)
+    printf(""%d是闰年"",n);
+    else
+    printf(""非法输入"");
+
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0%4==0)
+    printf(""%d是闰年"",varb_0);
+    else
+    printf(""非法输入"");
+    return 0;
+}",6
+17,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a/100!=0||a/400==0)
+	printf(""%d是闰年"",a);
+	else
+	printf(""非法输入""); 
+}                          ",0.0,"#include<stdio.h>
+main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0/100!=0||varb_0/400==0)
+	printf(""%d是闰年"",varb_0);
+	else
+	printf(""非法输入""); 
+}                          ",2
+18,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+19,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+ int a;
+ scanf(""%d"",&a);
+ if(a>0)
+  if(a%100==0)
+     if(a%400==0) 
+ printf(""%d是闰年"",a);
+     else
+ printf(""%d不是闰年"");
+  else if(a%4==0)
+  printf(""%d是闰年"");
+      else 
+  printf(""%d不是闰年"");
+  else
+ printf(""非法输入"");
+ 
+ return 0;
+ }
+
+",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0>0)
+  if(varb_0%100==0)
+     if(varb_0%400==0) 
+ printf(""%d是闰年"",varb_0);
+     else
+ printf(""%d不是闰年"");
+  else if(varb_0%4==0)
+  printf(""%d是闰年"");
+      else 
+  printf(""%d不是闰年"");
+  else
+ printf(""非法输入"");
+ return 0;
+ }
+",6
+20,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+21,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+if(a<0)
+printf(""非法输入"");
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+if(varb_0<0)
+printf(""非法输入"");
+}
+",4
+22,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{int b,c;
+double a,d;
+scanf(""%f"",&a);
+c=a;
+b=a/4.0;
+d=a/4.0;
+if(b==d)
+printf(""%d是闰年"",c);
+else if(a<0)
+printf(""非法输入"");
+else
+printf(""%d不是闰年"",c);
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+double varb_2,varb_3;
+scanf(""%f"",&varb_2);
+varb_1=varb_2;
+varb_0=varb_2/4.0;
+varb_3=varb_2/4.0;
+if(varb_0==varb_3)
+printf(""%d是闰年"",varb_1);
+else if(varb_2<0)
+printf(""非法输入"");
+else
+printf(""%d不是闰年"",varb_1);
+}",4
+23,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a;
+   scanf(""%d"",&a);
+   if(a%4==0)
+      printf(""%d是闰年"",a);
+   else if(a%4!=0)
+      printf(""%d不是闰年"",a);
+   else if(a<0)
+      printf(""非法输入"");
+    else
+      ;
+   return 0;         
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+      printf(""%d是闰年"",varb_0);
+   else if(varb_0%4!=0)
+      printf(""%d不是闰年"",varb_0);
+   else if(varb_0<0)
+      printf(""非法输入"");
+    else
+      ;
+   return 0;         
+}
+",5
+24,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+    if((n%4==0&&n%100!=0)||n%400==0)
+   printf(""%d是闰年"",n);
+    else
+    printf(""非法输入"");
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+    if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+   printf(""%d是闰年"",varb_0);
+    else
+    printf(""非法输入"");
+	return 0;
+}",4
+25,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if (n<0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if(varb_0<0)
+    printf(""非法输入"");
+ return 0;
+ }
+",4
+26,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf(""非法输入"");
+   else if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf(""非法输入"");
+   else if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",4
+27,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+  if((year/4==0&&year/100!=0)||(year/400==0))
+    printf(""%d是闰年"",year);
+  else
+    printf(""%d不是闰年"",year);
+  return 0;
+}
+    ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if((varb_0/4==0&&varb_0/100!=0)||(varb_0/400==0))
+    printf(""%d是闰年"",varb_0);
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",4
+28,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+    int n;
+
+    scanf(""%d"",&n);
+
+    if(n%4==0)
+        printf(""%d是闰年"",n);
+    else if(n%4!=0)
+        printf(""%d不是闰年"",n);
+    else
+        printf(""非法输入"");
+
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0%4==0)
+        printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+        printf(""%d不是闰年"",varb_0);
+    else
+        printf(""非法输入"");
+    return 0;
+}",4
+29,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a;
+   scanf(""%d"",&a);
+   if(a%4==0)
+      printf(""%d是闰年"",a);
+   else if(a%400!=0)
+      printf(""%d不是闰年"",a);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+      printf(""%d是闰年"",varb_0);
+   else if(varb_0%400!=0)
+      printf(""%d不是闰年"",varb_0);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",5
+30,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+  if((year/4==0||year/100==0)||(year/400==0))
+    printf(""%d是闰年"",year);
+  else
+    printf(""%d不是闰年"",year);
+  return 0;
+}
+    ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if((varb_0/4==0||varb_0/100==0)||(varb_0/400==0))
+    printf(""%d是闰年"",varb_0);
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",6
+31,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (n>=0&&((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if(n<=0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0>=0&&((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if(varb_0<=0)
+    printf(""非法输入"");
+ return 0;
+ }
+",6
+32,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+void main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||a%400==0)
+printf(""%d是闰年"",a);
+else
+printf(""%d不是闰年"",a);
+
+
+}",0.0,"#include<stdio.h>
+void main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+printf(""%d是闰年"",varb_0);
+else
+printf(""%d不是闰年"",varb_0);
+}",6
+33,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if ((n>0)==0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+    
+  ",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if((varb_0>0)==0)
+    printf(""非法输入"");
+ return 0;
+ }
+",6
+34,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+printf(""%d是闰年"",a);
+scanf(""%d"",&a);
+if ((a%100!=0)&&(a%4==0) )
+printf(""a是闰年"");
+else if((a%100!=0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if ((a%100==0)&&(a%4==0))
+printf(""a是闰年"");
+else if ((a%100==0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if(a<=0)
+printf (""非法输入"") ;
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+printf(""%d是闰年"",varb_0);
+scanf(""%d"",&varb_0);
+if((varb_0%100!=0)&&(varb_0%4==0) )
+printf(""a是闰年"");
+else if((varb_0%100!=0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if((varb_0%100==0)&&(varb_0%4==0))
+printf(""a是闰年"");
+else if((varb_0%100==0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if(varb_0<=0)
+printf(""非法输入"") ;
+return 0;
+}",6
+35,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{int years,result;
+scanf(""%d"",&years);
+if(years>0)
+{result=years%4;
+if(result=0)
+printf(""%d是闰年"",years);
+else 
+printf(""%d不是闰年"",years);
+}
+else
+   printf(""非法输入""); 
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>0)
+{varb_1=varb_0%4;
+if(varb_1=0)
+printf(""%d是闰年"",varb_0);
+else 
+printf(""%d不是闰年"",varb_0);
+}
+else
+   printf(""非法输入""); 
+}",3
+36,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+ if(year%4==0 && year%100!=0)
+  printf(""%d是闰年"",year);
+  else if(year%4==0 && year%100==0 && year%400==0)
+  printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  
+  
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+ if(varb_0%4==0 && varb_0%100!=0)
+  printf(""%d是闰年"",varb_0);
+  else if(varb_0%4==0 && varb_0%100==0 && varb_0%400==0)
+  printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  return 0;
+}",8
+37,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+if(year%4==0 && year%100!=0)
+  printf(""%d是闰年"",year);  
+  else if(year%4==0 && year%100==0 && year%400==0)
+   printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  
+  
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+if(varb_0%4==0 && varb_0%100!=0)
+  printf(""%d是闰年"",varb_0);  
+  else if(varb_0%4==0 && varb_0%100==0 && varb_0%400==0)
+   printf(""%d是闰年"");
+ else
+  printf(""非法输入"");
+  return 0;
+}",8
+38,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+int n;
+scanf(""%d"",&n);
+if(n<=0)
+printf(""非法输入"");
+else if(n%4==0)
+printf(""%d年份是闰年"",n);
+else
+printf(""%d年份不是闰年"",n);
+return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=0)
+printf(""非法输入"");
+else if(varb_0%4==0)
+printf(""%d年份是闰年"",varb_0);
+else
+printf(""%d年份不是闰年"",varb_0);
+return 0;
+}
+",4
+39,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a;
+   scanf(""%d"",&a);
+   if(a%4==0)
+      printf(""%d是闰年"");
+   else if(a%400!=0)
+      printf(""%d不是闰年"");
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+      printf(""%d是闰年"");
+   else if(varb_0%400!=0)
+      printf(""%d不是闰年"");
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",5
+40,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+   scanf(""%d"",&year);
+  if(year%4==0&&year%100==0)
+    printf(""%d是闰年"",year);
+  else if(year<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",year);
+    
+  return 0;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+   scanf(""%d"",&varb_0);
+  if(varb_0%4==0&&varb_0%100==0)
+    printf(""%d是闰年"",varb_0);
+  else if(varb_0<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",6
+41,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int year,a,b,c;
+    scanf(""%d"",&year);
+    if(year<0)
+    printf(""非法输入"");
+    else
+    {
+    a=year%400;
+    switch(a)
+    {
+       case 0:printf(""%d是闰年"",year);
+       return 0;
+       define:
+       switch(b)
+       {
+           
+       default:c=year%4;
+       switch(c)
+       {
+           case 0:printf(""%d不是闰年"",year);break;
+           default:printf(""%d是闰年"",year);break;
+       };break;
+       }
+       
+       
+       break;
+    }
+    }  
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d"",&varb_0);
+    if(varb_0<0)
+    printf(""非法输入"");
+    else
+    {
+    varb_1=varb_0%400;
+    switch(varb_1)
+    {
+       case 0:printf(""%d是闰年"",varb_0);
+       return 0;
+       define:
+       switch(varb_2)
+       {
+       default:varb_3=varb_0%4;
+       switch(varb_3)
+       {
+           case 0:printf(""%d不是闰年"",varb_0);break;
+           default:printf(""%d是闰年"",varb_0);break;
+       };break;
+       }
+       break;
+    }
+    }  
+    return 0;
+}",10
+42,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+printf(""非法输入"");
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+printf(""非法输入"");
+}
+",4
+43,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int year;
+   scanf(""%d"",&year);
+   if(year%4==0)
+   {
+      printf(""%d是闰年"",year);
+   }
+   else if(year%4!=0)
+      {
+      printf(""%d不是闰年"",year);
+      }
+      else if(year<=0)
+      printf(""非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+   {
+      printf(""%d是闰年"",varb_0);
+   }
+   else if(varb_0%4!=0)
+      {
+      printf(""%d不是闰年"",varb_0);
+      }
+      else if(varb_0<=0)
+      printf(""非法输入"");
+}",6
+44,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf("" 非法输入"");
+   if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf("" 非法输入"");
+   if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",8
+45,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+    int year,a,b,c;
+    scanf(""%d"",&year);
+    a=year%4;
+    b=year%100;
+    c=year%400;
+    if(year<=0)
+    printf(""非法输入"");
+    else if(a==0&&b!=0||c==0)
+    printf(""%d是闰年"",year);
+    else
+    printf(""%d不是闰年"",year);
+    return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d"",&varb_0);
+    varb_1=varb_0%4;
+    varb_2=varb_0%100;
+    varb_3=varb_0%400;
+    if(varb_0<=0)
+    printf(""非法输入"");
+    else if(varb_1==0&&varb_2!=0||varb_3==0)
+    printf(""%d是闰年"",varb_0);
+    else
+    printf(""%d不是闰年"",varb_0);
+    return 0;
+}",16
+46,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+47,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+  if(year>0)
+  if(year%4==0&&year%400==0)
+  printf(""%d是闰年"",year);
+  else
+  printf(""%d不是闰年"",year);
+  else
+  printf(""非法输入"");
+  return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0>0)
+  if(varb_0%4==0&&varb_0%400==0)
+  printf(""%d是闰年"",varb_0);
+  else
+  printf(""%d不是闰年"",varb_0);
+  else
+  printf(""非法输入"");
+  return 0;
+}",6
+48,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int n;
+	scanf(""%d"", &n);
+	if (n>0)
+		if (n % 100 == 0)
+			if (n % 400 == 0)
+				printf(""%d是闰年"", n);
+			else
+				printf(""%d不是闰年"", n);
+		else if (n % 4 == 0)
+			printf(""%d是闰年"", n);
+		else
+			printf(""%d不是闰年"");
+	else
+		printf(""非法输入"");
+	return 0;
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"", &varb_0);
+	if(varb_0>0)
+		if(varb_0 % 100 == 0)
+			if(varb_0 % 400 == 0)
+				printf(""%d是闰年"", varb_0);
+			else
+				printf(""%d不是闰年"", varb_0);
+		else if(varb_0 % 4 == 0)
+			printf(""%d是闰年"", varb_0);
+		else
+			printf(""%d不是闰年"");
+	else
+		printf(""非法输入"");
+	return 0;
+}",15
+49,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+int n;
+scanf(""%d"",&n);
+if(n<=0)
+printf(""非法输入"");
+else if(n%4==0)
+printf(""%d年份是闰年"",n);
+else
+printf(""%d该年份不是闰年"",n);
+return 0;
+}
+",0.0,"#include <stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=0)
+printf(""非法输入"");
+else if(varb_0%4==0)
+printf(""%d年份是闰年"",varb_0);
+else
+printf(""%d该年份不是闰年"",varb_0);
+return 0;
+}
+",4
+50,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int year;
+	scanf(""%d"",&year);
+	if(year%4==0)
+	{
+		if (year%100==0&&year%400==0)
+		printf(""%d是闰年"",year);
+		else printf(""非法输入"");
+	}
+	else printf(""%d不是闰年"",year);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0)
+	{
+		if(varb_0%100==0&&varb_0%400==0)
+		printf(""%d是闰年"",varb_0);
+		else printf(""非法输入"");
+	}
+	else printf(""%d不是闰年"",varb_0);
+	return 0;
+}",6
+51,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+
+{
+
+ int a;
+
+ scanf(""%d"",&a);
+
+ if(a%400==0)
+
+ printf(""%d是润年"",a);
+
+ else 
+
+ printf(""%d不是润年"",a);
+
+ if(a%4==0&&a%100!=0)
+
+ printf(""%d是润年"",a);
+
+ else
+
+ printf(""%d不是润年"",a);
+
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ scanf(""%d"",&varb_0);
+ if(varb_0%400==0)
+ printf(""%d是润年"",varb_0);
+ else 
+ printf(""%d不是润年"",varb_0);
+ if(varb_0%4==0&&varb_0%100!=0)
+ printf(""%d是润年"",varb_0);
+ else
+ printf(""%d不是润年"",varb_0);
+}
+",4
+52,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int a;
+    scanf(""%d"",&a);
+    if(a%4==0&&a%100!=0||a%400==0)
+    printf(""%d是闰年"",a);
+    else
+    printf(""非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    printf(""%d是闰年"",varb_0);
+    else
+    printf(""非法输入"");
+}",6
+53,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+main()
+{
+int a;
+scanf(""%d"",&a);
+if(a%4==0&&a%100!=0||a%400==0)
+printf(""%d是闰年"",a);
+else
+printf(""非法输入"");
+return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+printf(""%d是闰年"",varb_0);
+else
+printf(""非法输入"");
+return 0;
+}",6
+54,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int X;
+  scanf(""%d"",&X);
+  if((X%4==0&&X%100!=0)||X%400==0)
+  printf(""%d是闰年"",X);
+  else
+  printf(""%d是平年"",X);
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+  printf(""%d是闰年"",varb_0);
+  else
+  printf(""%d是平年"",varb_0);
+  return 0;
+}",6
+55,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+ {
+   int a;
+   scanf(""%d"",&a);
+   if(a<0){printf(""非法输入"");}
+   else if(a/4==0&&a/100!=0){printf(""%d是闰年"",a);}
+   else if(a/400==0){printf(""%d是闰年"",a);}
+   else {printf("""");}
+   
+
+
+ }",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0){printf(""非法输入"");}
+   else if(varb_0/4==0&&varb_0/100!=0){printf(""%d是闰年"",varb_0);}
+   else if(varb_0/400==0){printf(""%d是闰年"",varb_0);}
+   else {printf("""");}
+ }",7
+56,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int year;
+   while(~scanf(""%d"",&year))
+   {
+   	if(year<=0)
+   	 {printf(""非法输入\n"");
+		continue;  }
+	if((year%4==0&&year%1!=0)||(year%400==0))
+	printf(""%d是闰年\n"",year);
+	else 
+    printf(""%d不是闰年\n"",year);
+   	
+   }
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   while(~scanf(""%d"",&varb_0))
+   {
+   	if(varb_0<=0)
+   	 {printf(""非法输入\n"");
+		continue;  }
+	if((varb_0%4==0&&varb_0%1!=0)||(varb_0%400==0))
+	printf(""%d是闰年\n"",varb_0);
+	else 
+    printf(""%d不是闰年\n"",varb_0);
+   }
+   return 0;
+}",10
+57,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+printf(""非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+printf(""非法输入"");
+}",4
+58,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int a;
+    scanf(""%d"",&a);
+    if(a%4==0&&a%100!=0||a%400==0)
+    printf(""%d是闰年"",a);
+    else
+    printf(""输入错误显示非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+    printf(""%d是闰年"",varb_0);
+    else
+    printf(""输入错误显示非法输入"");
+}",6
+59,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+   scanf(""%d"",&year);
+  if(year%4==0&&year%400==0)
+    printf(""%d是闰年"",year);
+  else if(year<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",year);
+    
+  return 0;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+   scanf(""%d"",&varb_0);
+  if(varb_0%4==0&&varb_0%400==0)
+    printf(""%d是闰年"",varb_0);
+  else if(varb_0<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",4
+60,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+   scanf(""%d"",&year);
+  if(year%4==0&&year%100==0||year%400==0)
+    printf(""%d是闰年"",year);
+  else if(year<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",year);
+    
+  return 0;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+   scanf(""%d"",&varb_0);
+  if(varb_0%4==0&&varb_0%100==0||varb_0%400==0)
+    printf(""%d是闰年"",varb_0);
+  else if(varb_0<=0)
+    printf(""非法输入"");
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",4
+61,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf("" 输入错误显示非法输入 "");
+   if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf("" 输入错误显示非法输入 "");
+   if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",7
+62,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+}",6
+63,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf("" 非法输入 "");
+   if(a%4==0||a%400!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf("" 非法输入 "");
+   if(varb_0%4==0||varb_0%400!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",8
+64,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+	int a;
+	
+	scanf(""%d"",&a);
+	if(a<0)
+	printf(""非法输入"");
+	else if(a%100==0)
+	{if(a%400==0)
+	printf(""\n%d是闰年"",a);
+	else
+	printf(""\n%d不是闰年"",a);
+	}
+	else
+	{
+		if(a%4==0)
+		printf(""\n%d是闰年"",a);
+		else
+		printf(""\n%d不是闰年"",a);
+	}
+		return 0;
+}",0.0,"#include <stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0<0)
+	printf(""非法输入"");
+	else if(varb_0%100==0)
+	{if(varb_0%400==0)
+	printf(""\n%d是闰年"",varb_0);
+	else
+	printf(""\n%d不是闰年"",varb_0);
+	}
+	else
+	{
+		if(varb_0%4==0)
+		printf(""\n%d是闰年"",varb_0);
+		else
+		printf(""\n%d不是闰年"",varb_0);
+	}
+		return 0;
+}",10
+65,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+}
+
+",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+}
+",6
+66,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+scanf(""%d"",&a);
+b=a%4;
+d=a%100;
+c=a%400;
+if(a<=0)
+printf(""输入错误显示非法输入"");
+else if(c==0)
+printf(""%d是闰年"",a);
+else if(d==0&&c!=0)
+printf(""输入错误显示非法输入"",a);
+else if(b==0&&d!=0)
+printf(""%d是闰年"",a);
+else
+printf(""输入错误显示非法输入"",a);
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_0);
+varb_1=varb_0%4;
+varb_3=varb_0%100;
+varb_2=varb_0%400;
+if(varb_0<=0)
+printf(""输入错误显示非法输入"");
+else if(varb_2==0)
+printf(""%d是闰年"",varb_0);
+else if(varb_3==0&&varb_2!=0)
+printf(""输入错误显示非法输入"",varb_0);
+else if(varb_1==0&&varb_3!=0)
+printf(""%d是闰年"",varb_0);
+else
+printf(""输入错误显示非法输入"",varb_0);
+return 0;
+}",7
+67,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>	
+main()
+{
+	int year;
+	
+	scanf(""%d"",&year);
+	if(year<0||year>2100)
+	printf(""非法输入"");
+	else
+	{
+		if(year%4==0)
+		printf(""%d是闰年"",year);
+		else
+		printf(""%d不是闰年"",year);	
+	}
+	return 0;	
+}",0.0,"#include<stdio.h>	
+main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0<0||varb_0>2100)
+	printf(""非法输入"");
+	else
+	{
+		if(varb_0%4==0)
+		printf(""%d是闰年"",varb_0);
+		else
+		printf(""%d不是闰年"",varb_0);	
+	}
+	return 0;	
+}",6
+68,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0||a%400==0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+69,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+     int year;
+     scanf(""%d"",&year);
+     if(year%4==0&&year%100!=0||year%400==0)
+     printf(""%d是闰年"");
+     else
+     printf(""%d不是闰年"");
+}",0.0,"#include <stdio.h>
+int main()
+{
+     int varb_0;
+     scanf(""%d"",&varb_0);
+     if(varb_0%4==0&&varb_0%100!=0||varb_0%400==0)
+     printf(""%d是闰年"");
+     else
+     printf(""%d不是闰年"");
+}",7
+70,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if (n<0)
+    printf(""非法输入"");
+ 
+ return 0;
+ }
+    
+  ",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if(varb_0<0)
+    printf(""非法输入"");
+ return 0;
+ }
+",4
+71,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+float b;
+scanf(""%d"",&a);
+     b=a%4;
+if (a<0)
+   printf (""非法输入"");
+{
+if (b==0) 
+   printf (""%d是闰年"",a) ;
+else
+   printf (""%d不是闰年"",a);
+}
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1;
+scanf(""%d"",&varb_0);
+     varb_1=varb_0%4;
+if(varb_0<0)
+   printf(""非法输入"");
+{
+if(varb_1==0) 
+   printf(""%d是闰年"",varb_0) ;
+else
+   printf(""%d不是闰年"",varb_0);
+}
+return 0;
+}",8
+72,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int a;
+  scanf(""%d"",&a);
+  if(a%4==0&&a>=0&&a%100==0&&a%400==0)
+  printf(""%d是闰年"",a);
+  else if ((a%4)!=0&&a%100!=0&&a%400!=0&&a>=0)
+  printf(""%d不是闰年"",a);
+  else
+  printf(""非法输入"");
+  return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0%4==0&&varb_0>=0&&varb_0%100==0&&varb_0%400==0)
+  printf(""%d是闰年"",varb_0);
+  else if((varb_0%4)!=0&&varb_0%100!=0&&varb_0%400!=0&&varb_0>=0)
+  printf(""%d不是闰年"",varb_0);
+  else
+  printf(""非法输入"");
+  return 0;
+}",6
+73,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+main()
+{
+int a;
+scanf(""%d"",&a);
+ if(a%4==0&&a%100!=0)
+printf(""%d是闰年"",a);
+     else if(a%100==0&&a%400==0)
+ printf(""%d是闰年"",a);
+    else
+        printf(""非法输入"");
+    return 0;
+}",0.0,"#include<stdio.h>
+main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+ if(varb_0%4==0&&varb_0%100!=0)
+printf(""%d是闰年"",varb_0);
+     else if(varb_0%100==0&&varb_0%400==0)
+ printf(""%d是闰年"",varb_0);
+    else
+        printf(""非法输入"");
+    return 0;
+}",6
+74,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int year;
+    scanf(""%d"",&year);
+    if(year<0)
+    printf(""非法输入"");
+    else if(((!(year%4))&&(year%100))||!(year%400))printf(""%d是闰年"",year);
+    else printf(""%d不是闰年"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0<0)
+    printf(""非法输入"");
+    else if(((!(varb_0%4))&&(varb_0%100))||!(varb_0%400))printf(""%d是闰年"",varb_0);
+    else printf(""%d不是闰年"");
+    return 0;
+}",9
+75,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main() 
+{
+int a;
+scanf (""%d"",& a) ;
+if (a<0) 
+printf (""非法输入"") ;
+if (a%4==0) 
+printf (""%d是闰年"",a) ;
+if (a%4!=0)
+printf (""%d不是闰年"",a) ;
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main() 
+{
+int varb_0;
+scanf(""%d"",& varb_0) ;
+if(varb_0<0) 
+printf(""非法输入"") ;
+if(varb_0%4==0) 
+printf(""%d是闰年"",varb_0) ;
+if(varb_0%4!=0)
+printf(""%d不是闰年"",varb_0) ;
+return 0;
+}
+",4
+76,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+77,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int year;
+	scanf(""%d"",&year);
+	if(year%4==0)
+	{
+		if (year%100==0&&year%400==0)
+		printf(""%d是闰年"",year);
+		else printf(""非法错误"");
+	}
+	else printf(""%d不是闰年"",year);
+	return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0)
+	{
+		if(varb_0%100==0&&varb_0%400==0)
+		printf(""%d是闰年"",varb_0);
+		else printf(""非法错误"");
+	}
+	else printf(""%d不是闰年"",varb_0);
+	return 0;
+}",6
+78,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+
+scanf(""%d"",&a);
+if ((a%100!=0)&&(a%4==0) )
+printf(""a是闰年"");
+else if((a%100!=0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if ((a%100==0)&&(a%4==0))
+printf(""a是闰年"");
+else if ((a%100==0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if(a<=0)
+printf (""非法输入"") ;
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%100!=0)&&(varb_0%4==0) )
+printf(""a是闰年"");
+else if((varb_0%100!=0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if((varb_0%100==0)&&(varb_0%4==0))
+printf(""a是闰年"");
+else if((varb_0%100==0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if(varb_0<=0)
+printf(""非法输入"") ;
+return 0;
+}",6
+79,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+  if(year%4==0 && year%100!=0 && year%400==0)
+  printf(""%d是闰年"",year);
+  else
+  printf(""非法输入"");
+  
+  
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0%4==0 && varb_0%100!=0 && varb_0%400==0)
+  printf(""%d是闰年"",varb_0);
+  else
+  printf(""非法输入"");
+  return 0;
+}",6
+80,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+void main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)&&a%400==0)
+printf(""%d年是闰年"",a);
+else
+printf(""%d不是闰年"",a);
+
+
+}",0.0,"#include<stdio.h>
+void main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)&&varb_0%400==0)
+printf(""%d年是闰年"",varb_0);
+else
+printf(""%d不是闰年"",varb_0);
+}",6
+81,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if((a%4==0&&a%100!=0)||(a%400==0))
+printf(""%d是闰年"",a);
+else printf(""%d不是闰年"",a);
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%4==0&&varb_0%100!=0)||(varb_0%400==0))
+printf(""%d是闰年"",varb_0);
+else printf(""%d不是闰年"",varb_0);
+}",6
+82,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+83,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+    int year;
+    scanf(""%d"",&year);
+    if(((!(year%4))&&(year%100))||!(year%400))printf(""yes"");
+    else printf(""no"");
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(((!(varb_0%4))&&(varb_0%100))||!(varb_0%400))printf(""yes"");
+    else printf(""no"");
+    return 0;
+}",6
+84,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main() 
+{
+int a;
+scanf (""%d"",& a) ;
+if (a<0) 
+printf (""非法输入"") ;
+if (a%4==0) 
+printf (""%d是闰年"",a) ;
+else
+printf (""%d不是闰年,a"") ;
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main() 
+{
+int varb_0;
+scanf(""%d"",& varb_0) ;
+if(varb_0<0) 
+printf(""非法输入"") ;
+if(varb_0%4==0) 
+printf(""%d是闰年"",varb_0) ;
+else
+printf(""%d不是闰年,a"") ;
+return 0;
+}
+",6
+85,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int year;
+  scanf(""%d"",&year);
+  if((year%4==0&&year%100==0)||(year%400==0))
+    printf(""%d是闰年"",year);
+  else
+    printf(""%d不是闰年"",year);
+  return 0;
+}
+    ",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if((varb_0%4==0&&varb_0%100==0)||(varb_0%400==0))
+    printf(""%d是闰年"",varb_0);
+  else
+    printf(""%d不是闰年"",varb_0);
+  return 0;
+}
+",4
+86,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if ((a%100!=0)&&(a%4==0) )
+printf(""a是闰年"");
+else if((a%100!=0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if ((a%100==0)&&(a%4==0))
+printf(""a是闰年"");
+else if ((a%100==0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if(a<=0)
+printf (""非法输入"") ;
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if((varb_0%100!=0)&&(varb_0%4==0) )
+printf(""a是闰年"");
+else if((varb_0%100!=0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if((varb_0%100==0)&&(varb_0%4==0))
+printf(""a是闰年"");
+else if((varb_0%100==0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if(varb_0<=0)
+printf(""非法输入"") ;
+return 0;
+}",6
+87,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{int years,result;
+scanf(""%d"",&years);
+if(years>0)
+{
+result=years%4;
+if(result=0)
+printf(""%d是闰年"",result);
+else 
+printf(""%d不是闰年"",result);
+}
+else
+   printf(""非法输入""); 
+}",0.0,"#include<stdio.h>
+int main()
+{int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+if(varb_0>0)
+{
+varb_1=varb_0%4;
+if(varb_1=0)
+printf(""%d是闰年"",varb_1);
+else 
+printf(""%d不是闰年"",varb_1);
+}
+else
+   printf(""非法输入""); 
+}",3
+88,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+
+int main()
+{
+    int n;
+
+    scanf(""%d"",&n);
+
+    if(n%4==0)
+        printf(""%d是闰年"",n);
+    else if(n%4!=0)
+        printf(""%d不是闰年"",n);
+    else if(n<=0)
+        printf(""非法输入"");
+    else 
+        printf(""非法输入"");
+
+    return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    scanf(""%d"",&varb_0);
+    if(varb_0%4==0)
+        printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+        printf(""%d不是闰年"",varb_0);
+    else if(varb_0<=0)
+        printf(""非法输入"");
+    else 
+        printf(""非法输入"");
+    return 0;
+}",4
+89,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main() 
+{
+int a;
+scanf (""%d"",& a) ;
+if(a<0) 
+printf (""非法输入"") ;
+if((a%4==0)&&(a%400==0)||(a%100!=0)) 
+printf (""%d是闰年"",a) ;
+else
+printf (""%d不是闰年,a"") ;
+return 0;
+}
+",0.0,"#include<stdio.h>
+int main() 
+{
+int varb_0;
+scanf(""%d"",& varb_0) ;
+if(varb_0<0) 
+printf(""非法输入"") ;
+if((varb_0%4==0)&&(varb_0%400==0)||(varb_0%100!=0)) 
+printf(""%d是闰年"",varb_0) ;
+else
+printf(""%d不是闰年,a"") ;
+return 0;
+}
+",4
+90,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+printf(""%d是闰年"",a);
+if ((a%100!=0)&&(a%4==0) )
+printf(""a是闰年"");
+else if((a%100!=0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if ((a%100==0)&&(a%4==0))
+printf(""a是闰年"");
+else if ((a%100==0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if(a<=0)
+printf (""非法输入"") ;
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+printf(""%d是闰年"",varb_0);
+if((varb_0%100!=0)&&(varb_0%4==0) )
+printf(""a是闰年"");
+else if((varb_0%100!=0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if((varb_0%100==0)&&(varb_0%4==0))
+printf(""a是闰年"");
+else if((varb_0%100==0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if(varb_0<=0)
+printf(""非法输入"") ;
+return 0;
+}",7
+91,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+void main()
+{
+	int a;
+	scanf(""%d"", &a);
+	if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0)
+	{
+		printf(""%d是闰年"",a);
+	}
+    else if(a<0)printf(""输入错误显示非法输入"");
+    else
+	
+		printf(""%d不是闰年"",a);
+	
+}
+",0.0,"#include<stdio.h>
+void main()
+{
+	int varb_0;
+	scanf(""%d"", &varb_0);
+	if(varb_0 % 4 == 0 && varb_0 % 100 != 0 || varb_0 % 400 == 0)
+	{
+		printf(""%d是闰年"",varb_0);
+	}
+    else if(varb_0<0)printf(""输入错误显示非法输入"");
+    else
+		printf(""%d不是闰年"",varb_0);
+}
+",2
+92,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int year;
+   scanf(""%d"",&year);
+   if(year%4==0)
+   {
+      printf(""%d是闰年"",year);
+   }
+   else if(year%4!=0)
+      {
+      printf(""%d不是闰年"",year);
+      }
+      else
+      printf(""非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+   {
+      printf(""%d是闰年"",varb_0);
+   }
+   else if(varb_0%4!=0)
+      {
+      printf(""%d不是闰年"",varb_0);
+      }
+      else
+      printf(""非法输入"");
+}",6
+93,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int n;
+scanf(""%d"",&n);
+if(n%400==0||(n%100!=0&&n%4==0))
+printf(""%d是闰年"",n);
+else if(n%4!=0&&n>0)
+printf(""%d不是闰年"",n);
+else if((n<0)==0)
+printf(""非法输入"");
+       
+return 0;
+}
+       
+   ",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0%400==0||(varb_0%100!=0&&varb_0%4==0))
+printf(""%d是闰年"",varb_0);
+else if(varb_0%4!=0&&varb_0>0)
+printf(""%d不是闰年"",varb_0);
+else if((varb_0<0)==0)
+printf(""非法输入"");
+return 0;
+}
+",10
+94,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int a,b,c;
+   scanf(""%d"",&a);
+   if(a<0)
+    printf(""非法输入"");
+   else if(a%4==0||a%100!=0)
+    printf(""%d是闰年"",a);
+   else
+    printf(""%d不是闰年"",a);
+   
+
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0,varb_1,varb_2;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0)
+    printf(""非法输入"");
+   else if(varb_0%4==0||varb_0%100!=0)
+    printf(""%d是闰年"",varb_0);
+   else
+    printf(""%d不是闰年"",varb_0);
+}",4
+95,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int year;
+   while(~scanf(""%d"",&year))
+   {
+   	if(year<=0)
+   	 {printf(""非法输入\n"");
+		continue;  }
+	if((year%4==0&&year%1!=0)||(year%400==0))
+	printf(""%d是闰年\n"",year);
+   	
+   }
+   return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   while(~scanf(""%d"",&varb_0))
+   {
+   	if(varb_0<=0)
+   	 {printf(""非法输入\n"");
+		continue;  }
+	if((varb_0%4==0&&varb_0%1!=0)||(varb_0%400==0))
+	printf(""%d是闰年\n"",varb_0);
+   }
+   return 0;
+}",10
+96,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"", &a);
+	if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0)
+	{
+		printf(""%d是闰年"",a);
+	}
+    else if(a<0)printf(""输入错误显示非法输入"");
+    else
+	
+		printf(""%d不是闰年"",a);
+	
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"", &varb_0);
+	if(varb_0 % 4 == 0 && varb_0 % 100 != 0 || varb_0 % 400 == 0)
+	{
+		printf(""%d是闰年"",varb_0);
+	}
+    else if(varb_0<0)printf(""输入错误显示非法输入"");
+    else
+		printf(""%d不是闰年"",varb_0);
+}
+",10
+97,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",4
+98,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int a;
+   scanf(""%d"",&a);
+   if(a%400==0)
+      printf(""%d是闰年"",a);
+   else if(a%400!=0)
+      printf(""%d不是闰年"",a);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",0.0,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%400==0)
+      printf(""%d是闰年"",varb_0);
+   else if(varb_0%400!=0)
+      printf(""%d不是闰年"",varb_0);
+   else
+      printf(""非法输入"");
+   return 0;         
+}
+",5
+99,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int X;
+  scanf(""%d"",&X);
+  if((X%4==0&&X%100!=0)||X%400==0)
+  printf(""%d是闰年"",X);
+  else
+  printf(""%d不是闰年"",X);
+  return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+  printf(""%d是闰年"",varb_0);
+  else
+  printf(""%d不是闰年"",varb_0);
+  return 0;
+}",6
+100,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+a>0;
+scanf(""%d"",&a);
+if ((a%100!=0)&&(a%4==0) )
+printf(""a是闰年"");
+else if((a%100!=0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if ((a%100==0)&&(a%4==0))
+printf(""a是闰年"");
+else if ((a%100==0)&&(a%4!=0))
+printf(""a不是闰年"");
+else if(a<=0)
+printf (""非法输入"") ;
+return 0;
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+varb_0>0;
+scanf(""%d"",&varb_0);
+if((varb_0%100!=0)&&(varb_0%4==0) )
+printf(""a是闰年"");
+else if((varb_0%100!=0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if((varb_0%100==0)&&(varb_0%4==0))
+printf(""a是闰年"");
+else if((varb_0%100==0)&&(varb_0%4!=0))
+printf(""a不是闰年"");
+else if(varb_0<=0)
+printf(""非法输入"") ;
+return 0;
+}",5
+101,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+int a;
+scanf(""%d"",&a);
+if(a<=0)
+printf(""非法输入"");
+else if(a/4==0&&a/100!=0||a/400==0)
+printf(""%d是闰年"",a);
+else
+printf(""%d不是闰年"",a);
+
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+int varb_0;
+scanf(""%d"",&varb_0);
+if(varb_0<=0)
+printf(""非法输入"");
+else if(varb_0/4==0&&varb_0/100!=0||varb_0/400==0)
+printf(""%d是闰年"",varb_0);
+else
+printf(""%d不是闰年"",varb_0);
+}",8
+102,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+  int a;
+  scanf(""%d"",&a);
+  if(a/4==0&&a>=0)
+  printf(""%d是闰年"",a);
+  else if ((a/4)!=0&&a>=0)
+  printf(""%d不是闰年"",a);
+  else
+  printf(""非法输入"");
+  return 0;
+
+
+}",0.0,"#include<stdio.h>
+int main()
+{
+  int varb_0;
+  scanf(""%d"",&varb_0);
+  if(varb_0/4==0&&varb_0>=0)
+  printf(""%d是闰年"",varb_0);
+  else if((varb_0/4)!=0&&varb_0>=0)
+  printf(""%d不是闰年"",varb_0);
+  else
+  printf(""非法输入"");
+  return 0;
+}",6
+103,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if(a%4==0&&a%100!=0||a%400)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if(varb_0%4==0&&varb_0%100!=0||varb_0%400)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",2
+104,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+   int year;
+   scanf(""%d"",&year);
+   if(year%4==0)
+   {
+      printf(""%d是闰年"");
+   }
+   else if(year%4!=0)
+      {
+      printf(""%d不是闰年"");
+      }
+      else
+      printf(""非法输入"");
+}",0.0,"#include<stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0%4==0)
+   {
+      printf(""%d是闰年"");
+   }
+   else if(varb_0%4!=0)
+      {
+      printf(""%d不是闰年"");
+      }
+      else
+      printf(""非法输入"");
+}",6
+105,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+{
+	int a;
+	scanf(""%d"",&a);
+	if((a%4==0&&a%100!=0)||a%400==0)
+	printf(""%d是闰年"",a);
+	else 
+	printf(""非法输入"");
+}
+",0.0,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	scanf(""%d"",&varb_0);
+	if((varb_0%4==0&&varb_0%100!=0)||varb_0%400==0)
+	printf(""%d是闰年"",varb_0);
+	else 
+	printf(""非法输入"");
+}
+",8
+106,2c911d616dcd1421016dd2cc121f1635,"#include <stdio.h>
+int main()
+{
+   int n;
+   scanf(""%d"",&n);
+   if (((n%100!=0) && (n%4==0)) || ( n % 400==0) )
+    printf(""%d是闰年"",n);
+    else if (n%4!=0)
+    printf(""%d不是闰年"",n) ;
+    else if (n<0)
+    printf(""非法输入"");
+ }
+    
+  ",0.0,"#include <stdio.h>
+int main()
+{
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(((varb_0%100!=0) &&(varb_0%4==0)) ||( varb_0 % 400==0) )
+    printf(""%d是闰年"",varb_0);
+    else if(varb_0%4!=0)
+    printf(""%d不是闰年"",varb_0) ;
+    else if(varb_0<0)
+    printf(""非法输入"");
+ }
+",6
+107,2c911d616dcd1421016dd2cc121f1635,"#include<stdio.h>
+int main()
+ {
+   int a;
+   scanf(""%d"",&a);
+   if(a<0){printf(""非法输入"");}
+   else if(a/4==0&&a/100!=0){printf(""%d是闰年"",a);}
+   else if(a/400==0){printf(""%d是闰年"",a);}
+   else {printf(""%d是平年"",a);}
+   
+
+
+ }",0.0,"#include<stdio.h>
+int main()
+ {
+   int varb_0;
+   scanf(""%d"",&varb_0);
+   if(varb_0<0){printf(""非法输入"");}
+   else if(varb_0/4==0&&varb_0/100!=0){printf(""%d是闰年"",varb_0);}
+   else if(varb_0/400==0){printf(""%d是闰年"",varb_0);}
+   else {printf(""%d是平年"",varb_0);}
+ }",7

@@ -1,0 +1,1041 @@
+,id,code,is_true,errorline
+0,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0;
+	float varb_1,varb_2,varb_3,varb_4;
+	char varb_5[4]={'+','-','*','/'};
+	float varb_6,varb_7;
+	scanf(""%f %f %f %f"",&varb_1,&varb_2,&varb_3,&varb_4);
+	for(varb_0=0;varb_0<4;varb_0++)
+	{
+		if(varb_5[varb_0]=='+')
+		{
+			varb_6=varb_1+varb_3;
+			varb_7=varb_2+varb_4;
+		}
+		else if(varb_5[varb_0]=='-')
+		{
+			varb_6=varb_1-varb_3;
+			varb_7=varb_2-varb_4;
+		}
+		else if(varb_5[varb_0]=='*')
+		{
+			varb_6=varb_1*varb_3-varb_2*varb_4;
+            varb_7=varb_1*varb_4+varb_3*varb_2;
+		}
+		else
+		{
+			varb_6=(varb_1*varb_3+varb_2*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+            varb_7=(varb_3*varb_2-varb_1*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+		}
+		printf(""(%.1f%+.1fi) %c(%.1f%+.1fi) = "",varb_1,varb_2,varb_5[varb_0],varb_3,varb_4);
+		if(fabs(varb_6)<0.1&&fabs(varb_7)<0.1)
+		    printf(""0.0\n"");
+		else if(fabs(varb_6)>0.1&&fabs(varb_7)>0.1)
+		    printf(""%.1f+%.1f\n"",varb_6,varb_7);
+		else
+		   if(fabs(varb_6)<0.1)
+		     printf(""%.1f\n"",varb_7);
+		   else
+		     printf(""%.1fi\n"",varb_6);
+	}
+}",0.0,5
+1,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+void func_0(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_2(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_3(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_4(float varb_0, float varb_1, float varb_2, float varb_3);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"", &varb_0, &varb_1, &varb_2, &varb_3);
+	func_0(varb_0,varb_1,varb_2,varb_3);
+	func_2(varb_0,varb_1,varb_2,varb_3);
+	func_3(varb_0,varb_1,varb_2,varb_3);
+	func_4(varb_0,varb_1,varb_2,varb_3);
+}
+void func_0(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0+varb_2;
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=varb_1+varb_3;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0&&varb_13!=0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0&&varb_12!=0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_2(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0-varb_2;
+	if(varb_12>-0.1&&varb_12<0.1)
+	varb_12=0;
+	varb_13=varb_1-varb_3;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0&&varb_13!=0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0&&varb_12!=0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_3(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0*varb_2-varb_1*varb_3;
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=varb_0*varb_3+varb_1*varb_2;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0&&varb_13!=0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0&&varb_12!=0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_4(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=(varb_1*varb_2-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0&&varb_13!=0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0&&varb_12!=0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+}",0.0,24
+2,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=varb_0+varb_2;
+	varb_5=varb_1+varb_3;
+    if(abs(varb_4)<0.1)
+    varb_4=0;
+    if(abs(varb_5)<0.1) 
+    varb_5=0;
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0-varb_2;
+	varb_5=varb_1-varb_3;
+    if(abs(varb_4)<0.1) 
+       varb_4=0;
+    if(abs(varb_5)<0.1)
+       varb_5=0;
+	printf(""\n(%.1f+%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0) 
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0*varb_2-varb_1*varb_3;
+	varb_5=varb_1*varb_2+varb_0*varb_3;
+    if(abs(varb_4)<0.1) 
+varb_4=0;
+if(abs(varb_5)<0.1)
+varb_5=0;
+	printf(""\n(%.1f+%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	varb_5=(-varb_0*varb_3+varb_1*varb_2)/(varb_2*varb_2+varb_3*varb_3);
+	printf(""\n(%.1f+%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	return 0;
+}",0.0,10
+3,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0;
+	float varb_1,varb_2,varb_3,varb_4;
+	char varb_5[4]={'+','-','*','/'};
+	float varb_6,varb_7;
+	scanf(""%f %f %f %f"",&varb_1,&varb_2,&varb_3,&varb_4);
+	for(varb_0=0;varb_0<4;varb_0++)
+	{
+		if(varb_5[varb_0]=='+')
+		{
+			varb_6=varb_1+varb_3;
+			varb_7=varb_2+varb_4;
+		}
+		else if(varb_5[varb_0]=='-')
+		{
+			varb_6=varb_1-varb_3;
+			varb_7=varb_2-varb_4;
+		}
+		else if(varb_5[varb_0]=='*')
+		{
+			varb_6=varb_1*varb_3-varb_2*varb_4;
+            varb_7=varb_1*varb_4+varb_3*varb_2;
+		}
+		else
+		{
+			varb_6=(varb_1*varb_3+varb_2*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+            varb_7=(varb_3*varb_2-varb_1*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+		}
+		printf(""(%.1f%+.1fi) %c(%.1f%+.1fi) = "",varb_1,varb_2,varb_5[varb_0],varb_3,varb_4);
+		if(fabs(varb_6)<0.1&&fabs(varb_7)<0.1)
+		    printf(""0.0\n"");
+		else if(fabs(varb_6)>0.1&&fabs(varb_7)>0.1)
+		    printf(""%.1fi+%.1fi\n"",varb_6,varb_7);
+		else
+		   if(fabs(varb_6)<0.1)
+		     printf(""%.1fi\n"",varb_7);
+		   else
+		     printf(""%.1f\n"",varb_6);
+	}
+}",0.0,5
+4,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=varb_0+varb_2;
+	varb_5=varb_1+varb_3;
+    if(abs(varb_4)<0.1)
+    varb_4=0;
+    if(abs(varb_5)<0.1) 
+    varb_5=0;
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0-varb_2;
+	varb_5=varb_1-varb_3;
+    if(abs(varb_4)<0.1) 
+       varb_4=0;
+    if(abs(varb_5)<0.1)
+       varb_5=0;
+	printf(""\n(%.1f+%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0) 
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0*varb_2-varb_1*varb_3;
+	varb_5=varb_1*varb_2+varb_0*varb_3;
+    if(abs(varb_4)<0.1) 
+varb_4=0;
+if(abs(varb_5)<0.1)
+varb_5=0;
+	printf(""\n(%.1f+%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	varb_5=(-varb_0*varb_3+varb_1*varb_2)/(varb_2*varb_2+varb_3*varb_3);
+	printf(""\n(%.1f+%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	return 0;
+}
+",0.0,10
+5,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+void func_0(double varb_0,double varb_1,double varb_2,double varb_3,char varb_4)
+{
+printf(""(%.1lf"",varb_0);
+if(varb_1>=0)
+printf(""+"");
+printf(""%.1lfi)"",varb_1);
+printf(""%c"",varb_4);
+printf(""(%.1lf"",varb_2);
+if(varb_3>=0)
+printf(""+"");
+printf(""%.1lfi)="",varb_3);
+}
+void func_1(double varb_7,double varb_8)
+{
+if(fabs(varb_7)>=0.05)
+{
+printf(""%0.1lf"",varb_7);
+if(fabs(varb_8)<0.05)
+printf(""\n"");
+}
+if(fabs(varb_8)>=0.05)
+{
+if(varb_8>0&&fabs(varb_7)>=0.05)
+printf(""+"");
+printf(""%.1lfi\n"",varb_8);
+}
+if(fabs(varb_7)<0.05&&fabs(varb_8)<0.05)
+printf(""0.0\n"");
+}
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3;
+scanf(""%lf %lf %lf %lf"",&varb_0,&varb_1,&varb_2,&varb_3);
+double varb_17,varb_18;
+func_0(varb_0,varb_1,varb_2,varb_3,'+');
+varb_17=varb_0+varb_2;
+varb_18=varb_1+varb_3;
+func_1(varb_17,varb_18);
+func_0(varb_0,varb_1,varb_2,varb_3,'-');
+varb_17=varb_0-varb_2;
+varb_18=varb_1-varb_3;
+func_1(varb_17,varb_18);
+func_0(varb_0,varb_1,varb_2,varb_3,'*');
+varb_17=varb_0*varb_2-varb_1*varb_3;
+varb_18=varb_0*varb_3+varb_2*varb_1;
+func_1(varb_17,varb_18);
+func_0(varb_0,varb_1,varb_2,varb_3,'/');
+varb_17=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+varb_18=(varb_0*varb_3-varb_2*varb_1)/(varb_2*varb_2+varb_3*varb_3);
+func_1(varb_17,varb_18);
+}
+",0.0,51
+6,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+void func_0(float,float,float,float,char);
+void func_1(float,float);
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3, varb_4, varb_5;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+func_0(varb_0,varb_1,varb_2,varb_3,'+');
+varb_4=varb_0+varb_2;varb_5=varb_1+varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'-');
+varb_4=varb_0-varb_2;varb_5=varb_1-varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'*');
+varb_4=varb_0*varb_2-varb_1*varb_3;varb_5=varb_0*varb_3+varb_2*varb_1;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'/');
+varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);varb_5=(varb_2*varb_1-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+func_1(varb_4,varb_5);
+}
+void func_0(float varb_0,float varb_1,float varb_2,float varb_3,char varb_10)
+{
+printf(""(%0.1f"",varb_0);
+if(varb_1>0)
+   printf(""+"");
+printf(""%0.1f)%c(%0.1f"",varb_1,varb_10,varb_2);   
+if(varb_3>0) 
+   printf(""+"");
+printf(""%0.1fi)="",varb_3);
+}
+void func_1(float varb_4, float varb_5)
+{
+if(fabs(varb_4)>=0.05)
+   {
+   printf(""%0.1f"",varb_4);
+   if(fabs(varb_5)<0.05) 
+      printf(""\n"");
+   }
+if(fabs(varb_5)>=0.05) 
+   {
+    if(fabs(varb_4)>=0.05&&varb_5>0)
+        printf(""+"");      
+    printf(""%0.1fi\n"",varb_5);
+   }
+if(fabs(varb_4)<0.05&&fabs(varb_5)<0.05)
+    printf(""0.0"");
+}",0.0,27
+7,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=varb_0+varb_2;
+	varb_5=varb_1+varb_3;
+    if(abs(varb_4)<0.1)
+    varb_4=0;
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0-varb_2;
+	varb_5=varb_1-varb_3;
+	printf(""\n(%.1f+%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0) 
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=varb_0*varb_2-varb_1*varb_3;
+	varb_5=varb_1*varb_2+varb_0*varb_3;
+	printf(""\n(%.1f+%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	varb_5=(-varb_0*varb_3+varb_1*varb_2)/(varb_2*varb_2+varb_3*varb_3);
+	printf(""\n(%.1f+%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	return 0;
+}
+",0.0,10
+8,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+void func_0(float,float,float,float,char);
+void func_1(float,float);
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3, varb_4, varb_5;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+func_0(varb_0,varb_1,varb_2,varb_3,'+');
+varb_4=varb_0+varb_2;varb_5=varb_1+varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'-');
+varb_4=varb_0-varb_2;varb_5=varb_1-varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'*');
+varb_4=varb_0*varb_2-varb_1*varb_3;varb_5=varb_0*varb_3+varb_2*varb_1;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'/');
+varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);varb_5=(varb_2*varb_1-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+func_1(varb_4,varb_5);
+}
+void func_0(float varb_0,float varb_1,float varb_2,float varb_3,char varb_10)
+{
+printf(""(%0.1f"",varb_0);
+if(varb_1>0)
+   printf(""+"");
+printf(""%0.1fi)%c(%0.1f"",varb_1,varb_10,varb_2);   
+if(varb_3>0) 
+   printf(""+"");
+printf(""%0.1fi)="",varb_3);
+}
+void func_1(float varb_4, float varb_5)
+{
+if(fabs(varb_4)>=0.05)
+   {
+   printf(""%0.1f"",varb_4);
+   if(fabs(varb_5)<0.05) 
+      printf(""\n"");
+   }
+if(fabs(varb_5)>=0.05) 
+   {
+    if(fabs(varb_4)>=0.05&&varb_5>0)
+        printf(""+"");      
+    printf(""%0.1fi\n"",varb_5);
+   }
+if(fabs(varb_4)<0.05&&fabs(varb_5)<0.05)
+    printf(""0.0"");
+}",0.0,47
+9,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include <stdio.h>
+void func_0(float ,float);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	float varb_4,varb_5,varb_6,varb_7;
+	float varb_8,varb_9,varb_10,varb_11;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=varb_0+varb_2,varb_8=varb_1+varb_3;
+	varb_5=varb_0-varb_2,varb_9=varb_1-varb_3;
+	varb_6=varb_0*varb_2-varb_1*varb_3,varb_10=varb_1*varb_2+varb_0*varb_3;
+	varb_7=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3),varb_11=(varb_1*varb_2-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	func_0(varb_4,varb_8);
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	func_0(varb_5,varb_9);
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	func_0(varb_6,varb_10);
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	func_0(varb_7,varb_11);
+}
+void func_0(float varb_0,float varb_1)
+{
+	int varb_14=0;
+	if( !(varb_0<0.05&&varb_0>-0.05) )
+	printf(""%.1f"",varb_0);
+	else
+	varb_14++;
+	if( !(varb_1<0.05&&varb_1>-0.05) )
+	{
+		if(varb_1>0&& varb_14==0)
+		printf(""+%.1fi"",varb_1);
+		else
+		printf(""%.1f"",varb_1);
+	}
+	else
+	varb_14++;
+	if(varb_14==2)
+	printf(""0.0"");
+}",0.0,34
+10,2c9f30a56ef37e1f016f0dfe8fec2d19,"void func_0(double varb_0,double varb_1)       
+{
+    if(fabs(varb_0)>=0.05)        
+    {
+        printf(""%.1lf"",varb_0);
+        if(fabs(varb_1)<0.05)        
+        {
+        	printf(""\n"");
+		}
+    }
+    if(fabs(varb_1)>=0.05)
+    {
+        if(varb_1>0.0&&fabs(varb_0)>=0.05)		
+        {
+            printf(""+"");
+        }
+        printf(""%.1lfi\n"",varb_1);
+    }
+    if(fabs(varb_0)<0.05&&fabs(varb_1)<0.05)        
+    {
+        printf(""0.0\n"");
+    }
+}
+void func_1(double varb_6,double varb_7,double varb_8,double varb_9,char varb_10)	
+{
+	printf(""(%.1lf"",varb_6);
+	if(varb_7>=0)            
+	{
+		printf(""+"");
+	}
+	printf(""%.1lfi)"",varb_7);
+	printf("" %c "",varb_10);            
+	printf(""(%.1lf"",varb_8);
+	if(varb_9>=0)
+	{
+		printf(""+"");
+	}
+	printf(""%.1lfi) = "",varb_9);
+}
+int main()
+{
+    double varb_6,varb_7,varb_8,varb_9;
+    scanf(""%lf %lf %lf %lf"",&varb_6,&varb_7,&varb_8,&varb_9);
+    double varb_17,varb_18;      
+    func_1(varb_6,varb_7,varb_8,varb_9,'+');
+    varb_17 = varb_6 + varb_8;
+    varb_18 = varb_7 + varb_9;
+    func_0(varb_17,varb_18);
+    func_1(varb_6,varb_7,varb_8,varb_9,'-');
+    varb_17 = varb_6 - varb_8;
+    varb_18 = varb_7 - varb_9;
+    func_0(varb_17,varb_18);
+    func_1(varb_6,varb_7,varb_8,varb_9,'*');
+    varb_17 = varb_6*varb_8 - varb_7*varb_9;
+    varb_18 = varb_7*varb_8 + varb_6*varb_9;
+    func_0(varb_17,varb_18);
+    func_1(varb_6,varb_7,varb_8,varb_9,'/');
+    varb_17 =(varb_6*varb_8 + varb_7*varb_9)/(varb_8*varb_8 + varb_9*varb_9);
+    varb_18 =(varb_7*varb_8 - varb_6*varb_9)/(varb_8*varb_8 + varb_9*varb_9);
+    func_0(varb_17,varb_18);
+    return 0;
+}
+",0.0,13
+11,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int varb_0;
+	float varb_1,varb_2,varb_3,varb_4;
+	char varb_5[4]={'+','-','*','/'};
+	float varb_6,varb_7;
+	scanf(""%f %f %f %f"",&varb_1,&varb_2,&varb_3,&varb_4);
+	for(varb_0=0;varb_0<4;varb_0++)
+	{
+		if(varb_5[varb_0]=='+')
+		{
+			varb_6=varb_1+varb_3;
+			varb_7=varb_2+varb_4;
+		}
+		else if(varb_5[varb_0]=='-')
+		{
+			varb_6=varb_1-varb_3;
+			varb_7=varb_2-varb_4;
+		}
+		else if(varb_5[varb_0]=='*')
+		{
+			varb_6=varb_1*varb_3-varb_2*varb_4;
+            varb_7=varb_1*varb_4+varb_3*varb_2;
+		}
+		else
+		{
+			varb_6=(varb_1*varb_3+varb_2*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+            varb_7=(varb_3*varb_2-varb_1*varb_4)/(varb_3*varb_3+varb_4*varb_4);
+		}
+		printf(""(%.1f%+.1fi) %c(%.1f%+.1fi) = "",varb_1,varb_2,varb_5[varb_0],varb_3,varb_4);
+		if(fabs(varb_6)<0.1&&fabs(varb_7)<0.1)
+		    printf(""0.0\n"");
+		else if(fabs(varb_6)>0.1&&fabs(varb_7)>0.1)
+		    printf(""%.1fi+%.1fi\n"",varb_6,varb_7);
+		else
+		   if(fabs(varb_6)<0.1)
+		     printf(""%.1f\n"",varb_7);
+		   else
+		     printf(""%.1fi\n"",varb_6);
+	}
+}",0.0,5
+12,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=varb_0+varb_2;
+	varb_5=varb_1+varb_3;
+    if(abs(varb_4)<0.1)
+   		varb_4=0;
+    if(abs(varb_5)<0.1) 
+    	varb_5=0;
+    if(varb_1 > 0 && varb_3 > 0)
+		printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 > 0 && varb_3 < 0)
+		printf(""(%.1f+%.1fi) +(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 < 0)
+		printf(""(%.1f%.1fi) +(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 > 0)
+		printf(""(%.1f%.1fi) +(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	printf(""\n"");
+	varb_4=varb_0-varb_2;
+	varb_5=varb_1-varb_3;
+    if(abs(varb_4)<0.1) 
+       varb_4=0;
+    if(abs(varb_5)<0.1)
+       varb_5=0;
+	if(varb_1 > 0 && varb_3 > 0)
+		printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 > 0 && varb_3 < 0)
+		printf(""(%.1f+%.1fi) -(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 < 0)
+		printf(""(%.1f%.1fi) -(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 > 0)
+		printf(""(%.1f%.1fi) -(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0) 
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	printf(""\n"");
+	varb_4=varb_0*varb_2-varb_1*varb_3;
+	varb_5=varb_1*varb_2+varb_0*varb_3;
+    if(abs(varb_4)<0.1) 
+		varb_4=0;
+	if(abs(varb_5)<0.1)
+		varb_5=0;
+	if(varb_1 > 0 && varb_3 > 0)
+		printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 > 0 && varb_3 < 0)
+		printf(""(%.1f+%.1fi) *(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 < 0)
+		printf(""(%.1f%.1fi) *(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 > 0)
+		printf(""(%.1f%.1fi) *(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	printf(""\n"");
+	varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	varb_5=(-varb_0*varb_3+varb_1*varb_2)/(varb_2*varb_2+varb_3*varb_3);
+	if(abs(varb_5)<0.1)
+		varb_5=0;
+	if(varb_1 > 0 && varb_3 > 0)
+		printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 > 0 && varb_3 < 0)
+		printf(""(%.1f+%.1fi) /(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 < 0)
+		printf(""(%.1f%.1fi) /(%.1f%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_1 < 0 && varb_3 > 0)
+		printf(""(%.1f%.1fi) /(%.1f+%.1fi) = "",varb_0,varb_1,varb_2,varb_3);
+	if(varb_4!=0&&varb_5==0)
+	 printf(""%.1f"",varb_4);
+	if(varb_4==0&&varb_5==0)
+	printf(""0.0"");
+	if(varb_4==0&&varb_5!=0)
+	printf(""%.1fi"",varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5>0)
+	printf(""%.1f+%.1fi"",varb_4,varb_5);
+	if(varb_4!=0&&varb_5!=0&&varb_5<0)
+	printf(""%.1f%.1fi"",varb_4,varb_5);
+	return 0;
+}",0.0,61
+13,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+void func_0(float,float,float,float,char);
+void func_1(float,float);
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3, varb_4, varb_5;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+func_0(varb_0,varb_1,varb_2,varb_3,'+');
+varb_4=varb_0+varb_2;varb_5=varb_1+varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'-');
+varb_4=varb_0-varb_2;varb_5=varb_1-varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'*');
+varb_4=varb_0*varb_2-varb_1*varb_3;varb_5=varb_0*varb_3+varb_2*varb_1;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'/');
+varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);varb_5=(varb_2*varb_1-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+func_1(varb_4,varb_5);
+}
+void func_0(float varb_0,float varb_1,float varb_2,float varb_3,char varb_10)
+{
+printf(""%0.1f"",varb_0);
+if(varb_1>0)
+   printf(""+"");
+printf(""%0.1fi)%c(%0.1f"",varb_1,varb_10,varb_2);   
+if(varb_3>0) 
+   printf(""+"");
+printf(""%0.1fi)="",varb_3);
+}
+void func_1(float varb_4, float varb_5)
+{
+if(fabs(varb_4)>=0.05)
+   {
+   printf(""%0.1f"",varb_4);
+   if(fabs(varb_5)<0.05) 
+      printf(""\n"");
+   }
+if(fabs(varb_5)>=0.05) 
+   {
+    if(fabs(varb_4)>=0.05&&varb_5>0)
+        printf(""+"");      
+    printf(""%0.1fi\n"",varb_5);
+   }
+if(fabs(varb_4)<0.05&&fabs(varb_5)<0.05)
+    printf(""0.0\n"");
+}",0.0,24
+14,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<math.h>
+void func_0(float,float,float,float,char);
+void func_1(float,float);
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3, varb_4, varb_5;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+func_0(varb_0,varb_1,varb_2,varb_3,'+');
+varb_4=varb_0+varb_2;varb_5=varb_1+varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'-');
+varb_4=varb_0-varb_2;varb_5=varb_1-varb_3;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'*');
+varb_4=varb_0*varb_2-varb_1*varb_3;varb_5=varb_0*varb_3+varb_2*varb_1;
+func_1(varb_4,varb_5);
+func_0(varb_0,varb_1,varb_2,varb_3,'/');
+varb_4=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);varb_5=(varb_2*varb_1-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+func_1(varb_4,varb_5);
+}
+void func_0(float varb_0,float varb_1,float varb_2,float varb_3,char varb_10)
+{
+printf(""(%0.1f"",varb_0);
+if(varb_1>0)
+   printf(""+"");
+printf(""%0.1f)%c(%0.1f"",varb_1,varb_10,varb_2);   
+if(varb_3>0) 
+   printf(""+"");
+printf(""%0.1f)="",varb_3);
+}
+void func_1(float varb_4, float varb_5)
+{
+if(fabs(varb_4)>=0.05)
+   {
+   printf(""%0.1f"",varb_4);
+   if(fabs(varb_5)<0.05) 
+      printf(""\n"");
+   }
+if(fabs(varb_5)>=0.05) 
+   {
+    if(fabs(varb_4)>=0.05&&varb_5>0)
+        printf(""+"");      
+    printf(""%0.1fi\n"",varb_5);
+   }
+if(fabs(varb_4)<0.05&&fabs(varb_5)<0.05)
+    printf(""0.0"");
+}",0.0,27
+15,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+#include<string.h>
+void func_0(double varb_0,double varb_1)
+{
+if(varb_1<0) printf(""(%.1lf%.1lfi)"",varb_0,varb_1);
+else printf(""(%.1lf+%.1lfi)"",varb_1);
+}
+void func_1(double varb_6,double varb_7)
+{
+if(varb_7<=0.05&&varb_7>=-0.05)
+printf(""%.1lf"",varb_6);
+else if(varb_6<=0.05&&varb_6>=-0.05)
+printf(""%.1lfi"",varb_7);
+else if(varb_7<0) printf(""%.1lf%.1lfi"",varb_6,varb_7);
+else printf(""%.1lf+%.1lfi"",varb_7);
+printf(""n"");
+}
+struct varb_14 {
+double varb_12;
+double varb_13;
+};
+int main()
+{
+struct varb_14 varb_15,varb_16;
+scanf(""%lf %lf %lf %lf"",&varb_15.varb_12,&varb_15.varb_13,&varb_16.varb_12,&varb_16.varb_13);
+double varb_17 = varb_15.varb_12+varb_16.varb_12;
+double varb_18 = varb_15.varb_13+varb_16.varb_13;
+double varb_19 = varb_15.varb_12-varb_16.varb_12;
+double varb_20 = varb_15.varb_13-varb_16.varb_13;
+double varb_21 = varb_15.varb_12*varb_16.varb_12-varb_15.varb_13*varb_16.varb_13;
+double varb_22 = varb_15.varb_13*varb_16.varb_12+varb_15.varb_12*varb_16.varb_13;
+double varb_23 =(varb_15.varb_12*varb_16.varb_12+varb_15.varb_13*varb_16.varb_13)/(varb_16.varb_12*varb_16.varb_12+varb_16.varb_13*varb_16.varb_13);
+double varb_24 =(varb_15.varb_13*varb_16.varb_12-varb_15.varb_12*varb_16.varb_13)/(varb_16.varb_12*varb_16.varb_12+varb_16.varb_13*varb_16.varb_13);
+func_0(varb_15.varb_12,varb_15.varb_13);
+printf("" + "");
+func_0(varb_16.varb_12,varb_16.varb_13);
+printf("" = "");
+func_1(varb_17,varb_18);
+func_0(varb_15.varb_12,varb_15.varb_13);
+printf("" - "");
+func_0(varb_16.varb_12,varb_16.varb_13);
+printf("" = "");
+func_1(varb_19,varb_20);
+func_0(varb_15.varb_12,varb_15.varb_13);
+printf("" * "");
+func_0(varb_16.varb_12,varb_16.varb_13);
+printf("" = "");
+func_1(varb_21,varb_22);
+func_0(varb_15.varb_12,varb_15.varb_13);
+printf("" / "");
+func_0(varb_16.varb_12,varb_16.varb_13);
+printf("" = "");
+func_1(varb_23,varb_24);
+return 0;
+}",0.0,2
+16,2c9f30a56ef37e1f016f0dfe8fec2d19,"#include<stdio.h>
+void func_0(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_2(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_3(float varb_0, float varb_1, float varb_2, float varb_3);
+void func_4(float varb_0, float varb_1, float varb_2, float varb_3);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"", &varb_0, &varb_1, &varb_2, &varb_3);
+	func_0(varb_0,varb_1,varb_2,varb_3);
+	func_2(varb_0,varb_1,varb_2,varb_3);
+	func_3(varb_0,varb_1,varb_2,varb_3);
+	func_4(varb_0,varb_1,varb_2,varb_3);
+}
+void func_0(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0+varb_2;
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=varb_1+varb_3;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_2(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0-varb_2;
+	if(varb_12>-0.1&&varb_12<0.1)
+	varb_12=0;
+	varb_13=varb_1-varb_3;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) -(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_3(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=varb_0*varb_2-varb_1*varb_3;
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=varb_0*varb_3+varb_1*varb_2;
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0)
+	printf(""(%.1f+%.1fi) *(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+	printf(""\n"");
+}
+void func_4(float varb_0, float varb_1, float varb_2, float varb_3)
+{
+	float varb_12, varb_13;
+	varb_12=(varb_0*varb_2+varb_1*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	if(varb_12>-0.1&&varb_12<0.1)
+		varb_12=0;
+	varb_13=(varb_1*varb_2-varb_0*varb_3)/(varb_2*varb_2+varb_3*varb_3);
+	if(varb_13>-0.1&&varb_13<0.1)
+		varb_13=0;
+	if(varb_12!=0&&varb_13>0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f+%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12!=0&&varb_13<0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f%.1fi"",varb_0,varb_1,varb_2,varb_3,varb_12,varb_13);
+	else if(varb_12==0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1fi"",varb_0,varb_1,varb_2,varb_3,varb_13);
+	else if(varb_13==0)
+	printf(""(%.1f+%.1fi) /(%.1f+%.1fi) = %.1f"",varb_0,varb_1,varb_2,varb_3,varb_12);
+	else if(varb_12==0&&varb_13==0)
+	printf(""(%.1f+%.1fi) +(%.1f+%.1fi) = 0.0"",varb_0,varb_1,varb_2,varb_3);
+}",0.0,24

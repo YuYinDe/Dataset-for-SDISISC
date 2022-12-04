@@ -1,0 +1,279 @@
+,id,code,is_true,errorline
+0,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    float varb_4=0,zcj,pjf=0;
+    scanf(""%d %d"",&varb_2,&varb_3);
+    for(varb_0=0;varb_0<varb_2;varb_0++)
+    {
+        zcj=0;
+        for(varb_1=0;varb_1<varb_3;varb_1++)
+       {
+        scanf(""%f"",&varb_4);
+        zcj+=varb_4;
+        }
+        pjf=zcj/varb_3;
+        printf(""%.2f"",pjf);
+    }
+}",0.0,16
+1,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5,varb_6;
+scanf(""%d %d"",&varb_2,&varb_3);
+for(varb_0=1;varb_0<=varb_2;varb_0++)
+{
+for(varb_1=1;varb_1<=varb_3;varb_1++)
+{
+scanf(""%f"",&varb_4);
+varb_5+=varb_4;
+}
+varb_6=varb_5/varb_3;
+printf(""\varb_2%.2f"",varb_6);
+}
+}",0.0,12
+2,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+float varb_5,varb_6;
+varb_6=0;
+scanf(""%d %d"",&varb_0,&varb_1);
+for(varb_4=1;varb_4<=varb_1;varb_4++)
+{for(varb_2=1;varb_2<=varb_0;varb_2++)
+{
+scanf(""%d "",&varb_3);
+varb_6+=varb_3;
+varb_5=varb_6/varb_2;}
+printf(""%0.2f\n"",varb_5);
+}
+}",0.0,8
+3,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5;
+float varb_6=0.0;
+scanf(""%d %d"",&varb_2,&varb_3);
+for(varb_0=1;varb_0<=varb_2;varb_0++)
+{
+varb_6=0.0;
+for(varb_1=1;varb_1<=varb_3;varb_1++)
+{
+scanf(""%f"",&varb_4);
+varb_6+=varb_4;
+}
+varb_5=varb_6/varb_3;
+printf(""\varb_2%.2f"",varb_5);
+}
+}",0.0,17
+4,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+float varb_2,varb_3,varb_4,varb_5,varb_6;
+varb_2=1;varb_3=1;varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+while(varb_2<=varb_0)
+{
+while(varb_3<=varb_1)
+{
+scanf(""%f"",&varb_4);
+varb_5=varb_4+varb_5;
+varb_6=varb_5/varb_1;
+varb_3++;
+}
+printf(""%.2f"",varb_6);
+varb_3=1;
+varb_5=0;
+varb_2++;
+}
+}",0.0,17
+5,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+ {
+     int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+     scanf(""%d%d"",&varb_0,&varb_2);
+     for(varb_1=1;varb_1<=varb_0;varb_1++)
+     {
+         for(varb_5=1;varb_5<=varb_2;varb_5++)
+         {    
+             scanf(""%d"",&varb_3);
+             varb_4+=varb_3;
+         }
+         printf(""%.2f\n"",varb_4/varb_2*1.0);
+     }
+  }
+",0.0,3
+6,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5;
+float varb_6=0.0;
+scanf(""%d %d"",&varb_2,&varb_3);
+for(varb_0=1;varb_0<=varb_2;varb_0++)
+{
+for(varb_1=1;varb_1<=varb_3;varb_1++)
+{
+scanf(""%f"",&varb_4);
+varb_6+=varb_4;
+}
+varb_5=varb_6/varb_3;
+printf(""\varb_2%.2f"",varb_5);
+}
+}",0.0,16
+7,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+main()
+{
+  int varb_0,varb_1,varb_2;
+  int varb_3=1;
+  int varb_4=1;
+  int varb_5=0;
+  float varb_6;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  while(varb_4<=varb_0)
+  {
+     while(varb_3<=varb_1)
+     {
+       scanf(""%d"",&varb_2);
+       varb_5=varb_2+varb_5;
+       varb_3++;
+     }
+     varb_6=varb_5/varb_1;
+     printf(""%.2f\n"",varb_6);
+     varb_4++;
+  }
+}",0.0,7
+8,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4;
+float varb_5,varb_6;
+varb_6=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+for(varb_4=0;varb_4<varb_0;varb_4++)
+{
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+        scanf(""%d"",&varb_3);
+        varb_6+=varb_3;
+    }
+    varb_5=varb_6/(float)varb_2;printf(""%0.2f\n"",varb_5);varb_2=0;varb_6=0;
+printf(""\n"");
+}
+}",0.0,16
+9,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+ {
+     int varb_0,varb_1,varb_2,varb_3,varb_4;
+     scanf(""%d%d"",&varb_0,&varb_2);
+     for(varb_1=1;varb_1<=varb_0;varb_1++)
+     {
+         for(varb_1=1;varb_1<=varb_2;varb_1++)
+         {    
+             scanf(""%d"",&varb_3);
+             varb_4+=varb_3;
+         }
+         printf(""%.2f\n"",varb_4/varb_2*1.0);
+     }
+  }
+",0.0,4
+10,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+    scanf(""%f%f"",&varb_3,&varb_4);
+    if(varb_4==3)
+  {
+      for(varb_0=0;varb_0<=varb_3;varb_0++)
+    {  scanf(""%2f%2f%2f"",&varb_5,&varb_6,&varb_7);
+       varb_2=(varb_5+varb_6+varb_7)/3;
+       printf(""%.2f\n"",varb_2);
+    }
+   }
+     if(varb_4==2)
+   {
+      for(varb_0=0;varb_0<=varb_3;varb_0++)
+    {  scanf(""%2f%2f%"",&varb_5,&varb_6);
+       varb_2=(varb_5+varb_6)/2;
+       printf(""%.2f\n"",varb_2);
+    }
+   }
+    return 0;
+}",0.0,8
+11,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5,varb_6;
+scanf(""%d %d"",&varb_2,&varb_3);
+for(varb_0=1;varb_0<=varb_2;varb_0++)
+{
+for(varb_1=1;varb_1<=varb_3;varb_1++)
+{
+scanf(""%f"",&varb_4);
+varb_5+=varb_4;
+}
+varb_6=varb_5/varb_3;
+printf(""%.2f"",varb_6);
+}
+}",0.0,12
+12,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5;
+varb_5=0;
+scanf(""%d%d"",&varb_1,&varb_0);
+for(varb_2=1;varb_2<=varb_1;++varb_2)
+ {
+for(varb_3=1;varb_3<=varb_0;++varb_3)
+{
+scanf(""%d"",&varb_4);
+varb_5=varb_4+varb_5;
+}
+printf(""%.2f\n"",varb_5/varb_0);
+}
+return 0;
+}",0.0,4
+13,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+float varb_2,varb_3,varb_4,varb_5,varb_6;
+varb_2=1;varb_3=1;varb_4=0;
+scanf(""%d%d"",&varb_0,&varb_1);
+while(varb_2<=varb_0)
+{
+while(varb_3<=varb_1)
+{
+scanf(""%f"",&varb_4);
+varb_5=varb_4+varb_5;
+varb_6=varb_5/varb_1;
+varb_3++;
+}
+printf(""%.2f"",varb_6);
+varb_3=0;
+varb_5=0;
+varb_2++;
+}
+}",0.0,17
+14,2c9f30a56e1ebafc016e34652dc00d22,"#include<stdio.h>
+main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5;
+float varb_6=0.0; 
+scanf(""%d %d"" ,&varb_2,&varb_3);
+for(varb_0=1;varb_0<=varb_2;varb_0++)
+{varb_6=0.0;
+for(varb_1=1;varb_1<=varb_3;varb_1++)
+{scanf(""%f"" ,&varb_4);
+varb_6+=varb_4;
+varb_5=varb_6/varb_3;}
+}
+printf(""%.2f\n"",varb_5);
+}",0.0,13

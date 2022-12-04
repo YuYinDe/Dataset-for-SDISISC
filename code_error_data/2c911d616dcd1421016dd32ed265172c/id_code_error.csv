@@ -1,0 +1,4312 @@
+,id,code,is_true,errorline
+0,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ float varb_1;
+ scanf(""%d%d"",&varb_0,&varb_1);
+ switch(varb_0)
+ {
+  case 0:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=52250)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>52250&&varb_1<=171550)
+   {varb_1=835+3840+5325+(varb_1-55250)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>171550&&varb_1<=372950)
+    {varb_1=835+3840+5325+32564+(varb_1-171500)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+5325+32564+66478.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+  case 1:
+   if(varb_1<=16700)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>16700&&varb_1<=67900)
+  {varb_1=1670+(varb_1-16700)*0.15;      
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>67900&&varb_1<=137050)      
+   {varb_1=1670+7950+(varb_1-67900)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>137050&&varb_1<=208850)
+   {varb_1=1670+7950+17287.5+(varb_1-137050)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>208850&&varb_1<=372950)
+    {varb_1=1670+7950+17287.5+20104+(varb_1-208850)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1670+7950+17287.5+20104+54153+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break; 
+   case 3:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=68525)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>68525&&varb_1<=104425)
+   {varb_1=835+3840+8643.75+(varb_1-68525)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>104425&&varb_1<=186475)
+    {varb_1=835+3840+8643.75+10052+(varb_1-104425)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+8643.75+10052+27076.17+(varb_1-186475)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+case 4:
+   if(varb_1<=11950)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>11950&&varb_1<=45500)
+  {varb_1=1195+(varb_1-11950)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>45500&&varb_1<=117450)      
+   {varb_1=1195+5032.5+(varb_1-45500)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>117450&&varb_1<=190200)
+   {varb_1=1195+5032.5+17987.5+(varb_1-117450)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>190200&&varb_1<=372950)
+    {varb_1=1195+5032.5+17987.5+20370+(varb_1-190200)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1195+5032.5+17987.5+20370+60307.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+}
+}         ",0.0,6
+1,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=0.15*(varb_1-16700)+1670;
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=0.25*(varb_1-67900)+9350;
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2) 
+    {
+        if(varb_1<=8350)
+         varb_2=0.1*varb_1;
+        else if(varb_1<=33950)
+         varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+         varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+         varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+         varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+         varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_1;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+    return 0;
+}
+",0.0,7
+2,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%d %d"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_0-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_0-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2)   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,6
+3,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+float func_0(int varb_0);
+float func_4(int varb_0);
+float func_2(int varb_0);
+float func_3(int varb_0);
+int main()
+{
+int varb_0,varb_1;
+float varb_2;
+scanf(""%d %d"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:   varb_2=func_0(varb_1);break;
+case 1:   varb_2= func_2(varb_1);break;
+case 2:   varb_2=func_2(varb_1);break;
+case 3:   varb_2=func_4(varb_1);break;
+default : break;
+}
+printf(""%f"",varb_2);
+return 0;
+}
+float func_0(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<52250)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<171550)varb_1=(varb_0-52250)*0.28+9250;
+else if(varb_0<372950)varb_1=(varb_0-171550)*0.33+42654;
+else varb_1=(varb_0-372950)*0.35+109116;
+return varb_1;
+}
+float func_2(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<16700)varb_1=varb_0*0.1;
+else if(varb_0<67900)varb_1=(varb_0-16700)*0.15+1670;
+else if(varb_0<137050)varb_1=(varb_0-67900)*0.25+9350;
+else if(varb_0<208850)varb_1=(varb_0-137050)*0.28+26637.5;
+else if(varb_0<372950)varb_1=(varb_0-208850)*0.33+46741.5;
+else varb_1=(varb_0-372950)*0.35+100894.5;
+return varb_1;
+}
+float func_3(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<68525)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<104425)varb_1=(varb_0-68525)*0.28+13318.75;
+else if(varb_0<186475)varb_1=(varb_0-104425)*0.33+23370.75;
+else varb_1=(varb_0-186475)*0.35+50447.25;
+return varb_1;
+}
+float func_4(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<11950)varb_1=varb_0*0.1;
+else if(varb_0<45500)varb_1=(varb_0-11950)*0.15+1195;
+else if(varb_0<117450)varb_1=(varb_0-45500)*0.25+6227.5;
+else if(varb_0<190200)varb_1=(varb_0-117450)*0.28+24215;
+else if(varb_0<372950)varb_1=(varb_0-190200)*0.33+44585;
+else varb_1=(varb_0-372950)*0.35+104892.5;
+return varb_1;
+}",0.0,15
+4,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d,&varb_0,&b"");
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+    }  
+    else if((varb_5+1)<=varb_1<=varb_6)
+	{
+		varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if((varb_4+1)<=varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+      else if((varb_3+1)<=varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if((varb_2+1)<=varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if(0<=varb_1<=varb_2)
+	{
+	    varb_7=varb_1*0.1;printf(""%f"",varb_7);
+	}
+}",0.0,6
+5,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+int varb_6;double  varb_7;
+scanf(""%d"",&varb_6);
+switch(varb_6)
+{case 0:varb_0=8350,varb_1=33950,varb_2=52250,varb_3=171550,varb_4=372950;
+case 1:varb_0=16700,varb_1=67900,varb_2=137050,varb_3=208850,varb_4=372950;
+case 2:varb_0=8350,varb_1=33950,varb_2=68525,varb_3=104425,varb_4=186475;
+case 3:varb_0=11950,varb_1=45500,varb_2=117450,varb_3=190200,varb_4=372950;
+}
+scanf(""%f"",&varb_5);
+if(varb_5>=0&&varb_5<=varb_0)
+  varb_7=varb_5*0.1;
+else if(varb_5>=varb_0+1&&varb_5<=varb_1)
+  varb_7=varb_0*0.1+(varb_5-varb_0)*0.15;
+else if(varb_5>=varb_1+1&&varb_5<=varb_2)
+  varb_7=varb_0*0.1+(varb_1-varb_0)*0.15+(varb_5-varb_1)*0.25;
+else if(varb_5>=varb_2+1&&varb_5<=varb_3)
+  varb_7=varb_0*0.1+(varb_1-varb_0)*0.15+(varb_2-varb_1)*0.25+(varb_5-varb_2)*0.28;
+else if(varb_5>=varb_3+1&&varb_5<=varb_4)
+   varb_7=varb_0*0.1+(varb_1-varb_0)*0.15+(varb_2-varb_1)*0.25+(varb_3-varb_2)*0.28+(varb_5-varb_3)*0.33;
+else if(varb_5>=varb_4+1)
+  varb_7=varb_0*0.1+(varb_1-varb_0)*0.15+(varb_2-varb_1)*0.25+(varb_3-varb_2)*0.28+(varb_4-varb_3)*0.33+(varb_5-varb_4)*0.35;
+printf(""%f"",varb_7);
+return 0;
+}",0.0,8
+6,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if((varb_0=0))
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if((varb_0=1))
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_1-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_1-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if((varb_0=2))   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if((varb_0=3))
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+7,2c911d616dcd1421016dd32ed265172c,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  if(varb_0==0)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=52250)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=52251 && varb_1<=171550)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=171551 && varb_1<=372950)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==1)
+  {
+    if(varb_1<=16700)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=16701 && varb_1<=67900)
+    varb_2=16700*0.10+(varb_1-16700)*0.15;
+    else if(varb_1>=67901 && varb_1<=137050)
+    varb_2=16700*0.10+(varb_1-16700)*0.25;
+    else if(varb_1>=137051 && varb_1<=208850)
+    varb_2=16700*0.10+(varb_1-16700)*0.28;
+    else if(varb_1>=208851 && varb_1<=372950)
+    varb_2=16700*0.10+(varb_1-16700)*0.33;
+    else 
+    varb_2=16700*0.10+(varb_1-16700)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==2)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=68525)
+    varb_2=8350*0.10+(33950-8350)*0.15+(varb_1-33950)*0.25;
+    else if(varb_1>=68526 && varb_1<=104425)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=104426 && varb_1<=186475)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else 
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else
+  {
+    if(varb_1<=11950)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=11951 && varb_1<=45500)
+    varb_2=11950*0.10+(varb_1-11950)*0.15;
+    else if(varb_1>=45501 && varb_1<=117450)
+    varb_2=11950*0.10+(45500-11950)*0.15+(varb_1-117450)*0.25;
+    else if(varb_1>=117451 && varb_1<=190200)
+    varb_2=11950*0.10+(varb_1-11950)*0.28;
+    else if(varb_1>=190201 && varb_1<=372950)
+    varb_2=11950*0.10+(varb_1-11950)*0.33;
+    else 
+    varb_2=11950*0.10+(varb_1-11950)*0.35;
+    printf(""%f"",varb_2);
+  }
+  return 0;
+}",0.0,63
+8,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+    }  
+    else if((varb_5+1)<=varb_1<=varb_6)
+	{
+		varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if((varb_4+1)<=varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+      else if((varb_3+1)<=varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if((varb_2+1)<=varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if(0<=varb_1<=varb_2)
+	{
+	    varb_7=varb_1*0.1;printf(""%f"",varb_7);
+	}
+}",0.0,16
+9,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,31
+10,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,16
+11,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+     scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    return 0;
+}
+",0.0,7
+12,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ float varb_1;
+ scanf(""%d%f"",&varb_0,&varb_1);
+ switch(varb_0)
+ {
+  case 0:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=52250)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>52250&&varb_1<=171550)
+   {varb_1=835+3840+5325+(varb_1-55250)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>171550&&varb_1<=372950)
+    {varb_1=835+3840+5325+32564+(varb_1-171500)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+5325+32564+66478.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+  case 1:
+   if(varb_1<=16700)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>16700&&varb_1<=67900)
+  {varb_1=1670+(varb_1-16700)*0.15;      
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>67900&&varb_1<=137050)      
+   {varb_1=1670+7950+(varb_1-67900)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>137050&&varb_1<=208850)
+   {varb_1=1670+7950+17287.5+(varb_1-137050)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>208850&&varb_1<=372950)
+    {varb_1=1670+7950+17287.5+20104+(varb_1-208850)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1670+7950+17287.5+20104+54153+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break; 
+   case 3:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=68525)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>68525&&varb_1<=104425)
+   {varb_1=835+3840+8643.75+(varb_1-68525)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>104425&&varb_1<=186475)
+    {varb_1=835+3840+8643.75+10052+(varb_1-104425)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+8643.75+10052+27076.17+(varb_1-186475)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+case 4:
+   if(varb_1<=11950)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>11950&&varb_1<=45500)
+  {varb_1=1195+(varb_1-11950)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>45500&&varb_1<=117450)      
+   {varb_1=1195+5032.5+(varb_1-45500)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>117450&&varb_1<=190200)
+   {varb_1=1195+5032.5+17987.5+(varb_1-117450)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>190200&&varb_1<=372950)
+    {varb_1=1195+5032.5+17987.5+20370+(varb_1-190200)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1195+5032.5+17987.5+20370+60307.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+}
+}         ",0.0,45
+13,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if((varb_0=0))
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if((varb_0=1))
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_0-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_0-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if((varb_0=2))   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if((varb_0=3))
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+14,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+1670;
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,31
+15,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%d %d"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_0-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_0-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2)   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+    return 0;
+}
+",0.0,6
+16,2c911d616dcd1421016dd32ed265172c,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  if(varb_0==0)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=52250)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=52251 && varb_1<=171550)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=171551 && varb_1<=372950)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==1)
+  {
+    if(varb_1<=16700)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=16701 && varb_1<=67900)
+    varb_2=16700*0.10+(varb_1-16700)*0.15;
+    else if(varb_1>=67901 && varb_1<=137050)
+    varb_2=16700*0.10+(varb_1-16700)*0.25;
+    else if(varb_1>=137051 && varb_1<=208850)
+    varb_2=16700*0.10+(varb_1-16700)*0.28;
+    else if(varb_1>=208851 && varb_1<=372950)
+    varb_2=16700*0.10+(varb_1-16700)*0.33;
+    else 
+    varb_2=16700*0.10+(varb_1-16700)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==2)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=68525)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=68526 && varb_1<=104425)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=104426 && varb_1<=186475)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else 
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else
+  {
+    if(varb_1<=11950)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=11951 && varb_1<=45500)
+    varb_2=11950*0.10+(varb_1-11950)*0.15;
+    else if(varb_1>=45501 && varb_1<=117450)
+    varb_2=11950*0.10+(varb_1-11950)*0.25;
+    else if(varb_1>=117451 && varb_1<=190200)
+    varb_2=11950*0.10+(varb_1-11950)*0.28;
+    else if(varb_1>=190201 && varb_1<=372950)
+    varb_2=11950*0.10+(varb_1-11950)*0.33;
+    else 
+    varb_2=11950*0.10+(varb_1-11950)*0.35;
+    printf(""%f"",varb_2);
+  }
+  return 0;
+}",0.0,15
+17,2c911d616dcd1421016dd32ed265172c,"#include <stdio.h>
+int main(){
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d%f"",&varb_2,&varb_1);
+if(varb_2==0)
+{
+if(varb_1<=8350)
+varb_0=varb_1*0.1;
+else if(varb_1>=8351&&varb_1<=33950)
+varb_0=835+(varb_1-8350)*0.15;
+else if(varb_1>=33951&&varb_1<=52250)
+varb_0=4675+(varb_1-33950)*0.25;
+else if(varb_1>=52251&&varb_1<=171550)
+varb_0=9250+(varb_1-52250)*0.28;
+else if(varb_1>=171551&&varb_1<=372950)
+varb_0=42654+(varb_1-171550)*0.33;
+else 
+varb_0=109116+(varb_1-372950)*0.35;
+printf(""%f"",varb_0);
+}
+else if(varb_2==1)
+{
+if(varb_1<=16700)
+varb_0=varb_1*0.1;
+else if(varb_1>=16701&&varb_1<=67900)
+varb_0=1670+(varb_1-16700)*0.15;
+else if(varb_1>=67901&&varb_1<=137050)
+varb_0=9350+(varb_1-67900)*0.25;
+else if(varb_1>=137051&&varb_1<=208850)
+varb_0=26637.5+(varb_1-137050)*0.28;
+else if(varb_1>=208851&&varb_1<=372950)
+varb_0=46741.5+(varb_1-208850)*0.33;
+else 
+varb_0=100894.5+(varb_1-372950)*0.35;
+printf(""%f"",varb_0);
+}
+else if(varb_2==2)
+{
+if(varb_1<=8350)
+varb_0=varb_1*0.1;
+else if(varb_1>=8351&&varb_1<=33950)
+varb_0=835+(varb_1-8350)*0.15;
+else if(varb_1>=33951&&varb_1<=68525)
+varb_0=4675+(varb_1-33950)*0.25;
+else if(varb_1>=68526&&varb_1<=104425)
+varb_0=13318.75+(varb_1-68525)*0.28;
+else if(varb_1>=104526&&varb_1<=186475)
+varb_0=23370.75+(varb_1-104425)*0.33;
+else 
+varb_0=83678.26+(varb_1-186475)*0.35;
+printf(""%f"",varb_0);
+}
+else if(varb_2==3)
+{
+if(varb_1<=11950)
+varb_0=varb_1*0.1;
+else if(varb_1>=11951&&varb_1<=45500)
+varb_0=1195+(varb_1-8350)*0.15;
+else if(varb_1>=45501&&varb_1<=117450)
+varb_0=6227.5+(varb_1-8350)*0.25;
+else if(varb_1>=117451&&varb_1<=190200)
+varb_0=24215+(varb_1-8350)*0.28;
+else if(varb_1>=190201&&varb_1<=372950)
+varb_0=+(varb_1-8350)*0.33;
+else 
+varb_0=835+(varb_1-8350)*0.35;
+printf(""%f"",varb_0);
+}
+else;
+}
+",0.0,59
+18,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+    scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    else
+    {
+        printf(""输入身份有误"");
+    }
+    return 0;
+}
+",0.0,7
+19,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=((varb_1-varb_2-1)*0.15)+835;
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,16
+20,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+int varb_0,varb_1;scanf(""%d %d"",&varb_0,&varb_1);
+switch(varb_0){
+case 0:{if(varb_1<=8350)
+printf(""%.6f"",0.1*varb_1);  else if(varb_1>=8351&&varb_1<=33950) printf(""%.6f"",835+0.15*(varb_1-8350));
+else if(varb_1>=33951&&varb_1<=52250) printf(""%.6f"",4675+0.25*(varb_1-33950));
+else if(varb_1>=52251&&varb_1<=171500) printf(""%.6f"",9250+0.28*(varb_1-52250));
+else if(varb_1>=171551&&varb_1<=372950) printf(""%.6f"",42654+0.33*(varb_1-171550));
+else if(varb_1>=372951) printf(""%.6f"",0.35*(varb_1-372950)+107136);break;}
+case 1:if(varb_1<=16700) printf(""%.6f"",0.1*varb_1);else if(varb_1>=16701&&varb_1<=67900)
+printf(""%.6f"",1670+0.15*(varb_1-16700));else if(varb_1>=67901&&varb_1<=137050) printf(""%.6f"",9350+0.25*(varb_1-33950));else if(varb_1>=137051&&varb_1<=208850)
+printf(""%.6f"",26637.5+0.28*(varb_1-137050));
+else if(varb_1>=208851&&varb_1<=372950) printf(""%.6f"",46741.5+0.33*(varb_1-208850));
+else printf(""%.6f"",100894.5+0.35*(varb_1-372950));}
+}
+",0.0,17
+21,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=0.15*(varb_1-16700)+1670;
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=0.25*(varb_1-67900)+9350;
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2) 
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_1;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+    return 0;
+}
+",0.0,7
+22,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+    scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    else
+    {
+        printf(""输入身份有误"");
+    }
+    return 0;
+}
+",0.0,7
+23,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+    scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2==0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2==1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    else
+    {
+        printf(""输入身份有误"");
+    }
+    return 0;
+}
+",0.0,39
+24,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d %f"",&varb_0,&varb_1);
+    if(varb_0==0&&varb_1>=0&&varb_1<=8350)
+    printf(""%f"",varb_1*0.1);
+    else if(varb_0==0&&varb_1>=8351&&varb_1<=33950)
+    printf(""%f"",8350*0.1+(varb_1-8350)*0.15);
+    else if(varb_0==0&&varb_1>=33951&&varb_1<=52250)
+    printf(""%f"",8350*0.1+25600*0.15+(varb_1-33950)*0.25);
+    else if(varb_0==0&&varb_1>=52251&&varb_1<=171550)
+    printf(""%f"",8350*0.1+25600*0.15+18300*0.25+(varb_1-52250)*0.28);
+    else if(varb_0==0&&varb_1>=171551&&varb_1<=372950)
+    printf(""%f"",8350*0.1+25600*0.15+18300*0.25+119300*0.28+(varb_1-171550)*0.33);
+    else if(varb_0==0&&varb_1>=372951)
+    printf(""%f"",8350*0.1+25600*0.15+18300*0.25+119300*0.28+201400*0.33+(varb_1-372950));
+    else if(varb_0==1&&varb_1>=0&&varb_1<=16700)
+    printf(""%f"",varb_1*0.1);
+    else if(varb_0==1&&varb_1>=16701&&varb_1<=67900)
+    printf(""%f"",16700*0.1+(varb_1-16700)*0.15);
+    else if(varb_0==1&&varb_1>=67901&&varb_1<=137050)
+    printf(""%f"",16700*0.1+51200*0.15+(varb_1-67900)*0.25);
+    else if(varb_0==1&&varb_1>=137051&&varb_1<=208850)
+    printf(""%f"",16700*0.1+51200*0.15+69150*0.25+(varb_1-137050)*0.28);
+    else if(varb_0==1&&varb_1>=208851&&varb_1<=372950)
+    printf(""%f"",16700*0.1+51200*0.15+69150*0.25+71800*0.28+(varb_1-171550)*0.33);
+    else if(varb_0==1&&varb_1>=372951)
+    printf(""%f"",16700*0.1+51200*0.15+69150*0.25+71800*0.28+164100*0.33+(varb_1-372950));
+    return 0;
+}",0.0,18
+25,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d %f"",&varb_2,&varb_1);
+if(varb_2=0)
+{
+if(varb_1<=8350)
+varb_0=varb_1*0.1;
+else if(varb_1<=33950)
+varb_0=835+(varb_1-8350)*0.15;
+else if(varb_1<=52250)
+varb_0=4675+(varb_1-33950)*0.25;
+else if(varb_1<=171550)
+varb_0=9250+(varb_1-52250)*0.28;
+else if(varb_1<=372950)
+varb_0=42654+(varb_1-171550)*0.33;
+else
+varb_0=109116+(varb_1-372950)*0.35;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=1)
+{
+if(varb_1<=16700)
+varb_0=0.1*varb_1;
+else if(varb_1<=67900)
+varb_0=1670+0.15*(varb_1-16700);
+else if(varb_1<=137050)
+varb_0=9350+0.25*(varb_1-67900);
+else if(varb_1<=208850)
+varb_0=0.28*(varb_1-137050)+26637.5;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-208850)+46741.5;
+else
+varb_0=0.35*(varb_1-372950)+100894.5;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=2)
+{
+if(varb_1<=8350)
+varb_0=0.1*varb_1;
+else if(varb_1<=33950)
+varb_0=0.15*(varb_1-8350)+835;
+else if(varb_1<=68525)
+varb_0=0.25*(varb_1-33950)+4675;
+else if(varb_1<=104425)
+varb_0=0.28*(varb_1-68525)+13318.75;
+else if(varb_1<=186475)
+varb_0=0.33*(varb_1-104425)+23370.75;
+else
+varb_0=0.35*(varb_1-186475)+50447.25;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=3)
+{
+if(varb_1<=11950)
+varb_0=0.1*varb_1;
+else if(varb_1<=45500)
+varb_0=0.15*(varb_1-11950)+1195;
+else if(varb_1<=117450)
+varb_0=0.25*(varb_1-45500)+6227.5;
+else if(varb_1<=190200)
+varb_0=0.28*(varb_1-117450)+24215;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-190200)+7418.24;
+else
+varb_0=0.35*(varb_1-372950)+134489.9;
+printf(""%.6f"",varb_0);
+}
+return 0;
+}
+",0.0,7
+26,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%d %d"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_0-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_0-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_2);
+    } 
+    else if(varb_0=2)   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_2);
+    }
+    else
+         ;
+    return 0;
+}
+",0.0,6
+27,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+(varb_2*0.1);
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,31
+28,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+scanf(""%d %f"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=52250)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=52251&&varb_1<=171550)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+(varb_1-52250)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=171551&&varb_1<=372950)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+(varb_1-171550)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+201399*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 1:
+if(varb_1<=16700)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=16701&&varb_1<=67900)
+{
+varb_2=16700*0.1+(varb_1-16700)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=67901&&varb_1<=137050)
+{
+varb_2=16700*0.1+51199*0.15+(varb_1-67900)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=137051&&varb_1<=208850)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+(varb_1-137050)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=208851&&varb_1<=372950)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+(varb_1-208850)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+164099*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 2:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=68525)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=68526&&varb_1<=104425)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+(varb_1-68525)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=104426&&varb_1<=186475)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+(varb_1-104425)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+82049*0.33+(varb_1-186475)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 3:
+if(varb_1<=11950)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=11951&&varb_1<=45500)
+{
+varb_2=11950*0.1+(varb_1-11950)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=45501&&varb_1<=117450)
+{
+varb_2=11950*0.1+33550*0.15+(varb_1-45500)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=117451&&varb_1<=190200)
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+(varb_1-117450)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=190201&&varb_1<=372950)
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+72749*0.28+(varb_1-190200)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+72749*0.28+182749*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+}
+}
+",0.0,22
+29,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_1-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_1-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2) 
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_1;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+30,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=0.15*(varb_1-16700)+1670;
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=0.25*(varb_1-67900)+9350;
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2) 
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_1;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+31,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+     scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    return 0;
+}
+",0.0,7
+32,2c911d616dcd1421016dd32ed265172c,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  if(varb_0==0)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=52250)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=52251 && varb_1<=171550)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=171551 && varb_1<=372950)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==1)
+  {
+    if(varb_1<=16700)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=16701 && varb_1<=67900)
+    varb_2=16700*0.10+(varb_1-16700)*0.15;
+    else if(varb_1>=67901 && varb_1<=137050)
+    varb_2=16700*0.10+(varb_1-16700)*0.25;
+    else if(varb_1>=137051 && varb_1<=208850)
+    varb_2=16700*0.10+(varb_1-16700)*0.28;
+    else if(varb_1>=208851 && varb_1<=372950)
+    varb_2=16700*0.10+(varb_1-16700)*0.33;
+    else 
+    varb_2=16700*0.10+(varb_1-16700)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==2)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=68525)
+    varb_2=8350*0.10+(33950-8350)*0.15+(varb_1-33950)*0.25;
+    else if(varb_1>=68526 && varb_1<=104425)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=104426 && varb_1<=186475)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else 
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else
+  {
+    if(varb_1<=11950)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=11951 && varb_1<=45500)
+    varb_2=11950*0.10+(varb_1-11950)*0.15;
+    else if(varb_1>=45501 && varb_1<=117450)
+    varb_2=11950*0.10+(varb_1-11950)*0.25;
+    else if(varb_1>=117451 && varb_1<=190200)
+    varb_2=11950*0.10+(varb_1-11950)*0.28;
+    else if(varb_1>=190201 && varb_1<=372950)
+    varb_2=11950*0.10+(varb_1-11950)*0.33;
+    else 
+    varb_2=11950*0.10+(varb_1-11950)*0.35;
+    printf(""%f"",varb_2);
+  }
+  return 0;
+}",0.0,63
+33,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d %f"",&varb_0,&varb_1);
+    switch(varb_0)
+    {
+        case 0:
+        if(varb_1<=8350&&varb_1>=0)
+        printf(""%.6f"",0.1*varb_1);
+        else if(varb_1>8350&&varb_1<=33950)
+        printf(""%.6f"",0.1*8350+0.15*(varb_1-8350));
+        else if(varb_1>33950&&varb_1<=52250)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*(varb_1-33950));
+        else if(varb_1>52250&&varb_1<=171550)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*(varb_1-52250));
+        else if(varb_1>171550&&varb_1<=372950)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*119300+0.33*(varb_1-171550));
+        else
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*119300+0.33*201400+0.35*(varb_1-372950));
+        break;
+        case 1:
+        if(varb_1<=16700&&varb_1>=0)
+        printf(""%.6f"",0.1*varb_1);
+        else if(varb_1>16700&&varb_1<=67900)
+        printf(""%.6f"",0.1*16700+0.15*(varb_1-16700));
+        else if(varb_1>67900&&varb_1<=137050)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*(varb_1-67900));
+        else if(varb_1>137050&&varb_1<=208850)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*(varb_1-137050));
+        else if(varb_1>208850&&varb_1<=372950)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*71800+0.33*(varb_1-208850));
+        else
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*71800+0.33*164100+0.35*(varb_1-372950));
+        break;
+        case 2:printf(""hhh"");break;
+        case 3:printf(""hhhh"");break;
+     }
+    return 0;
+}",0.0,37
+34,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d %d"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+{
+if(0<varb_0 && varb_0<=8350)
+printf(""%f"",0.1*varb_1);
+else if(8350<varb_0 && varb_0<=33950)
+printf(""%f"",0.1*8350+(varb_1-8350)*0.15);
+else if(33950<varb_0 && varb_0<=52250)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(varb_1-33950)*0.25);
+else if(52250<varb_0 && varb_0<=171550)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(52250-33950)*0.25+(varb_1-522950)*0.28);
+else if(171550<varb_0 && varb_0<=372950)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(52250-33950)*0.25+(171550-52250)*0.28+(varb_1-171550)*0.33);
+else if(372950<varb_0)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(52250-33950)*0.25+(171550-52250)*0.28+(372950-171550)*0.33+(varb_1-372950)*0.35);
+break;
+}
+case 1:
+{
+if(0<varb_0 && varb_0<=16700)
+printf(""%f"",0.1*varb_1);
+else if(16700<varb_0 && varb_0<=67900)
+printf(""%f"",0.1*16700+(varb_1-16700)*0.15);
+else if(67900<varb_0 && varb_0<=137050)
+printf(""%f"",0.1*16700+0.15*(67900-16700)+(varb_1-67900)*0.25);
+else if(137050<varb_0 && varb_0<=208850)
+printf(""%f"",0.1*16700+0.15*(67900-16700)+(137050-67900)*0.25+(varb_1-137050)*0.28);
+else if(208850<varb_0 && varb_0<=372950)
+printf(""%f"",0.1*16700+0.15*(67900-16700)+(137050-67900)*0.25+(208850-137050)*0.28+(varb_1-208850)*0.33);
+else if(372950<varb_0)
+printf(""%f"",0.1*16700+0.15*(67900-16700)+(137050-67900)*0.25+(208850-137050)*0.28+(372950-208850)*0.33+(varb_1-372950)*0.35);
+break;
+}
+case 2:
+{
+if(0<varb_0 && varb_0<=8350)
+printf(""%f"",0.1*varb_1);
+else if(8350<varb_0 && varb_0<=33950)
+printf(""%f"",0.1*8350+(varb_1-8350)*0.15);
+else if(33950<varb_0 && varb_0<=68525)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(varb_1-33950)*0.25);
+else if(68525<varb_0 && varb_0<=104425)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(68525-33950)*0.25+(varb_1-68525)*0.28);
+else if(104425<varb_0 && varb_0<=186475)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(68525-33950)*0.25+(104425-68525)*0.28+(varb_1-104425)*0.33);
+else if(186475<varb_0)
+printf(""%f"",0.1*8350+0.15*(33950-8350)+(68525-33950)*0.25+(104425-68525)*0.28+(186475-104425)*0.33+(varb_1-186475)*0.35);
+break;
+}
+case 3:
+{
+if(0<varb_0 && varb_0<=11950)
+printf(""%f"",0.1*varb_1);
+else if(11950<varb_0 && varb_0<=45500)
+printf(""%f"",0.1*11950+(varb_1-11950)*0.15);
+else if(45500<varb_0 && varb_0<=117450)
+printf(""%f"",0.1*11950+(45500-11950)*0.15+(varb_1-45500)*0.25);
+else if(117450<varb_0 && varb_0<=190200)
+printf(""%f"",0.1*11950+(45500-11950)*0.15+(117450-45500)*0.25+(varb_1-117450)*0.28);
+else if(190200<varb_0 && varb_0<=372950)
+printf(""%f"",0.1*11950+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(varb_1-190200)*0.33);
+else if(372950<varb_0)
+printf(""%f"",0.1*11950+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(372950-190200)*0.33+(varb_1-372950)*0.35);
+break;
+}
+}
+return 0;
+}",0.0,10
+35,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int varb_0,varb_1;
+    float varb_2;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    if(varb_0==0)
+    {
+    if(varb_1<=8350)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>8350&&varb_1<=33950)
+    {varb_2=8350*0.1+(varb_1-8350)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=33950&&varb_1<=52250)
+    {varb_2=8350*0.1+25600*0.15+(varb_1-33950)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>52250&&varb_1<=171550)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+(varb_1-52250)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>171550&&varb_1<=372950)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+119300*0.28+(varb_1-171550)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+119300*0.28+201400*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+    if(varb_0==1)
+    {
+    if(varb_1<=16700)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>16700&&varb_1<=67900)
+    {varb_2=16700*0.1+(varb_1-16700)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=67900&&varb_1<=137050)
+    {varb_2=16700*0.1+51200*0.15+(varb_1-67900)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>137050&&varb_1<=208850)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+(varb_1-137050)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>208850&&varb_1<=372950)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+71800*0.28+(varb_1-208850)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+71800*0.28+164100*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+    if(varb_0==2)
+    {
+    if(varb_1<=8350)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>8350&&varb_1<=33950)
+    {varb_2=8350*0.1+(varb_1-8350)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=33950&&varb_1<=68525)
+    {varb_2=8350*0.1+25600*0.15+(varb_1-33950)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>68525&&varb_1<=104425)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+(varb_1-68525)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>104425&&varb_1<=186475)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+35900*0.28+(varb_1-186475)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>186475)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+35900*0.28+82500*0.33+(varb_1-186475)*0.35;
+    printf(""%f"",varb_2);}
+    }if(varb_0==3)
+    {
+    if(varb_1<=11950)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>11950&&varb_1<=45500)
+    {varb_2=11950*0.1+(varb_1-11950)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=45500&&varb_1<=117450)
+    {varb_2=11950*0.1+33600*0.15+(varb_1-45500)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>117450&&varb_1<=190200)
+    {varb_2=11950*0.1+33600*0.15+71950*0.25+(varb_1-117450)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>190200&&varb_1<=372950)
+    {varb_2=11950*0.1+33600*0.15+71950*0.25+72750*0.28+(varb_1-190200)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=11950*0.1+25600*0.15+18300*0.25+119300*0.28+182750*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+}",0.0,70
+36,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1;
+  int varb_2;
+  scanf(""%d%f"",&varb_2,&varb_0);
+  switch(varb_2)
+  {
+    case 0:
+      if(varb_0>=0&&varb_0<=8350)
+      varb_1=varb_0*0.1;
+      else if(varb_0>=8351&&varb_0<=33950)
+      varb_1=(varb_0-8350)*0.15+835;
+      else if(varb_0>=33951&&varb_0<=52250)
+      varb_1=(varb_0-33950)*0.25+835+3840;
+      else if(varb_0>=52251&&varb_0<=171550)
+      varb_1=(varb_0-52250)*0.28+835+3840+4575;
+      else if(varb_0>=171551&&varb_0<=372950)
+      varb_1=(varb_0-171550)*0.33+835+3840+4575+39369;
+      else
+      varb_1=(varb_0-372950)*0.35+835+3840+4575+39369+70489.65;
+      break;
+    case 1:
+      if(varb_0>=0&&varb_0<=16700)
+      varb_1=varb_0*0.1;
+      else if(varb_0>=16701&&varb_0<=67900)
+      varb_1=(varb_0-16700)*0.15+1670;
+      else if(varb_0>=67901&&varb_0<=137050)
+      varb_1=(varb_0-67900)*0.25+1670+7680;
+      else if(varb_0>=137051&&varb_0<=208850)
+      varb_1=(varb_0-137050)*0.28+1670+7680+17287.5;
+      else if(varb_0>=208851&&varb_0<=372950)
+      varb_1=(varb_0-208851)*0.33+1670+7680+17287.5+20104;
+      else
+      varb_1=(varb_0-372950)*0.35+1670+7680+17287.5+20104+54153;
+      break;
+    case 2:
+      if(varb_0>=0&&varb_0<=8350)
+      varb_1=varb_0*0.1;
+      else if(varb_0>=8351&&varb_0<=33950)
+      varb_1=(varb_0-8350)*0.15+835;
+      else if(varb_0>=33951&&varb_0<=68525)
+      varb_1=(varb_0-33950)*0.25+835+3840;
+      else if(varb_0>=68526&&varb_0<=104425)
+      varb_1=(varb_0-68520)*0.28+835+3840+8642.5;
+      else if(varb_0>=104426&&varb_0<=186475)
+      varb_1=(varb_0-104426)*0.33+835+3840+8642.5+9940;
+      else
+      varb_1=(varb_0-104426)*0.35+835+3840+8642.5+9940+28396.5;
+      break;
+      case 3:
+      if(varb_0>=0&&varb_0<=11950)
+      varb_1=varb_0*0.1;
+      else if(varb_0>=11951&&varb_0<=45500)
+      varb_1=varb_0*0.15;
+      else if(varb_0>=45501&&varb_0<=117450)
+      varb_1=varb_0*0.25;
+      else if(varb_0>=117451&&varb_0<=190200)
+      varb_1=varb_0*0.28;
+      else if(varb_0>=19021&&varb_0<=372950)
+      varb_1=varb_0*0.33;
+      else
+      varb_1=varb_0*0.35;
+      break;
+  }
+  printf(""%f"",varb_1);
+  return 0;
+}",0.0,55
+37,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main() 
+{
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d%f"",&varb_2,&varb_0);
+switch(varb_2)
+{
+  case 0:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=52250) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33950)*0.25;
+  if(varb_0>=52251&&varb_0<=171550) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(varb_0-52251)*0.28;
+  if(varb_0>=171551&&varb_0<=372950)
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(varb_0-171551)*0.33;
+  if(varb_0>=372951) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(372950-171550)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 1:
+  if(varb_0<=16700)
+     varb_1=varb_0*0;
+  if(varb_0>=16701&&varb_0<=67900)
+     varb_1=16700*0.1+(varb_0-16701)*0.15;
+  if(varb_0>=67901&&varb_0<=137050) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(varb_0-67901)*0.25;
+  if(varb_0>=137051&&varb_0<=208850) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(varb_0-137051)*0.28;
+  if(varb_0>=208851&&varb_0<=372950)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(varb_0-208851)*0.33;
+  if(varb_0>=372951)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(372950-208850)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 2:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=68525)
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33951)*0.25;
+  if(varb_0>=68526&&varb_0<=104425)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(varb_0-68526)*0.28;
+  if(varb_0>=104426&&varb_0<=186475)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(varb_0-104426)*0.33;
+  if(varb_0>=186476)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(186475-104425)*0.33+(varb_0-186476)*0.35;
+  break;
+  case 3:
+  if(varb_0<=11950)
+  varb_1=varb_0*0.1;
+  if(varb_0>=11951&&varb_0<=45500)
+     varb_1=11950*0.1+(varb_0-11951)*0.15;
+  if(varb_0>=45501&&varb_0<=117450)
+     varb_1=11950*0.1+(45500-11950)*0.15+(varb_0-45501)*0.25;
+  if(varb_0>=117451&&varb_0<=190200)
+     varb_1=11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(varb_0-117451)*0.28;
+  if(varb_0>=190201&&varb_0<=372950)
+     varb_1=11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(varb_0-190201)*0.33;
+  if(varb_0>=372951)
+     varb_1=11950*0.1+(45500-11951)*0.15+(117450-45501)*0.25+(190200-117451)*0.28+(372950-190201)*0.33+(varb_0-372951);
+  break;
+}
+printf(""%0.6f"",varb_1);
+return 0;
+}
+",0.0,27
+38,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    int varb_0, varb_1;
+    double varb_2;
+    scanf(""%d %d"", &varb_0, &varb_1);
+    if(varb_0 < 0 || varb_0>3)
+        printf(""输入身份有误"");
+    else
+        switch(varb_0)
+        {
+        case 0:
+            if(varb_1 >= 0 && varb_1 <= 8350)
+                varb_2 = 0.1 * varb_1;
+            else if(varb_1 <= 33950)
+                varb_2 =(varb_1 - 8350) * 0.15 + 835;
+            else if(varb_1 <= 52250)
+                varb_2 = 0.25 *(varb_1 - 33950) + 4675;
+            else if(varb_1 <= 171550)
+                varb_2 = 0.28 *(varb_1 - 52250) + 9250;
+            else if(varb_1 <= 372950)
+                varb_2 = 0.33 *(varb_1 - 171550) + 42654;
+            else
+                varb_2 = 0.35 *(varb_1 - 372950) + 109116;
+            printf(""%f\n"", varb_2);
+            break;
+        case 1:
+            if(varb_1 >= 0 && varb_1 <= 16700)
+                varb_2 = 0.1 * varb_1;
+            else if(varb_1 <= 67900)
+                varb_2 = 0.15 *(varb_1 - 16700) + 1670;
+            else if(varb_1 <= 137050)
+                varb_2 = 0.25 *(varb_1 - 67900) + 9350;
+            else if(varb_1 <= 208850)
+                varb_2 = 0.28 *(varb_1 - 137505) + 26637.5;
+            else if(varb_1 <= 372950)
+                varb_2 = 0.33 *(varb_1 - 208850) + 46741.5;
+            else
+                varb_2 = 0.35 *(varb_1 - 372950) + 100894.5;
+            printf(""%f\n"", varb_2);
+            break;
+        case 2:
+            if(varb_1 >= 0 && varb_1 <= 8350)
+                varb_2 = 0.1 * varb_1;
+            else if(varb_1 <= 33950)
+                varb_2 = 0.15 *(varb_1 - 8350) + 835;
+            else if(varb_1 <= 68525)
+                varb_2 = 0.25 *(varb_1 - 33950) + 4675;
+            else if(varb_1 <= 104425)
+                varb_2 = 0.28 *(varb_1 - 68525) + 13318.75;
+            else if(varb_1 <= 186475)
+                varb_2 = 0.33 *(varb_1 - 104425) + 23370.75;
+            else
+                varb_2 = 0.35 *(varb_1 - 186475) + 50447.25;
+            printf(""%f\n"", varb_2);
+            break;
+        case 3:
+            if(varb_1 >= 0 && varb_1 <= 11950)
+                varb_2 = varb_1 * 0.1;
+            else if(varb_1 <= 45500)
+                varb_2 = 0.15 *(varb_1 - 11950) + 1195;
+            else if(varb_1 <= 117450)
+                varb_2 = 0.25 *(varb_1 - 45500) + 6227.5;
+            else if(varb_1 <= 190200)
+                varb_2 = 0.28 *(varb_1 - 117450) + 24215;
+            else if(varb_1 <= 372950)
+                varb_2 = 0.33 *(varb_1 - 190200) + 44458.5;
+            else
+                varb_2 = 0.35 *(varb_1 - 372950) + 104892.5;
+            printf(""%f\n"", varb_2);
+            break;
+        }
+    return 0;
+}
+",0.0,72
+39,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_0,&varb_1);
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+    if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+    }  
+     else if(varb_1>=(varb_5+1)&&varb_1<=varb_6) 
+   	{
+		   varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_4+1)&&varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else if(varb_1>=(varb_3+1)&&varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+    else if(varb_1>=(varb_2+1)&&varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2)*0.15+varb_2*0.1;
+     printf(""%f"",varb_7);
+	}
+   else
+	{
+	    varb_7=varb_1*0.1;
+     printf(""%f"",varb_7);
+	}
+}",0.0,31
+40,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main() 
+{
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d%f"",&varb_2,&varb_0);
+switch(varb_2)
+{
+  case 0:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=52250) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33950)*0.25;
+  if(varb_0>=52251&&varb_0<=171550) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(varb_0-52251)*0.28;
+  if(varb_0>=171551&&varb_0<=372950)
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(varb_0-171551)*0.33;
+  if(varb_0>=372951) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(372950-171550)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 1:
+  if(varb_0<=16700)
+     varb_1=varb_0*0;
+  if(varb_0>=16701&&varb_0<=67900)
+     varb_1=16700*0.1+(varb_0-16701)*0.15;
+  if(varb_0>=67901&&varb_0<=137050) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(varb_0-67901)*0.25;
+  if(varb_0>=137051&&varb_0<=208850) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(varb_0-137051)*0.28;
+  if(varb_0>=208851&&varb_0<=372950)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(varb_0-208851)*0.33;
+  if(varb_0>=372951)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(372950-208850)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 2:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=68525)
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33951)*0.25;
+  if(varb_0>=68526&&varb_0<=104425)
+     varb_1=8350*0.1+(33950-8351)*0.15+(68525-33951)*0.25+(varb_0-68526)*0.28;
+  if(varb_0>=104426&&varb_0<=186475)
+     varb_1=8350*0.1+(33950-8351)*0.15+(68525-33951)*0.25+(104425-68526)*0.28+(varb_0-104426)*0.33;
+  if(varb_0>=186476)
+     varb_1=8350*0.1+(33950-8351)*0.15+(68525-33951)*0.25+(104425-68526)*0.28+(186475-104426)*0.33+(varb_0-186476)*0.35;
+  break;
+  case 3:
+  if(varb_0<=11950)
+  varb_1=varb_0*0.1;
+  if(varb_0>=11951&&varb_0<=45500)
+     varb_1=11950*0.1+(varb_0-11951)*0.15;
+  if(varb_0>=45501&&varb_0<=117450)
+     varb_1=11950*0.1+(45500-11951)*0.15+(varb_0-45501)*0.25;
+  if(varb_0>=117451&&varb_0<=190200)
+     varb_1=11950*0.1+(45500-11951)*0.15+(117450-45501)*0.25+(varb_0-117451)*0.28;
+  if(varb_0>=190201&&varb_0<=372950)
+     varb_1=11950*0.1+(45500-11951)*0.15+(117450-45501)*0.25+(190200-117451)*0.28+(varb_0-190201)*0.33;
+  if(varb_0>=372951)
+     varb_1=11950*0.1+(45500-11951)*0.15+(117450-45501)*0.25+(190200-117451)*0.28+(372950-190201)*0.33+(varb_0-372951);
+  break;
+}
+printf(""%0.6f"",varb_1);
+return 0;
+}
+",0.0,27
+41,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+long varb_2;
+scanf(""%d %f"",&varb_2,&varb_1);
+if(varb_2=0)
+{
+if(varb_1<=8350)
+varb_0=varb_1*0.1;
+else if(varb_1<=33950)
+varb_0=835+(varb_1-8350)*0.15;
+else if(varb_1<=52250)
+varb_0=4675+(varb_1-33950)*0.25;
+else if(varb_1<=171550)
+varb_0=9250+(varb_1-52250)*0.28;
+else if(varb_1<=372950)
+varb_0=42654+(varb_1-171550)*0.33;
+else
+varb_0=109116+(varb_1-372950)*0.35;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=1)
+{
+if(varb_1<=16700)
+varb_0=0.1*varb_1;
+else if(varb_1<=67900)
+varb_0=1670+0.15*(varb_1-16700);
+else if(varb_1<=137050)
+varb_0=9350+0.25*(varb_1-67900);
+else if(varb_1<=208850)
+varb_0=0.28*(varb_1-137050)+26637.5;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-208850)+46741.5;
+else
+varb_0=0.35*(varb_1-372950)+100894.5;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=2)
+{
+if(varb_1<=8350)
+varb_0=0.1*varb_1;
+else if(varb_1<=33950)
+varb_0=0.15*(varb_1-8350)+835;
+else if(varb_1<=68525)
+varb_0=0.25*(varb_1-33950)+4675;
+else if(varb_1<=104425)
+varb_0=0.28*(varb_1-68525)+13318.75;
+else if(varb_1<=186475)
+varb_0=0.33*(varb_1-104425)+23370.75;
+else
+varb_0=0.35*(varb_1-186475)+50447.25;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=3)
+{
+if(varb_1<=11950)
+varb_0=0.1*varb_1;
+else if(varb_1<=45500)
+varb_0=0.15*(varb_1-11950)+1195;
+else if(varb_1<=117450)
+varb_0=0.25*(varb_1-45500)+6227.5;
+else if(varb_1<=190200)
+varb_0=0.28*(varb_1-117450)+24215;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-190200)+7418.24;
+else
+varb_0=0.35*(varb_1-372950)+134489.9;
+printf(""%.6f"",varb_0);
+}
+return 0;
+}
+",0.0,5
+42,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int varb_0,varb_1;
+    float varb_2;
+    scanf(""%d%d"",&varb_0,&varb_1);
+    if(varb_0==0)
+    {
+    if(varb_1<=8350)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>8350&&varb_1<=33950)
+    {varb_2=8350*0.1+(varb_1-8350)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=33950&&varb_1<=52250)
+    {varb_2=8350*0.1+25600*0.15+(varb_1-33950)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>52250&&varb_1<=171550)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+(varb_1-52250)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>171550&&varb_1<=372950)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+119300*0.28+(varb_1-171550)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+119300*0.28+201400*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+    if(varb_0==1)
+    {
+    if(varb_1<=16700)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>16700&&varb_1<=67900)
+    {varb_2=16700*0.1+(varb_1-16700)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=67900&&varb_1<=137050)
+    {varb_2=16700*0.1+51200*0.15+(varb_1-67900)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>137050&&varb_1<=208850)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+(varb_1-137050)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>208850&&varb_1<=372950)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+71800*0.28+(varb_1-208850)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=16700*0.1+51200*0.15+69150*0.25+71800*0.28+164100*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+    if(varb_0==2)
+    {
+    if(varb_1<=8350)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>8350&&varb_1<=33950)
+    {varb_2=8350*0.1+(varb_1-8350)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=33950&&varb_1<=68525)
+    {varb_2=8350*0.1+25600*0.15+(varb_1-33950)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>68525&&varb_1<=104425)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+(varb_1-68525)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>104425&&varb_1<=186475)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+35900*0.28+(varb_1-186475)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>186475)
+    {varb_2=8350*0.1+25600*0.15+34575*0.25+35900*0.28+82500*0.33+(varb_1-186475)*0.35;
+    printf(""%f"",varb_2);}
+    }
+    if(varb_0==3)
+    {
+    if(varb_1<=11950)
+    {varb_2=varb_1*0.1;
+    printf(""%f"",varb_2);}
+    if(varb_1>11950&&varb_1<=45500)
+    {varb_2=8350*0.1+(varb_1-8350)*0.15;
+    printf(""%f"",varb_2);}
+    if(varb_1>=45500&&varb_1<=117450)
+    {varb_2=8350*0.1+33600*0.15+(varb_1-45500)*0.25;
+    printf(""%f"",varb_2);}
+    if(varb_1>117450&&varb_1<=190200)
+    {varb_2=8350*0.1+33600*0.15+71950*0.25+(varb_1-117450)*0.28;
+    printf(""%f"",varb_2);}
+    if(varb_1>190200&&varb_1<=372950)
+    {varb_2=8350*0.1+33600*0.15+71950*0.25+72750*0.28+(varb_1-190200)*0.33;
+    printf(""%f"",varb_2);}
+    if(varb_1>372950)
+    {varb_2=8350*0.1+25600*0.15+18300*0.25+119300*0.28+182750*0.33+(varb_1-372950)*0.35;
+    printf(""%f"",varb_2);}
+    }
+}",0.0,14
+43,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+scanf(""%d %f"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=52250)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=52251&&varb_1<=171550)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+(varb_1-52250)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=171551&&varb_1<=372950)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+(varb_1-171550)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+201399*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 1:
+if(varb_1<=16700)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=16701&&varb_1<=67900)
+{
+varb_2=16700*0.1+(varb_1-16700)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=67901&&varb_1<=137050)
+{
+varb_2=16700*0.1+51199*0.15+(varb_1-67900)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=137051&&varb_1<=208850)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+(varb_1-137050)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=208851&&varb_1<=372950)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+(varb_1-208850)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+164099*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 2:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=68525)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=68526&&varb_1<=104425)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+(varb_1-68525)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=104426&&varb_1<=186475)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+(varb_1-104425)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+82049*0.33+(varb_1-186475)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 3:
+if(varb_1<=11950)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=11951&&varb_1<=45500)
+{
+varb_2=11950*0.1+(varb_1-11950)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=45501&&varb_1<=117450)
+{
+varb_2=11950*0.1+33549*0.15+(varb_1-45500)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=117451&&varb_1<=190200)
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+(varb_1-117450)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=190201&&varb_1<=372950)
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+72749*0.28+(varb_1-190200)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=11950*0.1+33549*0.15+71949*0.25+72749*0.28+182749*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+}
+}
+",0.0,22
+44,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_1-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_1-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2) 
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+45,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+scanf(""%d %f"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=52250)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=52251&&varb_1<=171550)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+(varb_1-52250)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=171551&&varb_1<=372950)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+(varb_1-171550)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+201399*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 1:
+if(varb_1<=16700)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=16701&&varb_1<=67900)
+{
+varb_2=16700*0.1+(varb_1-16700)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=67901&&varb_1<=137050)
+{
+varb_2=16700*0.1+51199*0.15+(varb_1-67900)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=137051&&varb_1<=208850)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+(varb_1-137050)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=208851&&varb_1<=372950)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+(varb_1-208850)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+164099*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 2:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=68525)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=68526&&varb_1<=104425)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+(varb_1-68525)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=104426&&varb_1<=186475)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+(varb_1-104425)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+82049*0.33;
+printf(""%f"",varb_2);
+}
+break;
+}
+}
+",0.0,22
+46,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0;
+	float varb_1,varb_2;
+	scanf(""%d %f"",&varb_0,&varb_2);
+	if(varb_0==0&&varb_2>=0)
+	{
+		if(varb_2>=0&&varb_2<=8350)
+			varb_1 = varb_2*0.1;
+		else if(varb_2<=33950)
+		    varb_1 = 8350*0.1+(varb_2-8350)*0.15;
+		else if(varb_2<=52250)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(varb_2-33950)*0.25;
+		else if(varb_2<=171550)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(52550-33950)*0.25+(varb_2-52250)*0.28;
+		else if(varb_2<=372950)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(52550-33950)*0.25+(171550-52250)*0.28+(varb_2-171550)*0.33;
+		else
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(52550-33950)*0.25+(171550-52250)*0.28+(372950-171550)*0.33+(varb_2-372950)*0.35;
+	}
+	if(varb_0==1&&varb_2>=0)
+	{
+		if(varb_2>=0&&varb_2<=16700)
+			varb_1 = varb_2*0.1;
+		else if(varb_2<=47900)
+		    varb_1 = 16700*0.1+(varb_2-16700)*0.15;
+		else if(varb_2<=137050)
+		    varb_1 = 16700*0.1+(47900-16700)*0.15+(varb_2-47900)*0.25;
+		else if(varb_2<=208850)
+		    varb_1 = 16700*0.1+(47900-16700)*0.15+(137050-47900)*0.25+(varb_2-137050)*0.28;
+		else if(varb_2<=372950)
+		    varb_1 = 16700*0.1+(47900-16700)*0.15+(137050-47900)*0.25+(208850-137050)*0.28+(varb_2-208850)*0.33;
+		else
+		    varb_1 = 16700*0.1+(47900-16700)*0.15+(137050-47900)*0.25+(208850-137050)*0.28+(372950-208850)*0.33+(varb_2-372950)*0.35;		    
+	}
+	if(varb_0==2&&varb_2>=0)
+	{
+		if(varb_2>=0&&varb_2<=8350)
+			varb_1 = varb_2*0.1;
+		else if(varb_2<=33950)
+		    varb_1 = 8350*0.1+(varb_2-8350)*0.15;
+		else if(varb_2<=68525)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(varb_2-33950)*0.25;
+		else if(varb_2<=104425)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(varb_2-68525)*0.28;
+		else if(varb_2<=186475)
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(varb_2-104425)*0.33;
+		else
+		    varb_1 = 8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(186475-104425)*0.33+(varb_2-186475)*0.35;
+	}
+	if(varb_0==3&&varb_2>=0)
+	{
+		if(varb_2<=11950)
+			varb_1 = varb_2*0.1;
+		else if(varb_2<=45500)
+		    varb_1 = 11950*0.1+(varb_2-11950)*0.15;
+		else if(varb_2<=117450)
+		    varb_1 = 11950*0.1+(45500-11950)*0.15+(varb_2-45500)*0.25;
+		else if(varb_2<=190200)
+		    varb_1 = 11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(varb_2-117450)*0.28;
+		else if(varb_2<=372950)
+		    varb_1 = 11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(varb_2-190200)*0.33;
+		else
+		    varb_1 = 11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(372950-190200)*0.33+(varb_2-372950)*0.35;
+	}
+	printf(""%.6f"",varb_1);
+	return 0;
+}",0.0,26
+47,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+scanf(""%d %f"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=52250)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=52251&&varb_1<=171550)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+(varb_1-52250)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=171551&&varb_1<=372950)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+(varb_1-171550)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+201399*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 1:
+if(varb_1<=16700)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=16701&&varb_1<=67900)
+{
+varb_2=16700*0.1+(varb_1-16700)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=67901&&varb_1<=137050)
+{
+varb_2=16700*0.1+51199*0.15+(varb_1-67900)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=137051&&varb_1<=208850)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+(varb_1-137050)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=208851&&varb_1<=372950)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+(varb_1-208850)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+164099*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 2:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=68525)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=68526&&varb_1<=104425)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+(varb_1-68525)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=104426&&varb_1<=186475)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+(varb_1-104425)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+82049*0.33;
+printf(""%f"",varb_2);
+}
+break;
+}
+}
+",0.0,22
+48,2c911d616dcd1421016dd32ed265172c,"#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int varb_0,varb_1;
+  float varb_2;
+  scanf(""%d %d"",&varb_0,&varb_1);
+  if(varb_0==0)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=52250)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=52251 && varb_1<=171550)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=171551 && varb_1<=372950)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==1)
+  {
+    if(varb_1<=16700)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=16701 && varb_1<=67900)
+    varb_2=16700*0.10+(varb_1-16700)*0.15;
+    else if(varb_1>=67901 && varb_1<=137050)
+    varb_2=16700*0.10+(varb_1-16700)*0.25;
+    else if(varb_1>=137051 && varb_1<=208850)
+    varb_2=16700*0.10+(varb_1-16700)*0.28;
+    else if(varb_1>=208851 && varb_1<=372950)
+    varb_2=16700*0.10+(varb_1-16700)*0.33;
+    else 
+    varb_2=16700*0.10+(varb_1-16700)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else if(varb_0==2)
+  {
+    if(varb_1<=8350)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=8351 && varb_1<=33950)
+    varb_2=8350*0.10+(varb_1-8350)*0.15;
+    else if(varb_1>=33951 && varb_1<=68525)
+    varb_2=8350*0.10+(varb_1-8350)*0.25;
+    else if(varb_1>=68526 && varb_1<=104425)
+    varb_2=8350*0.10+(varb_1-8350)*0.28;
+    else if(varb_1>=104426 && varb_1<=186475)
+    varb_2=8350*0.10+(varb_1-8350)*0.33;
+    else 
+    varb_2=8350*0.10+(varb_1-8350)*0.35;
+    printf(""%f"",varb_2);
+  }
+  else
+  {
+    if(varb_1<=11950)
+    varb_2=0.10*varb_1;
+    else if(varb_1>=11951 && varb_1<=45500)
+    varb_2=11950*0.10+(varb_1-11950)*0.15;
+    else if(varb_1>=45501 && varb_1<=117450)
+    varb_2=11950*0.10+(varb_1-11950)*0.25;
+    else if(varb_1>=117451 && varb_1<=190200)
+    varb_2=11950*0.10+(varb_1-11950)*0.28;
+    else if(varb_1>=190201 && varb_1<=372950)
+    varb_2=11950*0.10+(varb_1-11950)*0.33;
+    else 
+    varb_2=11950*0.10+(varb_1-11950)*0.35;
+    printf(""%f"",varb_2);
+  }
+  return 0;
+}",0.0,15
+49,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6;
+	float varb_7;
+	scanf(""%d %d,&varb_0,&b"");
+	switch(varb_0)
+	{
+		case(0):varb_2=8350;varb_3=33950;varb_4=52250;varb_5=171550;varb_6=372950;break;
+		case(1):varb_2=16700;varb_3=67900;varb_4=137050;varb_5=208850;varb_6=372950;break;	
+		case(2):varb_2=8350;varb_3=33950;varb_4=68525;varb_5=104425;varb_6=186495;break;	
+		case(3):varb_2=11950;varb_3=45500;varb_4=117450;varb_5=190200;varb_6=372950;break;	
+	}
+	if(varb_1>varb_6)
+	{
+	    varb_7=(varb_1-varb_6-1)*0.35+(varb_6-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+    }  
+    else if((varb_5+1)<=varb_1<=varb_6)
+	{
+		varb_7=(varb_1-varb_5-1)*0.33+(varb_5-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if((varb_4+1)<=varb_1<=varb_5)
+	{
+	    varb_7=(varb_1-varb_4-1)*0.28+(varb_4-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+      else if((varb_3+1)<=varb_1<=varb_4)
+	{
+	    varb_7=(varb_1-varb_3-1)*0.25+(varb_3-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else  if((varb_2+1)<=varb_1<=varb_3)
+	{
+	    varb_7=(varb_1-varb_2-1)*0.15+835;printf(""%f"",varb_7);
+	}
+     else if(0<=varb_1<=varb_2)
+	{
+	    varb_7=varb_1*0.1;printf(""%f"",varb_7);
+	}
+}",0.0,6
+50,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+    scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    else
+    {
+        printf(""输入身份有误"");
+    }
+    return 0;
+}
+",0.0,7
+51,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+int varb_0;
+float varb_1,varb_2;
+scanf(""%d %f"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=52250)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=52251&&varb_1<=171550)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+(varb_1-52250)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=171551&&varb_1<=372950)
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+(varb_1-171550)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+18299*0.25+119299*0.28+201399*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 1:
+if(varb_1<=16700)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=16701&&varb_1<=67900)
+{
+varb_2=16700*0.1+(varb_1-16700)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=67901&&varb_1<=137050)
+{
+varb_2=16700*0.1+51199*0.15+(varb_1-67900)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=137051&&varb_1<=208850)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+(varb_1-137050)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=208851&&varb_1<=372950)
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+(varb_1-208850)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=16700*0.1+51199*0.15+69149*0.25+71799*0.28+164099*0.33+(varb_1-372950)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+case 2:
+if(varb_1<=8350)
+{
+varb_2=varb_1*0.1;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=8351&&varb_1<=33950)
+{
+varb_2=8350*0.1+(varb_1-8350)*0.15;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=33951&&varb_1<=68525)
+{
+varb_2=8350*0.1+25599*0.15+(varb_1-33950)*0.25;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=68526&&varb_1<=104425)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+(varb_1-68525)*0.28;
+printf(""%f"",varb_2);
+}
+else if(varb_1>=104426&&varb_1<=186475)
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+(varb_1-104425)*0.33;
+printf(""%f"",varb_2);
+}
+else
+{
+varb_2=8350*0.1+25599*0.15+34574*0.25+35899*0.28+82049*0.33+(varb_1-186475)*0.35;
+printf(""%f"",varb_2);
+}
+break;
+}
+}
+",0.0,22
+52,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main() 
+{
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d%f"",&varb_2,&varb_0);
+switch(varb_2)
+{
+  case 0:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=52250) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33950)*0.25;
+  if(varb_0>=52251&&varb_0<=171550) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(varb_0-52251)*0.28;
+  if(varb_0>=171551&&varb_0<=372950)
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(varb_0-171551)*0.33;
+  if(varb_0>=372951) 
+     varb_1=8350*0.1+(33950-8350)*0.15+(52250-33950)*0.25+(171550-52250)*0.28+(372950-171550)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 1:
+  if(varb_0<=16700)
+     varb_1=varb_0*0;
+  if(varb_0>=16701&&varb_0<=67900)
+     varb_1=16700*0.1+(varb_0-16700)*0.15;
+  if(varb_0>=67901&&varb_0<=137050) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(varb_0-67901)*0.25;
+  if(varb_0>=137051&&varb_0<=208850) 
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(varb_0-137051)*0.28;
+  if(varb_0>=208851&&varb_0<=372950)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(varb_0-208851)*0.33;
+  if(varb_0>=372951)
+     varb_1=16700*0.1+(67900-16700)*0.15+(137050-67900)*0.25+(208850-137050)*0.28+(372950-208850)*0.33+(varb_0-372951)*0.35;
+  break;
+  case 2:
+  if(varb_0<=8350)
+     varb_1=varb_0*0.1;
+  if(varb_0>=8351&&varb_0<=33950) 
+     varb_1=8350*0.1+(varb_0-8351)*0.15;
+  if(varb_0>=33951&&varb_0<=68525)
+     varb_1=8350*0.1+(33950-8350)*0.15+(varb_0-33951)*0.25;
+  if(varb_0>=68526&&varb_0<=104425)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(varb_0-68526)*0.28;
+  if(varb_0>=104426&&varb_0<=186475)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(varb_0-104426)*0.33;
+  if(varb_0>=186476)
+     varb_1=8350*0.1+(33950-8350)*0.15+(68525-33950)*0.25+(104425-68525)*0.28+(186475-104425)*0.33+(varb_0-186476)*0.35;
+  break;
+  case 3:
+  if(varb_0<=11950)
+  varb_1=varb_0*0.1;
+  if(varb_0>=11951&&varb_0<=45500)
+     varb_1=11950*0.1+(varb_0-11951)*0.15;
+  if(varb_0>=45501&&varb_0<=117450)
+     varb_1=11950*0.1+(45500-11950)*0.15+(varb_0-45501)*0.25;
+  if(varb_0>=117451&&varb_0<=190200)
+     varb_1=11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(varb_0-117451)*0.28;
+  if(varb_0>=190201&&varb_0<=372950)
+     varb_1=11950*0.1+(45500-11950)*0.15+(117450-45500)*0.25+(190200-117450)*0.28+(varb_0-190201)*0.33;
+  if(varb_0>=372951)
+     varb_1=11950*0.1+(45500-11951)*0.15+(117450-45501)*0.25+(190200-117451)*0.28+(372950-190201)*0.33+(varb_0-372951);
+  break;
+}
+printf(""%0.6f"",varb_1);
+return 0;
+}
+",0.0,29
+53,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+	int varb_6;
+	float varb_7;
+	scanf(""%d %d"",&varb_5,&varb_6);
+	switch(varb_5)
+	{
+	case 0:varb_0=8350,varb_1=33950,varb_2=55250,varb_3=171550,varb_4=372950;
+	case 1:varb_0=16700,varb_1=67900,varb_2=137050,varb_3=208850,varb_4=372950;
+	case 2:varb_0=8350,varb_1=33950,varb_2=68525,varb_3=104425,varb_4=186475;
+	default :varb_0=11950,varb_1=45500,varb_2=117450,varb_3=190200,varb_4=372950;
+	}
+		if(varb_6<=varb_0)
+		varb_7=0.1*varb_6;
+		else if(varb_6<=varb_1)
+		varb_7=varb_0*0.1+0.15*(varb_6-varb_0);
+		else if(varb_6<=varb_2)
+		varb_7=varb_0*0.1+0.15*(varb_1-varb_0)+0.25*(varb_6-varb_1);
+		else if(varb_6<=varb_3)
+		varb_7=varb_0*0.1+0.15*(varb_1-varb_0)+0.25*(varb_2-varb_1)+0.28*(varb_6-varb_2);
+		else if(varb_6<=varb_4)
+		varb_7=varb_0*0.1+0.15*(varb_1-varb_0)+0.25*(varb_2-varb_1)+0.28*(varb_3-varb_2)+0.33*(varb_6-varb_3);
+		else 
+		varb_7=varb_0*0.1+0.15*(varb_1-varb_0)+0.25*(varb_2-varb_1)+0.28*(varb_3-varb_2)+0.33*(varb_4-varb_3)+0.35*(varb_6-varb_4);
+		printf(""%f"",varb_7);
+}",0.0,10
+54,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+ int varb_0;
+ float varb_1;
+ scanf(""%d%f"",&varb_0,&varb_1);
+ switch(varb_0)
+ {
+  case 0:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=52250)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>52250&&varb_1<=171550)
+   {varb_1=835+3840+5325+(varb_1-55250)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>171550&&varb_1<=372950)
+    {varb_1=835+3840+5325+32564+(varb_1-171500)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+5325+32564+66478.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+  case 1:
+   if(varb_1<=16700)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>16700&&varb_1<=67900)
+  {varb_1=1670+(varb_1-16700)*0.15;      
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>67900&&varb_1<=137050)      
+   {varb_1=1670+7950+(varb_1-67900)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>137050&&varb_1<=208850)
+   {varb_1=1670+7950+17287.5+(varb_1-137050)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>208850&&varb_1<=372950)
+    {varb_1=1670+7950+17287.5+20104+(varb_1-208850)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1670+7950+17287.5+20104+54153+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break; 
+   case 3:
+   if(varb_1<=8350)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>8350&&varb_1<=33950)
+  {varb_1=835+(varb_1-8350)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>33950&&varb_1<=68525)      
+   {varb_1=835+3840+(varb_1-33950)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>68525&&varb_1<=104425)
+   {varb_1=835+3840+8643.75+(varb_1-68525)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>104425&&varb_1<=186475)
+    {varb_1=835+3840+8643.75+10052+(varb_1-104425)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=835+3840+8643.75+10052+27076.17+(varb_1-186475)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+case 4:
+   if(varb_1<=11950)
+  printf(""%.6f"",varb_1*0.1);
+  else if(varb_1>11950&&varb_1<=45500)
+  {varb_1=1195+(varb_1-11950)*0.15;
+  printf(""%.6f"",varb_1);}
+  else if(varb_1>45500&&varb_1<=117450)      
+   {varb_1=1195+5032.5+(varb_1-45500)*0.25;         
+  printf(""%.6f"",varb_1);} 
+   else if(varb_1>117450&&varb_1<=190200)
+   {varb_1=1195+5032.5+17987.5+(varb_1-117450)*0.28;        
+    printf(""%.6f"",varb_1);}
+   else if(varb_1>190200&&varb_1<=372950)
+    {varb_1=1195+5032.5+17987.5+20370+(varb_1-190200)*0.33;
+    printf(""%.6f"",varb_1);}
+   else {varb_1=1195+5032.5+17987.5+20370+60307.5+(varb_1-372950)*0.35;
+    printf(""%.6f"",varb_1);}
+   break;
+}
+}         ",0.0,45
+55,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1;
+int varb_2;
+scanf(""%d %f"",&varb_2,&varb_1);
+if(varb_2=0)
+{
+if(varb_1<=8350)
+varb_0=varb_1*0.1;
+else if(varb_1<=33950)
+varb_0=835+(varb_1-8350)*0.15;
+else if(varb_1<=52250)
+varb_0=4675+(varb_1-33950)*0.25;
+else if(varb_1<=171550)
+varb_0=9250+(varb_1-52250)*0.28;
+else if(varb_1<=372950)
+varb_0=42654+(varb_1-171550)*0.33;
+else
+varb_0=109116+(varb_1-372950)*0.35;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=1)
+{
+if(varb_1<=16700)
+varb_0=0.1*varb_1;
+else if(varb_1<=67900)
+varb_0=1670+0.15*(varb_1-16700);
+else if(varb_1<=137050)
+varb_0=9350+0.25*(varb_1-67900);
+else if(varb_1<=208850)
+varb_0=0.28*(varb_1-137050)+26637.5;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-208850)+46741.5;
+else
+varb_0=0.35*(varb_1-372950)+100894.5;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=2)
+{
+if(varb_1<=8350)
+varb_0=0.1*varb_1;
+else if(varb_1<=33950)
+varb_0=0.15*(varb_1-8350)+835;
+else if(varb_1<=68525)
+varb_0=0.25*(varb_1-33950)+4675;
+else if(varb_1<=104425)
+varb_0=0.28*(varb_1-68525)+13318.75;
+else if(varb_1<=186475)
+varb_0=0.33*(varb_1-104425)+23370.75;
+else
+varb_0=0.35*(varb_1-186475)+50447.25;
+printf(""%.6f"",varb_0);
+}
+else if(varb_2=3)
+{
+if(varb_1<=11950)
+varb_0=0.1*varb_1;
+else if(varb_1<=45500)
+varb_0=0.15*(varb_1-11950)+1195;
+else if(varb_1<=117450)
+varb_0=0.25*(varb_1-45500)+6227.5;
+else if(varb_1<=190200)
+varb_0=0.28*(varb_1-117450)+24215;
+else if(varb_1<=372950)
+varb_0=0.33*(varb_1-190200)+7418.24;
+else
+varb_0=0.35*(varb_1-372950)+134489.9;
+printf(""%.6f"",varb_0);
+}
+return 0;
+}
+",0.0,7
+56,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+float func_0(int varb_0);
+float func_4(int varb_0);
+float func_2(int varb_0);
+float func_3(int varb_0);
+int main()
+{
+int varb_0,varb_1;
+float varb_2;
+scanf(""%d %d"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:   varb_2=func_0(varb_1);break;
+case 1:   varb_2= func_2(varb_1);break;
+case 2:   varb_2=func_2(varb_1);break;
+case 3:   varb_2=func_4(varb_1);break;
+default : break;
+}
+printf(""%f"",varb_2);
+return 0;
+}
+float func_0(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<52250)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<171550)varb_1=(varb_0-52250)*0.28+9250;
+else if(varb_0<372950)varb_1=(varb_0-171550)*0.33+42654;
+else varb_1=(varb_0-372950)*0.35+109116;
+return varb_1;
+}
+float func_2(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<16700)varb_1=varb_0*0.1;
+else if(varb_0<67900)varb_1=(varb_0-16700)*0.15+1670;
+else if(varb_0<137050)varb_1=(varb_0-67900)*0.25+9350;
+else if(varb_0<208850)varb_1=(varb_0-137050)*0.28+26637.5;
+else if(varb_0<372950)varb_1=(varb_0-208850)*0.33+46741.5;
+else varb_1=(varb_0-372950)*0.35+100894.5;
+return varb_1;
+}
+float func_3(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<68525)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<104425)varb_1=(varb_0-68525)*0.28+13318.75;
+else if(varb_0<186475)varb_1=(varb_0-104425)*0.33+23370.75;
+else varb_1=(varb_0-372950)*0.35+50447.25;
+return varb_1;
+}
+float func_4(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<11950)varb_1=varb_0*0.1;
+else if(varb_0<45500)varb_1=(varb_0-11950)*0.15+1195;
+else if(varb_0<117450)varb_1=(varb_0-45500)*0.25+6227.5;
+else if(varb_0<190200)varb_1=(varb_0-117450)*0.28+24215;
+else if(varb_0<372950)varb_1=(varb_0-372950)*0.33+44585;
+else varb_1=(varb_0-372950)*0.35+104892.5;
+return varb_1;
+}",0.0,15
+57,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+float func_0(int varb_0);
+float func_4(int varb_0);
+float func_2(int varb_0);
+float func_3(int varb_0);
+int main()
+{
+int varb_0,varb_1;
+float varb_2;
+scanf(""%d %d"",&varb_0,&varb_1);
+switch(varb_0)
+{
+case 0:   varb_2=func_0(varb_1);break;
+case 1:   varb_2= func_2(varb_1);break;
+case 2:   varb_2=func_2(varb_1);break;
+case 3:   varb_2=func_4(varb_1);break;
+default : break;
+}
+printf(""%f"",varb_2);
+return 0;
+}
+float func_0(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<52250)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<171550)varb_1=(varb_0-52250)*0.28+9250;
+else if(varb_0<372950)varb_1=(varb_0-171550)*0.33+42654;
+else varb_1=(varb_0-372950)*0.35+109116;
+return varb_1;
+}
+float func_2(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<16700)varb_1=varb_0*0.1;
+else if(varb_0<67900)varb_1=(varb_0-16700)*0.15+1670;
+else if(varb_0<137050)varb_1=(varb_0-67900)*0.25+9350;
+else if(varb_0<208850)varb_1=(varb_0-137050)*0.28+26637.5;
+else if(varb_0<372950)varb_1=(varb_0-208850)*0.33+46741.5;
+else varb_1=(varb_0-372950)*0.35+100894.5;
+return varb_1;
+}
+float func_3(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<8350)varb_1=varb_0*0.1;
+else if(varb_0<33950)varb_1=(varb_0-8350)*0.15+835;
+else if(varb_0<68525)varb_1=(varb_0-33950)*0.25+4675;
+else if(varb_0<104425)varb_1=(varb_0-68525)*0.28+13318.75;
+else if(varb_0<186475)varb_1=(varb_0-104425)*0.33+23370.75;
+else varb_1=(varb_0-372950)*0.35+50447.25;
+return varb_1;
+}
+float func_4(int varb_0)
+{
+float varb_1;
+varb_1=0;
+if(varb_0<11950)varb_1=varb_0*0.1;
+else if(varb_0<45500)varb_1=(varb_0-11950)*0.15+1195;
+else if(varb_0<117450)varb_1=(varb_0-45500)*0.25+6227.5;
+else if(varb_0<190200)varb_1=(varb_0-117450)*0.28+24215;
+else if(varb_0<372950)varb_1=(varb_0-190200)*0.33+44585;
+else varb_1=(varb_0-372950)*0.35+104892.5;
+return varb_1;
+}",0.0,15
+58,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    int varb_0;
+    float varb_1;
+    scanf(""%d %f"",&varb_0,&varb_1);
+    switch(varb_0)
+    {
+        case 0:
+        if(varb_1<=8350&&varb_1>=0)
+        printf(""%.6f"",0.1*varb_1);
+        else if(varb_1>8350&&varb_1<=33950)
+        printf(""%.6f"",0.1*8350+0.15*(varb_1-8350));
+        else if(varb_1>33950&&varb_1<=52250)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*(varb_1-33950));
+        else if(varb_1>52250&&varb_1<=171550)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*(varb_1-52250));
+        else if(varb_1>171550&&varb_1<=372950)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*119300+0.33*(varb_1-171550));
+        else
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*18300+0.28*119300+0.33*201400+0.35*(varb_1-372950));
+        break;
+        case 1:
+        if(varb_1<=16700&&varb_1>=0)
+        printf(""%.6f"",0.1*varb_1);
+        else if(varb_1>16700&&varb_1<=67900)
+        printf(""%.6f"",0.1*16700+0.15*(varb_1-16700));
+        else if(varb_1>67900&&varb_1<=137050)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*(varb_1-67900));
+        else if(varb_1>137050&&varb_1<=208850)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*(varb_1-137050));
+        else if(varb_1>208850&&varb_1<=372950)
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*71800+0.33*(varb_1-208850));
+        else
+        printf(""%.6f"",0.1*16700+0.15*51200+0.25*69150+0.28*71800+0.33*164100+0.35*(varb_1-372950));
+        break;
+        case 2:
+        if(varb_1<=8350&&varb_1>=0)
+        printf(""%.6f"",0.1*varb_1);
+        else if(varb_1>8350&&varb_1<=33950)
+        printf(""%.6f"",0.1*8350+0.15*(varb_1-8350));
+        else if(varb_1>33950&&varb_1<=68525)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*(varb_1-33950));
+        else if(varb_1>68525&&varb_1<=104425)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*34575+0.28*(varb_1-68525));
+        else if(varb_1>104425&&varb_1<=186475)
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*34575+0.28*35900+0.33*(varb_1-104425));
+        else
+        printf(""%.6f"",0.1*8350+0.15*25600+0.25*34575+0.28*35900+0.33*82050+0.35*(varb_1-186475));
+        break;
+        case 3:printf(""hhhh"");break;
+     }
+    return 0;
+}",0.0,49
+59,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+     scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    return 0;  
+}
+",0.0,7
+60,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float varb_0,varb_1,varb_2;  
+    scanf(""%f %f"",&varb_0,&varb_1);
+    if(varb_0=0)
+    {
+        if(varb_1<=8350)
+        varb_2=varb_1*0.1;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=835+(varb_1-8350)*0.15;
+        else if(varb_1>33950&&varb_1<=52250)
+        varb_2=4675+(varb_1-33950)*0.25;
+        else if(varb_1>52250&&varb_1<=171550)
+        varb_2=9250+(varb_1-52250)*0.28;
+        else if(varb_1>171550&&varb_1<=372950)
+        varb_2=42654+(varb_1-171550)*0.33;
+        else
+        varb_2=109116+(varb_1-372950)*0.35;
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=1)
+    {
+        if(varb_1<=16700)
+        varb_2=0.1*varb_1;
+        else if(varb_1>16700&&varb_1<=67900)
+        varb_2=1670+0.15*(varb_0-16700);
+        else if(varb_1>67900&&varb_1<=137050)
+        varb_2=9350+0.25*(varb_0-67900);
+        else if(varb_1>137050&&varb_1<=208850)
+        varb_2=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1>208850&&varb_1<=372950)
+        varb_2=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_2=0.35*(varb_1-372950)+100894.5;
+        printf(""%f"",varb_2);
+    } 
+    else if(varb_0=2)   
+    {
+        if(varb_1<=8350)
+        varb_2=0.1*varb_0;
+        else if(varb_1>8350&&varb_1<=33950)
+        varb_2=0.15*(varb_1-8350)+835;
+        else if(varb_1>33950&&varb_1<=68525)
+        varb_2=0.25*(varb_1-33950)+4675;
+        else if(varb_1>68525&&varb_1<=104425)
+        varb_2=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1>104425&&varb_1<=186475)
+        varb_2=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_2=0.35*(varb_1-186475)+50447.25;  
+        printf(""%f"",varb_2);
+    }
+    else if(varb_0=3)
+    {
+        if(varb_1<=11950)
+        varb_2=0.1*varb_0;
+        else if(varb_1>11950&&varb_1<=45500)
+        varb_2=0.15*(varb_1-11950)+1195;
+        else if(varb_1>45500&&varb_1<=117450)
+        varb_2=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1>117450&&varb_1<=190200)
+        varb_2=0.28*(varb_1-117450)+24215;
+        else if(varb_1>190200&&varb_1<=372950)
+        varb_2=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_2=0.35*(varb_1-372950)+134489.9;
+        printf(""%f"",varb_2);
+    }
+    else
+         ;
+}
+",0.0,7
+61,2c911d616dcd1421016dd32ed265172c,"#include<stdio.h>
+int main()
+{
+    float varb_0,varb_1;
+    int varb_2;
+    scanf(""%d %f"",&varb_2,&varb_1);
+    if(varb_2=0)
+    {
+        if(varb_1<=8350)
+        varb_0=varb_1*0.1;
+        else if(varb_1<=33950)
+        varb_0=835+(varb_1-8350)*0.15;
+        else if(varb_1<=52250)
+        varb_0=4675+(varb_1-33950)*0.25;
+        else if(varb_1<=171550)
+        varb_0=9250+(varb_1-52250)*0.28;
+        else if(varb_1<=372950)
+        varb_0=42654+(varb_1-171550)*0.33;
+        else
+        varb_0=109116+(varb_1-372950)*0.35;
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=1)
+    {
+        if(varb_1<=16700)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=67900)
+        varb_0=1670+0.15*(varb_1-16700);
+        else if(varb_1<=137050)
+        varb_0=9350+0.25*(varb_1-67900);
+        else if(varb_1<=208850)
+        varb_0=0.28*(varb_1-137050)+26637.5;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-208850)+46741.5;
+        else
+        varb_0=0.35*(varb_1-372950)+100894.5;
+        printf(""%.6f"",varb_0);
+    } 
+    else if(varb_2=2)   
+    {
+        if(varb_1<=8350)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=33950)
+        varb_0=0.15*(varb_1-8350)+835;
+        else if(varb_1<=68525)
+        varb_0=0.25*(varb_1-33950)+4675;
+        else if(varb_1<=104425)
+        varb_0=0.28*(varb_1-68525)+13318.75;
+        else if(varb_1<=186475)
+        varb_0=0.33*(varb_1-104425)+23370.75;
+        else 
+        varb_0=0.35*(varb_1-186475)+50447.25;  
+        printf(""%.6f"",varb_0);
+    }
+    else if(varb_2=3)
+    {
+        if(varb_1<=11950)
+        varb_0=0.1*varb_1;
+        else if(varb_1<=45500)
+        varb_0=0.15*(varb_1-11950)+1195;
+        else if(varb_1<=117450)
+        varb_0=0.25*(varb_1-45500)+6227.5;
+        else if(varb_1<=190200)
+        varb_0=0.28*(varb_1-117450)+24215;
+        else if(varb_1<=372950)
+        varb_0=0.33*(varb_1-190200)+7418.24;
+        else
+        varb_0=0.35*(varb_1-372950)+134489.9;
+        printf(""%.6f"",varb_0);
+    }
+    else
+    ;
+    return 0;
+}
+",0.0,7

@@ -1,0 +1,250 @@
+,id,code,is_true,errorline
+0,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3;
+ float varb_4;
+  scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+  varb_4=(varb_0+varb_1+varb_2+varb_3)/4.0;
+  printf(""average of %f %f %f %f is %.2f"",varb_0,varb_1,varb_2,varb_3,varb_4);
+ } ",0.0,3
+1,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+main(){
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f%f%f%f"",varb_0,varb_1,varb_2,varb_3);
+    varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+    printf(""%.2f"",varb_4);}",0.0,4
+2,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4;
+ scanf(""%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+ printf(""%.2f"",varb_4=(varb_0+varb_1+varb_2+varb_3)/4);
+}",0.0,5
+3,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3;
+ double varb_4;
+ scanf(""%f,%f,%f,%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+ varb_4=(varb_0+varb_1+varb_2+varb_3)/4.0;
+ printf(""%.2f"",varb_4);
+}",0.0,4
+4,2c911d616dbd643c016dc93adee91280,"#include <stdio.h>
+int main(void)
+{
+  float varb_0=32.6,b=55.2,c=67.9,d=48.6,ave;
+   scanf(""%f %f %f %f"",&varb_0,&b,&c,&d);
+   ave=(32.6+55.2+67.9+48.6)/4;
+   printf(""%.2f"",ave);
+   return 0;
+}",0.0,6
+5,2c911d616dbd643c016dc93adee91280,"#include <stdio.h> 
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""a varb_1 varb_2 d"",&varb_0,&varb_1,&varb_2,&varb_3);
+	printf(""%.2f"",(varb_0+varb_1+varb_2+varb_3)/4.0);
+	return 0;
+}",0.0,4
+6,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%.1f%.1f%.1f%.1f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+	printf(""%.2f"",varb_4);
+	return 0;
+}",0.0,4
+7,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4;
+ scanf(""%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+ varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+ printf(""%.2f"",varb_4);
+}
+",0.0,2
+8,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+ int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	printf(""a=32.6"");
+   printf(""b=55.2"");
+   printf(""c=67.9"");
+   printf(""d=48.6"");
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	printf(""%.2f\n"",(varb_0+varb_1+varb_2+varb_3)/4.0);
+ }",0.0,5
+9,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_1+varb_2+varb_3/4;
+printf(""%.2f"",varb_4);
+return 0;
+}",0.0,6
+10,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%f %f %f %f"",&varb_1,&varb_2,&varb_3,&varb_4);
+varb_0=(varb_1+varb_2+varb_3+varb_4)/4.0;
+printf(""%f"",varb_0);
+return 0;
+}
+",0.0,6
+11,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+double varb_4;
+printf(""输入四个数:"");
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=(varb_0+varb_1+varb_2+varb_3)/4.0;
+printf(""%.2f\n"",varb_4);
+return 0;
+}
+",0.0,6
+12,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+float varb_0;
+float varb_1,varb_2,varb_3,varb_4;
+scanf(""%f %f %f %f"",varb_1,varb_2,varb_3,varb_4);
+varb_0=(varb_1+varb_2+varb_3+varb_4)/4;
+printf(""%f"",varb_0);
+}
+",0.0,6
+13,2c911d616dbd643c016dc93adee91280,"#include <stdio.h>
+int main()
+{
+  float varb_0;
+  float varb_1;
+  float varb_2;
+  float varb_3;
+  float varb_4;
+  scanf(""%.1f %.1f %.1f %.1f "",&varb_0,&varb_1,&varb_2,&varb_3);
+  varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+  printf(""%.2f"",varb_4);
+  return 0;
+}",0.0,9
+14,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+  varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+  printf(""\n%.2f"",varb_4);
+  return 0;
+}
+",0.0,4
+15,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3;
+ varb_0=32.6;
+ varb_1=55.2;
+ varb_2=67.9;
+ varb_3=48.6;
+ scanf(""%f,%f,%f,%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+ printf(""%.2f"",(varb_0+varb_1+varb_2+varb_3)/4);
+ return 0;
+ }",0.0,9
+16,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main(){
+    float varb_0,varb_1,varb_2,varb_3,varb_4;
+    scanf(""%f"",varb_0,varb_1,varb_2,varb_3);
+    varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+    printf(""%.2f"",varb_4);
+    return 0;}",0.0,2
+17,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+ float varb_0,varb_1,varb_2,varb_3,varb_4;
+ scanf(""%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+ varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+ printf(""%.2f"",varb_4);
+}",0.0,5
+18,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%.1f%.1f%.1f%.1f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+	printf(""\n%.2f"",varb_4);
+	return 0;
+}",0.0,4
+19,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4;
+scanf(""%f %f %f %f"",varb_1,varb_2,varb_3,varb_4);
+varb_0=(varb_1+varb_2+varb_3+varb_4)/4.0;
+printf(""%f"",varb_0);
+return 0;
+}
+",0.0,5
+20,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%.1f %.1f %.1f %.1f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+	printf(""\n%.2f"",varb_4);
+	return 0;
+}",0.0,4
+21,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+ int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	printf(""请输入四个整数：32.6 55.2 67.9 48.6"");
+	scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	printf(""%.2f\n"",(varb_0+varb_1+varb_2+varb_3)/4.0);
+ }",0.0,5
+22,2c911d616dbd643c016dc93adee91280,"#include <stdio.h>
+int main()
+{
+  float varb_0;
+  float varb_1;
+  float varb_2;
+  float varb_3;
+  float varb_4;
+  scanf(""％f %f %f %f "",&varb_0,&varb_1,&varb_2,&varb_3);
+  printf(""%.2f"",(varb_0+varb_1+varb_2+varb_3)/4);
+  return 0;
+}",0.0,8
+23,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3,varb_4;
+  scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+  varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+  printf(""\n%.2f"",varb_4);
+  return 0;
+}
+",0.0,4
+24,2c911d616dbd643c016dc93adee91280,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	varb_4=(varb_0+varb_1+varb_2+varb_3)/5.0;
+	printf(""%.2f"",varb_4);
+	return 0;
+}",0.0,4
+25,2c911d616dbd643c016dc93adee91280,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3;
+  scanf(""%.1f %.1f %.1f %.1f"",&varb_0,&varb_1,&varb_2,&varb_3);
+  printf(""%.2f"",(varb_0+varb_1+varb_2+varb_3)/4.0);
+ } ",0.0,4
+26,2c911d616dbd643c016dc93adee91280,"#include <stdio.h>
+int main() 
+{
+	float varb_0,varb_1,varb_2,varb_3,varb_4;
+	scanf(""%f%f%f%f%f"",varb_0,varb_1,varb_2,varb_3,varb_4);
+	varb_4=(varb_0+varb_1+varb_2+varb_3)/4;
+	printf(""%4.2f"",varb_4);
+	return 0;
+}",0.0,4

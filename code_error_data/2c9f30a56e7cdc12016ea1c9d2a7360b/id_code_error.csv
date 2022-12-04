@@ -1,0 +1,469 @@
+,id,code,is_true,errorline
+0,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+double func_0(int,int);
+double func_1(int,int,int,int);
+double func_2(int,int,int,int);
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3;
+    scanf(""%d %d %d %d"",&varb_0,&varb_1,&varb_2,&varb_3);
+    printf(""addition of complex is %.6lf+%.6lfi"",func_0(varb_0,varb_2),func_0(varb_1,varb_3)),
+    printf(""product of complex is %.6lf+%.6lfi"",func_1(varb_0,varb_1,varb_2,varb_3),func_2(varb_0,varb_1,varb_2,varb_3));
+    return 0;
+}
+double func_0(int varb_4,int varb_5)
+{
+    return varb_4+varb_5;
+}
+double func_1(int varb_4,int varb_5,int varb_10,int varb_11)
+{
+    return varb_4*varb_10-varb_5*varb_11;
+}
+double func_2(int varb_4,int varb_5,int varb_10,int varb_11)
+{
+    return varb_4*varb_11+varb_10*varb_5;
+}
+",0.0,9
+1,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+void func_0(int,int,int,int);
+void func_1(int,int,int,int);
+main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d%d%d%d"",&varb_2,&varb_4,&varb_3,&varb_5);
+func_0(varb_2,varb_3,varb_4,varb_5);
+func_1(varb_2,varb_3,varb_4,varb_5);
+return 0;
+}
+void func_0(int varb_2,int varb_3,int varb_4,int varb_5) 
+{ 
+ double varb_10, varb_11;
+ varb_10=varb_2+varb_3;
+ varb_11=varb_4+varb_5;
+printf(""addition of complex is %.6f+%.6f"",varb_10,varb_11);
+}
+void func_1(int varb_2,int varb_3,int varb_4,int varb_5)
+{
+double varb_16,varb_17;
+varb_16=varb_2*varb_3-varb_4*varb_5;
+varb_17=varb_2*varb_5+varb_3*varb_4;
+printf(""product of complex is %.6f+%.6f"",varb_16,varb_17);
+}",0.0,17
+2,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h> 
+int main()
+{
+	double varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_2,&varb_1,&varb_3);
+	printf(""addition of complex is %f+%fi"",(varb_0+varb_1),varb_2+varb_3);
+	printf(""product of complex is %f+%fi"",(varb_0*varb_1-varb_2*varb_3),(varb_0*varb_3+varb_1*varb_2));
+}",0.0,4
+3,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""addition of complex is %fd+%fi\n"",(varb_0+varb_2),(varb_1+varb_3));
+printf(""product of complex is %f+%fi"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_2*varb_1);
+return 0;
+}",0.0,4
+4,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_1+varb_2*varb_3;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""\naddition of complex is %f+%f"",varb_6,varb_7);
+}",0.0,4
+5,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+  double varb_0,varb_1,varb_2,varb_3;
+  double varb_4,varb_5,varb_6,varb_7;
+  scanf(""%1f %1f %1f %1f"",&varb_0,&varb_1,&varb_2,&varb_3);
+  varb_4=varb_0+varb_2;
+  varb_5=varb_1+varb_3;
+  varb_6=varb_0*varb_2-varb_1*varb_3;
+  varb_7=varb_0*varb_3+varb_1*varb_2;
+  printf(""addition of complex is %1f+%1fi\n"",varb_4,varb_5);
+  printf(""product of complex is %1f+%1fi\n"",varb_6,varb_7);
+}
+",0.0,6
+6,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_3+varb_1*varb_2;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""\naddition of complex is %f+%fi"",varb_6,varb_7);
+}",0.0,8
+7,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d%d%d"",&varb_0,&varb_1,&varb_2,&varb_3);
+  printf(""addition of complex is %f+%fi\n"",varb_0+varb_2,varb_1+varb_3);
+  printf(""product of complex is %f+%fi"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_2*varb_1);
+}",0.0,5
+8,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+int varb_0,varb_1,varb_2,varb_3;
+float varb_4,varb_5,varb_6,varb_7;
+int main()
+{
+    scanf(""%d %d %d %d"",varb_0,varb_1,varb_2,varb_3);
+    varb_4=varb_0+varb_2 ;
+    varb_5=varb_1+varb_3;
+    varb_6=varb_0*varb_2-varb_1*varb_3;
+    varb_7=varb_0*varb_3+varb_2*varb_1;
+    printf(""addition of complex is %.6f+%.6fi\n"",varb_4,varb_5);
+    printf(""product of complex is %.6f+%.6fi"",varb_6,varb_7);
+}
+",0.0,6
+9,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3);
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);(varb_0,varb_1,varb_2,varb_3);(varb_0,varb_1,varb_2,varb_3);
+}
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0+varb_2;
+	varb_13=varb_1+varb_3;
+	printf(""addition of complex is %.6f+%.6fi\n"",varb_12,varb_13);
+}
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0*varb_2-varb_1*varb_3;
+	varb_13=varb_0*varb_3+varb_1*varb_2;
+	printf(""product of complex is %.6f+%.6fi"",varb_12,varb_13);
+}",0.0,7
+10,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_2,&varb_1,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_3+varb_1*varb_2;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""\product of complex is %f+%fi"",varb_6,varb_7);
+}",0.0,8
+11,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+double func_0(double,double,double,double);
+double func_1(double,double,double,double);
+int main()
+{
+	double varb_0,varb_1,varb_2,varb_3;
+	scanf(""%lf %lf %lf %lf"",varb_0,varb_1,varb_2,varb_3);
+	func_0(varb_0,varb_1,varb_2,varb_3);
+	func_1(varb_0,varb_1,varb_2,varb_3);
+}
+double func_0(double varb_0,double varb_1,double varb_2,double varb_3)
+{
+	double varb_8,varb_9;
+	varb_8=varb_0+varb_2;
+	varb_9=varb_1+varb_3;
+	printf(""%++lf%++lfi"",varb_8,varb_9);
+}
+double func_1(double varb_0,double varb_1,double varb_2,double varb_3)
+{
+	double varb_14,varb_15;
+	varb_14=varb_0*varb_2-varb_1*varb_3;
+	varb_15=varb_0*varb_2+varb_1*varb_3;
+	printf(""%++lf%++lfi"",varb_14,varb_15);
+}",0.0,7
+12,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main(void)
+{
+	double varb_0,varb_1,varb_2,varb_3;
+	double varb_4,varb_5,varb_6,varb_7;
+	scanf(""%lf%lf%lf%lf"",&varb_0,&varb_2,&varb_1,&varb_3);
+	varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+	varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_3+varb_1*varb_2;
+	printf(""addition of complex is %lf+%lfi\n"",varb_4,varb_5);
+	printf(""product of complex is %lf+%lfi"",varb_6,varb_7);	
+}",0.0,11
+13,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%d %d %d %d"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""addition of complex is %f+%fi\n"",varb_0+varb_1,varb_2+varb_3);
+printf(""product of complex is %f+%fi"",varb_0*varb_1-varb_2*varb_3,varb_0*varb_3+varb_1*varb_2);
+}",0.0,5
+14,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+void func_0(int,int,int,int);
+void func_1(int,int,int,int);
+main()
+{
+int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5;
+scanf(""%d%d%d%d"",&varb_2,&varb_4,&varb_3,&varb_5);
+func_0(varb_2,varb_3,varb_4,varb_5);
+func_1(varb_2,varb_3,varb_4,varb_5);
+return 0;
+}
+void func_0(int varb_2,int varb_3,int varb_4,int varb_5) 
+{ 
+ double varb_10, varb_11;
+ varb_10=varb_2+varb_3;
+ varb_11=varb_4+varb_5;
+printf(""addition of complex is %.6f+%.6f\n"",varb_10,varb_11);
+}
+void func_1(int varb_2,int varb_3,int varb_4,int varb_5)
+{
+double varb_16,varb_17;
+varb_16=varb_2*varb_3-varb_4*varb_5;
+varb_17=varb_2*varb_5+varb_3*varb_4;
+printf(""product of complex is %.6f+%.6f"",varb_16,varb_17);
+}",0.0,17
+15,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int func_0(int,int,int,int,int *,int *);
+int func_1(int,int,int,int,int *,int *);
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+	scanf(""%d%d%d%d"",&varb_0,&varb_2,&varb_1,&varb_3);
+	func_0(varb_0,varb_2,varb_1,varb_3,&varb_4,&varb_5);
+	func_1(varb_0,varb_2,varb_1,varb_3,&varb_6,&varb_7);
+	printf(""addition of complex is %.6f+%.6fi\n"",(double)varb_4,(double)varb_5);
+    printf(""product of complex is -%.6f+%.6fi"",(double)varb_6,(double)varb_7);
+    return 0;
+}
+int func_0(int varb_8,int varb_9,int varb_10,int varb_11,int *varb_12,int *varb_13)
+{
+	*varb_12=varb_8+varb_10;
+	*varb_13=varb_9+varb_11;
+}
+int func_1(int varb_8,int varb_9,int varb_10,int varb_11,int *varb_12,int *varb_13)
+{
+	*varb_12=varb_8*varb_10-varb_9*varb_11;
+	*varb_13=varb_8*varb_11+varb_9*varb_10;
+}",0.0,11
+16,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f%f%f%f"",&varb_0,&varb_2,&varb_1,&varb_3);
+	printf(""addition of complex is %f+%fi"",varb_0+varb_1,varb_2+varb_3);
+	printf(""product of complex is %f+%fi"",(varb_0*varb_1-varb_2*varb_3),(varb_0*varb_3+varb_1*varb_2));
+	return 0;
+}",0.0,6
+17,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h> 
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_2,&varb_1,&varb_3);
+	printf(""addition of complex is %f+%fi"",(varb_0+varb_1),varb_2+varb_3);
+	printf(""product of complex is %f+%fi"",(varb_0*varb_1-varb_2*varb_3),(varb_0*varb_3+varb_1*varb_2));
+}",0.0,6
+18,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+double func_0(double,double,double,double);
+double func_1(double,double,double,double);
+int main()
+{
+	double varb_0,varb_1,varb_2,varb_3;
+	scanf(""%lf %lf %lf %lf"",&varb_0,&varb_1,&varb_2,&varb_3);
+	func_0(varb_0,varb_1,varb_2,varb_3);
+	func_1(varb_0,varb_1,varb_2,varb_3);
+}
+double func_0(double varb_0,double varb_1,double varb_2,double varb_3)
+{
+	double varb_8,varb_9;
+	varb_8=varb_0+varb_2;
+	varb_9=varb_1+varb_3;
+	printf(""addition of complex is %++lf%++lfi\n"",varb_8,varb_9);
+}
+double func_1(double varb_0,double varb_1,double varb_2,double varb_3)
+{
+	double varb_14,varb_15;
+	varb_14=varb_0*varb_2-varb_1*varb_3;
+	varb_15=varb_0*varb_2+varb_1*varb_3;
+	printf(""product of complex is %++lf%++lfi"",varb_14,varb_15);
+}",0.0,16
+19,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_1+varb_2*varb_3;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""addition of complex is %f+%f"",varb_6,varb_7);
+}",0.0,4
+20,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+double varb_0,varb_1,varb_2,varb_3;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""addition of complex is %f+%fi\n"",varb_0+varb_2,varb_1+varb_3);
+printf(""product of complex is %f+%fi\n"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_1*varb_2);
+return 0;
+}",0.0,4
+21,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3);
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);(varb_0,varb_1,varb_2,varb_3);(varb_0,varb_1,varb_2,varb_3);
+}
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0+varb_2;
+	varb_13=varb_1+varb_3;
+	printf(""addition of complex is %.6f+%.6fi\n"",varb_12,varb_13);
+}
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0*varb_2-varb_1*varb_3;
+	varb_13=varb_0*varb_3+varb_1*varb_2;
+	printf(""product of complex is %.6f+%.6fi"",varb_12,varb_13);
+}",0.0,7
+22,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3;
+scanf(""%f%f%f%f"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""addition of complex is %f+%fi\n"",(float)(varb_0+varb_2),(float)(varb_1+varb_3));
+printf(""product of complex is %f+%fi\n"",(float)(varb_0*varb_2-varb_1*varb_3),(float)(varb_0*varb_3+varb_1*varb_2));
+return 0;
+}",0.0,1
+23,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_3+varb_1*varb_2;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""\naddition of complex is %f+%f"",varb_6,varb_7);
+}",0.0,4
+24,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+void func_0(int,int,int,int);
+void func_1(int,int,int,int);
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	scanf(""%d %d %d %d"",&varb_0,&varb_1,&varb_2,&varb_3);
+	func_0( varb_0, varb_1, varb_2, varb_3);
+	func_1( varb_0, varb_1, varb_2, varb_3);
+	return 0;
+}
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	double varb_8,varb_9; 
+	varb_8=varb_0+varb_2;
+	varb_9=varb_1+varb_3;
+	printf(""addition of complex is %.6f+%.6fi"",varb_8,varb_9);
+}
+void func_1(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	double varb_14,varb_15;
+	varb_14=varb_0*varb_2-varb_1*varb_3;
+	varb_15=varb_0*varb_3+varb_2*varb_1;
+	printf(""product of complex is %.6f+%.6fi"",varb_14,varb_15);
+}
+",0.0,17
+25,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	printf(""addition of complex is %f+%fi\n"",varb_0+varb_1,varb_2+varb_3);
+	printf(""product of complex is %f+%f"",varb_0*varb_1,varb_2*varb_3);
+}
+",0.0,5
+26,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_2;
+varb_5=varb_1+varb_3;
+varb_6=varb_0*varb_2-varb_1*varb_3;
+varb_7=varb_0*varb_3-varb_2*varb_1;
+printf(""addition of complex is %f+%fi\n"",varb_4,varb_5);
+printf(""product of complex is %f+%fi"",varb_6,varb_7);
+return 0;
+}",0.0,9
+27,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{float varb_0,varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+varb_4=varb_0+varb_1;varb_5=varb_2+varb_3;
+varb_6=varb_0*varb_1-varb_2*varb_3;varb_7=varb_0*varb_3+varb_1*varb_2;
+printf(""addition of complex is %f+%fi"",varb_4,varb_5);
+printf(""\naddition of complex is %f+%fi"",varb_6,varb_7);
+}",0.0,4
+28,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3;
+  scanf(""%d%d%d%d"",&varb_0,&varb_1,&varb_2,&varb_3);
+  printf(""addition of complex is %f+%fi\n"",varb_0+varb_2,varb_1+varb_3);
+  printf(""product of complex is %f+%fi"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_2*varb_1);
+}",0.0,4
+29,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+void func_0(float,float,float,float);
+void func_1(float, float, float, float) ;
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%d%d%d%d"",& varb_0,&varb_2,&varb_1,&varb_3) ;
+func_0(varb_0,varb_2,varb_1,varb_3);
+printf(""\n"") ;
+func_1(varb_0,varb_2,varb_1,varb_3);
+return 0;
+}
+void func_0(float varb_0, float varb_2, float varb_1, float varb_3) 
+{
+printf(""addition varb_10 varb_11 varb_12 %f+%fi"", varb_0+varb_1, varb_2+varb_3) ;
+}
+void func_1(float varb_0,float varb_2,float varb_1, float varb_3) 
+{
+printf(""product varb_10 varb_11 varb_12 %f+%fi"", varb_0*varb_1-varb_2*varb_3, varb_0*varb_3+varb_1*varb_2) ;
+}",0.0,7
+30,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+float varb_0,varb_1,varb_2,varb_3;
+scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+printf(""addition of complex is  %fd+%fi\n"",(varb_0+varb_2),(varb_1+varb_3));
+printf(""product of complex is  %f+%fi"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_2*varb_1);
+return 0;
+}",0.0,4
+31,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include <stdio.h>
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3);
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3);
+int main()
+{
+	float varb_0,varb_1,varb_2,varb_3;
+	scanf(""%f %f %f %f"",&varb_0,&varb_1,&varb_2,&varb_3);
+	func_0(varb_0,varb_1,varb_2,varb_3);
+	func_2(varb_0,varb_1,varb_2,varb_3);
+}
+void func_0(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0+varb_2;
+	varb_13=varb_1+varb_3;
+	printf(""addition of complex is %.6f+%.6fi"",varb_12,varb_13);
+}
+void func_2(int varb_0,int varb_1,int varb_2,int varb_3)
+{
+	float varb_12,varb_13;
+	varb_12=varb_0*varb_2-varb_1*varb_3;
+	varb_13=varb_0*varb_3+varb_1*varb_2;
+	printf(""product of complex is %.6f+%.6fi"",varb_12,varb_13);
+}",0.0,16
+32,2c9f30a56e7cdc12016ea1c9d2a7360b,"#include<stdio.h>
+int main()
+{
+  float varb_0,varb_1,varb_2,varb_3;
+  scanf(""%f %f %f %f"",&varb_0,&varb_2,&varb_1,&varb_3);
+  printf(""addition of complex is %f+%fi\n"",varb_0+varb_2,varb_1+varb_3);
+  printf(""product of complex is %f+%fi\n"",varb_0*varb_2-varb_1*varb_3,varb_0*varb_3+varb_2*varb_1);
+  }",0.0,5

@@ -1,0 +1,2305 @@
+,id,code,is_true,format_code,errorline
+0,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i,n;
+n=strlen(s);
+while(i<strlen(s))
+{
+if(s[i]==s[n-1-i])
+{
+return true;
+}i++;}
+return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}varb_1++;}
+return *varb_0;
+}",19
+1,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome(char* s)
+{
+	int num = 0;
+	int len = strlen(s);//长度
+	for (int i = 0; i < len / 2; i++)
+	{
+		if (*(s + i) == *(s + len - 1 - i))//如果正序的与倒序的字符相等，计数加1
+		{
+			num++;
+		}
+	}
+	if (num == len / 2)//如果计数等于长度的一半，就是回文啦
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char* varb_0)
+{
+	int varb_1 = 0;
+	int varb_2 = strlen(varb_0);
+	for(int varb_3 = 0; varb_3 < varb_2 / 2; varb_3++)
+	{
+		if(*(varb_0 + varb_3) == *(varb_0 + varb_2 - 1 - varb_3))
+		{
+			varb_1++;
+		}
+	}
+	if(varb_1 == varb_2 / 2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}",20
+2,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+
+bool palindrome( char *s)
+{
+	int leng;
+	leng=strlen(s);
+	int i,flog=1;
+	for(i=0;i<=leng;i++,leng--)
+	{
+		if(s[i]!=s[leng])
+		flog=0;	
+	}
+	if(flog)
+	return 0;
+	else return 1;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0)
+{
+	int varb_1;
+	varb_1=strlen(varb_0);
+	int varb_2,varb_3=1;
+	for(varb_2=0;varb_2<=varb_1;varb_2++,varb_1--)
+	{
+		if(varb_0[varb_2]!=varb_0[varb_1])
+		varb_3=0;	
+	}
+	if(varb_3)
+	return 0;
+	else return 1;
+}",24
+3,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )  
+{  
+    int i,len;  
+    len=strlen(s);  
+    if(len%2==1) {  
+        for(i=0;i<(len-1)/2;i++)  {  
+            if(s[i]==s[len-1-i]){
+            }else {
+            	return false; 
+            } 
+        }  
+    }else {  
+        for(i=0;i<len/2;i++){  
+            if(s[i]==s[len-1-i])
+            {
+            } else 
+            {
+            	return false;  
+            } 
+        }  
+    }  
+    return true;  
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )  
+{  
+    int varb_1,varb_2;  
+    varb_2=strlen(varb_0);  
+    if(varb_2%2==1) {  
+        for(varb_1=0;varb_1<(varb_2-1)/2;varb_1++)  {  
+            if(varb_0[varb_1]==varb_0[varb_2-1-varb_1]){
+            }else {
+            	return false; 
+            } 
+        }  
+    }else {  
+        for(varb_1=0;varb_1<varb_2/2;varb_1++){  
+            if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+            {
+            } else 
+            {
+            	return false;  
+            } 
+        }  
+    }  
+    return true;  
+}",30
+4,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i,n;
+for(i=0;i<(n/2);i++)
+{
+if(s[i]!=s[n-1-i])
+return false;
+}
+return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+for(varb_1=0;varb_1<(varb_2/2);varb_1++)
+{
+if(varb_0[varb_1]!=varb_0[varb_2-1-varb_1])
+return false;
+}
+return true;
+}",19
+5,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s ); 
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{   
+    int i,a;
+    a=strlen(s);
+	for(i=0;i<a/2;i++)
+	if(s[i]==s[a-i])
+	return false;
+	else
+	return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return false;
+	else
+	return true;
+}",21
+6,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i;
+for(i=0;i<10;i++)
+{
+if(s[i]!=s[20-1-i])
+return false;
+}
+return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1;
+for(varb_1=0;varb_1<10;varb_1++)
+{
+if(varb_0[varb_1]!=varb_0[20-1-varb_1])
+return false;
+}
+return true;
+}",19
+7,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int n;
+n=strlen(s);
+int i,j;
+for(i=0;i<n/2;i++)
+{
+
+}
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1;
+varb_1=strlen(varb_0);
+int varb_2,varb_3;
+for(varb_2=0;varb_2<varb_1/2;varb_2++)
+{
+}
+}",19
+8,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    char s1[MAXN];
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+    s1[i]=s[n-1];
+    n--;
+    }
+    if(strcmp(s,s1)==0)
+    return 1;
+    else 
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return 1;
+    else 
+    return 0;
+}",28
+9,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    
+    char s1[MAXN];
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+    s1[i]=s[n-1];
+    n--;
+    }
+    if(strcmp(s,s1)!=0)
+    return true;
+    else 
+    return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)!=0)
+    return true;
+    else 
+    return false;
+}",27
+10,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+	int i,t,a=1;
+	t=strlen(s);
+	for(i=0;i<t/2;i++)
+	{
+		if(s[i]!=s[t-i])
+		{
+			a=0;
+			break;
+		}
+	} 
+	if(a==0)
+	return true;
+	else
+	return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3=1;
+	varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[varb_2-varb_1])
+		{
+			varb_3=0;
+			break;
+		}
+	} 
+	if(varb_3==0)
+	return true;
+	else
+	return false;
+}",6
+11,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+	int n,z,i;
+	n=strlen(s);
+	z=n/2;
+	for(i=1;i<z;i++)
+	{
+		if(s[i-1]!=s[n-i])
+		return false;
+	}
+	return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3;
+	varb_1=strlen(varb_0);
+	varb_2=varb_1/2;
+	for(varb_3=1;varb_3<varb_2;varb_3++)
+	{
+		if(varb_0[varb_3-1]!=varb_0[varb_1-varb_3])
+		return false;
+	}
+	return true;
+}",22
+12,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,n;
+  n=strlen(s);
+  for(i=0;i<(2*n)/4;i++)
+   s[i]=s[n-i-1];
+  return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2;
+  varb_2=strlen(varb_0);
+  for(varb_1=0;varb_1<(2*varb_2)/4;varb_1++)
+   varb_0[varb_1]=varb_0[varb_2-varb_1-1];
+  return *varb_0;
+}",21
+13,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+
+
+bool palindrome(char *s)
+{
+	size_t n;
+	int i,sign;
+	sign=0;
+	n=strlen(s);
+	for(i=0;i<(n/2);i++)
+	{
+		if(s[i]==s[n-i])
+		sign=1;
+	}
+	if(sign==1)
+	return true;
+	else
+	return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char *varb_0)
+{
+	size_t n;
+	int varb_1,varb_2;
+	varb_2=0;
+	n=strlen(varb_0);
+	for(varb_1=0;varb_1<(n/2);varb_1++)
+	{
+		if(varb_0[varb_1]==varb_0[n-varb_1])
+		varb_2=1;
+	}
+	if(varb_2==1)
+	return true;
+	else
+	return false;
+}",21
+14,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    char s1[MAXN];
+    n=strlen(s);
+    
+
+
+
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+}",19
+15,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    
+    char s1[MAXN];
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+    s1[i]=s[n-1];
+    n--;
+    }
+    s1[i]='\0';
+    if(strcmp(s,s1)==0)
+    return true;
+    else 
+    return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    varb_4[varb_2]='\0';
+    if(strcmp(varb_0,varb_4)==0)
+    return true;
+    else 
+    return false;
+}",28
+16,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s ); 
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{   
+    int i,a;
+    a=strlen(s);
+	for(i=0;i<=a/2;i++)
+	if(s[i]==s[a-i])
+	return true;
+	else
+	return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<=varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return true;
+	else
+	return false;
+}",22
+17,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+
+#include <string.h>
+
+ 
+
+#define MAXN 20
+
+typedef enum {false, true} bool;
+
+ 
+
+bool palindrome( char *s );
+
+ 
+
+int main()
+
+{
+
+    char s[MAXN];
+
+ 
+
+    scanf(""%s"", s);
+
+    if ( palindrome(s)==true )
+
+        printf(""Yes\n"");
+
+    else
+
+        printf(""No\n"");
+
+    printf(""%s"", s);
+
+    return 0;
+
+}
+bool palindrome( char *s )
+{
+int i=0,c;
+
+c=strlen(s);
+
+for(;i<=c/2;)
+{
+if(s[i]==s[c-i])
+i++;
+else
+
+return false;
+
+}
+
+return true;
+
+
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1=0,c;
+c=strlen(varb_0);
+for(;varb_1<=c/2;)
+{
+if(varb_0[varb_1]==varb_0[c-varb_1])
+varb_1++;
+else
+return false;
+}
+return true;
+}",23
+18,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i,n;
+n=strlen(s);
+while(i<strlen(s))
+{
+if(s[i]==s[n-1-i])
+{
+return true;
+}
+else
+{
+return false;
+}
+i++;}
+return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}
+else
+{
+return false;
+}
+varb_1++;}
+return *varb_0;
+}",19
+19,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true}bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+
+bool palindrome( char *s )
+{
+	int i,len;
+	len=strlen(s);
+	if(len%2==1)
+	{
+		for(i=0;(i<len-1)/2;i++)
+		{
+			if(s[i]==s[len-1-i])
+			return true;
+			else 
+			return false;
+		}
+	}
+	else
+	{
+		for(i=0;i<len/2;i++)
+		{
+			if(s[i]==s[len-1-i])
+			return true;
+			else
+			return false;
+		}
+	}
+	
+	
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true}bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2;
+	varb_2=strlen(varb_0);
+	if(varb_2%2==1)
+	{
+		for(varb_1=0;(varb_1<varb_2-1)/2;varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+			return true;
+			else 
+			return false;
+		}
+	}
+	else
+	{
+		for(varb_1=0;varb_1<varb_2/2;varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+			return true;
+			else
+			return false;
+		}
+	}
+}",19
+20,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    #define ture 1
+    #define false 0
+    char s1[MAXN];
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+    s1[i]=s[n-1];
+    n--;
+    }
+    if(strcmp(s,s1)==0)
+    return 1;
+    else 
+    return 0;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    #define ture 1
+    #define false 0
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return 1;
+    else 
+    return 0;
+}",20
+21,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"",s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,j,b,c=0;
+  b=strlen(s);
+  
+  
+    for(i=0;i<b/2;i++)
+    {
+       if(s[i]=s[b-1])
+       {
+         c++;
+        }
+       b--;
+     }
+    if(c==b/2)
+    return true;
+    else
+    return false;
+    
+ }",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"",varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",23
+22,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+	int n,z,i;
+	n=strlen(s);
+	z=n/2;
+	for(i=1;i<z;i++)
+	{
+		if(s[i-1]!=s[n-i])
+		return false;
+	}
+	return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3;
+	varb_1=strlen(varb_0);
+	varb_2=varb_1/2;
+	for(varb_3=1;varb_3<varb_2;varb_3++)
+	{
+		if(varb_0[varb_3-1]!=varb_0[varb_1-varb_3])
+		return false;
+	}
+	return true;
+}",22
+23,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,j,b,c=0;
+  b=strlen(s);
+  
+  
+    for(i=0;i<b/2;i++)
+    {
+       if(s[i]=s[b-1])
+       {
+         c++;
+        }
+       b--;
+     }
+    if(c=b/2)
+    return true;
+    else
+    return false;
+    
+ }",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4=varb_3/2)
+    return true;
+    else
+    return false;
+ }",23
+24,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];  
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{  int n=strlen(s);
+   int left,right;
+   char temp;
+   for(left=0,right=n-1;left<right;left++,right--)
+   { if(s[left]=s[right])
+     return 1;
+     else
+     return 0;
+   }
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];  
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{  int varb_1=strlen(varb_0);
+   int varb_2,varb_3;
+   char varb_4;
+   for(varb_2=0,varb_3=varb_1-1;varb_2<varb_3;varb_2++,varb_3--)
+   { if(varb_0[varb_2]=varb_0[varb_3])
+     return 1;
+     else
+     return 0;
+   }
+}",22
+25,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+    int n,i,j;
+    
+    char s1[MAXN];
+    n=strlen(s);
+    for(i=0;i<n;i++)
+    {
+    s1[i]=s[n-1];
+    n--;
+    }
+    if(strcmp(s,s1)==0)
+    return true;
+    else 
+    return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+    int varb_1,varb_2,varb_3;
+    char varb_4[MAXN];
+    varb_1=strlen(varb_0);
+    for(varb_2=0;varb_2<varb_1;varb_2++)
+    {
+    varb_4[varb_2]=varb_0[varb_1-1];
+    varb_1--;
+    }
+    if(strcmp(varb_0,varb_4)==0)
+    return true;
+    else 
+    return false;
+}",28
+26,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,j,b,c=0;
+  b=strlen(s);
+  
+  
+    for(i=0;i<b/2;i++)
+    {
+       if(s[i]=s[b-i-1])
+       {
+         c++;
+        }
+       
+     }
+    if(c==b/2)
+    return true;
+    else
+    return false;
+    
+ }",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-varb_1-1])
+       {
+         varb_4++;
+        }
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",19
+27,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,j,b,c=0;
+  b=strlen(s);
+  
+  
+    for(i=0;i<b/2;i++)
+    {
+       if(s[i]=s[b-1])
+       {
+         c++;
+        }
+       b--;
+     }
+    if(c==b/2)
+    return true;
+    else
+    return false;
+    
+ }",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2,varb_3,varb_4=0;
+  varb_3=strlen(varb_0);
+    for(varb_1=0;varb_1<varb_3/2;varb_1++)
+    {
+       if(varb_0[varb_1]=varb_0[varb_3-1])
+       {
+         varb_4++;
+        }
+       varb_3--;
+     }
+    if(varb_4==varb_3/2)
+    return true;
+    else
+    return false;
+ }",23
+28,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+
+
+bool palindrome(char *s)
+{
+	size_t n;
+	int i,sign;
+	sign=1;
+	n=strlen(s);
+	for(i=0;i<(n-1)/2;i++)
+	{
+		if(s[i]!=s[n-i])
+		sign=0;
+	}
+	if(sign==1)
+	return true;
+	else
+	return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char *varb_0)
+{
+	size_t n;
+	int varb_1,varb_2;
+	varb_2=1;
+	n=strlen(varb_0);
+	for(varb_1=0;varb_1<(n-1)/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[n-varb_1])
+		varb_2=0;
+	}
+	if(varb_2==1)
+	return true;
+	else
+	return false;
+}",22
+29,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+	int i,t,a=1;
+	t=strlen(s);
+	for(i=0;i<t/2;i++)
+	{
+		if(s[i]!=s[t-i])
+		{
+			a=0;
+			break;
+		}
+	} 
+	if(a==0)
+	return false;
+	else
+	return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2,varb_3=1;
+	varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	{
+		if(varb_0[varb_1]!=varb_0[varb_2-varb_1])
+		{
+			varb_3=0;
+			break;
+		}
+	} 
+	if(varb_3==0)
+	return false;
+	else
+	return true;
+}",6
+30,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+  int i,n;
+  n=strlen(s);
+  for(i=0;i<=(2*n)/4;i++)
+   s[i]=s[n-i-1];
+  return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+  int varb_1,varb_2;
+  varb_2=strlen(varb_0);
+  for(varb_1=0;varb_1<=(2*varb_2)/4;varb_1++)
+   varb_0[varb_1]=varb_0[varb_2-varb_1-1];
+  return *varb_0;
+}",21
+31,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i,n;
+n=strlen(s);
+while(i<strlen(s))
+{
+if(s[i]==s[n-1-i])
+{
+return true;
+}i++;}
+return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}varb_1++;}
+return *varb_0;
+}",19
+32,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{
+int i,n;
+n=strlen(s);
+while(i<strlen(s))
+{
+if(s[i]==s[n-1-i])
+{
+return true;
+}
+else
+{
+return false;
+}
+i++;}
+return *s;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+int varb_1,varb_2;
+varb_2=strlen(varb_0);
+while(varb_1<strlen(varb_0))
+{
+if(varb_0[varb_1]==varb_0[varb_2-1-varb_1])
+{
+return true;
+}
+else
+{
+return false;
+}
+varb_1++;}
+return *varb_0;
+}",19
+33,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s );
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+
+bool palindrome( char *s )
+{
+	int i,n=strlen(s);
+	if(n%2==0)
+	{
+		for(i=0;i<=(n/2);i++)
+		{
+			if(s[i]==s[n-i])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	if(n%2!=0)
+	{
+		for(i=0;i<=((n+1)/2);i++)
+		{
+			if(s[i]==s[n-i])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{
+	int varb_1,varb_2=strlen(varb_0);
+	if(varb_2%2==0)
+	{
+		for(varb_1=0;varb_1<=(varb_2/2);varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	if(varb_2%2!=0)
+	{
+		for(varb_1=0;varb_1<=((varb_2+1)/2);varb_1++)
+		{
+			if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+			{
+				continue;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}",22
+34,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+ 
+#define MAXN 20
+typedef enum {false, true} bool;
+ 
+bool palindrome( char *s );
+ 
+int main()
+{
+    char s[MAXN];
+ 
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome(char* s)
+{
+	int num = 0;
+	int len = strlen(s);
+	for (int i = 0; i < len / 2; i++)
+	{
+		if (*(s + i) == *(s + len - 1 - i))
+		{
+			num++;
+		}
+	}
+	if (num == len / 2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+  ",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 );
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0(char* varb_0)
+{
+	int varb_1 = 0;
+	int varb_2 = strlen(varb_0);
+	for(int varb_3 = 0; varb_3 < varb_2 / 2; varb_3++)
+	{
+		if(*(varb_0 + varb_3) == *(varb_0 + varb_2 - 1 - varb_3))
+		{
+			varb_1++;
+		}
+	}
+	if(varb_1 == varb_2 / 2)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+",20
+35,2c9f30a575ceffb9017660892873720a,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool palindrome( char *s ); 
+int main()
+{
+    char s[MAXN];
+    scanf(""%s"", s);
+    if ( palindrome(s)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", s);
+    return 0;
+}
+bool palindrome( char *s )
+{   
+    int i,a;
+    a=strlen(s);
+	for(i=0;i<a/2;i++)
+	if(s[i]==s[a-i])
+	return true;
+	else
+	return false;
+}",0.0,"#include <stdio.h>
+#include <string.h>
+#define MAXN 20
+typedef enum {false, true} bool;
+bool func_0( char *varb_0 ); 
+int main()
+{
+    char varb_0[MAXN];
+    scanf(""%s"", varb_0);
+    if( func_0(varb_0)==true )
+        printf(""Yes\n"");
+    else
+        printf(""No\n"");
+    printf(""%s"", varb_0);
+    return 0;
+}
+bool func_0( char *varb_0 )
+{   
+    int varb_1,varb_2;
+    varb_2=strlen(varb_0);
+	for(varb_1=0;varb_1<varb_2/2;varb_1++)
+	if(varb_0[varb_1]==varb_0[varb_2-varb_1])
+	return true;
+	else
+	return false;
+}",21

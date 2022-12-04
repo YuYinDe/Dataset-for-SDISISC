@@ -1,0 +1,1200 @@
+,id,code,is_true,errorline
+0,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   char varb_5[100];
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   }
+}",0.0,2
+1,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+    int varb_1;
+    int varb_2,varb_3;
+    int varb_4;
+    scanf(""%d"",&varb_1);
+   for(varb_3=1;varb_3<=varb_1;varb_3++){
+   char varb_5[20];
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+  if(varb_4==0)
+   printf(""%d"",-1);
+  }
+}",0.0,2
+2,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char *varb_0[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"", ""Saturday""};
+   int varb_1,varb_2,varb_3,varb_4;
+   char varb_5[80],c;
+   scanf(""%d"",& varb_1);
+   for(varb_2=0;varb_2<varb_1;varb_2++)
+   {   varb_4=0;
+       scanf(""%s"",&varb_5);
+       for(varb_3=0;varb_3<7;varb_3++)
+       {
+         if(strcmp(varb_0[varb_3],varb_5)==-1)
+         varb_4++;
+         else
+         printf(""%d\n"",varb_3+1);       
+        }
+        if(varb_4==7)
+        printf(""-1\n"");
+        }
+        return 0;
+        }
+",0.0,14
+3,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#define NUMS 10
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   char varb_4[16];
+   scanf(""%d"",&varb_0);
+   char *varb_5[NUMS]={""Sunday"",""Monday"",""Tuesday"", ""Wednesday"", ""Thursday"", ""Friday"","" Saturday""};
+   for(varb_1=0;varb_1<varb_0;varb_1++){
+       scanf(""%s"",&varb_4);
+       for(varb_2=0;varb_2<7;varb_2++){      
+           if(strcmp(varb_4,varb_5[varb_2])==0){
+               varb_3=varb_2+1;
+               printf(""%d\n"",varb_3);break;}
+           else{
+               varb_3=-1;
+               printf(""%d"",varb_3);break;}
+       }
+   }
+ }",0.0,5
+4,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	char *varb_5[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	char varb_6[14];
+	scanf(""%d"",&varb_0);
+	for(varb_2=0;varb_2<varb_0;varb_2++)
+	{
+		gets(varb_6);
+		varb_3=0;
+		for(varb_1=0;varb_1<7;varb_1++)
+		{
+		if(strcmp(varb_5[varb_1],varb_6)==0)
+        {
+		printf(""%d\n"",varb_1+1);
+		varb_3=1;
+        }
+		}
+		varb_4=-1;
+		if(varb_3==0)
+		printf(""%d\n"",varb_4);
+	}
+}",0.0,10
+5,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=1;varb_1<varb_0+1;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+else printf(""-1\n"");
+}
+}",0.0,14
+6,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   scanf(""%d"",&varb_1);
+   for(varb_3=1;varb_3<=varb_1;varb_3++){
+   varb_4=0;
+   char varb_5[20];
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+  if(varb_4==0)
+   printf(""%d"",-1);
+  }
+}",0.0,2
+7,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+else
+printf(""-1\n"");
+}
+}",0.0,8
+8,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+main(void)
+{
+ char varb_0[7][10]={""Sunday"","" Monday "",""Tuesday"","" Wednesday"","" Thursday "",""Friday "",""Saturday""};
+ int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+ int varb_8[7];
+ char varb_9[1000];
+ scanf(""%d"",&varb_1);
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ { 
+   varb_2=0;
+   scanf(""%s"",&varb_9);
+    for(varb_6=0;varb_6<7;varb_6++)
+   { 
+     if(strcmp(varb_0[varb_3],varb_9)==0)
+      printf(""%d\n"",varb_3+1);
+      varb_2++;
+   }
+     if(varb_2==0)
+     {
+     printf(""-1\n"");
+     }
+}
+}
+",0.0,16
+9,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_4[varb_3],varb_5)==0)
+		{
+			printf(""%d\n"",varb_3+1);
+			break;
+		}
+		else
+		{
+		printf(""-1\n"");
+		}
+	}
+	}
+}",0.0,16
+10,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char *varb_0[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"", ""Saturday""};
+   int varb_1,varb_2,varb_3,varb_4;
+   char varb_5[80],c;
+   scanf(""%d"",& varb_1);
+   for(varb_2=0;varb_2<varb_1;varb_2++)
+   {   varb_4=0;
+       scanf(""%s"",&varb_5);
+       for(varb_3=0;varb_3<7;varb_3++)
+       {
+         if(strcmp(varb_0[varb_3],varb_5)==-1)
+         varb_4++;
+         else
+         printf(""%d\n"",varb_3+1);
+        }
+        if(varb_4==7)
+        printf(""-1\n"");
+        }
+        return 0;
+        }
+",0.0,14
+11,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   scanf(""%d"",&varb_1);
+   while(varb_1!=0){
+   varb_4=0;
+   char varb_5[20];
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   varb_1--;
+  }
+}",0.0,2
+12,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=1;varb_1<varb_0+1;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+else printf(""-1\n"");
+}
+}",0.0,14
+13,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_5,varb_4[varb_3])==0)
+		{
+			printf(""%d\n"",varb_3+1);
+			break;
+		}
+		}	
+			if(varb_1==7)
+    {
+		printf(""-1\n"");
+	}
+	}
+}",0.0,22
+14,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main()
+{
+	char *varb_0[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	int varb_1;		
+	int varb_2,varb_3;		
+	char varb_4[50];	
+	scanf(""%d"",&varb_1);
+	for(varb_2=0;varb_2<varb_1;varb_2++)
+	{
+		gets(varb_4);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+			if(strcmp(varb_4,varb_0[varb_3])==0)
+			{
+				printf(""%d\n"",varb_3+1);
+				break;
+			}
+			else if(varb_3==6)
+				printf(""-1\n"");
+		}
+	}
+	return 0;
+}",0.0,8
+15,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+    int varb_3=0;
+	char varb_4[20];
+	char varb_5[7][10]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thurday"",""Friday"",""Saturday""};
+	scanf(""%d"",&varb_0);
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_4);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+		if(strcmp(varb_5[varb_2],varb_4)==0)
+		{
+        printf(""%d\n"",varb_2+1);
+        break;
+		}
+  		}
+        if(varb_2==7)
+        printf(""%d\n"",-1);
+	}
+	return 0;
+}",0.0,8
+16,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[10];
+int varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_1);
+for(varb_2=0;varb_2<varb_1+1;varb_2++)
+{
+gets(varb_0);
+if(strcmp(varb_0,""Sunday"")==0)
+printf(""1"");
+else if(strcmp(varb_0,""Monday"")==0)
+printf(""2"");
+else if(strcmp(varb_0,""Tuesday"")==0)
+printf(""3"");
+else if(strcmp(varb_0,""Wednesday"")==0)
+printf(""4"");
+else if(strcmp(varb_0,""Thursday"")==0)
+printf(""5"");
+else if(strcmp(varb_0,""Friday"")==0)
+printf(""6"");
+else if(strcmp(varb_0,""Saturday"")==0)
+printf(""7"");
+else if(strcmp(varb_0,""year"")==0)
+printf(""-1"");
+printf(""\n"");
+}
+}
+",0.0,6
+17,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1,varb_2,varb_3=0;
+char *varb_4[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+scanf(""%d"",&varb_0);
+char varb_5[20];
+for(varb_1=0;varb_1<varb_0;varb_1++)
+   {
+     gets(varb_5);
+     for(varb_2=0;varb_2<7;varb_2++) 
+        {   
+          if(strstr(varb_5,varb_4[varb_2])!=NULL)
+           {
+            printf(""%d\n"",varb_2+1);
+            varb_3=1;
+            break;
+           }  
+        }
+      if(varb_3==0) 
+         printf(""-1\n"") ;
+    }
+}",0.0,5
+18,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_4[varb_3],varb_5)==0)
+		{
+			printf(""%d\n"",varb_1+1);
+			break;
+		}
+		else
+		{
+		printf(""-1\n"");
+		}
+	}
+	}
+}",0.0,16
+19,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   char varb_5[100];
+   scanf(""%d"",&varb_1);
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+}",0.0,10
+20,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	const char *varb_4[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	scanf(""%d "",&varb_0);
+	char varb_5[8];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		varb_3=1;
+		gets(varb_5);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+			if(strcmp(varb_4[varb_1],varb_5)==0)
+				{
+					printf(""%d\n"",varb_1+1);
+					varb_3=0;
+					break;
+				}
+		}
+		if(varb_3)
+			printf(""-1\n"");
+	}
+}
+",0.0,15
+21,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_4[varb_3],varb_5)==0)
+		{
+			printf(""%d\n"",varb_3+1);
+			break;
+		}
+	if(varb_3==7)
+    {
+		printf(""-1\n"");
+		}
+	}	
+	}
+}",0.0,16
+22,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   char varb_5[20];
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   varb_1--;
+  }
+}",0.0,2
+23,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int varb_0,varb_1,varb_2,varb_3=0;
+    scanf(""%d"",&varb_0);
+    char varb_4[10];
+    char *varb_5[7]={""Sunday"",""Monday"",""Tuesday"",
+            ""Wednesday"",""Thursday"",""Friday"",
+            ""Saturday""
+            };
+    for(varb_1=0;varb_1<varb_0;varb_1++)
+    {   
+        gets(varb_4);
+        for(varb_2=0;varb_2<7;varb_2++)
+        {        
+            if(strcmp(varb_5[varb_2],varb_4)==0)
+            {
+                printf(""%d\n"",varb_2+1);
+                break;
+            } 
+        }
+        if(varb_2==7)
+         printf(""-1\n"");
+    }
+    return 0;
+}",0.0,3
+24,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   char varb_5[20];
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   varb_4=0;
+   scanf(""%s"",varb_5[varb_3]);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   varb_1--;
+  }
+}",0.0,2
+25,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main() {
+    char varb_0[7][15] = { ""Sunday"", ""Monday"",
+                ""Tuesday"",""Wednesday"",
+                ""Thursday"", ""Friday"",
+                ""Saturday""
+    };                                
+    int varb_1, varb_2, varb_3;
+    char varb_4[15];
+    scanf(""%d "", &varb_2);        
+    for(varb_1 = 0; varb_1 < varb_2; varb_1++) {
+        gets(varb_4);
+        for(varb_3 = 0; varb_3 < 7; varb_3++)
+            if(!strcmp(varb_4, varb_0[varb_3])) {            
+                printf(""%d\n"", varb_3 + 1);             
+                break;
+            }
+        if(varb_3 == 7)                        
+            printf(""-1\n"");
+    }
+    return 0;
+}",0.0,23
+26,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   char varb_5[20];
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_0[varb_2],varb_5)==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+  }
+}",0.0,2
+27,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+main(void)
+{
+ char varb_0[7][10]={""Sunday"","" Monday "",""Tuesday"","" Wednesday"","" Thursday "",""Friday "",""Saturday""};
+ int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+ int varb_8[7];
+ char varb_9[1000];
+ scanf(""%d"",&varb_1);
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ { 
+   varb_2=0;
+   scanf(""%s"",&varb_9);
+    for(varb_6=0;varb_6<7;varb_6++)
+   { 
+     if(strcmp(varb_0[varb_6],varb_9)==0)
+    {  printf(""%d\n"",varb_6+1);
+      varb_2++;
+     }
+   }
+     if(varb_2==0)
+     printf(""-1\n"");
+}
+}
+",0.0,18
+28,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<stdio.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"",""Monday"", ""Tuesday"",""Wednesday"",""Thursday"",   ""Friday"",""Saturday""}; 
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4;
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   char varb_5[100];
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_5,varb_0[varb_2])==0){
+   varb_4=1;
+   printf(""%d"",varb_2+1);
+   }
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   printf(""\n"");
+   }
+}",0.0,11
+29,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+char varb_0[10];
+int varb_1,varb_2,varb_3;
+scanf(""%d"",&varb_1);
+for(varb_2=0;varb_2<varb_1;varb_2++)
+{
+gets(varb_0);
+if(strcmp(varb_0,""Sunday"")==0)
+printf(""1"");
+else if(strcmp(varb_0,""Monday"")==0)
+printf(""2"");
+else if(strcmp(varb_0,""Tuesday"")==0)
+printf(""4"");
+else if(strcmp(varb_0,""Wednesday"")==0)
+printf(""-1"");
+else if(strcmp(varb_0,""Thursday"")==0)
+printf(""5"");
+else if(strcmp(varb_0,""Friday"")==0)
+printf(""6"");
+else if(strcmp(varb_0,""Saturday"")==0)
+printf(""7"");
+else
+printf(""3"");
+printf(""\n"");
+}
+}
+",0.0,6
+30,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_5,varb_4[varb_3])==0)
+		{
+			printf(""%d\n"",varb_3+1);
+			break;
+		}
+	if(varb_3==7)
+    {
+		printf(""-1\n"");
+		}
+	}	
+	}
+}",0.0,21
+31,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+else
+printf(""-1\n"");
+}
+}",0.0,8
+32,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3,varb_4;
+	char *varb_5[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	char varb_6[14];
+	scanf(""%d"",&varb_0);
+	for(varb_2=0;varb_2<varb_0;varb_2++)
+	{
+		gets(varb_6);
+		varb_3=0;
+		for(varb_1=0;varb_1<7;varb_1++)
+		{
+		if(strcmp(varb_5[varb_1],varb_6)==0)
+        {
+		printf(""%d\n"",varb_1+1);
+		varb_3=1;
+        }
+		}
+		varb_4=-1;
+		if(varb_3==0)
+		printf(""%d\n"",varb_4);
+	}
+}",0.0,10
+33,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	const char *varb_4[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	scanf(""%d "",&varb_0);
+	char varb_5[8];
+	for(varb_1=0;varb_1<7;varb_1++)
+	{
+		varb_3=0;
+		gets(varb_5);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+			if(strcmp(varb_4[varb_1],varb_5)==0)
+				printf(""%d"",varb_1+1);
+				varb_3=1;
+		}
+		if(varb_3)
+			printf(""-1"");
+	}
+}
+",0.0,9
+34,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	const char *varb_4[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	scanf(""%d "",&varb_0);
+	char varb_5[8];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		varb_3=0;
+		gets(varb_5);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+			if(strcmp(varb_4[varb_1],varb_5)==0)
+				printf(""%d"",varb_1+1);
+				varb_3=1;
+		}
+		if(varb_3)
+			printf(""-1"");
+	}
+}
+",0.0,11
+35,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+  int varb_0,varb_1,varb_2,varb_3=0;
+  scanf(""%d\n"",&varb_0);
+  char *varb_4[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+  for(varb_2=0;varb_2<varb_0;varb_2++)
+  { 
+    char varb_5[100];
+     gets(varb_5);
+    for(varb_1=0;varb_1<7;varb_1++)
+     if(strcmp(varb_4[varb_1],varb_5)==0)
+      { printf(""%d\n"",varb_1+1);      
+       varb_3=1;}
+       if(varb_3==0)
+      printf(""-1\n"");}
+ }",0.0,17
+36,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+  int varb_0,varb_1,varb_2;
+  char varb_3[10];
+  char *varb_4[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+  scanf(""%d"",&varb_2);
+  for(varb_0=0;varb_0<varb_2;varb_0++)
+  {   
+      gets(varb_3);
+      for(varb_1=0;varb_1<7;varb_1++)
+          if(strcmp(varb_4[varb_1],varb_3)==0)
+              break;
+      if(varb_1<7)
+          printf(""%d\n"",varb_1+1);
+      else
+          printf(""-1\n"");
+  }
+}",0.0,11
+37,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+else printf(""-1\n"");
+}
+}",0.0,8
+38,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+main(void)
+{
+ char varb_0[7][10]={""Sunday"","" Monday "",""Tuesday"","" Wednesday"","" Thursday "",""Friday "",""Saturday""};
+ int varb_1,varb_2,varb_3,varb_4,varb_5,varb_6,varb_7;
+ int varb_8[7];
+ varb_4=0;
+ varb_5=0;
+ char varb_9[1000];
+ scanf(""%d"",&varb_1);
+ for(varb_3=0;varb_3<varb_1;varb_3++)
+ {
+   scanf(""%s"",&varb_9);
+    for(varb_6=0;varb_6<7;varb_6++)
+   { 
+     if(strcmp(varb_0[varb_3],varb_9)==0)
+      printf(""%d\n"",varb_3+1);
+   }
+     if(varb_6==7)
+     printf(""-1\n"");
+}
+}
+",0.0,8
+39,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	const char *varb_4[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	scanf(""%d "",&varb_0);
+	char varb_5[8];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		varb_3=1;
+		gets(varb_5);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+			if(strcmp(varb_4[varb_1],varb_5)==0)
+				{
+					printf(""%d"",varb_1+1);
+					varb_3=0;
+					break;
+				}
+		}
+		if(varb_3)
+			printf(""-1"");
+	}
+}
+",0.0,15
+40,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#define NUMS 10
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   scanf(""%d"",&varb_0);
+   char *varb_4[NUMS]={""Sunday"",""Monday"",""Tuesday"", ""Wednesday"", ""Thursday"", ""Friday"","" Saturday""};
+   for(varb_1=0;varb_1<varb_0;varb_1++){
+       char varb_5[16];
+       scanf(""%s"",&varb_5);
+       for(varb_2=0;varb_2<7;varb_2++){      
+           if(strcmp(varb_5,varb_4[varb_2])==0){
+               varb_3=varb_2+1;
+               printf(""%d\n"",varb_3);break;}
+           else{
+               varb_3=-1;
+               printf(""%d"",varb_3);break;}
+       }
+   }
+ }",0.0,5
+41,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char *varb_0[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"", ""Saturday""};
+   int varb_1,varb_2,varb_3,varb_4;
+   char varb_5[80],c;
+   scanf(""%d"",& varb_1);
+   for(varb_2=0;varb_2<varb_1;varb_2++)
+   {   varb_4=0;
+       scanf(""%s"",&varb_5);
+       for(varb_3=0;varb_3<7;varb_3++)
+       {
+         if(strcmp(varb_0[varb_3],varb_5)==-1)
+         varb_4++;
+         else 
+         printf(""%d\n"",varb_3+1);  
+        }
+        if(varb_4!=0)
+        printf(""-1\n"");
+        }
+        return 0;
+        }
+",0.0,14
+42,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2;
+	scanf(""%d"",&varb_0);
+	char *varb_3[7]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+    char varb_4[80];  
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+	scanf(""%s"",varb_4);
+	for(varb_2=0;varb_2<7;varb_2++)
+	{
+		if(strcmp(varb_3[varb_2],varb_4)==0)
+		{printf(""%d/n"",varb_2+1);
+        break;}
+		else
+		printf(""-1"");
+	}   	 
+	}
+}",0.0,5
+43,2c9f30a575ceffb9017660899621720e,"#include <stdio.h>
+#include <string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	char *varb_4[]={""Sunday"",""Monday"","" Tuesday "",""Wednesday "",""Thursday"",
+	"" Friday "",""Saturday""};
+	char varb_5[100];
+	scanf(""%d"",&varb_0);
+	getchar();
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		scanf(""%s"",&varb_5);
+		for(varb_3=0;varb_3<7;varb_3++)
+		{
+		if(strcmp(varb_4[varb_3],varb_5)==0)
+		{
+			printf(""%d\n"",varb_3+1);
+			break;
+		}
+	}
+    if(varb_3==7)
+    {
+		printf(""-1\n"");
+		}
+	}
+}",0.0,16
+44,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+	int varb_0,varb_1,varb_2,varb_3;
+	const char *varb_4[]={""Sunday"",""Monday"",""Tuesday"",""Wednesday"",""Thursday"",""Friday"",""Saturday""};
+	scanf(""%d "",&varb_0);
+	char varb_5[8];
+	for(varb_1=0;varb_1<varb_0;varb_1++)
+	{
+		varb_3=0;
+		gets(varb_5);
+		for(varb_2=0;varb_2<7;varb_2++)
+		{
+			if(strcmp(varb_4[varb_1],varb_5)==0)
+				{
+					printf(""%d"",varb_1+1);
+				varb_3=1;
+				break;
+				}
+		}
+		if(varb_3)
+			printf(""-1"");
+	}
+}
+",0.0,11
+45,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4=0;
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   char varb_5[100];
+   varb_4=0;
+   gets(varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_5,varb_0[varb_2])==0)
+   {printf(""%d"",varb_2+1);}
+   varb_4=1;
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   }
+}",0.0,2
+46,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+int varb_0,varb_1;
+scanf(""%d"",&varb_0);
+char varb_2[varb_0][20],(*p)[20]=varb_2;
+for(varb_1=0;varb_1<varb_0;varb_1++)
+scanf(""%s"",&varb_2[varb_1][20]);
+for(varb_1=0;varb_1<varb_0;varb_1++)
+{
+if(strcmp(*(p+varb_1),""Sunday"")==0)
+printf(""1\n"");
+else if(strcmp(*(p+1),""Monday"")==0)
+printf(""2\n"");
+else if(strcmp(*(p+varb_1),""Tuesday"")==0)
+printf(""3\n"");
+else if(strcmp(*(p+varb_1),""Wednesday"")==0)
+printf(""4\n"");
+else if(strcmp(*(p+varb_1),""Thursday"")==0)
+printf(""5\n"");
+else if(strcmp(*(p+varb_1),""Friday"")==0)
+printf(""6\n"");
+else if(strcmp(*(p+varb_1),""Saturday"")==0)
+printf(""7\n"");
+}
+}",0.0,8
+47,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#include<string.h>
+int main()
+{
+    static char *varb_0[7]={""Sunday"","" Monday"", ""Tuesday"","" Wednesday"","" Thursday"", ""Friday"","" Saturday""};
+   int varb_1;
+   int varb_2,varb_3;
+   int varb_4=0;
+   scanf(""%d"",&varb_1);
+   for(varb_3=0;varb_3<varb_1;varb_3++){
+   char varb_5[16];
+   varb_4=0;
+   scanf(""%s"",&varb_5);
+   for(varb_2=0;varb_2<7;varb_2++){
+   if(strcmp(varb_5,varb_0[varb_2])==0){
+    varb_4=varb_2+1;
+   printf(""%d"",varb_4);}
+  }
+   if(varb_4==0)
+   printf(""%d"",-1);
+   }
+}",0.0,2
+48,2c9f30a575ceffb9017660899621720e,"#include<stdio.h>
+#define NUMS 10
+int main()
+{
+   int varb_0,varb_1,varb_2,varb_3;
+   char varb_4[16];
+   scanf(""%d"",&varb_0);
+   char *varb_5[NUMS]={""Sunday"",""Monday"",""Tuesday"", ""Wednesday"", ""Thursday"", ""Friday"","" Saturday""};
+   for(varb_1=0;varb_1<varb_0;varb_1++){
+       scanf(""%s"",&varb_4);
+       for(varb_2=0;varb_2<7;varb_2++){      
+           if(strcmp(varb_4,varb_5[varb_2])==0){
+               varb_3=varb_2+1;
+               printf(""%d\n"",varb_3);}
+           else{
+               varb_3=-1;
+               printf(""%d"",varb_3);}
+       }
+   }
+ }",0.0,5
